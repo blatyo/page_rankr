@@ -8,6 +8,7 @@ Provides an easy way to retrieve Google Page Rank, Alexa Rank, and backlink coun
 Backlinks are the result of doing a search with a query like "link:www.google.com". The number of returned results indicates how many sites point to that url.
 
 `PageRankr.backlinks 'www.google.com', :google, :bing, :yahoo, :altavista, :alltheweb`
+
 `    #=> {:google=>161000, :bing=>208000000, :yahoo=>256300062, :altavista=>110000000, :alltheweb=>55700000}`
 
 ## Note on Patches/Pull Requests
