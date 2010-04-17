@@ -1,7 +1,7 @@
 path = File.expand_path(File.dirname(__FILE__))
 require 'open-uri'
 require 'cgi'
-require 'hpricot'
+require 'nokogiri'
 require path + '/page_rankr/backlinks'
 
 module PageRankr

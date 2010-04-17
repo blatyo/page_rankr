@@ -11,7 +11,7 @@ Backlinks are the result of doing a search with a query like "link:www.google.co
 
 `PageRankr.backlinks('www.google.com', :yahoo)         #=> {:yahoo=>256300062}`
 
-Valid search engines are: `:google, :bing, :yahoo, :altavista, :alltheweb`.
+Valid search engines are: `:google, :bing, :yahoo, :altavista, :alltheweb, :alexa`.
 
 ## Note on Patches/Pull Requests
  
@@ -30,6 +30,7 @@ Valid search engines are: `:google, :bing, :yahoo, :altavista, :alltheweb`.
   * <del>Yahoo!</del>
   * <del>AltaVista</del>
   * <del>AllTheWeb</del>
+  * <del>Alexa</del>
 * Get Google Page Rank
   * Implement Hashing Algorithm
 * Get Alexa ranking
