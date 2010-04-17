@@ -1,8 +1,8 @@
-= page_rankr
+# page_rankr
 
-Description goes here.
+Provides an easy way to retrieve Google Page Rank, Alexa Rank, and backlink counts.
 
-== Note on Patches/Pull Requests
+## Note on Patches/Pull Requests
  
 * Fork the project.
 * Make your feature addition or bug fix.
@@ -12,6 +12,17 @@ Description goes here.
   (if you want to have your own version, that is fine but bump version in a commit by itself I can ignore when I pull)
 * Send me a pull request. Bonus points for topic branches.
 
-== Copyright
+## TODO
+* Get backlink counts for:
+  * Google
+  * Bing
+  * Yahoo!
+  * AltaVista
+  * AllTheWeb
+* Get Google Page Rank
+  * Implement Hashing Algorithm
+* Get Alexa ranking
 
-Copyright (c) 2010 blatyo. See LICENSE for details.
+## Copyright
+
+Copyright (c) 2010 Allen Madsen. See LICENSE for details.
