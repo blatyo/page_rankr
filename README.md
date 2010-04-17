@@ -7,9 +7,7 @@ Provides an easy way to retrieve Google Page Rank, Alexa Rank, and backlink coun
 ### Backlinks
 Backlinks are the result of doing a search with a query like "link:www.google.com". The number of returned results indicates how many sites point to that url.
 
-`PageRankr.backlinks 'www.google.com', :google, :bing, :yahoo, :altavista, :alltheweb`
-
-`    #=> {:google=>161000, :bing=>208000000, :yahoo=>256300062, :altavista=>110000000, :alltheweb=>55700000}`
+`PageRankr.backlinks 'www.google.com', :google, :bing, :yahoo, :altavista, :alltheweb #=> {:google=>161000, :bing=>208000000, :yahoo=>256300062, :altavista=>110000000, :alltheweb=>55700000}`
 
 ## Note on Patches/Pull Requests
  
@@ -22,12 +20,12 @@ Backlinks are the result of doing a search with a query like "link:www.google.co
 * Send me a pull request. Bonus points for topic branches.
 
 ## TODO
-* <strike>Get backlink counts for:</strike>
-  * <strike>Google</strike>
-  * <strike>Bing</strike>
-  * <strike>Yahoo!</strike>
-  * <strike>AltaVista</strike>
-  * <strike>AllTheWeb</strike>
+* <del>Get backlink counts for:</del>
+  * <del>Google</del>
+  * <del>Bing</del>
+  * <del>Yahoo!</del>
+  * <del>AltaVista</del>
+  * <del>AllTheWeb</del>
 * Get Google Page Rank
   * Implement Hashing Algorithm
 * Get Alexa ranking
