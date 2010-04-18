@@ -42,6 +42,8 @@ Google page ranks are in the range 0-10 where 10 is the most popular. If a site 
 * <del>Get Google Page Rank</del>
   * <del>Implement Hashing Algorithm</del>
 * <del>Get Alexa ranking</del>
+* docs
+* tests (need to find way around counts changing)
 
 ## Shout Out
 Gotta give credit where credits due!
