@@ -13,6 +13,14 @@ Backlinks are the result of doing a search with a query like "link:www.google.co
 
 Valid search engines are: `:google, :bing, :yahoo, :altavista, :alltheweb, :alexa`.
 
+### Ranks
+`PageRankr.ranks('www.google.com', :alexa, :google) #=> {:alexa=>1, :google=>10}`
+
+There are two valid rank trackers supported: `:alexa, :google`.
+Alexa ranks are descending where 1 is the most popular. If a site has an alexa rank of 0 then the site is unranked.
+Google page ranks are in the range 0-10 where 10 is the most popular. If a site is unindexed then the rank will be -1.
+
+
 ## Note on Patches/Pull Requests
  
 * Fork the project.
@@ -31,9 +39,15 @@ Valid search engines are: `:google, :bing, :yahoo, :altavista, :alltheweb, :alex
   * <del>AltaVista</del>
   * <del>AllTheWeb</del>
   * <del>Alexa</del>
-* Get Google Page Rank
-  * Implement Hashing Algorithm
-* Get Alexa ranking
+* <del>Get Google Page Rank</del>
+  * <del>Implement Hashing Algorithm</del>
+* <del>Get Alexa ranking</del>
+
+## Shout Out
+Gotta give credit where credits due!
+* http://github.com/alexmipego/PageRankSharp
+* http://snipplr.com/view/18329/google-page-range-lookup/
+* http://www.sitetoolcenter.com/free-website-scripts/ajax-pr-checker.php 
 
 ## Copyright
 
