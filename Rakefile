@@ -4,12 +4,13 @@ require 'rake'
 begin
   require 'jeweler'
   Jeweler::Tasks.new do |gem|
-    gem.name = "page_rankr"
-    gem.summary = %Q{TODO: one-line summary of your gem}
-    gem.description = %Q{TODO: longer description of your gem}
+    gem.name = "PageRankr"
+    gem.summary = %Q{Easy way to retrieve Google Page Rank, Alexa Rank, and backlink counts}
+    gem.description = %Q{Easy way to retrieve Google Page Rank, Alexa Rank, and backlink counts}
     gem.email = "blatyo@gmail.com"
     gem.homepage = "http://github.com/blatyo/page_rankr"
-    gem.authors = ["blatyo"]
+    gem.authors = ["Allen Madsen"]
+    gem.add_dependency "nokogiri", ">= 1.4.1"
     gem.add_development_dependency "rspec", ">= 1.2.9"
     gem.add_development_dependency "yard", ">= 0"
     # gem is a Gem::Specification... see http://www.rubygems.org/read/chapter/20 for additional settings
