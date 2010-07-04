@@ -14,7 +14,7 @@ module PageRankr
     }
 
     SEARCH_EGNINE_PATHS = {
-      :google    => "//p[@id='resultStats']/b[3]/text()",
+      :google    => "//div[@id='resultStats']/text()",
       :bing      => "//span[@class='sb_count']/text()",
       :yahoo     => "//ol[@id='results-tab']/li[2]/a/text()",
       :altavista => "//a[@class='lbl']/text()",

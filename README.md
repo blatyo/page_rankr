@@ -2,19 +2,26 @@
 
 Provides an easy way to retrieve Google Page Rank, Alexa Rank, and backlink counts.
 
-## Exampes
+## Get it!
+
+    gem install PageRankr
+    
+## Use it!
+
+    require 'page_rankr'
 
 ### Backlinks
+
 Backlinks are the result of doing a search with a query like "link:www.google.com". The number of returned results indicates how many sites point to that url.
 
-`PageRankr.backlinks('www.google.com', :google, :bing) #=> {:google=>161000, :bing=>208000000}`
-
-`PageRankr.backlinks('www.google.com', :yahoo)         #=> {:yahoo=>256300062}`
+    PageRankr.backlinks('www.google.com', :google, :bing) #=> {:google=>161000, :bing=>208000000}
+    PageRankr.backlinks('www.google.com', :yahoo)         #=> {:yahoo=>256300062}
 
 Valid search engines are: `:google, :bing, :yahoo, :altavista, :alltheweb, :alexa`.
 
 ### Ranks
-`PageRankr.ranks('www.google.com', :alexa, :google) #=> {:alexa=>1, :google=>10}`
+
+    PageRankr.ranks('www.google.com', :alexa, :google) #=> {:alexa=>1, :google=>10}
 
 There are two valid rank trackers supported: `:alexa, :google`.
 Alexa ranks are descending where 1 is the most popular. If a site has an alexa rank of 0 then the site is unranked.
