@@ -42,6 +42,44 @@ There are two valid rank trackers supported: `:alexa, :google`.
 Alexa ranks are descending where 1 is the most popular. If a site has an alexa rank of 0 then the site is unranked.
 Google page ranks are in the range 0-10 where 10 is the most popular. If a site is unindexed then the rank will be -1.
 
+## Fix it!
+
+If you ever find something is broken it should now be much easier to fix it with version >= 1.3.0. For example, if the xpath used to lookup a backlink is broken, just override the method for that class to provide the correct xpath.
+
+    module PageRankr
+      class Backlinks
+        class Google < Backlink
+          def xpath
+            "my new awesome xpath"
+          end
+        end
+      end
+    end
+
+## Extend it!
+
+If you ever come across a site that provides a rank or backlinks you can hook that class up to automatically be use with PageRankr.
+
+    module PageRankr
+      class Backlinks
+        class Foo < Backlink
+          def url(site)
+            "http://example.com/?q=#{site}"
+          end
+          
+          def xpath
+            "//backlinks/text()"
+          end
+          
+          def clean(backlink_count)
+            #do some of my own cleaning
+            super(backlink_count) # strips letters, commas, and a few other nasty things and converts it to an integer
+          end
+        end
+      end
+    end
+    
+Then, just make sure you require the class and PageRankr and whenver you call PageRankr.backlinks it'll be able to use your class.
 
 ## Note on Patches/Pull Requests
  

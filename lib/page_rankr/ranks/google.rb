@@ -1,20 +1,23 @@
-path = File.expand_path(File.dirname(__FILE__)) + '/google/'
 require "open-uri"
-require path + 'checksum'
+require File.join("page_rankr", "ranks", "google", "checksum")
 
 module PageRankr
-  module Google
-    class << self
-      def lookup(site)
+  class Ranks
+    class Google
+      attr_reader :rank
+    
+      def initialize(site)
         checksum = Checksum.generate(site)
         begin
-          open(url(site, checksum)) {|io| io.read.scan(/Rank_\d+:\d+:(\d+)/)[0][0].to_i}
+          @rank = open(url(site, checksum)) {|io| io.read.scan(regex)[0][0].to_i}
         rescue
           -1
         end
       end
-
-      private
+      
+      def regex
+        /Rank_\d+:\d+:(\d+)/
+      end
 
       def url(site, checksum)
         "http://toolbarqueries.google.com/search?client=navclient-auto&ch=#{checksum}&features=Rank&q=info:#{site}"

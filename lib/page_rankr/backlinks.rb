@@ -1,39 +1,30 @@
-require 'open-uri'
-require 'cgi'
-require 'nokogiri'
+require File.join("page_rankr", "backlinks", "backlink")
+require File.join("page_rankr", "backlinks", "alexa")
+require File.join("page_rankr", "backlinks", "alltheweb")
+require File.join("page_rankr", "backlinks", "altavista")
+require File.join("page_rankr", "backlinks", "bing")
+require File.join("page_rankr", "backlinks", "google")
+require File.join("page_rankr", "backlinks", "yahoo")
 
 module PageRankr
   class Backlinks
-    SEARCH_ENGINES = [:google, :bing, :yahoo, :altavista, :alltheweb, :alexa]
+    attr_accessor :search_engines
     
-    SEARCH_ENGINE_URLS = {
-      :google    => "http://www.google.com/search?q=link%3A",
-      :bing      => "http://www.bing.com/search?q=link%3A",
-      :yahoo     => "http://siteexplorer.search.yahoo.com/search?p=",
-      :altavista => "http://www.altavista.com/web/results?q=link%3A",
-      :alltheweb => "http://www.alltheweb.com/search?q=link%3A",
-      :alexa     => "http://data.alexa.com/data?cli=10&dat=snbamz&url="
-    }
+    def initialize
+      @search_engines = self.class.constants
+      @search_engines.delete(:Backlink)
+    end
 
-    SEARCH_EGNINE_PATHS = {
-      :google    => "//div[@id='resultStats']/text()",
-      :bing      => "//span[@class='sb_count']/text()",
-      :yahoo     => "//ol[@id='results-tab']/li[2]/a/text()",
-      :altavista => "//a[@class='lbl']/text()",
-      :alltheweb => "//span[@class='ofSoMany']/text()",
-      :alexa     => "//linksin/@num"
-    }
-
-    def self.lookup(site, *search_engines)
-      search_engines = SEARCH_ENGINES if search_engines.empty?
+    def lookup(site, *engines)
+      engines = search_engines if engines.empty?
       
       backlinks = {}
-      search_engines.each do |engine|
-        next unless SEARCH_ENGINE_URLS[engine]
-        doc = Nokogiri::HTML(open(SEARCH_ENGINE_URLS[engine] + CGI.escape(site)))
-        count = doc.at(SEARCH_EGNINE_PATHS[engine]).to_s
-        count = count.gsub('1-10', '').gsub(/[a-zA-Z,\s\(\)]/, '')
-        backlinks[engine] = count.to_i
+      engines.each do |engine|
+        name, klass = engine.to_s.capitalize, self.class
+        
+        next unless klass.const_defined? name
+        
+        backlinks[engine.to_s.downcase.to_sym] = klass.const_get(name).new(site).backlinks
       end
       backlinks
     end
