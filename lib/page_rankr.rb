@@ -8,8 +8,11 @@ module PageRankr
     def backlinks(site, *search_engines)
       Backlinks.lookup site, *search_engines
     end
+    alias_method :backlink, :backlinks
 
     def ranks(site, *rank_trackers)
+      rank_trackers = [:google, :alexa] if rank_trackers.empty?
+      
       ranks = {}
       rank_trackers.each do |tracker|
         case tracker
@@ -21,5 +24,6 @@ module PageRankr
       end
       ranks
     end
+    alias_method :rank, :ranks
   end
 end

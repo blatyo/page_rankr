@@ -16,13 +16,28 @@ Backlinks are the result of doing a search with a query like "link:www.google.co
 
     PageRankr.backlinks('www.google.com', :google, :bing) #=> {:google=>161000, :bing=>208000000}
     PageRankr.backlinks('www.google.com', :yahoo)         #=> {:yahoo=>256300062}
+    
+If you don't specify a search engine, then all of them are used.
 
+    # this
+    PageRankr.backlinks('www.google.com') 
+        #=> {:google=>23000, :bing=>215000000, :yahoo=>250522337, :altavista=>137000000, :alltheweb=>74500000, :alexa=>727036} 
+    
+    # is equivalent to
+    PageRankr.backlinks('www.google.com', :google, :bing, :yahoo, :altavista, :alltheweb, :alexa)
+        #=> {:google=>23000, :bing=>215000000, :yahoo=>250522337, :altavista=>137000000, :alltheweb=>74500000, :alexa=>727036} 
+
+You can also use the alias `backlink` instead of `backlinks`.
 Valid search engines are: `:google, :bing, :yahoo, :altavista, :alltheweb, :alexa`.
 
 ### Ranks
 
     PageRankr.ranks('www.google.com', :alexa, :google) #=> {:alexa=>1, :google=>10}
+    
+    # this also gives the same result
+    PageRankr.ranks('www.google.com')                  #=> {:alexa=>1, :google=>10}
 
+You can also use the alias `rank` instead of `ranks`.
 There are two valid rank trackers supported: `:alexa, :google`.
 Alexa ranks are descending where 1 is the most popular. If a site has an alexa rank of 0 then the site is unranked.
 Google page ranks are in the range 0-10 where 10 is the most popular. If a site is unindexed then the rank will be -1.
@@ -49,8 +64,7 @@ Google page ranks are in the range 0-10 where 10 is the most popular. If a site 
 * <del>Get Google Page Rank</del>
   * <del>Implement Hashing Algorithm</del>
 * <del>Get Alexa ranking</del>
-* docs
-* tests (need to find way around counts changing)
+* Major refactorings (Version 2)
 
 ## Shout Out
 Gotta give credit where credits due!

@@ -4,6 +4,8 @@ require 'nokogiri'
 
 module PageRankr
   class Backlinks
+    SEARCH_ENGINES = [:google, :bing, :yahoo, :altavista, :alltheweb, :alexa]
+    
     SEARCH_ENGINE_URLS = {
       :google    => "http://www.google.com/search?q=link%3A",
       :bing      => "http://www.bing.com/search?q=link%3A",
@@ -23,6 +25,8 @@ module PageRankr
     }
 
     def self.lookup(site, *search_engines)
+      search_engines = SEARCH_ENGINES if search_engines.empty?
+      
       backlinks = {}
       search_engines.each do |engine|
         next unless SEARCH_ENGINE_URLS[engine]
