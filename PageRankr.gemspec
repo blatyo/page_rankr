@@ -5,11 +5,11 @@
 
 Gem::Specification.new do |s|
   s.name = %q{PageRankr}
-  s.version = "1.3.0"
+  s.version = "1.4.0"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Allen Madsen"]
-  s.date = %q{2010-07-05}
+  s.date = %q{2010-07-06}
   s.description = %q{Easy way to retrieve Google Page Rank, Alexa Rank, and backlink counts}
   s.email = %q{blatyo@gmail.com}
   s.extra_rdoc_files = [
@@ -37,7 +37,9 @@ Gem::Specification.new do |s|
      "lib/page_rankr/ranks.rb",
      "lib/page_rankr/ranks/alexa.rb",
      "lib/page_rankr/ranks/google.rb",
-     "lib/page_rankr/ranks/google/checksum.rb"
+     "lib/page_rankr/ranks/google/checksum.rb",
+     "lib/page_rankr/ranks/rank.rb",
+     "lib/page_rankr/tracker.rb"
   ]
   s.homepage = %q{http://github.com/blatyo/page_rankr}
   s.rdoc_options = ["--charset=UTF-8"]
