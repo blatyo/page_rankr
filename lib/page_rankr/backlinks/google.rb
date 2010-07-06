@@ -1,7 +1,7 @@
 require 'cgi'
 
 module PageRankr
-  class Backlinks
+  class Backlinks < Tracker
     class Google < Backlink
       def url(site)
         "http://www.google.com/search?q=link%3A#{CGI.escape(site)}"

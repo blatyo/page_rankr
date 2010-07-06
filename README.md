@@ -28,7 +28,9 @@ If you don't specify a search engine, then all of them are used.
         #=> {:google=>23000, :bing=>215000000, :yahoo=>250522337, :altavista=>137000000, :alltheweb=>74500000, :alexa=>727036} 
 
 You can also use the alias `backlink` instead of `backlinks`.
-Valid search engines are: `:google, :bing, :yahoo, :altavista, :alltheweb, :alexa`.
+Valid search engines are: `:google, :bing, :yahoo, :altavista, :alltheweb, :alexa`. To get this list you can do:
+
+    PageRankr.backlink_trackers #=> [:alexa, :alltheweb, :altavista, :bing, :google, :yahoo]
 
 ### Ranks
 
@@ -38,7 +40,10 @@ Valid search engines are: `:google, :bing, :yahoo, :altavista, :alltheweb, :alex
     PageRankr.ranks('www.google.com')                  #=> {:alexa=>1, :google=>10}
 
 You can also use the alias `rank` instead of `ranks`.
-There are two valid rank trackers supported: `:alexa, :google`.
+There are two valid rank trackers supported: `:alexa, :google`. To get this you can do:
+
+    PageRankr.rank_trackers #=> [:alexa, :google]
+
 Alexa ranks are descending where 1 is the most popular. If a site has an alexa rank of 0 then the site is unranked.
 Google page ranks are in the range 0-10 where 10 is the most popular. If a site is unindexed then the rank will be -1.
 

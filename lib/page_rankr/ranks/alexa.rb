@@ -3,10 +3,8 @@ require 'cgi'
 require 'nokogiri'
 
 module PageRankr
-  class Ranks
-    class Alexa
-      attr_reader :rank
-    
+  class Ranks < Tracker
+    class Alexa < Rank
       def initialize(site)
         @rank = Nokogiri::HTML(open(url(site))).search(xpath).to_s.to_i
       end

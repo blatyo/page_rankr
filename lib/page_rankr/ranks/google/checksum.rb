@@ -1,6 +1,6 @@
 module PageRankr
-  class Ranks
-    class Google
+  class Ranks < Tracker
+    class Google < Rank
       class Checksum
         class << self
           def generate(site)

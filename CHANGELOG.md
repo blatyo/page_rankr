@@ -1,5 +1,10 @@
 # Change Log
 
+## Version 1.4.0
+
+* Made it easier to get at the list of supported trackers.
+* Refactoring
+
 ## Version 1.3.0
 
 * Lots of refactoring. Should be much easier to extend and temporarily fix if needed.

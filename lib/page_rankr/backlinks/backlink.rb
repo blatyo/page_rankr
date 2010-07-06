@@ -2,9 +2,10 @@ require 'nokogiri'
 require 'open-uri'
 
 module PageRankr
-  class Backlinks
+  class Backlinks < Tracker
     class Backlink
       attr_reader :backlinks
+      alias_method :tracked, :backlinks
       
       def initialize(site)
         @backlinks = clean Nokogiri::HTML(open url(site)).at(xpath).to_s

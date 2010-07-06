@@ -1,7 +1,7 @@
 require 'cgi'
 
 module PageRankr
-  class Backlinks
+  class Backlinks < Tracker
     class Altavista < Backlink
       def url(site)
         "http://www.altavista.com/web/results?q=link%3A#{CGI.escape(site)}"

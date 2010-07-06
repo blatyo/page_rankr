@@ -2,10 +2,8 @@ require "open-uri"
 require File.join("page_rankr", "ranks", "google", "checksum")
 
 module PageRankr
-  class Ranks
-    class Google
-      attr_reader :rank
-    
+  class Ranks < Tracker
+    class Google < Rank
       def initialize(site)
         checksum = Checksum.generate(site)
         begin
