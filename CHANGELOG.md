@@ -1,5 +1,9 @@
 # Change Log
 
+## Version 1.4.1
+
+* Fixed bug where sites not tracked by google were returning nil instead of -1.
+
 ## Version 1.4.0
 
 * Made it easier to get at the list of supported trackers.
