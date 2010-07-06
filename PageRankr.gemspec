@@ -39,7 +39,8 @@ Gem::Specification.new do |s|
      "lib/page_rankr/ranks/google.rb",
      "lib/page_rankr/ranks/google/checksum.rb",
      "lib/page_rankr/ranks/rank.rb",
-     "lib/page_rankr/tracker.rb"
+     "lib/page_rankr/tracker.rb",
+     "run.rb"
   ]
   s.homepage = %q{http://github.com/blatyo/page_rankr}
   s.rdoc_options = ["--charset=UTF-8"]
