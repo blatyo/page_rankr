@@ -7,26 +7,12 @@ require File.join("page_rankr", "backlinks", "google")
 require File.join("page_rankr", "backlinks", "yahoo")
 
 module PageRankr
-  class Backlinks
-    attr_accessor :search_engines
+  class Backlinks < Tracker
+    alias_method :backlink_trackers, :site_trackers
     
     def initialize
-      @search_engines = self.class.constants
-      @search_engines.delete(:Backlink)
-    end
-
-    def lookup(site, *engines)
-      engines = search_engines if engines.empty?
-      
-      backlinks = {}
-      engines.each do |engine|
-        name, klass = engine.to_s.capitalize, self.class
-        
-        next unless klass.const_defined? name
-        
-        backlinks[engine.to_s.downcase.to_sym] = klass.const_get(name).new(site).backlinks
-      end
-      backlinks
+      super
+      @site_trackers.delete(:backlink)
     end
   end
 end
