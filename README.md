@@ -2,6 +2,11 @@
 
 Provides an easy way to retrieve Google Page Rank, Alexa Rank, and backlink counts.
 
+Check out a little [web app][1] I wrote up that uses it or look at the [source][2].
+
+[1]: http://isitpopular.heroku.com
+[2]: http://github.com/blatyo/is_it_popular
+
 ## Get it!
 
     gem install PageRankr
