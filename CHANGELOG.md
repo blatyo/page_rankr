@@ -1,5 +1,9 @@
 # Change Log
 
+## Version 1.4.3
+
+* Fixed google backlink lookup where odd invalid urls were getting high results. For example, "gaybuttfuckers". Thanks to Zach Elko.
+
 ## Version 1.4.2
 
 * Fixed bug where sites not tracked by google were returning nil instead of -1.
