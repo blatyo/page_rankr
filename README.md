@@ -112,7 +112,10 @@ Then, just make sure you require the class and PageRankr and whenver you call Pa
 * <del>Get Google Page Rank</del>
   * <del>Implement Hashing Algorithm</del>
 * <del>Get Alexa ranking</del>
-* Major refactorings (Version 2)
+* Use API's where possible
+
+## Contributors
+* [Druwerd](http://github.com/Druwerd) - Use Google Search API instead of scraping.
 
 ## Shout Out
 Gotta give credit where credits due!
