@@ -1,0 +1,17 @@
+PATH
+  remote: .
+  specs:
+    PageRankr (1.4.3)
+      nokogiri (>= 1.4.1)
+
+GEM
+  remote: http://rubygems.org/
+  specs:
+    nokogiri (1.4.3.1)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  PageRankr!
+  nokogiri (>= 1.4.1)

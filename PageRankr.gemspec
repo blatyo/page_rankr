@@ -45,7 +45,7 @@ Gem::Specification.new do |s|
   s.homepage = %q{http://github.com/blatyo/page_rankr}
   s.rdoc_options = ["--charset=UTF-8"]
   s.require_paths = ["lib"]
-  s.rubygems_version = %q{1.3.7}
+  s.rubygems_version = %q{1.5.0}
   s.summary = %q{Easy way to retrieve Google Page Rank, Alexa Rank, and backlink counts}
 
   if s.respond_to? :specification_version then
@@ -54,14 +54,11 @@ Gem::Specification.new do |s|
 
     if Gem::Version.new(Gem::VERSION) >= Gem::Version.new('1.2.0') then
       s.add_runtime_dependency(%q<nokogiri>, [">= 1.4.1"])
-      s.add_development_dependency(%q<yard>, [">= 0"])
     else
       s.add_dependency(%q<nokogiri>, [">= 1.4.1"])
-      s.add_dependency(%q<yard>, [">= 0"])
     end
   else
     s.add_dependency(%q<nokogiri>, [">= 1.4.1"])
-    s.add_dependency(%q<yard>, [">= 0"])
   end
 end
 
