@@ -16,32 +16,10 @@ Gem::Specification.new do |s|
     "LICENSE.md",
      "README.md"
   ]
-  s.files = [
-    ".document",
-     ".gitignore",
-     "CHANGELOG.md",
-     "LICENSE.md",
-     "PageRankr.gemspec",
-     "README.md",
-     "Rakefile",
-     "VERSION",
-     "lib/page_rankr.rb",
-     "lib/page_rankr/backlinks.rb",
-     "lib/page_rankr/backlinks/alexa.rb",
-     "lib/page_rankr/backlinks/alltheweb.rb",
-     "lib/page_rankr/backlinks/altavista.rb",
-     "lib/page_rankr/backlinks/backlink.rb",
-     "lib/page_rankr/backlinks/bing.rb",
-     "lib/page_rankr/backlinks/google.rb",
-     "lib/page_rankr/backlinks/yahoo.rb",
-     "lib/page_rankr/ranks.rb",
-     "lib/page_rankr/ranks/alexa.rb",
-     "lib/page_rankr/ranks/google.rb",
-     "lib/page_rankr/ranks/google/checksum.rb",
-     "lib/page_rankr/ranks/rank.rb",
-     "lib/page_rankr/tracker.rb",
-     "run.rb"
-  ]
+  
+  s.files `git ls-files`.split("\n")
+  s.test_files   = `git ls-files`.split("\n").map{|f| f =~ /^spec\/(.*)/ ? $1 : nil}.compact
+  s.executables  = `git ls-files`.split("\n").map{|f| f =~ /^bin\/(.*)/ ? $1 : nil}.compact
   s.homepage = %q{http://github.com/blatyo/page_rankr}
   s.rdoc_options = ["--charset=UTF-8"]
   s.require_paths = ["lib"]
