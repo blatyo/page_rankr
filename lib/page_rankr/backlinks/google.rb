@@ -12,9 +12,8 @@ module PageRankr
       end
       
       def url(site)
-        "http://ajax.googleapis.com/ajax/services/search/web?v=1.0&q=link%3A#{CGI.escape(site)}"
+        "http://ajax.googleapis.com/ajax/services/search/web?v=1.0&rsz=1&q=link%3A#{CGI.escape(site)}"
       end
-
     end
   end
 end
