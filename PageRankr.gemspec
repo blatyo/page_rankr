@@ -1,4 +1,4 @@
-File.expand_path("../lib/page_rankr/version", __FILE__)
+require File.expand_path("../lib/page_rankr/version", __FILE__)
 
 Gem::Specification.new do |s|
   s.name = %q{PageRankr}
@@ -14,7 +14,7 @@ Gem::Specification.new do |s|
      "README.md"
   ]
   
-  s.files `git ls-files`.split("\n")
+  s.files        = `git ls-files`.split("\n")
   s.test_files   = `git ls-files`.split("\n").map{|f| f =~ /^spec\/(.*)/ ? $1 : nil}.compact
   s.executables  = `git ls-files`.split("\n").map{|f| f =~ /^bin\/(.*)/ ? $1 : nil}.compact
   s.homepage = %q{http://github.com/blatyo/page_rankr}
