@@ -1,10 +1,10 @@
-require File.join("page_rankr", "backlinks", "backlink")
-require File.join("page_rankr", "backlinks", "alexa")
-require File.join("page_rankr", "backlinks", "alltheweb")
-require File.join("page_rankr", "backlinks", "altavista")
-require File.join("page_rankr", "backlinks", "bing")
-require File.join("page_rankr", "backlinks", "google")
-require File.join("page_rankr", "backlinks", "yahoo")
+require File.join(File.dirname(__FILE__), "backlinks", "backlink")
+require File.join(File.dirname(__FILE__), "backlinks", "alexa")
+require File.join(File.dirname(__FILE__), "backlinks", "alltheweb")
+require File.join(File.dirname(__FILE__), "backlinks", "altavista")
+require File.join(File.dirname(__FILE__), "backlinks", "bing")
+require File.join(File.dirname(__FILE__), "backlinks", "google")
+require File.join(File.dirname(__FILE__), "backlinks", "yahoo")
 
 module PageRankr
   class Backlinks < Tracker

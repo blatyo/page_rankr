@@ -1,6 +1,6 @@
-require File.join("page_rankr", "ranks", "rank")
-require File.join("page_rankr", "ranks", "alexa")
-require File.join("page_rankr", "ranks", "google")
+require File.join(File.dirname(__FILE__), "ranks", "rank")
+require File.join(File.dirname(__FILE__), "ranks", "alexa")
+require File.join(File.dirname(__FILE__), "ranks", "google")
 
 module PageRankr
   class Ranks < Tracker

@@ -1,5 +1,5 @@
 require "open-uri"
-require File.join("page_rankr", "ranks", "google", "checksum")
+require File.join(File.dirname(__FILE__), "google", "checksum")
 
 module PageRankr
   class Ranks < Tracker

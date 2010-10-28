@@ -1,6 +1,6 @@
-require File.join("page_rankr", "tracker")
-require File.join("page_rankr", "backlinks")
-require File.join("page_rankr", "ranks")
+require File.join(File.dirname(__FILE__), "page_rankr", "tracker")
+require File.join(File.dirname(__FILE__), "page_rankr", "backlinks")
+require File.join(File.dirname(__FILE__), "page_rankr", "ranks")
 
 module PageRankr
   class << self
