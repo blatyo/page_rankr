@@ -6,7 +6,6 @@ Gem::Specification.new do |s|
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Allen Madsen"]
-  s.date = %q{2010-07-07}
   s.description = %q{Easy way to retrieve Google Page Rank, Alexa Rank, and backlink counts}
   s.email = %q{blatyo@gmail.com}
   s.extra_rdoc_files = [
