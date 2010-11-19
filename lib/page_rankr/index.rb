@@ -1,14 +1,13 @@
-require 'rubygems'
 require 'nokogiri'
 require 'open-uri'
 
 module PageRankr
-  class Backlink
-    attr_reader :backlinks
-    alias_method :tracked, :backlinks
+  class Index
+    attr_reader :indexes
+    alias_method :tracked, :indexes
     
     def initialize(site)
-      @backlinks = clean Nokogiri::HTML(open url(site)).at(xpath).to_s
+      @indexes = clean Nokogiri::HTML(open url(site)).at(xpath).to_s
     end
     
     def clean(backlink_count)

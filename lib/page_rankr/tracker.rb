@@ -14,7 +14,7 @@ module PageRankr
         name, klass = tracker.to_s.capitalize, self.class
         
         next unless klass.const_defined? name
-        
+
         tracked[tracker] = klass.const_get(name).new(site).tracked
       end
       tracked
