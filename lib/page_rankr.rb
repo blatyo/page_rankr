@@ -15,8 +15,8 @@ module PageRankr
     end
     alias_method :rank, :ranks
     
-    def indexes(site, *rank_trackers)
-      Indexes.new.lookup site, *rank_trackers
+    def indexes(site, *index_trackers)
+      Indexes.new.lookup site, *index_trackers
     end
     alias_method :index, :indexes
     
