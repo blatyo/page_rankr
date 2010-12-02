@@ -6,7 +6,7 @@ module PageRankr
   class Ranks < Tracker
     class Compete < Rank
       def initialize(site)
-        @rank = Nokogiri::HTML(open(url(site))).search(xpath).to_s.to_i
+        @rank = Nokogiri::HTML(open(url(site))).search(xpath).to_s.gsub(',', '').to_i
       end
       
       def xpath

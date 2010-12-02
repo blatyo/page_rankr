@@ -23,7 +23,7 @@ class TestPageRankr < Test::Unit::TestCase
   
   context "ranks" do
     setup do
-      @ranks = PageRankr.ranks("google.com")
+      @ranks = PageRankr.ranks("absurdlycool.com")
     end
     
     should "respond with compete rank" do
