@@ -1,4 +1,16 @@
 # Change Log
+## Version 1.6
+
+* Added ability to get global alexa rank instead of just us alexa rank.
+
+## Version 1.5.1
+
+* Added json gem requirement for rubies < 1.9
+
+## Version 1.5.0
+
+* Use googles api to retrieve backlinks.
+* Changed workflow for building gems.
 
 ## Version 1.4.3
 
