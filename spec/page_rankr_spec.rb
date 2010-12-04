@@ -19,22 +19,43 @@ describe PageRankr do
   end
 
   describe "#ranks" do
-    subject{ PageRankr.ranks("google.com") }
+    describe "success" do
+      subject{ PageRankr.ranks("google.com") }
   
-    it{ should have_key(:alexa) }
-    it{ should have_key(:google) }
+      it{ should have_key(:alexa) }
+      it{ should have_key(:google) }
     
-    let(:alexa_rank) { subject[:alexa] }
-    it{ alexa_rank.should have_key(:us) }
-    it{ alexa_rank.should have_key(:global) }
+      let(:alexa_rank) { subject[:alexa] }
+      it{ alexa_rank.should have_key(:us) }
+      it{ alexa_rank.should have_key(:global) }
     
-    let(:alexa_us_rank) { alexa_rank[:us] }
-    it{ alexa_us_rank.should >= 1 }
-    let(:alexa_global_rank) { alexa_rank[:global] }
-    it{ alexa_global_rank.should >= 1 }
+      let(:alexa_us_rank) { alexa_rank[:us] }
+      it{ alexa_us_rank.should >= 1 }
+      let(:alexa_global_rank) { alexa_rank[:global] }
+      it{ alexa_global_rank.should >= 1 }
     
-    let(:google_rank) { subject[:google] }
-    it{ google_rank.should be_in(1..10)}
+      let(:google_rank) { subject[:google] }
+      it{ google_rank.should be_in(0..10)}
+    end
+    
+    describe "failure" do
+      subject{ PageRankr.ranks("please-dont-register-a-site-that-breaks-this-test.com") }
+      
+      it{ should have_key(:alexa) }
+      it{ should have_key(:google) }
+      
+      let(:alexa_rank) { subject[:alexa] }
+      it{ alexa_rank.should have_key(:us) }
+      it{ alexa_rank.should have_key(:global) }
+    
+      let(:alexa_us_rank) { alexa_rank[:us] }
+      it{ alexa_us_rank.should == 0 }
+      let(:alexa_global_rank) { alexa_rank[:global] }
+      it{ alexa_global_rank.should == 0 }
+    
+      let(:google_rank) { subject[:google] }
+      it{ google_rank.should == -1 }
+    end
   end
   
   describe "#backlink_trackers" do
@@ -49,11 +70,22 @@ describe PageRankr do
   end
   
   describe "#backlinks" do
-    subject{ PageRankr.backlinks("google.com") }
+    describe "success" do
+      subject{ PageRankr.backlinks("google.com") }
     
-    PageRankr.backlink_trackers.each do |tracker|
-      it{ should have_key(tracker) }
-      it{ subject[tracker].should >= 0 }
+      PageRankr.backlink_trackers.each do |tracker|
+        it{ should have_key(tracker) }
+        it{ subject[tracker].should >= 0 }
+      end
+    end
+    
+    describe "failure" do
+      subject{ PageRankr.backlinks("please-dont-register-a-site-that-breaks-this-test.com") }
+      
+      PageRankr.backlink_trackers.each do |tracker|
+        it{ should have_key(tracker) }
+        it{ subject[tracker].should == 0 }
+      end
     end
   end
 end
