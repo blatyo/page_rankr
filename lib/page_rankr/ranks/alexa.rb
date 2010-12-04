@@ -6,11 +6,16 @@ module PageRankr
   class Ranks < Tracker
     class Alexa < Rank
       def initialize(site)
-        @rank = Nokogiri::HTML(open(url(site))).search(xpath).to_s.to_i
+        @rank = {}
+        xpath.each_key do |key|
+          @rank[key] = Nokogiri::HTML(open(url(site))).search(xpath[key]).to_s.to_i
+        end
+        @rank
       end
       
       def xpath
-        "//reach/@rank"
+        { :us     => "//reach/@rank", 
+          :global => "//popularity/@text" }
       end
       
       def url(site)
