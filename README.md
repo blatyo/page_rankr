@@ -10,7 +10,7 @@ Check out a little [web app][1] I wrote up that uses it or look at the [source][
 ## Get it!
 
     gem install PageRankr
-    
+
 ## Use it!
 
     require 'page_rankr'
@@ -21,16 +21,16 @@ Backlinks are the result of doing a search with a query like "link:www.google.co
 
     PageRankr.backlinks('www.google.com', :google, :bing) #=> {:google=>161000, :bing=>208000000}
     PageRankr.backlinks('www.google.com', :yahoo)         #=> {:yahoo=>256300062}
-    
+
 If you don't specify a search engine, then all of them are used.
 
     # this
-    PageRankr.backlinks('www.google.com') 
-        #=> {:google=>23000, :bing=>215000000, :yahoo=>250522337, :altavista=>137000000, :alltheweb=>74500000, :alexa=>727036} 
-    
+    PageRankr.backlinks('www.google.com')
+        #=> {:google=>23000, :bing=>215000000, :yahoo=>250522337, :altavista=>137000000, :alltheweb=>74500000, :alexa=>727036}
+
     # is equivalent to
     PageRankr.backlinks('www.google.com', :google, :bing, :yahoo, :altavista, :alltheweb, :alexa)
-        #=> {:google=>23000, :bing=>215000000, :yahoo=>250522337, :altavista=>137000000, :alltheweb=>74500000, :alexa=>727036} 
+        #=> {:google=>23000, :bing=>215000000, :yahoo=>250522337, :altavista=>137000000, :alltheweb=>74500000, :alexa=>727036}
 
 You can also use the alias `backlink` instead of `backlinks`.
 Valid search engines are: `:google, :bing, :yahoo, :altavista, :alltheweb, :alexa`. To get this list you can do:
@@ -39,10 +39,10 @@ Valid search engines are: `:google, :bing, :yahoo, :altavista, :alltheweb, :alex
 
 ### Ranks
 
-    PageRankr.ranks('www.google.com', :alexa, :google) #=> {:alexa=>1, :google=>10}
-    
+    PageRankr.ranks('www.google.com', :alexa, :google) #=> {:alexa=>{:us=>1, :global=>1}, :google=>10}
+
     # this also gives the same result
-    PageRankr.ranks('www.google.com')                  #=> {:alexa=>1, :google=>10}
+    PageRankr.ranks('www.google.com')                  #=> {:alexa=>{:us=>1, :global=>1}, :google=>10}
 
 You can also use the alias `rank` instead of `ranks`.
 There are two valid rank trackers supported: `:alexa, :google`. To get this you can do:
@@ -76,11 +76,11 @@ If you ever come across a site that provides a rank or backlinks you can hook th
           def url(site)
             "http://example.com/?q=#{site}"
           end
-          
+
           def xpath
             "//backlinks/text()"
           end
-          
+
           def clean(backlink_count)
             #do some of my own cleaning
             super(backlink_count) # strips letters, commas, and a few other nasty things and converts it to an integer
@@ -88,11 +88,11 @@ If you ever come across a site that provides a rank or backlinks you can hook th
         end
       end
     end
-    
-Then, just make sure you require the class and PageRankr and whenver you call PageRankr.backlinks it'll be able to use your class.
+
+Then, just make sure you require the class and PageRankr and whenever you call PageRankr.backlinks it'll be able to use your class.
 
 ## Note on Patches/Pull Requests
- 
+
 * Fork the project.
 * Make your feature addition or bug fix.
 * Add tests for it. This is important so I don't break it in a
@@ -101,18 +101,13 @@ Then, just make sure you require the class and PageRankr and whenver you call Pa
   (if you want to have your own version, that is fine but bump version in a commit by itself I can ignore when I pull)
 * Send me a pull request. Bonus points for topic branches.
 
-## TODO
-* <del>Get backlink counts for:</del>
-  * <del>Google</del>
-  * <del>Bing</del>
-  * <del>Yahoo!</del>
-  * <del>AltaVista</del>
-  * <del>AllTheWeb</del>
-  * <del>Alexa</del>
-* <del>Get Google Page Rank</del>
-  * <del>Implement Hashing Algorithm</del>
-* <del>Get Alexa ranking</del>
+## TODO Version 2
 * Use API's where possible
+* Use [Typhoeus](https://github.com/pauldix/typhoeus) to improve speed when requesting multiple ranks and/or backlinks
+* Configuration
+    * API keys
+    * Alexa rank options
+* Add compete rank tracker
 
 ## Contributors
 * [Druwerd](http://github.com/Druwerd) - Use Google Search API instead of scraping.
@@ -120,9 +115,9 @@ Then, just make sure you require the class and PageRankr and whenver you call Pa
 ## Shout Out
 Gotta give credit where credits due!
 
-* http://github.com/alexmipego/PageRankSharp
-* http://snipplr.com/view/18329/google-page-range-lookup/
-* http://www.sitetoolcenter.com/free-website-scripts/ajax-pr-checker.php 
+* [http://github.com/alexmipego/PageRankSharp](http://github.com/alexmipego/PageRankSharp)
+* [http://snipplr.com/view/18329/google-page-range-lookup/](http://snipplr.com/view/18329/google-page-range-lookup/)
+* [http://www.sitetoolcenter.com/free-website-scripts/ajax-pr-checker.php](http://www.sitetoolcenter.com/free-website-scripts/ajax-pr-checker.php)
 
 ## Copyright
 
