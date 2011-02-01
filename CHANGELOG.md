@@ -1,6 +1,6 @@
 # Change Log
 ## Version 1.7.0
-* Merged in additions from iteration labs to add compete tracker and page indexes.
+* Merged in additions from iteration labs to add compete rank tracker and domain indexes.
 
 ## Version 1.6.0
 
