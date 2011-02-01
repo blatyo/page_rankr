@@ -7,9 +7,8 @@ module PageRankr
       include Rank
       
       def initialize(site)
-        checksum = Checksum.generate(site)
         @rank = begin
-          open(url(site, checksum)) {|io| clean(io.read.scan(regex)[0][0])}
+          open(url(site)) {|io| clean(io.read.scan(regex)[0][0])}
         rescue
           -1
         end
@@ -19,8 +18,9 @@ module PageRankr
         /Rank_\d+:\d+:(\d+)/
       end
 
-      def url(site, checksum)
-        "http://toolbarqueries.google.com/search?client=navclient-auto&ch=#{checksum}&features=Rank&q=info:#{site}"
+      def url(site)
+        checksum = Checksum.generate(site.to_s)
+        "http://toolbarqueries.google.com/search?client=navclient-auto&ch=#{checksum}&features=Rank&q=info:#{site.to_s}"
       end
     end
   end

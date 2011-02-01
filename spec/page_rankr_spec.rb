@@ -22,7 +22,7 @@ describe PageRankr do
 
   describe "#ranks" do
     describe "success" do
-      subject{ PageRankr.ranks("google.com") }
+      subject{ PageRankr.ranks("www.google.com") }
   
       it{ should have_key(:alexa_us) }
       it{ should have_key(:alexa_global) }
@@ -63,7 +63,7 @@ describe PageRankr do
   
   describe "#backlinks" do
     describe "success" do
-      subject{ PageRankr.backlinks("google.com") }
+      subject{ PageRankr.backlinks("www.google.com") }
     
       PageRankr.backlink_trackers.each do |tracker|
         it{ should have_key(tracker) }
@@ -90,7 +90,7 @@ describe PageRankr do
   
   describe "#indexes" do
     describe "success" do
-      subject{ PageRankr.indexes("google.com") }
+      subject{ PageRankr.indexes("www.google.com") }
       
       PageRankr.index_trackers.each do |tracker|
         it{ should have_key(tracker) }
