@@ -3,7 +3,9 @@ require File.join(File.dirname(__FILE__), "google", "checksum")
 
 module PageRankr
   class Ranks
-    class Google < Rank
+    class Google
+      include Rank
+      
       def initialize(site)
         checksum = Checksum.generate(site)
         @rank = begin

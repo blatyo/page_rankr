@@ -3,7 +3,8 @@ require 'json'
 
 module PageRankr
   class Backlinks
-    class Google < Backlink
+    class Google
+      include Backlink
       
       # overloaded to use Google's AJAX search API
       # http://code.google.com/apis/ajaxsearch/documentation/

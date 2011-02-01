@@ -3,7 +3,7 @@ require 'nokogiri'
 require 'open-uri'
 
 module PageRankr
-  class Backlink
+  module Backlink
     attr_reader :backlinks
     alias_method :tracked, :backlinks
     

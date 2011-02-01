@@ -4,7 +4,9 @@ require 'nokogiri'
 
 module PageRankr
   class Ranks
-    class AlexaUs < Rank
+    class AlexaUs
+      include Rank
+      
       def xpath
         "//reach/@rank"
       end

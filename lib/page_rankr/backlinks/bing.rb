@@ -2,7 +2,8 @@ require 'cgi'
 
 module PageRankr
   class Backlinks
-    class Bing < Backlink
+    class Bing
+      include Backlink
       def url(site)
         "http://www.bing.com/search?q=link%3A#{CGI.escape(site)}"
       end

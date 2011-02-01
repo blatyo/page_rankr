@@ -3,7 +3,8 @@ require 'json'
 
 module PageRankr
   class Indexes
-    class Google < Index
+    class Google
+      include Index
       
       # overloaded to use Google's AJAX search API
       # http://code.google.com/apis/ajaxsearch/documentation/

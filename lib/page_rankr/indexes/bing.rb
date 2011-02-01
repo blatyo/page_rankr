@@ -2,7 +2,9 @@ require 'cgi'
 
 module PageRankr
   class Indexes
-    class Bing < Index
+    class Bing
+      include Index
+      
       def url(site)
         "http://www.bing.com/search?q=site%3A#{CGI.escape(site)}"
       end
