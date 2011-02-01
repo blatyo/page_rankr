@@ -7,6 +7,8 @@ module PageRankr
     class Compete < Rank
       def initialize(site)
         @rank = Nokogiri::HTML(open(url(site))).search(xpath).to_s.gsub(',', '').to_i
+      rescue
+        @rank = 0 #compete only accepts urls without http:// and www, will be fixed in 2.0
       end
       
       def xpath
