@@ -1,7 +1,7 @@
 require 'cgi'
 
 module PageRankr
-  class Indexes < Tracker
+  class Indexes
     class Bing < Index
       def url(site)
         "http://www.bing.com/search?q=site%3A#{CGI.escape(site)}"

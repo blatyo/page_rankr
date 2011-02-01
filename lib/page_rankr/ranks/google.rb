@@ -2,7 +2,7 @@ require "open-uri"
 require File.join(File.dirname(__FILE__), "google", "checksum")
 
 module PageRankr
-  class Ranks < Tracker
+  class Ranks
     class Google < Rank
       def initialize(site)
         checksum = Checksum.generate(site)

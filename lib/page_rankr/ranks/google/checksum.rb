@@ -1,5 +1,5 @@
 module PageRankr
-  class Ranks < Tracker
+  class Ranks
     class Google < Rank
       class Checksum
         class << self
