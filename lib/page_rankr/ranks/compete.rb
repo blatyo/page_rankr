@@ -3,7 +3,7 @@ require 'cgi'
 require 'nokogiri'
 
 module PageRankr
-  class Ranks < Tracker
+  class Ranks
     class Compete < Rank
       def xpath
         "//div[@id='rank']/div[@class='number value']/text()"

@@ -5,7 +5,9 @@ require File.join(File.dirname(__FILE__), "ranks", "google")
 require File.join(File.dirname(__FILE__), "ranks", "compete")
 
 module PageRankr
-  class Ranks < Tracker
+  class Ranks
+    include Tracker
+    
     alias_method :rank_trackers, :site_trackers
   end
 end

@@ -3,7 +3,7 @@ require 'cgi'
 require 'nokogiri'
 
 module PageRankr
-  class Ranks < Tracker
+  class Ranks
     class AlexaUs < Rank
       def xpath
         "//reach/@rank"

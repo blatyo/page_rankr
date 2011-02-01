@@ -2,7 +2,7 @@ require 'cgi'
 require 'json'
 
 module PageRankr
-  class Backlinks < Tracker
+  class Backlinks
     class Google < Backlink
       
       # overloaded to use Google's AJAX search API

@@ -1,5 +1,5 @@
 module PageRankr
-  class Tracker
+  module Tracker
     attr_accessor :site_trackers
     
     def initialize

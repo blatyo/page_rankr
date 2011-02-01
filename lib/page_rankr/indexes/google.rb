@@ -2,7 +2,7 @@ require 'cgi'
 require 'json'
 
 module PageRankr
-  class Indexes < Tracker
+  class Indexes
     class Google < Index
       
       # overloaded to use Google's AJAX search API
