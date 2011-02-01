@@ -43,10 +43,10 @@ describe PageRankr do
       it{ should have_key(:google) }
       it{ should have_key(:compete) }
     
-      it{ subject[:alexa_us].should == 0 }
-      it{ subject[:alexa_global].should == 0 }
-      it{ subject[:compete].should == 0 }
-      it{ subject[:google].should == -1 }
+      it{ subject[:alexa_us].should be_nil }
+      it{ subject[:alexa_global].should be_nil }
+      it{ subject[:compete].should be_nil }
+      it{ subject[:google].should be_nil }
     end
   end
   
@@ -54,8 +54,6 @@ describe PageRankr do
     subject{ PageRankr.backlink_trackers }
     
     it{ should include(:alexa) }
-    it{ should include(:all_the_web) }
-    it{ should include(:altavista) }
     it{ should include(:bing) }
     it{ should include(:google) }
     it{ should include(:yahoo) }
@@ -67,7 +65,7 @@ describe PageRankr do
     
       PageRankr.backlink_trackers.each do |tracker|
         it{ should have_key(tracker) }
-        it{ subject[tracker].should >= 0 }
+        it{ subject[tracker].should > 0 }
       end
     end
     
@@ -76,7 +74,7 @@ describe PageRankr do
       
       PageRankr.backlink_trackers.each do |tracker|
         it{ should have_key(tracker) }
-        it{ subject[tracker].should == 0 }
+        it{ subject[tracker].should be_nil }
       end
     end
   end
@@ -94,7 +92,7 @@ describe PageRankr do
       
       PageRankr.index_trackers.each do |tracker|
         it{ should have_key(tracker) }
-        it{ subject[tracker].should >= 0 }
+        it{ subject[tracker].should > 0 }
       end
     end
     
@@ -103,7 +101,7 @@ describe PageRankr do
       
       PageRankr.index_trackers.each do |tracker|
         it{ should have_key(tracker) }
-        it{ subject[tracker].should == 0 }
+        it{ subject[tracker].should be_nil }
       end
     end
   end
