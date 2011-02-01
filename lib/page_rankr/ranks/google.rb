@@ -7,7 +7,7 @@ module PageRankr
       def initialize(site)
         checksum = Checksum.generate(site)
         @rank = begin
-          open(url(site, checksum)) {|io| io.read.scan(regex)[0][0].to_i}
+          open(url(site, checksum)) {|io| clean(io.read.scan(regex)[0][0])}
         rescue
           -1
         end
