@@ -5,7 +5,7 @@ Provides an easy way to retrieve Google Page Rank, Alexa Rank, and backlink coun
 Check out a little [web app][1] I wrote up that uses it or look at the [source][2].
 
 [1]: http://isitpopular.heroku.com
-[2]: http://github.com/blatyo/is_it_popular
+[2]: https://github.com/blatyo/is_it_popular
 
 ## Get it!
 
@@ -130,14 +130,16 @@ Then, just make sure you require the class and PageRankr and whenever you call P
     * Optionally use API keys
 
 ## Contributors
-* [Druwerd](http://github.com/Druwerd) - Use Google Search API instead of scraping.
+* [Druwerd](https://github.com/Druwerd) - Use Google Search API instead of scraping.
+* [Iteration Labs](https://github.com/iterationlabs) - Compete rank tracker and domain indexes.
 
 ## Shout Out
 Gotta give credit where credits due!
 
-* [http://github.com/alexmipego/PageRankSharp](http://github.com/alexmipego/PageRankSharp)
-* [http://snipplr.com/view/18329/google-page-range-lookup/](http://snipplr.com/view/18329/google-page-range-lookup/)
-* [http://www.sitetoolcenter.com/free-website-scripts/ajax-pr-checker.php](http://www.sitetoolcenter.com/free-website-scripts/ajax-pr-checker.php)
+Original inspiration from:
+* [PageRankSharp](https://github.com/alexmipego/PageRankSharp)
+* [Google Page Range Lookup/](http://snipplr.com/view/18329/google-page-range-lookup/)
+* [AJAX PR Checker](http://www.sitetoolcenter.com/free-website-scripts/ajax-pr-checker.php)
 
 ## Copyright
 
