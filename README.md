@@ -61,15 +61,17 @@ Valid search engines are: `:google, :bing`. To get this list you can do:
 
 ### Ranks
 
-    PageRankr.ranks('www.google.com', :alexa, :google) #=> {:alexa=>{:us=>1, :global=>1}, :google=>10}
+__Note: Compete only accepts urls in the form of "google.com" and not "www.google.com". If the latter is given, a value of 0 will be returned. This will be fixed in version 2 of PageRankr.__
+
+    PageRankr.ranks('google.com', :alexa, :google, :compete) #=> {:alexa=>{:us=>1, :global=>1}, :google=>10, :compete=>1}
 
     # this also gives the same result
-    PageRankr.ranks('www.google.com')                  #=> {:alexa=>{:us=>1, :global=>1}, :google=>10}
+    PageRankr.ranks('google.com')                            #=> {:alexa=>{:us=>1, :global=>1}, :google=>10, :compete=>1}
 
 You can also use the alias `rank` instead of `ranks`.
-There are two valid rank trackers supported: `:alexa, :google`. To get this you can do:
+There are three valid rank trackers supported: `:alexa, :google, :compete`. To get this you can do:
 
-    PageRankr.rank_trackers #=> [:alexa, :google]
+    PageRankr.rank_trackers #=> [:alexa, :google, :compete]
 
 Alexa ranks are descending where 1 is the most popular. If a site has an alexa rank of 0 then the site is unranked.
 Google page ranks are in the range 0-10 where 10 is the most popular. If a site is unindexed then the rank will be -1.

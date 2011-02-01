@@ -1,4 +1,7 @@
 # Change Log
+## Version 1.7.1
+* Catches exception thrown when doing compete rank lookup with url not in the form "google.com".
+
 ## Version 1.7.0
 * Merged in additions from iteration labs to add compete rank tracker and domain indexes.
 
