@@ -7,7 +7,8 @@ module PageRankr
     alias_method :tracked, :indexes
     
     def initialize(site)
-      @indexes = clean Nokogiri::HTML(open url(site)).at(xpath).to_s
+      html = Nokogiri::HTML(open url(site))
+      @indexes = clean(html.at(xpath).to_s)
     end
     
     def clean(backlink_count)

@@ -5,7 +5,7 @@ module PageRankr
     class Bing
       include Backlink
       def url(site)
-        "http://www.bing.com/search?q=link%3A#{CGI.escape(site)}"
+        "http://www.bing.com/search?q=link%3A#{CGI.escape(site.to_s)}"
       end
       
       def xpath

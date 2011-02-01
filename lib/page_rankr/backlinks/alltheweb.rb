@@ -6,7 +6,7 @@ module PageRankr
       include Backlink
       
       def url(site)
-        "http://www.alltheweb.com/search?q=link%3A#{CGI.escape(site)}"
+        "http://www.alltheweb.com/search?q=link%3A#{CGI.escape(site.to_s)}"
       end
       
       def xpath

@@ -6,7 +6,7 @@ module PageRankr
       include Backlink
       
       def url(site)
-        "http://siteexplorer.search.yahoo.com/search?p=#{CGI.escape(site)}"
+        "http://siteexplorer.search.yahoo.com/search?p=#{CGI.escape(site.to_s)}"
       end
       
       def xpath

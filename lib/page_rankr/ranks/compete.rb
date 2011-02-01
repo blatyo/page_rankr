@@ -12,7 +12,7 @@ module PageRankr
       end
       
       def url(site)
-        "http://siteanalytics.compete.com/#{CGI.escape(site)}/"
+        "http://siteanalytics.compete.com/#{CGI.escape(site.domain)}/"
       end
       
       def clean(rank)

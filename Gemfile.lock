@@ -4,6 +4,7 @@ PATH
     PageRankr (1.7.0)
       json (>= 1.4.6)
       nokogiri (>= 1.4.1)
+      public_suffix_service (~> 0.8.1)
 
 GEM
   remote: http://rubygems.org/
@@ -15,6 +16,7 @@ GEM
       ruby-progressbar (~> 0.0.9)
     json (1.5.1)
     nokogiri (1.4.4)
+    public_suffix_service (0.8.1)
     rspec (2.1.0)
       rspec-core (~> 2.1.0)
       rspec-expectations (~> 2.1.0)

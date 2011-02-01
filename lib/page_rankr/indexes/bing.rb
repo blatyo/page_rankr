@@ -6,7 +6,7 @@ module PageRankr
       include Index
       
       def url(site)
-        "http://www.bing.com/search?q=site%3A#{CGI.escape(site)}"
+        "http://www.bing.com/search?q=site%3A#{CGI.escape(site.to_s)}"
       end
       
       def xpath
