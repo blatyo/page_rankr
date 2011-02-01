@@ -1,5 +1,8 @@
 # Change Log
-## Version 1.6
+## Version 1.7.0
+* Merged in additions from iteration labs to add compete tracker and page indexes.
+
+## Version 1.6.0
 
 * Added ability to get global alexa rank instead of just us alexa rank.
 

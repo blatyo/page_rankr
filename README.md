@@ -37,6 +37,28 @@ Valid search engines are: `:google, :bing, :yahoo, :altavista, :alltheweb, :alex
 
     PageRankr.backlink_trackers #=> [:alexa, :alltheweb, :altavista, :bing, :google, :yahoo]
 
+### Indexes
+
+Indexes are the result of doing a search with a query like "site:www.google.com". The number of returned results indicates how many pages of a domain are indexed by a particular search engine.
+
+    PageRankr.indexes('www.google.com', :google)       #=> {:google=>4860000}
+    PageRankr.indexes('www.google.com', :bing)         #=> {:bing=>2120000}
+
+If you don't specify a search engine, then all of them are used.
+
+    # this
+    PageRankr.indexes('www.google.com')
+        #=> {:bing=>2120000, :google=>4860000}
+
+    # is equivalent to
+    PageRankr.indexes('www.google.com', :google, :bing)
+        #=> {:bing=>2120000, :google=>4860000}
+
+You can also use the alias `index` instead of `indexes`.
+Valid search engines are: `:google, :bing`. To get this list you can do:
+
+    PageRankr.index_trackers #=> [:alexa, :alltheweb, :altavista, :bing, :google, :yahoo]
+
 ### Ranks
 
     PageRankr.ranks('www.google.com', :alexa, :google) #=> {:alexa=>{:us=>1, :global=>1}, :google=>10}
@@ -57,7 +79,7 @@ Google page ranks are in the range 0-10 where 10 is the most popular. If a site 
 If you ever find something is broken it should now be much easier to fix it with version >= 1.3.0. For example, if the xpath used to lookup a backlink is broken, just override the method for that class to provide the correct xpath.
 
     module PageRankr
-      class Backlinks
+      class Backlinks < Tracker
         class Google < Backlink
           def xpath
             "my new awesome xpath"
@@ -71,7 +93,7 @@ If you ever find something is broken it should now be much easier to fix it with
 If you ever come across a site that provides a rank or backlinks you can hook that class up to automatically be use with PageRankr.
 
     module PageRankr
-      class Backlinks
+      class Backlinks < Tracker
         class Foo < Backlink
           def url(site)
             "http://example.com/?q=#{site}"
@@ -105,9 +127,7 @@ Then, just make sure you require the class and PageRankr and whenever you call P
 * Use API's where possible
 * Use [Typhoeus](https://github.com/pauldix/typhoeus) to improve speed when requesting multiple ranks and/or backlinks
 * Configuration
-    * API keys
-    * Alexa rank options
-* Add compete rank tracker
+    * Optionally use API keys
 
 ## Contributors
 * [Druwerd](http://github.com/Druwerd) - Use Google Search API instead of scraping.

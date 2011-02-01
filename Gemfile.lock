@@ -13,8 +13,8 @@ GEM
       rspec (~> 2.0)
       rspec-instafail (~> 0.1.4)
       ruby-progressbar (~> 0.0.9)
-    json (1.4.6)
-    nokogiri (1.4.3.1)
+    json (1.5.1)
+    nokogiri (1.4.4)
     rspec (2.1.0)
       rspec-core (~> 2.1.0)
       rspec-expectations (~> 2.1.0)
@@ -33,6 +33,4 @@ DEPENDENCIES
   PageRankr!
   bundler (>= 1.0.0)
   fuubar (>= 0.0.1)
-  json (>= 1.4.6)
-  nokogiri (>= 1.4.1)
   rspec (~> 2.1.0)

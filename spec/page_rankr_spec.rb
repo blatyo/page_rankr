@@ -88,4 +88,31 @@ describe PageRankr do
       end
     end
   end
+  
+  describe "#index_trackers" do
+    subject{ PageRankr.index_trackers }
+    
+    it{ should include(:google) }
+    it{ should include(:bing) }
+  end
+  
+  describe "#indexes" do
+    describe "success" do
+      subject{ PageRankr.indexes("google.com") }
+      
+      PageRankr.index_trackers.each do |tracker|
+        it{ should have_key(tracker) }
+        it{ subject[tracker].should >= 0 }
+      end
+    end
+    
+    describe "failure" do
+      subject{ PageRankr.indexes("please-dont-register-a-site-that-breaks-this-test.com") }
+      
+      PageRankr.index_trackers.each do |tracker|
+        it{ should have_key(tracker) }
+        it{ subject[tracker].should == 0 }
+      end
+    end
+  end
 end
