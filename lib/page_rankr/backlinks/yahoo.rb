@@ -2,7 +2,9 @@ require 'cgi'
 
 module PageRankr
   class Backlinks
-    class Yahoo < Backlink
+    class Yahoo
+      include Backlink
+      
       def url(site)
         "http://siteexplorer.search.yahoo.com/search?p=#{CGI.escape(site)}"
       end

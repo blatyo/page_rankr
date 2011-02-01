@@ -2,7 +2,7 @@ require 'nokogiri'
 require 'open-uri'
 
 module PageRankr
-  class Index
+  module Index
     attr_reader :indexes
     alias_method :tracked, :indexes
     

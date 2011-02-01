@@ -1,5 +1,5 @@
 module PageRankr
-  class Rank
+  module Rank
     attr_reader :rank
     alias_method :tracked, :rank
     

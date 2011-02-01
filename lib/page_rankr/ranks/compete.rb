@@ -4,7 +4,9 @@ require 'nokogiri'
 
 module PageRankr
   class Ranks
-    class Compete < Rank
+    class Compete
+      include Rank
+      
       def xpath
         "//div[@id='rank']/div[@class='number value']/text()"
       end
