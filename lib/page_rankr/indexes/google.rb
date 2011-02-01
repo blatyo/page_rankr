@@ -11,6 +11,7 @@ module PageRankr
       def initialize(site)
         json = JSON.parse( open( url(site)).read )
         @indexes = clean(json["responseData"]["cursor"]["estimatedResultCount"].to_s)
+        @indexes = nil if @indexes.zero?
       end
       
       def url(site)

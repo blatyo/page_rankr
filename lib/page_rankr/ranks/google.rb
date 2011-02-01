@@ -7,11 +7,9 @@ module PageRankr
       include Rank
       
       def initialize(site)
-        @rank = begin
-          open(url(site)) {|io| clean(io.read.scan(regex)[0][0])}
-        rescue
-          -1
-        end
+        @rank = open(url(site)) {|io| clean(io.read.scan(regex)[0][0])}
+      rescue
+        @rank = nil
       end
       
       def regex

@@ -9,7 +9,9 @@ module PageRankr
       # overloaded to use Google's AJAX search API
       # http://code.google.com/apis/ajaxsearch/documentation/
       def initialize(site)
-        @backlinks = clean JSON.parse( open( url(site.to_s)).read )["responseData"]["cursor"]["estimatedResultCount"].to_s
+        json = JSON.parse( open( url(site.to_s)).read )
+        @backlinks = clean(json["responseData"]["cursor"]["estimatedResultCount"].to_s)
+        @backlinks = nil if @backlinks.zero?
       end
       
       def url(site)

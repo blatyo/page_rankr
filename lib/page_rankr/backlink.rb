@@ -10,6 +10,7 @@ module PageRankr
     def initialize(site)
       html = Nokogiri::HTML(open url(site))
       @backlinks = clean(html.at(xpath).to_s)
+      @backlinks = nil if @backlinks.zero?
     end
     
     def clean(backlink_count)

@@ -6,6 +6,7 @@ module PageRankr
     def initialize(site)
       html = Nokogiri::HTML(open(url(site)))
       @rank = clean(html.search(xpath))
+      @rank = nil if @rank.zero?
     end
     
     def clean(rank)
