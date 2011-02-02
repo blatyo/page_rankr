@@ -1,5 +1,4 @@
-require 'open-uri'
-require 'cgi'
+require 'typhoeus'
 require 'nokogiri'
 
 module PageRankr
@@ -11,8 +10,9 @@ module PageRankr
         "//reach/@rank"
       end
       
-      def url(site)
-        "http://data.alexa.com/data?cli=10&dat=snbamz&url=#{CGI.escape(site.to_s)}"
+      def request
+         @request ||= Typhoeus::Request.new("http://data.alexa.com/data",
+              :params => {:cli => 10, :dat => "snbamz", :url => @site.to_s})
       end
     end
   end

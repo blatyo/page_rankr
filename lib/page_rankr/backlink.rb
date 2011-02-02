@@ -8,9 +8,13 @@ module PageRankr
     alias_method :tracked, :backlinks
     
     def initialize(site)
-      html = Nokogiri::HTML(open url(site))
-      @backlinks = clean(html.at(xpath).to_s)
-      @backlinks = nil if @backlinks.zero?
+      @site = site
+      
+      request.on_complete do |response|
+        html = Nokogiri::HTML(response.body)
+        @backlinks = clean(html.at(xpath).to_s)
+        @backlinks = nil if @backlinks.zero?
+      end
     end
     
     def clean(backlink_count)

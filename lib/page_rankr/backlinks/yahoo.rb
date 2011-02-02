@@ -1,12 +1,13 @@
-require 'cgi'
+require 'typhoeus'
 
 module PageRankr
   class Backlinks
     class Yahoo
       include Backlink
       
-      def url(site)
-        "http://siteexplorer.search.yahoo.com/search?p=#{CGI.escape(site.to_s)}"
+      def request
+        @request ||= Typhoeus::Request.new("http://siteexplorer.search.yahoo.com/search",
+            :params => {:p => "#{@site.to_s}"}, :method => :get)
       end
       
       def xpath

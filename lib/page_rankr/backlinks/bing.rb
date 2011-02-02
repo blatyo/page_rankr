@@ -1,11 +1,13 @@
-require 'cgi'
+require 'typhoeus'
 
 module PageRankr
   class Backlinks
     class Bing
       include Backlink
-      def url(site)
-        "http://www.bing.com/search?q=link%3A#{CGI.escape(site.to_s)}"
+      
+      def request
+        @request ||= Typhoeus::Request.new("http://www.bing.com/search", 
+            :params => {:q => "link:#{@site.to_s}"}, :method => :get)
       end
       
       def xpath

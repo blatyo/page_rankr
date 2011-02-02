@@ -4,9 +4,13 @@ module PageRankr
     alias_method :tracked, :rank
     
     def initialize(site)
-      html = Nokogiri::HTML(open(url(site)))
-      @rank = clean(html.search(xpath))
-      @rank = nil if @rank.zero?
+      @site = site
+      
+      request.on_complete do |response|
+        html = Nokogiri::HTML(response.body)
+        @rank = clean(html.search(xpath))
+        @rank = nil if @rank.zero?
+      end
     end
     
     def clean(rank)

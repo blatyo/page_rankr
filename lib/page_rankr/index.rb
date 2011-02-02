@@ -7,9 +7,12 @@ module PageRankr
     alias_method :tracked, :indexes
     
     def initialize(site)
-      html = Nokogiri::HTML(open url(site))
-      @indexes = clean(html.at(xpath).to_s)
-      @indexes = nil if @indexes.zero?
+      @site = site
+      request.on_complete do |response|
+        html = Nokogiri::HTML(response.body)
+        @indexes = clean(html.at(xpath).to_s)
+        @indexes = nil if @indexes.zero?
+      end
     end
     
     def clean(backlink_count)

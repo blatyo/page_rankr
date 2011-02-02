@@ -1,4 +1,4 @@
-require 'open-uri'
+require 'typhoeus'
 require 'cgi'
 require 'nokogiri'
 
@@ -11,8 +11,8 @@ module PageRankr
         "//div[@id='rank']/div[@class='number value']/text()"
       end
       
-      def url(site)
-        "http://siteanalytics.compete.com/#{CGI.escape(site.domain)}/"
+      def request
+        @request ||= Typhoeus::Request.new("http://siteanalytics.compete.com/#{CGI.escape(@site.domain)}/")
       end
       
       def clean(rank)
