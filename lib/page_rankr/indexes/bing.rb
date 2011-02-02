@@ -1,12 +1,13 @@
-require 'cgi'
+require 'typhoeus'
 
 module PageRankr
   class Indexes
     class Bing
       include Index
       
-      def url(site)
-        "http://www.bing.com/search?q=site%3A#{CGI.escape(site.to_s)}"
+      def request
+        @request ||= Typhoeus::Request.new("http://www.bing.com/search",
+            :params => {:q => "site:#{@site.to_s}"})
       end
       
       def xpath

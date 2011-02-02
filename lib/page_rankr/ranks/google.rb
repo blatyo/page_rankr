@@ -1,4 +1,4 @@
-require "open-uri"
+require 'typhoeus'
 require File.join(File.dirname(__FILE__), "google", "checksum")
 
 module PageRankr
@@ -7,18 +7,25 @@ module PageRankr
       include Rank
       
       def initialize(site)
-        @rank = open(url(site)) {|io| clean(io.read.scan(regex)[0][0])}
-      rescue
-        @rank = nil
+        @site = site
+        @checksum = Checksum.generate(@site.to_s)
+        
+        request.on_complete do |response|
+          @rank = if response.body =~ regex
+            clean($1)
+          else
+            nil
+          end
+        end
       end
       
       def regex
         /Rank_\d+:\d+:(\d+)/
       end
 
-      def url(site)
-        checksum = Checksum.generate(site.to_s)
-        "http://toolbarqueries.google.com/search?client=navclient-auto&ch=#{checksum}&features=Rank&q=info:#{site.to_s}"
+      def request
+        @request ||= Typhoeus::Request.new("http://toolbarqueries.google.com/search",
+              :params => {:client => "navclient-auto", :ch => @checksum, :features => "Rank", :q => "info:#{@site.to_s}"})
       end
     end
   end
