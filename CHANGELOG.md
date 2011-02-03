@@ -1,4 +1,12 @@
 # Change Log
+## Version 2.0.0
+* URL validation
+* Parallel requests = way faster!
+* Not tracked returns nil
+* Alexa US and Global are treated as separate trackers and returned results are a single level hash.
+* Removed Altavista and AllTheWeb because they now direct to yahoo.
+* Changed some classes to modules so that it wasn't necessary to specify them when opening the class.
+
 ## Version 1.7.0
 * Merged in additions from iteration labs to add compete rank tracker and domain indexes.
 
