@@ -7,7 +7,7 @@ module PageRankr
       include Rank
       
       def xpath
-        "//popularity/@text"
+        "//popularity[contains(@url, '#{@site.to_s}')]/@text"
       end
       
       def request
