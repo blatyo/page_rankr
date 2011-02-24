@@ -7,8 +7,8 @@ Gem::Specification.new do |s|
   s.authors     = ["Allen Madsen"]
   s.email       = ["blatyo@gmail.com"]
   s.homepage    = "http://github.com/blatyo/page_rankr"
-  s.summary     = "Easy way to retrieve Google Page Rank, Alexa Rank, and backlink counts"
-  s.description = "Easy way to retrieve Google Page Rank, Alexa Rank, and backlink counts"
+  s.summary     = "Easy way to retrieve Google Page Rank, Alexa Rank, backlink counts, and index counts."
+  s.description = "Easy way to retrieve Google Page Rank, Alexa Rank, backlink counts, and index counts."
 
   s.required_rubygems_version = ">= 1.3.6"
   s.add_development_dependency "rspec",   "~> 2.1.0"

@@ -1,5 +1,8 @@
 # Change Log
 
+## Version 2.0.1
+* Alexa sometimes returns result for the incorrect site. In this case, the results returned are ignored.
+
 ## Version 2.0.0
 * URL validation
 * Parallel requests = way faster!

@@ -1,6 +1,6 @@
 # PageRankr
 
-Provides an easy way to retrieve Google Page Rank, Alexa Rank, and backlink counts.
+Provides an easy way to retrieve Google Page Rank, Alexa Rank, backlink counts, and index counts.
 
 Check out a little [web app][1] I wrote up that uses it or look at the [source][2].
 
@@ -144,8 +144,9 @@ Then, just make sure you require the class and PageRankr and whenever you call P
 * Google search API is deprecated
 
 ## Contributors
-* [Druwerd](https://github.com/Druwerd) - Use Google Search API instead of scraping.
+* [Dru Ibarra](https://github.com/Druwerd) - Use Google Search API instead of scraping.
 * [Iteration Labs, LLC](https://github.com/iterationlabs) - Compete rank tracker and domain indexes.
+* [Mark Seeger](https://github.com/rb2k) - Ignore invalid ranks that Alexa returns for incorrect sites.
 
 ## Shout Out
 Gotta give credit where credits due!
