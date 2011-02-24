@@ -147,12 +147,13 @@ Then, just make sure you require the class and PageRankr and whenever you call P
 ## Contributors
 * [Dru Ibarra](https://github.com/Druwerd) - Use Google Search API instead of scraping.
 * [Iteration Labs, LLC](https://github.com/iterationlabs) - Compete rank tracker and domain indexes.
-* [Marc Seeger](http://www.marc-seeger.de)([Acquia](http://www.acquia.com)) - Ignore invalid ranks that Alexa returns for incorrect sites.
+* [Marc Seeger](http://www.marc-seeger.de) ([Acquia](http://www.acquia.com)) - Ignore invalid ranks that Alexa returns for incorrect sites.
 
 ## Shout Out
 Gotta give credit where credits due!
 
 Original inspiration from:
+
 * [PageRankSharp](https://github.com/alexmipego/PageRankSharp)
 * [Google Page Range Lookup/](http://snipplr.com/view/18329/google-page-range-lookup/)
 * [AJAX PR Checker](http://www.sitetoolcenter.com/free-website-scripts/ajax-pr-checker.php)
