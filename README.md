@@ -147,7 +147,7 @@ Then, just make sure you require the class and PageRankr and whenever you call P
 ## Contributors
 * [Dru Ibarra](https://github.com/Druwerd) - Use Google Search API instead of scraping.
 * [Iteration Labs, LLC](https://github.com/iterationlabs) - Compete rank tracker and domain indexes.
-* [Mark Seeger](https://github.com/rb2k) - Ignore invalid ranks that Alexa returns for incorrect sites.
+* [Marc Seeger](http://www.marc-seeger.de)([Acquia](http://www.acquia.com)) - Ignore invalid ranks that Alexa returns for incorrect sites.
 
 ## Shout Out
 Gotta give credit where credits due!
