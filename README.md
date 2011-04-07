@@ -142,6 +142,7 @@ Then, just make sure you require the class and PageRankr and whenever you call P
     * Optionally use API keys
     * Maybe allow API key cycling to get around query limits
 * Google search API is deprecated
+* New Compete API
 * Some search engines throttle the amount of queries. It would be nice to know when this happens. Probably throw an exception.
 
 ## Contributors
