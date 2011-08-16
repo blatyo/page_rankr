@@ -9,7 +9,11 @@ describe PageRankr do
     # to slocourts.net. Clearly something is wrong with how Alexa handles this case and so in the event this
     # happens we treat the results as if there were no results.
     describe "when Alexa returns results for the incorrect site" do
-      subject{ PageRankr.ranks("slocourts.net", :alexa_us, :alexa_global) }
+      subject do
+        VCR.use_cassette(:alexa_ranks_edge_case_1) do
+          PageRankr.ranks("slocourts.net", :alexa_us, :alexa_global)
+        end
+      end
       
       it{ should have_key(:alexa_us) }
       it{ should have_key(:alexa_global) }

@@ -1,0 +1,77 @@
+---
+- !ruby/struct:VCR::HTTPInteraction
+  request: !ruby/struct:VCR::Request
+    method: :get
+    uri: http://data.alexa.com:80/data?cli=10&dat=snbamz&url=please-dont-register-a-site-that-breaks-this-test.com
+    body: !!null 
+    headers: !!null 
+  response: !ruby/struct:VCR::Response
+    status: !ruby/struct:VCR::ResponseStatus
+      code: 200
+      message: OK
+    headers:
+      content-length:
+      - '278'
+      content-type:
+      - text/xml
+    body: ! "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n\r\n<ALEXA VER=\"0.9\"
+      URL=\"please-dont-register-a-site-that-breaks-this-test.com/\" HOME=\"0\" AID=\"=\">\r\n<RLS
+      PREFIX=\"http://\" more=\"0\">\n</RLS>\n<SD TITLE=\"A\" FLAGS=\"\" HOST=\"please-dont-register-a-site-that-breaks-this-test.com\">\n</SD>\n\n</ALEXA>"
+    http_version: '1.1'
+- !ruby/struct:VCR::HTTPInteraction
+  request: !ruby/struct:VCR::Request
+    method: :get
+    uri: http://siteanalytics.compete.com:80/please-dont-register-a-site-that-breaks-this-test.com/
+    body: !!null 
+    headers: !!null 
+  response: !ruby/struct:VCR::Response
+    status: !ruby/struct:VCR::ResponseStatus
+      code: 302
+      message: FOUND
+    headers:
+      date:
+      - Mon, 15 Aug 2011 10:07:53 GMT
+      server:
+      - Apache
+      vary:
+      - Host,User-Agent,Cookie
+      content-length:
+      - '0'
+      location:
+      - http://siteanalytics.compete.com/m/profiles/site/please-dont-register-a-site-that-breaks-this-test.com/nodata/
+      content-type:
+      - text/html; charset=utf-8
+    body: !!null 
+    http_version: '1.1'
+- !ruby/struct:VCR::HTTPInteraction
+  request: !ruby/struct:VCR::Request
+    method: :get
+    uri: http://toolbarqueries.google.com:80/search?ch=63624986523&client=navclient-auto&features=Rank&q=info%3Aplease-dont-register-a-site-that-breaks-this-test.com
+    body: !!null 
+    headers: !!null 
+  response: !ruby/struct:VCR::Response
+    status: !ruby/struct:VCR::ResponseStatus
+      code: 200
+      message: OK
+    headers:
+      date:
+      - Mon, 15 Aug 2011 10:07:56 GMT
+      pragma:
+      - no-cache
+      expires:
+      - Fri, 01 Jan 1990 00:00:00 GMT
+      cache-control:
+      - no-cache, must-revalidate
+      content-type:
+      - text/html; charset=ISO-8859-1
+      set-cookie:
+      - PREF=ID=49cc2d7fba9e1db5:FF=0:TM=1313402876:LM=1313402876:S=M7TTlOR-2gelEeTH;
+        expires=Wed, 14-Aug-2013 10:07:56 GMT; path=/; domain=.google.com
+      server:
+      - gws
+      content-length:
+      - '0'
+      x-xss-protection:
+      - 1; mode=block
+    body: !!null 
+    http_version: '1.1'

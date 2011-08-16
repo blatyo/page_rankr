@@ -11,7 +11,7 @@ module PageRankr
       end
       
       def xpath
-        "//ol[@id='results-tab']/li[2]/a/text()"
+        "//ul[@id='result-details']/li[2]/a/text()"
       end
     end
   end

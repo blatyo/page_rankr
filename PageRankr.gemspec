@@ -15,6 +15,7 @@ Gem::Specification.new do |s|
   s.add_development_dependency "rspec",   "~> 2.1.0"
   s.add_development_dependency "bundler", ">= 1.0.0"
   s.add_development_dependency "fuubar",  ">= 0.0.1"
+  s.add_development_dependency "vcr"
 
   s.add_runtime_dependency "nokogiri",              ">= 1.4.1"
   s.add_runtime_dependency "json",                  ">= 1.4.6"

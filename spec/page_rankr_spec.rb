@@ -22,7 +22,11 @@ describe PageRankr do
 
   describe "#ranks" do
     describe "success" do
-      subject{ PageRankr.ranks("www.google.com") }
+      subject do
+        VCR.use_cassette(:success_ranks) do
+          PageRankr.ranks("www.google.com")
+        end
+      end
   
       it{ should have_key(:alexa_us) }
       it{ should have_key(:alexa_global) }
@@ -36,7 +40,11 @@ describe PageRankr do
     end
     
     describe "failure" do
-      subject{ PageRankr.ranks("please-dont-register-a-site-that-breaks-this-test.com") }
+      subject do
+        VCR.use_cassette(:failure_ranks) do
+          PageRankr.ranks("please-dont-register-a-site-that-breaks-this-test.com")
+        end
+      end
       
       it{ should have_key(:alexa_us) }
       it{ should have_key(:alexa_global) }
@@ -61,7 +69,11 @@ describe PageRankr do
   
   describe "#backlinks" do
     describe "success" do
-      subject{ PageRankr.backlinks("www.google.com") }
+      subject do
+        VCR.use_cassette(:success_backlinks) do
+          PageRankr.backlinks("www.google.com")
+        end
+      end
     
       PageRankr.backlink_trackers.each do |tracker|
         it{ should have_key(tracker) }
@@ -70,7 +82,11 @@ describe PageRankr do
     end
     
     describe "failure" do
-      subject{ PageRankr.backlinks("please-dont-register-a-site-that-breaks-this-test.com") }
+      subject do
+        VCR.use_cassette(:failure_backlinks) do
+          PageRankr.backlinks("please-dont-register-a-site-that-breaks-this-test.com")
+        end
+      end
       
       PageRankr.backlink_trackers.each do |tracker|
         it{ should have_key(tracker) }
@@ -88,7 +104,11 @@ describe PageRankr do
   
   describe "#indexes" do
     describe "success" do
-      subject{ PageRankr.indexes("www.google.com") }
+      subject do
+        VCR.use_cassette(:success_indexes) do
+          PageRankr.indexes("www.google.com")
+        end
+      end
       
       PageRankr.index_trackers.each do |tracker|
         it{ should have_key(tracker) }
@@ -97,7 +117,11 @@ describe PageRankr do
     end
     
     describe "failure" do
-      subject{ PageRankr.indexes("please-dont-register-a-site-that-breaks-this-test.com") }
+      subject do
+        VCR.use_cassette(:failure_indexes) do
+          PageRankr.indexes("please-dont-register-a-site-that-breaks-this-test.com")
+        end
+      end
       
       PageRankr.index_trackers.each do |tracker|
         it{ should have_key(tracker) }
