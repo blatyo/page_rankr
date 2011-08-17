@@ -1,4 +1,4 @@
-# PageRankr
+# PageRankr [![Build Status](http://travis-ci.org/blatyo/page_rankr.png)](http://travis-ci.org/blatyo/page_rankr)
 
 Provides an easy way to retrieve Google Page Rank, Alexa Rank, backlink counts, and index counts.
 
