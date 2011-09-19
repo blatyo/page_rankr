@@ -8,7 +8,7 @@ module PageRankr
       include Rank
       
       def xpath
-        "//div[@id='rank']/div[@class='number value']/text()"
+        "//div[@class='section score']/h4[2]/text()"
       end
       
       def request
@@ -16,7 +16,7 @@ module PageRankr
       end
       
       def clean(rank)
-        rank.to_s.gsub(',', '').to_i
+        rank.to_s.gsub(/[#,]/, '').to_i
       end
     end
   end
