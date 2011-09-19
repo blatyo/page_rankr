@@ -1,407 +1,159 @@
----
-- !ruby/struct:VCR::HTTPInteraction
-  request: !ruby/struct:VCR::Request
+--- 
+- !ruby/struct:VCR::HTTPInteraction 
+  request: !ruby/struct:VCR::Request 
     method: :get
     uri: http://data.alexa.com:80/data?cli=10&dat=snbamz&url=please-dont-register-a-site-that-breaks-this-test.com
-    body: !!null 
-    headers: !!null 
-  response: !ruby/struct:VCR::Response
-    status: !ruby/struct:VCR::ResponseStatus
+    body: 
+    headers: 
+  response: !ruby/struct:VCR::Response 
+    status: !ruby/struct:VCR::ResponseStatus 
       code: 200
       message: OK
-    headers:
-      content-length:
-      - '278'
-      content-type:
+    headers: 
+      content-type: 
       - text/xml
-    body: ! "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n\r\n<ALEXA VER=\"0.9\"
-      URL=\"please-dont-register-a-site-that-breaks-this-test.com/\" HOME=\"0\" AID=\"=\">\r\n<RLS
-      PREFIX=\"http://\" more=\"0\">\n</RLS>\n<SD TITLE=\"A\" FLAGS=\"\" HOST=\"please-dont-register-a-site-that-breaks-this-test.com\">\n</SD>\n\n</ALEXA>"
-    http_version: '1.1'
-- !ruby/struct:VCR::HTTPInteraction
-  request: !ruby/struct:VCR::Request
+      content-length: 
+      - "278"
+    body: |-
+      <?xml version="1.0" encoding="UTF-8"?>
+      
+      <ALEXA VER="0.9" URL="please-dont-register-a-site-that-breaks-this-test.com/" HOME="0" AID="=">
+      <RLS PREFIX="http://" more="0">
+      </RLS>
+      <SD TITLE="A" FLAGS="" HOST="please-dont-register-a-site-that-breaks-this-test.com">
+      </SD>
+      
+      </ALEXA>
+    http_version: "1.1"
+- !ruby/struct:VCR::HTTPInteraction 
+  request: !ruby/struct:VCR::Request 
     method: :get
     uri: http://ajax.googleapis.com:80/ajax/services/search/web?q=link%3Aplease-dont-register-a-site-that-breaks-this-test.com&rsz=1&v=1.0
-    body: !!null 
-    headers: !!null 
-  response: !ruby/struct:VCR::Response
-    status: !ruby/struct:VCR::ResponseStatus
+    body: 
+    headers: 
+  response: !ruby/struct:VCR::Response 
+    status: !ruby/struct:VCR::ResponseStatus 
       code: 200
       message: OK
-    headers:
-      cache-control:
-      - no-cache, no-store, max-age=0, must-revalidate
-      pragma:
-      - no-cache
-      expires:
-      - Fri, 01 Jan 1990 00:00:00 GMT
-      date:
-      - Mon, 15 Aug 2011 10:07:57 GMT
-      content-type:
-      - text/javascript; charset=utf-8
-      x-embedded-status:
-      - '200'
-      x-content-type-options:
+    headers: 
+      x-content-type-options: 
       - nosniff
-      x-frame-options:
+      x-frame-options: 
       - SAMEORIGIN
-      x-xss-protection:
-      - 1; mode=block
-      server:
+      expires: 
+      - Fri, 01 Jan 1990 00:00:00 GMT
+      x-embedded-status: 
+      - "200"
+      content-type: 
+      - text/javascript; charset=utf-8
+      server: 
       - GSE
-      transfer-encoding:
+      date: 
+      - Mon, 19 Sep 2011 16:01:02 GMT
+      x-xss-protection: 
+      - 1; mode=block
+      cache-control: 
+      - no-cache, no-store, max-age=0, must-revalidate
+      pragma: 
+      - no-cache
+      transfer-encoding: 
       - chunked
-    body: ! '{"responseData": {"results":[],"cursor":{"moreResultsUrl":"http://www.google.com/search?oe\u003dutf8\u0026ie\u003dutf8\u0026source\u003duds\u0026start\u003d0\u0026hl\u003den\u0026q\u003dlink:please-dont-register-a-site-that-breaks-this-test.com"}},
-      "responseDetails": null, "responseStatus": 200}'
-    http_version: '1.1'
-- !ruby/struct:VCR::HTTPInteraction
-  request: !ruby/struct:VCR::Request
+    body: "{\"responseData\": {\"results\":[],\"cursor\":{\"moreResultsUrl\":\"http://www.google.com/search?oe\\u003dutf8\\u0026ie\\u003dutf8\\u0026source\\u003duds\\u0026start\\u003d0\\u0026hl\\u003den\\u0026q\\u003dlink:please-dont-register-a-site-that-breaks-this-test.com\"}}, \"responseDetails\": null, \"responseStatus\": 200}"
+    http_version: "1.1"
+- !ruby/struct:VCR::HTTPInteraction 
+  request: !ruby/struct:VCR::Request 
     method: :get
     uri: http://siteexplorer.search.yahoo.com:80/search?p=please-dont-register-a-site-that-breaks-this-test.com
-    body: !!null 
-    headers: !!null 
-  response: !ruby/struct:VCR::Response
-    status: !ruby/struct:VCR::ResponseStatus
+    body: 
+    headers: 
+  response: !ruby/struct:VCR::Response 
+    status: !ruby/struct:VCR::ResponseStatus 
       code: 200
       message: OK
-    headers:
-      date:
-      - Mon, 15 Aug 2011 10:07:57 GMT
-      p3p:
-      - policyref="http://info.yahoo.com/w3c/p3p.xml", CP="CAO DSP COR CUR ADM DEV
-        TAI PSA PSD IVAi IVDi CONi TELo OTPi OUR DELi SAMi OTRi UNRi PUBi IND PHY
-        ONL UNI PUR FIN COM NAV INT DEM CNT STA POL HEA PRE LOC GOV"
-      cache-control:
-      - private
-      transfer-encoding:
-      - chunked
-      content-type:
+    headers: 
+      p3p: 
+      - policyref="http://info.yahoo.com/w3c/p3p.xml", CP="CAO DSP COR CUR ADM DEV TAI PSA PSD IVAi IVDi CONi TELo OTPi OUR DELi SAMi OTRi UNRi PUBi IND PHY ONL UNI PUR FIN COM NAV INT DEM CNT STA POL HEA PRE LOC GOV"
+      content-type: 
       - text/html; charset=UTF-8
-      content-encoding:
+      date: 
+      - Mon, 19 Sep 2011 16:01:02 GMT
+      content-encoding: 
       - gzip
-    body: ! '<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+      cache-control: 
+      - private
+      transfer-encoding: 
+      - chunked
+    body: |
+      <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+      <html lang="en"><head><title>Site Explorer - Search Results</title><link rel="stylesheet" type="text/css" href="http://a248.e.akamai.net/sec.yimg.com/lib/se4/ysch_se_201107042347.css"><style type="text/css">#hd,input.ygbt,#ylogo,#main .hd,.postit,.postit ol,a.btn,span.btn, input.btn,a.btn.sel,span.btn,.side-menu ol li a span,#main .hd h1 span,.tcap .l,.tcap .c,.tcap .r,.bcap .l,.bcap .c,.bcap .r,ul#mysmsg li span,span.icon,#main .bd table th,#abm span, #abf span,#sws span, #ssf span,.step1 div.icon, .step2 div.icon, .step3 div.icon,ol#feeds-submits{background-image: url(http://a248.e.akamai.net/sec.yimg.com/i/us/sch/se4/se_coresprt_20090903.png);}.side-menu,.side-menu h2,.side-menu ol,.date-selectors .ico,.yui-calendar .calnavleft,.yui-calendar .calnavright,.yui-calcontainer .calclose{background-image: url(http://a248.e.akamai.net/sec.yimg.com/i/us/sch/se4/se_navsprt_20101014.png);}</style><script src="http://a248.e.akamai.net/sec.yimg.com/lib/se4/ysch_se_200912080933.js"></script></head><body class=" UNKNOWN windows vUNKNOWN"><div id="doc"><div id="hd"><div id="ygunav"><ul><li><a href="http://www.yahoo.com/">Yahoo!</a></li><li><a href="http://my.yahoo.com/">My Yahoo!</a></li><li><a href="http://mail.yahoo.com/">Mail</a></li><li id="ygwel">Hello, <strong>Guest</strong> [ <a href="http://login.yahoo.com/config/login?.src=siteexplorer&.intl=us&.done=http%3A%2F%2Fsiteexplorer.search.yahoo.com%2Fsearch%3Fei%3DUTF-8%26p%3Dplease-dont-register-a-site-that-breaks-this-test.com">Sign In</a> ]</li><li><a href="http://help.yahoo.com/l/us/yahoo/search/siteexplorer/">Help</a></li></ul></div><a id="ylogo" href="http://siteexplorer.search.yahoo.com"><span class="off-left">Yahoo! Site Explorer</span></a><div id="expurl"><form action="http://siteexplorer.search.yahoo.com/search" method="get"><input type="text" value="please-dont-register-a-site-that-breaks-this-test.com" name="p" id="seschp" class="seschp" autocomplete="on"><input type="submit" value="Explore URL" name="y" class="ygbt"><input type="hidden" value="sfp" name="fr"></form></div></div><div id="bd"><div id="bd-lt"><div id="side"><div class="side-menu" id="se-nav"><h2>Site Explorer</h2><ol><li class="add_site"><a href="https://siteexplorer.search.yahoo.com/mysites?site_url=please-dont-register-a-site-that-breaks-this-test.com&.bcrumb="><span></span>Add to MySites</a></li><li class="divisor"><span class="dots"></span></li><li class="mysites"><a href="https://siteexplorer.search.yahoo.com/mysites"><span></span>My Sites</a></li><li class="divisor"><span class="dots"></span></li><li class="submit"><a href="http://siteexplorer.search.yahoo.com/submit"><span></span>Submit Your Site</a></li><li class="preferences"><a href="https://siteexplorer.search.yahoo.com/preferences?pref_done=http%3A%2F%2Fsiteexplorer.search.yahoo.com%2Fsearch%3Fei%3DUTF-8%26p%3Dplease-dont-register-a-site-that-breaks-this-test.com"><span></span>Preferences</a></li><li class="blog"><a href="http://www.ysearchblog.com/category/site-explorer/"><span></span>Blog</a></li><li class="badge"><a href="http://siteexplorer.search.yahoo.com/badge"><span></span>Badge</a></li><li class="web_services"><a href="http://developer.yahoo.com/search/siteexplorer/"><span></span>Web Service API</a></li><li class="feedback"><a href="http://suggestions.yahoo.com/?prop=SiteExplorer"><span></span>Feedback</a></li></ol></div></div></div><div id="bd-rt"><div id="main" class="messages"><div class="hd"><div class="tcap"><div class="l"></div><div class="c"></div><div class="r"></div></div><h1>Invalid Request</h1></div><div class="bd"><div class="row"><h2>No Results</h2><p>We were unable to find any results for the given URL in our index:</p><div id="errq"><em><strong>please-dont-register-a-site-that-breaks-this-test.com</strong></em></div><p>Suggestions:</p><ul><li>Check if you have entered the URL correctly</li><li>If this is a valid URL, <a href="http://siteexplorer.search.yahoo.com/submit">Submit it for free</a></li></ul></div></div><div class="ft"><div class="bcap"><div class="l"></div><div class="c"></div><div class="r"></div></div></div></div></div></div><div id="ft"><p id="legal">Copyright &copy; 2011 Yahoo! Inc. All rights reserved. <a href="http://info.yahoo.com/privacy/us/yahoo/search/details.html">Privacy Policy (<span class="updt">Updated</span>)</a> - <a href="http://info.yahoo.com/legal/us/yahoo/utos/utos-173.html">Terms of Service</a> - <a href="http://docs.yahoo.com/info/copyright/copyright.html">Copyright/IP Policy</a> - <a href="http://siteexplorer.search.yahoo.com/submit">Submit Your Site</a> - <a href="http://help.yahoo.com/l/us/yahoo/search/siteexplorer/">Help</a></p></div></div></body></html>
+      <!-- fe01.sitex.search.ac2.yahoo.com compressed/chunked Mon Sep 19 09:01:02 PDT 2011 -->
 
-      <html lang="en"><head><title>Site Explorer - Search Results</title><link rel="stylesheet"
-      type="text/css" href="http://a248.e.akamai.net/sec.yimg.com/lib/se4/ysch_se_201107042347.css"><style
-      type="text/css">#hd,input.ygbt,#ylogo,#main .hd,.postit,.postit ol,a.btn,span.btn,
-      input.btn,a.btn.sel,span.btn,.side-menu ol li a span,#main .hd h1 span,.tcap
-      .l,.tcap .c,.tcap .r,.bcap .l,.bcap .c,.bcap .r,ul#mysmsg li span,span.icon,#main
-      .bd table th,#abm span, #abf span,#sws span, #ssf span,.step1 div.icon, .step2
-      div.icon, .step3 div.icon,ol#feeds-submits{background-image: url(http://a248.e.akamai.net/sec.yimg.com/i/us/sch/se4/se_coresprt_20090903.png);}.side-menu,.side-menu
-      h2,.side-menu ol,.date-selectors .ico,.yui-calendar .calnavleft,.yui-calendar
-      .calnavright,.yui-calcontainer .calclose{background-image: url(http://a248.e.akamai.net/sec.yimg.com/i/us/sch/se4/se_navsprt_20101014.png);}</style><script
-      src="http://a248.e.akamai.net/sec.yimg.com/lib/se4/ysch_se_200912080933.js"></script></head><body
-      class=" UNKNOWN windows vUNKNOWN"><div id="doc"><div id="hd"><div id="ygunav"><ul><li><a
-      href="http://www.yahoo.com/">Yahoo!</a></li><li><a href="http://my.yahoo.com/">My
-      Yahoo!</a></li><li><a href="http://mail.yahoo.com/">Mail</a></li><li id="ygwel">Hello,
-      <strong>Guest</strong> [ <a href="http://login.yahoo.com/config/login?.src=siteexplorer&.intl=us&.done=http%3A%2F%2Fsiteexplorer.search.yahoo.com%2Fsearch%3Fei%3DUTF-8%26p%3Dplease-dont-register-a-site-that-breaks-this-test.com">Sign
-      In</a> ]</li><li><a href="http://help.yahoo.com/l/us/yahoo/search/siteexplorer/">Help</a></li></ul></div><a
-      id="ylogo" href="http://siteexplorer.search.yahoo.com"><span class="off-left">Yahoo!
-      Site Explorer</span></a><div id="expurl"><form action="http://siteexplorer.search.yahoo.com/search"
-      method="get"><input type="text" value="please-dont-register-a-site-that-breaks-this-test.com"
-      name="p" id="seschp" class="seschp" autocomplete="on"><input type="submit" value="Explore
-      URL" name="y" class="ygbt"><input type="hidden" value="sfp" name="fr"></form></div></div><div
-      id="bd"><div id="bd-lt"><div id="side"><div class="side-menu" id="se-nav"><h2>Site
-      Explorer</h2><ol><li class="add_site"><a href="https://siteexplorer.search.yahoo.com/mysites?site_url=please-dont-register-a-site-that-breaks-this-test.com&.bcrumb="><span></span>Add
-      to MySites</a></li><li class="divisor"><span class="dots"></span></li><li class="mysites"><a
-      href="https://siteexplorer.search.yahoo.com/mysites"><span></span>My Sites</a></li><li
-      class="divisor"><span class="dots"></span></li><li class="submit"><a href="http://siteexplorer.search.yahoo.com/submit"><span></span>Submit
-      Your Site</a></li><li class="preferences"><a href="https://siteexplorer.search.yahoo.com/preferences?pref_done=http%3A%2F%2Fsiteexplorer.search.yahoo.com%2Fsearch%3Fei%3DUTF-8%26p%3Dplease-dont-register-a-site-that-breaks-this-test.com"><span></span>Preferences</a></li><li
-      class="blog"><a href="http://www.ysearchblog.com/category/site-explorer/"><span></span>Blog</a></li><li
-      class="badge"><a href="http://siteexplorer.search.yahoo.com/badge"><span></span>Badge</a></li><li
-      class="web_services"><a href="http://developer.yahoo.com/search/siteexplorer/"><span></span>Web
-      Service API</a></li><li class="feedback"><a href="http://suggestions.yahoo.com/?prop=SiteExplorer"><span></span>Feedback</a></li></ol></div></div></div><div
-      id="bd-rt"><div id="main" class="messages"><div class="hd"><div class="tcap"><div
-      class="l"></div><div class="c"></div><div class="r"></div></div><h1>Invalid
-      Request</h1></div><div class="bd"><div class="row"><h2>No Results</h2><p>We
-      were unable to find any results for the given URL in our index:</p><div id="errq"><em><strong>please-dont-register-a-site-that-breaks-this-test.com</strong></em></div><p>Suggestions:</p><ul><li>Check
-      if you have entered the URL correctly</li><li>If this is a valid URL, <a href="http://siteexplorer.search.yahoo.com/submit">Submit
-      it for free</a></li></ul></div></div><div class="ft"><div class="bcap"><div
-      class="l"></div><div class="c"></div><div class="r"></div></div></div></div></div></div><div
-      id="ft"><p id="legal">Copyright &copy; 2011 Yahoo! Inc. All rights reserved.
-      <a href="http://info.yahoo.com/privacy/us/yahoo/search/details.html">Privacy
-      Policy (<span class="updt">Updated</span>)</a> - <a href="http://info.yahoo.com/legal/us/yahoo/utos/utos-173.html">Terms
-      of Service</a> - <a href="http://docs.yahoo.com/info/copyright/copyright.html">Copyright/IP
-      Policy</a> - <a href="http://siteexplorer.search.yahoo.com/submit">Submit Your
-      Site</a> - <a href="http://help.yahoo.com/l/us/yahoo/search/siteexplorer/">Help</a></p></div></div></body></html>
-
-      <!-- fe01.sitex.search.ac2.yahoo.com compressed/chunked Mon Aug 15 03:07:57
-      PDT 2011 -->
-
-'
-    http_version: '1.1'
-- !ruby/struct:VCR::HTTPInteraction
-  request: !ruby/struct:VCR::Request
+    http_version: "1.1"
+- !ruby/struct:VCR::HTTPInteraction 
+  request: !ruby/struct:VCR::Request 
     method: :get
     uri: http://www.bing.com:80/search?q=link%3Aplease-dont-register-a-site-that-breaks-this-test.com
-    body: !!null 
-    headers: !!null 
-  response: !ruby/struct:VCR::Response
-    status: !ruby/struct:VCR::ResponseStatus
+    body: 
+    headers: 
+  response: !ruby/struct:VCR::Response 
+    status: !ruby/struct:VCR::ResponseStatus 
       code: 200
       message: OK
-    headers:
-      cache-control:
-      - private, max-age=0
-      content-type:
-      - text/html; charset=utf-8
-      content-encoding:
-      - gzip
-      expires:
-      - Mon, 15 Aug 2011 10:06:57 GMT
-      p3p:
+    headers: 
+      expires: 
+      - Mon, 19 Sep 2011 16:00:02 GMT
+      p3p: 
       - CP="NON UNI COM NAV STA LOC CURa DEVa PSAa PSDa OUR IND"
-      date:
-      - Mon, 15 Aug 2011 10:07:57 GMT
-      transfer-encoding:
-      - chunked
-      connection:
+      connection: 
       - keep-alive
       - Transfer-Encoding
-      vary:
+      content-type: 
+      - text/html; charset=utf-8
+      date: 
+      - Mon, 19 Sep 2011 16:01:02 GMT
+      content-encoding: 
+      - gzip
+      set-cookie: 
+      - _FP=EM=1; expires=Wed, 18-Sep-2013 16:01:02 GMT; domain=.bing.com; path=/
+      - _SS=SID=0D036DB5B18242628662D58D06755399; domain=.bing.com; path=/
+      - MUID=3B20A456260E469A9912790FE1D41CE3; expires=Wed, 18-Sep-2013 16:01:02 GMT; domain=.bing.com; path=/
+      - OrigMUID=3B20A456260E469A9912790FE1D41CE3%2c3bf36ba649cf4dab85d70a44e699b829; expires=Wed, 18-Sep-2013 16:01:02 GMT; domain=.bing.com; path=/
+      - OVR=flt=0&flt2=0&flt3=0&flt4=0&flt5=0&flt6=0&flt7=0&flt8=0&flt9=0&flt10=0&flt11=0&flt12=0&ramp1=0&release=or3&preallocation=0&R=1; domain=.bing.com; path=/
+      - SRCHD=D=1955041&MS=1955041&AF=NOFORM; expires=Wed, 18-Sep-2013 16:01:02 GMT; domain=.bing.com; path=/
+      - SRCHUID=V=2&GUID=80EE896C43874FF0A54491C0DDB5C14C; expires=Wed, 18-Sep-2013 16:01:02 GMT; path=/
+      - SRCHUSR=AUTOREDIR=0&GEOVAR=&DOB=20110919; expires=Wed, 18-Sep-2013 16:01:02 GMT; domain=.bing.com; path=/
+      cache-control: 
+      - private, max-age=0
+      vary: 
       - Accept-Encoding
-      set-cookie:
-      - _SS=SID=E123D8DA4006437B902B02423FC34AC1; domain=.bing.com; path=/
-      - MUID=10964EC1599148A0A9DF8900E23DF362; expires=Wed, 14-Aug-2013 10:07:56 GMT;
-        domain=.bing.com; path=/
-      - OrigMUID=10964EC1599148A0A9DF8900E23DF362%2cb1cb6aa3948042678324ad5dd5dbde68;
-        expires=Wed, 14-Aug-2013 10:07:56 GMT; domain=.bing.com; path=/
-      - OVR=flt=0&flt2=0&flt3=0&flt4=0&flt5=0&flt6=0&flt7=0&flt8=0&flt9=0&flt10=0&flt11=0&ramp1=0&release=or3&preallocation=0&R=1;
-        domain=.bing.com; path=/
-      - SRCHD=D=1904287&MS=1904287&AF=NOFORM; expires=Wed, 14-Aug-2013 10:07:56 GMT;
-        domain=.bing.com; path=/
-      - SRCHUID=V=2&GUID=8449B3BD682D4AF4AA8998C9B618415F; expires=Wed, 14-Aug-2013
-        10:07:56 GMT; path=/
-      - SRCHUSR=AUTOREDIR=0&GEOVAR=&DOB=20110815; expires=Wed, 14-Aug-2013 10:07:56
-        GMT; domain=.bing.com; path=/
-    body: ! '<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html
-      lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:Web="http://schemas.live.com/Web/"><head><meta
-      content="text/html; charset=utf-8" http-equiv="content-type" /><script type="text/javascript">//<![CDATA[
-
+      transfer-encoding: 
+      - chunked
+    body: |-
+      <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:Web="http://schemas.live.com/Web/"><head><meta content="text/html; charset=utf-8" http-equiv="content-type" /><script type="text/javascript">//<![CDATA[
       si_ST=new Date
-
       //]]></script><script type="text/javascript">//<![CDATA[
-
-      _G={ST:(si_ST?si_ST:new Date),Mkt:"en-US",RTL:false,Ver:"7_07_0_1019875",IG:"b1cb6aa3948042678324ad5dd5dbde68",EventID:"DBE455AF041946959B5CF84BAD553B8E",P:"SERP",DA:"Bl2",CID:"10964EC1599148A0A9DF8900E23DF362",SUIH:"jJTGX96DAdzxh_CUjypGzA",PCId:"1",cUrl:"http:\/\/c.bing.com\/c.gif?DI=15074",akamaiSyncUrl:"http:\/\/cms.abmr.net\/pix?cid=1237&amp;uid=",gpUrl:"\/fd\/ls\/GLinkPing.aspx?"};_G.lsUrl="/fd/ls/l?IG="+_G.IG+"&CID="+_G.CID+"&PM=Y";curUrl="http:\/\/www.bing.com\/search";function
-      si_T(a){if(document.images){_G.GPImg=new Image;_G.GPImg.src=_G.gpUrl+''IG=''+_G.IG+''&CID=''+_G.CID+''&PM=Y''+a;}return
-      true;};sb_gh=function(){return location.hash};sb_sh=function(a){location.hash=a};_w=window;_d=document;sb_de=_d.documentElement;sb_ie=!!_w.ActiveXObject;sb_i6=sb_ie&&!_w.XMLHttpRequest;function
-      _ge(a){return _d.getElementById(a)}sb_st=_w.setTimeout;sb_ct=_w.clearTimeout;sb_gt=function(){return(new
-      Date).getTime()};function si_PP(e,c){if(!_G.PPS){for(var d=''"'',b=["PC","FC","BC","BS","H","FE","LE","C1","C2","BP","KP"],a=0;a<b.length;a++)d+='',"''+b[a]+''":''+(_G[b[a]+"T"]?_G[b[a]+"T"]-_G.ST:-1);_G.PPImg=new
-      Image;_G.PPImg.src=_G.lsUrl+''&Type=Event.CPT&DATA={"pp":{"S":"''+(c?c:"L")+d+'',"CT":''+(e-_G.ST)+'',"IL":''+_d.images.length+(_w.sb_ppCPL?'',"CP":1'':"")+"}}"+(_G.P?"&P="+_G.P:"")+(_G.DA?"&DA="+_G.DA:"");_G.PPS=1;sb_st(function(){sj_evt.fire("onPP")},1)}}_w.onbeforeunload=function(){si_PP(new
-      Date,"A")};sj_evt=new function(){var a={},b=this;function c(b){return a[b]||(a[b]=[])}b.fire=function(e){for(var
-      a=c(e),d=a.e=arguments,b=0;b<a.length;b++)if(a[b].d)sb_st(sj_wf(a[b],d),a[b].d);else
-      a[b](d)};b.bind=function(f,a,d,e){var b=c(f);a.d=e;b.push(a);d&&b.e&&a(b.e)};b.unbind=function(e,d){for(var
-      c=0,b=a[e];b&&c<b.length;c++)if(b[c]==d){b.splice(c,1);break}}};
-
-      //]]></script><style type="text/css">body{color:#000;background:#fff url(/fd/s/a/sw1.png)
-      repeat-x 0 -91px;font:small/normal Arial,Helvetica,Sans-Serif;margin:0;min-width:987px}a{color:#04c;text-decoration:none}a:visited{color:#639}a:hover,h3
-      a{text-decoration:underline}h1,h2,h3,h4,h5,h6{font-size:small;font-weight:200;margin:0}h1{font-size:93%}h2,h3{font-size:125%}h1,h1
-      a,h1 a:visited,h2,h2 a,h2 a:visited{color:#e66400}h2{margin:0 0 .62em}img{border:0}cite,.sb_cite{color:#388222;font-style:normal;word-wrap:break-word}strong{font-weight:700}.sb_count,.sb_meta{color:#737373}.sb_meta
-      a,.sb_meta a:visited{color:#5077bb}.sb_alert{color:#d90026}.sb_alert a{font-style:italic}#sw_hdr,#sw_content,#sw_main,#sw_foot{width:100%;float:left}#sw_content{position:static;z-index:3;min-height:344px}#sw_canvas{padding:0
-      0 0 15px;clear:both}#sw_main{_display:inline;margin:0 0 0 -15px;padding:0 0
-      1.54em 15px}.sb_results,.sb_results ul,.sb_results li{list-style-type:none;margin:0;padding:0}.sb_results
-      p,.sb_results .sb_meta{margin:0;line-height:1.2em;word-wrap:break-word}.sp_pss
-      li{display:inline}.sb_pag{padding:0;margin:0;width:100%;float:left}.sb_pag ul,.sb_pag
-      li{list-style:none;margin:0;padding:0}.sb_pag li{float:left}.sb_pag h4{display:none}.sb_pag
-      a,.sb_pag span{display:block;padding:.3em .7em;margin:0 .38em 0 0;text-align:center}a.sb_pagP,a.sb_pagN,span.sb_pagSp{padding:.38em
-      .5em}.sb_pag a:hover,a.sb_pagS{text-decoration:none;background:#ededed}a.sb_pagS{color:#000}a.sb_pagP{margin-right:.7em;padding-left:0}a:hover.sb_pagP,a:hover.sb_pagN{text-decoration:underline;background-color:transparent}a.sb_pagP:visited,a.sb_pagN:visited{color:#04c}#sw_hdr{min-height:70px;_height:70px;padding:0
-      0 30px 0}#sw_im{position:absolute;z-index:-1;height:100px;width:620px;top:0;left:190px;background:no-repeat;opacity:0;filter:alpha(opacity=0)}.sw_logo{background:url(/fd/s/a/sw1.png)
-      no-repeat 0 -48px;_display:inline;height:40px;width:112px;margin:-39px 52px
-      0 20px;float:left}.sw_logoT{color:#000;font-size:170%;line-height:normal;position:absolute;z-index:-1}#sw_hdr
-      .sw_box{padding:49px 0 0;margin:0;float:left;position:relative;z-index:1001;width:100%;line-height:1.38em}#sw_hdr
-      .sw_bd{margin-top:-2.43em}.sb_form_align{margin:-50px 0 0 600px;padding:0 0
-      0 .53em}.sw_box .sb_form_align{text-align:right;padding:0}.sw_t,.sw_t *,.sw_t
-      a:visited{color:#fff}.sw_t{line-height:1.52em;width:100%;float:left}.sw_tc{background:#525051
-      url(/fd/s/a/sw1.png) 0 -91px;background:-webkit-gradient(linear,left top,left
-      bottom,from(#768b9e),to(#9fabb9));position:absolute;left:0;z-index:-2;height:1.5em;width:100%}.sw_t
-      ul{float:left;margin:0;padding:0 0 0 20px}.sw_t li{padding:0 .85em 0 0;display:inline;zoom:1}ul.sw_tm{padding:0}ul.sw_tn{float:right;white-space:nowrap;padding:0
-      20px}.sw_tn li,.sw_tl{padding:0 0 0 .85em}.sw_u{font-weight:bold;padding:0 .77em
-      0 0}.sw_tl{position:relative;display:inline;z-index:1003}.sw_tl a:hover,.sw_tl
-      a:hover .sw_tla{text-decoration:none}.sw_tl a:hover span{text-decoration:underline}#sw_tll
-      span{margin:0 0 -2px .38em}.sw_tlia,.sw_tliw,.sw_tlif{width:17px;height:16px;display:-moz-inline-box;display:inline-block;vertical-align:middle;background:url(/fd/s/a/sw1.png)
-      -77px -12px}.sw_tlif{width:13px;height:13px;background-position:0 -29px}#sw_tlm,.sw_tlin,#sw_tfbb{display:none}.sw_tla{font-size:75%;margin-left:.38em}.sw_me{width:4.5em;text-align:center}#sw_meCtrl
-      .sw_meIc{background:url(/fd/s/a/sw1.png) -43px -12px;display:inline-block;height:15px;margin:0
-      .08em 0 .33em;width:15px;vertical-align:middle}#hp_sw_hdr .sw_meWrap{margin-right:.85em;padding-left:.85em}#sw_meCtrl
-      span{margin:0}a#sw_meCtrl{padding:0 5px}.sw_bd{position:relative;float:left;font-size:medium}.sw_b{float:left;border:1px
-      #e5e5e5 solid;background:#fff;padding:.19em .19em 1.06em 0}.sw_b input{float:left;border:0;margin:0
-      0 -.88em;font-size:100%;padding:.19em .31em .25em .56em;height:1.25em;line-height:1.25em;width:23.45em;-webkit-appearance:none;outline:none}.sw_b
-      .sw_qbtn{background:#e66400 url(/fd/s/a/sw1.png) 0 -1px;cursor:pointer;height:27px;width:27px;padding:27px
-      0 0;margin:0 0 -14px;overflow:hidden;font-size:0}#sw_as{left:-1px;position:relative;clear:both;display:none;font-size:small}</style><script
-      type="text/javascript">//<![CDATA[
-
-      function sj_wf(a){var b=arguments;return function(){a.apply(null,[].slice.apply(b).slice(1))}};function
-      sj_be(a,b,c,d){if(a.addEventListener)a.addEventListener(b,c,d);else if(a.attachEvent)a.attachEvent("on"+b,c);else
-      a["on"+b]=c}function sj_ue(a,b,c,d){if(a.removeEventListener)a.removeEventListener(b,c,d);else
-      if(a.detachEvent)a.detachEvent("on"+b,c);else a["on"+b]=null};function sj_anim(k){var
-      a=this,j,d,h,g,c,e,i,b,f;a.init=function(m,g,k,l,h){j=m;c=g;e=k;i=l;f=h;if(!b)b=c;!d&&a.start()};a.start=function(){h=sb_gt();g=Math.abs(e-c-b)/i*25;d=setInterval(a.next,25)};a.stop=function(){clearInterval(d);d=0};a.next=function(){var
-      d=sb_gt()-h;b=c+(e-c)*d/g;if(d>=g){a.stop();b=e;f&&f()}k(j,b)}};function sj_so(b,a){b.style.filter=a>=100?"":"alpha(opacity="+a+")";b.style.opacity=a/100};function
-      sj_fader(){return new sj_anim(function(b,a){sj_so(b,a)})};function sj_ce(d,c,b){var
-      a=_d.createElement(d);if(c)a.id=c;if(b)a.className=b;return a};function sj_jb(h,f){for(var
-      b=arguments,e,d,a=2,g={n:h};a<b.length;a+=2){e=b[a];d=b[a+1];sj_be(e,d,sj_wf(c,g,f,e,d))}a<3&&c(g,f);function
-      c(a,d,b,e){b&&sj_ue(b,e,c);sj_evt.bind("onP1",function(){if(!a.l){a.l=1;var
-      b=sj_ce("script");b.src=(d?"/fd/sa/"+_G.Ver:"/sa/"+_G.AppVer)+"/"+a.n+".js";sj_b.appendChild(b)}},1,5)}};function
-      sj_gx(){return sb_i6?new ActiveXObject("MSXML2.XMLHTTP"):new XMLHttpRequest};function
-      sj_sp(a){if(sb_ie)a.cancelBubble=true;else a.stopPropagation()};function sj_ev(a){return
-      sb_ie?event:a}function sj_et(a){return sb_ie?event.srcElement:a.target}function
-      sj_mi(a){return sb_ie?event.fromElement:a.relatedTarget}function sj_mo(a){return
-      sb_ie?event.toElement:a.relatedTarget};function sj_pd(a){if(sb_ie)event.returnValue=false;else
-      a.preventDefault()};function sj_we(a,c,b){while(a&&a!=(b||sj_b)){if(a==c)return!0;a=a.parentNode}return!1};function
-      sj_go(a,c,d){var b=0;while(a.offsetParent&&a!=(d||sj_b)){b+=a["offset"+c];a=a.offsetParent}return
-      b};function si_fbInit(d,c,e){var a=this;a.appNs=d;a.wfId=e;var b=0;a.loadCard=function(){if(!b){sj_jb(c,1);b=1}};a.openCard=function(){}};(function(){var
-      e,a=0,c=sj_evt,b=[];_w.si_PP&&b.push("onPP");for(;a<b.length;a++)c.bind(b[e=a],d,1);!a&&d();function
-      d(){--e<1&&c.fire("onP1")}})();function lb(){var e=sj_evt,f="onSbBusy",b;e.bind(f,d,1);function
-      d(a){b=a[1];e.unbind(f,d)}for(var a=1;a<4;++a){var g="sb_form"+(a>1?a:""),c=_ge(g);c&&!(b&&_ge(g+"_q")==b)&&c.reset&&c.reset()}_w.si_sendCReq&&sb_st(si_sendCReq,800);_w.lbc&&lbc()}(function(){var
-      a=sj_evt,c="onSbBusy",b=null;a.bind(c,function(){sb_ct(b);b=sb_st(sj_wf(a.fire,"onSbIdle"),1100)});sj_be(_d,"keydown",function(b){a.fire(c,sj_et(b))})})();sj_evt.bind("onHTML",function(){var
-      a=_ge("sb_form");a&&sj_be(a,"submit",sj_wf(sj_evt.fire,"onSearch",a))});function
-      init(){};
-
-      //]]></script><title>link:please-dont-register-a-site-that-breaks-this-test.com
-      - Bing</title><style type="text/css">#content{margin:0 0 0 -15px;padding:0 271px
-      0 0;max-width:666px}#results_area{float:left;width:100%}#results_container{padding:0
-      15px}#sidebar{float:left;margin:0 -271px 0 0;padding:0 15px 0 26px;width:230px;word-wrap:break-word}.sb_vdl{width:100%;margin-top:.4em}#results:after,.sb_vdl:after{clear:both;content:''.'';display:block;height:0;visibility:hidden}.sb_vdl
-      ul{max-width:34%;_width:34%;margin:0 1.51em 0 3.11em;_margin:0 2.55em 0 1.18em;float:left}.sb_vdl
-      li{text-indent:-.77em;_text-indent:0;a:0}.sb_ph{margin:0 0 .93em;text-align:right;color:#737373}.sb_ph
-      h1{float:left;color:#737373;text-transform:uppercase}.sc_bullet{margin:0 0 0
-      .47em;font-size:93%}.sb_ph a{color:#737373;text-decoration:underline}</style><link
-      href="/s/wlflag.ico" rel="icon"/><link href="/search?q=link%3aplease-dont-register-a-site-that-breaks-this-test.com&amp;format=rss"
-      rel="alternate" title="XML" type="text/xml"/><link href="/search?q=link%3aplease-dont-register-a-site-that-breaks-this-test.com&amp;format=rss"
-      rel="alternate" title="RSS" type="application/rss+xml"/><!-- FD: 9B48DD9DED2022CA4D7362BFA160A274
-      --></head><body class="en en-US" onload="if(_w.lb)lb();"><script type="text/javascript">//<![CDATA[
-
+      _G={ST:(si_ST?si_ST:new Date),Mkt:"en-CA",RTL:false,Ver:"7_07_0_1055720",IG:"3bf36ba649cf4dab85d70a44e699b829",EventID:"A1377FED31E74386AC19A0DBC446BBB3",P:"SERP",DA:"Bl2",CID:"3B20A456260E469A9912790FE1D41CE3",SUIH:"sO50Hmx6jbjAxXFz0AY48w",PCId:"1",cUrl:"http:\/\/c.bing.com\/c.gif?DI=15074",akamaiSyncUrl:"http:\/\/cms.abmr.net\/pix?cid=1237&amp;uid=",gpUrl:"\/fd\/ls\/GLinkPing.aspx?"};_G.lsUrl="/fd/ls/l?IG="+_G.IG+"&CID="+_G.CID+"&PM=Y";curUrl="http:\/\/www.bing.com\/search";function si_T(a){if(document.images){_G.GPImg=new Image;_G.GPImg.src=_G.gpUrl+'IG='+_G.IG+'&CID='+_G.CID+'&PM=Y'+a;}return true;};sb_gh=function(){return location.hash};sb_sh=function(a){location.hash=a};_w=window;_d=document;sb_de=_d.documentElement;sb_ie=!!_w.ActiveXObject;sb_i6=sb_ie&&!_w.XMLHttpRequest;function _ge(a){return _d.getElementById(a)}sb_st=_w.setTimeout;sb_ct=_w.clearTimeout;sb_gt=function(){return(new Date).getTime()};sj_evt=new function(){var a={},b=this;function c(b){return a[b]||(a[b]=[])}b.fire=function(e){for(var a=c(e),d=a.e=arguments,b=0;b<a.length;b++)if(a[b].d)sb_st(sj_wf(a[b],d),a[b].d);else a[b](d)};b.bind=function(f,a,d,e){var b=c(f);a.d=e;b.push(a);d&&b.e&&a(b.e)};b.unbind=function(e,d){for(var c=0,b=a[e];b&&c<b.length;c++)if(b[c]==d){b.splice(c,1);break}}};function si_PP(e,c){if(!_G.PPS){for(var d='"',b=["PC","FC","BC","BS","H","FE","LE","C1","C2","BP","KP"],a=0;a<b.length;a++)d+=',"'+b[a]+'":'+(_G[b[a]+"T"]?_G[b[a]+"T"]-_G.ST:-1);_G.PPImg=new Image;_G.PPImg.src=_G.lsUrl+'&Type=Event.CPT&DATA={"pp":{"S":"'+(c?c:"L")+d+',"CT":'+(e-_G.ST)+',"IL":'+_d.images.length+(_w.sb_ppCPL?',"CP":1':"")+"}}"+(_G.P?"&P="+_G.P:"")+(_G.DA?"&DA="+_G.DA:"");_G.PPS=1;sb_st(function(){sj_evt.fire("onPP")},1)}}_w.onbeforeunload=function(){si_PP(new Date,"A")};
+      //]]></script><style type="text/css">body{color:#000;background:#fff url(/fd/s/a/sw3.png) repeat-x 0 -113px;font:small/normal Arial,Helvetica,Sans-Serif;margin:0;min-width:987px}body,.sb_text,.sb_h3{color:#000;font:small/normal Arial,Helvetica,Sans-Serif}a,.sb_link,a.sb_link,.sb_link a,.sb_h3 a{color:#04c;text-decoration:none}a:visited,a.sb_link:visited,.sb_link a:visited,.sb_h3 a:visited{color:#639}a:hover,a.sb_link:hover,.sb_link a:hover,h3 a,.sb_h3 a{text-decoration:underline}h1,h2,h3,h4,h5,h6{font-size:small;font-weight:200;margin:0}h1{font-size:93%}h2,h3,.sb_h3{font-size:125%}h1,h1 a,h1 a:visited,h2,h2 a,h2 a:visited,.sb_ptn a,.sb_ptn a:visited{color:#e66400}h2{margin:0 0 .62em}img{border:0}cite,.sb_cite{color:#388222;font-style:normal;word-wrap:break-word}strong{font-weight:700}.sb_title{font-size:91%;margin:0 0 .36em;text-transform:uppercase}.sb_count,.sb_meta,.sb_title,.sb_title a{color:#737373}.sb_meta a,.sb_meta a:visited,a.sb_meta,a.sb_meta:visited{color:#5077bb}.sb_alert{color:#d90026}.sb_alert a{font-style:italic}#sw_hdr,#sw_content,#sw_main,#sw_foot{width:100%;float:left}#sw_content{position:static;z-index:3;min-height:344px}#sw_canvas{padding:0 0 0 15px;clear:both}#sw_main{_display:inline;margin:0 0 0 -15px;padding:0 0 1.54em 15px}.sb_results,.sb_results ul,.sb_results li{list-style-type:none;margin:0;padding:0}.sb_results p,.sb_results .sb_meta{margin:0;line-height:1.2em;word-wrap:break-word}.sp_pss li{display:inline}.sb_pag{padding:0;margin:0;width:100%;float:left}.sb_pag ul,.sb_pag li{list-style:none;margin:0;padding:0}.sb_pag li{float:left}.sb_pag h4{display:none}.sb_pag a,.sb_pag span{display:block;padding:.3em .7em;margin:0 .38em 0 0;text-align:center}a.sb_pagP,a.sb_pagN,span.sb_pagSp{padding:.38em .5em}.sb_pag a:hover,a.sb_pagS{text-decoration:none;background:#ededed}a.sb_pagS{color:#000}a.sb_pagP{margin-right:.7em;padding-left:0}a:hover.sb_pagP,a:hover.sb_pagN{text-decoration:underline;background-color:transparent}a.sb_pagP:visited,a.sb_pagN:visited{color:inherit}.sw_sb{background:0 -1px;height:27px;width:27px}.sw_rfno{background:-28px -3px;height:5px;width:5px}.sw_rfnc{background:-38px -1px;height:7px;width:5px}.sw_rfno_rtl{background:-28px -16px;height:5px;width:5px}.sw_rfnc_rtl{background:-38px -16px;height:7px;width:5px}.sw_dd_rc{background:-48px -2px;height:5px;width:9px}.sw_abnw{background:-60px -1px;height:7px;width:7px}.sw_abne{background:-68px -1px;height:7px;width:7px}.sw_absw{background:-60px -9px;height:7px;width:7px}.sw_abse{background:-68px -9px;height:7px;width:7px}.sw_ddb{background:-80px -1px;height:4px;width:7px}.sw_rwds{background:-43px -12px;height:15px;width:15px}.sw_wllogo{background:-77px -12px;height:15px;width:17px}.sw_pref{background:-94px -12px;height:16px;width:16px}.sw_fbs{background:0 -30px;height:13px;width:13px}.sw_fb_tu{background:-15px -30px;height:12px;width:14px}.sw_twt{background:-30px -30px;height:13px;width:13px}.sw_twt_brd{background:-46px -29px;height:12px;width:17px}.sw_fbl{background:-64px -26px;height:18px;width:18px}.sw_vdo_pop{background:-68px -44px;height:21px;width:21px}.sw_vdo_pl{background:-90px -44px;height:21px;width:21px}.sw_logo{background:0 -70px;height:40px;width:112px}.sw_hdr_bg{background:0 -113px;height:80px;width:112px}.sw_sb,.sw_rfno,.sw_rfnc,.sw_rfno_rtl,.sw_rfnc_rtl,.sw_dd_rc,.sw_abnw,.sw_abne,.sw_absw,.sw_abse,.sw_ddb,.sw_rwds,.sw_wllogo,.sw_pref,.sw_fbs,.sw_fb_tu,.sw_twt,.sw_twt_brd,.sw_fbl,.sw_vdo_pop,.sw_vdo_pl,.sw_logo,.sw_hdr_bg{background-image:url(/fd/s/a/sw3.png);background-repeat:no-repeat}#sw_hdr{min-height:70px;_height:70px;padding:0 0 30px 0}#sw_im{position:absolute;z-index:-1;height:100px;width:620px;top:0;left:190px;background:no-repeat;opacity:0;filter:alpha(opacity=0)}.sw_logo{background:url(/fd/s/a/sw3.png) no-repeat 0 -70px;_display:inline;height:40px;width:112px;margin:-39px 52px 0 20px;float:left}.sw_logoT{color:#000;font-size:170%;line-height:normal;position:absolute;z-index:-1}#sw_hdr .sw_box{padding:49px 0 0;margin:0;float:left;position:relative;z-index:1001;width:100%;line-height:1.38em}#sw_hdr .sw_bd{margin-top:-2.43em}.sb_form_align{margin:-50px 0 0 600px;padding:0 0 0 .53em}.sw_box .sb_form_align{text-align:right;padding:0}.sw_t,.sw_t *,.sw_t a:visited{color:#fff}.sw_t{line-height:1.52em;width:100%;float:left}.sw_tc{background:#525051 url(/fd/s/a/sw3.png) 0 -113px;background:-webkit-gradient(linear,left top,left bottom,from(#768b9e),to(#9fabb9));position:absolute;left:0;z-index:-2;height:1.5em;width:100%}.sw_t ul{float:left;margin:0;padding:0 0 0 20px}.sw_t li{padding:0 .85em 0 0;display:inline;zoom:1}ul.sw_tm{padding:0}ul.sw_tn{float:right;white-space:nowrap;padding:0 20px}.sw_tn li,.sw_tl{padding:0 0 0 .85em}.sw_u{font-weight:bold;padding:0 .77em 0 0}.sw_tl{position:relative;display:inline;z-index:1003}.sw_tl a:hover,.sw_tl a:hover .sw_tla{text-decoration:none}.sw_tl a:hover span{text-decoration:underline}#sw_tll span{margin:0 0 -2px .38em}.sw_tlia,.sw_tliw,.sw_tlif{width:17px;height:15px;display:-moz-inline-box;display:inline-block;background:url(/fd/s/a/sw3.png) -77px -12px}.sw_tlif{width:13px;background-position:0 -29px}#sw_tlm,.sw_tlin,#sw_tfbb{display:none}.sw_tla{font-size:75%;margin-left:.38em;display:inline-block}.sw_bd{position:relative;float:left;font-size:medium}.sw_b{float:left;border:1px #e5e5e5 solid;background:#fff;padding:.19em .19em 1.06em 0}.sw_b input{float:left;border:0;margin:0 0 -.88em;font-size:100%;padding:.19em .31em .25em .56em;height:1.25em;line-height:1.25em;width:23.45em;-webkit-appearance:none;outline:none}.sw_b .sw_qbtn{background:#e66400 url(/fd/s/a/sw3.png) 0 -1px;cursor:pointer;height:27px;width:27px;padding:27px 0 0;margin:0 0 -14px;overflow:hidden;font-size:0;border-radius:3px}#sw_as{left:-1px;position:relative;clear:both;display:none;font-size:small}.sw_mktLow{list-style:none;margin:-50px 0 0;padding:0 20px 0 0;text-align:right}.sw_mktLow li{font-weight:bold;padding:0 0 0 .85em;display:inline}.sw_mktLowL li{color:#737373;font-weight:normal}.sw_mktLowL li a{color:#5077bb}</style><script type="text/javascript">//<![CDATA[
+      function sj_wf(a){var b=arguments;return function(){a.apply(null,[].slice.apply(b).slice(1))}};function sj_be(a,b,c,d){if((a==_w||a==_d.body)&&b=="load")if("undefined"!=typeof _d.readyState&&"complete"===_d.readyState){c();return}if(a.addEventListener)a.addEventListener(b,c,d);else if(a.attachEvent)a.attachEvent("on"+b,c);else a["on"+b]=c}function sj_ue(a,b,c,d){if(a.removeEventListener)a.removeEventListener(b,c,d);else if(a.detachEvent)a.detachEvent("on"+b,c);else a["on"+b]=null};function sj_anim(k){var a=this,j,d,h,g,c,e,i,b,f;a.init=function(m,g,k,l,h){j=m;c=g;e=k;i=l;f=h;if(!b)b=c;!d&&a.start()};a.start=function(){h=sb_gt();g=Math.abs(e-c-b)/i*25;d=setInterval(a.next,25)};a.stop=function(){clearInterval(d);d=0};a.next=function(){var d=sb_gt()-h;b=c+(e-c)*d/g;if(d>=g){a.stop();b=e;f&&f()}k(j,b)}};function sj_so(b,a){b.style.filter=a>=100?"":"alpha(opacity="+a+")";b.style.opacity=a/100};function sj_fader(){return new sj_anim(function(b,a){sj_so(b,a)})};function sj_ce(d,c,b){var a=_d.createElement(d);if(c)a.id=c;if(b)a.className=b;return a};function sj_jb(h,f){for(var b=arguments,e,d,a=2,g={n:h};a<b.length;a+=2){e=b[a];d=b[a+1];sj_be(e,d,sj_wf(c,g,f,e,d))}a<3&&c(g,f);function c(a,d,b,e){b&&sj_ue(b,e,c);sj_evt.bind("onP1",function(){if(!a.l){a.l=1;var b=sj_ce("script");b.src=(d?"/fd/sa/"+_G.Ver:"/sa/"+_G.AppVer)+"/"+a.n+".js";sj_b.appendChild(b)}},1,5)}};function sj_ev(a){return sb_ie?event:a}function sj_et(a){return sb_ie?event.srcElement:a.target}function sj_mi(a){return sb_ie?event.fromElement:a.relatedTarget}function sj_mo(a){return sb_ie?event.toElement:a.relatedTarget};function sj_pd(a){if(sb_ie)event.returnValue=false;else a.preventDefault()};function sj_sp(a){if(sb_ie)a.cancelBubble=true;else a.stopPropagation()};function sj_we(a,c,b){while(a&&a!=(b||sj_b)){if(a==c)return!0;a=a.parentNode}return!1};(function(){var e,a=0,c=sj_evt,b=[];_w.si_PP&&b.push("onPP");for(;a<b.length;a++)c.bind(b[e=a],d,1);!a&&d();function d(){--e<1&&c.fire("onP1")}})();function lb(){var e=sj_evt,f="onSbBusy",b;e.bind(f,d,1);function d(a){b=a[1];e.unbind(f,d)}for(var a=1;a<4;++a){var g="sb_form"+(a>1?a:""),c=_ge(g);c&&!(b&&_ge(g+"_q")==b)&&c.reset&&c.reset()}_w.si_sendCReq&&sb_st(si_sendCReq,800);_w.lbc&&lbc()}(function(){var a=sj_evt,c="onSbBusy",b=null;a.bind(c,function(){sb_ct(b);b=sb_st(sj_wf(a.fire,"onSbIdle"),1100)});sj_be(_d,"keydown",function(b){a.fire(c,sj_et(b))})})();sj_evt.bind("onHTML",function(){var a=_ge("sb_form");a&&sj_be(a,"submit",sj_wf(sj_evt.fire,"onSearch",a))});function init(){};
+      //]]></script><title>link:please-dont-register-a-site-that-breaks-this-test.com - Bing</title><link href="/s/wlflag.ico" rel="icon"/><link href="/search?q=link%3aplease-dont-register-a-site-that-breaks-this-test.com&amp;format=rss" rel="alternate" title="XML" type="text/xml"/><link href="/search?q=link%3aplease-dont-register-a-site-that-breaks-this-test.com&amp;format=rss" rel="alternate" title="RSS" type="application/rss+xml"/><!-- FD: 63E286F994BA84CD824661437B096AFE --></head><body class="en en-CA" onload="if(_w.lb)lb();"><script type="text/javascript">//<![CDATA[
       _G.PCT=new Date
-
       //]]></script><script type="text/javascript">//<![CDATA[
-
-      si_fb=new si_fbInit(''FD.1'',''fbbsqr_c'',''wf11'');sj_b=_d.body;
-
-      //]]></script><!--snr2--><script type="text/javascript">//<![CDATA[
-
-      _G.AppVer="7_07_0_1019990";
-
-      //]]></script><div id="sw_page"><div id="sw_width"><div id="sw_hdr"><div id="sw_im"></div><div
-      class="sw_t"><div class="sw_tc"></div><ul id="sch_scopes"><li><a href="/?scope=web&amp;FORM=Z9FD"
-      onmousedown="return si_T(''&amp;ID=FD,23.1'')">Web</a></li><li><a href="/images/search?q=link%3aplease-dont-register-a-site-that-breaks-this-test.com&amp;FORM=BIFD"
-      onmousedown="return si_T(''&amp;ID=FD,25.1'')">Images</a></li><li><a href="/videos/search?q=link%3aplease-dont-register-a-site-that-breaks-this-test.com&amp;FORM=BVFD"
-      onmousedown="return si_T(''&amp;ID=FD,27.1'')">Videos</a></li><li><a href="/shopping/search?q=link%3aplease-dont-register-a-site-that-breaks-this-test.com&amp;mkt=en-US&amp;FORM=BPFD"
-      onmousedown="return si_T(''&amp;ID=FD,29.1'')">Shopping</a></li><li><a href="/news/search?q=link%3aplease-dont-register-a-site-that-breaks-this-test.com&amp;FORM=BNFD"
-      onmousedown="return si_T(''&amp;ID=FD,31.1'')">News</a></li><li><a href="/maps/default.aspx?q=link%3aplease-dont-register-a-site-that-breaks-this-test.com&amp;mkt=en-US&amp;FORM=BYFD"
-      onmousedown="return si_T(''&amp;ID=FD,33.1'')">Maps</a></li><li><a href="/explore?q=link%3aplease-dont-register-a-site-that-breaks-this-test.com&amp;FORM=BXFD"
-      onmousedown="return si_T(''&amp;ID=FD,35.1'')">More</a></li></ul><ul class="sw_tm"><li>|</li><li><a
-      href="http://www.msn.com/" onmousedown="return si_T(''&amp;ID=FD,39.1'')">MSN</a></li><li><a
-      href="http://mail.live.com/" onmousedown="return si_T(''&amp;ID=FD,41.1'')">Hotmail</a></li></ul><ul
-      class="sw_tn"><li><div class="sw_tl"><a href="javascript:void(0)" id="sw_tll"><span>Sign
-      in</span><span class="sw_tla">&#9660;</span></a><ul _IID="FD.2" id="sw_tlm"
-      onmouseout="this._m=false;" onmouseover="this._m=true;"></ul></div></li><li><div
-      class="sw_tl sw_meWrap"><a href="/rewards/signup/web?publ=BING&amp;crea=ME"
-      id="sw_meCtrl" onmousedown="return si_T(''&amp;ID=FD,50.1'')"><span class="sw_me"
-      id="sw_meTxt">Rewards</span><span class="sw_meIc"></span></a></div></li><li><a
-      href="/settings.aspx?ru=http%3a%2f%2fwww.bing.com%3a80%2fsearch%3fq%3dlink%253Aplease-dont-register-a-site-that-breaks-this-test.com&amp;SH=1&amp;FORM=SEFD"
-      onmousedown="return si_T(''&amp;ID=FD,43.1'')">Brookline, Massachusetts</a></li><li><a
-      href="/settings.aspx?ru=http%3a%2f%2fwww.bing.com%3a80%2fsearch%3fq%3dlink%253Aplease-dont-register-a-site-that-breaks-this-test.com&amp;FORM=SEFD1"
-      onmousedown="return si_T(''&amp;ID=FD,42.1'')">Preferences</a></li></ul><div
-      id="sw_tfbb"></div></div><form action="/search" class="sw_box" id="sb_form"><a
-      href="/?FORM=Z9FD1" class="sw_logo" onmousedown="return si_T(''&amp;ID=FD,37.1'')"><span
-      class="sw_logoT">Bing</span></a><div class="sw_bd"><div class="sw_b"><input
-      class="sw_qbox" id="sb_form_q" name="q" title="Enter your search term" type="text"
-      value="link:please-dont-register-a-site-that-breaks-this-test.com" /><input
-      class="sw_qbtn" id="sb_form_go" name="go" tabindex="0" title="Search" type="submit"
-      value="" /></div><input id="sa_qs" name="qs" type="hidden" value="ns" /><div
-      id="sw_as"></div></div><input name="form" type="hidden" value="QBRE" /></form></div><div
-      id="sw_content"><div></div><script type="text/javascript">//<![CDATA[
-
+      sj_b=_d.body;
+      //]]></script><div id="sw_page"><div id="sw_width"><div id="sw_hdr"><div id="sw_im"></div><div class="sw_t"><div class="sw_tc"></div><ul id="sch_scopes"><li><a href="/?scope=web&amp;FORM=Z9FD" onmousedown="return si_T('&amp;ID=FD,28.1')">Web</a></li><li><a href="http://ca.bing.com/images/search?q=link%3aplease-dont-register-a-site-that-breaks-this-test.com&amp;FORM=BIFD" onmousedown="return si_T('&amp;ID=FD,30.1')">Images</a></li><li><a href="http://ca.bing.com/videos/search?q=link%3aplease-dont-register-a-site-that-breaks-this-test.com&amp;FORM=BVFD" onmousedown="return si_T('&amp;ID=FD,32.1')">Videos</a></li><li><a href="http://ca.bing.com/shopping/search?q=link%3aplease-dont-register-a-site-that-breaks-this-test.com&amp;mkt=en-CA&amp;FORM=BPFD" onmousedown="return si_T('&amp;ID=FD,34.1')">Shopping</a></li><li><a href="http://ca.bing.com/news/search?q=link%3aplease-dont-register-a-site-that-breaks-this-test.com&amp;FORM=BNFD" onmousedown="return si_T('&amp;ID=FD,36.1')">News</a></li><li><a href="http://ca.bing.com/maps/default.aspx?q=link%3aplease-dont-register-a-site-that-breaks-this-test.com&amp;mkt=en-CA&amp;FORM=BYFD" onmousedown="return si_T('&amp;ID=FD,38.1')">Maps</a></li><li><a href="http://ca.bing.com/explore?q=link%3aplease-dont-register-a-site-that-breaks-this-test.com&amp;FORM=BXFD" onmousedown="return si_T('&amp;ID=FD,40.1')">More</a></li></ul><ul class="sw_tm"><li> | </li><li><a href="http://ca.msn.com/?lang=en-ca" onmousedown="return si_T('&amp;ID=FD,44.1')">MSN</a></li><li><a href="http://mail.live.com/" onmousedown="return si_T('&amp;ID=FD,46.1')">Hotmail</a></li></ul><ul class="sw_tn"><li><span class="lStatus"><a href="https://login.live.com/login.srf?wa=wsignin1.0&amp;rpsnv=11&amp;ct=1316448062&amp;rver=6.0.5286.0&amp;wp=MBI&amp;wreply=http:%2F%2Fwww.bing.com%2FPassport.aspx%3Frequrl%3Dhttp%253a%252f%252fwww.bing.com%253a80%252fsearch%253fq%253dlink%25253Aplease-dont-register-a-site-that-breaks-this-test.com&amp;lc=4105&amp;id=264960" onmousedown="return si_T('&amp;ID=FD,11.1')">Sign in</a></span></li><li><a href="http://ca.bing.com/settings.aspx?ru=http%3a%2f%2fwww.bing.com%3a80%2fsearch%3fq%3dlink%253Aplease-dont-register-a-site-that-breaks-this-test.com" onmousedown="return si_T('&amp;ID=FD,47.1')">Preferences</a></li></ul></div><form action="/search" class="sw_box" id="sb_form"><a href="http://ca.bing.com/" class="sw_logo" onmousedown="return si_T('&amp;ID=FD,42.1')"><span class="sw_logoT">Bing</span></a><div class="sw_bd"><div class="sw_b"><input class="sw_qbox" id="sb_form_q" name="q" title="Enter your search term" type="text" value="link:please-dont-register-a-site-that-breaks-this-test.com" /><input class="sw_qbtn" id="sb_form_go" name="go" tabindex="0" title="Search" type="submit" value="" /></div><input id="sa_qs" name="qs" type="hidden" value="ns" /><div id="sw_as"></div></div><ul class="sw_mktLow"><li>Your location: Canada</li><ul class="sw_mktLowL"><li><a href="?q=link%3Aplease-dont-register-a-site-that-breaks-this-test.com&amp;mkfl=0&amp;FORM=R6FD" onmousedown="return si_T('&amp;ID=FD,20.1')">Confirm</a></li><li> | </li><li><a href="http://ca.bing.com/worldwide.aspx?q=link%3Aplease-dont-register-a-site-that-breaks-this-test.com" onmousedown="return si_T('&amp;ID=FD,22.1')">Change</a></li></ul></ul><input name="form" type="hidden" value="QBRE" /></form></div><div id="sw_content"><div></div><style type="text/css">#content{margin:0 0 0 -15px;padding:0 271px 0 0;max-width:666px}#results_area{float:left;width:100%}#results_container{padding:0 15px}#sidebar{float:left;margin:0 -271px 0 0;padding:0 15px 0 26px;width:230px;word-wrap:break-word}.sb_vdl{width:100%;margin-top:.4em}#results:after,.sb_vdl:after{clear:both;content:'.';display:block;height:0;visibility:hidden}.sb_vdl ul{max-width:34%;_width:34%;margin:0 1.51em 0 3.11em;_margin:0 2.55em 0 1.18em;float:left}.sb_vdl li{text-indent:-.77em;_text-indent:0;a:0}.sb_ph{margin:0 0 .93em;text-align:right}.sb_ph h1{float:left}.sc_bullet{margin:0 0 0 .47em;font-size:93%}.sb_ph a{color:#737373;text-decoration:underline}</style><!--snr2--><script type="text/javascript">//<![CDATA[
+      _G.AppVer="7_07_0_1058852";
+      //]]></script><script type="text/javascript">//<![CDATA[
       _G.FCT=new Date
-
       //]]></script><script type="text/javascript">//<![CDATA[
-
       _G.BCT=new Date
-
-      //]]></script><style type="text/css">#no_results h1{color:#000;font-size:125%;margin:10px
-      0 30px;word-wrap:break-word}#no_results h2{font-size:small;font-weight:bold;color:#000;margin:15px
-      0 0;float:none}#sw_content{background:#fff;padding:0 0 29px;min-height:320px}#content{padding:7px
-      254px 0 20px;min-height:200px;margin:0}#results_area{width:590px}#sidebar{margin:0
-      -230px 0 22px}#no_results ul,#no_results ul li{display:block}#no_results ul{clear:both;margin:0;padding:0;list-style-type:none}#no_results
-      ul li{font-size:small;margin:6px 0 0}#no_results ul li span{color:#000}#no_results
-      .ans li{background:none;padding:0}#content .sb_alert{color:#000;border:none;font-size:small}#content
-      .sb_alert a{font-weight:normal;font-style:normal}#content .sb_alert strong{font-style:normal}#no_results
-      .qscolumn{float:none;max-width:100%}#sb_foot{font-size:83.9%;clear:both;float:left;width:100%;border-top:solid
-      1px #e5e5e5}#sw_footL,#sw_footL a{color:#737373}#sb_foot ul{display:block;list-style:none;margin:5px
-      10px;padding:0;float:right}#sb_foot li{display:inline}#sb_foot a{margin:.4em}a#sb_feedback{color:#e66400}#sw_canvas{padding-top:1.2em}.sb_pt{color:#e66400;border-bottom:#e6e6e6
-      solid 1px;float:left;font-size:medium;line-height:1.69em;margin:-1.89em 0 0;position:relative;width:100%;min-height:1.69em}.sb_pt
-      h1,.sb_pt .sb_ptn{min-width:140px;_width:140px;float:left;font-size:125%;padding:0
-      20px;white-space:nowrap}.sb_ptr{font-size:81%;position:absolute;right:20px;top:.5em}.sb_ptr
-      a,.sb_ptr a:visited{color:#000;padding:0 0 0 .77em}.sb_pt sup{font-size:50%;margin-left:.4em}</style><style
-      type="text/css">.sw_a{margin-right:15em}</style><div class="sb_pt" id="sw_abar"><h1><a
-      href="/" onmousedown="return si_T(''&amp;ID=FD,2.1'')">Web</a></h1></div><div><!--
-      snr --><div id="content"><div id="results_area"><div id="results"><div id="no_results"><h1>No
-      results found for <strong>link:please-dont-register-a-site-that-breaks-this-test.com</strong>.</h1><h2>Search
-      tips:</h2><ul><li><span>Ensure words are spelled correctly.</span></li><li><span>Try
-      rephrasing keywords or using synonyms.</span></li><li><span>Try less specific
-      keywords.</span></li><li><span>Make your queries as concise as possible.</span></li></ul><h2>Other
-      resources that may help you:</h2><ul><li><span>Get additional search tips by
-      visiting <a href="http://onlinehelp.microsoft.com/en-US/bing/ff808535.aspx"
-      onmousedown="return si_T(''&amp;ID=SERP,5046.1'')">Web Search Help</a>.</span></li><li><span>If
-      you cannot find a page that you know exists, <a href="/docs/submit.aspx?FORM=SURE"
-      onmousedown="return si_T(''&amp;ID=SERP,5047.1'')">send the address to us</a>.</span></li></ul></div></div></div><div
-      id="sidebar"></div><br>&nbsp;</br><div><a href="http://go.microsoft.com/fwlink/?LinkId=74170"
-      target="_blank" onmousedown="return si_T(''&amp;ID=SERP,5044.1'')">Bing Privacy
-      Policy</a></div></div></div></div><div id="sb_foot" onmouseover="si_fb.loadCard()"><ul
-      id="sw_footL"><li><span>&#169; 2011 Microsoft</span> | </li><li><a href="http://go.microsoft.com/fwlink/?LinkId=74170"
-      onmousedown="return si_T(''&amp;ID=FD,61.1'')">Privacy</a> | </li><li><a href="http://g.msn.com/0TO_/enus"
-      onmousedown="return si_T(''&amp;ID=FD,63.1'')">Legal</a> | </li><li><a href="http://advertising.microsoft.com/advertise-on-bing"
-      onmousedown="return si_T(''&amp;ID=FD,65.1'')">Advertise</a> | </li><li><a href="http://g.msn.com/AIPRIV/en-us"
-      target="_blank" onmousedown="return si_T(''&amp;ID=FD,67.1'')">About our ads</a>
-      | </li><li><a href="http://onlinehelp.microsoft.com/en-US/bing/ff808535.aspx"
-      id="sb_help" target="_blank" onmousedown="return si_T(''&amp;ID=FD,69.1'')">Help</a>
-      | </li><li><a href="https://feedback.live.com/default.aspx?locale=en-US&amp;productkey=wlsearchweb&amp;P1=dsatnoresultsweb&amp;P2=link%3aplease-dont-register-a-site-that-breaks-this-test.com&amp;P3=0&amp;P4=NOFORM&amp;P5=10964EC1599148A0A9DF8900E23DF362&amp;P6=Brookline,
-      Massachusetts&amp;P9=42.343341827%2f-71.122756958&amp;P10=0&amp;P11=&amp;searchtype=Web+Search&amp;optl1=1&amp;backurl=http%3a%2f%2fwww.bing.com%2fsearch%3fq%3dlink%3aplease-dont-register-a-site-that-breaks-this-test.com%26FORM%3dFEEDTU"
-      id="sb_feedback" onclick="si_fb.openCard(this);return false" onfocus="si_fb.loadCard()"
-      onmousedown="return si_T(''&amp;ID=FD,71.1'')">Tell us what you think</a></li></ul></div></div></div><div
-      id="sb_fb"></div><script type="text/javascript">//<![CDATA[
-
+      //]]></script><style type="text/css">#no_results h1{color:#000;font-size:125%;margin:10px 0 30px;word-wrap:break-word}#no_results h2{font-size:small;font-weight:bold;color:#000;margin:15px 0 0;float:none}#sw_content{background:#fff;padding:0 0 29px;min-height:320px}#content{padding:7px 254px 0 20px;min-height:200px;margin:0}#results_area{width:590px}#sidebar{margin:0 -230px 0 22px}#no_results ul,#no_results ul li{display:block}#no_results ul{clear:both;margin:0;padding:0;list-style-type:none}#no_results ul li{font-size:small;margin:6px 0 0}#no_results ul li span{color:#000}#no_results .ans li{background:none;padding:0}#content .sb_alert{color:#000;border:none;font-size:small}#content .sb_alert a{font-weight:normal;font-style:normal}#content .sb_alert strong{font-style:normal}#no_results .qscolumn{float:none;max-width:100%}#sb_foot{font-size:83.9%;clear:both;float:left;width:100%;border-top:solid 1px #e5e5e5}#sw_footL,#sw_footL a{color:#737373}#sb_foot ul{display:block;list-style:none;margin:5px 10px;padding:0;float:right}#sb_foot li{display:inline}#sb_foot a{margin:.4em}a#sb_feedback{color:#e66400}#sw_canvas{padding-top:1.2em}.sb_pt{color:#e66400;border-bottom:#e6e6e6 solid 1px;float:left;font-size:medium;line-height:1.69em;margin:-1.89em 0 0;position:relative;width:100%;min-height:1.69em}.sb_pt h1,.sb_pt .sb_ptn{min-width:140px;_width:140px;float:left;font-size:125%;padding:0 20px;white-space:nowrap}.sb_ptr{font-size:81%;position:absolute;right:20px;top:.5em}.sb_ptr a,.sb_ptr a:visited{color:#000;padding:0 0 0 .77em}.sb_pt sup{font-size:50%;margin-left:.4em}</style><style type="text/css">.sw_a{margin-right:15em}</style><script type="text/javascript">//<![CDATA[
+      function sj_gx(){return sb_i6?new ActiveXObject("MSXML2.XMLHTTP"):new XMLHttpRequest};
+      //]]></script><div class="sb_pt" id="sw_abar"><div class="sb_ptn"><a href="/" onmousedown="return si_T('&amp;ID=FD,2.1')">Web</a></div></div><div><!-- snr --><div id="content"><div id="results_area"><div id="results"><div id="no_results"><h1>No results found for <strong>link:please-dont-register-a-site-that-breaks-this-test.com</strong>.</h1><h2>Search tips:</h2><ul><li><span>Ensure words are spelled correctly.</span></li><li><span>Try rephrasing keywords or using synonyms.</span></li><li><span>Try less specific keywords.</span></li><li><span>Make your queries as concise as possible.</span></li></ul><h2>Other resources that may help you:</h2><ul><li><span>Get additional search tips by visiting <a href="http://onlinehelp.microsoft.com/en-CA/bing/ff808535.aspx" onmousedown="return si_T('&amp;ID=SERP,5048.1')">Web Search Help</a>.</span></li><li><span>If you cannot find a page that you know exists, <a href="/docs/submit.aspx?FORM=SURE" onmousedown="return si_T('&amp;ID=SERP,5049.1')">send the address to us</a>.</span></li></ul></div></div></div><div id="sidebar"></div><br>&nbsp;</br><div><a href="http://go.microsoft.com/fwlink/?LinkId=74170" target="_blank" onmousedown="return si_T('&amp;ID=SERP,5046.1')">Bing Privacy Policy</a></div></div></div></div><div id="sb_foot"><ul id="sw_footL"><li><span>&#169; 2011 Microsoft</span> | </li><li><a href="http://go.microsoft.com/fwlink/?LinkId=74170" onmousedown="return si_T('&amp;ID=FD,66.1')">Privacy</a> | </li><li><a href="http://g.msn.com/0TO_/enca" onmousedown="return si_T('&amp;ID=FD,68.1')">Legal</a> | </li><li><a href="http://advertising.microsoft.com/canada/en/advertise-on-bing" onmousedown="return si_T('&amp;ID=FD,70.1')">Advertise</a> | </li><li><a href="http://onlinehelp.microsoft.com/en-CA/bing/ff808535.aspx" id="sb_help" target="_blank" onmousedown="return si_T('&amp;ID=FD,72.1')">Help</a> | </li><li><a href="https://feedback.live.com/default.aspx?locale=en-CA&amp;productkey=wlsearchweb&amp;P1=dsatnoresultsweb&amp;P2=link%3aplease-dont-register-a-site-that-breaks-this-test.com&amp;P3=0&amp;P4=NOFORM&amp;P5=3B20A456260E469A9912790FE1D41CE3&amp;P6=Toronto, Ontario&amp;P9=43.650001525%2f-79.379997253&amp;P10=0&amp;P11=&amp;searchtype=Web+Search&amp;optl1=1&amp;backurl=http%3a%2f%2fwww.bing.com%2fsearch%3fq%3dlink%3aplease-dont-register-a-site-that-breaks-this-test.com%26FORM%3dFEEDTU" id="sb_feedback" onmousedown="return si_T('&amp;ID=FD,74.1')">Feedback</a></li></ul></div></div></div><script type="text/javascript">//<![CDATA[
       _G.BST=new Date
-
       //]]></script><script type="text/javascript">//<![CDATA[
-
-      sj_cook=new function(){var a=this;a.get=function(d,c){var a=_d.cookie.match(new
-      RegExp("\\b"+d+"=[^;]+"));if(c&&a){var b=a[0].match(new RegExp("\\b"+c+"=([^&]*)"));return
-      b?b[1]:null}return a?a[0]:null};a.set=function(c,d,m,k,j,g){var e,f=d+"="+m,b=a.get(c);if(b){var
-      h=a.get(c,d);e=h?b.replace(d+"="+h,f):b+"&"+f}else e=c+"="+f;var i=location.hostname.match(/([^.]+\.[^.]*)$/),l=g&&g>0?g*6e4:6.3072e10;_d.cookie=e+(i?";domain="+i[0]:"")+(k?";expires="+(new
-      Date((new Date).getTime()+Math.min(l,6.3072e10))).toGMTString():"")+(j?";path="+j:"")}};sc_fadeCb=function(){};function
-      sc_bgL(){var a=g_img,b=_ge(a.id),d=sj_evt,c=d.bind,f=d.unbind,i=d.fire,e="onBgLoad",g="onSbBusy",h="onSbIdle";c("onP1",j,1,500);function
-      j(){var d=new Image,o=sj_fader(),m=0,p=0,j;c("onSearch",function(){a.x=true;d=null;o.stop();sb_ct(j)});function
-      l(){f(g,l);if(!m){sb_ct(j);f(e,n);c(h,k)}}function k(){c(e,n,1);f(h,k);c(g,l)}k();function
-      n(e){m=1;function c(){b.style.backgroundImage="url(''"+d.src+"'')";b.className+="
-      sw_imLd";i("onBgSet")}d.onerror=d.onload=null;if(e[2]>a.d){sj_so(b,0);c();j=sb_st(sj_wf(o.init,b,0,100,10,sc_fadeCb),500)}else{c();sj_so(b,100);sc_fadeCb()}sj_cook.set(a.cN,a.crN,a.hash,0,"/")}d.onload=function(){p=sb_gt()-q;i(e,d,p)};var
-      q=sb_gt();d.src=a.url}}sj_evt.bind("onP1",function(){!(_w.g_img&&g_img.cN)&&sj_evt.fire("onBgSet")},1);g_img={url:''\/fd\/hpk2\/Busan_EN-US67002425o.jpg'',id:''sw_im'',d:10,cN:''_SS'',crN:''hIm'',hash:''425''};sc_bgL();;sj_evt.bind("onP1",function(){var
-      a=_ge("sw_tll");a&&sj_jb("multipleLogins_c",1,a,"mouseover",a,"click")},1,5);function
-      sj_ic(b){var a=sj_ce("style");_d.getElementsByTagName("head")[0].appendChild(a);if(sb_ie)a.styleSheet.cssText=b;else
-      a.appendChild(_d.createTextNode(b))};_ge("sa_qs").value="bs";sj_evt.bind("onASConfig",function(d){var
-      b=d[1],a=_ge(b.i),c=sj_evt.fire;a.setAttribute("autocomplete","off");sj_be(a,"keyup",function(a){c("onASKeyup"+b.i,a.keyCode)});sj_be(a,"click",sj_wf(c,"onASClick"+b.i));sj_jb.apply(null,[b.r,1,a,"mousedown",a,"keydown"].concat(b.ol?[_w,"load"]:[]))},1);sj_evt.fire(''onASConfig'',{r:''AutoSug'',lmh:''\/profile\/history?q=link%3aplease-dont-register-a-site-that-breaks-this-test.com'',ePN:1,eAN:1,eLO:1,h:1,m:8,mkt:''en-US'',ml:45,mh:128,d:100,t:1,u:''http:\/\/api.bing.com\/qsonhs.aspx?FORM=ASAPIW'',f:''sb_form'',i:''sb_form_q'',c:''sw_as'',p0:''DN,AN'',eHS:1,cHS:3,sid:''E123D8DA4006437B902B02423FC34AC1''});sa_loc={H_PN:''Popular
-      now'',H_AS:''Web results'',L_MH:''Manage search history'',L_P:''Preferences'',T_SQ:''Trending''};;sj_evt.bind(''onP1'',function(){sa_DNS=new
-      Image;sa_DNS.src=''http://api.bing.com/qsonhs.aspx?FORM=ASAPIW&q=''},1,5);sj_evt.fire("onHTML");function
-      si_sendCReq(){_G.muidI=new Image;_G.muidI.onload=function(){var d=_d.cookie;if(/\bTUID\b/i.test(d))return
-      1;_G.muidI2=new Image;_G.muidI2.src=_G.gpUrl+"CM=TMF&IG="+_G.IG+(_G.CID?"&CID="+_G.CID:"");_G.muidI3=new
-      Image;var b="MUID",a=sj_cook.get(b),c=a.substring(b.length+1,a.length);_G.muidI3.src=_G.akamaiSyncUrl.replace(/&amp;/g,"&")+c;return
-      1};_G.muidI.src=_G.cUrl};sf_fbCfg={sId:"0"};sj_evt.bind("onP1",function(){_w.logfb&&_w.logfb("fi");var
-      a=sj_ce("iframe");a.height=0;a.width=0;a.frameBorder=a.scrolling="no";sj_b.appendChild(a);a.src="/fd/fb/r?v="+_G.Ver+"&sId="+sf_fbCfg.sId},1,_w.sf_fbCfg&&sf_fbCfg.wt?sf_fbCfg.wt:1500);sj_evt.bind("xd:fba:checkbar",function(b){if(b&&b.length>=2){var
-      a=sj_ce("iframe");a.id="sw_tfbbi";var c=_ge("sw_tfbb");if(c){a.height="0";a.scrolling=a.frameBorder="no";a.src="/fd/fb/b?fv="+_G.Ver+"#"+b[1];c.appendChild(a)}}});RMS2=new
-      function(){var b=[],d="",g="readyState",e="onreadystatechange",f,h,a=_w.RmsConfig||{};this.RegisterResources=function(c,h,g,e){d=_d.domain;for(var
-      a=0;a<c.length;a++)b.push({n:g,u:c[a],c:e[a]});if(!f){f=true;sj_evt.bind("onP1",j,1,1e3)}};function
-      i(e,g){var d=6,c="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789-_",a=e?e.split(""):[],f,b=~~(g/d);while(a.length<=b)a.push(c.charAt(0));f=c.indexOf(a[b])|1<<g%d;a[b]=c.charAt(f);return
-      a.join("")}function k(a){var b=sj_cook.get("RMS",a.n);sj_cook.set("RMS",a.n,i(b,a.c),0,"/",0)}function
-      j(){if(_d.domain!=d)return;a.P&&a.P();h=new Date;c(0)}function c(f){var i=b[f];if(i){var
-      d=sj_gx();if(!d)return;d.open("get",i.u,true);var j=sb_st(function(){if(d[g]!=4){d[e]=function(){};d.abort();c(f+1)}},5e3);d[e]=function(){if(d[g]==4){sb_ct(j);k(b[f]);c(f+1)}};d.send(null)}else
-      a.I&&a.I(h)}};RMS2.RegisterResources([''\/fd\/sa\/1112031442\/brand4_c.css'',''\/fd\/sa\/0908192802\/noResults2_c.css'',''\/fd\/sa\/0721115826\/Shared.js'',''\/fd\/sa\/0108182120\/PostContent.js''],[],''F'',[3,9,1,2]);;
-
+      sj_cook=new function(){var a=this;a.get=function(d,c){var a=_d.cookie.match(new RegExp("\\b"+d+"=[^;]+"));if(c&&a){var b=a[0].match(new RegExp("\\b"+c+"=([^&]*)"));return b?b[1]:null}return a?a[0]:null};a.set=function(c,d,m,k,j,g){var e,f=d+"="+m,b=a.get(c);if(b){var h=a.get(c,d);e=h?b.replace(d+"="+h,f):b+"&"+f}else e=c+"="+f;var i=location.hostname.match(/([^.]+\.[^.]*)$/),l=g&&g>0?g*6e4:6.3072e10;_d.cookie=e+(i?";domain="+i[0]:"")+(k?";expires="+(new Date((new Date).getTime()+Math.min(l,6.3072e10))).toGMTString():"")+(j?";path="+j:"")}};sc_fadeCb=function(){};function sc_bgL(){var a=g_img,b=_ge(a.id),d=sj_evt,c=d.bind,f=d.unbind,i=d.fire,e="onBgLoad",g="onSbBusy",h="onSbIdle";c("onP1",j,1,500);function j(){var d=new Image,o=sj_fader(),m=0,p=0,j;c("onSearch",function(){a.x=true;d=null;o.stop();sb_ct(j)});function l(){f(g,l);if(!m){sb_ct(j);f(e,n);c(h,k)}}function k(){c(e,n,1);f(h,k);c(g,l)}k();function n(e){m=1;function c(){b.style.backgroundImage="url('"+d.src+"')";b.className+=" sw_imLd";i("onBgSet")}d.onerror=d.onload=null;if(e[2]>a.d){sj_so(b,0);c();j=sb_st(sj_wf(o.init,b,0,100,10,sc_fadeCb),500)}else{c();sj_so(b,100);sc_fadeCb()}sj_cook.set(a.cN,a.crN,a.hash,0,"/")}d.onload=function(){p=sb_gt()-q;i(e,d,p)};var q=sb_gt();d.src=a.url}}sj_evt.bind("onP1",function(){!(_w.g_img&&g_img.cN)&&sj_evt.fire("onBgSet")},1);g_img={url:'\/fd\/hpk2\/Macaws_EN-CA1245333307o.jpg',id:'sw_im',d:10,cN:'_SS',crN:'hIm',hash:'307'};sc_bgL();;function sj_ic(b){var a=sj_ce("style");_d.getElementsByTagName("head")[0].appendChild(a);if(sb_ie)a.styleSheet.cssText=b;else a.appendChild(_d.createTextNode(b))};_ge("sa_qs").value="bs";sj_evt.bind("onASConfig",function(d){var b=d[1],a=_ge(b.i),c=sj_evt.fire;a.setAttribute("autocomplete","off");sj_be(a,"keyup",function(a){c("onASKeyup"+b.i,a.keyCode)});sj_be(a,"click",sj_wf(c,"onASClick"+b.i));sj_jb.apply(null,[b.r,1,a,"mousedown",a,"keydown"].concat(b.ol?[_w,"load"]:[]))},1);sj_evt.fire('onASConfig',{r:'AutoSug',lmh:'\/profile\/history?q=link%3aplease-dont-register-a-site-that-breaks-this-test.com',eAN:1,h:1,as:'a',m:8,mkt:'en-CA',ml:45,mh:128,d:100,t:1,u:'http:\/\/api.bing.com\/qsonhs.aspx?FORM=ASAPIW',f:'sb_form',i:'sb_form_q',c:'sw_as',p0:'DN,AN',eHS:1,cHS:3,sid:'0D036DB5B18242628662D58D06755399'});sa_loc={H_PN:'Popular now',H_AS:'Web results',L_MH:'Manage search history',L_P:'Preferences',T_SQ:'Trending'};;sj_evt.bind('onP1',function(){sa_DNS=new Image;sa_DNS.src='http://api.bing.com/qsonhs.aspx?FORM=ASAPIW&q='},1,5);sj_evt.fire("onHTML");function si_sendCReq(){_G.muidI=new Image;_G.muidI.onload=function(){var d=_d.cookie;if(/\bTUID\b/i.test(d))return 1;_G.muidI2=new Image;_G.muidI2.src=_G.gpUrl+"CM=TMF&IG="+_G.IG+(_G.CID?"&CID="+_G.CID:"");_G.muidI3=new Image;var b="MUID",a=sj_cook.get(b),c=a.substring(b.length+1,a.length);_G.muidI3.src=_G.akamaiSyncUrl.replace(/&amp;/g,"&")+c;return 1};_G.muidI.src=_G.cUrl};RMS2=new function(){var b=[],d="",g="readyState",e="onreadystatechange",f,h,a=_w.RmsConfig||{};this.RegisterResources=function(c,h,g,e){d=_d.domain;for(var a=0;a<c.length;a++)b.push({n:g,u:c[a],c:e[a]});if(!f){f=true;sj_evt.bind("onP1",j,1,1e3)}};function i(e,g){var d=6,c="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789-_",a=e?e.split(""):[],f,b=~~(g/d);while(a.length<=b)a.push(c.charAt(0));f=c.indexOf(a[b])|1<<g%d;a[b]=c.charAt(f);return a.join("")}function k(a){var b=sj_cook.get("RMS",a.n);sj_cook.set("RMS",a.n,i(b,a.c),0,"/",0)}function j(){if(_d.domain!=d)return;a.P&&a.P();h=new Date;c(0)}function c(f){var i=b[f];if(i){var d=sj_gx();if(!d)return;d.open("get",i.u,true);var j=sb_st(function(){if(d[g]!=4){d[e]=function(){};d.abort();c(f+1)}},5e3);d[e]=function(){if(d[g]==4){sb_ct(j);k(b[f]);c(f+1)}};d.send(null)}else a.I&&a.I(h)}};RMS2.RegisterResources(['\/fd\/sa\/0925210935\/brand4_c.css','\/fd\/sa\/0908192802\/noResults2_c.css','\/fd\/sa\/1114135729\/Shared.js','\/fd\/sa\/0108182120\/PostContent.js'],[],'F',[3,9,1,2]);;
       //]]></script><script type="text/javascript">//<![CDATA[
-
-      RMS2.RegisterResources([''/sa/1030222733/serpAll_c.css''],[],''A'',[4]);;
-
+      RMS2.RegisterResources(['/sa/0920014555/serpAll_c.css'],[],'A',[4]);;
       //]]></script><script type="text/javascript">//<![CDATA[
-
-      (function(){function a(){!_w.sb_ppCPL&&sb_st(function(){si_PP(new Date)},0)}var
-      b=_w.onload||function(){};onload=function(c){_G.BPT=new Date;b(c);a()};_G.HT=new
-      Date})()
-
-      //]]></script></body></html>'
-    http_version: '1.1'
+      (function(){function a(){!_w.sb_ppCPL&&sb_st(function(){si_PP(new Date)},0)}var b=_w.onload||function(){};onload=function(c){_G.BPT=new Date;b(c);a()};_G.HT=new Date})()
+      //]]></script></body></html>
+    http_version: "1.1"

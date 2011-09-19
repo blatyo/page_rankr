@@ -1,77 +1,127 @@
----
-- !ruby/struct:VCR::HTTPInteraction
-  request: !ruby/struct:VCR::Request
+--- 
+- !ruby/struct:VCR::HTTPInteraction 
+  request: !ruby/struct:VCR::Request 
     method: :get
     uri: http://data.alexa.com:80/data?cli=10&dat=snbamz&url=please-dont-register-a-site-that-breaks-this-test.com
-    body: !!null 
-    headers: !!null 
-  response: !ruby/struct:VCR::Response
-    status: !ruby/struct:VCR::ResponseStatus
+    body: 
+    headers: 
+  response: !ruby/struct:VCR::Response 
+    status: !ruby/struct:VCR::ResponseStatus 
       code: 200
       message: OK
-    headers:
-      content-length:
-      - '278'
-      content-type:
+    headers: 
+      content-type: 
       - text/xml
-    body: ! "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n\r\n<ALEXA VER=\"0.9\"
-      URL=\"please-dont-register-a-site-that-breaks-this-test.com/\" HOME=\"0\" AID=\"=\">\r\n<RLS
-      PREFIX=\"http://\" more=\"0\">\n</RLS>\n<SD TITLE=\"A\" FLAGS=\"\" HOST=\"please-dont-register-a-site-that-breaks-this-test.com\">\n</SD>\n\n</ALEXA>"
-    http_version: '1.1'
-- !ruby/struct:VCR::HTTPInteraction
-  request: !ruby/struct:VCR::Request
+      content-length: 
+      - "278"
+    body: |-
+      <?xml version="1.0" encoding="UTF-8"?>
+      
+      <ALEXA VER="0.9" URL="please-dont-register-a-site-that-breaks-this-test.com/" HOME="0" AID="=">
+      <RLS PREFIX="http://" more="0">
+      </RLS>
+      <SD TITLE="A" FLAGS="" HOST="please-dont-register-a-site-that-breaks-this-test.com">
+      </SD>
+      
+      </ALEXA>
+    http_version: "1.1"
+- !ruby/struct:VCR::HTTPInteraction 
+  request: !ruby/struct:VCR::Request 
     method: :get
     uri: http://siteanalytics.compete.com:80/please-dont-register-a-site-that-breaks-this-test.com/
-    body: !!null 
-    headers: !!null 
-  response: !ruby/struct:VCR::Response
-    status: !ruby/struct:VCR::ResponseStatus
-      code: 302
-      message: FOUND
-    headers:
-      date:
-      - Mon, 15 Aug 2011 10:07:53 GMT
-      server:
-      - Apache
-      vary:
-      - Host,User-Agent,Cookie
-      content-length:
-      - '0'
-      location:
-      - http://siteanalytics.compete.com/m/profiles/site/please-dont-register-a-site-that-breaks-this-test.com/nodata/
-      content-type:
+    body: 
+    headers: 
+  response: !ruby/struct:VCR::Response 
+    status: !ruby/struct:VCR::ResponseStatus 
+      code: 404
+      message: NOT FOUND
+    headers: 
+      content-type: 
       - text/html; charset=utf-8
-    body: !!null 
-    http_version: '1.1'
-- !ruby/struct:VCR::HTTPInteraction
-  request: !ruby/struct:VCR::Request
+      content-language: 
+      - en-us
+      server: 
+      - Apache
+      date: 
+      - Mon, 19 Sep 2011 16:01:01 GMT
+      content-length: 
+      - "2440"
+      vary: 
+      - Accept-Language,Cookie,User-Agent
+    body: |
+      <!DOCTYPE html>
+      <meta charset="utf-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <meta name="ICBM" content="42.348043, -71.077617" />
+      <meta name="DC.title" content="Compete" />
+      <meta name="description"
+                content=" Compete helps you benefit from click-sharing by
+                              providing free services that create a more trusted,
+                              transparent, and valuable Internet." />
+      <meta name="keywords"
+                content="compete, toolbar, snapshot, search, community, metrics,
+                              site traffic, engagement, attention, rank, analytics,
+                              deals, coupons, promotional codes, trust scores" />
+      <title>File Not Found | Compete</title>
+      <link rel="shortcut icon" href="/favicon.ico" />
+      <link rel="stylesheet" type="text/css" href="/site_media/css/universal/framework.css" media="all" charset="utf-8" />
+      <link rel="stylesheet" type="text/css" href="/site_media/css/help/help_base.css" media="all" charset="utf-8" />
+      <link rel="stylesheet" type="text/css" href="/site_media/css/help/errors.css" media="all" charset="utf-8" />
+      </head><body id="error" class="">
+      <div class="wrapper">
+          <div class="header">
+              <h1><a href="http://www.compete.com"><img src="/site_media/images/help/compete_logo_4ac.png" width="90" height="16" alt="Compete logo"></a></h1>
+          </div>
+          <div class="page">
+              <div class="content">
+                  <div class="article">
+                      <img src="http://media.compete.com/site_media/images/help/404-robot.gif" width="290" height="345" alt="404 robot" class="float-right" />
+                      <h2 style="margin:85px 0 15px; padding:0 0 15px; font-size:24px; color:#666; width:300px; font-weight:lighter; line-height:1.1; border-bottom:1px #eee solid;"><span style="font-size:64px; color:#333; font-weight:bold;">Oh snap!</span>
+                      <br />It seems that something went wrong.</h2>
+                      <ul style="color:#3ae; font-size:14px; line-height:2;">
+                          <li><a href="javascript:history.go(-1);">Return to the previous page you were on</a></li>
+                          <li><a href="/">Return to compete.com</a></li>
+                      </ul>
+                  </div>
+              </div>
+          </div>
+          <div class="footer">
+              <p class="copyright">Compete &copy; 2000 - 2011 All Rights Reserved</p>
+          </div>
+      </div>
+      </body>
+      </html>
+
+    http_version: "1.1"
+- !ruby/struct:VCR::HTTPInteraction 
+  request: !ruby/struct:VCR::Request 
     method: :get
     uri: http://toolbarqueries.google.com:80/search?ch=63624986523&client=navclient-auto&features=Rank&q=info%3Aplease-dont-register-a-site-that-breaks-this-test.com
-    body: !!null 
-    headers: !!null 
-  response: !ruby/struct:VCR::Response
-    status: !ruby/struct:VCR::ResponseStatus
+    body: 
+    headers: 
+  response: !ruby/struct:VCR::Response 
+    status: !ruby/struct:VCR::ResponseStatus 
       code: 200
       message: OK
-    headers:
-      date:
-      - Mon, 15 Aug 2011 10:07:56 GMT
-      pragma:
-      - no-cache
-      expires:
+    headers: 
+      expires: 
       - Fri, 01 Jan 1990 00:00:00 GMT
-      cache-control:
-      - no-cache, must-revalidate
-      content-type:
+      content-type: 
       - text/html; charset=ISO-8859-1
-      set-cookie:
-      - PREF=ID=49cc2d7fba9e1db5:FF=0:TM=1313402876:LM=1313402876:S=M7TTlOR-2gelEeTH;
-        expires=Wed, 14-Aug-2013 10:07:56 GMT; path=/; domain=.google.com
-      server:
+      server: 
       - gws
-      content-length:
-      - '0'
-      x-xss-protection:
+      date: 
+      - Mon, 19 Sep 2011 16:00:59 GMT
+      x-xss-protection: 
       - 1; mode=block
-    body: !!null 
-    http_version: '1.1'
+      content-length: 
+      - "0"
+      set-cookie: 
+      - PREF=ID=17ac6618e4ac21fb:FF=0:TM=1316448059:LM=1316448059:S=C_5Vgqk96StcINpB; expires=Wed, 18-Sep-2013 16:00:59 GMT; path=/; domain=.google.com
+      cache-control: 
+      - no-cache, must-revalidate
+      pragma: 
+      - no-cache
+    body: 
+    http_version: "1.1"
