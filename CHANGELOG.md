@@ -1,5 +1,11 @@
 # Change Log
 
+## Version 2.0.3
+* Fix Compete scraper
+
+## Version 2.0.2
+* Update public_suffix_service gem
+
 ## Version 2.0.1
 * Alexa sometimes returns result for the incorrect site. In this case, the results returned are ignored.
 
