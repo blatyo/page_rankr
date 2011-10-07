@@ -1,5 +1,8 @@
 # Change Log
 
+## Version 2.0.4
+* Fix google page rank url
+
 ## Version 2.0.3
 * Fix Compete scraper
 

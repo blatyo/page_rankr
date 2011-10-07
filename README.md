@@ -172,7 +172,8 @@ Then, just make sure you require the class and PageRankr and whenever you call P
 * [Iteration Labs, LLC](https://github.com/iterationlabs) - Compete rank tracker and domain indexes.
 * [Marc Seeger](http://www.marc-seeger.de) ([Acquia](http://www.acquia.com)) - Ignore invalid ranks that Alexa returns for incorrect sites.
 * [Rémy Coutable](https://github.com/rymai) - Update public_suffix_service gem
-* [Jonathan Rudenberg])(https://github.com/titanous) - Fix compete scraper
+* [Jonathan Rudenberg](https://github.com/titanous) - Fix compete scraper
+* [Chris Corbyn](https://github.com/d11wtq) - Fix google page rank url
 
 ## Shout Out
 Gotta give credit where credits due!
