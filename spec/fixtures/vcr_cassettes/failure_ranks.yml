@@ -97,7 +97,7 @@
 - !ruby/struct:VCR::HTTPInteraction 
   request: !ruby/struct:VCR::Request 
     method: :get
-    uri: http://toolbarqueries.google.com:80/search?ch=63624986523&client=navclient-auto&features=Rank&q=info%3Aplease-dont-register-a-site-that-breaks-this-test.com
+    uri: http://toolbarqueries.google.com:80/tbr?ch=63624986523&client=navclient-auto&features=Rank&q=info%3Aplease-dont-register-a-site-that-breaks-this-test.com
     body: 
     headers: 
   response: !ruby/struct:VCR::Response 

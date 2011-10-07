@@ -5,11 +5,11 @@ module PageRankr
   class Ranks
     class Google
       include Rank
-      
+
       def initialize(site)
         @site = site
         @checksum = Checksum.generate(@site.to_s)
-        
+
         request.on_complete do |response|
           @rank = if response.body =~ regex
             clean($1)
@@ -18,13 +18,13 @@ module PageRankr
           end
         end
       end
-      
+
       def regex
         /Rank_\d+:\d+:(\d+)/
       end
 
       def request
-        @request ||= Typhoeus::Request.new("http://toolbarqueries.google.com/search",
+        @request ||= Typhoeus::Request.new("http://toolbarqueries.google.com/tbr",
               :params => {:client => "navclient-auto", :ch => @checksum, :features => "Rank", :q => "info:#{@site.to_s}"})
       end
     end
