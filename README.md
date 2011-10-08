@@ -198,12 +198,8 @@ Then, just make sure you require the class and PageRankr and whenever you call P
   (if you want to have your own version, that is fine but bump version in a commit by itself I can ignore when I pull)
 * Send me a pull request. Bonus points for topic branches.
 
-## TODO Version 3
+## TODO Version 3-4
 * Use API's where possible
-* Configuration
-    * Optionally use API keys
-    * Maybe allow API key cycling to get around query limits
-* Google search API is deprecated
 * New Compete API
 * Some search engines throttle the amount of queries. It would be nice to know when this happens. Probably throw an exception.
 
