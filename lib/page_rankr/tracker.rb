@@ -28,6 +28,10 @@ module PageRankr
       @request ||= Typhoeus::Request.new(url, @options)
     end
 
+    def url
+      raise PageRankr::MethodRequired, "A url method defining the url to the service with the value you wish to extract must be defined."
+    end
+
     def method
       :get
     end
