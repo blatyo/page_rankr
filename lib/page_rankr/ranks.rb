@@ -1,8 +1,8 @@
 require File.expand_path("../trackers", __FILE__)
-require File.join(File.dirname(__FILE__), "ranks", "alexa_us")
-require File.join(File.dirname(__FILE__), "ranks", "alexa_global")
-require File.join(File.dirname(__FILE__), "ranks", "google")
-require File.join(File.dirname(__FILE__), "ranks", "compete")
+require File.expand_path("../ranks/alexa_us", __FILE__)
+require File.expand_path("../ranks/alexa_global", __FILE__)
+require File.expand_path("../ranks/google", __FILE__)
+require File.expand_path("../ranks/compete", __FILE__)
 
 module PageRankr
   class Ranks

@@ -1,5 +1,5 @@
 require File.expand_path('../../rank', __FILE__)
-require File.join(File.dirname(__FILE__), "google", "checksum")
+require File.expand_path('../google/checksum', __FILE__)
 
 module PageRankr
   class Ranks

@@ -1,6 +1,6 @@
-require File.join(File.dirname(__FILE__), "page_rankr", "backlinks")
-require File.join(File.dirname(__FILE__), "page_rankr", "ranks")
-require File.join(File.dirname(__FILE__), "page_rankr", "indexes")
+require File.expand_path("../page_rankr/backlinks", __FILE__)
+require File.expand_path("../page_rankr/ranks", __FILE__)
+require File.expand_path("../page_rankr/indexes", __FILE__)
 
 module PageRankr
   class MethodRequired < StandardError; end

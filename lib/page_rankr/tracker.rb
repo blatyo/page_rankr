@@ -48,7 +48,7 @@ module PageRankr
       if respond_to? :xpath
         Nokogiri::HTML(body).at(xpath)
       elsif respond_to? :jsonpath
-        JsonPath.new(jsonpath).first(body)
+        JsonPath.new(jsonpath).first(JSON.parse(body))
       elsif respond_to? :regex
         body =~ regex ? $1 : nil
       else

@@ -1,6 +1,6 @@
 require File.expand_path("../trackers", __FILE__)
-require File.join(File.dirname(__FILE__), "indexes", "bing")
-require File.join(File.dirname(__FILE__), "indexes", "google")
+require File.expand_path("../indexes/bing", __FILE__)
+require File.expand_path("../indexes/google", __FILE__)
 
 module PageRankr
   class Indexes

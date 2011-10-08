@@ -1,8 +1,8 @@
 require File.expand_path("../trackers", __FILE__)
-require File.join(File.dirname(__FILE__), "backlinks", "alexa")
-require File.join(File.dirname(__FILE__), "backlinks", "bing")
-require File.join(File.dirname(__FILE__), "backlinks", "google")
-require File.join(File.dirname(__FILE__), "backlinks", "yahoo")
+require File.expand_path("../backlinks/alexa", __FILE__)
+require File.expand_path("../backlinks/bing", __FILE__)
+require File.expand_path("../backlinks/google", __FILE__)
+require File.expand_path("../backlinks/yahoo", __FILE__)
 
 module PageRankr
   class Backlinks
