@@ -10,10 +10,10 @@
       code: 200
       message: OK
     headers: 
-      content-type: 
-      - text/xml
       content-length: 
       - "278"
+      content-type: 
+      - text/xml
     body: |-
       <?xml version="1.0" encoding="UTF-8"?>
       
@@ -36,18 +36,18 @@
       code: 404
       message: NOT FOUND
     headers: 
-      content-type: 
-      - text/html; charset=utf-8
-      content-language: 
-      - en-us
+      date: 
+      - Sat, 08 Oct 2011 19:36:05 GMT
       server: 
       - Apache
-      date: 
-      - Mon, 19 Sep 2011 16:01:01 GMT
-      content-length: 
-      - "2440"
       vary: 
       - Accept-Language,Cookie,User-Agent
+      content-length: 
+      - "2440"
+      content-language: 
+      - en-us
+      content-type: 
+      - text/html; charset=utf-8
     body: |
       <!DOCTYPE html>
       <meta charset="utf-8" />
@@ -105,23 +105,23 @@
       code: 200
       message: OK
     headers: 
-      expires: 
-      - Fri, 01 Jan 1990 00:00:00 GMT
-      content-type: 
-      - text/html; charset=ISO-8859-1
-      server: 
-      - gws
       date: 
-      - Mon, 19 Sep 2011 16:00:59 GMT
-      x-xss-protection: 
-      - 1; mode=block
-      content-length: 
-      - "0"
-      set-cookie: 
-      - PREF=ID=17ac6618e4ac21fb:FF=0:TM=1316448059:LM=1316448059:S=C_5Vgqk96StcINpB; expires=Wed, 18-Sep-2013 16:00:59 GMT; path=/; domain=.google.com
-      cache-control: 
-      - no-cache, must-revalidate
+      - Sat, 08 Oct 2011 19:36:05 GMT
       pragma: 
       - no-cache
+      expires: 
+      - Fri, 01 Jan 1990 00:00:00 GMT
+      cache-control: 
+      - no-cache, must-revalidate
+      content-type: 
+      - text/html; charset=ISO-8859-1
+      set-cookie: 
+      - PREF=ID=a0ea2e76cc75d3c4:FF=0:TM=1318102565:LM=1318102565:S=aDX_3TymAPCAcBgA; expires=Mon, 07-Oct-2013 19:36:05 GMT; path=/; domain=.google.com
+      server: 
+      - gws
+      content-length: 
+      - "0"
+      x-xss-protection: 
+      - 1; mode=block
     body: 
     http_version: "1.1"

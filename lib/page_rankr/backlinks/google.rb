@@ -1,24 +1,20 @@
-require 'json'
+require File.expand_path('../../backlink', __FILE__)
 
 module PageRankr
   class Backlinks
     class Google
       include Backlink
-      
-      # overloaded to use Google's AJAX search API
-      # http://code.google.com/apis/ajaxsearch/documentation/
-      def initialize(site)
-        @site = site
-        request.on_complete do |response|
-          json = JSON.parse(response.body)
-          @backlinks = clean(json["responseData"]["cursor"]["estimatedResultCount"].to_s)
-          @backlinks = nil if @backlinks.zero?
-        end
+
+      def url
+        "http://www.google.com/search"
       end
-      
-      def request
-        @request ||= Typhoeus::Request.new("http://ajax.googleapis.com/ajax/services/search/web", 
-            :params => {:v => "1.0", :rsz => 1, :q => "link:#{@site.to_s}"}, :method => :get)
+
+      def params
+        {:q => "link:#{@site.to_s}"}
+      end
+
+      def xpath
+        "//div[@id='resultStats']/text()"
       end
     end
   end

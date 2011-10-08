@@ -1,15 +1,18 @@
-require 'typhoeus'
+require File.expand_path('../../backlink', __FILE__)
 
 module PageRankr
   class Backlinks
     class Bing
       include Backlink
-      
-      def request
-        @request ||= Typhoeus::Request.new("http://www.bing.com/search", 
-            :params => {:q => "link:#{@site.to_s}"}, :method => :get)
+            
+      def url
+        "http://www.bing.com/search"
       end
-      
+
+      def params
+        {:q => "link:#{@site.to_s}"}
+      end
+
       def xpath
         "//span[@class='sb_count']/text()"
       end

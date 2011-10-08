@@ -1,4 +1,4 @@
-require 'typhoeus'
+require File.expand_path('../../rank', __FILE__)
 require File.join(File.dirname(__FILE__), "google", "checksum")
 
 module PageRankr
@@ -7,25 +7,21 @@ module PageRankr
       include Rank
 
       def initialize(site)
-        @site = site
-        @checksum = Checksum.generate(@site.to_s)
+        @checksum = Checksum.generate(site.to_s)
+        
+        super(site)
+      end
 
-        request.on_complete do |response|
-          @rank = if response.body =~ regex
-            clean($1)
-          else
-            nil
-          end
-        end
+      def url
+        "http://toolbarqueries.google.com/tbr"
+      end
+
+      def params
+        {:client => "navclient-auto", :ch => @checksum, :features => "Rank", :q => "info:#{@site.to_s}"}
       end
 
       def regex
         /Rank_\d+:\d+:(\d+)/
-      end
-
-      def request
-        @request ||= Typhoeus::Request.new("http://toolbarqueries.google.com/tbr",
-              :params => {:client => "navclient-auto", :ch => @checksum, :features => "Rank", :q => "info:#{@site.to_s}"})
       end
     end
   end

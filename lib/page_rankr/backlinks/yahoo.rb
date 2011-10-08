@@ -1,13 +1,15 @@
-require 'typhoeus'
+require File.expand_path('../../backlink', __FILE__)
 
 module PageRankr
   class Backlinks
     class Yahoo
       include Backlink
       
-      def request
-        @request ||= Typhoeus::Request.new("http://siteexplorer.search.yahoo.com/search",
-            :params => {:p => "#{@site.to_s}"}, :method => :get)
+      def url
+        "http://siteexplorer.search.yahoo.com/search"
+      end
+      def params
+        {:p => "#{@site.to_s}"}
       end
       
       def xpath

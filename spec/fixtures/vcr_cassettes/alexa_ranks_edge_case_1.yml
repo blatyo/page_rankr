@@ -10,10 +10,10 @@
       code: 200
       message: OK
     headers: 
+      content-length: 
+      - "2455"
       content-type: 
       - text/xml
-      content-length: 
-      - "2454"
     body: "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n\
       \r\n\
       <ALEXA VER=\"0.9\" URL=\"slocourts.ca.gov/\" HOME=\"0\" AID=\"=\">\r\n\
@@ -39,7 +39,7 @@
       <EMAIL ADDR=\"lbatcheldor@co.slo.ca.us\"/>\n\
       <LANG LEX=\"en\" CODE=\"us-ascii\"/>\n\
       <LINKSIN NUM=\"60\"/>\n\
-      <SPEED TEXT=\"787\" PCT=\"81\"/>\n\
+      <SPEED TEXT=\"723\" PCT=\"83\"/>\n\
       <REVIEWS AVG=\"5.0\" NUM=\"\"/>\n\
       <CHILD SRATING=\"0\"/>\n\
       </SD>\n\n\
@@ -57,9 +57,9 @@
       </SITE>\n\
       </DMOZ>\n\
       <SD>\n\
-      <POPULARITY URL=\"ca.gov/\" TEXT=\"757\"/>\n\
-      <REACH RANK=\"806\"/>\n\
-      <RANK DELTA=\"+4\"/>\n\
+      <POPULARITY URL=\"ca.gov/\" TEXT=\"748\"/>\n\
+      <REACH RANK=\"802\"/>\n\
+      <RANK DELTA=\"-30\"/>\n\
       </SD>\n\
       </ALEXA>"
     http_version: "1.1"

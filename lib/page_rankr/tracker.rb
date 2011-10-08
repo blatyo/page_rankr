@@ -1,48 +1,65 @@
 require 'typhoeus'
+require 'nokogiri'
+require 'json'
+require 'jsonpath'
+require File.expand_path('../site', __FILE__)
 
 module PageRankr
   module Tracker
-    attr_accessor :site_trackers
-    
-    def initialize
-      @site_trackers = self.class.constants.collect{|tracker| symbol_for(tracker)}
+    attr_accessor :tracked
+    attr_accessor :raw
+    attr_accessor :body
+
+    def initialize(site, options = {})
+      @site = PageRankr::Site(site)
+
+      @options = {:method => method}
+      @options[:params] = params if respond_to? :params
+      @options.merge!(options)
+      
+      request.on_complete do |response|
+        self.body = response.body
+        self.raw = content(body)
+        self.tracked = clean(raw)
+      end
     end
 
-    def lookup(site, *trackers)
-      trackers = site_trackers if trackers.empty?
-      
-      tracked = {}
-      hydra = Typhoeus::Hydra.new
-      trackers.each do |tracker|
-        name, klass = constant_name(tracker), self.class
-        
-        next unless klass.const_defined? name
+    def request
+      @request ||= Typhoeus::Request.new(url, @options)
+    end
 
-        tracked[tracker] = klass.const_get(name).new(site)
-        hydra.queue tracked[tracker].request
-      end
+    def method
+      :get
+    end
+
+    def run
+      hydra = Typhoeus::Hydra.new
+      hydra.queue request
       hydra.run
-      
-      tracked.keys.each do |tracker|
-        tracked[tracker] = tracked[tracker].tracked
-      end
-      
+
       tracked
     end
-    
-    private
-    
-    def symbol_for(klass)
-      word = klass.to_s.dup
-      word.gsub!(/([A-Z]+)([A-Z][a-z])/){|match| "#{$1}_#{$2}" }
-      word.gsub!(/([a-z\d])([A-Z])/){|match| "#{$1}_#{$2}" }
-      word.tr!("-", "_")
-      word.downcase!
-      word.to_sym
+
+    def content(body)
+      if respond_to? :xpath
+        Nokogiri::HTML(body).at(xpath)
+      elsif respond_to? :jsonpath
+        JsonPath.new(jsonpath).first(body)
+      elsif respond_to? :regex
+        body =~ regex ? $1 : nil
+      else
+        raise PageRankr::MethodRequired, "A method for extracting the value must be defined. Either xpath, jsonpath, or regex."
+      end.to_s
     end
     
-    def constant_name(sym)
-      sym.to_s.split('_').collect{|str| str.capitalize}.join
+    def clean(content)
+      cleaned_content = content.to_s.gsub(/\D/, '')
+
+      if cleaned_content.strip == ''
+        nil
+      else
+        cleaned_content.to_i
+      end
     end
   end
 end
