@@ -1,7 +1,6 @@
 require File.join(File.dirname(__FILE__), "page_rankr", "backlinks")
 require File.join(File.dirname(__FILE__), "page_rankr", "ranks")
 require File.join(File.dirname(__FILE__), "page_rankr", "indexes")
-require File.join(File.dirname(__FILE__), "page_rankr", "site")
 
 module PageRankr
   class MethodRequired < StandardError; end

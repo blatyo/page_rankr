@@ -13,10 +13,6 @@ module PageRankr
       def xpath
         "//div[@class='section score']/h4[2]/text()"
       end
-      
-      def clean(rank)
-        rank.to_s.gsub(/[#,]/, '').to_i
-      end
     end
   end
 end

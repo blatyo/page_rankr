@@ -16,4 +16,10 @@ module PageRankr
       site.split("?").first         # remove params
     end
   end
+
+  class << self
+    def Site(site)
+      site.respond_to?(:domain) ? site : Site.new(site)
+    end
+  end
 end

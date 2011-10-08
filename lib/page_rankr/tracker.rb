@@ -2,32 +2,42 @@ require 'typhoeus'
 require 'nokogiri'
 require 'json'
 require 'jsonpath'
+require File.expand_path('../site', __FILE__)
 
 module PageRankr
   module Tracker
-    def initialize(site)
-      @site = site
+    attr_accessor :tracked
+    attr_accessor :raw
+    attr_accessor :body
+
+    def initialize(site, options = {})
+      @site = PageRankr::Site(site)
+
+      @options = {:method => method}
+      @options[:params] = params if respond_to? :params
+      @options.merge!(options)
       
       request.on_complete do |response|
-        clean(content(response.body))
+        self.body = response.body
+        self.raw = content(body)
+        self.tracked = clean(raw)
       end
     end
 
     def request
-      @request if defined?(@request) && @request
-
-      options = {:method => method}
-      options[:params] = params if respond_to? :params
-
-      Typhoeus::Request.new(url, options)
-    end
-
-    def tracked
-      request.handled_response
+      @request ||= Typhoeus::Request.new(url, @options)
     end
 
     def method
       :get
+    end
+
+    def run
+      hydra = Typhoeus::Hydra.new
+      hydra.queue request
+      hydra.run
+
+      tracked
     end
 
     def content(body)
@@ -39,12 +49,17 @@ module PageRankr
         body =~ regex ? $1 : nil
       else
         raise PageRankr::MethodRequired, "A method for extracting the value must be defined. Either xpath, jsonpath, or regex."
-      end
+      end.to_s
     end
     
     def clean(content)
-      return content if content.nil?
-      content.to_s.gsub(/[a-zA-Z,\s\(\)]/, '').to_i
+      cleaned_content = content.to_s.gsub(/\D/, '')
+
+      if cleaned_content.strip == ''
+        nil
+      else
+        cleaned_content.to_i
+      end
     end
   end
 end

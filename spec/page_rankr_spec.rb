@@ -77,7 +77,10 @@ describe PageRankr do
     
       PageRankr.backlink_trackers.each do |tracker|
         it{ should have_key(tracker) }
-        it{ subject[tracker].should > 0 }
+
+        it "#{tracker} should have a value greater than zero" do
+          subject[tracker].should > 0
+        end
       end
     end
     
@@ -112,7 +115,10 @@ describe PageRankr do
       
       PageRankr.index_trackers.each do |tracker|
         it{ should have_key(tracker) }
-        it{ subject[tracker].should > 0 }
+        
+        it "#{tracker} should have a value greater than zero" do
+          subject[tracker].should > 0
+        end
       end
     end
     
