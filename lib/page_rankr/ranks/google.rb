@@ -13,7 +13,7 @@ module PageRankr
       end
 
       def url
-        "http://toolbarqueries.google.com/search"
+        "http://toolbarqueries.google.com/tbr"
       end
 
       def params

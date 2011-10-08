@@ -6,15 +6,15 @@ module PageRankr
       include Index
       
       def url
-        "http://ajax.googleapis.com/ajax/services/search/web"
+        "http://www.google.com/search"
       end
 
       def params
-        {:v => "1.0", :rsz => 1, :q => "site:#{@site.to_s}"}
+        {:q => "site:#{@site.to_s}"}
       end
 
-      def jsonpath
-        "$..estimatedResultCount"
+      def xpath
+        "//div[@id='resultStats']/text()"
       end
     end
   end

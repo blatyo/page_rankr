@@ -31,7 +31,7 @@
       Cordova\" STATE=\"CA\" ZIP=\"95670\" COUNTRY=\"US\" />\n<CREATED DATE=\"16-Jun-2000\"
       DAY=\"16\" MONTH=\"06\" YEAR=\"2000\"/>\n<PHONE NUMBER=\"+1 916 464 4239\"/>\n<OWNER
       NAME=\"State of California\"/>\n<EMAIL ADDR=\"lbatcheldor@co.slo.ca.us\"/>\n<LANG
-      LEX=\"en\" CODE=\"us-ascii\"/>\n<LINKSIN NUM=\"60\"/>\n<SPEED TEXT=\"787\" PCT=\"81\"/>\n<REVIEWS
+      LEX=\"en\" CODE=\"us-ascii\"/>\n<LINKSIN NUM=\"60\"/>\n<SPEED TEXT=\"723\" PCT=\"83\"/>\n<REVIEWS
       AVG=\"5.0\" NUM=\"\"/>\n<CHILD SRATING=\"0\"/>\n</SD>\n\n<KEYWORDS>\n<KEYWORD
       VAL=\"San Luis Obispo\"/>\n</KEYWORDS><DMOZ>\n<SITE BASE=\"slocourts.ca.gov/\"
       TITLE=\"SLO County Superior Court\" DESC=\"Administrative site of the Superior
@@ -42,5 +42,5 @@
       TITLE=\"United States/California\" CID=\"619087\"/>\n<CAT ID=\"Top/Regional/North_America/United_States/California/Government\"
       TITLE=\"California/Government\" CID=\"620608\"/>\n<CAT ID=\"Top/World/Español/Regional/América/Estados_Unidos/Estados/California\"
       TITLE=\"Estados/California\" CID=\"26249\"/>\n</CATS>\n</SITE>\n</DMOZ>\n<SD>\n<POPULARITY
-      URL=\"ca.gov/\" TEXT=\"750\"/>\n<REACH RANK=\"801\"/>\n<RANK DELTA=\"-27\"/>\n</SD>\n</ALEXA>"
+      URL=\"ca.gov/\" TEXT=\"748\"/>\n<REACH RANK=\"802\"/>\n<RANK DELTA=\"-30\"/>\n</SD>\n</ALEXA>"
     http_version: '1.1'

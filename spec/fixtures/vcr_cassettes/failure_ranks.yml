@@ -2,25 +2,6 @@
 - !ruby/struct:VCR::HTTPInteraction
   request: !ruby/struct:VCR::Request
     method: :get
-    uri: http://data.alexa.com:80/data?cli=10&dat=snbamz&url=please-dont-register-a-site-that-breaks-this-test.com
-    body: !!null 
-    headers: !!null 
-  response: !ruby/struct:VCR::Response
-    status: !ruby/struct:VCR::ResponseStatus
-      code: 200
-      message: OK
-    headers:
-      content-length:
-      - '278'
-      content-type:
-      - text/xml
-    body: ! "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n\r\n<ALEXA VER=\"0.9\"
-      URL=\"please-dont-register-a-site-that-breaks-this-test.com/\" HOME=\"0\" AID=\"=\">\r\n<RLS
-      PREFIX=\"http://\" more=\"0\">\n</RLS>\n<SD TITLE=\"A\" FLAGS=\"\" HOST=\"please-dont-register-a-site-that-breaks-this-test.com\">\n</SD>\n\n</ALEXA>"
-    http_version: '1.1'
-- !ruby/struct:VCR::HTTPInteraction
-  request: !ruby/struct:VCR::Request
-    method: :get
     uri: http://siteanalytics.compete.com:80/please-dont-register-a-site-that-breaks-this-test.com/
     body: !!null 
     headers: !!null 
@@ -30,7 +11,7 @@
       message: NOT FOUND
     headers:
       date:
-      - Sun, 02 Oct 2011 01:48:55 GMT
+      - Sat, 08 Oct 2011 19:30:08 GMT
       server:
       - Apache
       vary:
@@ -75,7 +56,26 @@
 - !ruby/struct:VCR::HTTPInteraction
   request: !ruby/struct:VCR::Request
     method: :get
-    uri: http://toolbarqueries.google.com:80/search?ch=63624986523&client=navclient-auto&features=Rank&q=info%3Aplease-dont-register-a-site-that-breaks-this-test.com
+    uri: http://data.alexa.com:80/data?cli=10&dat=snbamz&url=please-dont-register-a-site-that-breaks-this-test.com
+    body: !!null 
+    headers: !!null 
+  response: !ruby/struct:VCR::Response
+    status: !ruby/struct:VCR::ResponseStatus
+      code: 200
+      message: OK
+    headers:
+      content-length:
+      - '278'
+      content-type:
+      - text/xml
+    body: ! "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n\r\n<ALEXA VER=\"0.9\"
+      URL=\"please-dont-register-a-site-that-breaks-this-test.com/\" HOME=\"0\" AID=\"=\">\r\n<RLS
+      PREFIX=\"http://\" more=\"0\">\n</RLS>\n<SD TITLE=\"A\" FLAGS=\"\" HOST=\"please-dont-register-a-site-that-breaks-this-test.com\">\n</SD>\n\n</ALEXA>"
+    http_version: '1.1'
+- !ruby/struct:VCR::HTTPInteraction
+  request: !ruby/struct:VCR::Request
+    method: :get
+    uri: http://toolbarqueries.google.com:80/tbr?ch=63624986523&client=navclient-auto&features=Rank&q=info%3Aplease-dont-register-a-site-that-breaks-this-test.com
     body: !!null 
     headers: !!null 
   response: !ruby/struct:VCR::Response
@@ -84,7 +84,7 @@
       message: OK
     headers:
       date:
-      - Sun, 02 Oct 2011 01:48:55 GMT
+      - Sat, 08 Oct 2011 19:30:08 GMT
       pragma:
       - no-cache
       expires:
@@ -94,8 +94,8 @@
       content-type:
       - text/html; charset=ISO-8859-1
       set-cookie:
-      - PREF=ID=9de05a1ba86c192e:FF=0:TM=1317520135:LM=1317520135:S=z30PRBS55suXrvev;
-        expires=Tue, 01-Oct-2013 01:48:55 GMT; path=/; domain=.google.com
+      - PREF=ID=58715cbb2c8703dd:FF=0:TM=1318102208:LM=1318102208:S=swfanoDr_GObNfQn;
+        expires=Mon, 07-Oct-2013 19:30:08 GMT; path=/; domain=.google.com
       server:
       - gws
       content-length:
