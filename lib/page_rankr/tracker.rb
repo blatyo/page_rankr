@@ -1,48 +1,50 @@
 require 'typhoeus'
+require 'nokogiri'
+require 'json'
+require 'jsonpath'
 
 module PageRankr
   module Tracker
-    attr_accessor :site_trackers
-    
-    def initialize
-      @site_trackers = self.class.constants.collect{|tracker| symbol_for(tracker)}
+    def initialize(site)
+      @site = site
+      
+      request.on_complete do |response|
+        clean(content(response.body))
+      end
     end
 
-    def lookup(site, *trackers)
-      trackers = site_trackers if trackers.empty?
-      
-      tracked = {}
-      hydra = Typhoeus::Hydra.new
-      trackers.each do |tracker|
-        name, klass = constant_name(tracker), self.class
-        
-        next unless klass.const_defined? name
+    def request
+      @request if defined?(@request) && @request
 
-        tracked[tracker] = klass.const_get(name).new(site)
-        hydra.queue tracked[tracker].request
+      options = {:method => method}
+      options[:params] = params if respond_to? :params
+
+      Typhoeus::Request.new(url, options)
+    end
+
+    def tracked
+      request.handled_response
+    end
+
+    def method
+      :get
+    end
+
+    def content(body)
+      if respond_to? :xpath
+        Nokogiri::HTML(body).at(xpath)
+      elsif respond_to? :jsonpath
+        JsonPath.new(jsonpath).first(body)
+      elsif respond_to? :regex
+        body =~ regex ? $1 : nil
+      else
+        raise PageRankr::MethodRequired, "A method for extracting the value must be defined. Either xpath, jsonpath, or regex."
       end
-      hydra.run
-      
-      tracked.keys.each do |tracker|
-        tracked[tracker] = tracked[tracker].tracked
-      end
-      
-      tracked
     end
     
-    private
-    
-    def symbol_for(klass)
-      word = klass.to_s.dup
-      word.gsub!(/([A-Z]+)([A-Z][a-z])/){|match| "#{$1}_#{$2}" }
-      word.gsub!(/([a-z\d])([A-Z])/){|match| "#{$1}_#{$2}" }
-      word.tr!("-", "_")
-      word.downcase!
-      word.to_sym
-    end
-    
-    def constant_name(sym)
-      sym.to_s.split('_').collect{|str| str.capitalize}.join
+    def clean(content)
+      return content if content.nil?
+      content.to_s.gsub(/[a-zA-Z,\s\(\)]/, '').to_i
     end
   end
 end

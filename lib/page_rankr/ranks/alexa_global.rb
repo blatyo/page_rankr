@@ -1,11 +1,18 @@
-require 'typhoeus'
-require 'nokogiri'
+require File.expand_path('../../rank', __FILE__)
 
 module PageRankr
   class Ranks
     class AlexaGlobal
       include Rank
       
+      def url
+        "http://data.alexa.com/data"
+      end
+
+      def params
+        {:cli => 10, :dat => "snbamz", :url => @site.to_s}
+      end
+
       # Alexa may sometimes return a result for the incorrect site and thus it is necessary to check if
       # the results returned are for the site we want.
       #
@@ -14,11 +21,6 @@ module PageRankr
       # happens we treat the results as if there were no results.
       def xpath
          "//popularity[contains(@url, '#{@site.domain}')]/@text"
-      end
-      
-      def request
-        @request ||= Typhoeus::Request.new("http://data.alexa.com/data",
-            :params => {:cli => 10, :dat => "snbamz", :url => @site.to_s})
       end
     end
   end

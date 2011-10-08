@@ -1,13 +1,16 @@
-require 'typhoeus'
+require File.expand_path('../../index', __FILE__)
 
 module PageRankr
   class Indexes
     class Bing
       include Index
       
-      def request
-        @request ||= Typhoeus::Request.new("http://www.bing.com/search",
-            :params => {:q => "site:#{@site.to_s}"})
+      def url
+        "http://www.bing.com/search"
+      end
+
+      def params
+        {:q => "site:#{@site.to_s}"}
       end
       
       def xpath

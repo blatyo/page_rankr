@@ -2,8 +2,6 @@ require 'public_suffix_service'
 require 'delegate'
 
 module PageRankr
-  class DomainInvalid < StandardError; end
-  
   class Site < DelegateClass(PublicSuffixService::Domain)
     def initialize(site)
       super(PublicSuffixService.parse(clean(site)))
