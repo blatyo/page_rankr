@@ -4,10 +4,11 @@ module PageRankr
       class Checksum
         class << self
           def generate(site)
-            bytes  = byte_array('info:' + site)
+            bytes  = byte_array(site)
             length = bytes.length
             a = b = 0x9E3779B9
             c = 0xE6359A60
+            
             k, len = 0, length
             while(len >= 12)
               a = m(a + bytes[k + 0] + (bytes[k + 1] << 8) + (bytes[k +  2] << 16) + (bytes[k +  3] << 24))

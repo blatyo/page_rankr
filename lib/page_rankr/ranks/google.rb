@@ -7,7 +7,7 @@ module PageRankr
       include Rank
 
       def initialize(site)
-        @checksum = Checksum.generate(site.to_s)
+        @checksum = Checksum.generate('info:' + site.to_s)
         
         super(site)
       end
