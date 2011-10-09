@@ -8,7 +8,7 @@ VCR.config do |c|
   c.stub_with :typhoeus
 end
 
-Rspec.configure do |c|
+RSpec.configure do |c|
   c.formatter = Fuubar
   c.color_enabled = true
 end
