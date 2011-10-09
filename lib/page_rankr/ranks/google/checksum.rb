@@ -8,14 +8,10 @@ module PageRankr
             length = bytes.length
             a = b = 0x9E3779B9
             c = 0xE6359A60
-            
+
             k, len = 0, length
             while(len >= 12)
-              a = m(a + bytes[k + 0] + (bytes[k + 1] << 8) + (bytes[k +  2] << 16) + (bytes[k +  3] << 24))
-              b = m(b + bytes[k + 4] + (bytes[k + 5] << 8) + (bytes[k +  6] << 16) + (bytes[k +  7] << 24))
-              c = m(c + bytes[k + 8] + (bytes[k + 9] << 8) + (bytes[k + 10] << 16) + (bytes[k + 11] << 24))
-
-              a, b, c = mix(a, b, c)
+              a, b, c = mix(*shift(a, b, c, k, bytes))
               k += 12
               len -= 12
             end
@@ -37,6 +33,14 @@ module PageRankr
           # Need to keep numbers in the unsigned int 32 range
           def m(v)
             v % 0x100000000
+          end
+
+          def shift(a, b, c, k, bytes)
+            a = m(a + bytes[k + 0] + (bytes[k + 1] << 8) + (bytes[k +  2] << 16) + (bytes[k +  3] << 24))
+            b = m(b + bytes[k + 4] + (bytes[k + 5] << 8) + (bytes[k +  6] << 16) + (bytes[k +  7] << 24))
+            c = m(c + bytes[k + 8] + (bytes[k + 9] << 8) + (bytes[k + 10] << 16) + (bytes[k + 11] << 24))
+
+            [a, b, c]
           end
 
           def mix(a, b, c)
