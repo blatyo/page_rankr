@@ -1,5 +1,8 @@
 # Change Log
 
+## Version 3.0.1
+* Improve PageRankr::Site
+
 ## Version 3.0.0
 * Refactor
     * Move the logic for the typhoeus request out of the individual trackers in Tracker to hide the complexity.
