@@ -1,106 +1,127 @@
----
-- !ruby/struct:VCR::HTTPInteraction
-  request: !ruby/struct:VCR::Request
-    method: :get
-    uri: http://siteanalytics.compete.com:80/please-dont-register-a-site-that-breaks-this-test.com/
-    body: !!null 
-    headers: !!null 
-  response: !ruby/struct:VCR::Response
-    status: !ruby/struct:VCR::ResponseStatus
-      code: 404
-      message: NOT FOUND
-    headers:
-      date:
-      - Sat, 08 Oct 2011 19:30:08 GMT
-      server:
-      - Apache
-      vary:
-      - Accept-Language,Cookie,User-Agent
-      content-length:
-      - '2440'
-      content-language:
-      - en-us
-      content-type:
-      - text/html; charset=utf-8
-    body: ! "<!DOCTYPE html>\n<meta charset=\"utf-8\" />\n<meta http-equiv=\"X-UA-Compatible\"
-      content=\"IE=edge,chrome=1\" />\n<meta name=\"viewport\" content=\"width=device-width,
-      initial-scale=1.0\" />\n<meta name=\"ICBM\" content=\"42.348043, -71.077617\"
-      />\n<meta name=\"DC.title\" content=\"Compete\" />\n<meta name=\"description\"\n
-      \         content=\" Compete helps you benefit from click-sharing by\n                        providing
-      free services that create a more trusted,\n                        transparent,
-      and valuable Internet.\" />\n<meta name=\"keywords\"\n          content=\"compete,
-      toolbar, snapshot, search, community, metrics,\n                        site
-      traffic, engagement, attention, rank, analytics,\n                        deals,
-      coupons, promotional codes, trust scores\" />\n<title>File Not Found | Compete</title>\n<link
-      rel=\"shortcut icon\" href=\"/favicon.ico\" />\n<link rel=\"stylesheet\" type=\"text/css\"
-      href=\"/site_media/css/universal/framework.css\" media=\"all\" charset=\"utf-8\"
-      />\n<link rel=\"stylesheet\" type=\"text/css\" href=\"/site_media/css/help/help_base.css\"
-      media=\"all\" charset=\"utf-8\" />\n<link rel=\"stylesheet\" type=\"text/css\"
-      href=\"/site_media/css/help/errors.css\" media=\"all\" charset=\"utf-8\" />\n</head><body
-      id=\"error\" class=\"\">\n<div class=\"wrapper\">\n    <div class=\"header\">\n
-      \       <h1><a href=\"http://www.compete.com\"><img src=\"/site_media/images/help/compete_logo_4ac.png\"
-      width=\"90\" height=\"16\" alt=\"Compete logo\"></a></h1>\n    </div>\n    <div
-      class=\"page\">\n        <div class=\"content\">\n            <div class=\"article\">\n
-      \               <img src=\"http://media.compete.com/site_media/images/help/404-robot.gif\"
-      width=\"290\" height=\"345\" alt=\"404 robot\" class=\"float-right\" />\n                <h2
-      style=\"margin:85px 0 15px; padding:0 0 15px; font-size:24px; color:#666; width:300px;
-      font-weight:lighter; line-height:1.1; border-bottom:1px #eee solid;\"><span
-      style=\"font-size:64px; color:#333; font-weight:bold;\">Oh snap!</span>\n                <br
-      />It seems that something went wrong.</h2>\n                <ul style=\"color:#3ae;
-      font-size:14px; line-height:2;\">\n                    <li><a href=\"javascript:history.go(-1);\">Return
-      to the previous page you were on</a></li>\n                    <li><a href=\"/\">Return
-      to compete.com</a></li>\n                </ul>\n            </div>\n        </div>\n
-      \   </div>\n    <div class=\"footer\">\n        <p class=\"copyright\">Compete
-      &copy; 2000 - 2011 All Rights Reserved</p>\n    </div>\n</div>\n</body>\n</html>\n"
-    http_version: '1.1'
-- !ruby/struct:VCR::HTTPInteraction
-  request: !ruby/struct:VCR::Request
+--- 
+- !ruby/struct:VCR::HTTPInteraction 
+  request: !ruby/struct:VCR::Request 
     method: :get
     uri: http://data.alexa.com:80/data?cli=10&dat=snbamz&url=please-dont-register-a-site-that-breaks-this-test.com
-    body: !!null 
-    headers: !!null 
-  response: !ruby/struct:VCR::Response
-    status: !ruby/struct:VCR::ResponseStatus
+    body: 
+    headers: 
+  response: !ruby/struct:VCR::Response 
+    status: !ruby/struct:VCR::ResponseStatus 
       code: 200
       message: OK
-    headers:
-      content-length:
-      - '278'
-      content-type:
+    headers: 
+      content-length: 
+      - "278"
+      content-type: 
       - text/xml
-    body: ! "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n\r\n<ALEXA VER=\"0.9\"
-      URL=\"please-dont-register-a-site-that-breaks-this-test.com/\" HOME=\"0\" AID=\"=\">\r\n<RLS
-      PREFIX=\"http://\" more=\"0\">\n</RLS>\n<SD TITLE=\"A\" FLAGS=\"\" HOST=\"please-dont-register-a-site-that-breaks-this-test.com\">\n</SD>\n\n</ALEXA>"
-    http_version: '1.1'
-- !ruby/struct:VCR::HTTPInteraction
-  request: !ruby/struct:VCR::Request
+    body: |-
+      <?xml version="1.0" encoding="UTF-8"?>
+      
+      <ALEXA VER="0.9" URL="please-dont-register-a-site-that-breaks-this-test.com/" HOME="0" AID="=">
+      <RLS PREFIX="http://" more="0">
+      </RLS>
+      <SD TITLE="A" FLAGS="" HOST="please-dont-register-a-site-that-breaks-this-test.com">
+      </SD>
+      
+      </ALEXA>
+    http_version: "1.1"
+- !ruby/struct:VCR::HTTPInteraction 
+  request: !ruby/struct:VCR::Request 
+    method: :get
+    uri: http://siteanalytics.compete.com:80/please-dont-register-a-site-that-breaks-this-test.com/
+    body: 
+    headers: 
+  response: !ruby/struct:VCR::Response 
+    status: !ruby/struct:VCR::ResponseStatus 
+      code: 404
+      message: NOT FOUND
+    headers: 
+      date: 
+      - Sat, 08 Oct 2011 19:36:05 GMT
+      server: 
+      - Apache
+      vary: 
+      - Accept-Language,Cookie,User-Agent
+      content-length: 
+      - "2440"
+      content-language: 
+      - en-us
+      content-type: 
+      - text/html; charset=utf-8
+    body: |
+      <!DOCTYPE html>
+      <meta charset="utf-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <meta name="ICBM" content="42.348043, -71.077617" />
+      <meta name="DC.title" content="Compete" />
+      <meta name="description"
+                content=" Compete helps you benefit from click-sharing by
+                              providing free services that create a more trusted,
+                              transparent, and valuable Internet." />
+      <meta name="keywords"
+                content="compete, toolbar, snapshot, search, community, metrics,
+                              site traffic, engagement, attention, rank, analytics,
+                              deals, coupons, promotional codes, trust scores" />
+      <title>File Not Found | Compete</title>
+      <link rel="shortcut icon" href="/favicon.ico" />
+      <link rel="stylesheet" type="text/css" href="/site_media/css/universal/framework.css" media="all" charset="utf-8" />
+      <link rel="stylesheet" type="text/css" href="/site_media/css/help/help_base.css" media="all" charset="utf-8" />
+      <link rel="stylesheet" type="text/css" href="/site_media/css/help/errors.css" media="all" charset="utf-8" />
+      </head><body id="error" class="">
+      <div class="wrapper">
+          <div class="header">
+              <h1><a href="http://www.compete.com"><img src="/site_media/images/help/compete_logo_4ac.png" width="90" height="16" alt="Compete logo"></a></h1>
+          </div>
+          <div class="page">
+              <div class="content">
+                  <div class="article">
+                      <img src="http://media.compete.com/site_media/images/help/404-robot.gif" width="290" height="345" alt="404 robot" class="float-right" />
+                      <h2 style="margin:85px 0 15px; padding:0 0 15px; font-size:24px; color:#666; width:300px; font-weight:lighter; line-height:1.1; border-bottom:1px #eee solid;"><span style="font-size:64px; color:#333; font-weight:bold;">Oh snap!</span>
+                      <br />It seems that something went wrong.</h2>
+                      <ul style="color:#3ae; font-size:14px; line-height:2;">
+                          <li><a href="javascript:history.go(-1);">Return to the previous page you were on</a></li>
+                          <li><a href="/">Return to compete.com</a></li>
+                      </ul>
+                  </div>
+              </div>
+          </div>
+          <div class="footer">
+              <p class="copyright">Compete &copy; 2000 - 2011 All Rights Reserved</p>
+          </div>
+      </div>
+      </body>
+      </html>
+
+    http_version: "1.1"
+- !ruby/struct:VCR::HTTPInteraction 
+  request: !ruby/struct:VCR::Request 
     method: :get
     uri: http://toolbarqueries.google.com:80/tbr?ch=63624986523&client=navclient-auto&features=Rank&q=info%3Aplease-dont-register-a-site-that-breaks-this-test.com
-    body: !!null 
-    headers: !!null 
-  response: !ruby/struct:VCR::Response
-    status: !ruby/struct:VCR::ResponseStatus
+    body: 
+    headers: 
+  response: !ruby/struct:VCR::Response 
+    status: !ruby/struct:VCR::ResponseStatus 
       code: 200
       message: OK
-    headers:
-      date:
-      - Sat, 08 Oct 2011 19:30:08 GMT
-      pragma:
+    headers: 
+      date: 
+      - Sat, 08 Oct 2011 19:36:05 GMT
+      pragma: 
       - no-cache
-      expires:
+      expires: 
       - Fri, 01 Jan 1990 00:00:00 GMT
-      cache-control:
+      cache-control: 
       - no-cache, must-revalidate
-      content-type:
+      content-type: 
       - text/html; charset=ISO-8859-1
-      set-cookie:
-      - PREF=ID=58715cbb2c8703dd:FF=0:TM=1318102208:LM=1318102208:S=swfanoDr_GObNfQn;
-        expires=Mon, 07-Oct-2013 19:30:08 GMT; path=/; domain=.google.com
-      server:
+      set-cookie: 
+      - PREF=ID=a0ea2e76cc75d3c4:FF=0:TM=1318102565:LM=1318102565:S=aDX_3TymAPCAcBgA; expires=Mon, 07-Oct-2013 19:36:05 GMT; path=/; domain=.google.com
+      server: 
       - gws
-      content-length:
-      - '0'
-      x-xss-protection:
+      content-length: 
+      - "0"
+      x-xss-protection: 
       - 1; mode=block
-    body: !!null 
-    http_version: '1.1'
+    body: 
+    http_version: "1.1"

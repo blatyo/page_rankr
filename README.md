@@ -9,11 +9,15 @@ Check out a little [web app][1] I wrote up that uses it or look at the [source][
 
 ## Get it!
 
+``` bash
     gem install PageRankr
+```
 
 ## Use it!
 
+``` ruby
     require 'page_rankr'
+```
 
 ### Backlinks
 
@@ -102,6 +106,30 @@ Valid rank trackers are: `:alexa_us, :alexa_global, :compete, :google`. To get t
 
 Alexa and Compete ranks are descending where 1 is the most popular. Google page ranks are in the range 0-10 where 10 is the most popular. If a site is unindexed then the rank will be nil.
 
+## Use it a la carte!
+
+From versions >= 3, everything should be usable in a much more a la carte manner. If all you care about is google page rank (which I speculate is common) you can get that all by itself:
+
+``` ruby
+    require 'page_rankr/ranks/google'
+
+    tracker = PageRankr::Ranks::Google.new("myawesomesite.com")
+    tracker.run #=> 2
+```
+
+Also, once a tracker has run three values will be accessible from it:
+
+``` ruby
+    # The value extracted. Tracked is aliased to rank for PageRankr::Ranks, backlink for PageRankr::Backlinks, and index for PageRankr::Indexes.
+    tracker.tracked #=> 2
+
+    # The value extracted with the jsonpath, xpath, or regex before being cleaned.
+    tracker.raw     #=> "2"
+
+    # The body of the response
+    tracker.body    #=> "<html><head>..."
+```
+
 ## Fix it!
 
 If you ever find something is broken it should now be much easier to fix it with version >= 1.3.0. For example, if the xpath used to lookup a backlink is broken, just override the method for that class to provide the correct xpath.
@@ -123,27 +151,39 @@ If you ever find something is broken it should now be much easier to fix it with
 If you ever come across a site that provides a rank or backlinks you can hook that class up to automatically be use with PageRankr. PageRankr does this by looking up all the classes namespaced under Backlinks, Indexes, and Ranks.
 
 ``` ruby
+    require 'page_rankr/backlink'
+
     module PageRankr
       class Backlinks
         class Foo
           include Backlink
 
-          def request
-            @request ||= Typhoeus::Request.new("http://example.com/",
-                :params => {:q => @site.to_s})
+          # This method is required
+          def url
+            "http://example.com/"
           end
 
+          # This method specifies the parameters for the url. It is optional, but likely required for the class to be useful.
+          def params
+            {:q => @site.to_s}
+          end
+
+          # You can use a method named either xpath, jsonpath, or regex with the appropriate query type
           def xpath
             "//backlinks/text()"
           end
 
-          def clean(backlink_count)
-            #do some of my own cleaning
-            super(backlink_count) # strips letters, commas, and a few other nasty things and converts it to an integer
-          end
+          # Optionally, you could override the clean method if the current implementation isn't sufficient
+          # def clean(backlink_count)
+          #   #do some of my own cleaning
+          #   super(backlink_count) # strips non-digits and converts it to an integer or nil
+          # end
         end
       end
     end
+
+    PageRankr::Backlinks::Foo.new("myawesomesite.com").run #=> 3
+    PageRankr.backlinks("myawesomesite.com", :foo)[:foo]   #=> 3
 ```
 
 Then, just make sure you require the class and PageRankr and whenever you call PageRankr.backlinks it'll be able to use your class.
@@ -158,12 +198,8 @@ Then, just make sure you require the class and PageRankr and whenever you call P
   (if you want to have your own version, that is fine but bump version in a commit by itself I can ignore when I pull)
 * Send me a pull request. Bonus points for topic branches.
 
-## TODO Version 3
+## TODO Version 3-4
 * Use API's where possible
-* Configuration
-    * Optionally use API keys
-    * Maybe allow API key cycling to get around query limits
-* Google search API is deprecated
 * New Compete API
 * Some search engines throttle the amount of queries. It would be nice to know when this happens. Probably throw an exception.
 
@@ -172,7 +208,8 @@ Then, just make sure you require the class and PageRankr and whenever you call P
 * [Iteration Labs, LLC](https://github.com/iterationlabs) - Compete rank tracker and domain indexes.
 * [Marc Seeger](http://www.marc-seeger.de) ([Acquia](http://www.acquia.com)) - Ignore invalid ranks that Alexa returns for incorrect sites.
 * [Rémy Coutable](https://github.com/rymai) - Update public_suffix_service gem
-* [Jonathan Rudenberg])(https://github.com/titanous) - Fix compete scraper
+* [Jonathan Rudenberg](https://github.com/titanous) - Fix compete scraper
+* [Chris Corbyn](https://github.com/d11wtq) - Fix google page rank url
 
 ## Shout Out
 Gotta give credit where credits due!

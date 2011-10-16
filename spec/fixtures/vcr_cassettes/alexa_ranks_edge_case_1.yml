@@ -1,46 +1,65 @@
----
-- !ruby/struct:VCR::HTTPInteraction
-  request: !ruby/struct:VCR::Request
+--- 
+- !ruby/struct:VCR::HTTPInteraction 
+  request: !ruby/struct:VCR::Request 
     method: :get
     uri: http://data.alexa.com:80/data?cli=10&dat=snbamz&url=slocourts.net
-    body: !!null 
-    headers: !!null 
-  response: !ruby/struct:VCR::Response
-    status: !ruby/struct:VCR::ResponseStatus
+    body: 
+    headers: 
+  response: !ruby/struct:VCR::Response 
+    status: !ruby/struct:VCR::ResponseStatus 
       code: 200
       message: OK
-    headers:
-      content-length:
-      - '2455'
-      content-type:
+    headers: 
+      content-length: 
+      - "2455"
+      content-type: 
       - text/xml
-    body: ! "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n\r\n<ALEXA VER=\"0.9\"
-      URL=\"slocourts.ca.gov/\" HOME=\"0\" AID=\"=\">\r\n<RLS PREFIX=\"http://\" more=\"23\">\n<RL
-      HREF=\"www.co.san-bernardino.ca.us/Courts\" TITLE=\"Superior Court, San Bernardino\"/>\n<RL
-      HREF=\"www.co.riverside.ca.us/depts/courts\" TITLE=\"Superior Court Of California
-      County Of Riverside\"/>\n<RL HREF=\"courts.countyofventura.org/\" TITLE=\"Superior
-      Court, Ventura\"/>\n<RL HREF=\"www.ci.sf.ca.us/courts\" TITLE=\"Superior Court,
-      San Francisco\"/>\n<RL HREF=\"www.sonomasuperiorcourt.com/\" TITLE=\"Superior
-      Court, Sonoma\"/>\n<RL HREF=\"www.solanocourts.com/\" TITLE=\"Superior Court,
-      Solano\"/>\n<RL HREF=\"www.sccsuperiorcourt.org/\" TITLE=\"Superior Court, Santa
-      Clara\"/>\n<RL HREF=\"www.sbcourts.org/\" TITLE=\"Superior Court, Santa Barbara\"/>\n<RL
-      HREF=\"www.sanmateocourt.org/\" TITLE=\"Superior Court, San Mateo\"/>\n<RL HREF=\"www.saccourt.com/\"
-      TITLE=\"Superior Court, Sacramento\"/>\n<RL HREF=\"www.buttonware.com/\" TITLE=\"www.buttonware.com/\"/>\n</RLS>\n<SD
-      TITLE=\"A\" FLAGS=\"DMOZ\" HOST=\"slocourts.ca.gov\">\n<TITLE TEXT=\"Superior
-      Court, San Luis Obispo\"/>\n<ADDR STREET=\"3101 Gold Camp Dr\" CITY=\"Rancho
-      Cordova\" STATE=\"CA\" ZIP=\"95670\" COUNTRY=\"US\" />\n<CREATED DATE=\"16-Jun-2000\"
-      DAY=\"16\" MONTH=\"06\" YEAR=\"2000\"/>\n<PHONE NUMBER=\"+1 916 464 4239\"/>\n<OWNER
-      NAME=\"State of California\"/>\n<EMAIL ADDR=\"lbatcheldor@co.slo.ca.us\"/>\n<LANG
-      LEX=\"en\" CODE=\"us-ascii\"/>\n<LINKSIN NUM=\"60\"/>\n<SPEED TEXT=\"723\" PCT=\"83\"/>\n<REVIEWS
-      AVG=\"5.0\" NUM=\"\"/>\n<CHILD SRATING=\"0\"/>\n</SD>\n\n<KEYWORDS>\n<KEYWORD
-      VAL=\"San Luis Obispo\"/>\n</KEYWORDS><DMOZ>\n<SITE BASE=\"slocourts.ca.gov/\"
-      TITLE=\"SLO County Superior Court\" DESC=\"Administrative site of the Superior
-      Court, with information, public notices, and bail and fee schedules.\">\n<CATS>\n<CAT
-      ID=\"Top/Regional/North_America/United_States/California/Government/Courts\"
-      TITLE=\"Government/Courts\" CID=\"620717\"/>\n<CAT ID=\"Top/Regional/North_America/United_States/California/Counties/San_Luis_Obispo/Government\"
-      TITLE=\"San Luis Obispo/Government\" CID=\"620510\"/>\n<CAT ID=\"Top/Regional/North_America/United_States/California\"
-      TITLE=\"United States/California\" CID=\"619087\"/>\n<CAT ID=\"Top/Regional/North_America/United_States/California/Government\"
-      TITLE=\"California/Government\" CID=\"620608\"/>\n<CAT ID=\"Top/World/Español/Regional/América/Estados_Unidos/Estados/California\"
-      TITLE=\"Estados/California\" CID=\"26249\"/>\n</CATS>\n</SITE>\n</DMOZ>\n<SD>\n<POPULARITY
-      URL=\"ca.gov/\" TEXT=\"748\"/>\n<REACH RANK=\"802\"/>\n<RANK DELTA=\"-30\"/>\n</SD>\n</ALEXA>"
-    http_version: '1.1'
+    body: "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n\
+      \r\n\
+      <ALEXA VER=\"0.9\" URL=\"slocourts.ca.gov/\" HOME=\"0\" AID=\"=\">\r\n\
+      <RLS PREFIX=\"http://\" more=\"23\">\n\
+      <RL HREF=\"www.co.san-bernardino.ca.us/Courts\" TITLE=\"Superior Court, San Bernardino\"/>\n\
+      <RL HREF=\"www.co.riverside.ca.us/depts/courts\" TITLE=\"Superior Court Of California County Of Riverside\"/>\n\
+      <RL HREF=\"courts.countyofventura.org/\" TITLE=\"Superior Court, Ventura\"/>\n\
+      <RL HREF=\"www.ci.sf.ca.us/courts\" TITLE=\"Superior Court, San Francisco\"/>\n\
+      <RL HREF=\"www.sonomasuperiorcourt.com/\" TITLE=\"Superior Court, Sonoma\"/>\n\
+      <RL HREF=\"www.solanocourts.com/\" TITLE=\"Superior Court, Solano\"/>\n\
+      <RL HREF=\"www.sccsuperiorcourt.org/\" TITLE=\"Superior Court, Santa Clara\"/>\n\
+      <RL HREF=\"www.sbcourts.org/\" TITLE=\"Superior Court, Santa Barbara\"/>\n\
+      <RL HREF=\"www.sanmateocourt.org/\" TITLE=\"Superior Court, San Mateo\"/>\n\
+      <RL HREF=\"www.saccourt.com/\" TITLE=\"Superior Court, Sacramento\"/>\n\
+      <RL HREF=\"www.buttonware.com/\" TITLE=\"www.buttonware.com/\"/>\n\
+      </RLS>\n\
+      <SD TITLE=\"A\" FLAGS=\"DMOZ\" HOST=\"slocourts.ca.gov\">\n\
+      <TITLE TEXT=\"Superior Court, San Luis Obispo\"/>\n\
+      <ADDR STREET=\"3101 Gold Camp Dr\" CITY=\"Rancho Cordova\" STATE=\"CA\" ZIP=\"95670\" COUNTRY=\"US\" />\n\
+      <CREATED DATE=\"16-Jun-2000\" DAY=\"16\" MONTH=\"06\" YEAR=\"2000\"/>\n\
+      <PHONE NUMBER=\"+1 916 464 4239\"/>\n\
+      <OWNER NAME=\"State of California\"/>\n\
+      <EMAIL ADDR=\"lbatcheldor@co.slo.ca.us\"/>\n\
+      <LANG LEX=\"en\" CODE=\"us-ascii\"/>\n\
+      <LINKSIN NUM=\"60\"/>\n\
+      <SPEED TEXT=\"723\" PCT=\"83\"/>\n\
+      <REVIEWS AVG=\"5.0\" NUM=\"\"/>\n\
+      <CHILD SRATING=\"0\"/>\n\
+      </SD>\n\n\
+      <KEYWORDS>\n\
+      <KEYWORD VAL=\"San Luis Obispo\"/>\n\
+      </KEYWORDS><DMOZ>\n\
+      <SITE BASE=\"slocourts.ca.gov/\" TITLE=\"SLO County Superior Court\" DESC=\"Administrative site of the Superior Court, with information, public notices, and bail and fee schedules.\">\n\
+      <CATS>\n\
+      <CAT ID=\"Top/Regional/North_America/United_States/California/Government/Courts\" TITLE=\"Government/Courts\" CID=\"620717\"/>\n\
+      <CAT ID=\"Top/Regional/North_America/United_States/California/Counties/San_Luis_Obispo/Government\" TITLE=\"San Luis Obispo/Government\" CID=\"620510\"/>\n\
+      <CAT ID=\"Top/Regional/North_America/United_States/California\" TITLE=\"United States/California\" CID=\"619087\"/>\n\
+      <CAT ID=\"Top/Regional/North_America/United_States/California/Government\" TITLE=\"California/Government\" CID=\"620608\"/>\n\
+      <CAT ID=\"Top/World/Espa\xC3\xB1ol/Regional/Am\xC3\xA9rica/Estados_Unidos/Estados/California\" TITLE=\"Estados/California\" CID=\"26249\"/>\n\
+      </CATS>\n\
+      </SITE>\n\
+      </DMOZ>\n\
+      <SD>\n\
+      <POPULARITY URL=\"ca.gov/\" TEXT=\"748\"/>\n\
+      <REACH RANK=\"802\"/>\n\
+      <RANK DELTA=\"-30\"/>\n\
+      </SD>\n\
+      </ALEXA>"
+    http_version: "1.1"

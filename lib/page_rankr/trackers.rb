@@ -1,5 +1,4 @@
 require 'typhoeus'
-require File.join(File.dirname(__FILE__), "tracker")
 
 module PageRankr
   module Trackers

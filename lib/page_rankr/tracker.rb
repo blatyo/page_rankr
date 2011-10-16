@@ -28,6 +28,10 @@ module PageRankr
       @request ||= Typhoeus::Request.new(url, @options)
     end
 
+    def url
+      raise PageRankr::MethodRequired, "A url method defining the url to the service with the value you wish to extract must be defined."
+    end
+
     def method
       :get
     end
@@ -44,7 +48,7 @@ module PageRankr
       if respond_to? :xpath
         Nokogiri::HTML(body).at(xpath)
       elsif respond_to? :jsonpath
-        JsonPath.new(jsonpath).first(body)
+        JsonPath.new(jsonpath).first(JSON.parse(body))
       elsif respond_to? :regex
         body =~ regex ? $1 : nil
       else
