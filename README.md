@@ -210,6 +210,7 @@ Then, just make sure you require the class and PageRankr and whenever you call P
 * [Rémy Coutable](https://github.com/rymai) - Update public_suffix_service gem
 * [Jonathan Rudenberg](https://github.com/titanous) - Fix compete scraper
 * [Chris Corbyn](https://github.com/d11wtq) - Fix google page rank url
+* [Hans Haselberg](https://github.com/i0rek) - Update typhoeus gem.
 
 ## Shout Out
 Gotta give credit where credits due!

@@ -1,5 +1,8 @@
 # Change Log
 
+## Version 3.0.2
+* Update gem dependencies
+
 ## Version 3.0.1
 * Improve PageRankr::Site
 
