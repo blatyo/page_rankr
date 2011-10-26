@@ -37,7 +37,7 @@
       message: NOT FOUND
     headers: 
       date: 
-      - Sat, 08 Oct 2011 19:36:05 GMT
+      - Wed, 26 Oct 2011 23:48:11 GMT
       server: 
       - Apache
       vary: 
@@ -106,7 +106,7 @@
       message: OK
     headers: 
       date: 
-      - Sat, 08 Oct 2011 19:36:05 GMT
+      - Wed, 26 Oct 2011 23:48:14 GMT
       pragma: 
       - no-cache
       expires: 
@@ -116,12 +116,14 @@
       content-type: 
       - text/html; charset=ISO-8859-1
       set-cookie: 
-      - PREF=ID=a0ea2e76cc75d3c4:FF=0:TM=1318102565:LM=1318102565:S=aDX_3TymAPCAcBgA; expires=Mon, 07-Oct-2013 19:36:05 GMT; path=/; domain=.google.com
+      - PREF=ID=c66e79134f2e9db4:FF=0:TM=1319672894:LM=1319672894:S=om01ZetaSNc60poO; expires=Fri, 25-Oct-2013 23:48:14 GMT; path=/; domain=.google.com
       server: 
       - gws
       content-length: 
       - "0"
       x-xss-protection: 
       - 1; mode=block
+      x-frame-options: 
+      - SAMEORIGIN
     body: 
     http_version: "1.1"

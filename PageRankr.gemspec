@@ -12,16 +12,16 @@ Gem::Specification.new do |s|
 
   s.required_rubygems_version = ">= 1.3.6"
   s.add_development_dependency "rake"
-  s.add_development_dependency "rspec",   "~> 2.6.0"
+  s.add_development_dependency "rspec",   ">= 2.6.0"
   s.add_development_dependency "bundler", ">= 1.0.0"
   s.add_development_dependency "fuubar",  ">= 0.0.1"
   s.add_development_dependency "vcr"
 
   s.add_runtime_dependency "nokogiri",              ">= 1.4.1"
   s.add_runtime_dependency "json",                  ">= 1.4.6"
-  s.add_runtime_dependency "public_suffix_service", "~> 0.9.0"
-  s.add_runtime_dependency "typhoeus",              "~> 0.2.1"
-  s.add_runtime_dependency "jsonpath",              "~> 0.4.2"
+  s.add_runtime_dependency "public_suffix_service", ">= 0.9.0"
+  s.add_runtime_dependency "typhoeus",              ">= 0.2.1"
+  s.add_runtime_dependency "jsonpath",              ">= 0.4.2"
 
   s.files         = `git ls-files`.split("\n")
   s.test_files    = `git ls-files -- {test,spec,features}/*`.split("\n")

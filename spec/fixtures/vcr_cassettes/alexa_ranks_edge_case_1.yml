@@ -57,9 +57,9 @@
       </SITE>\n\
       </DMOZ>\n\
       <SD>\n\
-      <POPULARITY URL=\"ca.gov/\" TEXT=\"748\"/>\n\
-      <REACH RANK=\"802\"/>\n\
-      <RANK DELTA=\"-30\"/>\n\
+      <POPULARITY URL=\"ca.gov/\" TEXT=\"761\"/>\n\
+      <REACH RANK=\"811\"/>\n\
+      <RANK DELTA=\"-23\"/>\n\
       </SD>\n\
       </ALEXA>"
     http_version: "1.1"

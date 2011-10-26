@@ -40,9 +40,9 @@
       <CLAIMED DATE=\"2011-09-14T16:30:40Z\"/>\n\
       <ALEXAPRO TIER=\"intro\"/>\n\
       <LANG LEX=\"en\"/>\n\
-      <LINKSIN NUM=\"2597386\"/>\n\
+      <LINKSIN NUM=\"3230823\"/>\n\
       <SPEED TEXT=\"1642\" PCT=\"41\"/>\n\
-      <REVIEWS AVG=\"4.5\" NUM=\"754\"/>\n\
+      <REVIEWS AVG=\"4.5\" NUM=\"770\"/>\n\
       <CHILD SRATING=\"0\"/>\n\
       <ASSOCS>\n\
       <ASSOC ID=\"googlecom\"/></ASSOCS>\n\
@@ -69,39 +69,6 @@
 - !ruby/struct:VCR::HTTPInteraction 
   request: !ruby/struct:VCR::Request 
     method: :get
-    uri: http://toolbarqueries.google.com:80/tbr?ch=6340563836&client=navclient-auto&features=Rank&q=info%3Awww.google.com
-    body: 
-    headers: 
-  response: !ruby/struct:VCR::Response 
-    status: !ruby/struct:VCR::ResponseStatus 
-      code: 200
-      message: OK
-    headers: 
-      date: 
-      - Sat, 08 Oct 2011 19:36:04 GMT
-      pragma: 
-      - no-cache
-      expires: 
-      - Fri, 01 Jan 1990 00:00:00 GMT
-      cache-control: 
-      - no-cache, must-revalidate
-      content-type: 
-      - text/html; charset=ISO-8859-1
-      set-cookie: 
-      - PREF=ID=54df874581080de6:FF=0:TM=1318102564:LM=1318102564:S=L_l515t6H14Zs6Uo; expires=Mon, 07-Oct-2013 19:36:04 GMT; path=/; domain=.google.com
-      server: 
-      - gws
-      x-xss-protection: 
-      - 1; mode=block
-      transfer-encoding: 
-      - chunked
-    body: |
-      Rank_1:2:10
-
-    http_version: "1.1"
-- !ruby/struct:VCR::HTTPInteraction 
-  request: !ruby/struct:VCR::Request 
-    method: :get
     uri: http://siteanalytics.compete.com:80/google.com/
     body: 
     headers: 
@@ -111,22 +78,22 @@
       message: OK
     headers: 
       date: 
-      - Sat, 08 Oct 2011 19:36:01 GMT
+      - Wed, 26 Oct 2011 23:47:55 GMT
       server: 
       - Apache
       vary: 
       - Accept-Language,Cookie,User-Agent
       content-length: 
-      - "27288"
+      - "27276"
       content-language: 
       - en-us
       content-type: 
       - text/html; charset=utf-8
     body: |
       <!DOCTYPE html>
-      <!-- HOSTNAME: prodweb43
+      <!-- HOSTNAME: prodweb45
            DEBUG: False
-           VERSION: 56fdf999ae8f52fd7e44139c196e70cc27bf4df5
+           VERSION: 41a36c315d5e605bcd06dd272df95a8e097482ab
            COOKIE_DOMAIN: .compete.com -->
       
       
@@ -158,35 +125,43 @@
       
           <meta name="description"
                 content=" 
-      See monthly traffic, unique visitors, rank and more for google.com with Compete's free Site Analytics.
+          
+              See monthly traffic, unique visitors, rank and more for google.com with Compete's free Site Analytics.
+          
       " />
           <meta name="keywords"
                 content=" 
-      competitive intelligence, market intelligence, competitive strategy, media planning, website traffic, site traffic, search marketing, audience measurement
+          competitive intelligence, market intelligence, competitive strategy, media planning, website traffic, site traffic, search marketing, audience measurement
       " />
       
           
           
-          <script src="http://media.compete.com/site_media/thirdparty/modernizr-1.6.min.ver-56fdf999ae8f52fd7e44139c196e70cc27bf4df5.js"></script>
+          <script src="http://media.compete.com/site_media/thirdparty/modernizr-1.6.min.ver-41a36c315d5e605bcd06dd272df95a8e097482ab.js"></script>
       
           <link rel="shortcut icon" href="/favicon.ico" />
-          <link rel="stylesheet" type="text/css" href="http://media.compete.com/site_media/css/universal/framework.ver-56fdf999ae8f52fd7e44139c196e70cc27bf4df5.css" media="all" charset="utf-8" />
-          <link rel="stylesheet" type="text/css" href="http://media.compete.com/site_media/css/c/widgets.ver-56fdf999ae8f52fd7e44139c196e70cc27bf4df5.css" media="all" charset="utf-8" />
+          <link rel="stylesheet" type="text/css" href="http://media.compete.com/site_media/css/universal/framework.ver-41a36c315d5e605bcd06dd272df95a8e097482ab.css" media="all" charset="utf-8" />
+          <link rel="stylesheet" type="text/css" href="http://media.compete.com/site_media/css/c/widgets.ver-41a36c315d5e605bcd06dd272df95a8e097482ab.css" media="all" charset="utf-8" />
       
           
           
       
               
           
-          <link rel="stylesheet" type="text/css" href="http://media.compete.com/site_media/css/free/master_free.ver-56fdf999ae8f52fd7e44139c196e70cc27bf4df5.css" media="all" charset="utf-8" />
-          <link rel="stylesheet" type="text/css" href="http://media.compete.com/site_media/css/www/dropdown.ver-56fdf999ae8f52fd7e44139c196e70cc27bf4df5.css" media="all" />
-          <link rel="stylesheet" type="text/css" href="http://media.compete.com/site_media/css/www/popup_help.ver-56fdf999ae8f52fd7e44139c196e70cc27bf4df5.css" media="all" />
-          <link rel="stylesheet" type="text/css" href="http://media.compete.com/site_media/css/www/jquery.autocomplete.ver-56fdf999ae8f52fd7e44139c196e70cc27bf4df5.css" media="all" />
-          <link rel="stylesheet" type="text/css" href="http://media.compete.com/site_media/js/jquery/theme/ui.all.ver-56fdf999ae8f52fd7e44139c196e70cc27bf4df5.css" media="all" />
-          <link rel="stylesheet" type="text/css" href="http://media.compete.com/site_media/css/www/jquery.mcdropdown.ver-56fdf999ae8f52fd7e44139c196e70cc27bf4df5.css" media="all" />
-          <link rel="stylesheet" type="text/css" href="http://media.compete.com/site_media/css/www/tooltip.ver-56fdf999ae8f52fd7e44139c196e70cc27bf4df5.css" media="all" />
-          <link rel="stylesheet" type="text/css" href="http://media.compete.com/site_media/thirdparty/superfish-1.4.8/css/superfish.ver-56fdf999ae8f52fd7e44139c196e70cc27bf4df5.css" media="all" />
+          <link rel="stylesheet" type="text/css" href="http://media.compete.com/site_media/css/free/master_free.ver-41a36c315d5e605bcd06dd272df95a8e097482ab.css" media="all" charset="utf-8" />
+          <link rel="stylesheet" type="text/css" href="http://media.compete.com/site_media/css/www/dropdown.ver-41a36c315d5e605bcd06dd272df95a8e097482ab.css" media="all" />
+          <link rel="stylesheet" type="text/css" href="http://media.compete.com/site_media/css/www/popup_help.ver-41a36c315d5e605bcd06dd272df95a8e097482ab.css" media="all" />
+          <link rel="stylesheet" type="text/css" href="http://media.compete.com/site_media/thirdparty/jquery/theme/ui.all.ver-41a36c315d5e605bcd06dd272df95a8e097482ab.css" media="all" />
+          <link rel="stylesheet" type="text/css" href="http://media.compete.com/site_media/css/universal/jquery.autocomplete.ver-41a36c315d5e605bcd06dd272df95a8e097482ab.css" media="all" />
+          <link rel="stylesheet" type="text/css" href="http://media.compete.com/site_media/css/www/jquery.mcdropdown.ver-41a36c315d5e605bcd06dd272df95a8e097482ab.css" media="all" />
+          <link rel="stylesheet" type="text/css" href="http://media.compete.com/site_media/css/www/tooltip.ver-41a36c315d5e605bcd06dd272df95a8e097482ab.css" media="all" />
+          <link rel="stylesheet" type="text/css" href="http://media.compete.com/site_media/thirdparty/superfish-1.4.8/css/superfish.ver-41a36c315d5e605bcd06dd272df95a8e097482ab.css" media="all" />
       
+          
+             
+          
+              
+                  
+              
           
       
           <!-- text_block Help_Styles -->
@@ -210,7 +185,7 @@
               
               <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.js"></script>
               
-              <script>!window.jQuery && document.write(unescape('%3Cscript src="http://media.compete.com/site_media/js/jquery/jquery-1.5.2.min.ver-56fdf999ae8f52fd7e44139c196e70cc27bf4df5.js"%3E%3C/script%3E'));</script>
+              <script>!window.jQuery && document.write(unescape('%3Cscript src="http://media.compete.com/site_media/thirdparty/jquery/jquery-1.5.2.min.ver-41a36c315d5e605bcd06dd272df95a8e097482ab.js"%3E%3C/script%3E'));</script>
           
           
           <script type="text/javascript">
@@ -240,7 +215,7 @@
               snapshot_site = 'http://siteanalytics.compete.com',
               toolbar_site = '',
               help_site = 'http://help.compete.com',
-              versionify_string = '56fdf999ae8f52fd7e44139c196e70cc27bf4df5';
+              versionify_string = '41a36c315d5e605bcd06dd272df95a8e097482ab';
       </script>
       
       
@@ -250,14 +225,14 @@
           <script type="text/javascript" src="/jsi18n/custom"></script>
           
       
-          <script type="text/javascript" src="http://media.compete.com/site_media/js/c/lang/es5-shim-0.0.4.min.ver-56fdf999ae8f52fd7e44139c196e70cc27bf4df5.js"></script>
-          <script type="text/javascript" src="http://media.compete.com/site_media/js/c/lang/es5_getter_setter_api.ver-56fdf999ae8f52fd7e44139c196e70cc27bf4df5.js"></script>
-          <script type="text/javascript" src="http://media.compete.com/site_media/js/backbone/underscore.ver-56fdf999ae8f52fd7e44139c196e70cc27bf4df5.js"></script>
-          <script type="text/javascript" src="http://media.compete.com/site_media/js/backbone/backbone.ver-56fdf999ae8f52fd7e44139c196e70cc27bf4df5.js"></script>
-          <script type="text/javascript" src="http://media.compete.com/site_media/js/c/Backbone.ver-56fdf999ae8f52fd7e44139c196e70cc27bf4df5.js"></script>
-          <script type="text/javascript" src="http://media.compete.com/site_media/js/c/widgets.ver-56fdf999ae8f52fd7e44139c196e70cc27bf4df5.js"></script>
-          <script type="text/javascript" src="http://media.compete.com/site_media/thirdparty/mbox.ver-56fdf999ae8f52fd7e44139c196e70cc27bf4df5.js"></script>
-          <script type="text/javascript" src="http://media.compete.com/site_media/thirdparty/jquery.text-overflow.ver-56fdf999ae8f52fd7e44139c196e70cc27bf4df5.js"></script>
+          <script type="text/javascript" src="http://media.compete.com/site_media/js/c/lang/es5-shim-0.0.4.min.ver-41a36c315d5e605bcd06dd272df95a8e097482ab.js"></script>
+          <script type="text/javascript" src="http://media.compete.com/site_media/js/c/lang/es5_getter_setter_api.ver-41a36c315d5e605bcd06dd272df95a8e097482ab.js"></script>
+          <script type="text/javascript" src="http://media.compete.com/site_media/thirdparty/backbone/underscore.ver-41a36c315d5e605bcd06dd272df95a8e097482ab.js"></script>
+          <script type="text/javascript" src="http://media.compete.com/site_media/thirdparty/backbone/backbone.ver-41a36c315d5e605bcd06dd272df95a8e097482ab.js"></script>
+          <script type="text/javascript" src="http://media.compete.com/site_media/js/c/Backbone.ver-41a36c315d5e605bcd06dd272df95a8e097482ab.js"></script>
+          <script type="text/javascript" src="http://media.compete.com/site_media/js/c/widgets.ver-41a36c315d5e605bcd06dd272df95a8e097482ab.js"></script>
+          <script type="text/javascript" src="http://media.compete.com/site_media/thirdparty/mbox.ver-41a36c315d5e605bcd06dd272df95a8e097482ab.js"></script>
+          <script type="text/javascript" src="http://media.compete.com/site_media/thirdparty/jquery.text-overflow.ver-41a36c315d5e605bcd06dd272df95a8e097482ab.js"></script>
       
           
       
@@ -265,42 +240,41 @@
           var s_account = 'competedev';
       </script>
       
-      <script type="text/javascript" src="http://media.compete.com/site_media/js/omniture__s_code.ver-56fdf999ae8f52fd7e44139c196e70cc27bf4df5.js" charset="utf-8"></script>
+      <script type="text/javascript" src="http://media.compete.com/site_media/thirdparty/omniture__s_code.ver-41a36c315d5e605bcd06dd272df95a8e097482ab.js" charset="utf-8"></script>
       
-          <script type="text/javascript" src="http://media.compete.com/site_media/js/seaeagle/thirdparty_analytics.ver-56fdf999ae8f52fd7e44139c196e70cc27bf4df5.js"></script>
+          <script type="text/javascript" src="http://media.compete.com/site_media/js/seaeagle/thirdparty_analytics.ver-41a36c315d5e605bcd06dd272df95a8e097482ab.js"></script>
       
               
           
           
           
       
-          <script type="text/javascript" src="http://media.compete.com/site_media/js/prototype/prototype-1.5.0-compressed.ver-56fdf999ae8f52fd7e44139c196e70cc27bf4df5.js"></script>
+          <script type="text/javascript" src="http://media.compete.com/site_media/thirdparty/prototype/prototype-1.5.0-compressed.ver-41a36c315d5e605bcd06dd272df95a8e097482ab.js"></script>
       
           
       
-          <script type="text/javascript" src="http://media.compete.com/site_media/js/util.ver-56fdf999ae8f52fd7e44139c196e70cc27bf4df5.js"></script>
-          <script type="text/javascript" src="http://media.compete.com/site_media/js/jquery/jquery-ui-compete-1.6rc6.min.ver-56fdf999ae8f52fd7e44139c196e70cc27bf4df5.js"></script>
-          <script type="text/javascript" src="http://media.compete.com/site_media/js/jquery/jquery.mcdropdown.ver-56fdf999ae8f52fd7e44139c196e70cc27bf4df5.js"></script>
-          <script type="text/javascript" src="http://media.compete.com/site_media/js/jquery/jquery.bgiframe.ver-56fdf999ae8f52fd7e44139c196e70cc27bf4df5.js"></script>
-          <script type="text/javascript" src="http://media.compete.com/site_media/js/jquery/tooltip.ver-56fdf999ae8f52fd7e44139c196e70cc27bf4df5.js"></script>
-          <script type="text/javascript" src="http://media.compete.com/site_media/js/jquery/tooltip.dynamic.ver-56fdf999ae8f52fd7e44139c196e70cc27bf4df5.js"></script>
-          <script type="text/javascript" src="http://media.compete.com/site_media/js/jquery/tooltip.compete.ver-56fdf999ae8f52fd7e44139c196e70cc27bf4df5.js"></script>
-          <script type="text/javascript" src="http://media.compete.com/site_media/js/seaeagle/json2.ver-56fdf999ae8f52fd7e44139c196e70cc27bf4df5.js" charset="utf-8"></script>
-          <script type="text/javascript" src="http://media.compete.com/site_media/js/seaeagle/thirdparty_analytics.ver-56fdf999ae8f52fd7e44139c196e70cc27bf4df5.js"></script>
-          <script type="text/javascript" src="http://media.compete.com/site_media/js/seaeagle/util.ver-56fdf999ae8f52fd7e44139c196e70cc27bf4df5.js"></script>
-          <script type="text/javascript" src="http://media.compete.com/site_media/js/seaeagle/util_format.ver-56fdf999ae8f52fd7e44139c196e70cc27bf4df5.js"></script>
-          <script type="text/javascript" src="http://media.compete.com/site_media/js/seaeagle/dropdown.ver-56fdf999ae8f52fd7e44139c196e70cc27bf4df5.js"></script>
-          <script type="text/javascript" src="http://media.compete.com/site_media/js/seaeagle/master.ver-56fdf999ae8f52fd7e44139c196e70cc27bf4df5.js"></script>
-          <script type="text/javascript" src="http://media.compete.com/site_media/js/seaeagle/popup_help.ver-56fdf999ae8f52fd7e44139c196e70cc27bf4df5.js"></script>
-          <script type="text/javascript" src="http://media.compete.com/site_media/js/seaeagle/jquery.autocomplete.pack.ver-56fdf999ae8f52fd7e44139c196e70cc27bf4df5.js"></script>
-          <script type="text/javascript" src="http://media.compete.com/site_media/js/seaeagle/jquery.competeutils.ver-56fdf999ae8f52fd7e44139c196e70cc27bf4df5.js"></script>
-          <script type="text/javascript" src="http://media.compete.com/site_media/js/seaeagle/jquery.cookie.ver-56fdf999ae8f52fd7e44139c196e70cc27bf4df5.js"></script>
-          <script type="text/javascript" src="http://media.compete.com/site_media/js/seaeagle/jquery.html5-placeholder-shim.ver-56fdf999ae8f52fd7e44139c196e70cc27bf4df5.js"></script>
-          <script type="text/javascript" src="http://media.compete.com/site_media/js/c/app/main_nav.ver-56fdf999ae8f52fd7e44139c196e70cc27bf4df5.js"></script>
-          <script type="text/javascript" src="http://media.compete.com/site_media/js/number_format/NumberFormat-1.5.4.ver-56fdf999ae8f52fd7e44139c196e70cc27bf4df5.js"></script>
-          <script type="text/javascript" src="http://media.compete.com/site_media/js/number_format/number_formatter.ver-56fdf999ae8f52fd7e44139c196e70cc27bf4df5.js"></script>
+          <script type="text/javascript" src="http://media.compete.com/site_media/js/util.ver-41a36c315d5e605bcd06dd272df95a8e097482ab.js"></script>
+          <script type="text/javascript" src="http://media.compete.com/site_media/thirdparty/jquery/jquery-ui-compete-1.6rc6.min.ver-41a36c315d5e605bcd06dd272df95a8e097482ab.js"></script>
+          <script type="text/javascript" src="http://media.compete.com/site_media/thirdparty/jquery/jquery.mcdropdown.ver-41a36c315d5e605bcd06dd272df95a8e097482ab.js"></script>
+          <script type="text/javascript" src="http://media.compete.com/site_media/thirdparty/jquery/jquery.bgiframe.ver-41a36c315d5e605bcd06dd272df95a8e097482ab.js"></script>
+          <script type="text/javascript" src="http://media.compete.com/site_media/thirdparty/jquery/tooltip.ver-41a36c315d5e605bcd06dd272df95a8e097482ab.js"></script>
+          <script type="text/javascript" src="http://media.compete.com/site_media/thirdparty/jquery/tooltip.dynamic.ver-41a36c315d5e605bcd06dd272df95a8e097482ab.js"></script>
+          <script type="text/javascript" src="http://media.compete.com/site_media/thirdparty/jquery/tooltip.compete.ver-41a36c315d5e605bcd06dd272df95a8e097482ab.js"></script>
+          <script type="text/javascript" src="http://media.compete.com/site_media/js/seaeagle/json2.ver-41a36c315d5e605bcd06dd272df95a8e097482ab.js" charset="utf-8"></script>
+          <script type="text/javascript" src="http://media.compete.com/site_media/js/seaeagle/util.ver-41a36c315d5e605bcd06dd272df95a8e097482ab.js"></script>
+          <script type="text/javascript" src="http://media.compete.com/site_media/js/seaeagle/util_format.ver-41a36c315d5e605bcd06dd272df95a8e097482ab.js"></script>
+          <script type="text/javascript" src="http://media.compete.com/site_media/js/seaeagle/dropdown.ver-41a36c315d5e605bcd06dd272df95a8e097482ab.js"></script>
+          <script type="text/javascript" src="http://media.compete.com/site_media/js/seaeagle/master.ver-41a36c315d5e605bcd06dd272df95a8e097482ab.js"></script>
+          <script type="text/javascript" src="http://media.compete.com/site_media/js/seaeagle/popup_help.ver-41a36c315d5e605bcd06dd272df95a8e097482ab.js"></script>
+          <script type="text/javascript" src="http://media.compete.com/site_media/js/seaeagle/jquery.autocomplete.pack.ver-41a36c315d5e605bcd06dd272df95a8e097482ab.js"></script>
+          <script type="text/javascript" src="http://media.compete.com/site_media/js/seaeagle/jquery.competeutils.ver-41a36c315d5e605bcd06dd272df95a8e097482ab.js"></script>
+          <script type="text/javascript" src="http://media.compete.com/site_media/js/seaeagle/jquery.cookie.ver-41a36c315d5e605bcd06dd272df95a8e097482ab.js"></script>
+          <script type="text/javascript" src="http://media.compete.com/site_media/js/seaeagle/jquery.html5-placeholder-shim.ver-41a36c315d5e605bcd06dd272df95a8e097482ab.js"></script>
+          <script type="text/javascript" src="http://media.compete.com/site_media/js/c/app/main_nav.ver-41a36c315d5e605bcd06dd272df95a8e097482ab.js"></script>
+          <script type="text/javascript" src="http://media.compete.com/site_media/js/number_format/NumberFormat-1.5.4.ver-41a36c315d5e605bcd06dd272df95a8e097482ab.js"></script>
+          <script type="text/javascript" src="http://media.compete.com/site_media/js/number_format/number_formatter.ver-41a36c315d5e605bcd06dd272df95a8e097482ab.js"></script>
       
-          <script type="text/javascript" src="http://media.compete.com/site_media/thirdparty/superfish-1.4.8/js/superfish.ver-56fdf999ae8f52fd7e44139c196e70cc27bf4df5.js"></script>
+          <script type="text/javascript" src="http://media.compete.com/site_media/thirdparty/superfish-1.4.8/js/superfish.ver-41a36c315d5e605bcd06dd272df95a8e097482ab.js"></script>
           <script type="text/javascript">
               // ! TODO: add try_catch block *INSIDE* function() {}
               $j(document).ready(function() {
@@ -329,10 +303,9 @@
           
           <!-- endblock scripts -->
       
-      <script type="text/javascript" src="http://media.compete.com/site_media/js/seaeagle/amcharts.ver-56fdf999ae8f52fd7e44139c196e70cc27bf4df5.js"></script>
-          <script type="text/javascript" src="http://media.compete.com/site_media/js/c/free/widgets.ver-56fdf999ae8f52fd7e44139c196e70cc27bf4df5.js"></script>
-          <script type="text/javascript" src="http://media.compete.com/site_media/js/c/app/main_nav.ver-56fdf999ae8f52fd7e44139c196e70cc27bf4df5.js"></script>
-          <script type="text/javascript" src="http://media.compete.com/site_media/js/c/app/research.ver-56fdf999ae8f52fd7e44139c196e70cc27bf4df5.js"></script>
+      <script type="text/javascript" src="http://media.compete.com/site_media/js/seaeagle/amcharts.ver-41a36c315d5e605bcd06dd272df95a8e097482ab.js"></script>
+          <script type="text/javascript" src="http://media.compete.com/site_media/js/c/free/widgets.ver-41a36c315d5e605bcd06dd272df95a8e097482ab.js"></script>
+          <script type="text/javascript" src="http://media.compete.com/site_media/js/c/app/research.ver-41a36c315d5e605bcd06dd272df95a8e097482ab.js"></script>
           
           <script type="text/javascript">        
               $j(document).ready(function() {
@@ -388,13 +361,16 @@
                       loading_image: "/site_media/images/app/loading/loader_24x24.gif"
                   });
       
+                  
+                      var logged_in_as = null;
+                  
+      
                   /* personalization initialization */
-                  var all_sites = new $c.free.widgets.FollowedSiteCollection([]);
                   var d = {
                     site_name: "google.com",
-                    
-                    followed_sites: all_sites
+                    logged_in_as: logged_in_as
                   };
+      
                   var auth_model = new $c.free.widgets.FreeLoginModel(d);
                   var links_opts = { model: auth_model };
                   var links_view = new $c.free.widgets.FreeAccountLinksView(links_opts);
@@ -415,7 +391,7 @@
           
       
       
-          <title>google.com 165,067,996 UVs for August 2011 | Compete</title>
+          <title>google.com 166,871,172 UVs for September 2011 | Compete</title>
       
           <!-- block head -->
           
@@ -461,20 +437,22 @@
               
       <div class="wrapper">
           <div class="login-block">
-              <p class="membership"><a href="#">Login</a> or <a href="#">Sign Up</a> for Site Analytics to follow sites</p>
-              <p class="get-pro">Get the whole story with a Compete PRO subscription. <a href="http://www.compete.com/pro/features/">Learn More</a></p>
+              <p class="membership"><a href="javascript:void(0)">Login</a> or <a href="javascript:void(0)">Sign Up</a> for Site Analytics to follow sites</p>
+              <p class="get-pro">Get the whole story with a Compete PRO subscription.<a href="http://www.compete.com/pro/features/">Learn More</a></p>
           </div>
           <div class="page clearfix">
               <div class="head">
                   <div class="interact-wrap">
                       <ul class="nav interact">
-                          <li id="follow" class="follow"><a href="#">Follow This Site</a></li>
-                          <li id="manage" class="manage" style="display:none"><a href="#">Manage List</a></li>
+                          <li id="follow" class="follow"><a href="javascript:void(0)">Follow This Site</a></li>
+                          <li id="manage" class="manage" style="display:none"><a href="javascript:void(0)">Manage List</a></li>
                       </ul>
                   </div>
                   <div class="stretcher">
                       <div class="inner share">
-                          <span class='st_twitter_custom' st_title="google.com 165,067,996 UVs for August 2011 from @compete"><img src="http://media.compete.com/site_media/images/free/fsp_twitter.png" width="22" height="22" alt="Twitter"></span>
+                          
+                          <span class='st_twitter_custom' st_title="google.com 166,871,172 UVs for September 2011 from @compete"><img src="http://media.compete.com/site_media/images/free/fsp_twitter.png" width="22" height="22" alt="Twitter"></span>
+                          
                           <span class='st_facebook_custom' ><img src="http://media.compete.com/site_media/images/free/fsp_facebook.png" width="22" height="22" alt="Facebook"></span>
                           <span class='st_linkedin_custom' ><img src="http://media.compete.com/site_media/images/free/fsp_linkedin.png" width="22" height="22" alt="LinkedIn"></span>
                           <span class='st_email_custom' ><img src="http://media.compete.com/site_media/images/free/fsp_mail.png" width="22" height="22" alt="Email"></span>
@@ -493,26 +471,26 @@
                       </form>
                   </div>
                   
-                  <p class="data-info">August 2011  /  U.S. Data Only</p>
+                  <p class="data-info">September 2011  /  U.S. Data Only</p>
                   <ul class="nav tools">
-                      <li class="save"><a href="#" id="graph-image" class="at_save">Save Graph Image</a></li>
-                      <li class="export"><a id="csv-export" href="#" target="" class="at_export">Export CSV</a></li>
-                      <li class="embed"><a href="#" id="embed-graph" class="at_embed">Embed Graph</a></li>
+                      <li class="save"><a href="javascript:void(0)" id="graph-image" class="at_save">Save Graph Image</a></li>
+                      <li class="export"><a id="csv-export" href="javascript:void(0)" target="" class="at_export">Export CSV</a></li>
+                      <li class="embed"><a href="javascript:void(0)" id="embed-graph" class="at_embed">Embed Graph</a></li>
                   </ul>
               </div>
               <div class="sidebar">
                   <div class="section score">
-                      <h3><span class="help"><img src="http://media.compete.com/site_media/images/free/icon-help-grey.png" width="21" height="21" alt="?"></span>Unique Visitors </h3>
-                      <h4>165,067,996</h4>
+                      <h3><span class="help"><img src="http://media.compete.com/site_media/images/free/icon-help-grey.png" width="21" height="21" alt="?"></span>Unique Visitors</h3>
+                      <h4>166,871,172</h4>
                       <ul>
-                          <li class="m2m"><span class="delta-positive number">+3,620,033</span> | <span class="delta-positive number">+2.24%</span></li>
-                          <li class="y2y"><span class="delta-positive number">+19,443,760</span> | <span class="delta-positive number">+13.35%</span></li>
+                          <li class="m2m"><span class="delta-positive number">1,803,176</span> | <span class="delta-positive number">1.09%</span></li>
+                          <li class="y2y"><span class="delta-positive number">20,513,672</span> | <span class="delta-positive number">14.02%</span></li>
                       </ul>
                       <h3>Rank <span class="note">(by UVs)</span></h3>
-                      <h4>#1</h4>
+                      <h4>1</h4>
                       <ul>
-                          <li class="m2m"><span class="rank">#1</span> | <span class=" move">N/A</span></li>
-                          <li class="y2y"><span class="rank">#1</span> | <span class=" move">N/A</span></li>
+                          <li class="m2m"><span class="rank">1</span> | <span class=" move">0</span></li>
+                          <li class="y2y"><span class="rank">1</span> | <span class=" move">0</span></li>
                       </ul>
                   </div>
                   <div class="section trends">
@@ -530,7 +508,7 @@
                           <li class="last">General Portals and Search</li>
                       </ul>
                       
-                      <h2><img width="16" height="16" alt="logo" src="http://g.etfv.co/http://google.com"> google.com</h2>
+                      <h2><img width="16" height="16" alt="Logo" src="http://g.etfv.co/http://google.com"> google.com</h2>
                       <div id="graph"></div>
                   </div>
                   <div class="section"> <span id="zoominfo" class="zoominfo"> </span> </div>
@@ -669,5 +647,40 @@
           </body>
       
       </html>
+
+    http_version: "1.1"
+- !ruby/struct:VCR::HTTPInteraction 
+  request: !ruby/struct:VCR::Request 
+    method: :get
+    uri: http://toolbarqueries.google.com:80/tbr?ch=6340563836&client=navclient-auto&features=Rank&q=info%3Awww.google.com
+    body: 
+    headers: 
+  response: !ruby/struct:VCR::Response 
+    status: !ruby/struct:VCR::ResponseStatus 
+      code: 200
+      message: OK
+    headers: 
+      date: 
+      - Wed, 26 Oct 2011 23:48:14 GMT
+      pragma: 
+      - no-cache
+      expires: 
+      - Fri, 01 Jan 1990 00:00:00 GMT
+      cache-control: 
+      - no-cache, must-revalidate
+      content-type: 
+      - text/html; charset=ISO-8859-1
+      set-cookie: 
+      - PREF=ID=0ffeb766e4bd6145:FF=0:TM=1319672894:LM=1319672894:S=ee_wxwpHgc6udXi9; expires=Fri, 25-Oct-2013 23:48:14 GMT; path=/; domain=.google.com
+      server: 
+      - gws
+      x-xss-protection: 
+      - 1; mode=block
+      x-frame-options: 
+      - SAMEORIGIN
+      transfer-encoding: 
+      - chunked
+    body: |
+      Rank_1:2:10
 
     http_version: "1.1"
