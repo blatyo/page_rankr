@@ -13,14 +13,16 @@
       content-type: 
       - text/html; charset=ISO-8859-1
       date: 
-      - Wed, 26 Oct 2011 23:48:16 GMT
+      - Mon, 12 Dec 2011 02:35:48 GMT
       expires: 
       - "-1"
       cache-control: 
       - private, max-age=0
       set-cookie: 
-      - PREF=ID=c708672c7805f9d6:FF=0:TM=1319672896:LM=1319672896:S=z-5geFtjeL7n9E5w; expires=Fri, 25-Oct-2013 23:48:16 GMT; path=/; domain=.google.com
-      - NID=52=QMvQYrsLNH03kaEOkGOSL1xzKlBbKK8l-QujLu8xVVRzeWDQIvxiHeBkcYPvjsOVViqyghSMD7rXqwgjmTzR9_ktwDtHYwa8j2KGIP4dKd1SLuHab9YOrgFVuD8i9PKA; expires=Thu, 26-Apr-2012 23:48:16 GMT; path=/; domain=.google.com; HttpOnly
+      - PREF=ID=f823c6d0b3b91454:FF=0:TM=1323657348:LM=1323657348:S=Mag0yt7_s3eqFg6S; expires=Wed, 11-Dec-2013 02:35:48 GMT; path=/; domain=.google.com
+      - NID=54=fg4Gkdba02WrEF3KG2OgmPELOCTrXFf6db8XmXYC15PFK6UnhnXwsSY5e3VIGf1c9Uswv1JKXVSZBNZPeOaYvoVEUBpKWRjc7iKJuJyxeoRTP0iRFMGDEqG9bniDQX_e; expires=Tue, 12-Jun-2012 02:35:48 GMT; path=/; domain=.google.com; HttpOnly
+      p3p: 
+      - CP="This is not a P3P policy! See http://www.google.com/support/accounts/bin/answer.py?hl=en&answer=151657 for more info."
       server: 
       - gws
       x-xss-protection: 
@@ -30,11 +32,411 @@
       transfer-encoding: 
       - chunked
     body: |-
-      <html><head><meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1"><title>site:please-dont-register-a-site-that-breaks-this-test.com - Google Search</title><style>#gbar,#guser{font-size:13px;padding-top:1px !important}#gbar{height:22px}#guser{padding-bottom:7px !important;text-align:right}.gbh,.gbd{border-top:1px solid #c9d7f1;font-size:1px}.gbh{height:0;position:absolute;top:24px;width:100%}@media all{.gb1{height:22px;margin-right:.5em;vertical-align:top}#gbar{float:left}}a.gb1,a.gb4{text-decoration:underline !important}a.gb1,a.gb4{color:#00c !important}body,td,div,.p,a{font-family:arial,sans-serif}#gbar{float:left;height:22px;padding-left:2pxfont-size:13px}.j{width:34em}</style><script type="text/javascript"></script></head>
-            <body bgcolor="#ffffff" topmargin="3" marginheight="3"
+      <!doctype html><html><head><meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1"><title>site:please-dont-register-a-site-that-breaks-this-test.com - Google Search</title><style>#gbar,#guser{font-size:13px;padding-top:1px !important}#gbar{height:22px}#guser{padding-bottom:7px !important;text-align:right}.gbh,.gbd{border-top:1px solid #c9d7f1;font-size:1px}.gbh{height:0;position:absolute;top:24px;width:100%}@media all{.gb1{height:22px;margin-right:.5em;vertical-align:top}#gbar{float:left}}a.gb1,a.gb4{text-decoration:underline !important}a.gb1,a.gb4{color:#00c !important}</style><style>
+          body,td,div,.p,a{
+            font-family:arial,sans-serif
+          }
+          body {
+            margin:0
+          }
+          #gbar{
+            float:left;
+            height:22px;padding-left:2px;
+            font-size:13px
+          }
           
-            >
-          <div id=gbar><nobr><b class=gb1>Web</b> <a class=gb1 href="http://www.google.com/search?q=site:please-dont-register-a-site-that-breaks-this-test.com&um=1&ie=UTF-8&hl=en&tbm=isch&source=og&sa=N&tab=wi">Images</a> <a class=gb1 href="http://www.google.com/search?q=site:please-dont-register-a-site-that-breaks-this-test.com&um=1&ie=UTF-8&hl=en&tbo=u&tbm=vid&source=og&sa=N&tab=wv">Videos</a> <a class=gb1 href="http://maps.google.com/maps?q=site:please-dont-register-a-site-that-breaks-this-test.com&um=1&ie=UTF-8&hl=en&sa=N&tab=wl">Maps</a> <a class=gb1 href="http://www.google.com/search?q=site:please-dont-register-a-site-that-breaks-this-test.com&um=1&ie=UTF-8&hl=en&tbo=u&tbm=nws&source=og&sa=N&tab=wn">News</a> <a class=gb1 href="http://www.google.com/search?q=site:please-dont-register-a-site-that-breaks-this-test.com&um=1&ie=UTF-8&hl=en&tbo=u&tbm=shop&source=og&sa=N&tab=wf">Shopping</a> <a class=gb1 href="https://mail.google.com/mail/?hl=en&tab=wm">Gmail</a> <a class=gb1 style="text-decoration:none" href="http://www.google.com/intl/en/options/"><u>More</u> &raquo;</a></nobr></div><div id=guser width=100%><nobr><span id=gbn class=gbi></span><span id=gbf class=gbf></span><span id=gbe></span><a href="http://www.google.com/history/optout?hl=en" class=gb4>Web History</a> | <a  href="/preferences?hl=en" class=gb4>Settings</a> | <a id=gb_70 href="https://www.google.com/accounts/ServiceLogin?hl=en&continue=http://www.google.com/search%3Fq%3Dsite:please-dont-register-a-site-that-breaks-this-test.com" class=gb4>Sign in</a></nobr></div><div class=gbh style=left:0></div><div class=gbh style=right:0></div><font size="-2"><br clear="all"></font><table border="0" cellpadding="3" cellspacing="0"><tr><td valign="top"><a href="/webhp?hl="><img src="/images/logo_sm.gif" height="55" width="150" border="0"></a></td><td valign="bottom"><nobr><form name="gs" method="GET" action="/search"><input type="text" name="q" maxlength="2048" title="Search" value="site:please-dont-register-a-site-that-breaks-this-test.com" size="41"><font size="-1">&nbsp;</font><input type="Submit" name="btnG" value="Search"><font size="-1">&nbsp;</font></form></nobr></td><td width="100%" valign="middle"><nobr><font size="-2"><a href="/advanced_search?q=site:please-dont-register-a-site-that-breaks-this-test.com&amp;hl=">Advanced Search</a><br><a href="/preferences?q=site:please-dont-register-a-site-that-breaks-this-test.com&amp;hl=">Preferences</a></font></nobr></td></tr></table><table width="100%" border="0" cellpadding="0" cellspacing="0"><tr><td bgcolor="#3366CC" height="1"><img height="1" width="1" alt=""></td></tr></table><table width="100%" border="0" cellpadding="0" cellspacing="0" bgcolor="#D5DDF3"><tr><td><img height="2" width="1" alt=""></td></tr><tr><td><table width="100%" border="0" cellpadding="0" cellspacing="4"><tr><td nowrap><font size="-1"><strong>Web</strong></font></td></tr></table></td></tr><tr><td><img height="1" width="1" alt=""></td></tr></table><br>Your search - <b>site:please-dont-register-a-site-that-breaks-this-test.com</b> - did not match any documents.  <br><br>Suggestions:<ul><li>Make sure all words are spelled correctly.</li><li>Try different keywords.</li><li>Try more general keywords.</li></ul><br clear="all"><table width="100%" border="0" cellpadding="0" cellspacing="0"><tr><td bgcolor="#3366CC" height="1"><img height="1" width="1" alt=""></td></tr></table><table border="0" cellpadding="8" cellspacing="0" align="center" width="100%" bgcolor="#d5ddf3"><tr><td align="center">&nbsp;<br><table border="0" cellpadding="0" cellspacing="0" align="center"><form method="GET" action="/search"><tr><td nowrap><font size="-1"><input type="text" name="q" size="31" maxlength="2048" value="site:please-dont-register-a-site-that-breaks-this-test.com" title="Search"><input type="submit" name="btnG" value="Search"></font></td></tr></form></table><br><font size="-1"><nobr><a href="/language_tools?q=site%3Aplease-dont-register-a-site-that-breaks-this-test.com">Language Tools</a></nobr>&nbsp;|&nbsp;<nobr><a href="/intl/en/help.html">Search&#160;Tips</a></nobr></font></td></tr><tr><td><img height="1" width="1" alt=""></td></tr></table><table width="100%" border="0" cellpadding="0" cellspacing="0"><tr><td bgcolor="#3366CC" height="1"><img height="1" width="1" alt=""></td></tr></table><center><p></p><table border="0" cellpadding="2" cellspacing="0"><tr><td><font size="-1">&#169;2011 Google&nbsp;-&nbsp;<a href="/">Google&#160;Home</a></font></td></tr></table></center></body></html>
+          .gssb_c table{
+            font-size:1em
+          }
+          .gsfi,.gsfs{
+            font-size:17px
+          }
+          
+            .j{
+              width:34em
+            }
+          
+          a:link,.w,.q:active,.q:visited,.tbotu{
+            color:#11c
+          }
+          a.fl,.flc a{
+            color:#4272db;text-decoration:none
+          }
+          
+          a.gl{
+            text-decoration:none
+          }
+          cite, cite a:link{
+            color:#0E774A;
+            font-style:normal
+          }
+          #foot {
+            padding:0 8px;
+          }
+          #foot a{
+            white-space:nowrap
+          }
+          h3{
+            font-size:16px;
+            font-weight:normal;
+            margin:0;
+            padding:0
+          }
+          #res h3{
+            display:inline
+          }
+          .hd{
+            height:1px;
+            position:absolute;
+            top:-1000em
+          }
+          li.g,body,html,table,.std{
+            font-size:13px
+          }
+          li.g{
+            margin-bottom:14px;
+            margin-top:0;
+            zoom:1;
+          }
+          ol li,ul li{
+            list-style:none
+          }
+          h1,ol,ul,li{
+            margin:0;padding:0
+          }
+          #mbEnd li{
+            margin:1em 0
+          }
+          #mbEnd h2{
+            color:#676767;
+            font-family:arial,sans-serif;
+            font-size:11px;
+            font-weight:normal
+          }
+          #center_col{
+            border-left:1px solid #d3e1f9;
+            padding:0 8px
+          }
+          
+            #fll a,#bfl a{
+              margin:0 10px
+            }
+          
+          .f{
+            color:#767676
+          }
+          .grn{
+            color:#393
+          }
+          .ds{
+            border-right:1px solid #e7e7e7;
+            position:relative;
+            height:32px;
+            
+            z-index:100
+          }
+          .e{
+            margin:2px 0px 0.75em
+          }
+          #leftnav a,.slk a{
+            text-decoration:none
+          }
+          #leftnav h2{
+            color: #767676;
+            font-weight: normal;
+            margin:0
+          }
+          #logo{
+            display:block;
+            height:49px;
+            margin-top:12px;
+            margin-left:12px;
+            overflow:hidden;
+            position:relative;
+            width:137px
+          }
+          #logo img{
+            
+            left:0;
+            position:absolute;
+            top:-41px
+          }
+          .lnsec{
+            font-size:13px;
+            border-top:1px solid #c9d7f1;
+            margin-top:5px;
+            padding-top:8px
+          }
+          .lsb,.micon,.csb,.star,.star div{
+            background:url(/images/nav_logo_hp2.png) no-repeat;
+            overflow:hidden
+          }
+          .lst{
+            background:#fff;
+            border:1px solid #ccc;
+            border-bottom:none;
+            color:#000;
+            font:18px arial,sans-serif;
+            
+            float:left;
+            height:26px;
+            margin:0;
+            padding:4px 0 0;
+            padding-left:6px;
+            padding-right:10px;
+            vertical-align:top;
+            width:100%;
+            
+            word-break:break-all
+          }
+          .lst:focus{
+            outline:none
+          }
+          .lst-td{
+            border-bottom:1px solid #999;
+            padding:0
+          }
+          .lst-b{
+            border:1px solid #CCC;
+            border-bottom:none;
+            padding-right:0;
+            height:29px;
+            padding-top:1px
+          }
+          .tia input{
+            border-right:none;
+            padding-right:0
+          }
+          .tia{
+            padding-right:0
+          }
+          .lsbb{
+            background:#eee;
+            border:1px solid #999;
+            border-top-color:#ccc;
+            border-left-color:#ccc;
+            height:30px
+          }
+          .lsb{
+            background-position:bottom;
+            border:none;
+            color:#000;
+            cursor:pointer;
+            font:15px arial,sans-serif;
+            height:30px;
+            margin:0;
+            vertical-align:top
+          }
+          .lsb:active{
+            background:#ccc
+          }
+          .micon {
+            float:left;
+            height:19px;
+            margin-top:2px;
+            margin-right: 6px;
+            width:19px;
+          }
+          #nav{
+            
+            border-collapse:collapse;
+            margin-top:17px;
+            text-align:left
+          }
+          #nav td{
+            text-align:center;
+          }
+          .nobr{
+            white-space:nowrap
+          }
+          #showmodes .micon{
+            background-position:-150px -114px;
+            height:17px;
+            margin-left:9px;
+            width:17px;
+          }
+          #subform_ctrl{
+            font-size:11px;
+            height:26px;
+            margin:5px 3px 0;
+            margin-left:17px
+          }
+          .ts{
+            border-collapse:collapse
+          }
+          #mn{
+            table-layout:fixed;width:996px
+          }
+          .mitem{
+            font-size:15px;
+            line-height:24px;
+            margin-bottom:2px;
+            padding-left:0
+          }
+          .msel{
+            font-weight:bold;
+            margin:-1px 0 0 0;
+            border:solid #fff;
+            border-width:1px 0
+          }
+          .r{
+            margin:0
+          }
+          #res{
+            padding:4px 8px 0
+          }
+          .s br{
+            display:none
+          }
+          .spon{
+            font-size:11px;
+            font-weight:normal;
+            color:#767676
+          }
+          .mitem,.lnsec{
+            padding-left:8px
+          }
+          #showmodes{
+            font-size:15px;
+            line-height:24px;
+          }
+          #swr{
+            margin-top:4px
+          }
+          #swr li{
+            line-height:1.2;
+            margin-bottom:4px
+          }
+          .csb{
+            display:block;
+            height:40px;
+          }
+          .images_table td{line-height:17px;padding-bottom:16px}
+          .images_table img{border:1px solid #ccc;padding:1px}
+          .taf{
+            padding:1px 0 0
+          }
+          .tam{
+            padding:14px 0 0
+          }
+          .tal{
+            padding:14px 0 1px
+          }
+          #tbd,#abd{
+            display:block;
+            min-height:1px;
+            padding-top:3px
+          }
+          #tbd li{
+            
+            display:inline
+          }
+          .tbfo,.tbt,.tbpd{
+            margin-bottom:8px
+          }
+          #tbd .tbt li{
+            display:block;
+            font-size:13px;
+            line-height:1.2;
+            padding-bottom:3px;
+            padding-left:8px;
+            text-indent:-8px
+          }
+          .tbos,.b{
+            font-weight:bold;
+          }
+          a:hover{
+            text-decoration:underline
+          }
+          #leftnav a:hover {
+            text-decoration:underline;
+          }
+          em{
+            font-weight:bold;
+            font-style:normal
+          }
+          
+          .gac_wd{
+            right:-2px !important;
+            
+            overflow:hidden
+          }
+          
+          .fmg{
+            display:inline-block;
+            margin-top:7px;
+            padding-right:8px;
+            text-align-left;
+            vertical-align:top;
+            width:90px;
+            zoom:1
+          }
+          .star{
+            
+                background-position:0 -120px;
+              
+            height:9px;
+            overflow-hidden;
+            width:50px
+          }
+          .star div{
+            
+                background-position:0 -110px
+              
+          }
+          
+          .pslires{
+            padding-top:6px;
+            overflow:hidden;
+            width:99.5%
+          }
+          .psliimg{
+            float:left;
+            height:90px;
+            text-align:top;
+            width:90px
+          }
+          .pslimain{
+            margin-left:100px;
+            margin-right:9em
+          }
+          .psliprice{
+            float:right;
+            width:7em
+          }
+          .psliprice b{
+            font-size:medium;
+            font-weight:bold;
+            white-space:nowrap
+          }
+          .psliimg img{
+            border:none
+          }
+          </style><script type="text/javascript">
+            window['hlprwt'] = function(t, ct) {
+              try {
+                if (t === window) {
+                  t = window.event.srcElement;
+                  while (t) {
+                    if (t.href) {
+                      break;
+                    }
+                    t = t.parentNode;
+                  }
+                }
+                t.href = ct;
+                t.onmousedown = '';
+              } catch (e) {
+              }
+              return true;
+            }
+            window.google = { y: {} };
+            </script><script type="text/javascript"></script></head>
+          <body bgcolor="#ffffff" topmargin="3" marginheight="3" marginwidth="0"
+        ><div id=gbar><nobr><b class=gb1>Web</b> <a class=gb1 href="http://www.google.com/search?q=site:please-dont-register-a-site-that-breaks-this-test.com&um=1&ie=UTF-8&hl=en&tbm=isch&source=og&sa=N&tab=wi">Images</a> <a class=gb1 href="http://www.google.com/search?q=site:please-dont-register-a-site-that-breaks-this-test.com&um=1&ie=UTF-8&hl=en&tbo=u&tbm=vid&source=og&sa=N&tab=wv">Videos</a> <a class=gb1 href="http://maps.google.com/maps?q=site:please-dont-register-a-site-that-breaks-this-test.com&um=1&ie=UTF-8&hl=en&sa=N&tab=wl">Maps</a> <a class=gb1 href="http://news.google.com/nwshp?hl=en&tab=wn">News</a> <a class=gb1 href="http://www.google.com/search?q=site:please-dont-register-a-site-that-breaks-this-test.com&um=1&ie=UTF-8&hl=en&tbo=u&tbm=shop&source=og&sa=N&tab=wf">Shopping</a> <a class=gb1 href="https://mail.google.com/mail/?tab=wm">Gmail</a> <a class=gb1 style="text-decoration:none" href="http://www.google.com/intl/en/options/"><u>More</u> &raquo;</a></nobr></div><div id=guser width=100%><nobr><span id=gbn class=gbi></span><span id=gbf class=gbf></span><span id=gbe></span><a href="http://www.google.com/history/optout?hl=en" class=gb4>Web History</a> | <a  href="/preferences?hl=en" class=gb4>Settings</a> | <a id=gb_70 href="https://accounts.google.com/ServiceLogin?hl=en&continue=http://www.google.com/search%3Fq%3Dsite:please-dont-register-a-site-that-breaks-this-test.com" class=gb4>Sign in</a></nobr></div><div class=gbh style=left:0></div><div class=gbh style=right:0></div><br clear="all"><table border="0" cellpadding="0" cellspacing="0" id="mn" style="position:relative"><tr><td rowspan="2" valign="top" width="157"><h1><a href="/webhp?hl=" id="logo" title="Go to Google Home"><img src="/images/nav_logo_hp2.png" alt="" height="222" style="border:0" width="167"></a></h1></td><td valign="top" style="padding-left:9px" width="559"><form name="gs" id="tsf" method="GET" action="/search" style="display:block;margin:0;background:none"><table border="0" cellpadding="0" cellspacing="0" id="sbhost" style="border-bottom:1px solid #e7e7e7;margin-top:18px;position:relative"><tr><td class="lst-td" width="100%" valign="bottom" style=""><div style="position:relative;zoom:1"><input autocomplete="off" class="lst" type="text" name="q" maxlength="2048" title="Search" value="site:please-dont-register-a-site-that-breaks-this-test.com"></div></td><td><div class="ds"><div class="lsbb"><input type="submit" name="btnG" class="lsb" value="Search"></div></div></td></tr></table></form></td><td style="padding-left:5px" width="259"></td></tr><tr><td width="100%"><div id="subform_ctrl"><div style="float:right"><a class="fl" href=""></a></div><div></div></div></td><td></td></tr><tr><td valign="top" id="leftnav" style="padding:4px"><div id="modeselector" style="padding-bottom:4px"><ul><li class="mitem msel"><span class="micon" style="
+                background-position:-20px -132px
+              "></span>Everything</li></ul><a id="showmodes" class="q" href="/search?q=site%3Aplease-dont-register-a-site-that-breaks-this-test.com&amp;hl=en&amp;prmdo=1&amp;sa=X"><span class="micon"></span><span class="msm">More</span></a></div><div class="lnsec"><h2 class="hd">Search Options</h2><ul id="tbd" class="med"></ul><a href="/search?q=site:please-dont-register-a-site-that-breaks-this-test.com&amp;hl=en&amp;ie=UTF-8&amp;tbo=1" class="q" style="display:block;margin-bottom:16px">Show options...</a></div></td><td valign="top"><div id="center_col"><div id="tbbc" style="background:#ebeff9;padding:8px;margin-bottom:4px"><b>Web</b></div><div id="res"><div id="ires"></div></div><div style="font-size:16px;padding-left:10px">Your search - <b>site:please-dont-register-a-site-that-breaks-this-test.com</b> - did not match any documents.  <br><br>Suggestions:<ul style="margin-left:1.3em"><li>Make sure all words are spelled correctly.</li><li>Try different keywords.</li><li>Try more general keywords.</li></ul></div></div><div id="foot"><div><p id="bfl" class="flc" style="margin:6px 0 0;text-align:center"></p></div><div id="fll" class="flc" style="margin:19px auto 19px auto;text-align:center"><a href="/">Google&#160;Home</a> <a href="
+               /intl/en/ads/">Advertising&#160;Programs</a> <a href="/services">Business Solutions</a> <a href="/intl/en/privacy.html">Privacy</a> <a href="/intl/en/about.html">About Google</a></div></div></td><td valign="top"></td></tr></table></body></html>
     http_version: "1.1"
 - !ruby/struct:VCR::HTTPInteraction 
   request: !ruby/struct:VCR::Request 
@@ -54,11 +456,11 @@
       content-encoding: 
       - gzip
       expires: 
-      - Wed, 26 Oct 2011 23:47:16 GMT
+      - Mon, 12 Dec 2011 02:34:48 GMT
       p3p: 
       - CP="NON UNI COM NAV STA LOC CURa DEVa PSAa PSDa OUR IND"
       date: 
-      - Wed, 26 Oct 2011 23:48:16 GMT
+      - Mon, 12 Dec 2011 02:35:48 GMT
       transfer-encoding: 
       - chunked
       connection: 
@@ -67,37 +469,37 @@
       vary: 
       - Accept-Encoding
       set-cookie: 
-      - _SS=SID=83801364E9A84BE08E590C3C12D15A5D; domain=.bing.com; path=/
-      - MUID=0225527DC6D663D519B350EAC7D263CC; expires=Fri, 25-Oct-2013 23:48:16 GMT; domain=.bing.com; path=/
-      - OrigMUID=0225527DC6D663D519B350EAC7D263CC%2c3f84219f7c434cac8ca7d10fb69b6743; expires=Fri, 25-Oct-2013 23:48:16 GMT; domain=.bing.com; path=/
-      - OVR=flt=0&flt10=0&flt11=0&flt12=0&flt2=0&flt3=0&flt4=0&flt5=0&flt6=0&flt7=0&flt8=0&flt9=0&preallocation=0&ramp1=0&release=or3&R=1; domain=.bing.com; path=/
-      - SRCHD=D=2008788&MS=2008788&AF=NOFORM; expires=Fri, 25-Oct-2013 23:48:16 GMT; domain=.bing.com; path=/
-      - SRCHUID=V=2&GUID=2A1652AB26444CC98D7085EDDD8A217D; expires=Fri, 25-Oct-2013 23:48:16 GMT; path=/
-      - SRCHUSR=AUTOREDIR=0&GEOVAR=&DOB=20111026; expires=Fri, 25-Oct-2013 23:48:16 GMT; domain=.bing.com; path=/
-    body: |-
-      <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:Web="http://schemas.live.com/Web/"><head><meta content="text/html; charset=utf-8" http-equiv="content-type" /><script type="text/javascript">//<![CDATA[
-      si_ST=new Date
-      //]]></script><script type="text/javascript">//<![CDATA[
-      _G={ST:(si_ST?si_ST:new Date),Mkt:"en-US",RTL:false,Ver:"7_09_0_1102916",IG:"3f84219f7c434cac8ca7d10fb69b6743",EventID:"88E095C0A10E4004A0DB89D112C67AD1",P:"SERP",DA:"Bl2",CID:"0225527DC6D663D519B350EAC7D263CC",SUIH:"kOcc3w_LqQkrPAlpiw0shQ",PCId:"1",cUrl:"http:\/\/c.bing.com\/c.gif?DI=15074",akamaiSyncUrl:"http:\/\/cms.abmr.net\/pix?cid=1237&amp;uid=",gpUrl:"\/fd\/ls\/GLinkPing.aspx?"};_G.lsUrl="/fd/ls/l?IG="+_G.IG+"&CID="+_G.CID+"&PM=Y";curUrl="http:\/\/www.bing.com\/search";function si_T(a){if(document.images){_G.GPImg=new Image;_G.GPImg.src=_G.gpUrl+'IG='+_G.IG+'&CID='+_G.CID+'&PM=Y'+a;}return true;};sb_gh=function(){return location.hash};sb_sh=function(a){location.hash=a};_w=window;_d=document;sb_de=_d.documentElement;sb_ie=!!_w.ActiveXObject;sb_i6=sb_ie&&!_w.XMLHttpRequest;function _ge(a){return _d.getElementById(a)}sb_st=_w.setTimeout;sb_ct=_w.clearTimeout;sb_gt=function(){return(new Date).getTime()};sj_evt=new function(){var a={},b=this;function c(b){return a[b]||(a[b]=[])}b.fire=function(e){for(var a=c(e),d=a.e=arguments,b=0;b<a.length;b++)if(a[b].d)sb_st(sj_wf(a[b],d),a[b].d);else a[b](d)};b.bind=function(f,a,d,e){var b=c(f);a.d=e;b.push(a);d&&b.e&&a(b.e)};b.unbind=function(e,d){for(var c=0,b=a[e];b&&c<b.length;c++)if(b[c]==d){b.splice(c,1);break}}};function si_PP(e,c){if(!_G.PPS){for(var d='"',b=["PC","FC","BC","BS","H","FE","LE","C1","C2","BP","KP"],a=0;a<b.length;a++)d+=',"'+b[a]+'":'+(_G[b[a]+"T"]?_G[b[a]+"T"]-_G.ST:-1);_G.PPImg=new Image;_G.PPImg.src=_G.lsUrl+'&Type=Event.CPT&DATA={"pp":{"S":"'+(c?c:"L")+d+',"CT":'+(e-_G.ST)+',"IL":'+_d.images.length+(_w.sb_ppCPL?',"CP":1':"")+"}}"+(_G.P?"&P="+_G.P:"")+(_G.DA?"&DA="+_G.DA:"");_G.PPS=1;sb_st(function(){sj_evt.fire("onPP")},1)}}_w.onbeforeunload=function(){si_PP(new Date,"A")};
-      //]]></script><style type="text/css">body{color:#000;background:#fff url(/fd/s/a/sw3.png) repeat-x 0 -113px;font:small/normal Arial,Helvetica,Sans-Serif;margin:0;min-width:987px}body,.sb_text,.sb_h3{color:#000;font:small/normal Arial,Helvetica,Sans-Serif}a,.sb_link,a.sb_link,.sb_link a,.sb_h3 a{color:#04c;text-decoration:none}a:visited,a.sb_link:visited,.sb_link a:visited,.sb_h3 a:visited{color:#639}a:hover,a.sb_link:hover,.sb_link a:hover,h3 a,.sb_h3 a{text-decoration:underline}h1,h2,h3,h4,h5,h6{font-size:small;font-weight:200;margin:0}h1{font-size:93%}h2,h3,.sb_h3{font-size:125%}h1,h1 a,h1 a:visited,h2,h2 a,h2 a:visited,.sb_ptn a,.sb_ptn a:visited{color:#e66400}h2{margin:0 0 .62em}img{border:0}cite,.sb_cite{color:#388222;font-style:normal;word-wrap:break-word}strong{font-weight:700}.sb_title{font-size:91%;margin:0 0 .36em;text-transform:uppercase}.sb_count,.sb_meta,.sb_title,.sb_title a{color:#737373}.sb_meta a,.sb_meta a:visited,a.sb_meta,a.sb_meta:visited{color:#5077bb}.sb_alert{color:#d90026}.sb_alert a{font-style:italic}#sw_hdr,#sw_content,#sw_main,#sw_foot{width:100%;float:left}#sw_content{position:static;z-index:3;min-height:344px}#sw_canvas{padding:0 0 0 15px;clear:both}#sw_main{_display:inline;margin:0 0 0 -15px;padding:0 0 1.54em 15px}.sb_results,.sb_results ul,.sb_results li{list-style-type:none;margin:0;padding:0}.sb_results p,.sb_results .sb_meta{margin:0;line-height:1.2em;word-wrap:break-word}.sp_pss li{display:inline}.sb_pag{padding:0;margin:0;width:100%;float:left}.sb_pag ul,.sb_pag li{list-style:none;margin:0;padding:0}.sb_pag li{float:left}.sb_pag h4{display:none}.sb_pag a,.sb_pag span{display:block;padding:.3em .7em;margin:0 .38em 0 0;text-align:center}a.sb_pagP,a.sb_pagN,span.sb_pagSp{padding:.38em .5em}.sb_pag a:hover,a.sb_pagS{text-decoration:none;background:#ededed}a.sb_pagS{color:#000}a.sb_pagP{margin-right:.7em;padding-left:0}a:hover.sb_pagP,a:hover.sb_pagN{text-decoration:underline;background-color:transparent}a.sb_pagP:visited,a.sb_pagN:visited{color:inherit}.sw_sb{background:0 -1px;height:27px;width:27px}.sw_rfno{background:-28px -3px;height:5px;width:5px}.sw_rfnc{background:-38px -1px;height:7px;width:5px}.sw_rfno_rtl{background:-28px -16px;height:5px;width:5px}.sw_rfnc_rtl{background:-38px -16px;height:7px;width:5px}.sw_dd_rc{background:-48px -2px;height:5px;width:9px}.sw_abnw{background:-60px -1px;height:7px;width:7px}.sw_abne{background:-68px -1px;height:7px;width:7px}.sw_absw{background:-60px -9px;height:7px;width:7px}.sw_abse{background:-68px -9px;height:7px;width:7px}.sw_ddb{background:-80px -1px;height:4px;width:7px}.sw_rwds{background:-43px -12px;height:15px;width:15px}.sw_wllogo{background:-77px -12px;height:15px;width:17px}.sw_pref{background:-94px -12px;height:16px;width:16px}.sw_fbs{background:0 -30px;height:13px;width:13px}.sw_fb_tu{background:-15px -30px;height:12px;width:14px}.sw_twt{background:-30px -30px;height:13px;width:13px}.sw_twt_brd{background:-46px -29px;height:12px;width:17px}.sw_fbl{background:-64px -26px;height:18px;width:18px}.sw_vdo_pop{background:-68px -44px;height:21px;width:21px}.sw_vdo_pl{background:-90px -44px;height:21px;width:21px}.sw_logo{background:0 -70px;height:40px;width:112px}.sw_hdr_bg{background:0 -113px;height:80px;width:112px}.sw_sb,.sw_rfno,.sw_rfnc,.sw_rfno_rtl,.sw_rfnc_rtl,.sw_dd_rc,.sw_abnw,.sw_abne,.sw_absw,.sw_abse,.sw_ddb,.sw_rwds,.sw_wllogo,.sw_pref,.sw_fbs,.sw_fb_tu,.sw_twt,.sw_twt_brd,.sw_fbl,.sw_vdo_pop,.sw_vdo_pl,.sw_logo,.sw_hdr_bg{background-image:url(/fd/s/a/sw3.png);background-repeat:no-repeat}#sw_hdr{min-height:70px;_height:70px;padding:0 0 30px 0}div.sa_as{left:1px}#sw_im{position:absolute;z-index:-1;height:100px;width:620px;top:0;left:190px;background:no-repeat;opacity:0;filter:alpha(opacity=0)}.sw_logo{background:url(/fd/s/a/sw3.png) no-repeat 0 -70px;_display:inline;height:40px;width:112px;margin:-39px 52px 0 20px;float:left}.sw_logoT{color:#000;font-size:170%;line-height:normal;position:absolute;z-index:-1}#sw_hdr .sw_box{padding:49px 0 0;margin:0;float:left;position:relative;z-index:1001;width:100%;line-height:1.38em}#sw_hdr .sw_bd{margin-top:-2.43em}.sb_form_align{margin:-50px 0 0 600px;padding:0 0 0 .53em}.sw_box .sb_form_align{text-align:right;padding:0}.sw_t,.sw_t *,.sw_t a:visited{color:#fff}.sw_t{line-height:1.52em;width:100%;float:left}.sw_tc{background:#525051 url(/fd/s/a/sw3.png) 0 -113px;background:-webkit-gradient(linear,left top,left bottom,from(#768b9e),to(#9fabb9));position:absolute;left:0;z-index:-2;height:1.5em;width:100%}.sw_t ul{float:left;margin:0;padding:0 0 0 20px}.sw_t li{padding:0 .85em 0 0;display:inline;zoom:1}ul.sw_tm{padding:0}ul.sw_tn{float:right;white-space:nowrap;padding:0 20px}.sw_tn li,.sw_tl{padding:0 0 0 .85em}.sw_u{font-weight:bold;padding:0 .77em 0 0}.sw_tl{position:relative;display:inline;z-index:1003}.sw_tl a:hover,.sw_tl a:hover .sw_tla{text-decoration:none}.sw_tl a:hover span{text-decoration:underline}#sw_tll span{margin:0 0 -2px .38em}.sw_tlia,.sw_tliw,.sw_tlif{width:17px;height:15px;display:-moz-inline-box;display:inline-block;background:url(/fd/s/a/sw3.png) -77px -12px}.sw_tlif{width:13px;background-position:0 -29px}#sw_tlm,.sw_tlin,#sw_tfbb{display:none}.sw_tla{font-size:75%;margin-left:.38em;display:inline-block}.sw_me{width:4.5em;text-align:center;padding-right:.33em}#sw_meCtrl .sw_meIc{background:url(/fd/s/a/sw3.png) -43px -12px;display:inline-block;height:15px;margin:0;width:15px;vertical-align:middle}#hp_sw_hdr .sw_meWrap{margin-right:.85em;padding-left:.85em}#sw_meCtrl span{margin:0}a#sw_meCtrl{padding:0 5px}.sw_bd{position:relative;float:left;font-size:medium}.sw_b{float:left;border:1px #e5e5e5 solid;background:#fff;padding:.19em .19em 1.06em 0}.sw_b input{float:left;border:0;margin:0 0 -.88em;font-size:100%;padding:.19em .31em .25em .56em;height:1.25em;line-height:1.25em;width:23.45em;-webkit-appearance:none;outline:none}.sw_b .sw_qbtn{background:#e66400 url(/fd/s/a/sw3.png) 0 -1px;cursor:pointer;height:27px;width:27px;padding:27px 0 0;margin:0 0 -14px;overflow:hidden;font-size:0;border-radius:3px}#sw_as{left:-1px;position:relative;clear:both;display:none;font-size:small}</style><script type="text/javascript">//<![CDATA[
-      function sj_wf(a){var b=arguments;return function(){a.apply(null,[].slice.apply(b).slice(1))}};function sj_be(a,b,c,d){if((a==_w||a==_d.body)&&b=="load")if("undefined"!=typeof _d.readyState&&"complete"===_d.readyState){c();return}if(a.addEventListener)a.addEventListener(b,c,d);else if(a.attachEvent)a.attachEvent("on"+b,c);else a["on"+b]=c}function sj_ue(a,b,c,d){if(a.removeEventListener)a.removeEventListener(b,c,d);else if(a.detachEvent)a.detachEvent("on"+b,c);else a["on"+b]=null};function sj_anim(k){var a=this,j,d,h,g,c,e,i,b,f;a.init=function(m,g,k,l,h){j=m;c=g;e=k;i=l;f=h;if(!b)b=c;!d&&a.start()};a.start=function(){h=sb_gt();g=Math.abs(e-c-b)/i*25;d=setInterval(a.next,25)};a.stop=function(){clearInterval(d);d=0};a.next=function(){var d=sb_gt()-h;b=c+(e-c)*d/g;if(d>=g){a.stop();b=e;f&&f()}k(j,b)}};function sj_so(b,a){b.style.filter=a>=100?"":"alpha(opacity="+a+")";b.style.opacity=a/100};function sj_fader(){return new sj_anim(function(b,a){sj_so(b,a)})};function sj_ce(d,c,b){var a=_d.createElement(d);if(c)a.id=c;if(b)a.className=b;return a};function sj_jb(h,f){for(var b=arguments,e,d,a=2,g={n:h};a<b.length;a+=2){e=b[a];d=b[a+1];sj_be(e,d,sj_wf(c,g,f,e,d))}a<3&&c(g,f);function c(a,d,b,e){b&&sj_ue(b,e,c);sj_evt.bind("onP1",function(){if(!a.l){a.l=1;var b=sj_ce("script");b.src=(d?"/fd/sa/"+_G.Ver:"/sa/"+_G.AppVer)+"/"+a.n+".js";sj_b.appendChild(b)}},1,5)}};function sj_gx(){return sb_i6?new ActiveXObject("MSXML2.XMLHTTP"):new XMLHttpRequest};function sj_sp(a){if(sb_ie)a.cancelBubble=true;else a.stopPropagation()};function sj_ev(a){return sb_ie?event:a}function sj_et(a){return sb_ie?event.srcElement:a.target}function sj_mi(a){return sb_ie?event.fromElement:a.relatedTarget}function sj_mo(a){return sb_ie?event.toElement:a.relatedTarget};function sj_pd(a){if(sb_ie)event.returnValue=false;else a.preventDefault()};function sj_we(a,c,b){while(a&&a!=(b||sj_b)){if(a==c)return!0;a=a.parentNode}return!1};function sj_go(a,c,d){var b=0;while(a.offsetParent&&a!=(d||sj_b)){b+=a["offset"+c];a=a.offsetParent}return b};function si_fbInit(d,c,e){var a=this;a.appNs=d;a.wfId=e;var b=0;a.loadCard=function(){if(!b){sj_jb(c,1);b=1}};a.openCard=function(){}};(function(){var e,a=0,c=sj_evt,b=[];_w.si_PP&&b.push("onPP");for(;a<b.length;a++)c.bind(b[e=a],d,1);!a&&d();function d(){--e<1&&c.fire("onP1")}})();function lb(){var e=sj_evt,f="onSbBusy",b;e.bind(f,d,1);function d(a){b=a[1];e.unbind(f,d)}for(var a=1;a<4;++a){var g="sb_form"+(a>1?a:""),c=_ge(g);c&&!(b&&_ge(g+"_q")==b)&&c.reset&&c.reset()}_w.si_sendCReq&&sb_st(si_sendCReq,800);_w.lbc&&lbc()}(function(){var a=sj_evt,c="onSbBusy",b=null;a.bind(c,function(){sb_ct(b);b=sb_st(sj_wf(a.fire,"onSbIdle"),1100)});sj_be(_d,"keydown",function(b){a.fire(c,sj_et(b))})})();sj_evt.bind("onHTML",function(){var a=_ge("sb_form");a&&sj_be(a,"submit",sj_wf(sj_evt.fire,"onSearch",a))});function init(){};
-      //]]></script><title>site:please-dont-register-a-site-that-breaks-this-test.com - Bing</title><link href="/s/wlflag.ico" rel="icon"/><link href="/search?q=site%3aplease-dont-register-a-site-that-breaks-this-test.com&amp;format=rss" rel="alternate" title="XML" type="text/xml"/><link href="/search?q=site%3aplease-dont-register-a-site-that-breaks-this-test.com&amp;format=rss" rel="alternate" title="RSS" type="application/rss+xml"/><!-- FD: 1524383978258BA3AFA2B37146AC0DD6 --></head><body class="en en-US" onload="if(_w.lb)lb();"><script type="text/javascript">//<![CDATA[
-      _G.PCT=new Date
-      //]]></script><script type="text/javascript">//<![CDATA[
-      si_fb=new si_fbInit('FD.1','fbbsqr_c','wf11');sj_b=_d.body;
-      //]]></script><div id="sw_page"><div id="sw_width"><div id="sw_hdr"><div id="sw_im"></div><div class="sw_t"><div class="sw_tc"></div><ul id="sch_scopes"><li><a href="/?scope=web&amp;FORM=Z9FD" onmousedown="return si_T('&amp;ID=FD,23.1')">Web</a></li><li><a href="/images/search?q=site%3aplease-dont-register-a-site-that-breaks-this-test.com&amp;FORM=BIFD" onmousedown="return si_T('&amp;ID=FD,25.1')">Images</a></li><li><a href="/videos/search?q=site%3aplease-dont-register-a-site-that-breaks-this-test.com&amp;FORM=BVFD" onmousedown="return si_T('&amp;ID=FD,27.1')">Videos</a></li><li><a href="/shopping/search?q=site%3aplease-dont-register-a-site-that-breaks-this-test.com&amp;mkt=en-US&amp;FORM=BPFD" onmousedown="return si_T('&amp;ID=FD,29.1')">Shopping</a></li><li><a href="/news/search?q=site%3aplease-dont-register-a-site-that-breaks-this-test.com&amp;FORM=BNFD" onmousedown="return si_T('&amp;ID=FD,31.1')">News</a></li><li><a href="/maps/default.aspx?q=site%3aplease-dont-register-a-site-that-breaks-this-test.com&amp;mkt=en-US&amp;FORM=BYFD" onmousedown="return si_T('&amp;ID=FD,33.1')">Maps</a></li><li><a href="/explore?q=site%3aplease-dont-register-a-site-that-breaks-this-test.com&amp;FORM=BXFD" onmousedown="return si_T('&amp;ID=FD,35.1')">More</a></li></ul><ul class="sw_tm"><li> | </li><li><a href="http://www.msn.com/" onmousedown="return si_T('&amp;ID=FD,39.1')">MSN</a></li><li><a href="http://mail.live.com/" onmousedown="return si_T('&amp;ID=FD,41.1')">Hotmail</a></li></ul><ul class="sw_tn"><li><div class="sw_tl"><a href="javascript:void(0)" id="sw_tll"><span>Sign in</span><span class="sw_tla">&#9660;</span></a><ul _IID="FD.2" id="sw_tlm" onmouseout="this._m=false;" onmouseover="this._m=true;"></ul></div></li><li><div class="sw_tl sw_meWrap"><a href="/rewards/signup/web?publ=BING&amp;crea=ME" id="sw_meCtrl" onmousedown="return si_T('&amp;ID=FD,50.1')"><span class="sw_me" id="sw_meTxt">Rewards</span><span class="sw_meIc"></span></a></div></li><li><a href="/settings.aspx?ru=http%3a%2f%2fwww.bing.com%3a80%2fsearch%3fq%3dsite%253Aplease-dont-register-a-site-that-breaks-this-test.com&amp;SH=1&amp;FORM=SEFD" onmousedown="return si_T('&amp;ID=FD,43.1')">Brookline, Massachusetts</a></li><li><a href="/settings.aspx?ru=http%3a%2f%2fwww.bing.com%3a80%2fsearch%3fq%3dsite%253Aplease-dont-register-a-site-that-breaks-this-test.com&amp;FORM=SEFD1" onmousedown="return si_T('&amp;ID=FD,42.1')">Preferences</a></li></ul><div id="sw_tfbb"></div></div><form action="/search" class="sw_box" id="sb_form"><a href="/?FORM=Z9FD1" class="sw_logo" onmousedown="return si_T('&amp;ID=FD,37.1')"><span class="sw_logoT">Bing</span></a><div class="sw_bd"><div class="sw_b"><input class="sw_qbox" id="sb_form_q" name="q" title="Enter your search term" type="text" value="site:please-dont-register-a-site-that-breaks-this-test.com" /><input class="sw_qbtn" id="sb_form_go" name="go" tabindex="0" title="Search" type="submit" value="" /></div><input id="sa_qs" name="qs" type="hidden" value="ns" /><div id="sw_as"></div></div><input name="form" type="hidden" value="QBRE" /></form></div><div id="sw_content"><div></div><style type="text/css">#content{margin:0 0 0 -15px;padding:0 271px 0 0;max-width:666px}#results_area{float:left;width:100%}#results_container{padding:0 15px}#sidebar{float:left;margin:0 -271px 0 0;padding:0 15px 0 26px;width:230px;word-wrap:break-word}.sb_vdl{width:100%;margin-top:.4em}#results:after,.sb_vdl:after{clear:both;content:'.';display:block;height:0;visibility:hidden}.sb_vdl ul{max-width:34%;_width:34%;margin:0 1.51em 0 3.11em;_margin:0 2.55em 0 1.18em;float:left}.sb_vdl li{text-indent:-.77em;_text-indent:0;a:0}.sb_ph{margin:0 0 .93em;text-align:right}.sb_ph h1{float:left}.sc_bullet{margin:0 0 0 .47em;font-size:93%}.sb_ph a{color:#737373;text-decoration:underline}</style><!--snr2--><script type="text/javascript">//<![CDATA[
-      _G.AppVer="7_09_0_1102916";
-      //]]></script><script type="text/javascript">//<![CDATA[
-      _G.FCT=new Date
-      //]]></script><script type="text/javascript">//<![CDATA[
-      _G.BCT=new Date
-      //]]></script><style type="text/css">#no_results h1{color:#000;font-size:125%;margin:10px 0 30px;word-wrap:break-word}#no_results h2{font-size:small;font-weight:bold;color:#000;margin:15px 0 0;float:none}#sw_content{background:#fff;padding:0 0 29px;min-height:320px}#content{padding:7px 254px 0 20px;min-height:200px;margin:0}#results_area{width:590px}#sidebar{margin:0 -230px 0 22px}#no_results ul,#no_results ul li{display:block}#no_results ul{clear:both;margin:0;padding:0;list-style-type:none}#no_results ul li{font-size:small;margin:6px 0 0}#no_results ul li span{color:#000}#no_results .ans li{background:none;padding:0}#content .sb_alert{color:#000;border:none;font-size:small}#content .sb_alert a{font-weight:normal;font-style:normal}#content .sb_alert strong{font-style:normal}#no_results .qscolumn{float:none;max-width:100%}#sb_foot{font-size:83.9%;clear:both;float:left;width:100%;border-top:solid 1px #e5e5e5}#sw_footL,#sw_footL a{color:#737373}#sb_foot ul{display:block;list-style:none;margin:5px 10px;padding:0;float:right}#sb_foot li{display:inline}#sb_foot a{margin:.4em}a#sb_feedback{color:#e66400}#sw_canvas{padding-top:1.2em}.sb_pt{color:#e66400;border-bottom:#e6e6e6 solid 1px;float:left;font-size:medium;line-height:1.69em;margin:-1.89em 0 0;position:relative;width:100%;min-height:1.69em}.sb_pt h1,.sb_pt .sb_ptn{min-width:140px;_width:140px;float:left;font-size:125%;padding:0 20px;white-space:nowrap}.sb_ptr{font-size:81%;position:absolute;right:20px;top:.5em}.sb_ptr a,.sb_ptr a:visited{color:#000;padding:0 0 0 .77em}.sb_pt sup{font-size:50%;margin-left:.4em}</style><style type="text/css">.sw_a{margin-right:15em}</style><div class="sb_pt" id="sw_abar"><div class="sb_ptn"><a href="/" onmousedown="return si_T('&amp;ID=FD,2.1')">Web</a></div></div><div><!-- snr --><div id="content"><div id="results_area"><div id="results"><div id="no_results"><h1>No results found for <strong>site:please-dont-register-a-site-that-breaks-this-test.com</strong>.</h1><h2>Search tips:</h2><ul><li><span>Ensure words are spelled correctly.</span></li><li><span>Try rephrasing keywords or using synonyms.</span></li><li><span>Try less specific keywords.</span></li><li><span>Make your queries as concise as possible.</span></li></ul><h2>Other resources that may help you:</h2><ul><li><span>Get additional search tips by visiting <a href="http://onlinehelp.microsoft.com/en-US/bing/ff808535.aspx" onmousedown="return si_T('&amp;ID=SERP,5049.1')">Web Search Help</a>.</span></li><li><span>If you cannot find a page that you know exists, <a href="/docs/submit.aspx?FORM=SURE" onmousedown="return si_T('&amp;ID=SERP,5050.1')">send the address to us</a>.</span></li></ul></div></div></div><div id="sidebar"></div><br>&nbsp;</br><div><a href="http://go.microsoft.com/fwlink/?LinkId=74170" target="_blank" onmousedown="return si_T('&amp;ID=SERP,5047.1')">Bing Privacy Policy</a></div></div></div></div><div id="sb_foot" onmouseover="si_fb.loadCard()"><ul id="sw_footL"><li><span>&#169; 2011 Microsoft</span> | </li><li><a href="http://go.microsoft.com/fwlink/?LinkId=74170" onmousedown="return si_T('&amp;ID=FD,63.1')">Privacy</a> | </li><li><a href="http://g.msn.com/0TO_/enus" onmousedown="return si_T('&amp;ID=FD,65.1')">Legal</a> | </li><li><a href="http://advertising.microsoft.com/advertise-on-bing" onmousedown="return si_T('&amp;ID=FD,67.1')">Advertise</a> | </li><li><a href="http://www.bing.com/toolbox/home/" onmousedown="return si_T('&amp;ID=FD,69.1')">Business solutions</a> | </li><li><a href="http://g.msn.com/AIPRIV/en-us" target="_blank" onmousedown="return si_T('&amp;ID=FD,71.1')">About our ads</a> | </li><li><a href="http://onlinehelp.microsoft.com/en-US/bing/ff808535.aspx" id="sb_help" target="_blank" onmousedown="return si_T('&amp;ID=FD,73.1')">Help</a> | </li><li><a href="https://feedback.live.com/default.aspx?locale=en-US&amp;productkey=wlsearchweb&amp;P1=dsatnoresultsweb&amp;P2=site%3aplease-dont-register-a-site-that-breaks-this-test.com&amp;P3=0&amp;P4=NOFORM&amp;P5=0225527DC6D663D519B350EAC7D263CC&amp;P6=Brookline, Massachusetts&amp;P9=42.343341827%2f-71.122756958&amp;P10=0&amp;P11=&amp;searchtype=Web+Search&amp;optl1=1&amp;backurl=http%3a%2f%2fwww.bing.com%2fsearch%3fq%3dsite%3aplease-dont-register-a-site-that-breaks-this-test.com%26FORM%3dFEEDTU" id="sb_feedback" onclick="si_fb.openCard(this);return false" onfocus="si_fb.loadCard()" onmousedown="return si_T('&amp;ID=FD,75.1')">Tell us what you think</a></li></ul></div></div></div><div id="sb_fb"></div><script type="text/javascript">//<![CDATA[
-      _G.BST=new Date
-      //]]></script><script type="text/javascript">//<![CDATA[
-      sj_cook=new function(){var a=this;a.get=function(d,c){var a=_d.cookie.match(new RegExp("\\b"+d+"=[^;]+"));if(c&&a){var b=a[0].match(new RegExp("\\b"+c+"=([^&]*)"));return b?b[1]:null}return a?a[0]:null};a.set=function(c,d,m,k,j,g){var e,f=d+"="+m,b=a.get(c);if(b){var h=a.get(c,d);e=h?b.replace(d+"="+h,f):b+"&"+f}else e=c+"="+f;var i=location.hostname.match(/([^.]+\.[^.]*)$/),l=g&&g>0?g*6e4:6.3072e10;_d.cookie=e+(i?";domain="+i[0]:"")+(k?";expires="+(new Date((new Date).getTime()+Math.min(l,6.3072e10))).toGMTString():"")+(j?";path="+j:"")}};sc_fadeCb=function(){};function sc_bgL(){var a=g_img,b=_ge(a.id),d=sj_evt,c=d.bind,f=d.unbind,i=d.fire,e="onBgLoad",g="onSbBusy",h="onSbIdle";c("onP1",j,1,500);function j(){var d=new Image,o=sj_fader(),m=0,p=0,j;c("onSearch",function(){a.x=true;d=null;o.stop();sb_ct(j)});function l(){f(g,l);if(!m){sb_ct(j);f(e,n);c(h,k)}}function k(){c(e,n,1);f(h,k);c(g,l)}k();function n(e){m=1;function c(){b.style.backgroundImage="url('"+d.src+"')";b.className+=" sw_imLd";i("onBgSet")}d.onerror=d.onload=null;if(e[2]>a.d){sj_so(b,0);c();j=sb_st(sj_wf(o.init,b,0,100,10,sc_fadeCb),500)}else{c();sj_so(b,100);sc_fadeCb()}sj_cook.set(a.cN,a.crN,a.hash,0,"/")}d.onload=function(){p=sb_gt()-q;i(e,d,p)};var q=sb_gt();d.src=a.url}}sj_evt.bind("onP1",function(){!(_w.g_img&&g_img.cN)&&sj_evt.fire("onBgSet")},1);g_img={url:'\/fd\/hpk2\/DiwaliLanterns_EN-US1068366620o.jpg',id:'sw_im',d:10,cN:'_SS',crN:'hIm',hash:'620'};sc_bgL();;sj_evt.bind("onP1",function(){var a=_ge("sw_tll");a&&sj_jb("multipleLogins_c",1,a,"mouseover",a,"click")},1,5);function sj_ic(b){var a=sj_ce("style");_d.getElementsByTagName("head")[0].appendChild(a);if(sb_ie)a.styleSheet.cssText=b;else a.appendChild(_d.createTextNode(b))};_ge("sa_qs").value="bs";sj_evt.bind("onASConfig",function(d){var b=d[1],a=_ge(b.i),c=sj_evt.fire;a.setAttribute("autocomplete","off");sj_be(a,"keyup",function(a){c("onASKeyup"+b.i,a.keyCode)});sj_be(a,"click",sj_wf(c,"onASClick"+b.i));sj_jb.apply(null,[b.r,1,a,"mousedown",a,"keydown"].concat(b.ol?[_w,"load"]:[]))},1);sj_evt.fire('onASConfig',{r:'AutoSug',lmh:'\/profile\/history?q=site%3aplease-dont-register-a-site-that-breaks-this-test.com',ePN:1,eAN:1,eLO:1,h:1,as:'a',m:8,mkt:'en-US',ml:45,mh:128,d:100,t:1,u:'http:\/\/api.bing.com\/qsonhs.aspx?FORM=ASAPIW',f:'sb_form',i:'sb_form_q',c:'sw_as',p0:'DN,AN',eHS:1,cHS:3,sid:'83801364E9A84BE08E590C3C12D15A5D'});sa_loc={H_PN:'Popular now',H_AS:'Web results',L_MH:'Manage search history',L_P:'Preferences',T_SQ:'Trending'};;sj_evt.bind('onP1',function(){sa_DNS=new Image;sa_DNS.src='http://api.bing.com/qsonhs.aspx?FORM=ASAPIW&q='},1,5);sj_evt.fire("onHTML");function si_sendCReq(){_G.muidI=new Image;_G.muidI.onload=function(){var d=_d.cookie;if(/\bTUID\b/i.test(d))return 1;_G.muidI2=new Image;_G.muidI2.src=_G.gpUrl+"CM=TMF&IG="+_G.IG+(_G.CID?"&CID="+_G.CID:"");_G.muidI3=new Image;var b="MUID",a=sj_cook.get(b),c=a.substring(b.length+1,a.length);_G.muidI3.src=_G.akamaiSyncUrl.replace(/&amp;/g,"&")+c;return 1};_G.muidI.src=_G.cUrl};sf_fbCfg={sId:"0"};sj_evt.bind("onP1",function(){_w.logfb&&_w.logfb("fi");var a=sj_ce("iframe");a.height=0;a.width=0;a.frameBorder=a.scrolling="no";sj_b.appendChild(a);a.src="/fd/fb/r?v="+_G.Ver+"&sId="+sf_fbCfg.sId},1,_w.sf_fbCfg&&sf_fbCfg.wt?sf_fbCfg.wt:1500);sj_evt.bind("xd:fba:checkbar",function(b){if(b&&b.length>=2){var a=sj_ce("iframe");a.id="sw_tfbbi";var c=_ge("sw_tfbb");if(c){a.height="0";a.scrolling=a.frameBorder="no";a.src="/fd/fb/b?fv="+_G.Ver+"#"+b[1];c.appendChild(a)}}});RMS2=new function(){var b=[],d="",g="readyState",e="onreadystatechange",f,h,a=_w.RmsConfig||{};this.RegisterResources=function(c,h,g,e){d=_d.domain;for(var a=0;a<c.length;a++)b.push({n:g,u:c[a],c:e[a]});if(!f){f=true;sj_evt.bind("onP1",j,1,1e3)}};function i(e,g){var d=6,c="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789-_",a=e?e.split(""):[],f,b=~~(g/d);while(a.length<=b)a.push(c.charAt(0));f=c.indexOf(a[b])|1<<g%d;a[b]=c.charAt(f);return a.join("")}function k(a){var b=sj_cook.get("RMS",a.n);sj_cook.set("RMS",a.n,i(b,a.c),0,"/",0)}function j(){if(_d.domain!=d)return;a.P&&a.P();h=new Date;c(0)}function c(f){var i=b[f];if(i){var d=sj_gx();if(!d)return;d.open("get",i.u,true);var j=sb_st(function(){if(d[g]!=4){d[e]=function(){};d.abort();c(f+1)}},5e3);d[e]=function(){if(d[g]==4){sb_ct(j);k(b[f]);c(f+1)}};d.send(null)}else a.I&&a.I(h)}};RMS2.RegisterResources(['\/fd\/sa\/1221105747\/brand4_c.css','\/fd\/sa\/0908192802\/noResults2_c.css','\/fd\/sa\/1114135729\/Shared.js','\/fd\/sa\/0108182120\/PostContent.js'],[],'F',[3,9,1,2]);;
-      //]]></script><script type="text/javascript">//<![CDATA[
-      RMS2.RegisterResources(['/sa/0920014555/serpAll_c.css'],[],'A',[4]);;
-      //]]></script><script type="text/javascript">//<![CDATA[
-      (function(){function a(){!_w.sb_ppCPL&&sb_st(function(){si_PP(new Date)},0)}var b=_w.onload||function(){};onload=function(c){_G.BPT=new Date;b(c);a()};_G.HT=new Date})()
-      //]]></script></body></html>
+      - _SS=SID=B880BFDB2FEB4AD5BC5A2A10DC99B54A; domain=.bing.com; path=/
+      - FS=1; domain=.bing.com; path=/
+      - MUID=3BC6E9193D5166A71E17EBDF3C5566C6; expires=Wed, 11-Dec-2013 02:35:48 GMT; domain=.bing.com; path=/
+      - OrigMUID=3BC6E9193D5166A71E17EBDF3C5566C6%2c42d7904f19754c47bbd8ab5300374b1e; expires=Wed, 11-Dec-2013 02:35:48 GMT; domain=.bing.com; path=/
+      - OVR=aa1=0&as1=0&bt1=0&com1=0&com2=0&dg1=0&dom1=0&fd1=0&fd2=0&flt=0&flt10=0&flt11=0&flt12=0&flt2=0&flt3=0&flt4=0&flt5=0&flt6=0&flt7=0&flt8=0&flt9=0&hp1=0&image1=0&loc1=0&map1=0&mm1=0&mob1=0&mob2=0&msn1=0&msn2=0&msn3=0&msn4=0&news1=0&preallocation=0&ramp1=0&release=0&video1=0&y1=0&R=1; domain=.bing.com; path=/
+      - SRCHD=D=2075195&MS=2075195&AF=NOFORM; expires=Wed, 11-Dec-2013 02:35:48 GMT; domain=.bing.com; path=/
+      - SRCHUID=V=2&GUID=B7F1AD06A45746B9A92813C3ADF55B5D; expires=Wed, 11-Dec-2013 02:35:48 GMT; path=/
+      - SRCHUSR=AUTOREDIR=0&GEOVAR=&DOB=20111212; expires=Wed, 11-Dec-2013 02:35:48 GMT; domain=.bing.com; path=/
+    body: "<!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.0 Transitional//EN\" \"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd\"><html lang=\"en\" xml:lang=\"en\" xmlns=\"http://www.w3.org/1999/xhtml\" xmlns:Web=\"http://schemas.live.com/Web/\"><head><meta content=\"text/html; charset=utf-8\" http-equiv=\"content-type\" /><script type=\"text/javascript\">//<![CDATA[\n\
+      si_ST=new Date\n\
+      //]]></script><script type=\"text/javascript\">//<![CDATA[\n\
+      _G={ST:(si_ST?si_ST:new Date),Mkt:\"en-US\",RTL:false,Ver:\"7_12_0_1145560\",IG:\"42d7904f19754c47bbd8ab5300374b1e\",EventID:\"831B1C7E6D1C423097B9B28EA4984C78\",P:\"SERP\",DA:\"Bl2\",CID:\"3BC6E9193D5166A71E17EBDF3C5566C6\",SUIH:\"-YhLKArSnIvWYmrZGh56Vw\",PCId:\"1\",cUrl:\"http:\\/\\/c.bing.com\\/c.gif?DI=15074\",akamaiSyncUrl:\"http:\\/\\/cms.abmr.net\\/pix?cid=1237&amp;uid=\",gpUrl:\"\\/fd\\/ls\\/GLinkPing.aspx?\"};_G.lsUrl=\"/fd/ls/l?IG=\"+_G.IG+\"&CID=\"+_G.CID+\"&PM=Y\";curUrl=\"http:\\/\\/www.bing.com\\/search\";function si_T(a){if(document.images){_G.GPImg=new Image;_G.GPImg.src=_G.gpUrl+'IG='+_G.IG+'&CID='+_G.CID+'&PM=Y'+a;}return true;};sb_gh=function(){return location.hash};sb_sh=function(a){location.hash=a};_w=window;_d=document;sb_de=_d.documentElement;sb_ie=!!_w.ActiveXObject;sb_i6=sb_ie&&!_w.XMLHttpRequest;function _ge(a){return _d.getElementById(a)}sb_st=_w.setTimeout;sb_ct=_w.clearTimeout;sb_gt=function(){return(new Date).getTime()};sj_evt=new function(){var a={},b=this;function c(b){return a[b]||(a[b]=[])}b.fire=function(e){for(var a=c(e),d=a.e=arguments,b=0;b<a.length;b++)if(a[b].d)sb_st(sj_wf(a[b],d),a[b].d);else a[b](d)};b.bind=function(f,a,d,e){var b=c(f);a.d=e;b.push(a);d&&b.e&&a(b.e)};b.unbind=function(e,d){for(var c=0,b=a[e];b&&c<b.length;c++)if(b[c]==d){b.splice(c,1);break}}};function si_PP(e,c){if(!_G.PPS){for(var d='\"',b=[\"PC\",\"FC\",\"BC\",\"BS\",\"H\",\"FE\",\"LE\",\"C1\",\"C2\",\"BP\",\"KP\"],a=0;a<b.length;a++)d+=',\"'+b[a]+'\":'+(_G[b[a]+\"T\"]?_G[b[a]+\"T\"]-_G.ST:-1);_G.PPImg=new Image;_G.PPImg.src=_G.lsUrl+'&Type=Event.CPT&DATA={\"pp\":{\"S\":\"'+(c?c:\"L\")+d+',\"CT\":'+(e-_G.ST)+',\"IL\":'+_d.images.length+(_w.sb_ppCPL?',\"CP\":1':\"\")+\"}}\"+(_G.P?\"&P=\"+_G.P:\"\")+(_G.DA?\"&DA=\"+_G.DA:\"\");_G.PPS=1;sb_st(function(){sj_evt.fire(\"onPP\")},1)}}_w.onbeforeunload=function(){si_PP(new Date,\"A\")};\n\
+      //]]></script><style type=\"text/css\">body{color:#000;background:#fff url(/fd/s/a/sw3.png) repeat-x 0 -113px;font:small/normal Arial,Helvetica,Sans-Serif;margin:0;min-width:987px}body,.sb_text,.sb_h3{color:#000;font:small/normal Arial,Helvetica,Sans-Serif}a,.sb_link,a.sb_link,.sb_link a,.sb_h3 a{color:#04c;text-decoration:none}a:visited,a.sb_link:visited,.sb_link a:visited,.sb_h3 a:visited{color:#639}a:hover,a.sb_link:hover,.sb_link a:hover,h3 a,.sb_h3 a{text-decoration:underline}h1,h2,h3,h4,h5,h6{font-size:small;font-weight:200;margin:0}h1{font-size:93%}h2,h3,.sb_h3{font-size:125%}h1,h1 a,h1 a:visited,h2,h2 a,h2 a:visited,.sb_ptn a,.sb_ptn a:visited{color:#e66400}h2{margin:0 0 .62em}img{border:0}cite,.sb_cite{color:#388222;font-style:normal;word-wrap:break-word}strong{font-weight:700}.sb_title{font-size:91%;margin:0 0 .36em;text-transform:uppercase}.sb_count,.sb_meta,.sb_title,.sb_title a{color:#737373}.sb_meta a,.sb_meta a:visited,a.sb_meta,a.sb_meta:visited{color:#5077bb}.sb_alert{color:#d90026}.sb_alert a{font-style:italic}#sw_hdr,#sw_content,#sw_main,#sw_foot{width:100%;float:left}#sw_content{position:static;z-index:3;min-height:344px}#sw_canvas{padding:0 0 0 15px;clear:both}#sw_main{_display:inline;margin:0 0 0 -15px;padding:0 0 1.54em 15px}.sb_results,.sb_results ul,.sb_results li{list-style-type:none;margin:0;padding:0}.sb_results p,.sb_results .sb_meta{margin:0;line-height:1.2em;word-wrap:break-word}.sp_pss li{display:inline}.sb_pag{padding:0;margin:0;width:100%;float:left}.sb_pag ul,.sb_pag li{list-style:none;margin:0;padding:0}.sb_pag li{float:left}.sb_pag h4{display:none}.sb_pag a,.sb_pag span{display:block;padding:.3em .7em;margin:0 .38em 0 0;text-align:center}a.sb_pagP,a.sb_pagN,span.sb_pagSp{padding:.38em .5em}.sb_pag a:hover,a.sb_pagS{text-decoration:none;background:#ededed}a.sb_pagS{color:#000}a.sb_pagP{margin-right:.7em;padding-left:0}a:hover.sb_pagP,a:hover.sb_pagN{text-decoration:underline;background-color:transparent}a.sb_pagP:visited,a.sb_pagN:visited{color:inherit}.sw_sb{background:0 -1px;height:27px;width:27px}.sw_rfno{background:-28px -3px;height:5px;width:5px}.sw_rfnc{background:-38px -1px;height:7px;width:5px}.sw_rfno_rtl{background:-28px -16px;height:5px;width:5px}.sw_rfnc_rtl{background:-38px -16px;height:7px;width:5px}.sw_dd_rc{background:-48px -2px;height:5px;width:9px}.sw_abnw{background:-60px -1px;height:7px;width:7px}.sw_abne{background:-68px -1px;height:7px;width:7px}.sw_absw{background:-60px -9px;height:7px;width:7px}.sw_abse{background:-68px -9px;height:7px;width:7px}.sw_ddb{background:-80px -1px;height:4px;width:7px}.sw_rwds{background:-43px -12px;height:15px;width:15px}.sw_wllogo{background:-77px -12px;height:15px;width:17px}.sw_pref{background:-94px -12px;height:16px;width:16px}.sw_fbs{background:0 -30px;height:13px;width:13px}.sw_fb_tu{background:-15px -30px;height:12px;width:14px}.sw_twt{background:-30px -30px;height:13px;width:13px}.sw_twt_brd{background:-46px -29px;height:12px;width:17px}.sw_fbl{background:-64px -26px;height:18px;width:18px}.sw_vdo_pop{background:-68px -44px;height:21px;width:21px}.sw_vdo_pl{background:-90px -44px;height:21px;width:21px}.sw_logo{background:0 -70px;height:40px;width:112px}.sw_hdr_bg{background:0 -113px;height:80px;width:112px}.sw_sb,.sw_rfno,.sw_rfnc,.sw_rfno_rtl,.sw_rfnc_rtl,.sw_dd_rc,.sw_abnw,.sw_abne,.sw_absw,.sw_abse,.sw_ddb,.sw_rwds,.sw_wllogo,.sw_pref,.sw_fbs,.sw_fb_tu,.sw_twt,.sw_twt_brd,.sw_fbl,.sw_vdo_pop,.sw_vdo_pl,.sw_logo,.sw_hdr_bg{background-image:url(/fd/s/a/sw3.png);background-repeat:no-repeat}#sw_hdr{min-height:70px;_height:70px;padding:0 0 30px 0}div.sa_as{left:1px}#sw_im{position:absolute;z-index:-1;height:100px;width:620px;top:0;left:190px;background:no-repeat;opacity:0;filter:alpha(opacity=0)}.sw_logo{background:url(/fd/s/a/sw3.png) no-repeat 0 -70px;_display:inline;height:40px;width:112px;margin:-39px 52px 0 20px;float:left}.sw_logoT{color:#000;font-size:170%;line-height:normal;position:absolute;z-index:-1}#sw_hdr .sw_box{padding:49px 0 0;margin:0;float:left;position:relative;z-index:1001;width:100%;line-height:1.38em}#sw_hdr .sw_bd{margin-top:-2.43em}.sb_form_align{margin:-50px 0 0 600px;padding:0 0 0 .53em}.sw_box .sb_form_align{text-align:right;padding:0}.sw_t,.sw_t *,.sw_t a:visited{color:#fff}.sw_t{line-height:1.52em;width:100%;float:left}.sw_tc{background:#525051 url(/fd/s/a/sw3.png) 0 -113px;background:-webkit-gradient(linear,left top,left bottom,from(#768b9e),to(#9fabb9));position:absolute;left:0;z-index:-2;height:1.5em;width:100%}.sw_t ul{float:left;margin:0;padding:0 0 0 20px}.sw_t li{padding:0 .85em 0 0;display:inline;zoom:1}ul.sw_tm{padding:0}ul.sw_tn{float:right;white-space:nowrap;padding:0 15px 0 0}.sw_tn li{padding:0 0 0 1.2em}.sw_u{font-weight:bold;padding:0 .77em 0 0}.sw_tl{position:relative;display:inline-block;_display:inline;z-index:1003}.sw_tl a:hover,.sw_tl a:hover .sw_tla{text-decoration:none}#sw_tll span{margin:0 0 -2px .38em}.sw_tlia,.sw_tliw,.sw_tlif{width:17px;height:15px;display:-moz-inline-box;display:inline-block;background:url(/fd/s/a/sw3.png) -77px -12px}.sw_tlif{width:13px;background-position:0 -29px}#sw_tlm,.sw_tlin,#sw_tfbb{display:none}.sw_tla{font-size:75%;margin-left:.38em;display:inline-block}.sw_pref{display:inline-block;cursor:pointer;vertical-align:middle;margin:-2px 0 0 -5px}.sw_me{width:4.5em;text-align:center;padding-right:.33em}#sw_meCtrl .sw_meIc{background:url(/fd/s/a/sw3.png) -43px -12px;display:inline-block;height:15px;margin:0 0 -1px;width:15px;vertical-align:middle}#hp_sw_hdr .sw_meWrap{margin-right:.85em;padding-left:.85em}#sw_meCtrl span{margin:0}a#sw_meCtrl{padding:0 5px}.sw_bd{position:relative;float:left;font-size:medium}.sw_b{float:left;border:1px #e5e5e5 solid;background:#fff;padding:.19em .19em 1.06em 0}.sw_b input{float:left;border:0;margin:0 0 -.88em;font-size:100%;padding:.19em .31em .25em .56em;height:1.25em;line-height:1.25em;width:23.45em;-webkit-appearance:none;outline:none}.sw_b .sw_qbtn{background:#e66400 url(/fd/s/a/sw3.png) 0 -1px;cursor:pointer;height:27px;width:27px;padding:27px 0 0;margin:0 0 -14px;overflow:hidden;font-size:0;border-radius:3px}#sw_as{left:-1px;position:relative;clear:both;display:none;font-size:small}</style><script type=\"text/javascript\">//<![CDATA[\n\
+      function sj_wf(a){var b=arguments;return function(){a.apply(null,[].slice.apply(b).slice(1))}};function sj_be(a,b,c,d){if((a==_w||a==_d.body)&&b==\"load\")if(\"undefined\"!=typeof _d.readyState&&\"complete\"===_d.readyState){c();return}if(a.addEventListener)a.addEventListener(b,c,d);else if(a.attachEvent)a.attachEvent(\"on\"+b,c);else a[\"on\"+b]=c}function sj_ue(a,b,c,d){if(a.removeEventListener)a.removeEventListener(b,c,d);else if(a.detachEvent)a.detachEvent(\"on\"+b,c);else a[\"on\"+b]=null};function sj_anim(k){var a=this,j,d,h,g,c,e,i,b,f;a.init=function(m,g,k,l,h){j=m;c=g;e=k;i=l;f=h;if(!b)b=c;!d&&a.start()};a.start=function(){h=sb_gt();g=Math.abs(e-c-b)/i*25;d=setInterval(a.next,25)};a.stop=function(){clearInterval(d);d=0};a.next=function(){var d=sb_gt()-h;b=c+(e-c)*d/g;if(d>=g){a.stop();b=e;f&&f()}k(j,b)}};function sj_so(b,a){b.style.filter=a>=100?\"\":\"alpha(opacity=\"+a+\")\";b.style.opacity=a/100};function sj_fader(){return new sj_anim(function(b,a){sj_so(b,a)})};function sj_ce(d,c,b){var a=_d.createElement(d);if(c)a.id=c;if(b)a.className=b;return a};function sj_jb(h,f){for(var b=arguments,e,d,a=2,g={n:h};a<b.length;a+=2){e=b[a];d=b[a+1];sj_be(e,d,sj_wf(c,g,f,e,d))}a<3&&c(g,f);function c(a,d,b,e){b&&sj_ue(b,e,c);sj_evt.bind(\"onP1\",function(){if(!a.l){a.l=1;var b=sj_ce(\"script\");b.src=(d?\"/fd/sa/\"+_G.Ver:\"/sa/\"+_G.AppVer)+\"/\"+a.n+\".js\";sj_b.appendChild(b)}},1,5)}};function sj_gx(){return sb_i6?new ActiveXObject(\"MSXML2.XMLHTTP\"):new XMLHttpRequest};function sj_sp(a){if(sb_ie)a.cancelBubble=true;else a.stopPropagation()};function sj_ev(a){return sb_ie?event:a}function sj_et(a){return sb_ie?event.srcElement:a.target}function sj_mi(a){return sb_ie?event.fromElement:a.relatedTarget}function sj_mo(a){return sb_ie?event.toElement:a.relatedTarget};function sj_pd(a){if(sb_ie)event.returnValue=false;else a.preventDefault()};function sj_we(a,c,b){while(a&&a!=(b||sj_b)){if(a==c)return!0;a=a.parentNode}return!1};function sj_go(a,c,d){var b=0;while(a.offsetParent&&a!=(d||sj_b)){b+=a[\"offset\"+c];a=a.offsetParent}return b};function si_fbInit(d,c,e){var a=this;a.appNs=d;a.wfId=e;var b=0;a.loadCard=function(){if(!b){sj_jb(c,1);b=1}};a.openCard=function(){}};(function(){var e,a=0,c=sj_evt,b=[];_w.si_PP&&b.push(\"onPP\");for(;a<b.length;a++)c.bind(b[e=a],d,1);!a&&d();function d(){--e<1&&c.fire(\"onP1\")}})();function lb(){var e=sj_evt,f=\"onSbBusy\",b;e.bind(f,d,1);function d(a){b=a[1];e.unbind(f,d)}for(var a=1;a<4;++a){var g=\"sb_form\"+(a>1?a:\"\"),c=_ge(g);c&&!(b&&_ge(g+\"_q\")==b)&&c.reset&&c.reset()}_w.si_sendCReq&&sb_st(si_sendCReq,800);_w.lbc&&lbc()}(function(){var a=sj_evt,c=\"onSbBusy\",b=null;a.bind(c,function(){sb_ct(b);b=sb_st(sj_wf(a.fire,\"onSbIdle\"),1100)});sj_be(_d,\"keydown\",function(b){a.fire(c,sj_et(b))})})();sj_evt.bind(\"onHTML\",function(){var a=_ge(\"sb_form\");a&&sj_be(a,\"submit\",sj_wf(sj_evt.fire,\"onSearch\",a))});function init(){};\n\
+      //]]></script><title>site:please-dont-register-a-site-that-breaks-this-test.com - Bing</title><link href=\"/s/wlflag.ico\" rel=\"icon\"/><link href=\"/search?q=site%3aplease-dont-register-a-site-that-breaks-this-test.com&amp;format=rss\" rel=\"alternate\" title=\"XML\" type=\"text/xml\"/><link href=\"/search?q=site%3aplease-dont-register-a-site-that-breaks-this-test.com&amp;format=rss\" rel=\"alternate\" title=\"RSS\" type=\"application/rss+xml\"/><!-- FD: 7267D3E195027C9DF39AD0B54133B53C --></head><body class=\"en en-US\" onload=\"if(_w.lb)lb();\"><script type=\"text/javascript\">//<![CDATA[\n\
+      _G.PCT=new Date\n\
+      //]]></script><script type=\"text/javascript\">//<![CDATA[\n\
+      si_fb=new si_fbInit('FD.1','fbbsqr_c','wf11');sj_b=_d.body;\n\
+      //]]></script><div id=\"sw_page\"><div id=\"sw_width\"><div id=\"sw_hdr\"><div id=\"sw_im\"></div><div class=\"sw_t\"><div class=\"sw_tc\"></div><ul id=\"sch_scopes\"><li><a href=\"/?scope=web&amp;FORM=Z9FD\" onmousedown=\"return si_T('&amp;ID=FD,23.1')\">Web</a></li><li><a href=\"/images/search?q=site%3aplease-dont-register-a-site-that-breaks-this-test.com&amp;FORM=BIFD\" onmousedown=\"return si_T('&amp;ID=FD,25.1')\">Images</a></li><li><a href=\"/videos/search?q=site%3aplease-dont-register-a-site-that-breaks-this-test.com&amp;FORM=BVFD\" onmousedown=\"return si_T('&amp;ID=FD,27.1')\">Videos</a></li><li><a href=\"/shopping/search?q=site%3aplease-dont-register-a-site-that-breaks-this-test.com&amp;mkt=en-US&amp;FORM=BPFD\" onmousedown=\"return si_T('&amp;ID=FD,29.1')\">Shopping</a></li><li><a href=\"/news/search?q=site%3aplease-dont-register-a-site-that-breaks-this-test.com&amp;FORM=BNFD\" onmousedown=\"return si_T('&amp;ID=FD,31.1')\">News</a></li><li><a href=\"/maps/default.aspx?q=site%3aplease-dont-register-a-site-that-breaks-this-test.com&amp;mkt=en-US&amp;FORM=BYFD\" onmousedown=\"return si_T('&amp;ID=FD,33.1')\">Maps</a></li><li><a href=\"/explore?q=site%3aplease-dont-register-a-site-that-breaks-this-test.com&amp;FORM=BXFD\" onmousedown=\"return si_T('&amp;ID=FD,35.1')\">More</a></li></ul><ul class=\"sw_tm\"><li> | </li><li><a href=\"http://www.msn.com/\" onmousedown=\"return si_T('&amp;ID=FD,39.1')\">MSN</a></li><li><a href=\"http://mail.live.com/\" onmousedown=\"return si_T('&amp;ID=FD,41.1')\">Hotmail</a></li></ul><ul class=\"sw_tn\"><li><div class=\"sw_tl\"><a href=\"javascript:void(0)\" id=\"sw_tll\"><span>Sign in</span><span class=\"sw_tla\">&#9660;</span></a><ul _IID=\"FD.2\" id=\"sw_tlm\" onmouseout=\"this._m=false;\" onmouseover=\"this._m=true;\"></ul></div></li><li><div class=\"sw_tl sw_meWrap\"><a href=\"/central?publ=BING&amp;crea=ME\" id=\"sw_meCtrl\" onmousedown=\"return si_T('&amp;ID=FD,51.1')\"><span class=\"sw_me\" id=\"sw_meTxt\">Rewards</span><span class=\"sw_meIc\"></span></a></div></li><li><a href=\"/settings.aspx?ru=http%3a%2f%2fwww.bing.com%3a80%2fsearch%3fq%3dsite%253Aplease-dont-register-a-site-that-breaks-this-test.com&amp;SH=1&amp;FORM=SEFD\" title=\"Brookline, Massachusetts\" onmousedown=\"return si_T('&amp;ID=FD,43.1')\">Brookline, Mas\xE2\x80\xA6</a></li><li><a href=\"/settings.aspx?ru=http%3a%2f%2fwww.bing.com%3a80%2fsearch%3fq%3dsite%253Aplease-dont-register-a-site-that-breaks-this-test.com&amp;FORM=SEFD1\" class=\"sw_pref\" title=\"Preferences\" onmousedown=\"return si_T('&amp;ID=FD,42.1')\"></a></li></ul><div id=\"sw_tfbb\"></div></div><form action=\"/search\" class=\"sw_box\" id=\"sb_form\"><a href=\"/?FORM=Z9FD1\" class=\"sw_logo\" onmousedown=\"return si_T('&amp;ID=FD,37.1')\"><span class=\"sw_logoT\">Bing</span></a><div class=\"sw_bd\"><div class=\"sw_b\"><input class=\"sw_qbox\" id=\"sb_form_q\" name=\"q\" title=\"Enter your search term\" type=\"text\" value=\"site:please-dont-register-a-site-that-breaks-this-test.com\" /><input class=\"sw_qbtn\" id=\"sb_form_go\" name=\"go\" tabindex=\"0\" title=\"Search\" type=\"submit\" value=\"\" /></div><input id=\"sa_qs\" name=\"qs\" type=\"hidden\" value=\"ns\" /><div id=\"sw_as\"></div></div><input name=\"form\" type=\"hidden\" value=\"QBRE\" /></form></div><div id=\"sw_content\"><div></div><style type=\"text/css\">#content{margin:0 0 0 -15px;padding:0 271px 0 0;max-width:666px}#results_area{float:left;width:100%}#results_container{padding:0 15px}#sidebar{float:left;margin:0 -271px 0 0;padding:0 15px 0 26px;width:230px;word-wrap:break-word}.sb_vdl{width:100%;margin-top:.4em}#results:after,.sb_vdl:after{clear:both;content:'.';display:block;height:0;visibility:hidden}.sb_vdl ul{max-width:34%;_width:34%;margin:0 1.51em 0 3.11em;_margin:0 2.55em 0 1.18em;float:left}.sb_vdl li{text-indent:-.77em;_text-indent:0;a:0}.sb_ph{margin:0 0 .93em;text-align:right}.sb_ph h1{float:left}.sc_bullet{margin:0 0 0 .47em;font-size:93%}.sb_ph a{color:#737373;text-decoration:underline}</style><!--snr2--><script type=\"text/javascript\">//<![CDATA[\n\
+      _G.AppVer=\"7_12_0_1145560\";\n\
+      //]]></script><script type=\"text/javascript\">//<![CDATA[\n\
+      _G.FCT=new Date\n\
+      //]]></script><script type=\"text/javascript\">//<![CDATA[\n\
+      _G.BCT=new Date\n\
+      //]]></script><style type=\"text/css\">#no_results h1{color:#000;font-size:125%;margin:10px 0 30px;word-wrap:break-word}#no_results h2{font-size:small;font-weight:bold;color:#000;margin:15px 0 0;float:none}#sw_content{background:#fff;padding:0 0 29px;min-height:320px}#content{padding:7px 254px 0 20px;min-height:200px;margin:0}#results_area{width:590px}#sidebar{margin:0 -230px 0 22px}#no_results ul,#no_results ul li{display:block}#no_results ul{clear:both;margin:0;padding:0;list-style-type:none}#no_results ul li{font-size:small;margin:6px 0 0}#no_results ul li span{color:#000}#no_results .ans li{background:none;padding:0}#content .sb_alert{color:#000;border:none;font-size:small}#content .sb_alert a{font-weight:normal;font-style:normal}#content .sb_alert strong{font-style:normal}#no_results .qscolumn{float:none;max-width:100%}.sb_adsWv2{clear:both;padding:0 10px;margin:-.15em -10px 1.39em;background-color:#f3faff;overflow:hidden;word-wrap:break-word}.sb_adsNv2{padding:0 0 .77em}.sb_adsNv2 ul,.sb_adsWv2 ul{list-style-type:none;margin:0;padding:0}.sb_adsWv2 ul{margin:0 0 .31em}.sb_add{display:block;width:100%;text-decoration:none;padding:.15em 0 .45em}.sb_addp{cursor:pointer}.sb_adN{padding:.38em 0 .68em}.sb_adsNv2 h2,.sb_adsWv2 h2{text-transform:none}.sb_adsWv2 h2{float:right}.sb_adW h3,.sb_adN h3{display:inline}.sb_adsD{color:#737373;margin-left:.5em}.sb_adW cite{margin-left:.5em}.sb_adN cite{display:block;word-wrap:normal}.sb_add p{margin:0}.sb_adW p{padding:.2em 0 0 0}.sb_adsWv2 .msg{*float:left;width:auto;margin:0}.sb_adL{color:#737373}div.sb_adsWv2{background-color:#f9fcf7}#sb_foot{font-size:83.9%;clear:both;float:left;width:100%;border-top:solid 1px #e5e5e5}#sw_footL,#sw_footL a{color:#737373}#sb_foot ul{display:block;list-style:none;margin:5px 10px;padding:0;float:right}#sb_foot li{display:inline}#sb_foot a{margin:.4em}a#sb_feedback{color:#e66400}#sw_canvas{padding-top:1.2em}.sb_pt{color:#e66400;border-bottom:#e6e6e6 solid 1px;float:left;font-size:medium;line-height:1.69em;margin:-1.89em 0 0;position:relative;width:100%;min-height:1.69em}.sb_pt h1,.sb_pt .sb_ptn{min-width:140px;_width:140px;float:left;font-size:125%;padding:0 20px;white-space:nowrap}.sb_ptr{font-size:81%;position:absolute;right:20px;top:.5em}.sb_ptr a,.sb_ptr a:visited{color:#000;padding:0 0 0 .77em}.sb_pt sup{font-size:50%;margin-left:.4em}</style><style type=\"text/css\">.sw_a{margin-right:15em}</style><div class=\"sb_pt\" id=\"sw_abar\"><div class=\"sb_ptn\"><a href=\"/\" onmousedown=\"return si_T('&amp;ID=FD,2.1')\">Web</a></div></div><div><!-- snr --><div id=\"content\"><div id=\"results_area\"><div id=\"results\"><div id=\"no_results\"><h1>No results found for <strong>site:please-dont-register-a-site-that-breaks-this-test.com</strong>.</h1><h2>Search tips:</h2><ul><li><span>Ensure words are spelled correctly.</span></li><li><span>Try rephrasing keywords or using synonyms.</span></li><li><span>Try less specific keywords.</span></li><li><span>Make your queries as concise as possible.</span></li></ul><h2>Other resources that may help you:</h2><ul><li><span>Get additional search tips by visiting <a href=\"http://onlinehelp.microsoft.com/en-US/bing/ff808535.aspx\" onmousedown=\"return si_T('&amp;ID=SERP,5051.1')\">Web Search Help</a>.</span></li><li><span>If you cannot find a page that you know exists, <a href=\"/docs/submit.aspx?FORM=SURE\" onmousedown=\"return si_T('&amp;ID=SERP,5052.1')\">send the address to us</a>.</span></li></ul></div></div></div><div id=\"sidebar\"><div class=\"sb_adsNv2\"><h2 class=\"sb_title\">Ad</h2><ul onmouseover=\"return true\"><li><div class=\"sb_add sb_adN\"><h3><a href=\"http://9331.r.msn.com/?ld=4vmbew7nvNhUNB2dfoWE-6C5WrTeTfRCGPZV_fr4yZWcjcnaq0niJLBmdEJs2pTAGU8YWd94CdrhuTeTCMbGTK_8LsbVgPRAGFn0ow0h1oBFsILz90X_vjKRVe3r6IdCaKv3641JN3TfbURteys3qGrjevkU3_6QFlWx5uJzekHpw-cr6Q9kCrGjbyNPv-Ipc4Q07X-0R6Jp86RmGWRt_GgW9hj0yakGnU4Gme4GOK3xzp793VHCwXnm2t9HjvSafKjFKFqTdcAD2aJ6HBMrEoUYPEQk5Ae4YB30BYHhX_XBYU9LZtECZjcz3jrGrs3PSWFvX2LZL15kw4BASKcQXzTBV1X4WYNXlmIg\" onmousedown=\"return si_T('&amp;ID=FD,61.1,Ads')\">1&amp;1 Website Creator</a></h3><p>Instantly Create Your Own Webpage. Easy Homepages with 125+ Templates!</p><cite>www.1and1.com</cite></div></li></ul><div><a href=\"http://advertising.microsoft.com/search/\" class=\"sb_meta\" onmousedown=\"return si_T('&amp;ID=FD,59.1,Ads')\">See your message here</a></div></div></div></div></div></div><div id=\"sb_foot\" onmouseover=\"si_fb.loadCard()\"><ul id=\"sw_footL\"><li><span>&#169; 2011 Microsoft</span> | </li><li><a href=\"http://go.microsoft.com/fwlink/?LinkId=74170\" onmousedown=\"return si_T('&amp;ID=FD,66.1')\">Privacy</a> | </li><li><a href=\"http://g.msn.com/0TO_/enus\" onmousedown=\"return si_T('&amp;ID=FD,68.1')\">Legal</a> | </li><li><a href=\"http://advertising.microsoft.com/advertise-on-bing\" onmousedown=\"return si_T('&amp;ID=FD,70.1')\">Advertise</a> | </li><li><a href=\"http://www.bing.com/toolbox/home/\" onmousedown=\"return si_T('&amp;ID=FD,72.1')\">Business solutions</a> | </li><li><a href=\"http://g.msn.com/AIPRIV/en-us\" target=\"_blank\" onmousedown=\"return si_T('&amp;ID=FD,74.1')\">About our ads</a> | </li><li><a href=\"http://onlinehelp.microsoft.com/en-US/bing/ff808535.aspx\" id=\"sb_help\" target=\"_blank\" onmousedown=\"return si_T('&amp;ID=FD,76.1')\">Help</a> | </li><li><a href=\"https://feedback.live.com/default.aspx?locale=en-US&amp;productkey=wlsearchweb&amp;P1=dsatnoresultsweb&amp;P2=site%3aplease-dont-register-a-site-that-breaks-this-test.com&amp;P3=0&amp;P4=NOFORM&amp;P5=3BC6E9193D5166A71E17EBDF3C5566C6&amp;P6=Brookline, Massachusetts&amp;P9=42.343341827%2f-71.122756958&amp;P10=0&amp;P11=&amp;searchtype=Web+Search&amp;optl1=1&amp;backurl=http%3a%2f%2fwww.bing.com%2fsearch%3fq%3dsite%3aplease-dont-register-a-site-that-breaks-this-test.com%26FORM%3dFEEDTU\" id=\"sb_feedback\" onclick=\"si_fb.openCard(this);return false\" onfocus=\"si_fb.loadCard()\" onmousedown=\"return si_T('&amp;ID=FD,78.1')\">Tell us what you think</a></li></ul></div></div></div><div id=\"sb_fb\"></div><script type=\"text/javascript\">//<![CDATA[\n\
+      _G.BST=new Date\n\
+      //]]></script><script type=\"text/javascript\">//<![CDATA[\n\
+      sj_cook=new function(){var a=this;a.get=function(d,c){var a=_d.cookie.match(new RegExp(\"\\\\b\"+d+\"=[^;]+\"));if(c&&a){var b=a[0].match(new RegExp(\"\\\\b\"+c+\"=([^&]*)\"));return b?b[1]:null}return a?a[0]:null};a.set=function(c,d,m,k,j,g){var e,f=d+\"=\"+m,b=a.get(c);if(b){var h=a.get(c,d);e=h?b.replace(d+\"=\"+h,f):b+\"&\"+f}else e=c+\"=\"+f;var i=location.hostname.match(/([^.]+\\.[^.]*)$/),l=g&&g>0?g*6e4:6.3072e10;_d.cookie=e+(i?\";domain=\"+i[0]:\"\")+(k?\";expires=\"+(new Date((new Date).getTime()+Math.min(l,6.3072e10))).toGMTString():\"\")+(j?\";path=\"+j:\"\")}};sc_fadeCb=function(){};function sc_bgL(){var a=g_img,b=_ge(a.id),d=sj_evt,c=d.bind,f=d.unbind,i=d.fire,e=\"onBgLoad\",g=\"onSbBusy\",h=\"onSbIdle\";c(\"onP1\",j,1,500);function j(){var d=new Image,o=sj_fader(),m=0,p=0,j;c(\"onSearch\",function(){a.x=true;d=null;o.stop();sb_ct(j)});function l(){f(g,l);if(!m){sb_ct(j);f(e,n);c(h,k)}}function k(){c(e,n,1);f(h,k);c(g,l)}k();function n(e){m=1;function c(){b.style.backgroundImage=\"url('\"+d.src+\"')\";b.className+=\" sw_imLd\";i(\"onBgSet\")}d.onerror=d.onload=null;if(e[2]>a.d){sj_so(b,0);c();j=sb_st(sj_wf(o.init,b,0,100,10,sc_fadeCb),500)}else{c();sj_so(b,100);sc_fadeCb()}sj_cook.set(a.cN,a.crN,a.hash,0,\"/\")}d.onload=function(){p=sb_gt()-q;i(e,d,p)};var q=sb_gt();d.src=a.url}}sj_evt.bind(\"onP1\",function(){!(_w.g_img&&g_img.cN)&&sj_evt.fire(\"onBgSet\")},1);g_img={url:'\\/az\\/hprichbg?p=rb%2fIndianaStateMuseum_EN-US1178948931o.jpg',id:'sw_im',d:10,cN:'_SS',crN:'hIm',hash:'931'};sc_bgL();;sj_evt.bind(\"onP1\",function(){var a=_ge(\"sw_tll\");a&&sj_jb(\"multipleLogins_c\",1,a,\"mouseover\",a,\"click\")},1,5);function sj_ic(b){var a=sj_ce(\"style\");_d.getElementsByTagName(\"head\")[0].appendChild(a);if(sb_ie)a.styleSheet.cssText=b;else a.appendChild(_d.createTextNode(b))};_ge(\"sa_qs\").value=\"bs\";sj_evt.bind(\"onASConfig\",function(d){var b=d[1],a=_ge(b.i),c=sj_evt.fire;a.setAttribute(\"autocomplete\",\"off\");sj_be(a,\"keyup\",function(a){c(\"onASKeyup\"+b.i,a.keyCode)});sj_be(a,\"click\",sj_wf(c,\"onASClick\"+b.i));sj_jb.apply(null,[b.r,1,a,\"mousedown\",a,\"keydown\"].concat(b.ol?[_w,\"load\"]:[]))},1);sj_evt.fire('onASConfig',{r:'AutoSug',lmh:'\\/profile\\/history?q=site%3aplease-dont-register-a-site-that-breaks-this-test.com',ePN:1,eAN:1,eLO:1,h:1,as:'a',m:8,mkt:'en-US',ml:45,mh:128,d:100,t:1,u:'http:\\/\\/api.bing.com\\/qsonhs.aspx?FORM=ASAPIW',f:'sb_form',i:'sb_form_q',c:'sw_as',p0:'DN,AN',eHS:1,cHS:3,sid:'B880BFDB2FEB4AD5BC5A2A10DC99B54A'});sa_loc={H_PN:'Popular now',H_AS:'Web results',L_MH:'Manage search history',L_P:'Preferences',T_SQ:'Trending',H_ID:'Brands',H_VH:'Web results'};;sj_evt.bind('onP1',function(){sa_DNS=new Image;sa_DNS.src='http://api.bing.com/qsonhs.aspx?FORM=ASAPIW&q='},1,5);sj_evt.fire(\"onHTML\");function si_sendCReq(){_G.muidI=new Image;_G.muidI.onload=function(){var d=_d.cookie;if(/\\bTUID\\b/i.test(d))return 1;_G.muidI2=new Image;_G.muidI2.src=_G.gpUrl+\"CM=TMF&IG=\"+_G.IG+(_G.CID?\"&CID=\"+_G.CID:\"\");var b=\"MUID\",a=sj_cook.get(b);if(a){var c=a.substring(b.length+1);_G.muidI3=new Image;_G.muidI3.src=_G.akamaiSyncUrl.replace(/&amp;/g,\"&\")+c}return 1};_G.muidI.src=_G.cUrl};sf_fbCfg={sId:\"0\"};sj_evt.bind(\"onP1\",function(){_w.logfb&&_w.logfb(\"fi\");var a=sj_ce(\"iframe\");a.height=0;a.width=0;a.frameBorder=a.scrolling=\"no\";sj_b.appendChild(a);a.src=\"/fd/fb/r?v=\"+_G.Ver+\"&sId=\"+sf_fbCfg.sId},1,_w.sf_fbCfg&&sf_fbCfg.wt?sf_fbCfg.wt:1500);sj_evt.bind(\"xd:fba:checkbar\",function(b){if(b&&b.length>=2){var a=sj_ce(\"iframe\");a.id=\"sw_tfbbi\";var c=_ge(\"sw_tfbb\");if(c){a.height=\"0\";a.scrolling=a.frameBorder=\"no\";a.src=\"/fd/fb/b?fv=\"+_G.Ver+\"#\"+b[1];c.appendChild(a)}}});RMS2=new function(){var b=[],d=\"\",g=\"readyState\",e=\"onreadystatechange\",f,h,a=_w.RmsConfig||{};this.RegisterResources=function(c,h,g,e){d=_d.domain;for(var a=0;a<c.length;a++)b.push({n:g,u:c[a],c:e[a]});if(!f){f=true;sj_evt.bind(\"onP1\",j,1,1e3)}};function i(e,g){var d=6,c=\"ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789-_\",a=e?e.split(\"\"):[],f,b=~~(g/d);while(a.length<=b)a.push(c.charAt(0));f=c.indexOf(a[b])|1<<g%d;a[b]=c.charAt(f);return a.join(\"\")}function k(a){var b=sj_cook.get(\"RMS\",a.n);sj_cook.set(\"RMS\",a.n,i(b,a.c),0,\"/\",0)}function j(){if(_d.domain!=d)return;a.P&&a.P();h=new Date;c(0)}function c(f){var i=b[f];if(i){var d=sj_gx();if(!d)return;d.open(\"get\",i.u,true);var j=sb_st(function(){if(d[g]!=4){d[e]=function(){};d.abort();c(f+1)}},5e3);d[e]=function(){if(d[g]==4){sb_ct(j);k(b[f]);c(f+1)}};d.send(null)}else a.I&&a.I(h)}};RMS2.RegisterResources(['\\/fd\\/sa\\/0713081111\\/brand9_c.css','\\/fd\\/sa\\/0908192802\\/noResults2_c.css','\\/fd\\/sa\\/1020103738\\/Shared.js','\\/fd\\/sa\\/0108182120\\/PostContent.js'],[],'F',[3,9,1,2]);;\n\
+      //]]></script><script type=\"text/javascript\">//<![CDATA[\n\
+      RMS2.RegisterResources(['/sa/1017025953/serpAll_c.css'],[],'A',[4]);;\n\
+      //]]></script><script type=\"text/javascript\">//<![CDATA[\n\
+      (function(){function a(){!_w.sb_ppCPL&&sb_st(function(){si_PP(new Date)},0)}var b=_w.onload||function(){};onload=function(c){_G.BPT=new Date;b(c);a()};_G.HT=new Date})()\n\
+      //]]></script></body></html>"
     http_version: "1.1"

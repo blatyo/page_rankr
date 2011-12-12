@@ -20,11 +20,11 @@ describe PageRankr do
     it{ should include(:google) }
   end
 
-  describe "#ranks" do
+  describe "#ranks", :focus => true do
     describe "success" do
       subject do
         VCR.use_cassette(:success_ranks) do
-          PageRankr.ranks("www.google.com")
+          PageRankr.ranks("http://www.google.com")
         end
       end
   
@@ -42,7 +42,7 @@ describe PageRankr do
     describe "failure" do
       subject do
         VCR.use_cassette(:failure_ranks) do
-          PageRankr.ranks("please-dont-register-a-site-that-breaks-this-test.com")
+          PageRankr.ranks("http://please-dont-register-a-site-that-breaks-this-test.com")
         end
       end
       
@@ -71,7 +71,7 @@ describe PageRankr do
     describe "success" do
       subject do
         VCR.use_cassette(:success_backlinks) do
-          PageRankr.backlinks("www.google.com")
+          PageRankr.backlinks("http://www.google.com")
         end
       end
     
@@ -87,7 +87,7 @@ describe PageRankr do
     describe "failure" do
       subject do
         VCR.use_cassette(:failure_backlinks) do
-          PageRankr.backlinks("please-dont-register-a-site-that-breaks-this-test.com")
+          PageRankr.backlinks("http://please-dont-register-a-site-that-breaks-this-test.com")
         end
       end
       
@@ -109,7 +109,7 @@ describe PageRankr do
     describe "success" do
       subject do
         VCR.use_cassette(:success_indexes) do
-          PageRankr.indexes("www.google.com")
+          PageRankr.indexes("http://www.google.com")
         end
       end
       
@@ -125,7 +125,7 @@ describe PageRankr do
     describe "failure" do
       subject do
         VCR.use_cassette(:failure_indexes) do
-          PageRankr.indexes("please-dont-register-a-site-that-breaks-this-test.com")
+          PageRankr.indexes("http://please-dont-register-a-site-that-breaks-this-test.com")
         end
       end
       

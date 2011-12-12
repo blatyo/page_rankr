@@ -10,7 +10,7 @@ module PageRankr
       end
 
       def params
-        {:q => "link:#{@site.to_s}"}
+        {:q => "link:#{tracked_url}"}
       end
 
       def xpath

@@ -9,7 +9,7 @@ module PageRankr
         "http://siteexplorer.search.yahoo.com/search"
       end
       def params
-        {:p => "#{@site.to_s}"}
+        {:p => "#{tracked_url}"}
       end
       
       def xpath

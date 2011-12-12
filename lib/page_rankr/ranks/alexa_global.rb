@@ -22,6 +22,10 @@ module PageRankr
       def xpath
          "//popularity[contains(@url, '#{tracked_url}')]/@text"
       end
+
+      def supported_components
+        [:domain]
+      end
     end
   end
 end

@@ -10,7 +10,7 @@ module PageRankr
       end
 
       def params
-        {:cli => 10, :dat => "snbamz", :url => @site.to_s}
+        {:cli => 10, :dat => "snbamz", :url => tracked_url}
       end
       
       def xpath

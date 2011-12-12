@@ -165,7 +165,7 @@ If you ever come across a site that provides a rank or backlinks you can hook th
 
           # This method specifies the parameters for the url. It is optional, but likely required for the class to be useful.
           def params
-            {:q => @site.to_s}
+            {:q => tracked_url}
           end
 
           # You can use a method named either xpath, jsonpath, or regex with the appropriate query type

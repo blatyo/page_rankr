@@ -10,8 +10,8 @@ module PageRankr
       @uri = URI.parse(site)
       @domain = PublicSuffixService.parse(@uri.host)
 
-      @domain.valid? or raise DomainInvalid, "The domain provided is invalid."
-    rescue PublicSuffixService::DomainInvalid => e
+      @domain.valid? or raise DomainInvalid, "The domain provided is invalid.1"
+    rescue PublicSuffixService::DomainInvalid, URI::InvalidURIError
       raise DomainInvalid, "The domain provided is invalid."
     end
 

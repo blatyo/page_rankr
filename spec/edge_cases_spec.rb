@@ -11,7 +11,7 @@ describe PageRankr do
     describe "when Alexa returns results for the incorrect site" do
       subject do
         VCR.use_cassette(:alexa_ranks_edge_case_1) do
-          PageRankr.ranks("slocourts.net", :alexa_us, :alexa_global)
+          PageRankr.ranks("http://slocourts.net", :alexa_us, :alexa_global)
         end
       end
       

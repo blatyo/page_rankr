@@ -39,7 +39,7 @@
       <EMAIL ADDR=\"lbatcheldor@co.slo.ca.us\"/>\n\
       <LANG LEX=\"en\" CODE=\"us-ascii\"/>\n\
       <LINKSIN NUM=\"60\"/>\n\
-      <SPEED TEXT=\"723\" PCT=\"83\"/>\n\
+      <SPEED TEXT=\"743\" PCT=\"82\"/>\n\
       <REVIEWS AVG=\"5.0\" NUM=\"\"/>\n\
       <CHILD SRATING=\"0\"/>\n\
       </SD>\n\n\
@@ -57,9 +57,9 @@
       </SITE>\n\
       </DMOZ>\n\
       <SD>\n\
-      <POPULARITY URL=\"ca.gov/\" TEXT=\"761\"/>\n\
-      <REACH RANK=\"811\"/>\n\
-      <RANK DELTA=\"-23\"/>\n\
+      <POPULARITY URL=\"ca.gov/\" TEXT=\"814\"/>\n\
+      <REACH RANK=\"874\"/>\n\
+      <RANK DELTA=\"+59\"/>\n\
       </SD>\n\
       </ALEXA>"
     http_version: "1.1"
