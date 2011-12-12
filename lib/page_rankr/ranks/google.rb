@@ -7,9 +7,14 @@ module PageRankr
       include Rank
 
       def initialize(site)
-        @checksum = Checksum.generate('info:' + site.to_s)
+        @site = PageRankr::Site(site)
+        @checksum = Checksum.generate("info:#{tracked_site}")
         
         super(site)
+      end
+
+      def supported_components
+        [:subdomain, :path]
       end
 
       def url

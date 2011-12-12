@@ -32,6 +32,14 @@ module PageRankr
       raise PageRankr::MethodRequired, "A url method defining the url to the service with the value you wish to extract must be defined."
     end
 
+    def tracked_url
+      @site.url(supported_components)
+    end
+
+    def supported_components
+      [:subdomain]
+    end
+
     def method
       :get
     end

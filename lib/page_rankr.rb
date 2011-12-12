@@ -3,8 +3,9 @@ require File.expand_path("../page_rankr/ranks", __FILE__)
 require File.expand_path("../page_rankr/indexes", __FILE__)
 
 module PageRankr
-  class MethodRequired < StandardError; end
-  class DomainInvalid  < StandardError; end
+  class MethodRequired             < StandardError; end
+  class DomainInvalid              < StandardError; end
+  class SupportedComponentsInvalid < StandardError; end
 
   class << self
     def backlinks(site, *search_engines)

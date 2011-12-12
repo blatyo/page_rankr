@@ -10,7 +10,7 @@ module PageRankr
       end
 
       def params
-        {:cli => 10, :dat => "snbamz", :url => @site.to_s}
+        {:cli => 10, :dat => "snbamz", :url => tracked_url}
       end
 
       # Alexa may sometimes return a result for the incorrect site and thus it is necessary to check if
@@ -20,7 +20,7 @@ module PageRankr
       # to slocourts.net. Clearly something is wrong with how Alexa handles this case and so in the event this
       # happens we treat the results as if there were no results.
       def xpath
-         "//popularity[contains(@url, '#{@site.domain}')]/@text"
+         "//popularity[contains(@url, '#{tracked_url}')]/@text"
       end
     end
   end
