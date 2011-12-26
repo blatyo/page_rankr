@@ -1,16 +1,16 @@
-require File.expand_path('../../backlink', __FILE__)
+require File.expand_path('../../index', __FILE__)
 
 module PageRankr
-  class Backlinks
+  class Indexes
     class Yahoo
-      include Backlink
+      include Index
       
       def url
         "http://search.yahoo.com/search"
       end
       
       def params
-        {:p => "inbody:#{tracked_url}"}
+        {:p => "site:#{tracked_url}"}
       end
       
       def xpath

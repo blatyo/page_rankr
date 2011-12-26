@@ -93,7 +93,10 @@ describe PageRankr do
       
       PageRankr.backlink_trackers.each do |tracker|
         it{ should have_key(tracker) }
-        it{ subject[tracker].should be_nil }
+
+        it "#{tracker} should have a nil value" do
+          subject[tracker].should be_nil
+        end
       end
     end
   end
@@ -131,7 +134,10 @@ describe PageRankr do
       
       PageRankr.index_trackers.each do |tracker|
         it{ should have_key(tracker) }
-        it{ subject[tracker].should be_nil }
+        
+        it "#{tracker} should have a nil value" do
+          subject[tracker].should be_nil
+        end
       end
     end
   end

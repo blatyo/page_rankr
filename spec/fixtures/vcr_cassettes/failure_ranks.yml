@@ -10,10 +10,10 @@
       code: 200
       message: OK
     headers: 
-      content-length: 
-      - "278"
       content-type: 
       - text/xml
+      content-length: 
+      - "278"
     body: |-
       <?xml version="1.0" encoding="UTF-8"?>
       
@@ -28,39 +28,6 @@
 - !ruby/struct:VCR::HTTPInteraction 
   request: !ruby/struct:VCR::Request 
     method: :get
-    uri: http://toolbarqueries.google.com:80/tbr?ch=63624986523&client=navclient-auto&features=Rank&q=info%3Aplease-dont-register-a-site-that-breaks-this-test.com
-    body: 
-    headers: 
-  response: !ruby/struct:VCR::Response 
-    status: !ruby/struct:VCR::ResponseStatus 
-      code: 200
-      message: OK
-    headers: 
-      date: 
-      - Mon, 12 Dec 2011 02:35:46 GMT
-      pragma: 
-      - no-cache
-      expires: 
-      - Fri, 01 Jan 1990 00:00:00 GMT
-      cache-control: 
-      - no-cache, must-revalidate
-      content-type: 
-      - text/html; charset=ISO-8859-1
-      set-cookie: 
-      - PREF=ID=d71f9becf02329e0:FF=0:TM=1323657346:LM=1323657346:S=TSMoPRe1h1iUtXZS; expires=Wed, 11-Dec-2013 02:35:46 GMT; path=/; domain=.google.com
-      server: 
-      - gws
-      content-length: 
-      - "0"
-      x-xss-protection: 
-      - 1; mode=block
-      x-frame-options: 
-      - SAMEORIGIN
-    body: 
-    http_version: "1.1"
-- !ruby/struct:VCR::HTTPInteraction 
-  request: !ruby/struct:VCR::Request 
-    method: :get
     uri: http://siteanalytics.compete.com:80/please-dont-register-a-site-that-breaks-this-test.com/
     body: 
     headers: 
@@ -69,18 +36,18 @@
       code: 404
       message: NOT FOUND
     headers: 
-      date: 
-      - Mon, 12 Dec 2011 02:35:46 GMT
-      server: 
-      - Apache
-      vary: 
-      - Accept-Language,Cookie,User-Agent
-      content-length: 
-      - "2440"
-      content-language: 
-      - en-us
       content-type: 
       - text/html; charset=utf-8
+      content-language: 
+      - en-us
+      server: 
+      - Apache
+      date: 
+      - Mon, 26 Dec 2011 18:23:59 GMT
+      content-length: 
+      - "2440"
+      vary: 
+      - Accept-Language,Cookie,User-Agent
     body: |
       <!DOCTYPE html>
       <meta charset="utf-8" />
@@ -126,4 +93,37 @@
       </body>
       </html>
 
+    http_version: "1.1"
+- !ruby/struct:VCR::HTTPInteraction 
+  request: !ruby/struct:VCR::Request 
+    method: :get
+    uri: http://toolbarqueries.google.com:80/tbr?ch=63624986523&client=navclient-auto&features=Rank&q=info%3Aplease-dont-register-a-site-that-breaks-this-test.com
+    body: 
+    headers: 
+  response: !ruby/struct:VCR::Response 
+    status: !ruby/struct:VCR::ResponseStatus 
+      code: 200
+      message: OK
+    headers: 
+      x-frame-options: 
+      - SAMEORIGIN
+      expires: 
+      - Fri, 01 Jan 1990 00:00:00 GMT
+      content-type: 
+      - text/html; charset=ISO-8859-1
+      server: 
+      - gws
+      date: 
+      - Mon, 26 Dec 2011 18:24:00 GMT
+      x-xss-protection: 
+      - 1; mode=block
+      content-length: 
+      - "0"
+      set-cookie: 
+      - PREF=ID=d0ed65d2467a6d33:FF=0:TM=1324923840:LM=1324923840:S=lO7KwuEvPqq3orLa; expires=Wed, 25-Dec-2013 18:24:00 GMT; path=/; domain=.google.com
+      cache-control: 
+      - no-cache, must-revalidate
+      pragma: 
+      - no-cache
+    body: 
     http_version: "1.1"

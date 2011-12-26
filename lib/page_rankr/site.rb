@@ -1,4 +1,4 @@
-require 'public_suffix_service'
+require 'public_suffix'
 require 'delegate'
 require 'uri'
 
@@ -8,10 +8,10 @@ module PageRankr
 
     def initialize(site)
       @uri = URI.parse(site)
-      @domain = PublicSuffixService.parse(@uri.host)
+      @domain = PublicSuffix.parse(@uri.host)
 
       @domain.valid? or raise DomainInvalid, "The domain provided is invalid.1"
-    rescue PublicSuffixService::DomainInvalid, URI::InvalidURIError
+    rescue PublicSuffix::DomainInvalid, URI::InvalidURIError
       raise DomainInvalid, "The domain provided is invalid."
     end
 

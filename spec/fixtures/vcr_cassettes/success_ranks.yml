@@ -2,6 +2,73 @@
 - !ruby/struct:VCR::HTTPInteraction 
   request: !ruby/struct:VCR::Request 
     method: :get
+    uri: http://data.alexa.com:80/data?cli=10&dat=snbamz&url=google.com
+    body: 
+    headers: 
+  response: !ruby/struct:VCR::Response 
+    status: !ruby/struct:VCR::ResponseStatus 
+      code: 200
+      message: OK
+    headers: 
+      content-type: 
+      - text/xml
+      content-length: 
+      - "2238"
+    body: "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n\
+      \r\n\
+      <ALEXA VER=\"0.9\" URL=\"google.com/\" HOME=\"0\" AID=\"=\">\r\n\
+      <RLS PREFIX=\"http://\" more=\"56\">\n\
+      <RL HREF=\"amazon.com/\" TITLE=\"Amazon.com\"/>\n\
+      <RL HREF=\"wikipedia.org/\" TITLE=\"Wikipedia\"/>\n\
+      <RL HREF=\"www.yahoo.com/\" TITLE=\"Yahoo!\"/>\n\
+      <RL HREF=\"youtube.com/\" TITLE=\"YouTube\"/>\n\
+      <RL HREF=\"yelp.com/\" TITLE=\"Yelp\"/>\n\
+      <RL HREF=\"statcounter.com/\" TITLE=\"StatCounter.com\"/>\n\
+      <RL HREF=\"myspace.com/\" TITLE=\"Myspace\"/>\n\
+      <RL HREF=\"linkedin.com/\" TITLE=\"LinkedIn\"/>\n\
+      <RL HREF=\"imdb.com/\" TITLE=\"The Internet Movie Database (imdb)\"/>\n\
+      <RL HREF=\"google.co.in/\" TITLE=\"Google India\"/>\n\
+      <RL HREF=\"ask.com/\" TITLE=\"ask.com/\"/>\n\
+      </RLS>\n\
+      <SD TITLE=\"A\" FLAGS=\"DMOZ\" HOST=\"google.com\">\n\
+      <TITLE TEXT=\"Google                             \"/>\n\
+      <ADDR STREET=\"\" CITY=\"\" STATE=\"\" ZIP=\"\" COUNTRY=\"\" />\n\
+      <CREATED DATE=\"15-Sep-1997\" DAY=\"15\" MONTH=\"09\" YEAR=\"1997\"/>\n\
+      <PHONE NUMBER=\"unlisted\"/>\n\
+      <OWNER NAME=\"unlisted\"/>\n\
+      <EMAIL ADDR=\"dns-admin@google.com\"/>\n\
+      <CLAIMED DATE=\"2011-09-14T16:30:40Z\"/>\n\
+      <ALEXAPRO TIER=\"intro\"/>\n\
+      <LANG LEX=\"en\"/>\n\
+      <LINKSIN NUM=\"4501407\"/>\n\
+      <SPEED TEXT=\"1583\" PCT=\"43\"/>\n\
+      <REVIEWS AVG=\"4.5\" NUM=\"820\"/>\n\
+      <CHILD SRATING=\"0\"/>\n\
+      <ASSOCS>\n\
+      <ASSOC ID=\"googlecom\"/></ASSOCS>\n\
+      </SD>\n\n\
+      <KEYWORDS>\n\
+      <KEYWORD VAL=\"Mountain View\"/>\n\
+      </KEYWORDS><DMOZ>\n\
+      <SITE BASE=\"google.com/\" TITLE=\"Google\" DESC=\"Enables users to search the world's information, including webpages, images, and videos. Offers unique features and search technology.\">\n\
+      <CATS>\n\
+      <CAT ID=\"Top/Computers/Internet/Searching/Search_Engines/Google\" TITLE=\"Search Engines/Google\" CID=\"374822\"/>\n\
+      <CAT ID=\"Top/Regional/North_America/United_States/California/Localities/M/Mountain_View/Business_and_Economy/Industrial/Computers_and_Internet\" TITLE=\"Industrial/Computers and Internet\" CID=\"625367\"/>\n\
+      <CAT ID=\"Top/World/Arabic/\xD8\xA5\xD9\x82\xD9\x84\xD9\x8A\xD9\x85\xD9\x80\xD9\x8A/\xD8\xA7\xD9\x84\xD8\xB4\xD8\xB1\xD9\x82_\xD8\xA7\xD9\x84\xD8\xA3\xD9\x88\xD8\xB3\xD8\xB7/\xD8\xA7\xD9\x84\xD8\xB3\xD8\xB9\xD9\x88\xD8\xAF\xD9\x8A\xD8\xA9/\xD8\xAA\xD8\xAC\xD8\xA7\xD8\xB1\xD8\xA9_\xD9\x88_\xD8\xA3\xD9\x82\xD8\xAA\xD8\xB5\xD8\xA7\xD8\xAF/\xD9\x83\xD9\x85\xD8\xA8\xD9\x8A\xD9\x88\xD8\xAA\xD8\xB1_\xD9\x88_\xD8\xA5\xD9\x86\xD8\xAA\xD8\xB1\xD9\x86\xD8\xAA/\xD9\x85\xD8\xAD\xD8\xB1\xD9\x83\xD8\xA7\xD8\xAA_\xD8\xA8\xD8\xAD\xD8\xAB\" TITLE=\"\xD9\x83\xD9\x85\xD8\xA8\xD9\x8A\xD9\x88\xD8\xAA\xD8\xB1 \xD9\x88 \xD8\xA5\xD9\x86\xD8\xAA\xD8\xB1\xD9\x86\xD8\xAA/\xD9\x85\xD8\xAD\xD8\xB1\xD9\x83\xD8\xA7\xD8\xAA \xD8\xA8\xD8\xAD\xD8\xAB\" CID=\"204954\"/>\n\
+      <CAT ID=\"Top/World/Fran\xC3\xA7ais/Informatique/Internet/Recherche/Moteurs_de_recherche/Google\" TITLE=\"Moteurs de recherche/Google\" CID=\"247347\"/>\n\
+      </CATS>\n\
+      </SITE>\n\
+      </DMOZ>\n\
+      <SD>\n\
+      <POPULARITY URL=\"google.com/\" TEXT=\"1\"/>\n\
+      <REACH RANK=\"1\"/>\n\
+      <RANK DELTA=\"+0\"/>\n\
+      </SD>\n\
+      </ALEXA>"
+    http_version: "1.1"
+- !ruby/struct:VCR::HTTPInteraction 
+  request: !ruby/struct:VCR::Request 
+    method: :get
     uri: http://siteanalytics.compete.com:80/google.com/
     body: 
     headers: 
@@ -10,21 +77,21 @@
       code: 200
       message: OK
     headers: 
-      date: 
-      - Mon, 12 Dec 2011 02:35:43 GMT
-      server: 
-      - Apache
-      vary: 
-      - Accept-Language,Cookie,User-Agent
-      content-length: 
-      - "26845"
-      content-language: 
-      - en-us
       content-type: 
       - text/html; charset=utf-8
+      content-language: 
+      - en-us
+      server: 
+      - Apache
+      date: 
+      - Mon, 26 Dec 2011 18:23:39 GMT
+      content-length: 
+      - "26848"
+      vary: 
+      - Accept-Language,Cookie,User-Agent
     body: |
       <!DOCTYPE html>
-      <!-- HOSTNAME: prodweb43
+      <!-- HOSTNAME: prodweb45
            DEBUG: False
            VERSION: 20111130153000
            COOKIE_DOMAIN: .compete.com -->
@@ -337,7 +404,7 @@
           
       
       
-          <title>google.com 168,742,812 UVs for October 2011 | Compete</title>
+          <title>google.com 172,196,518 UVs for November 2011 | Compete</title>
       
           <!-- block head -->
           
@@ -397,7 +464,7 @@
                   <div class="stretcher">
                       <div class="inner share">
                           
-                          <span class='st_twitter_custom' st_title="google.com 168,742,812 UVs for October 2011 from @compete"><img src="http://media.compete.com/site_media/images/free/fsp_twitter.png" width="22" height="22" alt="Twitter"></span>
+                          <span class='st_twitter_custom' st_title="google.com 172,196,518 UVs for November 2011 from @compete"><img src="http://media.compete.com/site_media/images/free/fsp_twitter.png" width="22" height="22" alt="Twitter"></span>
                           
                           <span class='st_facebook_custom' ><img src="http://media.compete.com/site_media/images/free/fsp_facebook.png" width="22" height="22" alt="Facebook"></span>
                           <span class='st_linkedin_custom' ><img src="http://media.compete.com/site_media/images/free/fsp_linkedin.png" width="22" height="22" alt="LinkedIn"></span>
@@ -417,7 +484,7 @@
                       </form>
                   </div>
                   
-                  <p class="data-info">October 2011  /  U.S. Data Only</p>
+                  <p class="data-info">November 2011  /  U.S. Data Only</p>
                   <ul class="nav tools">
                       <li class="save"><a href="javascript:void(0)" id="graph-image" class="at_save">Save Graph Image</a></li>
                       <li class="export"><a id="csv-export" href="javascript:void(0)" target="" class="at_export">Export CSV</a></li>
@@ -427,10 +494,10 @@
               <div class="sidebar">
                   <div class="section score">
                       <h3><span class="help"><img src="http://media.compete.com/site_media/images/free/icon-help-grey.png" width="21" height="21" alt="?"></span>Unique Visitors</h3>
-                      <h4>168,742,812</h4>
+                      <h4>172,196,518</h4>
                       <ul>
-                          <li class="m2m"><span class="delta-positive number">1,871,640</span> | <span class="delta-positive number">1.12%</span></li>
-                          <li class="y2y"><span class="delta-positive number">22,673,032</span> | <span class="delta-positive number">15.52%</span></li>
+                          <li class="m2m"><span class="delta-positive number">3,453,706</span> | <span class="delta-positive number">2.05%</span></li>
+                          <li class="y2y"><span class="delta-positive number">26,506,279</span> | <span class="delta-positive number">18.19%</span></li>
                       </ul>
                       <h3>Rank <span class="note">(by UVs)</span></h3>
                       <h4>1</h4>
@@ -598,74 +665,6 @@
 - !ruby/struct:VCR::HTTPInteraction 
   request: !ruby/struct:VCR::Request 
     method: :get
-    uri: http://data.alexa.com:80/data?cli=10&dat=snbamz&url=google.com
-    body: 
-    headers: 
-  response: !ruby/struct:VCR::Response 
-    status: !ruby/struct:VCR::ResponseStatus 
-      code: 200
-      message: OK
-    headers: 
-      content-length: 
-      - "2152"
-      content-type: 
-      - text/xml
-    body: "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n\
-      \r\n\
-      <ALEXA VER=\"0.9\" URL=\"google.com/\" HOME=\"0\" AID=\"=\">\r\n\
-      <RLS PREFIX=\"http://\" more=\"56\">\n\
-      <RL HREF=\"amazon.com/\" TITLE=\"Amazon.com\"/>\n\
-      <RL HREF=\"wikipedia.org/\" TITLE=\"Wikipedia\"/>\n\
-      <RL HREF=\"www.yahoo.com/\" TITLE=\"Yahoo!\"/>\n\
-      <RL HREF=\"youtube.com/\" TITLE=\"YouTube\"/>\n\
-      <RL HREF=\"yelp.com/\" TITLE=\"Yelp\"/>\n\
-      <RL HREF=\"statcounter.com/\" TITLE=\"StatCounter.com\"/>\n\
-      <RL HREF=\"myspace.com/\" TITLE=\"Myspace\"/>\n\
-      <RL HREF=\"linkedin.com/\" TITLE=\"LinkedIn\"/>\n\
-      <RL HREF=\"imdb.com/\" TITLE=\"The Internet Movie Database (imdb)\"/>\n\
-      <RL HREF=\"google.co.in/\" TITLE=\"Google India\"/>\n\
-      <RL HREF=\"ask.com/\" TITLE=\"ask.com/\"/>\n\
-      </RLS>\n\
-      <SD TITLE=\"A\" FLAGS=\"DMOZ\" HOST=\"google.com\">\n\
-      <TITLE TEXT=\"Google                             \"/>\n\
-      <ADDR STREET=\"\" CITY=\"\" STATE=\"\" ZIP=\"\" COUNTRY=\"\" />\n\
-      <CREATED DATE=\"15-Sep-1997\" DAY=\"15\" MONTH=\"09\" YEAR=\"1997\"/>\n\
-      <PHONE NUMBER=\"unlisted\"/>\n\
-      <OWNER NAME=\"unlisted\"/>\n\
-      <EMAIL ADDR=\"dns-admin@google.com\"/>\n\
-      <CLAIMED DATE=\"2011-09-14T16:30:40Z\"/>\n\
-      <ALEXAPRO TIER=\"intro\"/>\n\
-      <LANG LEX=\"en\"/>\n\
-      <LINKSIN NUM=\"4422412\"/>\n\
-      <SPEED TEXT=\"1583\" PCT=\"43\"/>\n\
-      <REVIEWS AVG=\"4.5\" NUM=\"805\"/>\n\
-      <CHILD SRATING=\"0\"/>\n\
-      <ASSOCS>\n\
-      <ASSOC ID=\"googlecom\"/></ASSOCS>\n\
-      </SD>\n\n\
-      <KEYWORDS>\n\
-      <KEYWORD VAL=\"Mountain View\"/>\n\
-      </KEYWORDS><DMOZ>\n\
-      <SITE BASE=\"google.com/\" TITLE=\"Google.com\" DESC=\"\">\n\
-      <CATS>\n\
-      <CAT ID=\"Top\" TITLE=\"Top/English\" CID=\"2\"/>\n\
-      <CAT ID=\"Top/Computers/Internet/Searching/Search_Engines/Google\" TITLE=\"Search Engines/Google\" CID=\"374822\"/>\n\
-      <CAT ID=\"Top/Regional/North_America/United_States/California/Localities/M/Mountain_View/Business_and_Economy/Industrial/Computers_and_Internet\" TITLE=\"Industrial/Computers and Internet\" CID=\"625367\"/>\n\
-      <CAT ID=\"Top/World/Arabic/\xD8\xA5\xD9\x82\xD9\x84\xD9\x8A\xD9\x85\xD9\x80\xD9\x8A/\xD8\xA7\xD9\x84\xD8\xB4\xD8\xB1\xD9\x82_\xD8\xA7\xD9\x84\xD8\xA3\xD9\x88\xD8\xB3\xD8\xB7/\xD8\xA7\xD9\x84\xD8\xB3\xD8\xB9\xD9\x88\xD8\xAF\xD9\x8A\xD8\xA9/\xD8\xAA\xD8\xAC\xD8\xA7\xD8\xB1\xD8\xA9_\xD9\x88_\xD8\xA3\xD9\x82\xD8\xAA\xD8\xB5\xD8\xA7\xD8\xAF/\xD9\x83\xD9\x85\xD8\xA8\xD9\x8A\xD9\x88\xD8\xAA\xD8\xB1_\xD9\x88_\xD8\xA5\xD9\x86\xD8\xAA\xD8\xB1\xD9\x86\xD8\xAA/\xD9\x85\xD8\xAD\xD8\xB1\xD9\x83\xD8\xA7\xD8\xAA_\xD8\xA8\xD8\xAD\xD8\xAB\" TITLE=\"\xD9\x83\xD9\x85\xD8\xA8\xD9\x8A\xD9\x88\xD8\xAA\xD8\xB1 \xD9\x88 \xD8\xA5\xD9\x86\xD8\xAA\xD8\xB1\xD9\x86\xD8\xAA/\xD9\x85\xD8\xAD\xD8\xB1\xD9\x83\xD8\xA7\xD8\xAA \xD8\xA8\xD8\xAD\xD8\xAB\" CID=\"204954\"/>\n\
-      <CAT ID=\"Top/World/Fran\xC3\xA7ais/Informatique/Internet/Recherche/Moteurs_de_recherche/Google\" TITLE=\"Moteurs de recherche/Google\" CID=\"247347\"/>\n\
-      </CATS>\n\
-      </SITE>\n\
-      </DMOZ>\n\
-      <SD>\n\
-      <POPULARITY URL=\"google.com/\" TEXT=\"1\"/>\n\
-      <REACH RANK=\"1\"/>\n\
-      <RANK DELTA=\"+0\"/>\n\
-      </SD>\n\
-      </ALEXA>"
-    http_version: "1.1"
-- !ruby/struct:VCR::HTTPInteraction 
-  request: !ruby/struct:VCR::Request 
-    method: :get
     uri: http://toolbarqueries.google.com:80/tbr?ch=6340563836&client=navclient-auto&features=Rank&q=info%3Awww.google.com
     body: 
     headers: 
@@ -674,24 +673,24 @@
       code: 200
       message: OK
     headers: 
-      date: 
-      - Mon, 12 Dec 2011 02:35:46 GMT
-      pragma: 
-      - no-cache
-      expires: 
-      - Fri, 01 Jan 1990 00:00:00 GMT
-      cache-control: 
-      - no-cache, must-revalidate
-      content-type: 
-      - text/html; charset=ISO-8859-1
-      set-cookie: 
-      - PREF=ID=75100afed1636883:FF=0:TM=1323657346:LM=1323657346:S=Jknsec1D6WsE-d4G; expires=Wed, 11-Dec-2013 02:35:46 GMT; path=/; domain=.google.com
-      server: 
-      - gws
-      x-xss-protection: 
-      - 1; mode=block
       x-frame-options: 
       - SAMEORIGIN
+      expires: 
+      - Fri, 01 Jan 1990 00:00:00 GMT
+      content-type: 
+      - text/html; charset=ISO-8859-1
+      server: 
+      - gws
+      date: 
+      - Mon, 26 Dec 2011 18:24:00 GMT
+      x-xss-protection: 
+      - 1; mode=block
+      set-cookie: 
+      - PREF=ID=652b6d0854e507ce:FF=0:TM=1324923840:LM=1324923840:S=zUR-WROfQwaen4fK; expires=Wed, 25-Dec-2013 18:24:00 GMT; path=/; domain=.google.com
+      cache-control: 
+      - no-cache, must-revalidate
+      pragma: 
+      - no-cache
       transfer-encoding: 
       - chunked
     body: |
