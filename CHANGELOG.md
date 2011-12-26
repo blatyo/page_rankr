@@ -1,5 +1,10 @@
 # Change Log
 
+## Version 3.1.0
+* Add yahoo index back
+* Fix yahoo and google backlinks and indexes
+* Improve PageRankr::Site to support different levels of specificity
+
 ## Version 3.0.2
 * Update gem dependencies
 

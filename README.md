@@ -62,19 +62,19 @@ If you don't specify a search engine, then all of them are used.
 ``` ruby
     # this
     PageRankr.indexes('www.google.com')
-        #=> {:bing=>2120000, :google=>4860000}
+        #=> {:bing=>2120000, :google=>4860000, :yahoo => 4863000}
 
     # is equivalent to
-    PageRankr.indexes('www.google.com', :google, :bing)
-        #=> {:bing=>2120000, :google=>4860000}
+    PageRankr.indexes('www.google.com', :google, :bing, :yahoo)
+        #=> {:bing=>2120000, :google=>4860000, :yahoo => 4863000}
 ```
 
 You can also use the alias `index` instead of `indexes`.
 
-Valid search engines are: `:google, :bing`. To get this list you can do:
+Valid search engines are: `:google, :bing, :yahoo`. To get this list you can do:
 
 ``` ruby
-    PageRankr.index_trackers #=> [:bing, :google]
+    PageRankr.index_trackers #=> [:bing, :google, :yahoo]
 ```
 
 ### Ranks
