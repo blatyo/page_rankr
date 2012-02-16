@@ -5,6 +5,8 @@
     uri: http://data.alexa.com:80/data?cli=10&dat=snbamz&url=slocourts.net
     body: 
     headers: 
+      user-agent: 
+      - Page Rankr
   response: !ruby/struct:VCR::Response 
     status: !ruby/struct:VCR::ResponseStatus 
       code: 200
@@ -13,21 +15,21 @@
       content-type: 
       - text/xml
       content-length: 
-      - "2552"
+      - "2455"
     body: "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n\
       \r\n\
       <ALEXA VER=\"0.9\" URL=\"slocourts.ca.gov/\" HOME=\"0\" AID=\"=\">\r\n\
       <RLS PREFIX=\"http://\" more=\"23\">\n\
+      <RL HREF=\"www.co.san-bernardino.ca.us/Courts\" TITLE=\"Superior Court, San Bernardino\"/>\n\
       <RL HREF=\"www.co.riverside.ca.us/depts/courts\" TITLE=\"Superior Court Of California County Of Riverside\"/>\n\
       <RL HREF=\"courts.countyofventura.org/\" TITLE=\"Superior Court, Ventura\"/>\n\
-      <RL HREF=\"www.co.san-bernardino.ca.us/Courts\" TITLE=\"Superior Court, San Bernardino\"/>\n\
       <RL HREF=\"www.ci.sf.ca.us/courts\" TITLE=\"Superior Court, San Francisco\"/>\n\
+      <RL HREF=\"www.sonomasuperiorcourt.com/\" TITLE=\"Superior Court, Sonoma\"/>\n\
+      <RL HREF=\"www.solanocourts.com/\" TITLE=\"Superior Court, Solano\"/>\n\
+      <RL HREF=\"www.sccsuperiorcourt.org/\" TITLE=\"Superior Court, Santa Clara\"/>\n\
       <RL HREF=\"www.sbcourts.org/\" TITLE=\"Superior Court, Santa Barbara\"/>\n\
-      <RL HREF=\"www.slosheriff.org/\" TITLE=\"San Luis Obispo County Sheriff&apos;s Department\"/>\n\
-      <RL HREF=\"www.slodss.org/\" TITLE=\"San Luis Obispo County Department of Social Services\"/>\n\
-      <RL HREF=\"www.slocountypwd.org/\" TITLE=\"San Luis Obispo County Department of Public Works and Transportation\"/>\n\
-      <RL HREF=\"www.slocountyfranchiseadministration.org/\" TITLE=\"San Luis Obispo County Franchise Administration\"/>\n\
-      <RL HREF=\"www.slocog.org/\" TITLE=\"SLOCOG\"/>\n\
+      <RL HREF=\"www.sanmateocourt.org/\" TITLE=\"Superior Court, San Mateo\"/>\n\
+      <RL HREF=\"www.saccourt.com/\" TITLE=\"Superior Court, Sacramento\"/>\n\
       <RL HREF=\"www.buttonware.com/\" TITLE=\"www.buttonware.com/\"/>\n\
       </RLS>\n\
       <SD TITLE=\"A\" FLAGS=\"DMOZ\" HOST=\"slocourts.ca.gov\">\n\
@@ -39,7 +41,7 @@
       <EMAIL ADDR=\"lbatcheldor@co.slo.ca.us\"/>\n\
       <LANG LEX=\"en\" CODE=\"us-ascii\"/>\n\
       <LINKSIN NUM=\"60\"/>\n\
-      <SPEED TEXT=\"743\" PCT=\"82\"/>\n\
+      <SPEED TEXT=\"777\" PCT=\"81\"/>\n\
       <REVIEWS AVG=\"5.0\" NUM=\"\"/>\n\
       <CHILD SRATING=\"0\"/>\n\
       </SD>\n\n\
@@ -57,9 +59,9 @@
       </SITE>\n\
       </DMOZ>\n\
       <SD>\n\
-      <POPULARITY URL=\"ca.gov/\" TEXT=\"838\"/>\n\
-      <REACH RANK=\"889\"/>\n\
-      <RANK DELTA=\"+81\"/>\n\
+      <POPULARITY URL=\"ca.gov/\" TEXT=\"843\"/>\n\
+      <REACH RANK=\"901\"/>\n\
+      <RANK DELTA=\"+67\"/>\n\
       </SD>\n\
       </ALEXA>"
     http_version: "1.1"

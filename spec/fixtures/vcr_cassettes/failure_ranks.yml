@@ -5,6 +5,8 @@
     uri: http://data.alexa.com:80/data?cli=10&dat=snbamz&url=please-dont-register-a-site-that-breaks-this-test.com
     body: 
     headers: 
+      user-agent: 
+      - Page Rankr
   response: !ruby/struct:VCR::Response 
     status: !ruby/struct:VCR::ResponseStatus 
       code: 200
@@ -28,78 +30,11 @@
 - !ruby/struct:VCR::HTTPInteraction 
   request: !ruby/struct:VCR::Request 
     method: :get
-    uri: http://siteanalytics.compete.com:80/please-dont-register-a-site-that-breaks-this-test.com/
-    body: 
-    headers: 
-  response: !ruby/struct:VCR::Response 
-    status: !ruby/struct:VCR::ResponseStatus 
-      code: 404
-      message: NOT FOUND
-    headers: 
-      content-type: 
-      - text/html; charset=utf-8
-      content-language: 
-      - en-us
-      server: 
-      - Apache
-      date: 
-      - Mon, 26 Dec 2011 18:23:59 GMT
-      content-length: 
-      - "2440"
-      vary: 
-      - Accept-Language,Cookie,User-Agent
-    body: |
-      <!DOCTYPE html>
-      <meta charset="utf-8" />
-      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-      <meta name="ICBM" content="42.348043, -71.077617" />
-      <meta name="DC.title" content="Compete" />
-      <meta name="description"
-                content=" Compete helps you benefit from click-sharing by
-                              providing free services that create a more trusted,
-                              transparent, and valuable Internet." />
-      <meta name="keywords"
-                content="compete, toolbar, snapshot, search, community, metrics,
-                              site traffic, engagement, attention, rank, analytics,
-                              deals, coupons, promotional codes, trust scores" />
-      <title>File Not Found | Compete</title>
-      <link rel="shortcut icon" href="/favicon.ico" />
-      <link rel="stylesheet" type="text/css" href="/site_media/css/universal/framework.css" media="all" charset="utf-8" />
-      <link rel="stylesheet" type="text/css" href="/site_media/css/help/help_base.css" media="all" charset="utf-8" />
-      <link rel="stylesheet" type="text/css" href="/site_media/css/help/errors.css" media="all" charset="utf-8" />
-      </head><body id="error" class="">
-      <div class="wrapper">
-          <div class="header">
-              <h1><a href="http://www.compete.com"><img src="/site_media/images/help/compete_logo_4ac.png" width="90" height="16" alt="Compete logo"></a></h1>
-          </div>
-          <div class="page">
-              <div class="content">
-                  <div class="article">
-                      <img src="http://media.compete.com/site_media/images/help/404-robot.gif" width="290" height="345" alt="404 robot" class="float-right" />
-                      <h2 style="margin:85px 0 15px; padding:0 0 15px; font-size:24px; color:#666; width:300px; font-weight:lighter; line-height:1.1; border-bottom:1px #eee solid;"><span style="font-size:64px; color:#333; font-weight:bold;">Oh snap!</span>
-                      <br />It seems that something went wrong.</h2>
-                      <ul style="color:#3ae; font-size:14px; line-height:2;">
-                          <li><a href="javascript:history.go(-1);">Return to the previous page you were on</a></li>
-                          <li><a href="/">Return to compete.com</a></li>
-                      </ul>
-                  </div>
-              </div>
-          </div>
-          <div class="footer">
-              <p class="copyright">Compete &copy; 2000 - 2011 All Rights Reserved</p>
-          </div>
-      </div>
-      </body>
-      </html>
-
-    http_version: "1.1"
-- !ruby/struct:VCR::HTTPInteraction 
-  request: !ruby/struct:VCR::Request 
-    method: :get
     uri: http://toolbarqueries.google.com:80/tbr?ch=63624986523&client=navclient-auto&features=Rank&q=info%3Aplease-dont-register-a-site-that-breaks-this-test.com
     body: 
     headers: 
+      user-agent: 
+      - Page Rankr
   response: !ruby/struct:VCR::Response 
     status: !ruby/struct:VCR::ResponseStatus 
       code: 200
@@ -114,16 +49,578 @@
       server: 
       - gws
       date: 
-      - Mon, 26 Dec 2011 18:24:00 GMT
+      - Thu, 16 Feb 2012 01:36:44 GMT
       x-xss-protection: 
       - 1; mode=block
       content-length: 
       - "0"
       set-cookie: 
-      - PREF=ID=d0ed65d2467a6d33:FF=0:TM=1324923840:LM=1324923840:S=lO7KwuEvPqq3orLa; expires=Wed, 25-Dec-2013 18:24:00 GMT; path=/; domain=.google.com
+      - PREF=ID=bd28dc14ec5565c8:FF=0:TM=1329356204:LM=1329356204:S=e8sIDHwIOvDYRQtf; expires=Sat, 15-Feb-2014 01:36:44 GMT; path=/; domain=.google.com
       cache-control: 
       - no-cache, must-revalidate
       pragma: 
       - no-cache
     body: 
+    http_version: "1.1"
+- !ruby/struct:VCR::HTTPInteraction 
+  request: !ruby/struct:VCR::Request 
+    method: :get
+    uri: http://siteanalytics.compete.com:80/please-dont-register-a-site-that-breaks-this-test.com/
+    body: 
+    headers: 
+      user-agent: 
+      - Page Rankr
+  response: !ruby/struct:VCR::Response 
+    status: !ruby/struct:VCR::ResponseStatus 
+      code: 200
+      message: OK
+    headers: 
+      content-type: 
+      - text/html; charset=utf-8
+      content-language: 
+      - en-us
+      server: 
+      - Apache
+      date: 
+      - Thu, 16 Feb 2012 01:36:44 GMT
+      content-length: 
+      - "23214"
+      set-cookie: 
+      - source_panel=us; Domain=.compete.com; Path=/
+      vary: 
+      - Accept-Language,Cookie,User-Agent
+    body: |
+      <!DOCTYPE html>
+      <!-- HOSTNAME: prodweb44
+           DEBUG: False
+           VERSION: 20120213082000
+           COOKIE_DOMAIN: .compete.com -->
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      <!--[if lt IE 7 ]> <html lang="en" class="no-js ie6"> <![endif]-->
+      <!--[if IE 7 ]>    <html lang="en" class="no-js ie7"> <![endif]-->
+      <!--[if IE 8 ]>    <html lang="en" class="no-js ie8"> <![endif]-->
+      <!--[if IE 9 ]>    <html lang="en" class="no-js ie9"> <![endif]-->
+      <!--[if (gte IE 10)|!(IE)]><!--> <html lang="en" class="no-js"> <!--<![endif]-->
+      <head>
+          
+          
+          
+          <meta charset="utf-8" />
+          <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+      
+          
+          <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      
+          
+          <meta name="ICBM" content="42.348043, -71.077617" />
+          <meta name="DC.title" content="Compete" />
+      
+          <meta name="description"
+                content=" 
+          
+              See monthly traffic, unique visitors, rank and more for please-dont-register-a-site-that-breaks-this-test.com with Compete's free Site Analytics.
+          
+      " />
+          <meta name="keywords"
+                content=" 
+          competitive intelligence, market intelligence, competitive strategy, media planning, website traffic, site traffic, search marketing, audience measurement
+      " />
+      
+          
+          
+          <script src="http://media.compete.com/site_media/thirdparty/modernizr-1.6.min.ver-20120213082000.js"></script>
+      
+          <link rel="shortcut icon" href="/favicon.ico" />
+          <link rel="stylesheet" type="text/css" href="http://media.compete.com/site_media/css/universal/framework.ver-20120213082000.css" media="all" charset="utf-8" />
+          <link rel="stylesheet" type="text/css" href="http://media.compete.com/site_media/css/c/widgets.ver-20120213082000.css" media="all" charset="utf-8" />
+          <link rel="stylesheet" type="text/css" href="http://media.compete.com/site_media/thirdparty/jquery.fancybox-1.3.4/fancybox/jquery.fancybox-compete.ver-20120213082000.css" media="screen" />
+      
+      
+          
+          
+      
+              
+          
+          <link rel="stylesheet" type="text/css" href="http://media.compete.com/site_media/css/free/master_free.ver-20120213082000.css" media="all" charset="utf-8" />
+          <link rel="stylesheet" type="text/css" href="http://media.compete.com/site_media/css/www/dropdown.ver-20120213082000.css" media="all" />
+          <link rel="stylesheet" type="text/css" href="http://media.compete.com/site_media/css/www/popup_help.ver-20120213082000.css" media="all" />
+          <link rel="stylesheet" type="text/css" href="http://media.compete.com/site_media/thirdparty/jquery/theme/ui.all.ver-20120213082000.css" media="all" />
+          <link rel="stylesheet" type="text/css" href="http://media.compete.com/site_media/css/universal/jquery.autocomplete.ver-20120213082000.css" media="all" />
+          <link rel="stylesheet" type="text/css" href="http://media.compete.com/site_media/css/www/jquery.mcdropdown.ver-20120213082000.css" media="all" />
+          <link rel="stylesheet" type="text/css" href="http://media.compete.com/site_media/css/www/tooltip.ver-20120213082000.css" media="all" />
+          <link rel="stylesheet" type="text/css" href="http://media.compete.com/site_media/thirdparty/superfish-1.4.8/css/superfish.ver-20120213082000.css" media="all" />
+      
+          
+             
+          
+              
+                  
+              
+          
+      
+          <!-- text_block Help_Styles -->
+          <style type="text/css">
+        div.ui-dialog div.popup-help-dialog span.definition {
+          font-weight: bold;
+          font-size: 1.2em;
+          color: #333333;
+        }
+      </style>
+      
+      <meta name="verify-v1" content="hzIm6qODZkWAWCero/9RJvI7OkNf3121EmjcGNTASXA=" />
+          <!-- end text_block Help_Styles -->
+      
+          <!-- block stylesheets -->
+          
+          <!-- endblock stylesheets -->
+      
+              
+          
+              
+              <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.js"></script>
+              
+              <script>!window.jQuery && document.write(unescape('%3Cscript src="http://media.compete.com/site_media/thirdparty/jquery/jquery-1.5.2.min.ver-20120213082000.js"%3E%3C/script%3E'));</script>
+          
+          
+          <script type="text/javascript">
+              // Set up universal Compete namespace
+              var $c = $c || {};
+              $c.settings = $c.settings || {};
+              $c.settings.LOG_DEPRECATION_WRAPPING = false;
+              
+              // Bind jQuery to $j to avoid Prototype (which is still hogging $).
+              var $j = jQuery.noConflict();
+          </script>
+      
+          <script type="text/javascript">
+      
+      	var $c = $c || {};
+      	$c.globals = $c.globals || {};
+      	
+          var base_site = 'http://www.compete.com',
+              blog_site = 'http://blog.compete.com',
+              compete_pro_upgrade = 'http://app.compete.com/account-settings/plan-options/',
+              corporare_site = 'http://www.competeinc.com',
+              debug_mode = 'False',
+              lists_site = 'http://app.compete.com/lists',
+              main_site = 'http://www.compete.com',
+              app_site = 'http://app.compete.com',
+              media_host = 'http://media.compete.com',
+              member_site = 'https://app.compete.com',
+              reftools_site = 'http://app.compete.com/referrals',
+              searchtools_site = 'http://app.compete.com/search',
+              secure_main_site = 'https://www.compete.com',
+              snapshot_site = 'http://siteanalytics.compete.com',
+              toolbar_site = '',
+              help_site = 'http://help.compete.com',
+              versionify_string = '20120213082000';
+      
+      	// from now on, add your globals to $c.globals ~fc 10/26/2011
+      	$c.globals.user_source_panel = '';
+      	
+      </script>
+      
+      
+          
+          
+          <script type="text/javascript" src="/jsi18n/main"></script>
+          <script type="text/javascript" src="/jsi18n/custom"></script>
+          
+      
+          <script type="text/javascript" src="http://media.compete.com/site_media/js/c/lang/es5-shim-0.0.4.min.ver-20120213082000.js"></script>
+          <script type="text/javascript" src="http://media.compete.com/site_media/js/c/lang/es5_getter_setter_api.ver-20120213082000.js"></script>
+          <script type="text/javascript" src="http://media.compete.com/site_media/thirdparty/backbone/underscore.ver-20120213082000.js"></script>
+          <script type="text/javascript" src="http://media.compete.com/site_media/thirdparty/backbone/backbone.ver-20120213082000.js"></script>
+          
+          <script type="text/javascript" src="http://media.compete.com/site_media/thirdparty/colorbox/colorbox/jquery.colorbox-min.ver-20120213082000.js"></script>
+          
+          <script type="text/javascript" src="http://media.compete.com/site_media/js/c/Backbone.ver-20120213082000.js"></script>
+          <script type="text/javascript" src="http://media.compete.com/site_media/js/c/widgets.ver-20120213082000.js"></script>
+          <script type="text/javascript" src="http://media.compete.com/site_media/js/c/utils.ver-20120213082000.js"></script>
+          <script type="text/javascript" src="http://media.compete.com/site_media/thirdparty/mbox.ver-20120213082000.js"></script>
+          <script type="text/javascript" src="http://media.compete.com/site_media/thirdparty/jquery.text-overflow.ver-20120213082000.js"></script>
+      
+          
+      
+      <script type="text/javascript" charset="utf-8">
+          var s_account = 'competefree,competemaster';
+      </script>
+      
+      <script type="text/javascript" src="http://media.compete.com/site_media/thirdparty/omniture__s_code.ver-20120213082000.js" charset="utf-8"></script>
+      
+          <script type="text/javascript" src="http://media.compete.com/site_media/js/seaeagle/thirdparty_analytics.ver-20120213082000.js"></script>
+      
+              
+          
+          
+          
+      
+          <script type="text/javascript" src="http://media.compete.com/site_media/thirdparty/prototype/prototype-1.5.0-compressed.ver-20120213082000.js"></script>
+      
+          
+      
+          <script type="text/javascript" src="http://media.compete.com/site_media/js/util.ver-20120213082000.js"></script>
+          <script type="text/javascript" src="http://media.compete.com/site_media/thirdparty/jquery/jquery-ui-compete-1.6rc6.min.ver-20120213082000.js"></script>
+          <script type="text/javascript" src="http://media.compete.com/site_media/thirdparty/jquery/jquery.mcdropdown.ver-20120213082000.js"></script>
+          <script type="text/javascript" src="http://media.compete.com/site_media/thirdparty/jquery/jquery.bgiframe.ver-20120213082000.js"></script>
+          <script type="text/javascript" src="http://media.compete.com/site_media/thirdparty/jquery/tooltip.ver-20120213082000.js"></script>
+          <script type="text/javascript" src="http://media.compete.com/site_media/thirdparty/jquery/tooltip.dynamic.ver-20120213082000.js"></script>
+          <script type="text/javascript" src="http://media.compete.com/site_media/thirdparty/jquery/tooltip.compete.ver-20120213082000.js"></script>
+          <script type="text/javascript" src="http://media.compete.com/site_media/js/seaeagle/json2.ver-20120213082000.js" charset="utf-8"></script>
+          <script type="text/javascript" src="http://media.compete.com/site_media/js/seaeagle/util.ver-20120213082000.js"></script>
+          <script type="text/javascript" src="http://media.compete.com/site_media/js/seaeagle/util_format.ver-20120213082000.js"></script>
+          <script type="text/javascript" src="http://media.compete.com/site_media/js/seaeagle/dropdown.ver-20120213082000.js"></script>
+          <script type="text/javascript" src="http://media.compete.com/site_media/js/seaeagle/master.ver-20120213082000.js"></script>
+          <script type="text/javascript" src="http://media.compete.com/site_media/js/seaeagle/popup_help.ver-20120213082000.js"></script>
+          <script type="text/javascript" src="http://media.compete.com/site_media/js/seaeagle/jquery.autocomplete.pack.ver-20120213082000.js"></script>
+          <script type="text/javascript" src="http://media.compete.com/site_media/js/seaeagle/jquery.competeutils.ver-20120213082000.js"></script>
+          <script type="text/javascript" src="http://media.compete.com/site_media/js/seaeagle/jquery.cookie.ver-20120213082000.js"></script>
+          <script type="text/javascript" src="http://media.compete.com/site_media/js/seaeagle/jquery.html5-placeholder-shim.ver-20120213082000.js"></script>
+          <script type="text/javascript" src="http://media.compete.com/site_media/js/c/app/main_nav.ver-20120213082000.js"></script>
+          <script type="text/javascript" src="http://media.compete.com/site_media/js/number_format/NumberFormat-1.5.4.ver-20120213082000.js"></script>
+          <script type="text/javascript" src="http://media.compete.com/site_media/js/number_format/number_formatter.ver-20120213082000.js"></script>
+      
+          <script type="text/javascript" src="http://media.compete.com/site_media/thirdparty/superfish-1.4.8/js/superfish.ver-20120213082000.js"></script>
+          <script type="text/javascript">
+              // ! TODO: add try_catch block *INSIDE* function() {}
+              $j(document).ready(function() {
+                  // site search
+                  generate_search_dropdown("site_profiles");
+                  update_login_logout_link();
+                  master_load();
+      
+                  new $c.app.mainnav.SourcePanelSelector();
+      
+                  $j('ul.sf-menu').superfish({
+                      animation: {height:'show'}  // slide-down animation 
+                  }); 
+      
+                  // put in a line for everything that needs to be ellipified. this will make Firefox behave
+                  // NOTE: The elements have to be on the page at load for this to work. 
+                  // If not, add the ellipsis() to the script that loads them
+                  $j(".page .content h2").ellipsis();
+                  $j(".page .sidebar .trends li label").ellipsis();
+                  
+                  
+              });
+          </script>
+          
+          <!-- Share This JS -->
+          <script type="text/javascript">var switchTo5x=true;</script><script type="text/javascript" src="http://w.sharethis.com/button/buttons.js"></script><script type="text/javascript">stLight.options({publisher:'34103607-a24d-4dfb-b237-4d07dd6d4cd0'});</script>
+      
+          <!-- block scripts -->
+          
+          <!-- endblock scripts -->
+      
+      <script type="text/javascript" src="http://media.compete.com/site_media/js/seaeagle/amcharts.ver-20120213082000.js"></script>
+          <script type="text/javascript" src="http://media.compete.com/site_media/js/c/free/widgets.ver-20120213082000.js"></script>
+          <script type="text/javascript" src="http://media.compete.com/site_media/js/c/app/research.ver-20120213082000.js"></script>
+          
+          <script type="text/javascript">        
+              $j(document).ready(function() {
+                  /* search box initialization */
+                  var initial = $j('#q').val();
+                  $j('#q').focusin(function() {
+                      if($j('#q').val() == initial) {
+                          $j(this).val('');
+                      }
+                  });
+                  $j('#q').focusout(function() {
+                      if($j.trim($j(this).val()) == '') {
+                          $j(this).val(initial);
+                      }
+                  });
+      
+                  var sa_site_search = new $c.app.research.SearchSiteFree({
+                      search_form: $j("form#sa-search-form"),
+                      input_wrapper_element: $j("#sa-search-input-wrapper"),
+                      submit_element: $j("#sa-search-submit"),
+                      loading_image: "/site_media/images/app/loading/loader_24x24.gif"
+                  });
+      
+                  
+                      var logged_in_as = null;
+                  
+      
+                  /* personalization initialization */
+                  var d = {
+                    site_name: "please-dont-register-a-site-that-breaks-this-test.com",
+                    logged_in_as: logged_in_as
+                  };
+      
+                  var auth_model = new $c.free.widgets.FreeLoginModel(d);
+                  var links_opts = { model: auth_model };
+                  var links_view = new $c.free.widgets.FreeAccountLinksView(links_opts);
+      
+                  /* help tooltip */
+                  var help_tooltip = new $c.widgets.HoverBalloonSingleton(
+                      { hide_delay: 200 }
+                      );
+                  help_tooltip.template = _.template($j('#template-help-tooltip').html());
+                  help_tooltip.attach(null, $j('span.help'));
+              });
+              
+          </script> 
+          
+          
+          
+      
+      
+          <title>please-dont-register-a-site-that-breaks-this-test.com  UVs for  | Compete</title>
+      
+          <!-- block head -->
+          
+          <!-- endblock head -->
+          
+      
+          
+      
+      </head>
+      
+          <body>
+              
+                  <div class="header">
+                      <div class="wrapper">
+                          <p class="subscribe"><a href="http://www.compete.com/plans/">Subscribe to Compete PRO</a></p>
+                          <ul class="nav main">
+                                  <li class="logo"><a href="http://www.compete.com"><img src="http://media.compete.com/site_media/images/free/siteanalytics_logo.png" width="228" height="26" alt="Site Analytics"></a></li>
+                                  <li><a href="http://www.compete.com">Compete.com</a></li>
+                                  <li><a href="http://www.compete.com/pro/">Compete PRO</a></li>
+                                  <li><a href="http://www.compete.com/products/">Products</a></li>
+                                  <li><a href="http://www.compete.com/expertise/">Expertise</a></li>
+                                  <li><a href="http://www.compete.com/resources/methodology/">Our Data</a></li>
+                                  <li class="last"><a href="http://blog.compete.com">Pulse Blog</a></li>
+                              </ul>
+                      </div>
+                  </div>
+              
+              <span class="competeXL">
+              <!-- The Compete XL Code -->
+      <script>
+      var __compete_code_control = {
+          measure_traffic_asynchronously: false
+      };
+      </script>
+      <!-- Compete XL Code for compete.com -->
+      <script type="text/javascript">
+      __compete_code = '4b6705ef8ded7e9cb0067318dde11c3e';
+      /* Set control variables below this line. */ 
+      </script>
+      <script type="text/javascript" src="//c.compete.com/bootstrap/s/4b6705ef8ded7e9cb0067318dde11c3e/compete-com/bootstrap.js"></script>
+      <noscript>
+          <img width="1" height="1" src="https://ssl-compete-com-4b6705.c-col.com"/>
+      </noscript>
+      <!-- End of the Compete Code -->
+              </span>
+      
+              
+      <div class="wrapper">
+          <div class="login-block">
+              <p class="membership"><a href="javascript:void(0)">Login</a> or <a href="javascript:void(0)">Sign Up</a> for Site Analytics to follow sites</p>
+              <p class="get-pro">Get the whole story with a Compete PRO subscription.<a href="http://www.compete.com/pro/features/">Learn More</a></p>
+          </div>
+          <div class="page clearfix">
+              <div class="head">
+                  <div class="interact-wrap">
+                      <ul class="nav disable-interact">
+                          <li id="follow" class="follow"><span >Follow This Site</span></li>
+                      </ul>
+                  </div>
+                  <div class="stretcher">
+                      <div class="inner share">
+      
+                      </div>
+                  </div>
+                  <div class="search">
+                      <form id="sa-search-form">
+                          <input name="t" type="hidden" />
+                          <label>http://</label>
+                          <div id="sa-search-input-wrapper" class="search-wrapper">
+                              <input name="q" type="text" id="sa-search-input" class="at-sa-search-input" />
+                          </div>
+                          <div class="submit-wrapper">
+                              <input type="submit" value="GO" id="sa-search-submit" class="at-sa-search-submit" />
+                          </div>
+                      </form>
+                  </div>
+                  
+                  <ul class="nav tools">
+                      <li class="save"><span id="graph-image">Save Graph Image</span></li>
+                      <li class="export"><span id="csv-export">Export CSV</span></li>
+                      <li class="embed"><span id="embed-graph">Embed Graph</span></li>
+                  </ul>
+                  <ul class="nav filter">
+                      
+      
+      
+          <script type="text/javascript" src="http://media.compete.com/site_media/js/c/app/multiple_feeds.ver-20120213082000.js"></script>
+      
+      
+      
+      <li class="date" id="dataset-date-container">
+          
+          <span id='latest_datatset_month'>
+          January 2012
+          </span>
+      </li>
+      
+      
+      
+      
+          <li class="country" id="source-panel-container">
+              
+                  <span class="label" id="current-source-panel">
+                      <span class="us name">United States</span>
+                  </span>
+              
+          </li>
+      
+                  </ul>
+              </div>
+              <div class="error-message">
+                No data found for please-dont-register-a-site-that-breaks-this-test.com.
+              </div>
+          </div>
+      </div>
+      <script id="template-help-tooltip" type="text/template">
+          <div class="pointer">
+              <div class="message">
+                  <p>Unique Visitors counts how many unique individual people visited this site per month. Visitors are counted once, no matter how many times they visit a site in a month.  Counts represent traffic from the United States only.</p>
+                  <p>Rank measures the popularity of this site based on how many Unique Visitors came to the site in a month.  With Rank, lower is better.</p>
+                  <p>Competitive Rank shows where a site ranks in its competitive set measured by Unique Visitors.</p>
+              </div>
+          </div>
+      </script>
+      
+      <!-- Google Code for NEW Site Analytics Home Page Remarketing List -->
+      <script type="text/javascript">
+      /* <![CDATA[ */
+      var google_conversion_id = 1069995145;
+      var google_conversion_language = "en";
+      var google_conversion_format = "3";
+      var google_conversion_color = "666666";
+      var google_conversion_label = "g5IxCJ-C_gIQiamb_gM";
+      var google_conversion_value = 0;
+      /* ]]> */
+      </script>
+      <script type="text/javascript" src="http://www.googleadservices.com/pagead/conversion.js">
+      </script>
+      <noscript>
+      <div style="display:inline;">
+      <img height="1" width="1" style="border-style:none;" alt="" src="http://www.googleadservices.com/pagead/conversion/1069995145/?label=g5IxCJ-C_gIQiamb_gM&amp;guid=ON&amp;script=0"/>
+      </div>
+      </noscript>
+      
+      
+              
+                  <div class="footer">
+                      <p class="copyright">&copy; Copyright to Compete.com - A Kantar Media Company</p>
+                      <ul class="nav utility">
+                          <li><a href="http://www.compete.com">Visit Compete.com</a></li>
+                          <li class="last"><a href="http://www.compete.com/plans/">Subscribe to Compete PRO</a></li>
+                      </ul>
+                  </div>
+              
+      
+              <!-- block tags -->
+              
+                  
+      
+      <script type="text/javascript">  
+        var _gaq = _gaq || [];  
+        _gaq.push(['_setAccount', 'UA-6320717-1']);
+        _gaq.push(['_setDomainName', '.compete.com']);
+        _gaq.push(['_trackPageview']);
+        
+        (function() {
+          var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+          ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+          var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+        })();
+      </script>
+      <script type="text/javascript" charset="utf-8">
+          $j(document).ready(function() {
+              
+      
+              var s_code=s.t();
+              if(s_code) {
+                  document.write(s_code);
+              }
+          });
+      </script>
+      
+      <script language="JavaScript1.1" type="text/javascript">
+          var CQK = "B288EECE",
+              CQP = (("https:" == document.location.protocol) ? "https://" : "http://");
+          document.write(unescape("%3Cscript language=\"JavaScript1.1\" type=\"text/javascript\" src=\""+CQP+"js.clickequations.net/CLEQ_"+CQK+".js\" %3E%3C/script%3E" ));
+      </script>
+      
+      <script type="text/javascript">
+        document.write(unescape("%3Cscript src='" + ((document.location.protocol=="https:")?"https:":"http:") + "//snapabug.appspot.com/snapabug.js' type='text/javascript'%3E%3C/script%3E"));</script><script type="text/javascript">
+        //SnapABug.addButton('4816ca29-9130-4045-b08e-5a4de935ff4b',"0","55%");
+        SnapABug.setDomain('.compete.com');
+        SnapABug.init('4816ca29-9130-4045-b08e-5a4de935ff4b');
+      </script>
+      
+      
+      <script type="text/javascript">
+          // NOTE: If 4q ever supports cross subdomain cookies we can get rid of all this!
+          $j(document).ready(function() {
+              $j('#ipeL, #invL').live('click', function() {
+                  $j.cookie('suppress_4q', 1, {expires: 30, path: '/', domain: '.compete.com'});
+              });
+              
+              if(!$j.cookie('suppress_4q')) {
+                  var protocol = ("https:" == document.location.protocol ? "https://" : "http://");
+                  
+                  var fourq = document.createElement('script');
+                  fourq.setAttribute('type', 'text/javascript');
+                  fourq.setAttribute('src', protocol + '4qinvite.4q.iperceptions.com/1.aspx?sdfc=1b3a8f93-36734-fb3cb395-5ed4-429c-aab9-babc0a0a2015&lID=1&loc=4Q-WEB2');
+                  fourq.setAttribute('defer', 'defer');
+                  document.getElementsByTagName('head')[0].appendChild(fourq);
+              }
+              
+          });
+      </script>
+      
+      
+      
+              
+              <!-- endblock tags -->
+      
+              
+      
+              <!-- block ie6_warning -->
+              
+                  <div id="ie6-warning" class="hidden">
+                      <div id="ie6-warning-inner">
+      
+          <div class="left">
+              <p>Our site may not run like it should in Internet Explorer 6.  For a better experience, please upgrade your browser:</p>
+      
+              <ul>
+                  <li class="firefox"><a href="http://www.firefox.com"><span>firefox</span></a></li>
+                  <li class="ie"><a href="http://www.microsoft.com/windows/internet-explorer/default.aspx"><span>ie 8</span></a></li>
+                  <li class="chrome"><a href="http://www.google.com/chrome"><span>chrome</span></a></li>
+              </ul>
+          </div>
+          
+          <a href="#" onclick="hide_ie6_warning();" id="close-button">Don't show me this message again</a>
+      </div>
+                  </div>
+              
+              <!-- endblock ie6_warning -->
+      
+          </body>
+      
+      </html>
+
     http_version: "1.1"
