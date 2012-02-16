@@ -13,7 +13,7 @@ module PageRankr
     def initialize(site, options = {})
       @site = PageRankr::Site(site)
 
-      @options = {:method => method}
+      @options = {:method => method, :headers => {'User-Agent' => 'Page Rankr'}}
       @options[:params] = params if respond_to? :params
       @options.merge!(options)
       
