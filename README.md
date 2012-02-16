@@ -207,10 +207,11 @@ Then, just make sure you require the class and PageRankr and whenever you call P
 * [Dru Ibarra](https://github.com/Druwerd) - Use Google Search API instead of scraping.
 * [Iteration Labs, LLC](https://github.com/iterationlabs) - Compete rank tracker and domain indexes.
 * [Marc Seeger](http://www.marc-seeger.de) ([Acquia](http://www.acquia.com)) - Ignore invalid ranks that Alexa returns for incorrect sites.
-* [Rémy Coutable](https://github.com/rymai) - Update public_suffix_service gem
-* [Jonathan Rudenberg](https://github.com/titanous) - Fix compete scraper
-* [Chris Corbyn](https://github.com/d11wtq) - Fix google page rank url
+* [Rémy Coutable](https://github.com/rymai) - Update public_suffix_service gem.
+* [Jonathan Rudenberg](https://github.com/titanous) - Fix compete scraper.
+* [Chris Corbyn](https://github.com/d11wtq) - Fix google page rank url.
 * [Hans Haselberg](https://github.com/i0rek) - Update typhoeus gem.
+* [Priit Haamer](https://github.com/priithaamer) - Fix google backlinks lookup.
 
 ## Shout Out
 Gotta give credit where credits due!

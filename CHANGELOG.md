@@ -1,5 +1,8 @@
 # Change Log
 
+## Version 3.1.1
+* Fix google backlinks and indexes
+
 ## Version 3.1.0
 * Add yahoo index back
 * Fix yahoo and google backlinks and indexes
