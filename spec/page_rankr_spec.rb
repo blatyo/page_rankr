@@ -144,7 +144,7 @@ describe PageRankr do
 
   describe "::Site" do
     [nil, '', 'batman.thedarkknight'].each do |value|
-      it "should raise an exception when given #{value}" do
+      it "should raise an exception when given #{value.inspect}" do
         expect{PageRankr::Site(value)}.should raise_error(PageRankr::DomainInvalid)
       end
     end

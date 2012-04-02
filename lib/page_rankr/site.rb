@@ -8,7 +8,7 @@ module PageRankr
 
     def initialize(site)
       @uri = URI.parse(site)
-      @domain = PublicSuffix.parse(@uri.host)
+      @domain = PublicSuffix.parse(@uri.host || "")
 
       @domain.valid? or raise DomainInvalid, "The domain provided is invalid.1"
     rescue PublicSuffix::DomainInvalid, URI::InvalidURIError
@@ -44,13 +44,13 @@ module PageRankr
     end
 
     def url(supported_components = [:domain])
-      supported_components = COMPONENTS & supported_components #get ordered list
+      components = COMPONENTS & supported_components #get ordered list
 
-      unless supported_components.include?(:subdomain) ^ supported_components.include?(:domain)
+      unless components.include?(:subdomain) ^ components.include?(:domain)
         raise SupportedComponentsInvalid, "Either subdomain or domain should be set as a supported component, not both."
       end
 
-      supported_components.inject("") do |url, component|
+      components.inject("") do |url, component|
         url + case component
         when :scheme
           scheme and "#{scheme}://" or ""

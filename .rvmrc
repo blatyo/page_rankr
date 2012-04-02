@@ -1,1 +1,1 @@
-rvm use 1.9.2@page_rankr --create
+rvm use 1.9.3@page_rankr --create
