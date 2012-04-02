@@ -1,67 +1,82 @@
---- 
-- !ruby/struct:VCR::HTTPInteraction 
-  request: !ruby/struct:VCR::Request 
+---
+- !ruby/struct:VCR::HTTPInteraction
+  request: !ruby/struct:VCR::Request
     method: :get
     uri: http://data.alexa.com:80/data?cli=10&dat=snbamz&url=slocourts.net
     body: 
-    headers: 
-      user-agent: 
+    headers:
+      user-agent:
       - Page Rankr
-  response: !ruby/struct:VCR::Response 
-    status: !ruby/struct:VCR::ResponseStatus 
+  response: !ruby/struct:VCR::Response
+    status: !ruby/struct:VCR::ResponseStatus
       code: 200
-      message: OK
-    headers: 
-      content-type: 
-      - text/xml
-      content-length: 
-      - "2455"
-    body: "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n\
-      \r\n\
-      <ALEXA VER=\"0.9\" URL=\"slocourts.ca.gov/\" HOME=\"0\" AID=\"=\">\r\n\
-      <RLS PREFIX=\"http://\" more=\"23\">\n\
-      <RL HREF=\"www.co.san-bernardino.ca.us/Courts\" TITLE=\"Superior Court, San Bernardino\"/>\n\
-      <RL HREF=\"www.co.riverside.ca.us/depts/courts\" TITLE=\"Superior Court Of California County Of Riverside\"/>\n\
-      <RL HREF=\"courts.countyofventura.org/\" TITLE=\"Superior Court, Ventura\"/>\n\
-      <RL HREF=\"www.ci.sf.ca.us/courts\" TITLE=\"Superior Court, San Francisco\"/>\n\
-      <RL HREF=\"www.sonomasuperiorcourt.com/\" TITLE=\"Superior Court, Sonoma\"/>\n\
-      <RL HREF=\"www.solanocourts.com/\" TITLE=\"Superior Court, Solano\"/>\n\
-      <RL HREF=\"www.sccsuperiorcourt.org/\" TITLE=\"Superior Court, Santa Clara\"/>\n\
-      <RL HREF=\"www.sbcourts.org/\" TITLE=\"Superior Court, Santa Barbara\"/>\n\
-      <RL HREF=\"www.sanmateocourt.org/\" TITLE=\"Superior Court, San Mateo\"/>\n\
-      <RL HREF=\"www.saccourt.com/\" TITLE=\"Superior Court, Sacramento\"/>\n\
-      <RL HREF=\"www.buttonware.com/\" TITLE=\"www.buttonware.com/\"/>\n\
-      </RLS>\n\
-      <SD TITLE=\"A\" FLAGS=\"DMOZ\" HOST=\"slocourts.ca.gov\">\n\
-      <TITLE TEXT=\"Superior Court, San Luis Obispo\"/>\n\
-      <ADDR STREET=\"3101 Gold Camp Dr\" CITY=\"Rancho Cordova\" STATE=\"CA\" ZIP=\"95670\" COUNTRY=\"US\" />\n\
-      <CREATED DATE=\"16-Jun-2000\" DAY=\"16\" MONTH=\"06\" YEAR=\"2000\"/>\n\
-      <PHONE NUMBER=\"+1 916 464 4239\"/>\n\
-      <OWNER NAME=\"State of California\"/>\n\
-      <EMAIL ADDR=\"lbatcheldor@co.slo.ca.us\"/>\n\
-      <LANG LEX=\"en\" CODE=\"us-ascii\"/>\n\
-      <LINKSIN NUM=\"60\"/>\n\
-      <SPEED TEXT=\"777\" PCT=\"81\"/>\n\
-      <REVIEWS AVG=\"5.0\" NUM=\"\"/>\n\
-      <CHILD SRATING=\"0\"/>\n\
-      </SD>\n\n\
-      <KEYWORDS>\n\
-      <KEYWORD VAL=\"San Luis Obispo\"/>\n\
-      </KEYWORDS><DMOZ>\n\
-      <SITE BASE=\"slocourts.ca.gov/\" TITLE=\"SLO County Superior Court\" DESC=\"Administrative site of the Superior Court, with information, public notices, and bail and fee schedules.\">\n\
-      <CATS>\n\
-      <CAT ID=\"Top/Regional/North_America/United_States/California/Government/Courts\" TITLE=\"Government/Courts\" CID=\"620717\"/>\n\
-      <CAT ID=\"Top/Regional/North_America/United_States/California/Counties/San_Luis_Obispo/Government\" TITLE=\"San Luis Obispo/Government\" CID=\"620510\"/>\n\
-      <CAT ID=\"Top/Regional/North_America/United_States/California\" TITLE=\"United States/California\" CID=\"619087\"/>\n\
-      <CAT ID=\"Top/Regional/North_America/United_States/California/Government\" TITLE=\"California/Government\" CID=\"620608\"/>\n\
-      <CAT ID=\"Top/World/Espa\xC3\xB1ol/Regional/Am\xC3\xA9rica/Estados_Unidos/Estados/California\" TITLE=\"Estados/California\" CID=\"26249\"/>\n\
-      </CATS>\n\
-      </SITE>\n\
-      </DMOZ>\n\
-      <SD>\n\
-      <POPULARITY URL=\"ca.gov/\" TEXT=\"843\"/>\n\
-      <REACH RANK=\"901\"/>\n\
-      <RANK DELTA=\"+67\"/>\n\
-      </SD>\n\
-      </ALEXA>"
-    http_version: "1.1"
+      message: !binary |-
+        T0s=
+    headers:
+      !binary "Y29udGVudC10eXBl":
+      - !binary |-
+        dGV4dC94bWw=
+      !binary "Y29udGVudC1sZW5ndGg=":
+      - !binary |-
+        MjQ1NQ==
+      !binary "Y29ubmVjdGlvbg==":
+      - !binary |-
+        a2VlcC1hbGl2ZQ==
+    body: !binary |-
+      PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4NCg0KPEFM
+      RVhBIFZFUj0iMC45IiBVUkw9InNsb2NvdXJ0cy5jYS5nb3YvIiBIT01FPSIw
+      IiBBSUQ9Ij0iPg0KPFJMUyBQUkVGSVg9Imh0dHA6Ly8iIG1vcmU9IjIzIj4K
+      PFJMIEhSRUY9Ind3dy5jby5zYW4tYmVybmFyZGluby5jYS51cy9Db3VydHMi
+      IFRJVExFPSJTdXBlcmlvciBDb3VydCwgU2FuIEJlcm5hcmRpbm8iLz4KPFJM
+      IEhSRUY9Ind3dy5jby5yaXZlcnNpZGUuY2EudXMvZGVwdHMvY291cnRzIiBU
+      SVRMRT0iU3VwZXJpb3IgQ291cnQgT2YgQ2FsaWZvcm5pYSBDb3VudHkgT2Yg
+      Uml2ZXJzaWRlIi8+CjxSTCBIUkVGPSJjb3VydHMuY291bnR5b2Z2ZW50dXJh
+      Lm9yZy8iIFRJVExFPSJTdXBlcmlvciBDb3VydCwgVmVudHVyYSIvPgo8Ukwg
+      SFJFRj0id3d3LmNpLnNmLmNhLnVzL2NvdXJ0cyIgVElUTEU9IlN1cGVyaW9y
+      IENvdXJ0LCBTYW4gRnJhbmNpc2NvIi8+CjxSTCBIUkVGPSJ3d3cuc29ub21h
+      c3VwZXJpb3Jjb3VydC5jb20vIiBUSVRMRT0iU3VwZXJpb3IgQ291cnQsIFNv
+      bm9tYSIvPgo8UkwgSFJFRj0id3d3LnNvbGFub2NvdXJ0cy5jb20vIiBUSVRM
+      RT0iU3VwZXJpb3IgQ291cnQsIFNvbGFubyIvPgo8UkwgSFJFRj0id3d3LnNj
+      Y3N1cGVyaW9yY291cnQub3JnLyIgVElUTEU9IlN1cGVyaW9yIENvdXJ0LCBT
+      YW50YSBDbGFyYSIvPgo8UkwgSFJFRj0id3d3LnNiY291cnRzLm9yZy8iIFRJ
+      VExFPSJTdXBlcmlvciBDb3VydCwgU2FudGEgQmFyYmFyYSIvPgo8UkwgSFJF
+      Rj0id3d3LnNhbm1hdGVvY291cnQub3JnLyIgVElUTEU9IlN1cGVyaW9yIENv
+      dXJ0LCBTYW4gTWF0ZW8iLz4KPFJMIEhSRUY9Ind3dy5zYWNjb3VydC5jb20v
+      IiBUSVRMRT0iU3VwZXJpb3IgQ291cnQsIFNhY3JhbWVudG8iLz4KPFJMIEhS
+      RUY9Ind3dy5idXR0b253YXJlLmNvbS8iIFRJVExFPSJ3d3cuYnV0dG9ud2Fy
+      ZS5jb20vIi8+CjwvUkxTPgo8U0QgVElUTEU9IkEiIEZMQUdTPSJETU9aIiBI
+      T1NUPSJzbG9jb3VydHMuY2EuZ292Ij4KPFRJVExFIFRFWFQ9IlN1cGVyaW9y
+      IENvdXJ0LCBTYW4gTHVpcyBPYmlzcG8iLz4KPEFERFIgU1RSRUVUPSIzMTAx
+      IEdvbGQgQ2FtcCBEciIgQ0lUWT0iUmFuY2hvIENvcmRvdmEiIFNUQVRFPSJD
+      QSIgWklQPSI5NTY3MCIgQ09VTlRSWT0iVVMiIC8+CjxDUkVBVEVEIERBVEU9
+      IjE2LUp1bi0yMDAwIiBEQVk9IjE2IiBNT05USD0iMDYiIFlFQVI9IjIwMDAi
+      Lz4KPFBIT05FIE5VTUJFUj0iKzEgOTE2IDQ2NCA0MjM5Ii8+CjxPV05FUiBO
+      QU1FPSJTdGF0ZSBvZiBDYWxpZm9ybmlhIi8+CjxFTUFJTCBBRERSPSJsYmF0
+      Y2hlbGRvckBjby5zbG8uY2EudXMiLz4KPExBTkcgTEVYPSJlbiIgQ09ERT0i
+      dXMtYXNjaWkiLz4KPExJTktTSU4gTlVNPSI2MCIvPgo8U1BFRUQgVEVYVD0i
+      NzYzIiBQQ1Q9IjgxIi8+CjxSRVZJRVdTIEFWRz0iNS4wIiBOVU09IiIvPgo8
+      Q0hJTEQgU1JBVElORz0iMCIvPgo8L1NEPgoKPEtFWVdPUkRTPgo8S0VZV09S
+      RCBWQUw9IlNhbiBMdWlzIE9iaXNwbyIvPgo8L0tFWVdPUkRTPjxETU9aPgo8
+      U0lURSBCQVNFPSJzbG9jb3VydHMuY2EuZ292LyIgVElUTEU9IlNMTyBDb3Vu
+      dHkgU3VwZXJpb3IgQ291cnQiIERFU0M9IkFkbWluaXN0cmF0aXZlIHNpdGUg
+      b2YgdGhlIFN1cGVyaW9yIENvdXJ0LCB3aXRoIGluZm9ybWF0aW9uLCBwdWJs
+      aWMgbm90aWNlcywgYW5kIGJhaWwgYW5kIGZlZSBzY2hlZHVsZXMuIj4KPENB
+      VFM+CjxDQVQgSUQ9IlRvcC9SZWdpb25hbC9Ob3J0aF9BbWVyaWNhL1VuaXRl
+      ZF9TdGF0ZXMvQ2FsaWZvcm5pYS9Hb3Zlcm5tZW50L0NvdXJ0cyIgVElUTEU9
+      IkdvdmVybm1lbnQvQ291cnRzIiBDSUQ9IjYyMDcxNyIvPgo8Q0FUIElEPSJU
+      b3AvUmVnaW9uYWwvTm9ydGhfQW1lcmljYS9Vbml0ZWRfU3RhdGVzL0NhbGlm
+      b3JuaWEvQ291bnRpZXMvU2FuX0x1aXNfT2Jpc3BvL0dvdmVybm1lbnQiIFRJ
+      VExFPSJTYW4gTHVpcyBPYmlzcG8vR292ZXJubWVudCIgQ0lEPSI2MjA1MTAi
+      Lz4KPENBVCBJRD0iVG9wL1JlZ2lvbmFsL05vcnRoX0FtZXJpY2EvVW5pdGVk
+      X1N0YXRlcy9DYWxpZm9ybmlhIiBUSVRMRT0iVW5pdGVkIFN0YXRlcy9DYWxp
+      Zm9ybmlhIiBDSUQ9IjYxOTA4NyIvPgo8Q0FUIElEPSJUb3AvUmVnaW9uYWwv
+      Tm9ydGhfQW1lcmljYS9Vbml0ZWRfU3RhdGVzL0NhbGlmb3JuaWEvR292ZXJu
+      bWVudCIgVElUTEU9IkNhbGlmb3JuaWEvR292ZXJubWVudCIgQ0lEPSI2MjA2
+      MDgiLz4KPENBVCBJRD0iVG9wL1dvcmxkL0VzcGHDsW9sL1JlZ2lvbmFsL0Ft
+      w6lyaWNhL0VzdGFkb3NfVW5pZG9zL0VzdGFkb3MvQ2FsaWZvcm5pYSIgVElU
+      TEU9IkVzdGFkb3MvQ2FsaWZvcm5pYSIgQ0lEPSIyNjI0OSIvPgo8L0NBVFM+
+      CjwvU0lURT4KPC9ETU9aPgo8U0Q+CjxQT1BVTEFSSVRZIFVSTD0iY2EuZ292
+      LyIgVEVYVD0iNzY4Ii8+CjxSRUFDSCBSQU5LPSI4MzgiLz4KPFJBTksgREVM
+      VEE9Ii04MyIvPgo8L1NEPgo8L0FMRVhBPg==
+    http_version: !binary |-
+      MS4x

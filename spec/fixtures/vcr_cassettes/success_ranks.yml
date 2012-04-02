@@ -1,753 +1,768 @@
---- 
-- !ruby/struct:VCR::HTTPInteraction 
-  request: !ruby/struct:VCR::Request 
+---
+- !ruby/struct:VCR::HTTPInteraction
+  request: !ruby/struct:VCR::Request
     method: :get
     uri: http://data.alexa.com:80/data?cli=10&dat=snbamz&url=google.com
     body: 
-    headers: 
-      user-agent: 
+    headers:
+      user-agent:
       - Page Rankr
-  response: !ruby/struct:VCR::Response 
-    status: !ruby/struct:VCR::ResponseStatus 
+  response: !ruby/struct:VCR::Response
+    status: !ruby/struct:VCR::ResponseStatus
       code: 200
-      message: OK
-    headers: 
-      content-type: 
-      - text/xml
-      content-length: 
-      - "2202"
-    body: "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n\
-      \r\n\
-      <ALEXA VER=\"0.9\" URL=\"google.com/\" HOME=\"0\" AID=\"=\">\r\n\
-      <RLS PREFIX=\"http://\" more=\"56\">\n\
-      <RL HREF=\"amazon.com/\" TITLE=\"Amazon.com\"/>\n\
-      <RL HREF=\"wikipedia.org/\" TITLE=\"Wikipedia\"/>\n\
-      <RL HREF=\"www.yahoo.com/\" TITLE=\"Yahoo!\"/>\n\
-      <RL HREF=\"youtube.com/\" TITLE=\"YouTube\"/>\n\
-      <RL HREF=\"yelp.com/\" TITLE=\"Yelp\"/>\n\
-      <RL HREF=\"statcounter.com/\" TITLE=\"StatCounter.com\"/>\n\
-      <RL HREF=\"myspace.com/\" TITLE=\"Myspace\"/>\n\
-      <RL HREF=\"linkedin.com/\" TITLE=\"LinkedIn\"/>\n\
-      <RL HREF=\"imdb.com/\" TITLE=\"The Internet Movie Database (imdb)\"/>\n\
-      <RL HREF=\"google.co.in/\" TITLE=\"Google India\"/>\n\
-      <RL HREF=\"ask.com/\" TITLE=\"ask.com/\"/>\n\
-      </RLS>\n\
-      <SD TITLE=\"A\" FLAGS=\"DMOZ\" HOST=\"google.com\">\n\
-      <TITLE TEXT=\"Google                             \"/>\n\
-      <ADDR STREET=\"\" CITY=\"\" STATE=\"\" ZIP=\"\" COUNTRY=\"\" />\n\
-      <CREATED DATE=\"15-Sep-1997\" DAY=\"15\" MONTH=\"09\" YEAR=\"1997\"/>\n\
-      <PHONE NUMBER=\"unlisted\"/>\n\
-      <OWNER NAME=\"unlisted\"/>\n\
-      <EMAIL ADDR=\"dns-admin@google.com\"/>\n\
-      <ALEXAPRO TIER=\"advanced\"/>\n\
-      <LANG LEX=\"en\"/>\n\
-      <LINKSIN NUM=\"4790252\"/>\n\
-      <SPEED TEXT=\"1562\" PCT=\"44\"/>\n\
-      <REVIEWS AVG=\"4.5\" NUM=\"870\"/>\n\
-      <CHILD SRATING=\"0\"/>\n\
-      <ASSOCS>\n\
-      <ASSOC ID=\"googlecom\"/></ASSOCS>\n\
-      </SD>\n\n\
-      <KEYWORDS>\n\
-      <KEYWORD VAL=\"Mountain View\"/>\n\
-      </KEYWORDS><DMOZ>\n\
-      <SITE BASE=\"google.com/\" TITLE=\"Google\" DESC=\"Enables users to search the world's information, including webpages, images, and videos. Offers unique features and search technology.\">\n\
-      <CATS>\n\
-      <CAT ID=\"Top/Computers/Internet/Searching/Search_Engines/Google\" TITLE=\"Search Engines/Google\" CID=\"374822\"/>\n\
-      <CAT ID=\"Top/Regional/North_America/United_States/California/Localities/M/Mountain_View/Business_and_Economy/Industrial/Computers_and_Internet\" TITLE=\"Industrial/Computers and Internet\" CID=\"625367\"/>\n\
-      <CAT ID=\"Top/World/Arabic/\xD8\xA5\xD9\x82\xD9\x84\xD9\x8A\xD9\x85\xD9\x80\xD9\x8A/\xD8\xA7\xD9\x84\xD8\xB4\xD8\xB1\xD9\x82_\xD8\xA7\xD9\x84\xD8\xA3\xD9\x88\xD8\xB3\xD8\xB7/\xD8\xA7\xD9\x84\xD8\xB3\xD8\xB9\xD9\x88\xD8\xAF\xD9\x8A\xD8\xA9/\xD8\xAA\xD8\xAC\xD8\xA7\xD8\xB1\xD8\xA9_\xD9\x88_\xD8\xA3\xD9\x82\xD8\xAA\xD8\xB5\xD8\xA7\xD8\xAF/\xD9\x83\xD9\x85\xD8\xA8\xD9\x8A\xD9\x88\xD8\xAA\xD8\xB1_\xD9\x88_\xD8\xA5\xD9\x86\xD8\xAA\xD8\xB1\xD9\x86\xD8\xAA/\xD9\x85\xD8\xAD\xD8\xB1\xD9\x83\xD8\xA7\xD8\xAA_\xD8\xA8\xD8\xAD\xD8\xAB\" TITLE=\"\xD9\x83\xD9\x85\xD8\xA8\xD9\x8A\xD9\x88\xD8\xAA\xD8\xB1 \xD9\x88 \xD8\xA5\xD9\x86\xD8\xAA\xD8\xB1\xD9\x86\xD8\xAA/\xD9\x85\xD8\xAD\xD8\xB1\xD9\x83\xD8\xA7\xD8\xAA \xD8\xA8\xD8\xAD\xD8\xAB\" CID=\"204954\"/>\n\
-      <CAT ID=\"Top/World/Fran\xC3\xA7ais/Informatique/Internet/Recherche/Moteurs_de_recherche/Google\" TITLE=\"Moteurs de recherche/Google\" CID=\"247347\"/>\n\
-      </CATS>\n\
-      </SITE>\n\
-      </DMOZ>\n\
-      <SD>\n\
-      <POPULARITY URL=\"google.com/\" TEXT=\"1\"/>\n\
-      <REACH RANK=\"1\"/>\n\
-      <RANK DELTA=\"+0\"/>\n\
-      </SD>\n\
-      </ALEXA>"
-    http_version: "1.1"
-- !ruby/struct:VCR::HTTPInteraction 
-  request: !ruby/struct:VCR::Request 
+      message: !binary |-
+        T0s=
+    headers:
+      !binary "Y29udGVudC10eXBl":
+      - !binary |-
+        dGV4dC94bWw=
+      !binary "Y29udGVudC1sZW5ndGg=":
+      - !binary |-
+        MjIwMg==
+      !binary "Y29ubmVjdGlvbg==":
+      - !binary |-
+        a2VlcC1hbGl2ZQ==
+    body: !binary |-
+      PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4NCg0KPEFM
+      RVhBIFZFUj0iMC45IiBVUkw9Imdvb2dsZS5jb20vIiBIT01FPSIwIiBBSUQ9
+      Ij0iPg0KPFJMUyBQUkVGSVg9Imh0dHA6Ly8iIG1vcmU9IjU2Ij4KPFJMIEhS
+      RUY9ImFtYXpvbi5jb20vIiBUSVRMRT0iQW1hem9uLmNvbSIvPgo8UkwgSFJF
+      Rj0id2lraXBlZGlhLm9yZy8iIFRJVExFPSJXaWtpcGVkaWEiLz4KPFJMIEhS
+      RUY9Ind3dy55YWhvby5jb20vIiBUSVRMRT0iWWFob28hIi8+CjxSTCBIUkVG
+      PSJ5b3V0dWJlLmNvbS8iIFRJVExFPSJZb3VUdWJlIi8+CjxSTCBIUkVGPSJ5
+      ZWxwLmNvbS8iIFRJVExFPSJZZWxwIi8+CjxSTCBIUkVGPSJzdGF0Y291bnRl
+      ci5jb20vIiBUSVRMRT0iU3RhdENvdW50ZXIuY29tIi8+CjxSTCBIUkVGPSJt
+      eXNwYWNlLmNvbS8iIFRJVExFPSJNeXNwYWNlIi8+CjxSTCBIUkVGPSJsaW5r
+      ZWRpbi5jb20vIiBUSVRMRT0iTGlua2VkSW4iLz4KPFJMIEhSRUY9ImltZGIu
+      Y29tLyIgVElUTEU9IlRoZSBJbnRlcm5ldCBNb3ZpZSBEYXRhYmFzZSAoaW1k
+      YikiLz4KPFJMIEhSRUY9Imdvb2dsZS5jby5pbi8iIFRJVExFPSJHb29nbGUg
+      SW5kaWEiLz4KPFJMIEhSRUY9ImFzay5jb20vIiBUSVRMRT0iYXNrLmNvbS8i
+      Lz4KPC9STFM+CjxTRCBUSVRMRT0iQSIgRkxBR1M9IkRNT1oiIEhPU1Q9Imdv
+      b2dsZS5jb20iPgo8VElUTEUgVEVYVD0iR29vZ2xlICAgICAgICAgICAgICAg
+      ICAgICAgICAgICAgICAiLz4KPEFERFIgU1RSRUVUPSIiIENJVFk9IiIgU1RB
+      VEU9IiIgWklQPSIiIENPVU5UUlk9IiIgLz4KPENSRUFURUQgREFURT0iMTUt
+      U2VwLTE5OTciIERBWT0iMTUiIE1PTlRIPSIwOSIgWUVBUj0iMTk5NyIvPgo8
+      UEhPTkUgTlVNQkVSPSJ1bmxpc3RlZCIvPgo8T1dORVIgTkFNRT0idW5saXN0
+      ZWQiLz4KPEVNQUlMIEFERFI9ImRucy1hZG1pbkBnb29nbGUuY29tIi8+CjxB
+      TEVYQVBSTyBUSUVSPSJhZHZhbmNlZCIvPgo8TEFORyBMRVg9ImVuIi8+CjxM
+      SU5LU0lOIE5VTT0iNDg1OTgwMSIvPgo8U1BFRUQgVEVYVD0iMTU1MSIgUENU
+      PSI0NSIvPgo8UkVWSUVXUyBBVkc9IjQuNSIgTlVNPSI5MTYiLz4KPENISUxE
+      IFNSQVRJTkc9IjAiLz4KPEFTU09DUz4KPEFTU09DIElEPSJnb29nbGVjb20i
+      Lz48L0FTU09DUz4KPC9TRD4KCjxLRVlXT1JEUz4KPEtFWVdPUkQgVkFMPSJN
+      b3VudGFpbiBWaWV3Ii8+CjwvS0VZV09SRFM+PERNT1o+CjxTSVRFIEJBU0U9
+      Imdvb2dsZS5jb20vIiBUSVRMRT0iR29vZ2xlIiBERVNDPSJFbmFibGVzIHVz
+      ZXJzIHRvIHNlYXJjaCB0aGUgd29ybGQncyBpbmZvcm1hdGlvbiwgaW5jbHVk
+      aW5nIHdlYnBhZ2VzLCBpbWFnZXMsIGFuZCB2aWRlb3MuIE9mZmVycyB1bmlx
+      dWUgZmVhdHVyZXMgYW5kIHNlYXJjaCB0ZWNobm9sb2d5LiI+CjxDQVRTPgo8
+      Q0FUIElEPSJUb3AvQ29tcHV0ZXJzL0ludGVybmV0L1NlYXJjaGluZy9TZWFy
+      Y2hfRW5naW5lcy9Hb29nbGUiIFRJVExFPSJTZWFyY2ggRW5naW5lcy9Hb29n
+      bGUiIENJRD0iMzc0ODIyIi8+CjxDQVQgSUQ9IlRvcC9SZWdpb25hbC9Ob3J0
+      aF9BbWVyaWNhL1VuaXRlZF9TdGF0ZXMvQ2FsaWZvcm5pYS9Mb2NhbGl0aWVz
+      L00vTW91bnRhaW5fVmlldy9CdXNpbmVzc19hbmRfRWNvbm9teS9JbmR1c3Ry
+      aWFsL0NvbXB1dGVyc19hbmRfSW50ZXJuZXQiIFRJVExFPSJJbmR1c3RyaWFs
+      L0NvbXB1dGVycyBhbmQgSW50ZXJuZXQiIENJRD0iNjI1MzY3Ii8+CjxDQVQg
+      SUQ9IlRvcC9Xb3JsZC9BcmFiaWMv2KXZgtmE2YrZhdmA2Yov2KfZhNi02LHZ
+      gl/Yp9mE2KPZiNiz2Lcv2KfZhNiz2LnZiNiv2YrYqS/Yqtis2KfYsdipX9mI
+      X9ij2YLYqti12KfYry/Zg9mF2KjZitmI2KrYsV/ZiF/YpdmG2KrYsdmG2Kov
+      2YXYrdix2YPYp9iqX9io2K3YqyIgVElUTEU9ItmD2YXYqNmK2YjYqtixINmI
+      INil2YbYqtix2YbYqi/Zhdit2LHZg9in2Kog2KjYrdirIiBDSUQ9IjIwNDk1
+      NCIvPgo8Q0FUIElEPSJUb3AvV29ybGQvRnJhbsOnYWlzL0luZm9ybWF0aXF1
+      ZS9JbnRlcm5ldC9SZWNoZXJjaGUvTW90ZXVyc19kZV9yZWNoZXJjaGUvR29v
+      Z2xlIiBUSVRMRT0iTW90ZXVycyBkZSByZWNoZXJjaGUvR29vZ2xlIiBDSUQ9
+      IjI0NzM0NyIvPgo8L0NBVFM+CjwvU0lURT4KPC9ETU9aPgo8U0Q+CjxQT1BV
+      TEFSSVRZIFVSTD0iZ29vZ2xlLmNvbS8iIFRFWFQ9IjEiLz4KPFJFQUNIIFJB
+      Tks9IjEiLz4KPFJBTksgREVMVEE9IiswIi8+CjwvU0Q+CjwvQUxFWEE+
+    http_version: !binary |-
+      MS4x
+- !ruby/struct:VCR::HTTPInteraction
+  request: !ruby/struct:VCR::Request
     method: :get
     uri: http://siteanalytics.compete.com:80/google.com/
     body: 
-    headers: 
-      user-agent: 
+    headers:
+      user-agent:
       - Page Rankr
-  response: !ruby/struct:VCR::Response 
-    status: !ruby/struct:VCR::ResponseStatus 
+  response: !ruby/struct:VCR::Response
+    status: !ruby/struct:VCR::ResponseStatus
       code: 200
-      message: OK
-    headers: 
-      content-type: 
-      - text/html; charset=utf-8
-      content-language: 
-      - en-us
-      server: 
-      - Apache
-      date: 
-      - Thu, 16 Feb 2012 01:36:41 GMT
-      content-length: 
-      - "27621"
-      set-cookie: 
-      - source_panel=us; Domain=.compete.com; Path=/
-      vary: 
-      - Accept-Language,Cookie,User-Agent
-    body: |
-      <!DOCTYPE html>
-      <!-- HOSTNAME: prodweb43
-           DEBUG: False
-           VERSION: 20120213082000
-           COOKIE_DOMAIN: .compete.com -->
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      <!--[if lt IE 7 ]> <html lang="en" class="no-js ie6"> <![endif]-->
-      <!--[if IE 7 ]>    <html lang="en" class="no-js ie7"> <![endif]-->
-      <!--[if IE 8 ]>    <html lang="en" class="no-js ie8"> <![endif]-->
-      <!--[if IE 9 ]>    <html lang="en" class="no-js ie9"> <![endif]-->
-      <!--[if (gte IE 10)|!(IE)]><!--> <html lang="en" class="no-js"> <!--<![endif]-->
-      <head>
-          
-          
-          
-          <meta charset="utf-8" />
-          <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-      
-          
-          <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-      
-          
-          <meta name="ICBM" content="42.348043, -71.077617" />
-          <meta name="DC.title" content="Compete" />
-      
-          <meta name="description"
-                content=" 
-          
-              See monthly traffic, unique visitors, rank and more for google.com with Compete's free Site Analytics.
-          
-      " />
-          <meta name="keywords"
-                content=" 
-          competitive intelligence, market intelligence, competitive strategy, media planning, website traffic, site traffic, search marketing, audience measurement
-      " />
-      
-          
-          
-          <script src="http://media.compete.com/site_media/thirdparty/modernizr-1.6.min.ver-20120213082000.js"></script>
-      
-          <link rel="shortcut icon" href="/favicon.ico" />
-          <link rel="stylesheet" type="text/css" href="http://media.compete.com/site_media/css/universal/framework.ver-20120213082000.css" media="all" charset="utf-8" />
-          <link rel="stylesheet" type="text/css" href="http://media.compete.com/site_media/css/c/widgets.ver-20120213082000.css" media="all" charset="utf-8" />
-          <link rel="stylesheet" type="text/css" href="http://media.compete.com/site_media/thirdparty/jquery.fancybox-1.3.4/fancybox/jquery.fancybox-compete.ver-20120213082000.css" media="screen" />
-      
-      
-          
-          
-      
-              
-          
-          <link rel="stylesheet" type="text/css" href="http://media.compete.com/site_media/css/free/master_free.ver-20120213082000.css" media="all" charset="utf-8" />
-          <link rel="stylesheet" type="text/css" href="http://media.compete.com/site_media/css/www/dropdown.ver-20120213082000.css" media="all" />
-          <link rel="stylesheet" type="text/css" href="http://media.compete.com/site_media/css/www/popup_help.ver-20120213082000.css" media="all" />
-          <link rel="stylesheet" type="text/css" href="http://media.compete.com/site_media/thirdparty/jquery/theme/ui.all.ver-20120213082000.css" media="all" />
-          <link rel="stylesheet" type="text/css" href="http://media.compete.com/site_media/css/universal/jquery.autocomplete.ver-20120213082000.css" media="all" />
-          <link rel="stylesheet" type="text/css" href="http://media.compete.com/site_media/css/www/jquery.mcdropdown.ver-20120213082000.css" media="all" />
-          <link rel="stylesheet" type="text/css" href="http://media.compete.com/site_media/css/www/tooltip.ver-20120213082000.css" media="all" />
-          <link rel="stylesheet" type="text/css" href="http://media.compete.com/site_media/thirdparty/superfish-1.4.8/css/superfish.ver-20120213082000.css" media="all" />
-      
-          
-             
-          
-              
-                  
-              
-          
-      
-          <!-- text_block Help_Styles -->
-          <style type="text/css">
-        div.ui-dialog div.popup-help-dialog span.definition {
-          font-weight: bold;
-          font-size: 1.2em;
-          color: #333333;
-        }
-      </style>
-      
-      <meta name="verify-v1" content="hzIm6qODZkWAWCero/9RJvI7OkNf3121EmjcGNTASXA=" />
-          <!-- end text_block Help_Styles -->
-      
-          <!-- block stylesheets -->
-          
-          <!-- endblock stylesheets -->
-      
-              
-          
-              
-              <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.js"></script>
-              
-              <script>!window.jQuery && document.write(unescape('%3Cscript src="http://media.compete.com/site_media/thirdparty/jquery/jquery-1.5.2.min.ver-20120213082000.js"%3E%3C/script%3E'));</script>
-          
-          
-          <script type="text/javascript">
-              // Set up universal Compete namespace
-              var $c = $c || {};
-              $c.settings = $c.settings || {};
-              $c.settings.LOG_DEPRECATION_WRAPPING = false;
-              
-              // Bind jQuery to $j to avoid Prototype (which is still hogging $).
-              var $j = jQuery.noConflict();
-          </script>
-      
-          <script type="text/javascript">
-      
-      	var $c = $c || {};
-      	$c.globals = $c.globals || {};
-      	
-          var base_site = 'http://www.compete.com',
-              blog_site = 'http://blog.compete.com',
-              compete_pro_upgrade = 'http://app.compete.com/account-settings/plan-options/',
-              corporare_site = 'http://www.competeinc.com',
-              debug_mode = 'False',
-              lists_site = 'http://app.compete.com/lists',
-              main_site = 'http://www.compete.com',
-              app_site = 'http://app.compete.com',
-              media_host = 'http://media.compete.com',
-              member_site = 'https://app.compete.com',
-              reftools_site = 'http://app.compete.com/referrals',
-              searchtools_site = 'http://app.compete.com/search',
-              secure_main_site = 'https://www.compete.com',
-              snapshot_site = 'http://siteanalytics.compete.com',
-              toolbar_site = '',
-              help_site = 'http://help.compete.com',
-              versionify_string = '20120213082000';
-      
-      	// from now on, add your globals to $c.globals ~fc 10/26/2011
-      	$c.globals.user_source_panel = '';
-      	
-      </script>
-      
-      
-          
-          
-          <script type="text/javascript" src="/jsi18n/main"></script>
-          <script type="text/javascript" src="/jsi18n/custom"></script>
-          
-      
-          <script type="text/javascript" src="http://media.compete.com/site_media/js/c/lang/es5-shim-0.0.4.min.ver-20120213082000.js"></script>
-          <script type="text/javascript" src="http://media.compete.com/site_media/js/c/lang/es5_getter_setter_api.ver-20120213082000.js"></script>
-          <script type="text/javascript" src="http://media.compete.com/site_media/thirdparty/backbone/underscore.ver-20120213082000.js"></script>
-          <script type="text/javascript" src="http://media.compete.com/site_media/thirdparty/backbone/backbone.ver-20120213082000.js"></script>
-          
-          <script type="text/javascript" src="http://media.compete.com/site_media/thirdparty/colorbox/colorbox/jquery.colorbox-min.ver-20120213082000.js"></script>
-          
-          <script type="text/javascript" src="http://media.compete.com/site_media/js/c/Backbone.ver-20120213082000.js"></script>
-          <script type="text/javascript" src="http://media.compete.com/site_media/js/c/widgets.ver-20120213082000.js"></script>
-          <script type="text/javascript" src="http://media.compete.com/site_media/js/c/utils.ver-20120213082000.js"></script>
-          <script type="text/javascript" src="http://media.compete.com/site_media/thirdparty/mbox.ver-20120213082000.js"></script>
-          <script type="text/javascript" src="http://media.compete.com/site_media/thirdparty/jquery.text-overflow.ver-20120213082000.js"></script>
-      
-          
-      
-      <script type="text/javascript" charset="utf-8">
-          var s_account = 'competefree,competemaster';
-      </script>
-      
-      <script type="text/javascript" src="http://media.compete.com/site_media/thirdparty/omniture__s_code.ver-20120213082000.js" charset="utf-8"></script>
-      
-          <script type="text/javascript" src="http://media.compete.com/site_media/js/seaeagle/thirdparty_analytics.ver-20120213082000.js"></script>
-      
-              
-          
-          
-          
-      
-          <script type="text/javascript" src="http://media.compete.com/site_media/thirdparty/prototype/prototype-1.5.0-compressed.ver-20120213082000.js"></script>
-      
-          
-      
-          <script type="text/javascript" src="http://media.compete.com/site_media/js/util.ver-20120213082000.js"></script>
-          <script type="text/javascript" src="http://media.compete.com/site_media/thirdparty/jquery/jquery-ui-compete-1.6rc6.min.ver-20120213082000.js"></script>
-          <script type="text/javascript" src="http://media.compete.com/site_media/thirdparty/jquery/jquery.mcdropdown.ver-20120213082000.js"></script>
-          <script type="text/javascript" src="http://media.compete.com/site_media/thirdparty/jquery/jquery.bgiframe.ver-20120213082000.js"></script>
-          <script type="text/javascript" src="http://media.compete.com/site_media/thirdparty/jquery/tooltip.ver-20120213082000.js"></script>
-          <script type="text/javascript" src="http://media.compete.com/site_media/thirdparty/jquery/tooltip.dynamic.ver-20120213082000.js"></script>
-          <script type="text/javascript" src="http://media.compete.com/site_media/thirdparty/jquery/tooltip.compete.ver-20120213082000.js"></script>
-          <script type="text/javascript" src="http://media.compete.com/site_media/js/seaeagle/json2.ver-20120213082000.js" charset="utf-8"></script>
-          <script type="text/javascript" src="http://media.compete.com/site_media/js/seaeagle/util.ver-20120213082000.js"></script>
-          <script type="text/javascript" src="http://media.compete.com/site_media/js/seaeagle/util_format.ver-20120213082000.js"></script>
-          <script type="text/javascript" src="http://media.compete.com/site_media/js/seaeagle/dropdown.ver-20120213082000.js"></script>
-          <script type="text/javascript" src="http://media.compete.com/site_media/js/seaeagle/master.ver-20120213082000.js"></script>
-          <script type="text/javascript" src="http://media.compete.com/site_media/js/seaeagle/popup_help.ver-20120213082000.js"></script>
-          <script type="text/javascript" src="http://media.compete.com/site_media/js/seaeagle/jquery.autocomplete.pack.ver-20120213082000.js"></script>
-          <script type="text/javascript" src="http://media.compete.com/site_media/js/seaeagle/jquery.competeutils.ver-20120213082000.js"></script>
-          <script type="text/javascript" src="http://media.compete.com/site_media/js/seaeagle/jquery.cookie.ver-20120213082000.js"></script>
-          <script type="text/javascript" src="http://media.compete.com/site_media/js/seaeagle/jquery.html5-placeholder-shim.ver-20120213082000.js"></script>
-          <script type="text/javascript" src="http://media.compete.com/site_media/js/c/app/main_nav.ver-20120213082000.js"></script>
-          <script type="text/javascript" src="http://media.compete.com/site_media/js/number_format/NumberFormat-1.5.4.ver-20120213082000.js"></script>
-          <script type="text/javascript" src="http://media.compete.com/site_media/js/number_format/number_formatter.ver-20120213082000.js"></script>
-      
-          <script type="text/javascript" src="http://media.compete.com/site_media/thirdparty/superfish-1.4.8/js/superfish.ver-20120213082000.js"></script>
-          <script type="text/javascript">
-              // ! TODO: add try_catch block *INSIDE* function() {}
-              $j(document).ready(function() {
-                  // site search
-                  generate_search_dropdown("site_profiles");
-                  update_login_logout_link();
-                  master_load();
-      
-                  new $c.app.mainnav.SourcePanelSelector();
-      
-                  $j('ul.sf-menu').superfish({
-                      animation: {height:'show'}  // slide-down animation 
-                  }); 
-      
-                  // put in a line for everything that needs to be ellipified. this will make Firefox behave
-                  // NOTE: The elements have to be on the page at load for this to work. 
-                  // If not, add the ellipsis() to the script that loads them
-                  $j(".page .content h2").ellipsis();
-                  $j(".page .sidebar .trends li label").ellipsis();
-                  
-                  
-              });
-          </script>
-          
-          <!-- Share This JS -->
-          <script type="text/javascript">var switchTo5x=true;</script><script type="text/javascript" src="http://w.sharethis.com/button/buttons.js"></script><script type="text/javascript">stLight.options({publisher:'34103607-a24d-4dfb-b237-4d07dd6d4cd0'});</script>
-      
-          <!-- block scripts -->
-          
-          <!-- endblock scripts -->
-      
-      <script type="text/javascript" src="http://media.compete.com/site_media/js/seaeagle/amcharts.ver-20120213082000.js"></script>
-          <script type="text/javascript" src="http://media.compete.com/site_media/js/c/free/widgets.ver-20120213082000.js"></script>
-          <script type="text/javascript" src="http://media.compete.com/site_media/js/c/app/research.ver-20120213082000.js"></script>
-          
-          <script type="text/javascript">        
-              $j(document).ready(function() {
-                  /* async chart loader */
-                  var chart = new $c.free.widgets.Chart({
-                      target: $j('#graph'),
-                      width: 575,
-                      height: 275,
-                      site: "google.com",
-                      source_panel: 'us'
-                  });
-                  
-                  var chart_view = new $c.free.widgets.ChartView({
-                      chart: chart,
-                      csv_button: 'csv-export',
-                      save_button: 'graph-image',
-                      embed_button: 'embed-graph'
-                  });
-                  chart_view.render();
-      
-                  /* zoom info initialization */
-                  var zoom_info = new $c.free.widgets.ZoomInfo({
-                      site: "google.com",
-                      el: '#zoominfo'
-                  });
-                  zoom_info.load();
-      
-                  var sites = new $c.free.widgets.SimilarSitesCollection([], {
-                      site: "google.com",
-                      source_panel: 'us'
-                  });
-                  var graph = new $c.free.widgets.BarGraph({
-                      el: $j('#similar-sites'),
-                      collection: sites
-                  });
-      
-                  /* search box initialization */
-                  var initial = $j('#q').val();
-                  $j('#q').focusin(function() {
-                      if($j('#q').val() == initial) {
-                          $j(this).val('');
-                      }
-                  });
-                  $j('#q').focusout(function() {
-                      if($j.trim($j(this).val()) == '') {
-                          $j(this).val(initial);
-                      }
-                  });
-                  
-                  var sa_site_search = new $c.app.research.SearchSiteFree({
-                      search_form: $j("form#sa-search-form"),
-                      input_wrapper_element: $j("#sa-search-input-wrapper"),
-                      submit_element: $j("#sa-search-submit"),
-                      loading_image: "/site_media/images/app/loading/loader_24x24.gif"
-                  });
-      
-                  
-                      var logged_in_as = null;
-                  
-      
-                  /* personalization initialization */
-                  var d = {
-                    site_name: "google.com",
-                    logged_in_as: logged_in_as,
-                    current_source_panel: {"display_abbreviation": "us", "panel_name": "us", "image_url": "http://media.compete.com/site_media/images/icons/flag_us.gif", "display_name": "United States"}
-                  };
-      
-                  var auth_model = new $c.free.widgets.FreeLoginModel(d);
-                  var links_opts = { model: auth_model };
-                  var links_view = new $c.free.widgets.FreeAccountLinksView(links_opts);
-                  var sites_view = new $c.free.widgets.FollowSiteButtonView(links_opts);
-                  var manage_view = new $c.free.widgets.ManageSitesListButtonView(links_opts);
-      
-                  /* help tooltip */
-                  var help_tooltip = new $c.widgets.HoverBalloonSingleton(
-                      { hide_delay: 200 }
-                      );
-                  help_tooltip.template = _.template($j('#template-help-tooltip').html());
-                  help_tooltip.attach(null, $j('span.help'));
-              });
-              
-          </script> 
-          
-          
-          
-      
-      
-          <title>
-          google.com 174,124,771.0
-          
-              UVs for January 2012
-          
-       | Compete</title>
-      
-          <!-- block head -->
-          
-          <!-- endblock head -->
-          
-      
-          
-      
-      </head>
-      
-          <body>
-              
-                  <div class="header">
-                      <div class="wrapper">
-                          <p class="subscribe"><a href="http://www.compete.com/plans/">Subscribe to Compete PRO</a></p>
-                          <ul class="nav main">
-                                  <li class="logo"><a href="http://www.compete.com"><img src="http://media.compete.com/site_media/images/free/siteanalytics_logo.png" width="228" height="26" alt="Site Analytics"></a></li>
-                                  <li><a href="http://www.compete.com">Compete.com</a></li>
-                                  <li><a href="http://www.compete.com/pro/">Compete PRO</a></li>
-                                  <li><a href="http://www.compete.com/products/">Products</a></li>
-                                  <li><a href="http://www.compete.com/expertise/">Expertise</a></li>
-                                  <li><a href="http://www.compete.com/resources/methodology/">Our Data</a></li>
-                                  <li class="last"><a href="http://blog.compete.com">Pulse Blog</a></li>
-                              </ul>
-                      </div>
-                  </div>
-              
-              <span class="competeXL">
-              <!-- The Compete XL Code -->
-      <script>
-      var __compete_code_control = {
-          measure_traffic_asynchronously: false
-      };
-      </script>
-      <!-- Compete XL Code for compete.com -->
-      <script type="text/javascript">
-      __compete_code = '4b6705ef8ded7e9cb0067318dde11c3e';
-      /* Set control variables below this line. */ 
-      </script>
-      <script type="text/javascript" src="//c.compete.com/bootstrap/s/4b6705ef8ded7e9cb0067318dde11c3e/compete-com/bootstrap.js"></script>
-      <noscript>
-          <img width="1" height="1" src="https://ssl-compete-com-4b6705.c-col.com"/>
-      </noscript>
-      <!-- End of the Compete Code -->
-              </span>
-      
-              
-      <div class="wrapper">
-          <div class="login-block">
-              <p class="membership"><a href="javascript:void(0)">Login</a> or <a href="javascript:void(0)">Sign Up</a> for Site Analytics to follow sites</p>
-              <p class="get-pro">Get the whole story with a Compete PRO subscription.<a href="http://www.compete.com/pro/features/">Learn More</a></p>
-          </div>
-          <div class="page clearfix">
-              <div class="head">
-                  <div class="interact-wrap">
-                      <ul class="nav interact">
-                          <li id="follow" class="follow"><a href="javascript:void(0)">Follow This Site</a></li>
-                          <li id="manage" class="manage" style="display:none"><a href="javascript:void(0)">Manage List</a></li>
-                      </ul>
-                  </div>
-                  <div class="stretcher">
-                      <div class="inner share">
-                          
-                          <span class='st_twitter_custom' st_title="google.com 174,124,771.0 UVs for January 2012 from @compete"><img src="http://media.compete.com/site_media/images/free/fsp_twitter.png" width="22" height="22" alt="Twitter"></span>
-                          
-                          <span class='st_facebook_custom' ><img src="http://media.compete.com/site_media/images/free/fsp_facebook.png" width="22" height="22" alt="Facebook"></span>
-                          <span class='st_linkedin_custom' ><img src="http://media.compete.com/site_media/images/free/fsp_linkedin.png" width="22" height="22" alt="LinkedIn"></span>
-                          <span class='st_email_custom' ><img src="http://media.compete.com/site_media/images/free/fsp_mail.png" width="22" height="22" alt="Email"></span>
-                      </div>
-                  </div>
-                  <div class="search">
-                      <form id="sa-search-form">
-                          <input name="t" type="hidden" />
-                          <label>http://</label>
-                          <div id="sa-search-input-wrapper" class="search-wrapper">
-                              <input name="q" type="text" id="sa-search-input" class="at-sa-search-input" />
-                          </div>
-                          <div class="submit-wrapper">
-                              <input type="submit" value="GO" id="sa-search-submit" class="at-sa-search-submit" />
-                          </div>
-                      </form>
-                  </div>
-                  
-                  <ul class="nav tools">
-                      <li class="save"><a href="javascript:void(0)" id="graph-image" class="at_save">Save Graph Image</a></li>
-                      <li class="export"><a id="csv-export" href="javascript:void(0)" target="" class="at_export">Export CSV</a></li>
-                      <li class="embed"><a href="javascript:void(0)" id="embed-graph" class="at_embed">Embed Graph</a></li>
-                  </ul>
-                  <ul class="nav filter">
-                      
-      
-      
-          <script type="text/javascript" src="http://media.compete.com/site_media/js/c/app/multiple_feeds.ver-20120213082000.js"></script>
-      
-      
-      
-      <li class="date" id="dataset-date-container">
-          
-          <span id='latest_datatset_month'>
-          January 2012
-          </span>
-      </li>
-      
-      
-      
-      
-          <li class="country" id="source-panel-container">
-              
-                  <span class="label" id="current-source-panel">
-                      <span class="us name">United States</span>
-                  </span>
-              
-          </li>
-      
-                  </ul>
-              </div>
-              <div class="sidebar">
-                  <div class="section score">
-                      <h3><span class="help"><img src="http://media.compete.com/site_media/images/free/icon-help-grey.png" width="21" height="21" alt="?"></span>Unique Visitors</h3>
-                      <h4>174,124,771</h4>
-                      <ul>
-                          <li class="m2m">
-                          <span class="
-                          delta-negative number">
-                              -384,471
-                          </span> | <span class="delta-negative number">
-                              -0.22%
-                          </span></li>
-                          <li class="y2y"><span class="delta-positive number">28,981,244</span> | <span class="delta-positive number">19.97%</span></li>
-                      </ul>
-                      <h3>Rank <span class="note">(by UVs)</span></h3>
-                      <h4>1</h4>
-                      <ul>
-                          <li class="m2m"><span class="rank">1</span> | <span class=" move">0</span></li>
-                          <li class="y2y"><span class="rank">1</span> | <span class=" move">0</span></li>
-                      </ul>
-                  </div>
-                  <div class="section trends">
-                      <h3>Competitive Rank <span class="note">(UVs)</span></h3>
-                      <ol id='similar-sites'>
-                          <li class="partner-link"><a href="http://www.similarsites.com/site/google.com" target="_blank">Looking for sites similar to<br /><span class="site">google.com</span><br />on SimilarSite.com ...</a></li>
-                      </ol>
-                  </div>
-              </div>
-              <div class="content">
-                  <div class="section">
-                      
-                      <ul class="nav breadcrumbs">
-                          <li>Web Portals and Search</li>
-                          <li class="last">General Portals and Search</li>
-                      </ul>
-                      
-                      <h2><img width="16" height="16" alt="Logo" src="http://g.etfv.co/http://google.com"> google.com</h2>
-                      <div id="graph"></div>
-                  </div>
-                  <div class="section"> <span id="zoominfo" class="zoominfo"> </span> </div>
-              </div>
-          </div>
-      </div>
-      <script id="template-help-tooltip" type="text/template">
-          <div class="pointer">
-              <div class="message">
-                  <p>Unique Visitors counts how many unique individual people visited this site per month. Visitors are counted once, no matter how many times they visit a site in a month.  Counts represent traffic from the United States only.</p>
-                  <p>Rank measures the popularity of this site based on how many Unique Visitors came to the site in a month.  With Rank, lower is better.</p>
-                  <p>Competitive Rank shows where a site ranks in its competitive set measured by Unique Visitors.</p>
-              </div>
-          </div>
-      </script>
-      
-      <!-- Google Code for NEW Site Analytics Home Page Remarketing List -->
-      <script type="text/javascript">
-      /* <![CDATA[ */
-      var google_conversion_id = 1069995145;
-      var google_conversion_language = "en";
-      var google_conversion_format = "3";
-      var google_conversion_color = "666666";
-      var google_conversion_label = "g5IxCJ-C_gIQiamb_gM";
-      var google_conversion_value = 0;
-      /* ]]> */
-      </script>
-      <script type="text/javascript" src="http://www.googleadservices.com/pagead/conversion.js">
-      </script>
-      <noscript>
-      <div style="display:inline;">
-      <img height="1" width="1" style="border-style:none;" alt="" src="http://www.googleadservices.com/pagead/conversion/1069995145/?label=g5IxCJ-C_gIQiamb_gM&amp;guid=ON&amp;script=0"/>
-      </div>
-      </noscript>
-      
-      
-              
-                  <div class="footer">
-                      <p class="copyright">&copy; Copyright to Compete.com - A Kantar Media Company</p>
-                      <ul class="nav utility">
-                          <li><a href="http://www.compete.com">Visit Compete.com</a></li>
-                          <li class="last"><a href="http://www.compete.com/plans/">Subscribe to Compete PRO</a></li>
-                      </ul>
-                  </div>
-              
-      
-              <!-- block tags -->
-              
-                  
-      
-      <script type="text/javascript">  
-        var _gaq = _gaq || [];  
-        _gaq.push(['_setAccount', 'UA-6320717-1']);
-        _gaq.push(['_setDomainName', '.compete.com']);
-        _gaq.push(['_trackPageview']);
-        
-        (function() {
-          var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-          ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-          var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-        })();
-      </script>
-      <script type="text/javascript" charset="utf-8">
-          $j(document).ready(function() {
-              
-      
-              var s_code=s.t();
-              if(s_code) {
-                  document.write(s_code);
-              }
-          });
-      </script>
-      
-      <script language="JavaScript1.1" type="text/javascript">
-          var CQK = "B288EECE",
-              CQP = (("https:" == document.location.protocol) ? "https://" : "http://");
-          document.write(unescape("%3Cscript language=\"JavaScript1.1\" type=\"text/javascript\" src=\""+CQP+"js.clickequations.net/CLEQ_"+CQK+".js\" %3E%3C/script%3E" ));
-      </script>
-      
-      <script type="text/javascript">
-        document.write(unescape("%3Cscript src='" + ((document.location.protocol=="https:")?"https:":"http:") + "//snapabug.appspot.com/snapabug.js' type='text/javascript'%3E%3C/script%3E"));</script><script type="text/javascript">
-        //SnapABug.addButton('4816ca29-9130-4045-b08e-5a4de935ff4b',"0","55%");
-        SnapABug.setDomain('.compete.com');
-        SnapABug.init('4816ca29-9130-4045-b08e-5a4de935ff4b');
-      </script>
-      
-      
-      <script type="text/javascript">
-          // NOTE: If 4q ever supports cross subdomain cookies we can get rid of all this!
-          $j(document).ready(function() {
-              $j('#ipeL, #invL').live('click', function() {
-                  $j.cookie('suppress_4q', 1, {expires: 30, path: '/', domain: '.compete.com'});
-              });
-              
-              if(!$j.cookie('suppress_4q')) {
-                  var protocol = ("https:" == document.location.protocol ? "https://" : "http://");
-                  
-                  var fourq = document.createElement('script');
-                  fourq.setAttribute('type', 'text/javascript');
-                  fourq.setAttribute('src', protocol + '4qinvite.4q.iperceptions.com/1.aspx?sdfc=1b3a8f93-36734-fb3cb395-5ed4-429c-aab9-babc0a0a2015&lID=1&loc=4Q-WEB2');
-                  fourq.setAttribute('defer', 'defer');
-                  document.getElementsByTagName('head')[0].appendChild(fourq);
-              }
-              
-          });
-      </script>
-      
-      
-      
-              
-              <!-- endblock tags -->
-      
-              
-      
-              <!-- block ie6_warning -->
-              
-                  <div id="ie6-warning" class="hidden">
-                      <div id="ie6-warning-inner">
-      
-          <div class="left">
-              <p>Our site may not run like it should in Internet Explorer 6.  For a better experience, please upgrade your browser:</p>
-      
-              <ul>
-                  <li class="firefox"><a href="http://www.firefox.com"><span>firefox</span></a></li>
-                  <li class="ie"><a href="http://www.microsoft.com/windows/internet-explorer/default.aspx"><span>ie 8</span></a></li>
-                  <li class="chrome"><a href="http://www.google.com/chrome"><span>chrome</span></a></li>
-              </ul>
-          </div>
-          
-          <a href="#" onclick="hide_ie6_warning();" id="close-button">Don't show me this message again</a>
-      </div>
-                  </div>
-              
-              <!-- endblock ie6_warning -->
-      
-          </body>
-      
-      </html>
-
-    http_version: "1.1"
-- !ruby/struct:VCR::HTTPInteraction 
-  request: !ruby/struct:VCR::Request 
+      message: !binary |-
+        T0s=
+    headers:
+      !binary "ZGF0ZQ==":
+      - !binary |-
+        TW9uLCAwMiBBcHIgMjAxMiAyMzo1MTowOSBHTVQ=
+      !binary "c2VydmVy":
+      - !binary |-
+        QXBhY2hl
+      !binary "dmFyeQ==":
+      - !binary |-
+        QWNjZXB0LUxhbmd1YWdlLENvb2tpZSxVc2VyLUFnZW50
+      !binary "Y29udGVudC1sZW5ndGg=":
+      - !binary |-
+        MjcxMDI=
+      !binary "Y29udGVudC1sYW5ndWFnZQ==":
+      - !binary |-
+        ZW4tdXM=
+      !binary "c2V0LWNvb2tpZQ==":
+      - !binary |-
+        c291cmNlX3BhbmVsPXVzOyBEb21haW49LmNvbXBldGUuY29tOyBQYXRoPS8=
+      !binary "Y29udGVudC10eXBl":
+      - !binary |-
+        dGV4dC9odG1sOyBjaGFyc2V0PXV0Zi04
+    body: !binary |-
+      PCFET0NUWVBFIGh0bWw+CjwhLS0gSE9TVE5BTUU6IHByb2R3ZWI0MQogICAg
+      IERFQlVHOiBGYWxzZQogICAgIFZFUlNJT046IDIwMTIwMzEzMDc0MjAwCiAg
+      ICAgQ09PS0lFX0RPTUFJTjogLmNvbXBldGUuY29tIC0tPgoKCgoKCgoKCgo8
+      IS0tW2lmIGx0IElFIDcgXT4gPGh0bWwgbGFuZz0iZW4iIGNsYXNzPSJuby1q
+      cyBpZTYiPiA8IVtlbmRpZl0tLT4KPCEtLVtpZiBJRSA3IF0+ICAgIDxodG1s
+      IGxhbmc9ImVuIiBjbGFzcz0ibm8tanMgaWU3Ij4gPCFbZW5kaWZdLS0+Cjwh
+      LS1baWYgSUUgOCBdPiAgICA8aHRtbCBsYW5nPSJlbiIgY2xhc3M9Im5vLWpz
+      IGllOCI+IDwhW2VuZGlmXS0tPgo8IS0tW2lmIElFIDkgXT4gICAgPGh0bWwg
+      bGFuZz0iZW4iIGNsYXNzPSJuby1qcyBpZTkiPiA8IVtlbmRpZl0tLT4KPCEt
+      LVtpZiAoZ3RlIElFIDEwKXwhKElFKV0+PCEtLT4gPGh0bWwgbGFuZz0iZW4i
+      IGNsYXNzPSJuby1qcyI+IDwhLS08IVtlbmRpZl0tLT4KPGhlYWQ+CiAgICAK
+      ICAgIAogICAgCiAgICA8bWV0YSBjaGFyc2V0PSJ1dGYtOCIgLz4KICAgIDxt
+      ZXRhIGh0dHAtZXF1aXY9IlgtVUEtQ29tcGF0aWJsZSIgY29udGVudD0iSUU9
+      ZWRnZSxjaHJvbWU9MSIgLz4KCiAgICAKICAgIDxtZXRhIG5hbWU9InZpZXdw
+      b3J0IiBjb250ZW50PSJ3aWR0aD1kZXZpY2Utd2lkdGgsIGluaXRpYWwtc2Nh
+      bGU9MS4wIiAvPgoKICAgIAogICAgPG1ldGEgbmFtZT0iSUNCTSIgY29udGVu
+      dD0iNDIuMzQ4MDQzLCAtNzEuMDc3NjE3IiAvPgogICAgPG1ldGEgbmFtZT0i
+      REMudGl0bGUiIGNvbnRlbnQ9IkNvbXBldGUiIC8+CgogICAgPG1ldGEgbmFt
+      ZT0iZGVzY3JpcHRpb24iCiAgICAgICAgICBjb250ZW50PSIgCiAgICBTZWUg
+      bW9udGhseSB0cmFmZmljLCB1bmlxdWUgdmlzaXRvcnMsIHJhbmsgYW5kIG1v
+      cmUgZm9yIGdvb2dsZS5jb20gd2l0aCBDb21wZXRlJ3MgZnJlZSBTaXRlIEFu
+      YWx5dGljcy4KIiAvPgogICAgPG1ldGEgbmFtZT0ia2V5d29yZHMiCiAgICAg
+      ICAgICBjb250ZW50PSIgCiAgICBjb21wZXRpdGl2ZSBpbnRlbGxpZ2VuY2Us
+      IG1hcmtldCBpbnRlbGxpZ2VuY2UsIGNvbXBldGl0aXZlIHN0cmF0ZWd5LCBt
+      ZWRpYSBwbGFubmluZywgd2Vic2l0ZSB0cmFmZmljLCBzaXRlIHRyYWZmaWMs
+      IHNlYXJjaCBtYXJrZXRpbmcsIGF1ZGllbmNlIG1lYXN1cmVtZW50CiIgLz4K
+      CiAgICAKICAgIAogICAgPHNjcmlwdCBzcmM9Imh0dHA6Ly9tZWRpYS5jb21w
+      ZXRlLmNvbS9zaXRlX21lZGlhL3RoaXJkcGFydHkvbW9kZXJuaXpyLTEuNi5t
+      aW4udmVyLTIwMTIwMzEzMDc0MjAwLmpzIj48L3NjcmlwdD4KCiAgICA8bGlu
+      ayByZWw9InNob3J0Y3V0IGljb24iIGhyZWY9Ii9mYXZpY29uLmljbyIgLz4K
+      ICAgIDxsaW5rIHJlbD0ic3R5bGVzaGVldCIgdHlwZT0idGV4dC9jc3MiIGhy
+      ZWY9Imh0dHA6Ly9tZWRpYS5jb21wZXRlLmNvbS9zaXRlX21lZGlhL2Nzcy91
+      bml2ZXJzYWwvZnJhbWV3b3JrLnZlci0yMDEyMDMxMzA3NDIwMC5jc3MiIG1l
+      ZGlhPSJhbGwiIGNoYXJzZXQ9InV0Zi04IiAvPgogICAgPGxpbmsgcmVsPSJz
+      dHlsZXNoZWV0IiB0eXBlPSJ0ZXh0L2NzcyIgaHJlZj0iaHR0cDovL21lZGlh
+      LmNvbXBldGUuY29tL3NpdGVfbWVkaWEvY3NzL2Mvd2lkZ2V0cy52ZXItMjAx
+      MjAzMTMwNzQyMDAuY3NzIiBtZWRpYT0iYWxsIiBjaGFyc2V0PSJ1dGYtOCIg
+      Lz4KICAgIDxsaW5rIHJlbD0ic3R5bGVzaGVldCIgdHlwZT0idGV4dC9jc3Mi
+      IGhyZWY9Imh0dHA6Ly9tZWRpYS5jb21wZXRlLmNvbS9zaXRlX21lZGlhL3Ro
+      aXJkcGFydHkvanF1ZXJ5LmZhbmN5Ym94LTEuMy40L2ZhbmN5Ym94L2pxdWVy
+      eS5mYW5jeWJveC1jb21wZXRlLnZlci0yMDEyMDMxMzA3NDIwMC5jc3MiIG1l
+      ZGlhPSJzY3JlZW4iIC8+CgoKICAgIAogICAgCgogICAgICAgIAogICAgCiAg
+      ICA8bGluayByZWw9InN0eWxlc2hlZXQiIHR5cGU9InRleHQvY3NzIiBocmVm
+      PSJodHRwOi8vbWVkaWEuY29tcGV0ZS5jb20vc2l0ZV9tZWRpYS9jc3MvZnJl
+      ZS9tYXN0ZXJfZnJlZS52ZXItMjAxMjAzMTMwNzQyMDAuY3NzIiBtZWRpYT0i
+      YWxsIiBjaGFyc2V0PSJ1dGYtOCIgLz4KICAgIDxsaW5rIHJlbD0ic3R5bGVz
+      aGVldCIgdHlwZT0idGV4dC9jc3MiIGhyZWY9Imh0dHA6Ly9tZWRpYS5jb21w
+      ZXRlLmNvbS9zaXRlX21lZGlhL2Nzcy93d3cvZHJvcGRvd24udmVyLTIwMTIw
+      MzEzMDc0MjAwLmNzcyIgbWVkaWE9ImFsbCIgLz4KICAgIDxsaW5rIHJlbD0i
+      c3R5bGVzaGVldCIgdHlwZT0idGV4dC9jc3MiIGhyZWY9Imh0dHA6Ly9tZWRp
+      YS5jb21wZXRlLmNvbS9zaXRlX21lZGlhL2Nzcy93d3cvcG9wdXBfaGVscC52
+      ZXItMjAxMjAzMTMwNzQyMDAuY3NzIiBtZWRpYT0iYWxsIiAvPgogICAgPGxp
+      bmsgcmVsPSJzdHlsZXNoZWV0IiB0eXBlPSJ0ZXh0L2NzcyIgaHJlZj0iaHR0
+      cDovL21lZGlhLmNvbXBldGUuY29tL3NpdGVfbWVkaWEvdGhpcmRwYXJ0eS9q
+      cXVlcnkvdGhlbWUvdWkuYWxsLnZlci0yMDEyMDMxMzA3NDIwMC5jc3MiIG1l
+      ZGlhPSJhbGwiIC8+CiAgICA8bGluayByZWw9InN0eWxlc2hlZXQiIHR5cGU9
+      InRleHQvY3NzIiBocmVmPSJodHRwOi8vbWVkaWEuY29tcGV0ZS5jb20vc2l0
+      ZV9tZWRpYS9jc3MvdW5pdmVyc2FsL2pxdWVyeS5hdXRvY29tcGxldGUudmVy
+      LTIwMTIwMzEzMDc0MjAwLmNzcyIgbWVkaWE9ImFsbCIgLz4KICAgIDxsaW5r
+      IHJlbD0ic3R5bGVzaGVldCIgdHlwZT0idGV4dC9jc3MiIGhyZWY9Imh0dHA6
+      Ly9tZWRpYS5jb21wZXRlLmNvbS9zaXRlX21lZGlhL2Nzcy93d3cvanF1ZXJ5
+      Lm1jZHJvcGRvd24udmVyLTIwMTIwMzEzMDc0MjAwLmNzcyIgbWVkaWE9ImFs
+      bCIgLz4KICAgIDxsaW5rIHJlbD0ic3R5bGVzaGVldCIgdHlwZT0idGV4dC9j
+      c3MiIGhyZWY9Imh0dHA6Ly9tZWRpYS5jb21wZXRlLmNvbS9zaXRlX21lZGlh
+      L2Nzcy93d3cvdG9vbHRpcC52ZXItMjAxMjAzMTMwNzQyMDAuY3NzIiBtZWRp
+      YT0iYWxsIiAvPgogICAgPGxpbmsgcmVsPSJzdHlsZXNoZWV0IiB0eXBlPSJ0
+      ZXh0L2NzcyIgaHJlZj0iaHR0cDovL21lZGlhLmNvbXBldGUuY29tL3NpdGVf
+      bWVkaWEvdGhpcmRwYXJ0eS9zdXBlcmZpc2gtMS40LjgvY3NzL3N1cGVyZmlz
+      aC52ZXItMjAxMjAzMTMwNzQyMDAuY3NzIiBtZWRpYT0iYWxsIiAvPgoKICAg
+      IAogICAgICAgCiAgICAKICAgICAgICAKICAgICAgICAgICAgCiAgICAgICAg
+      CiAgICAKCiAgICA8IS0tIHRleHRfYmxvY2sgSGVscF9TdHlsZXMgLS0+CiAg
+      ICA8c3R5bGUgdHlwZT0idGV4dC9jc3MiPg0KICBkaXYudWktZGlhbG9nIGRp
+      di5wb3B1cC1oZWxwLWRpYWxvZyBzcGFuLmRlZmluaXRpb24gew0KICAgIGZv
+      bnQtd2VpZ2h0OiBib2xkOw0KICAgIGZvbnQtc2l6ZTogMS4yZW07DQogICAg
+      Y29sb3I6ICMzMzMzMzM7DQogIH0NCjwvc3R5bGU+DQoNCjxtZXRhIG5hbWU9
+      InZlcmlmeS12MSIgY29udGVudD0iaHpJbTZxT0Raa1dBV0Nlcm8vOVJKdkk3
+      T2tOZjMxMjFFbWpjR05UQVNYQT0iIC8+CiAgICA8IS0tIGVuZCB0ZXh0X2Js
+      b2NrIEhlbHBfU3R5bGVzIC0tPgoKICAgIDwhLS0gYmxvY2sgc3R5bGVzaGVl
+      dHMgLS0+CiAgICAKICAgIDwhLS0gZW5kYmxvY2sgc3R5bGVzaGVldHMgLS0+
+      CgogICAgICAgIAogICAgCiAgICAgICAgCiAgICAgICAgPHNjcmlwdCBzcmM9
+      Imh0dHA6Ly9hamF4Lmdvb2dsZWFwaXMuY29tL2FqYXgvbGlicy9qcXVlcnkv
+      MS41LjIvanF1ZXJ5LmpzIj48L3NjcmlwdD4KICAgICAgICAKICAgICAgICA8
+      c2NyaXB0PiF3aW5kb3cualF1ZXJ5ICYmIGRvY3VtZW50LndyaXRlKHVuZXNj
+      YXBlKCclM0NzY3JpcHQgc3JjPSJodHRwOi8vbWVkaWEuY29tcGV0ZS5jb20v
+      c2l0ZV9tZWRpYS90aGlyZHBhcnR5L2pxdWVyeS9qcXVlcnktMS41LjIubWlu
+      LnZlci0yMDEyMDMxMzA3NDIwMC5qcyIlM0UlM0Mvc2NyaXB0JTNFJykpOzwv
+      c2NyaXB0PgogICAgCiAgICAKICAgIDxzY3JpcHQgdHlwZT0idGV4dC9qYXZh
+      c2NyaXB0Ij4KICAgICAgICAvLyBTZXQgdXAgdW5pdmVyc2FsIENvbXBldGUg
+      bmFtZXNwYWNlCiAgICAgICAgdmFyICRjID0gJGMgfHwge307CiAgICAgICAg
+      JGMuc2V0dGluZ3MgPSAkYy5zZXR0aW5ncyB8fCB7fTsKICAgICAgICAkYy5z
+      ZXR0aW5ncy5MT0dfREVQUkVDQVRJT05fV1JBUFBJTkcgPSBmYWxzZTsKICAg
+      ICAgICAKICAgICAgICAvLyBCaW5kIGpRdWVyeSB0byAkaiB0byBhdm9pZCBQ
+      cm90b3R5cGUgKHdoaWNoIGlzIHN0aWxsIGhvZ2dpbmcgJCkuCiAgICAgICAg
+      dmFyICRqID0galF1ZXJ5Lm5vQ29uZmxpY3QoKTsKICAgIDwvc2NyaXB0PgoK
+      ICAgIDxzY3JpcHQgdHlwZT0idGV4dC9qYXZhc2NyaXB0Ij4KCgl2YXIgJGMg
+      PSAkYyB8fCB7fTsKCSRjLmdsb2JhbHMgPSAkYy5nbG9iYWxzIHx8IHt9OwoJ
+      CiAgICB2YXIgYmFzZV9zaXRlID0gJ2h0dHA6Ly93d3cuY29tcGV0ZS5jb20n
+      LAogICAgICAgIGJsb2dfc2l0ZSA9ICdodHRwOi8vYmxvZy5jb21wZXRlLmNv
+      bScsCiAgICAgICAgY29tcGV0ZV9wcm9fdXBncmFkZSA9ICdodHRwOi8vYXBw
+      LmNvbXBldGUuY29tL2FjY291bnQtc2V0dGluZ3MvcGxhbi1vcHRpb25zLycs
+      CiAgICAgICAgY29ycG9yYXJlX3NpdGUgPSAnaHR0cDovL3d3dy5jb21wZXRl
+      aW5jLmNvbScsCiAgICAgICAgZGVidWdfbW9kZSA9ICdGYWxzZScsCiAgICAg
+      ICAgbGlzdHNfc2l0ZSA9ICdodHRwOi8vYXBwLmNvbXBldGUuY29tL2xpc3Rz
+      JywKICAgICAgICBtYWluX3NpdGUgPSAnaHR0cDovL3d3dy5jb21wZXRlLmNv
+      bScsCiAgICAgICAgYXBwX3NpdGUgPSAnaHR0cDovL2FwcC5jb21wZXRlLmNv
+      bScsCiAgICAgICAgbWVkaWFfaG9zdCA9ICdodHRwOi8vbWVkaWEuY29tcGV0
+      ZS5jb20nLAogICAgICAgIG1lbWJlcl9zaXRlID0gJ2h0dHBzOi8vYXBwLmNv
+      bXBldGUuY29tJywKICAgICAgICByZWZ0b29sc19zaXRlID0gJ2h0dHA6Ly9h
+      cHAuY29tcGV0ZS5jb20vcmVmZXJyYWxzJywKICAgICAgICBzZWFyY2h0b29s
+      c19zaXRlID0gJ2h0dHA6Ly9hcHAuY29tcGV0ZS5jb20vc2VhcmNoJywKICAg
+      ICAgICBzZWN1cmVfbWFpbl9zaXRlID0gJ2h0dHBzOi8vd3d3LmNvbXBldGUu
+      Y29tJywKICAgICAgICBzbmFwc2hvdF9zaXRlID0gJ2h0dHA6Ly9zaXRlYW5h
+      bHl0aWNzLmNvbXBldGUuY29tJywKICAgICAgICB0b29sYmFyX3NpdGUgPSAn
+      JywKICAgICAgICBoZWxwX3NpdGUgPSAnaHR0cDovL2hlbHAuY29tcGV0ZS5j
+      b20nLAogICAgICAgIHZlcnNpb25pZnlfc3RyaW5nID0gJzIwMTIwMzEzMDc0
+      MjAwJzsKCgkvLyBmcm9tIG5vdyBvbiwgYWRkIHlvdXIgZ2xvYmFscyB0byAk
+      Yy5nbG9iYWxzIH5mYyAxMC8yNi8yMDExCgkkYy5nbG9iYWxzLnVzZXJfc291
+      cmNlX3BhbmVsID0gJyc7CgkKPC9zY3JpcHQ+CgoKICAgIAogICAgCiAgICA8
+      c2NyaXB0IHR5cGU9InRleHQvamF2YXNjcmlwdCIgc3JjPSIvanNpMThuL21h
+      aW4iPjwvc2NyaXB0PgogICAgPHNjcmlwdCB0eXBlPSJ0ZXh0L2phdmFzY3Jp
+      cHQiIHNyYz0iL2pzaTE4bi9jdXN0b20iPjwvc2NyaXB0PgogICAgCgogICAg
+      PHNjcmlwdCB0eXBlPSJ0ZXh0L2phdmFzY3JpcHQiIHNyYz0iaHR0cDovL21l
+      ZGlhLmNvbXBldGUuY29tL3NpdGVfbWVkaWEvanMvYy9sYW5nL2VzNS1zaGlt
+      LTAuMC40Lm1pbi52ZXItMjAxMjAzMTMwNzQyMDAuanMiPjwvc2NyaXB0Pgog
+      ICAgPHNjcmlwdCB0eXBlPSJ0ZXh0L2phdmFzY3JpcHQiIHNyYz0iaHR0cDov
+      L21lZGlhLmNvbXBldGUuY29tL3NpdGVfbWVkaWEvanMvYy9sYW5nL2VzNV9n
+      ZXR0ZXJfc2V0dGVyX2FwaS52ZXItMjAxMjAzMTMwNzQyMDAuanMiPjwvc2Ny
+      aXB0PgogICAgPHNjcmlwdCB0eXBlPSJ0ZXh0L2phdmFzY3JpcHQiIHNyYz0i
+      aHR0cDovL21lZGlhLmNvbXBldGUuY29tL3NpdGVfbWVkaWEvdGhpcmRwYXJ0
+      eS9iYWNrYm9uZS91bmRlcnNjb3JlLnZlci0yMDEyMDMxMzA3NDIwMC5qcyI+
+      PC9zY3JpcHQ+CiAgICA8c2NyaXB0IHR5cGU9InRleHQvamF2YXNjcmlwdCIg
+      c3JjPSJodHRwOi8vbWVkaWEuY29tcGV0ZS5jb20vc2l0ZV9tZWRpYS90aGly
+      ZHBhcnR5L2JhY2tib25lL2JhY2tib25lLnZlci0yMDEyMDMxMzA3NDIwMC5q
+      cyI+PC9zY3JpcHQ+CiAgICAKICAgIDxzY3JpcHQgdHlwZT0idGV4dC9qYXZh
+      c2NyaXB0IiBzcmM9Imh0dHA6Ly9tZWRpYS5jb21wZXRlLmNvbS9zaXRlX21l
+      ZGlhL3RoaXJkcGFydHkvY29sb3Jib3gvY29sb3Jib3gvanF1ZXJ5LmNvbG9y
+      Ym94LW1pbi52ZXItMjAxMjAzMTMwNzQyMDAuanMiPjwvc2NyaXB0PgogICAg
+      CiAgICA8c2NyaXB0IHR5cGU9InRleHQvamF2YXNjcmlwdCIgc3JjPSJodHRw
+      Oi8vbWVkaWEuY29tcGV0ZS5jb20vc2l0ZV9tZWRpYS9qcy9jL0JhY2tib25l
+      LnZlci0yMDEyMDMxMzA3NDIwMC5qcyI+PC9zY3JpcHQ+CiAgICA8c2NyaXB0
+      IHR5cGU9InRleHQvamF2YXNjcmlwdCIgc3JjPSJodHRwOi8vbWVkaWEuY29t
+      cGV0ZS5jb20vc2l0ZV9tZWRpYS9qcy9jL3dpZGdldHMudmVyLTIwMTIwMzEz
+      MDc0MjAwLmpzIj48L3NjcmlwdD4KICAgIDxzY3JpcHQgdHlwZT0idGV4dC9q
+      YXZhc2NyaXB0IiBzcmM9Imh0dHA6Ly9tZWRpYS5jb21wZXRlLmNvbS9zaXRl
+      X21lZGlhL2pzL2MvdXRpbHMudmVyLTIwMTIwMzEzMDc0MjAwLmpzIj48L3Nj
+      cmlwdD4KICAgIDxzY3JpcHQgdHlwZT0idGV4dC9qYXZhc2NyaXB0IiBzcmM9
+      Imh0dHA6Ly9tZWRpYS5jb21wZXRlLmNvbS9zaXRlX21lZGlhL3RoaXJkcGFy
+      dHkvbWJveC52ZXItMjAxMjAzMTMwNzQyMDAuanMiPjwvc2NyaXB0PgogICAg
+      PHNjcmlwdCB0eXBlPSJ0ZXh0L2phdmFzY3JpcHQiIHNyYz0iaHR0cDovL21l
+      ZGlhLmNvbXBldGUuY29tL3NpdGVfbWVkaWEvdGhpcmRwYXJ0eS9qcXVlcnku
+      dGV4dC1vdmVyZmxvdy52ZXItMjAxMjAzMTMwNzQyMDAuanMiPjwvc2NyaXB0
+      PgoKICAgIAoKPHNjcmlwdCB0eXBlPSJ0ZXh0L2phdmFzY3JpcHQiIGNoYXJz
+      ZXQ9InV0Zi04Ij4KICAgIHZhciBzX2FjY291bnQgPSAnY29tcGV0ZWZyZWUs
+      Y29tcGV0ZW1hc3Rlcic7Cjwvc2NyaXB0PgoKPHNjcmlwdCB0eXBlPSJ0ZXh0
+      L2phdmFzY3JpcHQiIHNyYz0iaHR0cDovL21lZGlhLmNvbXBldGUuY29tL3Np
+      dGVfbWVkaWEvdGhpcmRwYXJ0eS9vbW5pdHVyZV9fc19jb2RlLnZlci0yMDEy
+      MDMxMzA3NDIwMC5qcyIgY2hhcnNldD0idXRmLTgiPjwvc2NyaXB0PgoKICAg
+      IDxzY3JpcHQgdHlwZT0idGV4dC9qYXZhc2NyaXB0IiBzcmM9Imh0dHA6Ly9t
+      ZWRpYS5jb21wZXRlLmNvbS9zaXRlX21lZGlhL2pzL3NlYWVhZ2xlL3RoaXJk
+      cGFydHlfYW5hbHl0aWNzLnZlci0yMDEyMDMxMzA3NDIwMC5qcyI+PC9zY3Jp
+      cHQ+CgogICAgICAgIAogICAgCiAgICAKICAgIAoKICAgIDxzY3JpcHQgdHlw
+      ZT0idGV4dC9qYXZhc2NyaXB0IiBzcmM9Imh0dHA6Ly9tZWRpYS5jb21wZXRl
+      LmNvbS9zaXRlX21lZGlhL3RoaXJkcGFydHkvcHJvdG90eXBlL3Byb3RvdHlw
+      ZS0xLjUuMC1jb21wcmVzc2VkLnZlci0yMDEyMDMxMzA3NDIwMC5qcyI+PC9z
+      Y3JpcHQ+CgogICAgCgogICAgPHNjcmlwdCB0eXBlPSJ0ZXh0L2phdmFzY3Jp
+      cHQiIHNyYz0iaHR0cDovL21lZGlhLmNvbXBldGUuY29tL3NpdGVfbWVkaWEv
+      anMvdXRpbC52ZXItMjAxMjAzMTMwNzQyMDAuanMiPjwvc2NyaXB0PgogICAg
+      PHNjcmlwdCB0eXBlPSJ0ZXh0L2phdmFzY3JpcHQiIHNyYz0iaHR0cDovL21l
+      ZGlhLmNvbXBldGUuY29tL3NpdGVfbWVkaWEvdGhpcmRwYXJ0eS9qcXVlcnkv
+      anF1ZXJ5LXVpLWNvbXBldGUtMS42cmM2Lm1pbi52ZXItMjAxMjAzMTMwNzQy
+      MDAuanMiPjwvc2NyaXB0PgogICAgPHNjcmlwdCB0eXBlPSJ0ZXh0L2phdmFz
+      Y3JpcHQiIHNyYz0iaHR0cDovL21lZGlhLmNvbXBldGUuY29tL3NpdGVfbWVk
+      aWEvdGhpcmRwYXJ0eS9qcXVlcnkvanF1ZXJ5Lm1jZHJvcGRvd24udmVyLTIw
+      MTIwMzEzMDc0MjAwLmpzIj48L3NjcmlwdD4KICAgIDxzY3JpcHQgdHlwZT0i
+      dGV4dC9qYXZhc2NyaXB0IiBzcmM9Imh0dHA6Ly9tZWRpYS5jb21wZXRlLmNv
+      bS9zaXRlX21lZGlhL3RoaXJkcGFydHkvanF1ZXJ5L2pxdWVyeS5iZ2lmcmFt
+      ZS52ZXItMjAxMjAzMTMwNzQyMDAuanMiPjwvc2NyaXB0PgogICAgPHNjcmlw
+      dCB0eXBlPSJ0ZXh0L2phdmFzY3JpcHQiIHNyYz0iaHR0cDovL21lZGlhLmNv
+      bXBldGUuY29tL3NpdGVfbWVkaWEvdGhpcmRwYXJ0eS9qcXVlcnkvdG9vbHRp
+      cC52ZXItMjAxMjAzMTMwNzQyMDAuanMiPjwvc2NyaXB0PgogICAgPHNjcmlw
+      dCB0eXBlPSJ0ZXh0L2phdmFzY3JpcHQiIHNyYz0iaHR0cDovL21lZGlhLmNv
+      bXBldGUuY29tL3NpdGVfbWVkaWEvdGhpcmRwYXJ0eS9qcXVlcnkvdG9vbHRp
+      cC5keW5hbWljLnZlci0yMDEyMDMxMzA3NDIwMC5qcyI+PC9zY3JpcHQ+CiAg
+      ICA8c2NyaXB0IHR5cGU9InRleHQvamF2YXNjcmlwdCIgc3JjPSJodHRwOi8v
+      bWVkaWEuY29tcGV0ZS5jb20vc2l0ZV9tZWRpYS90aGlyZHBhcnR5L2pxdWVy
+      eS90b29sdGlwLmNvbXBldGUudmVyLTIwMTIwMzEzMDc0MjAwLmpzIj48L3Nj
+      cmlwdD4KICAgIDxzY3JpcHQgdHlwZT0idGV4dC9qYXZhc2NyaXB0IiBzcmM9
+      Imh0dHA6Ly9tZWRpYS5jb21wZXRlLmNvbS9zaXRlX21lZGlhL2pzL3NlYWVh
+      Z2xlL2pzb24yLnZlci0yMDEyMDMxMzA3NDIwMC5qcyIgY2hhcnNldD0idXRm
+      LTgiPjwvc2NyaXB0PgogICAgPHNjcmlwdCB0eXBlPSJ0ZXh0L2phdmFzY3Jp
+      cHQiIHNyYz0iaHR0cDovL21lZGlhLmNvbXBldGUuY29tL3NpdGVfbWVkaWEv
+      anMvc2VhZWFnbGUvdXRpbC52ZXItMjAxMjAzMTMwNzQyMDAuanMiPjwvc2Ny
+      aXB0PgogICAgPHNjcmlwdCB0eXBlPSJ0ZXh0L2phdmFzY3JpcHQiIHNyYz0i
+      aHR0cDovL21lZGlhLmNvbXBldGUuY29tL3NpdGVfbWVkaWEvanMvc2VhZWFn
+      bGUvdXRpbF9mb3JtYXQudmVyLTIwMTIwMzEzMDc0MjAwLmpzIj48L3Njcmlw
+      dD4KICAgIDxzY3JpcHQgdHlwZT0idGV4dC9qYXZhc2NyaXB0IiBzcmM9Imh0
+      dHA6Ly9tZWRpYS5jb21wZXRlLmNvbS9zaXRlX21lZGlhL2pzL3NlYWVhZ2xl
+      L2Ryb3Bkb3duLnZlci0yMDEyMDMxMzA3NDIwMC5qcyI+PC9zY3JpcHQ+CiAg
+      ICA8c2NyaXB0IHR5cGU9InRleHQvamF2YXNjcmlwdCIgc3JjPSJodHRwOi8v
+      bWVkaWEuY29tcGV0ZS5jb20vc2l0ZV9tZWRpYS9qcy9zZWFlYWdsZS9tYXN0
+      ZXIudmVyLTIwMTIwMzEzMDc0MjAwLmpzIj48L3NjcmlwdD4KICAgIDxzY3Jp
+      cHQgdHlwZT0idGV4dC9qYXZhc2NyaXB0IiBzcmM9Imh0dHA6Ly9tZWRpYS5j
+      b21wZXRlLmNvbS9zaXRlX21lZGlhL2pzL3NlYWVhZ2xlL3BvcHVwX2hlbHAu
+      dmVyLTIwMTIwMzEzMDc0MjAwLmpzIj48L3NjcmlwdD4KICAgIDxzY3JpcHQg
+      dHlwZT0idGV4dC9qYXZhc2NyaXB0IiBzcmM9Imh0dHA6Ly9tZWRpYS5jb21w
+      ZXRlLmNvbS9zaXRlX21lZGlhL2pzL3NlYWVhZ2xlL2pxdWVyeS5hdXRvY29t
+      cGxldGUucGFjay52ZXItMjAxMjAzMTMwNzQyMDAuanMiPjwvc2NyaXB0Pgog
+      ICAgPHNjcmlwdCB0eXBlPSJ0ZXh0L2phdmFzY3JpcHQiIHNyYz0iaHR0cDov
+      L21lZGlhLmNvbXBldGUuY29tL3NpdGVfbWVkaWEvanMvc2VhZWFnbGUvanF1
+      ZXJ5LmNvbXBldGV1dGlscy52ZXItMjAxMjAzMTMwNzQyMDAuanMiPjwvc2Ny
+      aXB0PgogICAgPHNjcmlwdCB0eXBlPSJ0ZXh0L2phdmFzY3JpcHQiIHNyYz0i
+      aHR0cDovL21lZGlhLmNvbXBldGUuY29tL3NpdGVfbWVkaWEvanMvc2VhZWFn
+      bGUvanF1ZXJ5LmNvb2tpZS52ZXItMjAxMjAzMTMwNzQyMDAuanMiPjwvc2Ny
+      aXB0PgogICAgPHNjcmlwdCB0eXBlPSJ0ZXh0L2phdmFzY3JpcHQiIHNyYz0i
+      aHR0cDovL21lZGlhLmNvbXBldGUuY29tL3NpdGVfbWVkaWEvanMvc2VhZWFn
+      bGUvanF1ZXJ5Lmh0bWw1LXBsYWNlaG9sZGVyLXNoaW0udmVyLTIwMTIwMzEz
+      MDc0MjAwLmpzIj48L3NjcmlwdD4KICAgIDxzY3JpcHQgdHlwZT0idGV4dC9q
+      YXZhc2NyaXB0IiBzcmM9Imh0dHA6Ly9tZWRpYS5jb21wZXRlLmNvbS9zaXRl
+      X21lZGlhL2pzL2MvYXBwL21haW5fbmF2LnZlci0yMDEyMDMxMzA3NDIwMC5q
+      cyI+PC9zY3JpcHQ+CiAgICA8c2NyaXB0IHR5cGU9InRleHQvamF2YXNjcmlw
+      dCIgc3JjPSJodHRwOi8vbWVkaWEuY29tcGV0ZS5jb20vc2l0ZV9tZWRpYS9q
+      cy9udW1iZXJfZm9ybWF0L051bWJlckZvcm1hdC0xLjUuNC52ZXItMjAxMjAz
+      MTMwNzQyMDAuanMiPjwvc2NyaXB0PgogICAgPHNjcmlwdCB0eXBlPSJ0ZXh0
+      L2phdmFzY3JpcHQiIHNyYz0iaHR0cDovL21lZGlhLmNvbXBldGUuY29tL3Np
+      dGVfbWVkaWEvanMvbnVtYmVyX2Zvcm1hdC9udW1iZXJfZm9ybWF0dGVyLnZl
+      ci0yMDEyMDMxMzA3NDIwMC5qcyI+PC9zY3JpcHQ+CgogICAgPHNjcmlwdCB0
+      eXBlPSJ0ZXh0L2phdmFzY3JpcHQiIHNyYz0iaHR0cDovL21lZGlhLmNvbXBl
+      dGUuY29tL3NpdGVfbWVkaWEvdGhpcmRwYXJ0eS9zdXBlcmZpc2gtMS40Ljgv
+      anMvc3VwZXJmaXNoLnZlci0yMDEyMDMxMzA3NDIwMC5qcyI+PC9zY3JpcHQ+
+      CiAgICA8c2NyaXB0IHR5cGU9InRleHQvamF2YXNjcmlwdCI+CiAgICAgICAg
+      Ly8gISBUT0RPOiBhZGQgdHJ5X2NhdGNoIGJsb2NrICpJTlNJREUqIGZ1bmN0
+      aW9uKCkge30KICAgICAgICAkaihkb2N1bWVudCkucmVhZHkoZnVuY3Rpb24o
+      KSB7CiAgICAgICAgICAgIC8vIHNpdGUgc2VhcmNoCiAgICAgICAgICAgIGdl
+      bmVyYXRlX3NlYXJjaF9kcm9wZG93bigic2l0ZV9wcm9maWxlcyIpOwogICAg
+      ICAgICAgICB1cGRhdGVfbG9naW5fbG9nb3V0X2xpbmsoKTsKICAgICAgICAg
+      ICAgbWFzdGVyX2xvYWQoKTsKCiAgICAgICAgICAgIG5ldyAkYy5hcHAubWFp
+      bm5hdi5Tb3VyY2VQYW5lbFNlbGVjdG9yKCk7CgogICAgICAgICAgICAkaign
+      dWwuc2YtbWVudScpLnN1cGVyZmlzaCh7CiAgICAgICAgICAgICAgICBhbmlt
+      YXRpb246IHtoZWlnaHQ6J3Nob3cnfSAgLy8gc2xpZGUtZG93biBhbmltYXRp
+      b24gCiAgICAgICAgICAgIH0pOyAKCiAgICAgICAgICAgIC8vIHB1dCBpbiBh
+      IGxpbmUgZm9yIGV2ZXJ5dGhpbmcgdGhhdCBuZWVkcyB0byBiZSBlbGxpcGlm
+      aWVkLiB0aGlzIHdpbGwgbWFrZSBGaXJlZm94IGJlaGF2ZQogICAgICAgICAg
+      ICAvLyBOT1RFOiBUaGUgZWxlbWVudHMgaGF2ZSB0byBiZSBvbiB0aGUgcGFn
+      ZSBhdCBsb2FkIGZvciB0aGlzIHRvIHdvcmsuIAogICAgICAgICAgICAvLyBJ
+      ZiBub3QsIGFkZCB0aGUgZWxsaXBzaXMoKSB0byB0aGUgc2NyaXB0IHRoYXQg
+      bG9hZHMgdGhlbQogICAgICAgICAgICAkaigiLnBhZ2UgLmNvbnRlbnQgaDIi
+      KS5lbGxpcHNpcygpOwogICAgICAgICAgICAkaigiLnBhZ2UgLnNpZGViYXIg
+      LnRyZW5kcyBsaSBsYWJlbCIpLmVsbGlwc2lzKCk7CiAgICAgICAgICAgIAog
+      ICAgICAgICAgICAKICAgICAgICB9KTsKICAgIDwvc2NyaXB0PgogICAgCiAg
+      ICA8IS0tIFNoYXJlIFRoaXMgSlMgLS0+CiAgICA8c2NyaXB0IHR5cGU9InRl
+      eHQvamF2YXNjcmlwdCI+dmFyIHN3aXRjaFRvNXg9dHJ1ZTs8L3NjcmlwdD48
+      c2NyaXB0IHR5cGU9InRleHQvamF2YXNjcmlwdCIgc3JjPSJodHRwOi8vdy5z
+      aGFyZXRoaXMuY29tL2J1dHRvbi9idXR0b25zLmpzIj48L3NjcmlwdD48c2Ny
+      aXB0IHR5cGU9InRleHQvamF2YXNjcmlwdCI+c3RMaWdodC5vcHRpb25zKHtw
+      dWJsaXNoZXI6JzM0MTAzNjA3LWEyNGQtNGRmYi1iMjM3LTRkMDdkZDZkNGNk
+      MCd9KTs8L3NjcmlwdD4KCiAgICA8IS0tIGJsb2NrIHNjcmlwdHMgLS0+CiAg
+      ICAKICAgIDwhLS0gZW5kYmxvY2sgc2NyaXB0cyAtLT4KCjxzY3JpcHQgdHlw
+      ZT0idGV4dC9qYXZhc2NyaXB0IiBzcmM9Imh0dHA6Ly9tZWRpYS5jb21wZXRl
+      LmNvbS9zaXRlX21lZGlhL2pzL3NlYWVhZ2xlL2FtY2hhcnRzLnZlci0yMDEy
+      MDMxMzA3NDIwMC5qcyI+PC9zY3JpcHQ+CiAgICA8c2NyaXB0IHR5cGU9InRl
+      eHQvamF2YXNjcmlwdCIgc3JjPSJodHRwOi8vbWVkaWEuY29tcGV0ZS5jb20v
+      c2l0ZV9tZWRpYS9qcy9jL2ZyZWUvd2lkZ2V0cy52ZXItMjAxMjAzMTMwNzQy
+      MDAuanMiPjwvc2NyaXB0PgogICAgPHNjcmlwdCB0eXBlPSJ0ZXh0L2phdmFz
+      Y3JpcHQiIHNyYz0iaHR0cDovL21lZGlhLmNvbXBldGUuY29tL3NpdGVfbWVk
+      aWEvanMvYy9hcHAvcmVzZWFyY2gudmVyLTIwMTIwMzEzMDc0MjAwLmpzIj48
+      L3NjcmlwdD4KICAgIAogICAgPHNjcmlwdCB0eXBlPSJ0ZXh0L2phdmFzY3Jp
+      cHQiPiAgICAgICAgCiAgICAgICAgJGooZG9jdW1lbnQpLnJlYWR5KGZ1bmN0
+      aW9uKCkgewogICAgICAgICAgICAvKiBhc3luYyBjaGFydCBsb2FkZXIgKi8K
+      ICAgICAgICAgICAgdmFyIGNoYXJ0ID0gbmV3ICRjLmZyZWUud2lkZ2V0cy5D
+      aGFydCh7CiAgICAgICAgICAgICAgICB0YXJnZXQ6ICRqKCcjZ3JhcGgnKSwK
+      ICAgICAgICAgICAgICAgIHdpZHRoOiA1NzUsCiAgICAgICAgICAgICAgICBo
+      ZWlnaHQ6IDI3NSwKICAgICAgICAgICAgICAgIHNpdGU6ICJnb29nbGUuY29t
+      IiwKICAgICAgICAgICAgICAgIHNvdXJjZV9wYW5lbDogJ3VzJwogICAgICAg
+      ICAgICB9KTsKICAgICAgICAgICAgCiAgICAgICAgICAgIHZhciBjaGFydF92
+      aWV3ID0gbmV3ICRjLmZyZWUud2lkZ2V0cy5DaGFydFZpZXcoewogICAgICAg
+      ICAgICAgICAgY2hhcnQ6IGNoYXJ0LAogICAgICAgICAgICAgICAgY3N2X2J1
+      dHRvbjogJ2Nzdi1leHBvcnQnLAogICAgICAgICAgICAgICAgc2F2ZV9idXR0
+      b246ICdncmFwaC1pbWFnZScsCiAgICAgICAgICAgICAgICBlbWJlZF9idXR0
+      b246ICdlbWJlZC1ncmFwaCcKICAgICAgICAgICAgfSk7CiAgICAgICAgICAg
+      IGNoYXJ0X3ZpZXcucmVuZGVyKCk7CgogICAgICAgICAgICAvKiB6b29tIGlu
+      Zm8gaW5pdGlhbGl6YXRpb24gKi8KICAgICAgICAgICAgdmFyIHpvb21faW5m
+      byA9IG5ldyAkYy5mcmVlLndpZGdldHMuWm9vbUluZm8oewogICAgICAgICAg
+      ICAgICAgc2l0ZTogImdvb2dsZS5jb20iLAogICAgICAgICAgICAgICAgZWw6
+      ICcjem9vbWluZm8nCiAgICAgICAgICAgIH0pOwogICAgICAgICAgICB6b29t
+      X2luZm8ubG9hZCgpOwoKICAgICAgICAgICAgdmFyIHNpdGVzID0gbmV3ICRj
+      LmZyZWUud2lkZ2V0cy5TaW1pbGFyU2l0ZXNDb2xsZWN0aW9uKFtdLCB7CiAg
+      ICAgICAgICAgICAgICBzaXRlOiAiZ29vZ2xlLmNvbSIsCiAgICAgICAgICAg
+      ICAgICBzb3VyY2VfcGFuZWw6ICd1cycKICAgICAgICAgICAgfSk7CiAgICAg
+      ICAgICAgIHZhciBncmFwaCA9IG5ldyAkYy5mcmVlLndpZGdldHMuQmFyR3Jh
+      cGgoewogICAgICAgICAgICAgICAgZWw6ICRqKCcjc2ltaWxhci1zaXRlcycp
+      LAogICAgICAgICAgICAgICAgY29sbGVjdGlvbjogc2l0ZXMKICAgICAgICAg
+      ICAgfSk7CgogICAgICAgICAgICAvKiBzZWFyY2ggYm94IGluaXRpYWxpemF0
+      aW9uICovCiAgICAgICAgICAgIHZhciBpbml0aWFsID0gJGooJyNxJykudmFs
+      KCk7CiAgICAgICAgICAgICRqKCcjcScpLmZvY3VzaW4oZnVuY3Rpb24oKSB7
+      CiAgICAgICAgICAgICAgICBpZigkaignI3EnKS52YWwoKSA9PSBpbml0aWFs
+      KSB7CiAgICAgICAgICAgICAgICAgICAgJGoodGhpcykudmFsKCcnKTsKICAg
+      ICAgICAgICAgICAgIH0KICAgICAgICAgICAgfSk7CiAgICAgICAgICAgICRq
+      KCcjcScpLmZvY3Vzb3V0KGZ1bmN0aW9uKCkgewogICAgICAgICAgICAgICAg
+      aWYoJGoudHJpbSgkaih0aGlzKS52YWwoKSkgPT0gJycpIHsKICAgICAgICAg
+      ICAgICAgICAgICAkaih0aGlzKS52YWwoaW5pdGlhbCk7CiAgICAgICAgICAg
+      ICAgICB9CiAgICAgICAgICAgIH0pOwogICAgICAgICAgICAKICAgICAgICAg
+      ICAgdmFyIHNhX3NpdGVfc2VhcmNoID0gbmV3ICRjLmFwcC5yZXNlYXJjaC5T
+      ZWFyY2hTaXRlRnJlZSh7CiAgICAgICAgICAgICAgICBzZWFyY2hfZm9ybTog
+      JGooImZvcm0jc2Etc2VhcmNoLWZvcm0iKSwKICAgICAgICAgICAgICAgIGlu
+      cHV0X3dyYXBwZXJfZWxlbWVudDogJGooIiNzYS1zZWFyY2gtaW5wdXQtd3Jh
+      cHBlciIpLAogICAgICAgICAgICAgICAgc3VibWl0X2VsZW1lbnQ6ICRqKCIj
+      c2Etc2VhcmNoLXN1Ym1pdCIpLAogICAgICAgICAgICAgICAgbG9hZGluZ19p
+      bWFnZTogIi9zaXRlX21lZGlhL2ltYWdlcy9hcHAvbG9hZGluZy9sb2FkZXJf
+      MjR4MjQuZ2lmIgogICAgICAgICAgICB9KTsKCiAgICAgICAgICAgIAogICAg
+      ICAgICAgICAgICAgdmFyIGxvZ2dlZF9pbl9hcyA9IG51bGw7CiAgICAgICAg
+      ICAgIAoKICAgICAgICAgICAgLyogcGVyc29uYWxpemF0aW9uIGluaXRpYWxp
+      emF0aW9uICovCiAgICAgICAgICAgIHZhciBkID0gewogICAgICAgICAgICAg
+      IHNpdGVfbmFtZTogImdvb2dsZS5jb20iLAogICAgICAgICAgICAgIGxvZ2dl
+      ZF9pbl9hczogbG9nZ2VkX2luX2FzLAogICAgICAgICAgICAgIGN1cnJlbnRf
+      c291cmNlX3BhbmVsOiB7ImRpc3BsYXlfYWJicmV2aWF0aW9uIjogInVzIiwg
+      InBhbmVsX25hbWUiOiAidXMiLCAiaW1hZ2VfdXJsIjogImh0dHA6Ly9tZWRp
+      YS5jb21wZXRlLmNvbS9zaXRlX21lZGlhL2ltYWdlcy9pY29ucy9mbGFnX3Vz
+      LmdpZiIsICJkaXNwbGF5X25hbWUiOiAiVW5pdGVkIFN0YXRlcyJ9CiAgICAg
+      ICAgICAgIH07CgogICAgICAgICAgICB2YXIgYXV0aF9tb2RlbCA9IG5ldyAk
+      Yy5mcmVlLndpZGdldHMuRnJlZUxvZ2luTW9kZWwoZCk7CiAgICAgICAgICAg
+      IHZhciBsaW5rc19vcHRzID0geyBtb2RlbDogYXV0aF9tb2RlbCB9OwogICAg
+      ICAgICAgICB2YXIgbGlua3NfdmlldyA9IG5ldyAkYy5mcmVlLndpZGdldHMu
+      RnJlZUFjY291bnRMaW5rc1ZpZXcobGlua3Nfb3B0cyk7CiAgICAgICAgICAg
+      IHZhciBzaXRlc192aWV3ID0gbmV3ICRjLmZyZWUud2lkZ2V0cy5Gb2xsb3dT
+      aXRlQnV0dG9uVmlldyhsaW5rc19vcHRzKTsKICAgICAgICAgICAgdmFyIG1h
+      bmFnZV92aWV3ID0gbmV3ICRjLmZyZWUud2lkZ2V0cy5NYW5hZ2VTaXRlc0xp
+      c3RCdXR0b25WaWV3KGxpbmtzX29wdHMpOwoKICAgICAgICAgICAgLyogaGVs
+      cCB0b29sdGlwICovCiAgICAgICAgICAgIHZhciBoZWxwX3Rvb2x0aXAgPSBu
+      ZXcgJGMud2lkZ2V0cy5Ib3ZlckJhbGxvb25TaW5nbGV0b24oCiAgICAgICAg
+      ICAgICAgICB7IGhpZGVfZGVsYXk6IDIwMCB9CiAgICAgICAgICAgICAgICAp
+      OwogICAgICAgICAgICBoZWxwX3Rvb2x0aXAudGVtcGxhdGUgPSBfLnRlbXBs
+      YXRlKCRqKCcjdGVtcGxhdGUtaGVscC10b29sdGlwJykuaHRtbCgpKTsKICAg
+      ICAgICAgICAgaGVscF90b29sdGlwLmF0dGFjaChudWxsLCAkaignc3Bhbi5o
+      ZWxwJykpOwogICAgICAgIH0pOwogICAgICAgIAogICAgPC9zY3JpcHQ+IAog
+      ICAgCiAgICAKICAgIAoKCiAgICA8dGl0bGU+CiAgICBnb29nbGUuY29tIDE3
+      Miw3NzQsNjgxLjAKICAgIFVWcyBmb3IgRmVicnVhcnkgMjAxMgogfCBDb21w
+      ZXRlPC90aXRsZT4KCiAgICA8IS0tIGJsb2NrIGhlYWQgLS0+CiAgICAKICAg
+      IDwhLS0gZW5kYmxvY2sgaGVhZCAtLT4KICAgIAoKICAgIAoKPC9oZWFkPgoK
+      PGJvZHk+Cgo8c2NyaXB0IHR5cGU9InRleHQvamF2YXNjcmlwdCI+dmFyIF9r
+      aXEgPSBfa2lxIHx8IFtdOzwvc2NyaXB0Pgo8c2NyaXB0IHR5cGU9InRleHQv
+      amF2YXNjcmlwdCIgc3JjPSIvL3MzLmFtYXpvbmF3cy5jb20va2kuanMvMzI0
+      NTkvNmpOLmpzIiBhc3luYz0idHJ1ZSI+PC9zY3JpcHQ+CgoKICAgIAogICAg
+      ICAgIDxkaXYgY2xhc3M9ImhlYWRlciI+CiAgICAgICAgICAgIDxkaXYgY2xh
+      c3M9IndyYXBwZXIiPgogICAgICAgICAgICAgICAgPHAgY2xhc3M9InN1YnNj
+      cmliZSI+PGEgaHJlZj0iaHR0cDovL3d3dy5jb21wZXRlLmNvbS9wbGFucy8i
+      PlN1YnNjcmliZSB0byBDb21wZXRlIFBSTzwvYT48L3A+CiAgICAgICAgICAg
+      ICAgICA8dWwgY2xhc3M9Im5hdiBtYWluIj4KICAgICAgICAgICAgICAgICAg
+      ICAgICAgPGxpIGNsYXNzPSJsb2dvIj48YSBocmVmPSJodHRwOi8vd3d3LmNv
+      bXBldGUuY29tIj48aW1nIHNyYz0iaHR0cDovL21lZGlhLmNvbXBldGUuY29t
+      L3NpdGVfbWVkaWEvaW1hZ2VzL2ZyZWUvc2l0ZWFuYWx5dGljc19sb2dvLnBu
+      ZyIgd2lkdGg9IjIyOCIgaGVpZ2h0PSIyNiIgYWx0PSJTaXRlIEFuYWx5dGlj
+      cyI+PC9hPjwvbGk+CiAgICAgICAgICAgICAgICAgICAgICAgIDxsaT48YSBo
+      cmVmPSJodHRwOi8vd3d3LmNvbXBldGUuY29tIj5Db21wZXRlLmNvbTwvYT48
+      L2xpPgogICAgICAgICAgICAgICAgICAgICAgICA8bGk+PGEgaHJlZj0iaHR0
+      cDovL3d3dy5jb21wZXRlLmNvbS9wcm8vIj5Db21wZXRlIFBSTzwvYT48L2xp
+      PgogICAgICAgICAgICAgICAgICAgICAgICA8bGk+PGEgaHJlZj0iaHR0cDov
+      L3d3dy5jb21wZXRlLmNvbS9wcm9kdWN0cy8iPlByb2R1Y3RzPC9hPjwvbGk+
+      CiAgICAgICAgICAgICAgICAgICAgICAgIDxsaT48YSBocmVmPSJodHRwOi8v
+      d3d3LmNvbXBldGUuY29tL2V4cGVydGlzZS8iPkV4cGVydGlzZTwvYT48L2xp
+      PgogICAgICAgICAgICAgICAgICAgICAgICA8bGk+PGEgaHJlZj0iaHR0cDov
+      L3d3dy5jb21wZXRlLmNvbS9yZXNvdXJjZXMvbWV0aG9kb2xvZ3kvIj5PdXIg
+      RGF0YTwvYT48L2xpPgogICAgICAgICAgICAgICAgICAgICAgICA8bGkgY2xh
+      c3M9Imxhc3QiPjxhIGhyZWY9Imh0dHA6Ly9ibG9nLmNvbXBldGUuY29tIj5Q
+      dWxzZSBCbG9nPC9hPjwvbGk+CiAgICAgICAgICAgICAgICAgICAgPC91bD4K
+      ICAgICAgICAgICAgPC9kaXY+CiAgICAgICAgPC9kaXY+CiAgICAKICAgIDxz
+      cGFuIGNsYXNzPSJjb21wZXRlWEwiPgogICAgPCEtLSBUaGUgQ29tcGV0ZSBY
+      TCBDb2RlIC0tPgo8c2NyaXB0Pgp2YXIgX19jb21wZXRlX2NvZGVfY29udHJv
+      bCA9IHsKICAgIG1lYXN1cmVfdHJhZmZpY19hc3luY2hyb25vdXNseTogZmFs
+      c2UKfTsKPC9zY3JpcHQ+CjwhLS0gQ29tcGV0ZSBYTCBDb2RlIGZvciBjb21w
+      ZXRlLmNvbSAtLT4KPHNjcmlwdCB0eXBlPSJ0ZXh0L2phdmFzY3JpcHQiPgpf
+      X2NvbXBldGVfY29kZSA9ICc0YjY3MDVlZjhkZWQ3ZTljYjAwNjczMThkZGUx
+      MWMzZSc7Ci8qIFNldCBjb250cm9sIHZhcmlhYmxlcyBiZWxvdyB0aGlzIGxp
+      bmUuICovIAo8L3NjcmlwdD4KPHNjcmlwdCB0eXBlPSJ0ZXh0L2phdmFzY3Jp
+      cHQiIHNyYz0iLy9jLmNvbXBldGUuY29tL2Jvb3RzdHJhcC9zLzRiNjcwNWVm
+      OGRlZDdlOWNiMDA2NzMxOGRkZTExYzNlL2NvbXBldGUtY29tL2Jvb3RzdHJh
+      cC5qcyI+PC9zY3JpcHQ+Cjxub3NjcmlwdD4KICAgIDxpbWcgd2lkdGg9IjEi
+      IGhlaWdodD0iMSIgc3JjPSJodHRwczovL3NzbC1jb21wZXRlLWNvbS00YjY3
+      MDUuYy1jb2wuY29tIi8+Cjwvbm9zY3JpcHQ+CjwhLS0gRW5kIG9mIHRoZSBD
+      b21wZXRlIENvZGUgLS0+CiAgICA8L3NwYW4+CgogICAgCjxkaXYgY2xhc3M9
+      IndyYXBwZXIiPgogICAgPGRpdiBjbGFzcz0ibG9naW4tYmxvY2siPgogICAg
+      ICAgIDxwIGNsYXNzPSJtZW1iZXJzaGlwIj48YSBocmVmPSJqYXZhc2NyaXB0
+      OnZvaWQoMCkiPkxvZ2luPC9hPiBvciA8YSBocmVmPSJqYXZhc2NyaXB0OnZv
+      aWQoMCkiPlNpZ24gVXA8L2E+IGZvciBTaXRlIEFuYWx5dGljcyB0byBmb2xs
+      b3cgc2l0ZXM8L3A+CiAgICAgICAgPHAgY2xhc3M9ImdldC1wcm8iPkdldCB0
+      aGUgd2hvbGUgc3Rvcnkgd2l0aCBhIENvbXBldGUgUFJPIHN1YnNjcmlwdGlv
+      bi48YSBocmVmPSJodHRwOi8vd3d3LmNvbXBldGUuY29tL3Byby9mZWF0dXJl
+      cy8iPkxlYXJuIE1vcmU8L2E+PC9wPgogICAgPC9kaXY+CiAgICA8ZGl2IGNs
+      YXNzPSJwYWdlIGNsZWFyZml4Ij4KICAgICAgICA8ZGl2IGNsYXNzPSJoZWFk
+      Ij4KICAgICAgICAgICAgPGRpdiBjbGFzcz0iaW50ZXJhY3Qtd3JhcCI+CiAg
+      ICAgICAgICAgICAgICA8dWwgY2xhc3M9Im5hdiBpbnRlcmFjdCI+CiAgICAg
+      ICAgICAgICAgICAgICAgPGxpIGlkPSJmb2xsb3ciIGNsYXNzPSJmb2xsb3ci
+      PjxhIGhyZWY9ImphdmFzY3JpcHQ6dm9pZCgwKSI+Rm9sbG93IFRoaXMgU2l0
+      ZTwvYT48L2xpPgogICAgICAgICAgICAgICAgICAgIDxsaSBpZD0ibWFuYWdl
+      IiBjbGFzcz0ibWFuYWdlIiBzdHlsZT0iZGlzcGxheTpub25lIj48YSBocmVm
+      PSJqYXZhc2NyaXB0OnZvaWQoMCkiPk1hbmFnZSBMaXN0PC9hPjwvbGk+CiAg
+      ICAgICAgICAgICAgICA8L3VsPgogICAgICAgICAgICA8L2Rpdj4KICAgICAg
+      ICAgICAgPGRpdiBjbGFzcz0ic3RyZXRjaGVyIj4KICAgICAgICAgICAgICAg
+      IDxkaXYgY2xhc3M9ImlubmVyIHNoYXJlIj4KICAgICAgICAgICAgICAgICAg
+      ICAKICAgICAgICAgICAgICAgICAgICA8c3BhbiBjbGFzcz0nc3RfdHdpdHRl
+      cl9jdXN0b20nIHN0X3RpdGxlPSJnb29nbGUuY29tIDE3Miw3NzQsNjgxLjAg
+      VVZzIGZvciBGZWJydWFyeSAyMDEyIGZyb20gQGNvbXBldGUiPjxpbWcgc3Jj
+      PSJodHRwOi8vbWVkaWEuY29tcGV0ZS5jb20vc2l0ZV9tZWRpYS9pbWFnZXMv
+      ZnJlZS9mc3BfdHdpdHRlci5wbmciIHdpZHRoPSIyMiIgaGVpZ2h0PSIyMiIg
+      YWx0PSJUd2l0dGVyIj48L3NwYW4+CiAgICAgICAgICAgICAgICAgICAgCiAg
+      ICAgICAgICAgICAgICAgICAgPHNwYW4gY2xhc3M9J3N0X2ZhY2Vib29rX2N1
+      c3RvbScgPjxpbWcgc3JjPSJodHRwOi8vbWVkaWEuY29tcGV0ZS5jb20vc2l0
+      ZV9tZWRpYS9pbWFnZXMvZnJlZS9mc3BfZmFjZWJvb2sucG5nIiB3aWR0aD0i
+      MjIiIGhlaWdodD0iMjIiIGFsdD0iRmFjZWJvb2siPjwvc3Bhbj4KICAgICAg
+      ICAgICAgICAgICAgICA8c3BhbiBjbGFzcz0nc3RfbGlua2VkaW5fY3VzdG9t
+      JyA+PGltZyBzcmM9Imh0dHA6Ly9tZWRpYS5jb21wZXRlLmNvbS9zaXRlX21l
+      ZGlhL2ltYWdlcy9mcmVlL2ZzcF9saW5rZWRpbi5wbmciIHdpZHRoPSIyMiIg
+      aGVpZ2h0PSIyMiIgYWx0PSJMaW5rZWRJbiI+PC9zcGFuPgogICAgICAgICAg
+      ICAgICAgICAgIDxzcGFuIGNsYXNzPSdzdF9lbWFpbF9jdXN0b20nID48aW1n
+      IHNyYz0iaHR0cDovL21lZGlhLmNvbXBldGUuY29tL3NpdGVfbWVkaWEvaW1h
+      Z2VzL2ZyZWUvZnNwX21haWwucG5nIiB3aWR0aD0iMjIiIGhlaWdodD0iMjIi
+      IGFsdD0iRW1haWwiPjwvc3Bhbj4KICAgICAgICAgICAgICAgIDwvZGl2Pgog
+      ICAgICAgICAgICA8L2Rpdj4KICAgICAgICAgICAgPGRpdiBjbGFzcz0ic2Vh
+      cmNoIj4KICAgICAgICAgICAgICAgIDxmb3JtIGlkPSJzYS1zZWFyY2gtZm9y
+      bSI+CiAgICAgICAgICAgICAgICAgICAgPGlucHV0IG5hbWU9InQiIHR5cGU9
+      ImhpZGRlbiIgLz4KICAgICAgICAgICAgICAgICAgICA8bGFiZWw+aHR0cDov
+      LzwvbGFiZWw+CiAgICAgICAgICAgICAgICAgICAgPGRpdiBpZD0ic2Etc2Vh
+      cmNoLWlucHV0LXdyYXBwZXIiIGNsYXNzPSJzZWFyY2gtd3JhcHBlciI+CiAg
+      ICAgICAgICAgICAgICAgICAgICAgIDxpbnB1dCBuYW1lPSJxIiB0eXBlPSJ0
+      ZXh0IiBpZD0ic2Etc2VhcmNoLWlucHV0IiBjbGFzcz0iYXQtc2Etc2VhcmNo
+      LWlucHV0IiAvPgogICAgICAgICAgICAgICAgICAgIDwvZGl2PgogICAgICAg
+      ICAgICAgICAgICAgIDxkaXYgY2xhc3M9InN1Ym1pdC13cmFwcGVyIj4KICAg
+      ICAgICAgICAgICAgICAgICAgICAgPGlucHV0IHR5cGU9InN1Ym1pdCIgdmFs
+      dWU9IkdPIiBpZD0ic2Etc2VhcmNoLXN1Ym1pdCIgY2xhc3M9ImF0LXNhLXNl
+      YXJjaC1zdWJtaXQiIC8+CiAgICAgICAgICAgICAgICAgICAgPC9kaXY+CiAg
+      ICAgICAgICAgICAgICA8L2Zvcm0+CiAgICAgICAgICAgIDwvZGl2PgogICAg
+      ICAgICAgICAKICAgICAgICAgICAgPHVsIGNsYXNzPSJuYXYgdG9vbHMiPgog
+      ICAgICAgICAgICAgICAgPGxpIGNsYXNzPSJzYXZlIj48YSBocmVmPSJqYXZh
+      c2NyaXB0OnZvaWQoMCkiIGlkPSJncmFwaC1pbWFnZSIgY2xhc3M9ImF0X3Nh
+      dmUiPlNhdmUgR3JhcGggSW1hZ2U8L2E+PC9saT4KICAgICAgICAgICAgICAg
+      IDxsaSBjbGFzcz0iZXhwb3J0Ij48YSBpZD0iY3N2LWV4cG9ydCIgaHJlZj0i
+      amF2YXNjcmlwdDp2b2lkKDApIiB0YXJnZXQ9IiIgY2xhc3M9ImF0X2V4cG9y
+      dCI+RXhwb3J0IENTVjwvYT48L2xpPgogICAgICAgICAgICAgICAgPGxpIGNs
+      YXNzPSJlbWJlZCI+PGEgaHJlZj0iamF2YXNjcmlwdDp2b2lkKDApIiBpZD0i
+      ZW1iZWQtZ3JhcGgiIGNsYXNzPSJhdF9lbWJlZCI+RW1iZWQgR3JhcGg8L2E+
+      PC9saT4KICAgICAgICAgICAgPC91bD4KICAgICAgICAgICAgPHVsIGNsYXNz
+      PSJuYXYgZmlsdGVyIj4KICAgICAgICAgICAgICAgIAoKCiAgICA8c2NyaXB0
+      IHR5cGU9InRleHQvamF2YXNjcmlwdCIgc3JjPSJodHRwOi8vbWVkaWEuY29t
+      cGV0ZS5jb20vc2l0ZV9tZWRpYS9qcy9jL2FwcC9tdWx0aXBsZV9mZWVkcy52
+      ZXItMjAxMjAzMTMwNzQyMDAuanMiPjwvc2NyaXB0PgoKCgo8bGkgY2xhc3M9
+      ImRhdGUiIGlkPSJkYXRhc2V0LWRhdGUtY29udGFpbmVyIj4KICAgIAogICAg
+      PHNwYW4gaWQ9J2xhdGVzdF9kYXRhdHNldF9tb250aCc+CiAgICBGZWJydWFy
+      eSAyMDEyCiAgICA8L3NwYW4+CjwvbGk+CgoKCgogICAgPGxpIGNsYXNzPSJj
+      b3VudHJ5IiBpZD0ic291cmNlLXBhbmVsLWNvbnRhaW5lciI+CiAgICAgICAg
+      CiAgICAgICAgICAgIDxzcGFuIGNsYXNzPSJsYWJlbCIgaWQ9ImN1cnJlbnQt
+      c291cmNlLXBhbmVsIj4KICAgICAgICAgICAgICAgIDxzcGFuIGNsYXNzPSJ1
+      cyBuYW1lIj5Vbml0ZWQgU3RhdGVzPC9zcGFuPgogICAgICAgICAgICA8L3Nw
+      YW4+CiAgICAgICAgCiAgICA8L2xpPgoKICAgICAgICAgICAgPC91bD4KICAg
+      ICAgICA8L2Rpdj4KICAgICAgICA8ZGl2IGNsYXNzPSJzaWRlYmFyIj4KICAg
+      ICAgICAgICAgPGRpdiBjbGFzcz0ic2VjdGlvbiBzY29yZSI+CiAgICAgICAg
+      ICAgICAgICA8aDM+PHNwYW4gY2xhc3M9ImhlbHAiPjxpbWcgc3JjPSJodHRw
+      Oi8vbWVkaWEuY29tcGV0ZS5jb20vc2l0ZV9tZWRpYS9pbWFnZXMvZnJlZS9p
+      Y29uLWhlbHAtZ3JleS5wbmciIHdpZHRoPSIyMSIgaGVpZ2h0PSIyMSIgYWx0
+      PSI/Ij48L3NwYW4+VW5pcXVlIFZpc2l0b3JzPC9oMz4KICAgICAgICAgICAg
+      ICAgIDxoND4xNzIsNzc0LDY4MTwvaDQ+CiAgICAgICAgICAgICAgICA8dWw+
+      CiAgICAgICAgICAgICAgICAgICAgPGxpIGNsYXNzPSJtMm0iPgogICAgICAg
+      ICAgICAgICAgICAgIDxzcGFuIGNsYXNzPSIKICAgICAgICAgICAgICAgICAg
+      ICBkZWx0YS1uZWdhdGl2ZSBudW1iZXIiPgogICAgICAgICAgICAgICAgICAg
+      ICAgICAtMSwzNTAsMDkwCiAgICAgICAgICAgICAgICAgICAgPC9zcGFuPiB8
+      IDxzcGFuIGNsYXNzPSJkZWx0YS1uZWdhdGl2ZSBudW1iZXIiPgogICAgICAg
+      ICAgICAgICAgICAgICAgICAtMC43OCUKICAgICAgICAgICAgICAgICAgICA8
+      L3NwYW4+PC9saT4KICAgICAgICAgICAgICAgICAgICA8bGkgY2xhc3M9Inky
+      eSI+PHNwYW4gY2xhc3M9ImRlbHRhLXBvc2l0aXZlIG51bWJlciI+MjcsODE0
+      LDgyMDwvc3Bhbj4gfCA8c3BhbiBjbGFzcz0iZGVsdGEtcG9zaXRpdmUgbnVt
+      YmVyIj4xOS4xOSU8L3NwYW4+PC9saT4KICAgICAgICAgICAgICAgIDwvdWw+
+      CiAgICAgICAgICAgICAgICA8aDM+UmFuayA8c3BhbiBjbGFzcz0ibm90ZSI+
+      KGJ5IFVWcyk8L3NwYW4+PC9oMz4KICAgICAgICAgICAgICAgIDxoND4xPC9o
+      ND4KICAgICAgICAgICAgICAgIDx1bD4KICAgICAgICAgICAgICAgICAgICA8
+      bGkgY2xhc3M9Im0ybSI+PHNwYW4gY2xhc3M9InJhbmsiPjE8L3NwYW4+IHwg
+      PHNwYW4gY2xhc3M9IiBtb3ZlIj4wPC9zcGFuPjwvbGk+CiAgICAgICAgICAg
+      ICAgICAgICAgPGxpIGNsYXNzPSJ5MnkiPjxzcGFuIGNsYXNzPSJyYW5rIj4x
+      PC9zcGFuPiB8IDxzcGFuIGNsYXNzPSIgbW92ZSI+MDwvc3Bhbj48L2xpPgog
+      ICAgICAgICAgICAgICAgPC91bD4KICAgICAgICAgICAgPC9kaXY+CiAgICAg
+      ICAgICAgIDxkaXYgY2xhc3M9InNlY3Rpb24gdHJlbmRzIj4KICAgICAgICAg
+      ICAgICAgIDxoMz5Db21wZXRpdGl2ZSBSYW5rIDxzcGFuIGNsYXNzPSJub3Rl
+      Ij4oVVZzKTwvc3Bhbj48L2gzPgogICAgICAgICAgICAgICAgPG9sIGlkPSdz
+      aW1pbGFyLXNpdGVzJz4KICAgICAgICAgICAgICAgICAgICA8bGkgY2xhc3M9
+      InBhcnRuZXItbGluayI+PGEgaHJlZj0iaHR0cDovL3d3dy5zaW1pbGFyc2l0
+      ZXMuY29tL3NpdGUvZ29vZ2xlLmNvbSIgdGFyZ2V0PSJfYmxhbmsiPkxvb2tp
+      bmcgZm9yIHNpdGVzIHNpbWlsYXIgdG88YnIgLz48c3BhbiBjbGFzcz0ic2l0
+      ZSI+Z29vZ2xlLmNvbTwvc3Bhbj48YnIgLz5vbiBTaW1pbGFyU2l0ZS5jb20g
+      Li4uPC9hPjwvbGk+CiAgICAgICAgICAgICAgICA8L29sPgogICAgICAgICAg
+      ICA8L2Rpdj4KICAgICAgICAgICAgCiAgICAgICAgICAgICAgICAgICAgICAg
+      ICAgICAgICAgPGRpdiBjbGFzcz0ic2VjdGlvbiBkbS1saW5rIj4NCiAgICAg
+      ICAgICAgICAgICAgICAgPGRpdiBjbGFzcz0idGV4dC13cmFwIj4NCg0KICAg
+      ICAgICAgICAgICAgICAgICAgICAgPGgzPklzIHRoaXMgeW91ciBzaXRlPzwv
+      aDM+DQogICAgICAgICAgICAgICAgICAgICAgICA8cD48YSBocmVmPSJodHRw
+      Oi8vd3d3LmNvbXBldGUuY29tL2RpcmVjdC1tZWFzdXJlbWVudC1zaWdudXAv
+      Ij5TaWduIHVwIGZvciBEaXJlY3QgTWVhc3VyZW1lbnQ8L2E+IHRvIGdldCBh
+      IG1vcmUgY29tcGxldGUgcGljdHVyZSBvZiB5b3VyIHdlYnNpdGUncyB0cmFm
+      ZmljLjwvcD4NCg0KICAgICAgICAgICAgICAgICAgICA8L2Rpdj4NCiAgICAg
+      ICAgICAgICAgICA8L2Rpdj4KICAgICAgICAgICAgCiAgICAgICAgPC9kaXY+
+      CiAgICAgICAgPGRpdiBjbGFzcz0iY29udGVudCI+CiAgICAgICAgICAgIDxk
+      aXYgY2xhc3M9InNlY3Rpb24iPgogICAgICAgICAgICAgICAgCiAgICAgICAg
+      ICAgICAgICA8dWwgY2xhc3M9Im5hdiBicmVhZGNydW1icyI+CiAgICAgICAg
+      ICAgICAgICAgICAgPGxpPldlYiBQb3J0YWxzIGFuZCBTZWFyY2g8L2xpPgog
+      ICAgICAgICAgICAgICAgICAgIDxsaSBjbGFzcz0ibGFzdCI+R2VuZXJhbCBQ
+      b3J0YWxzIGFuZCBTZWFyY2g8L2xpPgogICAgICAgICAgICAgICAgPC91bD4K
+      ICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgPGgyPjxpbWcgd2lk
+      dGg9IjE2IiBoZWlnaHQ9IjE2IiBhbHQ9IkxvZ28iIHNyYz0iaHR0cDovL2cu
+      ZXRmdi5jby9odHRwOi8vZ29vZ2xlLmNvbSI+IGdvb2dsZS5jb208L2gyPgog
+      ICAgICAgICAgICAgICAgPGRpdiBpZD0iZ3JhcGgiPjwvZGl2PgogICAgICAg
+      ICAgICA8L2Rpdj4KICAgICAgICAgICAgPGRpdiBjbGFzcz0ic2VjdGlvbiI+
+      IDxzcGFuIGlkPSJ6b29taW5mbyIgY2xhc3M9Inpvb21pbmZvIj4gPC9zcGFu
+      PiA8L2Rpdj4KICAgICAgICA8L2Rpdj4KICAgIDwvZGl2Pgo8L2Rpdj4KPHNj
+      cmlwdCBpZD0idGVtcGxhdGUtaGVscC10b29sdGlwIiB0eXBlPSJ0ZXh0L3Rl
+      bXBsYXRlIj4KICAgIDxkaXYgY2xhc3M9InBvaW50ZXIiPgogICAgICAgIDxk
+      aXYgY2xhc3M9Im1lc3NhZ2UiPgogICAgICAgICAgICA8cD5VbmlxdWUgVmlz
+      aXRvcnMgY291bnRzIGhvdyBtYW55IHVuaXF1ZSBpbmRpdmlkdWFsIHBlb3Bs
+      ZSB2aXNpdGVkIHRoaXMgc2l0ZSBwZXIgbW9udGguIFZpc2l0b3JzIGFyZSBj
+      b3VudGVkIG9uY2UsIG5vIG1hdHRlciBob3cgbWFueSB0aW1lcyB0aGV5IHZp
+      c2l0IGEgc2l0ZSBpbiBhIG1vbnRoLiAgQ291bnRzIHJlcHJlc2VudCB0cmFm
+      ZmljIGZyb20gdGhlIFVuaXRlZCBTdGF0ZXMgb25seS48L3A+CiAgICAgICAg
+      ICAgIDxwPlJhbmsgbWVhc3VyZXMgdGhlIHBvcHVsYXJpdHkgb2YgdGhpcyBz
+      aXRlIGJhc2VkIG9uIGhvdyBtYW55IFVuaXF1ZSBWaXNpdG9ycyBjYW1lIHRv
+      IHRoZSBzaXRlIGluIGEgbW9udGguICBXaXRoIFJhbmssIGxvd2VyIGlzIGJl
+      dHRlci48L3A+CiAgICAgICAgICAgIDxwPkNvbXBldGl0aXZlIFJhbmsgc2hv
+      d3Mgd2hlcmUgYSBzaXRlIHJhbmtzIGluIGl0cyBjb21wZXRpdGl2ZSBzZXQg
+      bWVhc3VyZWQgYnkgVW5pcXVlIFZpc2l0b3JzLjwvcD4KICAgICAgICA8L2Rp
+      dj4KICAgIDwvZGl2Pgo8L3NjcmlwdD4KCjwhLS0gR29vZ2xlIENvZGUgZm9y
+      IE5FVyBTaXRlIEFuYWx5dGljcyBIb21lIFBhZ2UgUmVtYXJrZXRpbmcgTGlz
+      dCAtLT4KPHNjcmlwdCB0eXBlPSJ0ZXh0L2phdmFzY3JpcHQiPgovKiA8IVtD
+      REFUQVsgKi8KdmFyIGdvb2dsZV9jb252ZXJzaW9uX2lkID0gMTA2OTk5NTE0
+      NTsKdmFyIGdvb2dsZV9jb252ZXJzaW9uX2xhbmd1YWdlID0gImVuIjsKdmFy
+      IGdvb2dsZV9jb252ZXJzaW9uX2Zvcm1hdCA9ICIzIjsKdmFyIGdvb2dsZV9j
+      b252ZXJzaW9uX2NvbG9yID0gIjY2NjY2NiI7CnZhciBnb29nbGVfY29udmVy
+      c2lvbl9sYWJlbCA9ICJnNUl4Q0otQ19nSVFpYW1iX2dNIjsKdmFyIGdvb2ds
+      ZV9jb252ZXJzaW9uX3ZhbHVlID0gMDsKLyogXV0+ICovCjwvc2NyaXB0Pgo8
+      c2NyaXB0IHR5cGU9InRleHQvamF2YXNjcmlwdCIgc3JjPSJodHRwOi8vd3d3
+      Lmdvb2dsZWFkc2VydmljZXMuY29tL3BhZ2VhZC9jb252ZXJzaW9uLmpzIj4K
+      PC9zY3JpcHQ+Cjxub3NjcmlwdD4KPGRpdiBzdHlsZT0iZGlzcGxheTppbmxp
+      bmU7Ij4KPGltZyBoZWlnaHQ9IjEiIHdpZHRoPSIxIiBzdHlsZT0iYm9yZGVy
+      LXN0eWxlOm5vbmU7IiBhbHQ9IiIgc3JjPSJodHRwOi8vd3d3Lmdvb2dsZWFk
+      c2VydmljZXMuY29tL3BhZ2VhZC9jb252ZXJzaW9uLzEwNjk5OTUxNDUvP2xh
+      YmVsPWc1SXhDSi1DX2dJUWlhbWJfZ00mYW1wO2d1aWQ9T04mYW1wO3Njcmlw
+      dD0wIi8+CjwvZGl2Pgo8L25vc2NyaXB0PgoKCiAgICAKICAgICAgICA8ZGl2
+      IGNsYXNzPSJmb290ZXIiPgogICAgICAgICAgICA8cCBjbGFzcz0iY29weXJp
+      Z2h0Ij4mY29weTsgQ29weXJpZ2h0IHRvIENvbXBldGUuY29tIC0gQSBLYW50
+      YXIgTWVkaWEgQ29tcGFueTwvcD4KICAgICAgICAgICAgPHVsIGNsYXNzPSJu
+      YXYgdXRpbGl0eSI+CiAgICAgICAgICAgICAgICA8bGk+PGEgaHJlZj0iaHR0
+      cDovL3d3dy5jb21wZXRlLmNvbSI+VmlzaXQgQ29tcGV0ZS5jb208L2E+PC9s
+      aT4KICAgICAgICAgICAgICAgIDxsaSBjbGFzcz0ibGFzdCI+PGEgaHJlZj0i
+      aHR0cDovL3d3dy5jb21wZXRlLmNvbS9wbGFucy8iPlN1YnNjcmliZSB0byBD
+      b21wZXRlIFBSTzwvYT48L2xpPgogICAgICAgICAgICA8L3VsPgogICAgICAg
+      IDwvZGl2PgogICAgCgogICAgPCEtLSBibG9jayB0YWdzIC0tPgogICAgCiAg
+      ICAgICAgCgo8c2NyaXB0IHR5cGU9InRleHQvamF2YXNjcmlwdCI+ICAKICB2
+      YXIgX2dhcSA9IF9nYXEgfHwgW107ICAKICBfZ2FxLnB1c2goWydfc2V0QWNj
+      b3VudCcsICdVQS02MzIwNzE3LTEnXSk7CiAgX2dhcS5wdXNoKFsnX3NldERv
+      bWFpbk5hbWUnLCAnLmNvbXBldGUuY29tJ10pOwogIF9nYXEucHVzaChbJ190
+      cmFja1BhZ2V2aWV3J10pOwogIAogIChmdW5jdGlvbigpIHsKICAgIHZhciBn
+      YSA9IGRvY3VtZW50LmNyZWF0ZUVsZW1lbnQoJ3NjcmlwdCcpOyBnYS50eXBl
+      ID0gJ3RleHQvamF2YXNjcmlwdCc7IGdhLmFzeW5jID0gdHJ1ZTsKICAgIGdh
+      LnNyYyA9ICgnaHR0cHM6JyA9PSBkb2N1bWVudC5sb2NhdGlvbi5wcm90b2Nv
+      bCA/ICdodHRwczovL3NzbCcgOiAnaHR0cDovL3d3dycpICsgJy5nb29nbGUt
+      YW5hbHl0aWNzLmNvbS9nYS5qcyc7CiAgICB2YXIgcyA9IGRvY3VtZW50Lmdl
+      dEVsZW1lbnRzQnlUYWdOYW1lKCdzY3JpcHQnKVswXTsgcy5wYXJlbnROb2Rl
+      Lmluc2VydEJlZm9yZShnYSwgcyk7CiAgfSkoKTsKPC9zY3JpcHQ+CjxzY3Jp
+      cHQgdHlwZT0idGV4dC9qYXZhc2NyaXB0IiBjaGFyc2V0PSJ1dGYtOCI+CiAg
+      ICAkaihkb2N1bWVudCkucmVhZHkoZnVuY3Rpb24oKSB7CiAgICAgICAgCgog
+      ICAgICAgIHZhciBzX2NvZGU9cy50KCk7CiAgICAgICAgaWYoc19jb2RlKSB7
+      CiAgICAgICAgICAgIGRvY3VtZW50LndyaXRlKHNfY29kZSk7CiAgICAgICAg
+      fQogICAgfSk7Cjwvc2NyaXB0PgoKPHNjcmlwdCBsYW5ndWFnZT0iSmF2YVNj
+      cmlwdDEuMSIgdHlwZT0idGV4dC9qYXZhc2NyaXB0Ij4KICAgIHZhciBDUUsg
+      PSAiQjI4OEVFQ0UiLAogICAgICAgIENRUCA9ICgoImh0dHBzOiIgPT0gZG9j
+      dW1lbnQubG9jYXRpb24ucHJvdG9jb2wpID8gImh0dHBzOi8vIiA6ICJodHRw
+      Oi8vIik7CiAgICBkb2N1bWVudC53cml0ZSh1bmVzY2FwZSgiJTNDc2NyaXB0
+      IGxhbmd1YWdlPVwiSmF2YVNjcmlwdDEuMVwiIHR5cGU9XCJ0ZXh0L2phdmFz
+      Y3JpcHRcIiBzcmM9XCIiK0NRUCsianMuY2xpY2tlcXVhdGlvbnMubmV0L0NM
+      RVFfIitDUUsrIi5qc1wiICUzRSUzQy9zY3JpcHQlM0UiICkpOwo8L3Njcmlw
+      dD4KCjxzY3JpcHQgdHlwZT0idGV4dC9qYXZhc2NyaXB0Ij4KICBkb2N1bWVu
+      dC53cml0ZSh1bmVzY2FwZSgiJTNDc2NyaXB0IHNyYz0nIiArICgoZG9jdW1l
+      bnQubG9jYXRpb24ucHJvdG9jb2w9PSJodHRwczoiKT8iaHR0cHM6IjoiaHR0
+      cDoiKSArICIvL3NuYXBhYnVnLmFwcHNwb3QuY29tL3NuYXBhYnVnLmpzJyB0
+      eXBlPSd0ZXh0L2phdmFzY3JpcHQnJTNFJTNDL3NjcmlwdCUzRSIpKTs8L3Nj
+      cmlwdD48c2NyaXB0IHR5cGU9InRleHQvamF2YXNjcmlwdCI+CiAgLy9TbmFw
+      QUJ1Zy5hZGRCdXR0b24oJzQ4MTZjYTI5LTkxMzAtNDA0NS1iMDhlLTVhNGRl
+      OTM1ZmY0YicsIjAiLCI1NSUiKTsKICBTbmFwQUJ1Zy5zZXREb21haW4oJy5j
+      b21wZXRlLmNvbScpOwogIFNuYXBBQnVnLmluaXQoJzQ4MTZjYTI5LTkxMzAt
+      NDA0NS1iMDhlLTVhNGRlOTM1ZmY0YicpOwo8L3NjcmlwdD4KCiAgICAKICAg
+      IDwhLS0gZW5kYmxvY2sgdGFncyAtLT4KCiAgICAKCiAgICA8IS0tIGJsb2Nr
+      IGllNl93YXJuaW5nIC0tPgogICAgCiAgICAgICAgPGRpdiBpZD0iaWU2LXdh
+      cm5pbmciIGNsYXNzPSJoaWRkZW4iPgogICAgICAgICAgICA8ZGl2IGlkPSJp
+      ZTYtd2FybmluZy1pbm5lciI+DQoNCiAgICA8ZGl2IGNsYXNzPSJsZWZ0Ij4N
+      CiAgICAgICAgPHA+T3VyIHNpdGUgbWF5IG5vdCBydW4gbGlrZSBpdCBzaG91
+      bGQgaW4gSW50ZXJuZXQgRXhwbG9yZXIgNi4gIEZvciBhIGJldHRlciBleHBl
+      cmllbmNlLCBwbGVhc2UgdXBncmFkZSB5b3VyIGJyb3dzZXI6PC9wPg0KDQog
+      ICAgICAgIDx1bD4NCiAgICAgICAgICAgIDxsaSBjbGFzcz0iZmlyZWZveCI+
+      PGEgaHJlZj0iaHR0cDovL3d3dy5maXJlZm94LmNvbSI+PHNwYW4+ZmlyZWZv
+      eDwvc3Bhbj48L2E+PC9saT4NCiAgICAgICAgICAgIDxsaSBjbGFzcz0iaWUi
+      PjxhIGhyZWY9Imh0dHA6Ly93d3cubWljcm9zb2Z0LmNvbS93aW5kb3dzL2lu
+      dGVybmV0LWV4cGxvcmVyL2RlZmF1bHQuYXNweCI+PHNwYW4+aWUgODwvc3Bh
+      bj48L2E+PC9saT4NCiAgICAgICAgICAgIDxsaSBjbGFzcz0iY2hyb21lIj48
+      YSBocmVmPSJodHRwOi8vd3d3Lmdvb2dsZS5jb20vY2hyb21lIj48c3Bhbj5j
+      aHJvbWU8L3NwYW4+PC9hPjwvbGk+DQogICAgICAgIDwvdWw+DQogICAgPC9k
+      aXY+DQogICAgDQogICAgPGEgaHJlZj0iIyIgb25jbGljaz0iaGlkZV9pZTZf
+      d2FybmluZygpOyIgaWQ9ImNsb3NlLWJ1dHRvbiI+RG9uJ3Qgc2hvdyBtZSB0
+      aGlzIG1lc3NhZ2UgYWdhaW48L2E+DQo8L2Rpdj4KICAgICAgICA8L2Rpdj4K
+      ICAgIAogICAgPCEtLSBlbmRibG9jayBpZTZfd2FybmluZyAtLT4KCjwvYm9k
+      eT4KCjwvaHRtbD4K
+    http_version: !binary |-
+      MS4x
+- !ruby/struct:VCR::HTTPInteraction
+  request: !ruby/struct:VCR::Request
     method: :get
     uri: http://toolbarqueries.google.com:80/tbr?ch=6340563836&client=navclient-auto&features=Rank&q=info%3Awww.google.com
     body: 
-    headers: 
-      user-agent: 
+    headers:
+      user-agent:
       - Page Rankr
-  response: !ruby/struct:VCR::Response 
-    status: !ruby/struct:VCR::ResponseStatus 
+  response: !ruby/struct:VCR::Response
+    status: !ruby/struct:VCR::ResponseStatus
       code: 200
-      message: OK
-    headers: 
-      x-frame-options: 
-      - SAMEORIGIN
-      expires: 
-      - Fri, 01 Jan 1990 00:00:00 GMT
-      content-type: 
-      - text/html; charset=ISO-8859-1
-      server: 
-      - gws
-      date: 
-      - Thu, 16 Feb 2012 01:36:44 GMT
-      x-xss-protection: 
-      - 1; mode=block
-      set-cookie: 
-      - PREF=ID=37efde17b84e2ff4:FF=0:TM=1329356204:LM=1329356204:S=Y0DoAenf74BnCbP6; expires=Sat, 15-Feb-2014 01:36:44 GMT; path=/; domain=.google.com
-      cache-control: 
-      - no-cache, must-revalidate
-      pragma: 
-      - no-cache
-      transfer-encoding: 
-      - chunked
-    body: |
-      Rank_1:1:9
-
-    http_version: "1.1"
+      message: !binary |-
+        T0s=
+    headers:
+      !binary "ZGF0ZQ==":
+      - !binary |-
+        TW9uLCAwMiBBcHIgMjAxMiAyMzo1MToxMSBHTVQ=
+      !binary "cHJhZ21h":
+      - !binary |-
+        bm8tY2FjaGU=
+      !binary "ZXhwaXJlcw==":
+      - !binary |-
+        RnJpLCAwMSBKYW4gMTk5MCAwMDowMDowMCBHTVQ=
+      !binary "Y2FjaGUtY29udHJvbA==":
+      - !binary |-
+        bm8tY2FjaGUsIG11c3QtcmV2YWxpZGF0ZQ==
+      !binary "Y29udGVudC10eXBl":
+      - !binary |-
+        dGV4dC9odG1sOyBjaGFyc2V0PUlTTy04ODU5LTE=
+      !binary "c2V0LWNvb2tpZQ==":
+      - !binary |-
+        UFJFRj1JRD1kMDUyZGNmODAwN2FlMDhiOkZGPTA6VE09MTMzMzQxMDY3MTpM
+        TT0xMzMzNDEwNjcxOlM9TjRXdE1zRklhOUIyNllSajsgZXhwaXJlcz1XZWQs
+        IDAyLUFwci0yMDE0IDIzOjUxOjExIEdNVDsgcGF0aD0vOyBkb21haW49Lmdv
+        b2dsZS5jb20=
+      !binary "c2VydmVy":
+      - !binary |-
+        Z3dz
+      !binary "eC14c3MtcHJvdGVjdGlvbg==":
+      - !binary |-
+        MTsgbW9kZT1ibG9jaw==
+      !binary "eC1mcmFtZS1vcHRpb25z":
+      - !binary |-
+        U0FNRU9SSUdJTg==
+      !binary "dHJhbnNmZXItZW5jb2Rpbmc=":
+      - !binary |-
+        Y2h1bmtlZA==
+    body: !binary |-
+      UmFua18xOjE6OQo=
+    http_version: !binary |-
+      MS4x
