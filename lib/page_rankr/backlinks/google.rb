@@ -16,6 +16,10 @@ module PageRankr
       def xpath
         "//div[@id='subform_ctrl']/div[2]/text()"
       end
+
+      def name
+        :backlinks_google
+      end
     end
   end
 end

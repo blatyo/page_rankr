@@ -13,6 +13,10 @@ module PageRankr
       def xpath
         "//div[@class='section score']/h4[2]/text()"
       end
+
+      def name
+        :ranks_compete
+      end
     end
   end
 end

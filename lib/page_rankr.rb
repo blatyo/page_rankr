@@ -9,6 +9,8 @@ module PageRankr
   class SupportedComponentsInvalid < StandardError; end
 
   class << self
+    attr_accessor :proxy_service
+
     def backlinks(site, *search_engines)
       Backlinks.new.lookup(Site.new(site), *search_engines)
     end

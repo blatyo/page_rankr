@@ -20,6 +20,10 @@ module PageRankr
       def clean(backlink_count)
         super(backlink_count.gsub('1-10', ''))
       end
+
+      def name
+        :indexes_bing
+      end
     end
   end
 end

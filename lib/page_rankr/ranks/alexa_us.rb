@@ -26,6 +26,10 @@ module PageRankr
       def supported_components
         [:domain]
       end
+
+      def name
+        :ranks_alexa_us
+      end
     end
   end
 end

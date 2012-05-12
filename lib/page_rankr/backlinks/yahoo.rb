@@ -16,6 +16,10 @@ module PageRankr
       def xpath
         "//span[@id='resultCount']/text()"
       end
+
+      def name
+        :backlinks_yahoo
+      end
     end
   end
 end

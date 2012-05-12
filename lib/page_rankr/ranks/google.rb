@@ -28,6 +28,10 @@ module PageRankr
       def regex
         /Rank_\d+:\d+:(\d+)/
       end
+
+      def name
+        :ranks_google
+      end
     end
   end
 end

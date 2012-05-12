@@ -16,6 +16,10 @@ module PageRankr
       def xpath
         "//div[@id='subform_ctrl']/div[2]/text()"
       end
+
+      def name
+        :indexes_google
+      end
     end
   end
 end

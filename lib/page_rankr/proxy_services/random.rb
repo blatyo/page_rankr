@@ -5,7 +5,7 @@ module PageRankr
         @proxies = proxies
       end
 
-      def proxy(class_name, site)
+      def proxy(name, site)
         @proxies[rand(@proxies.length)]
       end
     end

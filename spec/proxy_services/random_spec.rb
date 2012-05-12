@@ -8,14 +8,14 @@ describe PageRankr::ProxyServices::Random do
     ]
   end
   let(:site){PageRankr::Site("http://www.google.com")}
-  let(:class_name){"PageRankr::Ranks::Google"}
+  let(:name){:ranks_google}
   subject{PageRankr::ProxyServices::Random.new(proxies)}
 
   it{should respond_to(:proxy).with(2).arguments}
 
   it "should return a proxy from the list of proxies" do
     10.times do
-      proxies.should include(subject.proxy(class_name, site))
+      proxies.should include(subject.proxy(name, site))
     end
   end
 end

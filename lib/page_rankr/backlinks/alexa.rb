@@ -16,6 +16,10 @@ module PageRankr
       def xpath
         "//linksin/@num"
       end
+
+      def name
+        :backlinks_alexa
+      end
     end
   end
 end

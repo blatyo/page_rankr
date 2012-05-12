@@ -6,7 +6,7 @@ module PageRankr
         @index = 0
       end
 
-      def proxy(class_name, site)
+      def proxy(name, site)
         @proxies[@index].tap do
           @index = (@index + 1) % @proxies.length
         end

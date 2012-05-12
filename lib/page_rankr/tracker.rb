@@ -15,6 +15,7 @@ module PageRankr
 
       @options = {:method => method, :headers => {'User-Agent' => 'Page Rankr'}}
       @options[:params] = params if respond_to? :params
+      @options[:proxy] = proxy
       @options.merge!(options)
       
       request.on_complete do |response|
@@ -42,6 +43,10 @@ module PageRankr
 
     def method
       :get
+    end
+
+    def proxy
+      PageRankr.proxy_service.proxy(self.class.name, @site) if PageRankr.proxy_service
     end
 
     def run
@@ -72,6 +77,10 @@ module PageRankr
       else
         cleaned_content.to_i
       end
+    end
+
+    def name
+      raise PageRankr::MethodRequired, "name is undefined for #{self.class.name}"
     end
   end
 end
