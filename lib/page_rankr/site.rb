@@ -7,6 +7,7 @@ module PageRankr
     COMPONENTS = [:scheme, :subdomain, :domain, :port, :path, :query, :fragment]
 
     def initialize(site)
+      site = "http://#{site}" unless site =~ /:\/\//
       @uri = URI.parse(site)
       @domain = PublicSuffix.parse(@uri.host || "")
 
