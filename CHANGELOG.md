@@ -2,6 +2,8 @@
 
 ## Version 3.2.0
 * Added proxy service
+* Removed Compete rank tracker, because there is no way to get it without a key now
+* Fixed google backlinks and indexes
 
 ## Version 3.1.2
 * Fix issue with URI parse in 1.9.3
