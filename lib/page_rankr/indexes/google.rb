@@ -14,7 +14,7 @@ module PageRankr
       end
 
       def xpath
-        "//div[@id='subform_ctrl']/div[2]/text()"
+        "//div[@id='resultStats']/text()"
       end
 
       def name

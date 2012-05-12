@@ -16,7 +16,6 @@ describe PageRankr do
     
     it{ should include(:alexa_us) }
     it{ should include(:alexa_global) }
-    it{ should include(:compete) }
     it{ should include(:google) }
   end
 
@@ -31,11 +30,9 @@ describe PageRankr do
       it{ should have_key(:alexa_us) }
       it{ should have_key(:alexa_global) }
       it{ should have_key(:google) }
-      it{ should have_key(:compete) }
     
       it{ subject[:alexa_us].should >= 1 }
       it{ subject[:alexa_global].should >= 1 }
-      it{ subject[:compete].should >= 1 }
       it{ subject[:google].should be_in(0..10) }
     end
     
@@ -49,11 +46,9 @@ describe PageRankr do
       it{ should have_key(:alexa_us) }
       it{ should have_key(:alexa_global) }
       it{ should have_key(:google) }
-      it{ should have_key(:compete) }
     
       it{ subject[:alexa_us].should be_nil }
       it{ subject[:alexa_global].should be_nil }
-      it{ subject[:compete].should be_nil }
       it{ subject[:google].should be_nil }
     end
   end
