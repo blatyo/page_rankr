@@ -1,5 +1,8 @@
 # Change Log
 
+## Version 3.2.0
+* Added proxy service
+
 ## Version 3.1.2
 * Fix issue with URI parse in 1.9.3
 

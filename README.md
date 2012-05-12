@@ -130,6 +130,23 @@ Also, once a tracker has run three values will be accessible from it:
     tracker.body    #=> "<html><head>..."
 ```
 
+## Rate limiting and proxies
+
+One of the annoying things about each of these services is that they really don't like you scraping data from them. In order to deal with this issue, they throttle traffic from a single machine. The simplest way to get around this is to use proxy machines to make the requests. 
+
+In PageRankr >= 3.2.0, this is much simpler. The first thing you'll need is a proxy service. Two are provided [here](https://github.com/blatyo/page_rankr/tree/master/lib/page_rankr/proxy_services). A proxy service must define a `proxy` method that takes two arguments. It should return a string like `user:password@192.168.1.1:50501`.
+
+Once you have a proxy service, you can tell PageRankr to use it. For example:
+
+``` ruby
+    PageRankr.proxy_service = PageRankr::ProxyServices::Random.new([
+      'user:password@192.168.1.1:50501',
+      'user:password@192.168.1.2:50501'
+    ])
+```
+
+Once PageRankr knows about your proxy service, any request that is made will ask for a proxy from the proxy service. It does this by calling the `proxy` method. When it calls the `proxy` method, it passed the name of the tracker (e.g. `:ranks_google`) and the site that is being looked up. Hopefully, this information is sufficient for you to build a much smarter proxy service than the ones provided (pull requests welcome!).
+
 ## Fix it!
 
 If you ever find something is broken it should now be much easier to fix it with version >= 1.3.0. For example, if the xpath used to lookup a backlink is broken, just override the method for that class to provide the correct xpath.
@@ -198,10 +215,8 @@ Then, just make sure you require the class and PageRankr and whenever you call P
   (if you want to have your own version, that is fine but bump version in a commit by itself I can ignore when I pull)
 * Send me a pull request. Bonus points for topic branches.
 
-## TODO Version 3-4
-* Use API's where possible
-* New Compete API
-* Some search engines throttle the amount of queries. It would be nice to know when this happens. Probably throw an exception.
+## TODO Version 4
+* Detect request throttling
 
 ## Contributors
 * [Dru Ibarra](https://github.com/Druwerd) - Use Google Search API instead of scraping.
@@ -212,6 +227,7 @@ Then, just make sure you require the class and PageRankr and whenever you call P
 * [Chris Corbyn](https://github.com/d11wtq) - Fix google page rank url.
 * [Hans Haselberg](https://github.com/i0rek) - Update typhoeus gem.
 * [Priit Haamer](https://github.com/priithaamer) - Fix google backlinks lookup.
+* [Marty McKenna](https://github.com/martyMM) - Idea for proxy service
 
 ## Shout Out
 Gotta give credit where credits due!
