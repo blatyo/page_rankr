@@ -1,6 +1,7 @@
 require File.expand_path("../page_rankr/backlinks", __FILE__)
 require File.expand_path("../page_rankr/ranks", __FILE__)
 require File.expand_path("../page_rankr/indexes", __FILE__)
+require File.expand_path("../page_rankr/proxy_services", __FILE__)
 
 module PageRankr
   class MethodRequired             < StandardError; end
