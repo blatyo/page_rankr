@@ -46,7 +46,7 @@ module PageRankr
     end
 
     def proxy
-      PageRankr.proxy_service.proxy(self.class.name, @site) if PageRankr.proxy_service
+      PageRankr.proxy_service.proxy(name, @site) if PageRankr.proxy_service
     end
 
     def run

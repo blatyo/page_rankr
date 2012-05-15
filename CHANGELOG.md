@@ -1,5 +1,8 @@
 # Change Log
 
+## Version 3.2.1
+* Fix issue where tracker calls proxy with class name rather than name defined on class instance.
+
 ## Version 3.2.0
 * Added proxy service
 * Removed Compete rank tracker, because there is no way to get it without a key now
