@@ -1,0 +1,334 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>Page rankr by blatyo</title>
+
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
+    <script src="javascripts/scale.fix.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1 class="header">Page rankr</h1>
+        <p class="header">Easy way to retrieve Google Page Rank, Alexa Rank, index counts, and backlink counts</p>
+
+        <ul>
+          <li class="download"><a class="buttons" href="https://github.com/blatyo/page_rankr/zipball/master">Download ZIP</a></li>
+          <li class="download"><a class="buttons" href="https://github.com/blatyo/page_rankr/tarball/master">Download TAR</a></li>
+          <li><a class="buttons github" href="https://github.com/blatyo/page_rankr">View On GitHub</a></li>
+        </ul>
+
+        <p class="header">This project is maintained by <a class="header name" href="https://github.com/blatyo">blatyo</a></p>
+
+
+      </header>
+      <section>
+        <p><a href="http://travis-ci.org/blatyo/page_rankr"><img src="http://travis-ci.org/blatyo/page_rankr.png" alt="Build Status"></a>
+Provides an easy way to retrieve Google Page Rank, Alexa Rank, backlink counts, and index counts.</p>
+
+<p>Check out a little <a href="http://isitpopular.heroku.com">web app</a> I wrote up that uses it or look at the <a href="https://github.com/blatyo/is_it_popular">source</a>.</p>
+
+<h2>Get it!</h2>
+
+<div class="highlight">
+<pre>gem install PageRankr
+</pre>
+</div>
+
+
+<h2>Use it!</h2>
+
+<div class="highlight">
+<pre><span class="nb">require</span> <span class="s1">'page_rankr'</span>
+</pre>
+</div>
+
+
+<h3>Backlinks</h3>
+
+<p>Backlinks are the result of doing a search with a query like "link:<a href="http://www.google.com">www.google.com</a>". The number of returned results indicates how many sites point to that url. If a site is not tracked then <code>nil</code> is returned.</p>
+
+<div class="highlight">
+<pre><span class="no">PageRankr</span><span class="o">.</span><span class="n">backlinks</span><span class="p">(</span><span class="s1">'www.google.com'</span><span class="p">,</span> <span class="ss">:google</span><span class="p">,</span> <span class="ss">:bing</span><span class="p">)</span> <span class="c1">#=&gt; {:google=&gt;161000, :bing=&gt;208000000}</span>
+<span class="no">PageRankr</span><span class="o">.</span><span class="n">backlinks</span><span class="p">(</span><span class="s1">'www.google.com'</span><span class="p">,</span> <span class="ss">:yahoo</span><span class="p">)</span>         <span class="c1">#=&gt; {:yahoo=&gt;256300062}</span>
+</pre>
+</div>
+
+
+<p>If you don't specify a search engine, then all of them are used.</p>
+
+<div class="highlight">
+<pre><span class="c1"># this</span>
+<span class="no">PageRankr</span><span class="o">.</span><span class="n">backlinks</span><span class="p">(</span><span class="s1">'www.google.com'</span><span class="p">)</span>
+    <span class="c1">#=&gt; {:google=&gt;23000, :bing=&gt;215000000, :yahoo=&gt;250522337, :alexa=&gt;727036}</span>
+
+<span class="c1"># is equivalent to</span>
+<span class="no">PageRankr</span><span class="o">.</span><span class="n">backlinks</span><span class="p">(</span><span class="s1">'www.google.com'</span><span class="p">,</span> <span class="ss">:google</span><span class="p">,</span> <span class="ss">:bing</span><span class="p">,</span> <span class="ss">:yahoo</span><span class="p">,</span> <span class="ss">:alexa</span><span class="p">)</span>
+    <span class="c1">#=&gt; {:google=&gt;23000, :bing=&gt;215000000, :yahoo=&gt;250522337, :alexa=&gt;727036}</span>
+</pre>
+</div>
+
+
+<p>You can also use the alias <code>backlink</code> instead of <code>backlinks</code>.</p>
+
+<p>Valid search engines are: <code>:google, :bing, :yahoo, :alexa</code> (altavista and alltheweb now redirect to yahoo). To get this list you can do:</p>
+
+<div class="highlight">
+<pre><span class="no">PageRankr</span><span class="o">.</span><span class="n">backlink_trackers</span> <span class="c1">#=&gt; [:alexa, :bing, :google, :yahoo]</span>
+</pre>
+</div>
+
+
+<h3>Indexes</h3>
+
+<p>Indexes are the result of doing a search with a query like "site:<a href="http://www.google.com">www.google.com</a>". The number of returned results indicates how many pages of a domain are indexed by a particular search engine. If the site is not indexed <code>nil</code> is returned.</p>
+
+<div class="highlight">
+<pre><span class="no">PageRankr</span><span class="o">.</span><span class="n">indexes</span><span class="p">(</span><span class="s1">'www.google.com'</span><span class="p">,</span> <span class="ss">:google</span><span class="p">)</span>       <span class="c1">#=&gt; {:google=&gt;4860000}</span>
+<span class="no">PageRankr</span><span class="o">.</span><span class="n">indexes</span><span class="p">(</span><span class="s1">'www.google.com'</span><span class="p">,</span> <span class="ss">:bing</span><span class="p">)</span>         <span class="c1">#=&gt; {:bing=&gt;2120000}</span>
+</pre>
+</div>
+
+
+<p>If you don't specify a search engine, then all of them are used.</p>
+
+<div class="highlight">
+<pre><span class="c1"># this</span>
+<span class="no">PageRankr</span><span class="o">.</span><span class="n">indexes</span><span class="p">(</span><span class="s1">'www.google.com'</span><span class="p">)</span>
+    <span class="c1">#=&gt; {:bing=&gt;2120000, :google=&gt;4860000, :yahoo =&gt; 4863000}</span>
+
+<span class="c1"># is equivalent to</span>
+<span class="no">PageRankr</span><span class="o">.</span><span class="n">indexes</span><span class="p">(</span><span class="s1">'www.google.com'</span><span class="p">,</span> <span class="ss">:google</span><span class="p">,</span> <span class="ss">:bing</span><span class="p">,</span> <span class="ss">:yahoo</span><span class="p">)</span>
+    <span class="c1">#=&gt; {:bing=&gt;2120000, :google=&gt;4860000, :yahoo =&gt; 4863000}</span>
+</pre>
+</div>
+
+
+<p>You can also use the alias <code>index</code> instead of <code>indexes</code>.</p>
+
+<p>Valid search engines are: <code>:google, :bing, :yahoo</code>. To get this list you can do:</p>
+
+<div class="highlight">
+<pre><span class="no">PageRankr</span><span class="o">.</span><span class="n">index_trackers</span> <span class="c1">#=&gt; [:bing, :google, :yahoo]</span>
+</pre>
+</div>
+
+
+<h3>Ranks</h3>
+
+<p>Ranks are ratings assigned to specify how popular a site is. The most famous example of this is the google page rank.</p>
+
+<div class="highlight">
+<pre><span class="no">PageRankr</span><span class="o">.</span><span class="n">ranks</span><span class="p">(</span><span class="s1">'www.google.com'</span><span class="p">,</span> <span class="ss">:google</span><span class="p">)</span>        <span class="c1">#=&gt; {:google=&gt;10}</span>
+</pre>
+</div>
+
+
+<p>If you don't specify a rank provider, then all of them are used.</p>
+
+<div class="highlight">
+<pre><span class="no">PageRankr</span><span class="o">.</span><span class="n">ranks</span><span class="p">(</span><span class="s1">'www.google.com'</span><span class="p">,</span> <span class="ss">:alexa_us</span><span class="p">,</span> <span class="ss">:alexa_global</span><span class="p">,</span> <span class="ss">:google</span><span class="p">)</span>
+    <span class="c1">#=&gt; {:alexa_us=&gt;1, :alexa_global=&gt;1, :google=&gt;10}</span>
+
+<span class="c1"># this also gives the same result</span>
+<span class="no">PageRankr</span><span class="o">.</span><span class="n">ranks</span><span class="p">(</span><span class="s1">'www.google.com'</span><span class="p">)</span>
+    <span class="c1">#=&gt; {:alexa_us=&gt;1, :alexa_global=&gt;1, :google=&gt;10}</span>
+</pre>
+</div>
+
+
+<p>You can also use the alias <code>rank</code> instead of <code>ranks</code>.</p>
+
+<p>Valid rank trackers are: <code>:alexa_us, :alexa_global, :google</code>. To get this you can do:</p>
+
+<div class="highlight">
+<pre><span class="no">PageRankr</span><span class="o">.</span><span class="n">rank_trackers</span> <span class="c1">#=&gt; [:alexa_global, :alexa_us, :google]</span>
+</pre>
+</div>
+
+
+<p>Alexa ranks are descending where 1 is the most popular. Google page ranks are in the range 0-10 where 10 is the most popular. If a site is unindexed then the rank will be nil.</p>
+
+<h2>Use it a la carte!</h2>
+
+<p>From versions &gt;= 3, everything should be usable in a much more a la carte manner. If all you care about is google page rank (which I speculate is common) you can get that all by itself:</p>
+
+<div class="highlight">
+<pre><span class="nb">require</span> <span class="s1">'page_rankr/ranks/google'</span>
+
+<span class="n">tracker</span> <span class="o">=</span> <span class="no">PageRankr</span><span class="o">::</span><span class="no">Ranks</span><span class="o">::</span><span class="no">Google</span><span class="o">.</span><span class="n">new</span><span class="p">(</span><span class="s2">"myawesomesite.com"</span><span class="p">)</span>
+<span class="n">tracker</span><span class="o">.</span><span class="n">run</span> <span class="c1">#=&gt; 2</span>
+</pre>
+</div>
+
+
+<p>Also, once a tracker has run three values will be accessible from it:</p>
+
+<div class="highlight">
+<pre><span class="c1"># The value extracted. Tracked is aliased to rank for PageRankr::Ranks, backlink for PageRankr::Backlinks, and index for PageRankr::Indexes.</span>
+<span class="n">tracker</span><span class="o">.</span><span class="n">tracked</span> <span class="c1">#=&gt; 2</span>
+
+<span class="c1"># The value extracted with the jsonpath, xpath, or regex before being cleaned.</span>
+<span class="n">tracker</span><span class="o">.</span><span class="n">raw</span>     <span class="c1">#=&gt; "2"</span>
+
+<span class="c1"># The body of the response</span>
+<span class="n">tracker</span><span class="o">.</span><span class="n">body</span>    <span class="c1">#=&gt; "&lt;html&gt;&lt;head&gt;..."</span>
+</pre>
+</div>
+
+
+<h2>Rate limiting and proxies</h2>
+
+<p>One of the annoying things about each of these services is that they really don't like you scraping data from them. In order to deal with this issue, they throttle traffic from a single machine. The simplest way to get around this is to use proxy machines to make the requests. </p>
+
+<p>In PageRankr &gt;= 3.2.0, this is much simpler. The first thing you'll need is a proxy service. Two are provided <a href="https://github.com/blatyo/page_rankr/tree/master/lib/page_rankr/proxy_services">here</a>. A proxy service must define a <code>proxy</code> method that takes two arguments. It should return a string like <code>user:password@192.168.1.1:50501</code>.</p>
+
+<p>Once you have a proxy service, you can tell PageRankr to use it. For example:</p>
+
+<div class="highlight">
+<pre><span class="no">PageRankr</span><span class="o">.</span><span class="n">proxy_service</span> <span class="o">=</span> <span class="no">PageRankr</span><span class="o">::</span><span class="no">ProxyServices</span><span class="o">::</span><span class="no">Random</span><span class="o">.</span><span class="n">new</span><span class="p">(</span><span class="o">[</span>
+  <span class="s1">'user:password@192.168.1.1:50501'</span><span class="p">,</span>
+  <span class="s1">'user:password@192.168.1.2:50501'</span>
+<span class="o">]</span><span class="p">)</span>
+</pre>
+</div>
+
+
+<p>Once PageRankr knows about your proxy service, any request that is made will ask for a proxy from the proxy service. It does this by calling the <code>proxy</code> method. When it calls the <code>proxy</code> method, it passed the name of the tracker (e.g. <code>:ranks_google</code>) and the site that is being looked up. Hopefully, this information is sufficient for you to build a much smarter proxy service than the ones provided (pull requests welcome!).</p>
+
+<h2>Fix it!</h2>
+
+<p>If you ever find something is broken it should now be much easier to fix it with version &gt;= 1.3.0. For example, if the xpath used to lookup a backlink is broken, just override the method for that class to provide the correct xpath.</p>
+
+<div class="highlight">
+<pre><span class="k">module</span> <span class="nn">PageRankr</span>
+  <span class="k">class</span> <span class="nc">Backlinks</span>
+    <span class="k">class</span> <span class="nc">Bing</span>
+      <span class="k">def</span> <span class="nf">xpath</span>
+        <span class="s2">"//my/new/awesome/@xpath"</span>
+      <span class="k">end</span>
+    <span class="k">end</span>
+  <span class="k">end</span>
+<span class="k">end</span>
+</pre>
+</div>
+
+
+<h2>Extend it!</h2>
+
+<p>If you ever come across a site that provides a rank or backlinks you can hook that class up to automatically be use with PageRankr. PageRankr does this by looking up all the classes namespaced under Backlinks, Indexes, and Ranks.</p>
+
+<div class="highlight">
+<pre><span class="nb">require</span> <span class="s1">'page_rankr/backlink'</span>
+
+<span class="k">module</span> <span class="nn">PageRankr</span>
+  <span class="k">class</span> <span class="nc">Backlinks</span>
+    <span class="k">class</span> <span class="nc">Foo</span>
+      <span class="kp">include</span> <span class="no">Backlink</span>
+
+      <span class="c1"># This method is required</span>
+      <span class="k">def</span> <span class="nf">url</span>
+        <span class="s2">"http://example.com/"</span>
+      <span class="k">end</span>
+
+      <span class="c1"># This method specifies the parameters for the url. It is optional, but likely required for the class to be useful.</span>
+      <span class="k">def</span> <span class="nf">params</span>
+        <span class="p">{</span><span class="ss">:q</span> <span class="o">=&gt;</span> <span class="n">tracked_url</span><span class="p">}</span>
+      <span class="k">end</span>
+
+      <span class="c1"># You can use a method named either xpath, jsonpath, or regex with the appropriate query type</span>
+      <span class="k">def</span> <span class="nf">xpath</span>
+        <span class="s2">"//backlinks/text()"</span>
+      <span class="k">end</span>
+
+      <span class="c1"># Optionally, you could override the clean method if the current implementation isn't sufficient</span>
+      <span class="c1"># def clean(backlink_count)</span>
+      <span class="c1">#   #do some of my own cleaning</span>
+      <span class="c1">#   super(backlink_count) # strips non-digits and converts it to an integer or nil</span>
+      <span class="c1"># end</span>
+    <span class="k">end</span>
+  <span class="k">end</span>
+<span class="k">end</span>
+
+<span class="no">PageRankr</span><span class="o">::</span><span class="no">Backlinks</span><span class="o">::</span><span class="no">Foo</span><span class="o">.</span><span class="n">new</span><span class="p">(</span><span class="s2">"myawesomesite.com"</span><span class="p">)</span><span class="o">.</span><span class="n">run</span> <span class="c1">#=&gt; 3</span>
+<span class="no">PageRankr</span><span class="o">.</span><span class="n">backlinks</span><span class="p">(</span><span class="s2">"myawesomesite.com"</span><span class="p">,</span> <span class="ss">:foo</span><span class="p">)</span><span class="o">[</span><span class="ss">:foo</span><span class="o">]</span>   <span class="c1">#=&gt; 3</span>
+</pre>
+</div>
+
+
+<p>Then, just make sure you require the class and PageRankr and whenever you call PageRankr.backlinks it'll be able to use your class.</p>
+
+<h2>Note on Patches/Pull Requests</h2>
+
+<ul>
+<li>Fork the project.</li>
+<li>Make your feature addition or bug fix.</li>
+<li>Add tests for it. This is important so I don't break it in a
+future version unintentionally.</li>
+<li>Commit, do not mess with rakefile, version, or history.
+(if you want to have your own version, that is fine but bump version in a commit by itself I can ignore when I pull)</li>
+<li>Send me a pull request. Bonus points for topic branches.</li>
+</ul><h2>TODO Version 4</h2>
+
+<ul>
+<li>Detect request throttling</li>
+</ul><h2>Contributors</h2>
+
+<ul>
+<li>
+<a href="https://github.com/Druwerd">Dru Ibarra</a> - Use Google Search API instead of scraping.</li>
+<li>
+<a href="https://github.com/iterationlabs">Iteration Labs, LLC</a> - Compete rank tracker and domain indexes.</li>
+<li>
+<a href="http://www.marc-seeger.de">Marc Seeger</a> (<a href="http://www.acquia.com">Acquia</a>) - Ignore invalid ranks that Alexa returns for incorrect sites.</li>
+<li>
+<a href="https://github.com/rymai">Rémy Coutable</a> - Update public_suffix_service gem.</li>
+<li>
+<a href="https://github.com/titanous">Jonathan Rudenberg</a> - Fix compete scraper.</li>
+<li>
+<a href="https://github.com/d11wtq">Chris Corbyn</a> - Fix google page rank url.</li>
+<li>
+<a href="https://github.com/i0rek">Hans Haselberg</a> - Update typhoeus gem.</li>
+<li>
+<a href="https://github.com/priithaamer">Priit Haamer</a> - Fix google backlinks lookup.</li>
+<li>
+<a href="https://github.com/martyMM">Marty McKenna</a> - Idea for proxy service</li>
+</ul><h2>Shout Out</h2>
+
+<p>Gotta give credit where credits due!</p>
+
+<p>Original inspiration from:</p>
+
+<ul>
+<li><a href="https://github.com/alexmipego/PageRankSharp">PageRankSharp</a></li>
+<li><a href="http://snipplr.com/view/18329/google-page-range-lookup/">Google Page Range Lookup/</a></li>
+<li><a href="http://www.sitetoolcenter.com/free-website-scripts/ajax-pr-checker.php">AJAX PR Checker</a></li>
+</ul><h2>Copyright</h2>
+
+<p>Copyright (c) 2010 Allen Madsen. See LICENSE for details.</p>
+      </section>
+      <footer>
+        <p><small>Hosted on <a href="https://pages.github.com">GitHub Pages</a> using the Dinky theme</small></p>
+      </footer>
+    </div>
+    <!--[if !IE]><script>fixScale(document);</script><!--<![endif]-->
+		          <script type="text/javascript">
+            var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+            document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+          </script>
+          <script type="text/javascript">
+            try {
+              var pageTracker = _gat._getTracker("UA-33059328-1");
+            pageTracker._trackPageview();
+            } catch(err) {}
+          </script>
+
+  </body>
+</html>
