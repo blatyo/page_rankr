@@ -1,5 +1,8 @@
 # Change Log
 
+## Version 3.2.2
+* Fix for Google pagerank check. Query parts were omitted which made the some pages get the same PR as the domain.
+
 ## Version 3.2.1
 * Fix issue where tracker calls proxy with class name rather than name defined on class instance.
 
