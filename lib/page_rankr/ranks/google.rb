@@ -14,7 +14,7 @@ module PageRankr
       end
 
       def supported_components
-        [:subdomain, :path]
+        [:subdomain, :path, :query]
       end
 
       def url
