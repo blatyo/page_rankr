@@ -1,134 +1,107 @@
----
-http_interactions:
-- request:
+--- 
+http_interactions: 
+- request: 
     method: get
-    uri: http://data.alexa.com/data?cli=10&dat=snbamz&url=please-dont-register-a-site-that-breaks-this-test.com
-    body:
-      encoding: US-ASCII
-      string: ''
-    headers:
-      User-Agent:
-      - Mozilla/5.0 (Macintosh; Intel Mac OS X 10_7_0) AppleWebKit/535.11 (KHTML,
-        like Gecko) Chrome/17.0.963.12 Safari/535.11
-  response:
-    status:
+    uri: http://data.alexa.com/data
+    body: 
+      string: ""
+    headers: 
+      User-Agent: 
+      - Mozilla/5.0 (Macintosh; Intel Mac OS X 10_7_0) AppleWebKit/535.11 (KHTML, like Gecko) Chrome/17.0.963.12 Safari/535.11
+  response: 
+    status: 
       code: 200
-      message: !binary |-
-        T0s=
-    headers:
-      !binary "Q29udGVudC1UeXBl":
-      - !binary |-
-        dGV4dC94bWw=
-      !binary "Q29udGVudC1MZW5ndGg=":
-      - !binary |-
-        Mjc4
-      !binary "Q29ubmVjdGlvbg==":
-      - !binary |-
-        a2VlcC1hbGl2ZQ==
-    body:
-      encoding: ASCII-8BIT
-      string: !binary |-
-        PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4NCg0KPEFM
-        RVhBIFZFUj0iMC45IiBVUkw9InBsZWFzZS1kb250LXJlZ2lzdGVyLWEtc2l0
-        ZS10aGF0LWJyZWFrcy10aGlzLXRlc3QuY29tLyIgSE9NRT0iMCIgQUlEPSI9
-        Ij4NCjxSTFMgUFJFRklYPSJodHRwOi8vIiBtb3JlPSIwIj4KPC9STFM+CjxT
-        RCBUSVRMRT0iQSIgRkxBR1M9IiIgSE9TVD0icGxlYXNlLWRvbnQtcmVnaXN0
-        ZXItYS1zaXRlLXRoYXQtYnJlYWtzLXRoaXMtdGVzdC5jb20iPgo8L1NEPgoK
-        PC9BTEVYQT4=
-    http_version: !binary |-
-      MS4x
-  recorded_at: Sat, 12 May 2012 18:39:16 GMT
-- request:
+      message: OK
+    headers: 
+      Connection: 
+      - keep-alive
+      Content-Length: 
+      - "278"
+      Content-type: 
+      - text/xml
+    body: 
+      string: |-
+        <?xml version="1.0" encoding="UTF-8"?>
+        
+        <ALEXA VER="0.9" URL="please-dont-register-a-site-that-breaks-this-test.com/" HOME="0" AID="=">
+        <RLS PREFIX="http://" more="0">
+        </RLS>
+        <SD TITLE="A" FLAGS="" HOST="please-dont-register-a-site-that-breaks-this-test.com">
+        </SD>
+        
+        </ALEXA>
+    http_version: "1.1"
+  recorded_at: Sun, 16 Dec 2012 22:18:05 GMT
+- request: 
     method: get
-    uri: http://toolbarqueries.google.com/tbr?ch=63624986523&client=navclient-auto&features=Rank&q=info%3Aplease-dont-register-a-site-that-breaks-this-test.com
-    body:
-      encoding: US-ASCII
-      string: ''
-    headers:
-      User-Agent:
-      - Mozilla/5.0 (Macintosh; Intel Mac OS X 10_7_0) AppleWebKit/535.11 (KHTML,
-        like Gecko) Chrome/17.0.963.12 Safari/535.11
-  response:
-    status:
+    uri: http://data.alexa.com/data
+    body: 
+      string: ""
+    headers: 
+      User-Agent: 
+      - Mozilla/5.0 (Macintosh; Intel Mac OS X 10_7_0) AppleWebKit/535.11 (KHTML, like Gecko) Chrome/17.0.963.12 Safari/535.11
+  response: 
+    status: 
       code: 200
-      message: !binary |-
-        T0s=
-    headers:
-      !binary "RGF0ZQ==":
-      - !binary |-
-        U2F0LCAxMiBNYXkgMjAxMiAxODozOTowOCBHTVQ=
-      !binary "UHJhZ21h":
-      - !binary |-
-        bm8tY2FjaGU=
-      !binary "RXhwaXJlcw==":
-      - !binary |-
-        RnJpLCAwMSBKYW4gMTk5MCAwMDowMDowMCBHTVQ=
-      !binary "Q2FjaGUtQ29udHJvbA==":
-      - !binary |-
-        bm8tY2FjaGUsIG11c3QtcmV2YWxpZGF0ZQ==
-      !binary "Q29udGVudC1UeXBl":
-      - !binary |-
-        dGV4dC9odG1sOyBjaGFyc2V0PUlTTy04ODU5LTE=
-      !binary "U2V0LUNvb2tpZQ==":
-      - !binary |-
-        UFJFRj1JRD1hYjI1NTYzYzkzYTYxYTkxOkZGPTA6VE09MTMzNjg0Nzk0ODpM
-        TT0xMzM2ODQ3OTQ4OlM9d3hYQjBqdXhBdDVxTmlMWDsgZXhwaXJlcz1Nb24s
-        IDEyLU1heS0yMDE0IDE4OjM5OjA4IEdNVDsgcGF0aD0vOyBkb21haW49Lmdv
-        b2dsZS5jb20=
-      !binary "U2VydmVy":
-      - !binary |-
-        Z3dz
-      !binary "Q29udGVudC1MZW5ndGg=":
-      - !binary |-
-        MA==
-      !binary "WC1Yc3MtUHJvdGVjdGlvbg==":
-      - !binary |-
-        MTsgbW9kZT1ibG9jaw==
-      !binary "WC1GcmFtZS1PcHRpb25z":
-      - !binary |-
-        U0FNRU9SSUdJTg==
-    body:
-      encoding: ASCII-8BIT
-      string: !binary ""
-    http_version: !binary |-
-      MS4x
-  recorded_at: Sat, 12 May 2012 18:39:17 GMT
-- request:
+      message: OK
+    headers: 
+      Connection: 
+      - keep-alive
+      Content-Length: 
+      - "278"
+      Content-type: 
+      - text/xml
+    body: 
+      string: |-
+        <?xml version="1.0" encoding="UTF-8"?>
+        
+        <ALEXA VER="0.9" URL="please-dont-register-a-site-that-breaks-this-test.com/" HOME="0" AID="=">
+        <RLS PREFIX="http://" more="0">
+        </RLS>
+        <SD TITLE="A" FLAGS="" HOST="please-dont-register-a-site-that-breaks-this-test.com">
+        </SD>
+        
+        </ALEXA>
+    http_version: "1.1"
+  recorded_at: Sun, 16 Dec 2012 22:18:05 GMT
+- request: 
     method: get
-    uri: http://data.alexa.com/data?cli=10&dat=snbamz&url=please-dont-register-a-site-that-breaks-this-test.com
-    body:
-      encoding: US-ASCII
-      string: ''
-    headers:
-      User-Agent:
-      - Mozilla/5.0 (Macintosh; Intel Mac OS X 10_7_0) AppleWebKit/535.11 (KHTML,
-        like Gecko) Chrome/17.0.963.12 Safari/535.11
-  response:
-    status:
+    uri: http://toolbarqueries.google.com/tbr
+    body: 
+      string: ""
+    headers: 
+      User-Agent: 
+      - Mozilla/5.0 (Macintosh; Intel Mac OS X 10_7_0) AppleWebKit/535.11 (KHTML, like Gecko) Chrome/17.0.963.12 Safari/535.11
+  response: 
+    status: 
       code: 200
-      message: !binary |-
-        T0s=
-    headers:
-      !binary "Q29udGVudC1UeXBl":
-      - !binary |-
-        dGV4dC94bWw=
-      !binary "Q29udGVudC1MZW5ndGg=":
-      - !binary |-
-        Mjc4
-      !binary "Q29ubmVjdGlvbg==":
-      - !binary |-
-        a2VlcC1hbGl2ZQ==
-    body:
-      encoding: ASCII-8BIT
-      string: !binary |-
-        PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4NCg0KPEFM
-        RVhBIFZFUj0iMC45IiBVUkw9InBsZWFzZS1kb250LXJlZ2lzdGVyLWEtc2l0
-        ZS10aGF0LWJyZWFrcy10aGlzLXRlc3QuY29tLyIgSE9NRT0iMCIgQUlEPSI9
-        Ij4NCjxSTFMgUFJFRklYPSJodHRwOi8vIiBtb3JlPSIwIj4KPC9STFM+CjxT
-        RCBUSVRMRT0iQSIgRkxBR1M9IiIgSE9TVD0icGxlYXNlLWRvbnQtcmVnaXN0
-        ZXItYS1zaXRlLXRoYXQtYnJlYWtzLXRoaXMtdGVzdC5jb20iPgo8L1NEPgoK
-        PC9BTEVYQT4=
-    http_version: !binary |-
-      MS4x
-  recorded_at: Sat, 12 May 2012 18:39:17 GMT
-recorded_with: VCR 2.0.1
+      message: OK
+    headers: 
+      Content-Type: 
+      - text/html; charset=ISO-8859-1
+      Pragma: 
+      - no-cache
+      Expires: 
+      - Fri, 01 Jan 1990 00:00:00 GMT
+      Server: 
+      - gws
+      Date: 
+      - Sun, 16 Dec 2012 22:17:38 GMT
+      X-Frame-Options: 
+      - SAMEORIGIN
+      Set-Cookie: 
+      - PREF=ID=8431d11180013d30:FF=0:TM=1355696258:LM=1355696258:S=D59MpxUNRm-4fQVh; expires=Tue, 16-Dec-2014 22:17:38 GMT; path=/; domain=.google.com
+      - NID=67=SVjeTTlcH4pMmRpADLl3_Q48XWCZXrOQF_aXYIMjNR2G4CU2oLgsrfqeCuNePEqg1xcbwdXcZPQwsHoDG3dP00T2un-ipgyVBXp-hKvW7Pd9LWDiu-dD91Rt2lAwavYD; expires=Mon, 17-Jun-2013 22:17:38 GMT; path=/; domain=.google.com; HttpOnly
+      Cache-Control: 
+      - no-cache, must-revalidate
+      Content-Length: 
+      - "0"
+      P3P: 
+      - CP="This is not a P3P policy! See http://www.google.com/support/accounts/bin/answer.py?hl=en&answer=151657 for more info."
+      X-XSS-Protection: 
+      - 1; mode=block
+    body: 
+      string: ""
+    http_version: "1.1"
+  recorded_at: Sun, 16 Dec 2012 22:18:05 GMT
+recorded_with: VCR 2.3.0
