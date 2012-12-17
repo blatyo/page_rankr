@@ -1,8 +1,8 @@
-require 'typhoeus'
 require 'nokogiri'
 require 'json'
 require 'jsonpath'
 require File.expand_path('../site', __FILE__)
+require File.expand_path('../request', __FILE__)
 
 module PageRankr
   module Tracker
@@ -12,21 +12,7 @@ module PageRankr
 
     def initialize(site, options = {})
       @site = PageRankr::Site(site)
-
-      @options = {:method => method, :headers => {'User-Agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_7_0) AppleWebKit/535.11 (KHTML, like Gecko) Chrome/17.0.963.12 Safari/535.11'}}
-      @options[:params] = params if respond_to? :params
-      @options[:proxy] = proxy
-      @options.merge!(options)
-      
-      request.on_complete do |response|
-        self.body = response.body
-        self.raw = content(body)
-        self.tracked = clean(raw)
-      end
-    end
-
-    def request
-      @request ||= Typhoeus::Request.new(url, @options)
+      @options = options
     end
 
     def url
@@ -50,9 +36,11 @@ module PageRankr
     end
 
     def run
-      hydra = Typhoeus::Hydra.new
-      hydra.queue request
-      hydra.run
+      PageRankr::Request.new(self, @options).perform do |body|
+        self.body = body
+        self.raw = content(body)
+        self.tracked = clean(raw)
+      end
 
       tracked
     end

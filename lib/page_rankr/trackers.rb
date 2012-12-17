@@ -1,5 +1,3 @@
-require 'typhoeus'
-
 module PageRankr
   module Trackers
     attr_accessor :site_trackers
@@ -10,22 +8,18 @@ module PageRankr
 
     def lookup(site, *trackers)
       trackers = site_trackers if trackers.empty?
-      
       tracked = {}
-      hydra = Typhoeus::Hydra.new
-      trackers.each do |tracker|
+
+      trackers.map do |tracker|
         name, klass = constant_name(tracker), self.class
         
         next unless klass.const_defined? name
 
-        tracked[tracker] = klass.const_get(name).new(site)
-        hydra.queue tracked[tracker].request
-      end
-      hydra.run
-      
-      tracked.keys.each do |tracker|
-        tracked[tracker] = tracked[tracker].tracked
-      end
+        instance = klass.const_get(name)
+        Thread.new(tracker, instance, site) do |t, i, s|
+          tracked[t] = i.new(s).run
+        end
+      end.each(&:join)
       
       tracked
     end

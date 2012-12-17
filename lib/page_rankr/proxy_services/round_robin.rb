@@ -2,7 +2,7 @@ module PageRankr
   module ProxyServices
     class RoundRobin
       def initialize(proxies)
-        @proxies = proxies
+        @proxies = proxies.map{|proxy| URI.parse(proxy)}
         @index = 0
       end
 

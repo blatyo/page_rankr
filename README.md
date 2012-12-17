@@ -228,6 +228,7 @@ Then, just make sure you require the class and PageRankr and whenever you call P
 * [Hans Haselberg](https://github.com/i0rek) - Update typhoeus gem.
 * [Priit Haamer](https://github.com/priithaamer) - Fix google backlinks lookup.
 * [Marty McKenna](https://github.com/martyMM) - Idea for proxy service
+* 
 
 ## Shout Out
 Gotta give credit where credits due!
