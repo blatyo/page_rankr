@@ -10,6 +10,36 @@ RSpec::Matchers.define :be_in do |expected|
   end
 end
 
+RSpec::Matchers.define :be_number do
+  match do |actual|
+    actual.is_a?(Numeric) && actual.send(@symbol, @expected)
+  end
+
+  chain :>= do |expected|
+    @symbol = :>=
+    @expected = expected
+  end
+  
+  chain :> do |expected|
+    @symbol = :>
+    @expected = expected
+  end
+
+  chain :< do |expected|
+    @symbol = :<
+    @expected = expected
+  end
+
+  chain :<= do |expected|
+    @symbol = :<=
+    @expected = expected
+  end
+
+  failure_message_for_should do |actual|
+    "expected that #{actual.inspect} would be a number and #{@symbol} than #{@expected}"
+  end
+end
+
 describe PageRankr do
   describe "#rank_trackers" do
     subject{ PageRankr.rank_trackers }
@@ -31,8 +61,8 @@ describe PageRankr do
       it{ should have_key(:alexa_global) }
       it{ should have_key(:google) }
     
-      it{ subject[:alexa_us].should be >= 1 }
-      it{ subject[:alexa_global].should be >= 1 }
+      it{ subject[:alexa_us].should be_number >= 1 }
+      it{ subject[:alexa_global].should be_number >= 1 }
       it{ subject[:google].should be_in(0..10) }
     end
     
@@ -74,7 +104,7 @@ describe PageRankr do
         it{ should have_key(tracker) }
 
         it "#{tracker} should have a value greater than zero" do
-          subject[tracker].should be > 0
+          subject[tracker].should be_number > 0
         end
       end
     end
@@ -115,7 +145,7 @@ describe PageRankr do
         it{ should have_key(tracker) }
         
         it "#{tracker} should have a value greater than zero" do
-          subject[tracker].should be > 0
+          subject[tracker].should be_number > 0
         end
       end
     end
