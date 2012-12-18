@@ -16,15 +16,25 @@ module PageRankr
         next unless klass.const_defined? name
 
         instance = klass.const_get(name)
-        Thread.new(tracker, instance, site) do |t, i, s|
-          tracked[t] = i.new(s).run
-        end
+        
+        build_thread(
+          tracked, 
+          tracker, 
+          instance, 
+          site
+        )
       end.each(&:join)
       
       tracked
     end
     
     private
+
+    def build_thread(*args)
+      Thread.new(*args) do |tracked, tracker, instance, site|
+        tracked[tracker] = instance.new(site).run
+      end
+    end
     
     def symbol_for(klass)
       word = klass.to_s.dup
