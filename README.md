@@ -2,6 +2,8 @@
 
 Provides an easy way to retrieve Google Page Rank, Alexa Rank, backlink counts, and index counts.
 
+__Note: Version ~> 2.0 and ~> 3.0 used typheous internally which caused memory leak issues and failures on windows. 4.0.0 changes the implementation to use a Net::HTTP based library for better compatability.__ 
+
 Check out a little [web app][1] I wrote up that uses it or look at the [source][2].
 
 [1]: http://isitpopular.heroku.com
@@ -11,6 +13,12 @@ Check out a little [web app][1] I wrote up that uses it or look at the [source][
 
 ``` bash
     gem install PageRankr
+```
+
+## Gemfile
+
+``` ruby
+    gem 'PageRankr'
 ```
 
 ## Use it!
@@ -215,7 +223,7 @@ Then, just make sure you require the class and PageRankr and whenever you call P
   (if you want to have your own version, that is fine but bump version in a commit by itself I can ignore when I pull)
 * Send me a pull request. Bonus points for topic branches.
 
-## TODO Version 4
+## TODO Version 5
 * Detect request throttling
 
 ## Contributors
@@ -228,7 +236,7 @@ Then, just make sure you require the class and PageRankr and whenever you call P
 * [Hans Haselberg](https://github.com/i0rek) - Update typhoeus gem.
 * [Priit Haamer](https://github.com/priithaamer) - Fix google backlinks lookup.
 * [Marty McKenna](https://github.com/martyMM) - Idea for proxy service
-* 
+* [Alexi Rahman](https://github.com/odynvolk) - Adding query parts for google page rank
 
 ## Shout Out
 Gotta give credit where credits due!
