@@ -1,3 +1,5 @@
+require 'thread'
+
 module PageRankr
   module Trackers
     attr_accessor :site_trackers
@@ -8,7 +10,7 @@ module PageRankr
 
     def lookup(site, *trackers)
       trackers = site_trackers if trackers.empty?
-      tracked = {}
+      tracked, mutex = {}, Mutex.new
 
       trackers.map do |tracker|
         name, klass = constant_name(tracker), self.class
@@ -16,13 +18,8 @@ module PageRankr
         next unless klass.const_defined? name
 
         instance = klass.const_get(name)
-        
-        build_thread(
-          tracked, 
-          tracker, 
-          instance, 
-          site
-        )
+
+        build_thread(mutex, tracked, tracker, instance, site)
       end.each(&:join)
       
       tracked
@@ -30,9 +27,13 @@ module PageRankr
     
     private
 
-    def build_thread(*args)
-      Thread.new(*args) do |tracked, tracker, instance, site|
-        tracked[tracker] = instance.new(site).run
+    def build_thread(mutex, tracked, tracker, instance, site)
+      Thread.new(tracker, instance, site) do |t, i, s|
+        result = i.new(s).run
+
+        mutex.synchronize do
+          tracked[t] = result
+        end
       end
     end
     
