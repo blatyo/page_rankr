@@ -10,30 +10,30 @@ module PageRankr
 
     def lookup(site, *trackers)
       trackers = site_trackers if trackers.empty?
-      tracked, mutex = {}, Mutex.new
 
-      trackers.map do |tracker|
+      tracked = trackers.map do |tracker|
         name, klass = constant_name(tracker), self.class
         
         next unless klass.const_defined? name
 
-        instance = klass.const_get(name)
-
-        build_thread(mutex, tracked, tracker, instance, site)
-      end.each(&:join)
+        [
+          tracker,
+          build_thread(tracker, klass.const_get(name), site)
+        ]
+      end.each do |_, thread|
+        thread.join
+      end.map do |tracker, thread|
+        [tracker, thread.value]
+      end
       
-      tracked
+      Hash[tracked]
     end
     
     private
 
-    def build_thread(mutex, tracked, tracker, instance, site)
+    def build_thread(tracker, instance, site)
       Thread.new(tracker, instance, site) do |t, i, s|
-        result = i.new(s).run
-
-        mutex.synchronize do
-          tracked[t] = result
-        end
+        i.new(s).run
       end
     end
     
