@@ -15,7 +15,7 @@ describe PageRankr::ProxyServices::Random do
 
   it "should return a proxy from the list of proxies" do
     10.times do
-      proxies.should include(subject.proxy(name, site).to_s)
+      proxies.should include(subject.proxy(name, site))
     end
   end
 end

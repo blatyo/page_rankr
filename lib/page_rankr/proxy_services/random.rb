@@ -4,7 +4,7 @@ module PageRankr
   module ProxyServices
     class Random
       def initialize(proxies)
-        @proxies = proxies.map{|proxy| URI.parse(proxy)}
+        @proxies = proxies
       end
 
       def proxy(name, site)

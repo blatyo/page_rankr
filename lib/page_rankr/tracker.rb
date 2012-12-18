@@ -1,6 +1,7 @@
 require 'nokogiri'
 require 'json'
 require 'jsonpath'
+require 'uri'
 require File.expand_path('../site', __FILE__)
 require File.expand_path('../request', __FILE__)
 
@@ -32,7 +33,7 @@ module PageRankr
     end
 
     def proxy
-      PageRankr.proxy_service.proxy(name, @site) if PageRankr.proxy_service
+      URI.parse(PageRankr.proxy_service.proxy(name, @site)) if PageRankr.proxy_service
     end
 
     def run
