@@ -14,6 +14,9 @@ module PageRankr
     def initialize(site, options = {})
       @site = PageRankr::Site(site)
       @options = options
+
+      # Initialize proxy, so threads don't need to synchronize the proxy service.
+      proxy
     end
 
     def url
@@ -33,7 +36,7 @@ module PageRankr
     end
 
     def proxy
-      URI.parse(PageRankr.proxy_service.proxy(name, @site)) if PageRankr.proxy_service
+      @proxy ||= URI.parse(PageRankr.proxy_service.proxy(name, @site)) if PageRankr.proxy_service
     end
 
     def run
