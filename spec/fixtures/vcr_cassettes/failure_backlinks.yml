@@ -15,10 +15,10 @@ http_interactions:
     headers: 
       connection: 
       - Close
-      content-length: 
-      - "278"
       content-type: 
       - text/xml
+      content-length: 
+      - "278"
     body: 
       string: |-
         <?xml version="1.0" encoding="UTF-8"?>
@@ -45,20 +45,20 @@ http_interactions:
       code: 302
       message: Found
     headers: 
-      connection: 
-      - close
-      location: 
-      - http://www.google.com/sorry/?continue=http://www.google.com/search%3Fq%3Dlink%253Aplease-dont-register-a-site-that-breaks-this-test.com
-      content-length: 
-      - "332"
-      server: 
-      - GFE/2.0
       date: 
       - Mon, 17 Dec 2012 17:03:47 GMT
-      content-type: 
-      - text/html; charset=UTF-8
       cache-control: 
       - private
+      server: 
+      - GFE/2.0
+      location: 
+      - http://www.google.com/sorry/?continue=http://www.google.com/search%3Fq%3Dlink%253Aplease-dont-register-a-site-that-breaks-this-test.com
+      connection: 
+      - close
+      content-type: 
+      - text/html; charset=UTF-8
+      content-length: 
+      - "332"
     body: 
       string: |
         <HTML><HEAD><meta http-equiv="content-type" content="text/html;charset=utf-8">
@@ -83,15 +83,8 @@ http_interactions:
       code: 200
       message: OK
     headers: 
-      connection: 
-      - close
-      - Transfer-Encoding
-      p3p: 
-      - CP="NON UNI COM NAV STA LOC CURa DEVa PSAa PSDa OUR IND"
-      expires: 
-      - "-1"
-      pragma: 
-      - no-cache
+      date: 
+      - Mon, 17 Dec 2012 17:03:47 GMT
       set-cookie: 
       - _FS=NU=1; domain=.bing.com; path=/
       - _SS=SID=42EAE2EA52B0475EB1513DCF6A4E191F&C=20.0; domain=.bing.com; path=/
@@ -102,14 +95,21 @@ http_interactions:
       - SRCHD=D=2610303&MS=2610303&AF=NOFORM; expires=Wed, 17-Dec-2014 17:03:47 GMT; domain=.bing.com; path=/
       - SRCHUID=V=2&GUID=8F51C87766BB494BA7DBB38BEA46E749; expires=Wed, 17-Dec-2014 17:03:47 GMT; path=/
       - SRCHUSR=AUTOREDIR=0&GEOVAR=&DOB=20121217; expires=Wed, 17-Dec-2014 17:03:47 GMT; domain=.bing.com; path=/
-      date: 
-      - Mon, 17 Dec 2012 17:03:47 GMT
-      content-type: 
-      - text/html; charset=utf-8
-      transfer-encoding: 
-      - chunked
       cache-control: 
       - no-cache, no-store, must-revalidate
+      connection: 
+      - close
+      - Transfer-Encoding
+      p3p: 
+      - CP="NON UNI COM NAV STA LOC CURa DEVa PSAa PSDa OUR IND"
+      pragma: 
+      - no-cache
+      content-type: 
+      - text/html; charset=utf-8
+      expires: 
+      - "-1"
+      transfer-encoding: 
+      - chunked
     body: 
       string: "<!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.0 Transitional//EN\" \"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd\"><html lang=\"en\" xml:lang=\"en\" xmlns=\"http://www.w3.org/1999/xhtml\" xmlns:Web=\"http://schemas.live.com/Web/\"><head><meta content=\"text/html; charset=utf-8\" http-equiv=\"content-type\" /><script type=\"text/javascript\">//<![CDATA[\n\
         si_ST=new Date\n\
@@ -149,21 +149,21 @@ http_interactions:
       code: 200
       message: OK
     headers: 
+      date: 
+      - Mon, 17 Dec 2012 17:03:47 GMT
+      set-cookie: 
+      - B=d1tqchd8cuk3j&b=3&s=vk; expires=Thu, 18-Dec-2014 17:03:47 GMT; path=/; domain=.yahoo.com
+      - sSN=YZCQjpI2wWELsu7CBjWkUK03U9pDFW.DNumGY_PpSjghX1A3Bjgq2PYaOuPQ7FVpnrNWAlttSfcK4AECk5U0Jg--; path=/; domain=.search.yahoo.com
+      cache-control: 
+      - private
+      vary: 
+      - Accept-Encoding
       connection: 
       - close
       p3p: 
       - policyref="http://info.yahoo.com/w3c/p3p.xml", CP="CAO DSP COR CUR ADM DEV TAI PSA PSD IVAi IVDi CONi TELo OTPi OUR DELi SAMi OTRi UNRi PUBi IND PHY ONL UNI PUR FIN COM NAV INT DEM CNT STA POL HEA PRE LOC GOV"
-      set-cookie: 
-      - B=d1tqchd8cuk3j&b=3&s=vk; expires=Thu, 18-Dec-2014 17:03:47 GMT; path=/; domain=.yahoo.com
-      - sSN=YZCQjpI2wWELsu7CBjWkUK03U9pDFW.DNumGY_PpSjghX1A3Bjgq2PYaOuPQ7FVpnrNWAlttSfcK4AECk5U0Jg--; path=/; domain=.search.yahoo.com
-      date: 
-      - Mon, 17 Dec 2012 17:03:47 GMT
       content-type: 
       - text/html; charset=UTF-8
-      vary: 
-      - Accept-Encoding
-      cache-control: 
-      - private
       transfer-encoding: 
       - chunked
     body: 
@@ -189,26 +189,26 @@ http_interactions:
       code: 503
       message: Service Unavailable
     headers: 
-      connection: 
-      - close
-      x-xss-protection: 
-      - 1; mode=block
-      content-length: 
-      - "2767"
-      expires: 
-      - Fri, 01 Jan 1990 00:00:00 GMT
-      pragma: 
-      - no-cache
-      server: 
-      - HTTP server (unknown)
       date: 
       - Mon, 17 Dec 2012 17:03:48 GMT
       x-frame-options: 
       - SAMEORIGIN
-      content-type: 
-      - text/html
       cache-control: 
       - no-cache, must-revalidate
+      server: 
+      - HTTP server (unknown)
+      x-xss-protection: 
+      - 1; mode=block
+      connection: 
+      - close
+      pragma: 
+      - no-cache
+      content-type: 
+      - text/html
+      content-length: 
+      - "2767"
+      expires: 
+      - Fri, 01 Jan 1990 00:00:00 GMT
     body: 
       string: |
         <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
@@ -217,20 +217,20 @@ http_interactions:
         <body style="font-family: arial, sans-serif; background-color: #fff; color: #000; padding:20px; font-size:18px;" onload="e=document.getElementById('captcha');if(e){e.focus();}">
         <div style="max-width:400px;">
          <hr noshade size="1" style="color:#ccc; background-color:#ccc;"><br>
-         
+        
           To continue, please type the characters below:<br><br>
           <img src="/sorry/image?id=12807026370547081116&amp;hl=en" border="1" alt="Please enable images"><br><br><form action="Captcha" method="get"><input type="hidden" name="continue" value="http://www.google.com/search?q=link%3Aplease-dont-register-a-site-that-breaks-this-test.com"><input type="hidden" name="id" value="12807026370547081116"><input type="text" name="captcha" value="" id="captcha" size="12" style="font-size:16px; padding:3px 0 3px 5px; margin-left:0px;"><input type="submit" name="submit" value="Submit" style="font-size:18px; padding:4px 0;"><br><br><br></form>
           <hr noshade size="1" style="color:#ccc; background-color:#ccc;">
-          
+        
            <div style="font-size:13px;">
             <b>About this page</b><br><br>Our systems have detected unusual traffic from your computer network.  This page checks to see if it&#39;s really you sending the requests, and not a robot.  <a href="#" onclick="document.getElementById('infoDiv').style.display='block';">Why did this happen?</a><br><br>
             <div id="infoDiv" style="display:none; background-color:#eee; padding:10px; margin:0 0 15px 0; line-height:1.4em;">
              This page appears when Google automatically detects requests coming from your computer network which appear to be in violation of the <a href="http://www.google.com/accounts/TOS">Terms of Service</a>. The block will expire shortly after those requests stop.  In the meantime, solving the above CAPTCHA will let you continue to use our services.<br><br>This traffic may have been sent by malicious software, a browser plug-in, or a script that sends automated requests.  If you share your network connection, ask your administrator for help &mdash; a different computer using the same IP address may be responsible.  <a href="http://www.google.com/support/bin/answer.py?answer=86640">Learn more</a><br><br>Sometimes you may be asked to solve the CAPTCHA if you are using advanced terms that robots are known to use, or sending requests very quickly.
             </div>
-          
-          
-         
-         
+        
+        
+        
+        
          IP address: 98.216.9.40<br>Time: 2012-12-17T17:03:48Z<br>URL: http://www.google.com/search?q=link%3Aplease-dont-register-a-site-that-breaks-this-test.com<br>
          </div>
         </div>
@@ -239,4 +239,30 @@ http_interactions:
 
     http_version: "1.1"
   recorded_at: Mon, 17 Dec 2012 17:03:48 GMT
+- request: 
+    method: get
+    uri: http://data.alexa.com/data?dat=snbamz&url=please-dont-register-a-site-that-breaks-this-test.com&cli=10
+    body: 
+      string: ""
+    headers: 
+      user-agent: 
+      - Mozilla/5.0 (Macintosh; Intel Mac OS X 10_7_4) AppleWebKit/534.56.5 (KHTML, like Gecko) Version/5.1.6 Safari/534.56.5
+  response: 
+    status: 
+      code: 200
+      message: OK
+    headers: 
+      connection: 
+      - Close
+      content-type: 
+      - text/xml
+      content-length: 
+      - "30"
+    body: 
+      string: |
+        
+        <ALEXA VER="0.9" URL="404"/>
+
+    http_version: "1.1"
+  recorded_at: Tue, 18 Dec 2012 01:21:43 GMT
 recorded_with: VCR 2.3.0

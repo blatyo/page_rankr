@@ -15,10 +15,10 @@ http_interactions:
     headers: 
       connection: 
       - Close
-      content-length: 
-      - "2620"
       content-type: 
       - text/xml
+      content-length: 
+      - "2620"
     body: 
       string: "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n\
         \r\n\
@@ -86,10 +86,10 @@ http_interactions:
     headers: 
       connection: 
       - Close
-      content-length: 
-      - "2620"
       content-type: 
       - text/xml
+      content-length: 
+      - "2620"
     body: 
       string: "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n\
         \r\n\
@@ -142,4 +142,56 @@ http_interactions:
         </ALEXA>"
     http_version: "1.1"
   recorded_at: Mon, 17 Dec 2012 17:03:43 GMT
+- request: 
+    method: get
+    uri: http://data.alexa.com/data?dat=snbamz&url=slocourts.net&cli=10
+    body: 
+      string: ""
+    headers: 
+      user-agent: 
+      - Mozilla/5.0 (Macintosh; Intel Mac OS X 10_7_4) AppleWebKit/534.56.5 (KHTML, like Gecko) Version/5.1.6 Safari/534.56.5
+  response: 
+    status: 
+      code: 200
+      message: OK
+    headers: 
+      connection: 
+      - Close
+      content-type: 
+      - text/xml
+      content-length: 
+      - "30"
+    body: 
+      string: |
+        
+        <ALEXA VER="0.9" URL="404"/>
+
+    http_version: "1.1"
+  recorded_at: Tue, 18 Dec 2012 01:21:40 GMT
+- request: 
+    method: get
+    uri: http://data.alexa.com/data?dat=snbamz&url=slocourts.net&cli=10
+    body: 
+      string: ""
+    headers: 
+      user-agent: 
+      - Mozilla/5.0 (Macintosh; Intel Mac OS X 10_7_4) AppleWebKit/534.56.5 (KHTML, like Gecko) Version/5.1.6 Safari/534.56.5
+  response: 
+    status: 
+      code: 200
+      message: OK
+    headers: 
+      connection: 
+      - Close
+      content-type: 
+      - text/xml
+      content-length: 
+      - "30"
+    body: 
+      string: |
+        
+        <ALEXA VER="0.9" URL="404"/>
+
+    http_version: "1.1"
+  recorded_at: Tue, 18 Dec 2012 01:21:40 GMT
 recorded_with: VCR 2.3.0

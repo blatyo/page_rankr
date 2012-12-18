@@ -31,8 +31,8 @@ describe PageRankr do
       it{ should have_key(:alexa_global) }
       it{ should have_key(:google) }
     
-      it{ subject[:alexa_us].should >= 1 }
-      it{ subject[:alexa_global].should >= 1 }
+      it{ subject[:alexa_us].should be >= 1 }
+      it{ subject[:alexa_global].should be >= 1 }
       it{ subject[:google].should be_in(0..10) }
     end
     
@@ -74,7 +74,7 @@ describe PageRankr do
         it{ should have_key(tracker) }
 
         it "#{tracker} should have a value greater than zero" do
-          subject[tracker].should > 0
+          subject[tracker].should be > 0
         end
       end
     end
@@ -115,7 +115,7 @@ describe PageRankr do
         it{ should have_key(tracker) }
         
         it "#{tracker} should have a value greater than zero" do
-          subject[tracker].should > 0
+          subject[tracker].should be > 0
         end
       end
     end
