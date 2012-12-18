@@ -1,8 +1,8 @@
 # Change Log
 
-## Version 3.2.2
+## Version 4.0.0
 * Fix for Google pagerank check. Query parts were omitted which made the some pages get the same PR as the domain.
-* Lock version of typheous to 0.4 set for ruby 1.8.7 compatability. Typheous to be dropped in 4.0.0 version of PageRankr.
+* Switch from Typheous to HTTParty to avoid memory leaks and have better support on Windows.
 
 ## Version 3.2.1
 * Fix issue where tracker calls proxy with class name rather than name defined on class instance.
