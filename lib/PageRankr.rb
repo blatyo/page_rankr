@@ -1,0 +1,1 @@
+require File.expand_path('../page_rankr', __FILE__)
