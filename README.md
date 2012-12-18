@@ -227,16 +227,16 @@ Then, just make sure you require the class and PageRankr and whenever you call P
 * Detect request throttling
 
 ## Contributors
-* [Dru Ibarra](https://github.com/Druwerd) - Use Google Search API instead of scraping.
-* [Iteration Labs, LLC](https://github.com/iterationlabs) - Compete rank tracker and domain indexes.
-* [Marc Seeger](http://www.marc-seeger.de) ([Acquia](http://www.acquia.com)) - Ignore invalid ranks that Alexa returns for incorrect sites.
-* [Rémy Coutable](https://github.com/rymai) - Update public_suffix_service gem.
-* [Jonathan Rudenberg](https://github.com/titanous) - Fix compete scraper.
-* [Chris Corbyn](https://github.com/d11wtq) - Fix google page rank url.
-* [Hans Haselberg](https://github.com/i0rek) - Update typhoeus gem.
-* [Priit Haamer](https://github.com/priithaamer) - Fix google backlinks lookup.
-* [Marty McKenna](https://github.com/martyMM) - Idea for proxy service
-* [Alexi Rahman](https://github.com/odynvolk) - Adding query parts for google page rank
+* [Dru Ibarra](https://github.com/Druwerd)
+* [Iteration Labs, LLC](https://github.com/iterationlabs)
+* [Marc Seeger](http://www.marc-seeger.de) ([Acquia](http://www.acquia.com))
+* [Rémy Coutable](https://github.com/rymai)
+* [Jonathan Rudenberg](https://github.com/titanous)
+* [Chris Corbyn](https://github.com/d11wtq)
+* [Hans Haselberg](https://github.com/i0rek)
+* [Priit Haamer](https://github.com/priithaamer)
+* [Marty McKenna](https://github.com/martyMM)
+* [Alexi Rahman](https://github.com/odynvolk)
 
 ## Shout Out
 Gotta give credit where credits due!
