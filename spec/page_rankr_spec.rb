@@ -59,10 +59,12 @@ describe PageRankr do
   
       it{ should have_key(:alexa_us) }
       it{ should have_key(:alexa_global) }
+      it{ should have_key(:alexa_country) }
       it{ should have_key(:google) }
     
       it{ subject[:alexa_us].should be_number >= 1 }
       it{ subject[:alexa_global].should be_number >= 1 }
+      it{ subject[:alexa_country].should be_number >= 1 }
       it{ subject[:google].should be_in(0..10) }
     end
     
@@ -75,10 +77,12 @@ describe PageRankr do
       
       it{ should have_key(:alexa_us) }
       it{ should have_key(:alexa_global) }
+      it{ should have_key(:alexa_country) }
       it{ should have_key(:google) }
     
       it{ subject[:alexa_us].should be_nil }
       it{ subject[:alexa_global].should be_nil }
+      it{ subject[:alexa_country].should be_nil }
       it{ subject[:google].should be_nil }
     end
   end

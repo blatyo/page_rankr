@@ -2,7 +2,7 @@ require File.expand_path('../../rank', __FILE__)
 
 module PageRankr
   class Ranks
-    class AlexaUs
+    class AlexaCountry
       include Rank
       
       def url
@@ -20,7 +20,7 @@ module PageRankr
       # to slocourts.net. Clearly something is wrong with how Alexa handles this case and so in the event this
       # happens we treat the results as if there were no results.
       def xpath
-        "//reach/@rank"
+        "//country/@rank"
       end
 
       def supported_components
@@ -28,7 +28,7 @@ module PageRankr
       end
 
       def name
-        :ranks_alexa_us
+        :ranks_alexa_country
       end
     end
   end
