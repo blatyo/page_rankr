@@ -1,287 +1,296 @@
---- 
-http_interactions: 
-- request: 
+---
+http_interactions:
+- request:
     method: get
     uri: http://data.alexa.com/data?cli=10&dat=snbamz&url=google.com
-    body: 
-      string: ""
-    headers: 
-      user-agent: 
-      - Mozilla/5.0 (Macintosh; Intel Mac OS X 10_7_4) AppleWebKit/534.56.5 (KHTML, like Gecko) Version/5.1.6 Safari/534.56.5
-  response: 
-    status: 
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      user-agent:
+      - Mozilla/5.0 (Macintosh; Intel Mac OS X 10_7_4) AppleWebKit/534.56.5 (KHTML,
+        like Gecko) Version/5.1.6 Safari/534.56.5
+  response:
+    status:
       code: 200
       message: OK
-    headers: 
-      connection: 
-      - Close
-      content-type: 
+    headers:
+      content-type:
       - text/xml
-      content-length: 
-      - "2426"
-    body: 
-      string: "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n\
-        \r\n\
-        <ALEXA VER=\"0.9\" URL=\"google.com/\" HOME=\"0\" AID=\"=\">\r\n\
-        <RLS PREFIX=\"http://\" more=\"56\">\n\
-        <RL HREF=\"amazon.com/\" TITLE=\"Amazon.com\"/>\n\
-        <RL HREF=\"wikipedia.org/\" TITLE=\"Wikipedia\"/>\n\
-        <RL HREF=\"www.yahoo.com/\" TITLE=\"Yahoo!\"/>\n\
-        <RL HREF=\"youtube.com/\" TITLE=\"YouTube\"/>\n\
-        <RL HREF=\"yelp.com/\" TITLE=\"Yelp\"/>\n\
-        <RL HREF=\"statcounter.com/\" TITLE=\"StatCounter.com\"/>\n\
-        <RL HREF=\"myspace.com/\" TITLE=\"Myspace\"/>\n\
-        <RL HREF=\"linkedin.com/\" TITLE=\"LinkedIn\"/>\n\
-        <RL HREF=\"imdb.com/\" TITLE=\"The Internet Movie Database (imdb)\"/>\n\
-        <RL HREF=\"google.co.in/\" TITLE=\"Google India\"/>\n\
-        <RL HREF=\"ask.com/\" TITLE=\"ask.com/\"/>\n\
-        </RLS>\n\
-        <SD TITLE=\"A\" FLAGS=\"DMOZ\" HOST=\"google.com\">\n\
-        <TITLE TEXT=\"Google                             \"/>\n\
-        <ADDR STREET=\"\" CITY=\"\" STATE=\"\" ZIP=\"\" COUNTRY=\"\" />\n\
-        <CREATED DATE=\"15-Sep-1997\" DAY=\"15\" MONTH=\"09\" YEAR=\"1997\"/>\n\
-        <PHONE NUMBER=\"unlisted\"/>\n\
-        <OWNER NAME=\"unlisted\"/>\n\
-        <EMAIL ADDR=\"dns-admin@google.com\"/>\n\
-        <ALEXAPRO TIER=\"advanced\"/>\n\
-        <LANG LEX=\"en\"/>\n\
-        <LINKSIN NUM=\"5045207\"/>\n\
-        <SPEED TEXT=\"1276\" PCT=\"58\"/>\n\
-        <REVIEWS AVG=\"4.0\" NUM=\"1400\"/>\n\
-        <CHILD SRATING=\"0\"/>\n\
-        <ASSOCS>\n\
-        <ASSOC ID=\"googlecom\"/></ASSOCS>\n\
-        </SD>\n\n\
-        <KEYWORDS>\n\
-        <KEYWORD VAL=\"Mountain View\"/>\n\
-        </KEYWORDS><DMOZ>\n\
-        <SITE BASE=\"google.com/\" TITLE=\"Google\" DESC=\"Enables users to search the world's information, including webpages, images, and videos. Offers unique features and search technology.\">\n\
-        <CATS>\n\
-        <CAT ID=\"Top/Computers/Internet/Searching/Search_Engines/Google\" TITLE=\"Search Engines/Google\" CID=\"374822\"/>\n\
-        <CAT ID=\"Top/Regional/North_America/United_States/California/Localities/M/Mountain_View/Business_and_Economy/Industrial/Computers_and_Internet\" TITLE=\"Industrial/Computers and Internet\" CID=\"625367\"/>\n\
-        <CAT ID=\"Top/World/Fran\xC3\xA7ais/Informatique/Internet/Recherche/Moteurs_de_recherche/Google\" TITLE=\"Moteurs de recherche/Google\" CID=\"247347\"/>\n\
-        <CAT ID=\"Top/World/Arabic/\xD8\xA5\xD9\x82\xD9\x84\xD9\x8A\xD9\x85\xD9\x80\xD9\x8A/\xD8\xA7\xD9\x84\xD8\xB4\xD8\xB1\xD9\x82_\xD8\xA7\xD9\x84\xD8\xA3\xD9\x88\xD8\xB3\xD8\xB7/\xD8\xA7\xD9\x84\xD8\xB3\xD8\xB9\xD9\x88\xD8\xAF\xD9\x8A\xD8\xA9/\xD8\xAA\xD8\xAC\xD8\xA7\xD8\xB1\xD8\xA9_\xD9\x88_\xD8\xA3\xD9\x82\xD8\xAA\xD8\xB5\xD8\xA7\xD8\xAF/\xD9\x83\xD9\x85\xD8\xA8\xD9\x8A\xD9\x88\xD8\xAA\xD8\xB1_\xD9\x88_\xD8\xA5\xD9\x86\xD8\xAA\xD8\xB1\xD9\x86\xD8\xAA/\xD9\x85\xD8\xAD\xD8\xB1\xD9\x83\xD8\xA7\xD8\xAA_\xD8\xA8\xD8\xAD\xD8\xAB\" TITLE=\"\xD9\x83\xD9\x85\xD8\xA8\xD9\x8A\xD9\x88\xD8\xAA\xD8\xB1 \xD9\x88 \xD8\xA5\xD9\x86\xD8\xAA\xD8\xB1\xD9\x86\xD8\xAA/\xD9\x85\xD8\xAD\xD8\xB1\xD9\x83\xD8\xA7\xD8\xAA \xD8\xA8\xD8\xAD\xD8\xAB\" CID=\"204954\"/>\n\
-        <CAT ID=\"Top/World/Espa\xC3\xB1ol/Computadoras/Internet/Buscando_en_Internet/Motores_de_b\xC3\xBAsqueda\" TITLE=\"Buscando en Internet/Motores de b\xC3\xBAsqueda\" CID=\"29498\"/>\n\
-        </CATS>\n\
-        </SITE>\n\
-        </DMOZ>\n\
-        <SD>\n\
-        <POPULARITY URL=\"google.com/\" TEXT=\"1\" SOURCE=\"panel\"/>\n\
-        <REACH RANK=\"1\"/>\n\
-        <RANK DELTA=\"-1\"/>\n\
-        <COUNTRY CODE=\"US\" NAME=\"United States\" RANK=\"1\"/>\n\
-        </SD>\n\
-        </ALEXA>"
-    http_version: "1.1"
-  recorded_at: Mon, 17 Dec 2012 17:03:44 GMT
-- request: 
+      content-length:
+      - '2426'
+      connection:
+      - Close
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4NCg0KPEFM
+        RVhBIFZFUj0iMC45IiBVUkw9Imdvb2dsZS5jb20vIiBIT01FPSIwIiBBSUQ9
+        Ij0iPg0KPFJMUyBQUkVGSVg9Imh0dHA6Ly8iIG1vcmU9IjU2Ij4KPFJMIEhS
+        RUY9ImFtYXpvbi5jb20vIiBUSVRMRT0iQW1hem9uLmNvbSIvPgo8UkwgSFJF
+        Rj0id2lraXBlZGlhLm9yZy8iIFRJVExFPSJXaWtpcGVkaWEiLz4KPFJMIEhS
+        RUY9Ind3dy55YWhvby5jb20vIiBUSVRMRT0iWWFob28hIi8+CjxSTCBIUkVG
+        PSJ5b3V0dWJlLmNvbS8iIFRJVExFPSJZb3VUdWJlIi8+CjxSTCBIUkVGPSJ5
+        ZWxwLmNvbS8iIFRJVExFPSJZZWxwIi8+CjxSTCBIUkVGPSJzdGF0Y291bnRl
+        ci5jb20vIiBUSVRMRT0iU3RhdENvdW50ZXIuY29tIi8+CjxSTCBIUkVGPSJt
+        eXNwYWNlLmNvbS8iIFRJVExFPSJNeXNwYWNlIi8+CjxSTCBIUkVGPSJsaW5r
+        ZWRpbi5jb20vIiBUSVRMRT0iTGlua2VkSW4iLz4KPFJMIEhSRUY9ImltZGIu
+        Y29tLyIgVElUTEU9IlRoZSBJbnRlcm5ldCBNb3ZpZSBEYXRhYmFzZSAoaW1k
+        YikiLz4KPFJMIEhSRUY9Imdvb2dsZS5jby5pbi8iIFRJVExFPSJHb29nbGUg
+        SW5kaWEiLz4KPFJMIEhSRUY9ImFzay5jb20vIiBUSVRMRT0iYXNrLmNvbS8i
+        Lz4KPC9STFM+CjxTRCBUSVRMRT0iQSIgRkxBR1M9IkRNT1oiIEhPU1Q9Imdv
+        b2dsZS5jb20iPgo8VElUTEUgVEVYVD0iR29vZ2xlICAgICAgICAgICAgICAg
+        ICAgICAgICAgICAgICAiLz4KPEFERFIgU1RSRUVUPSIiIENJVFk9IiIgU1RB
+        VEU9IiIgWklQPSIiIENPVU5UUlk9IiIgLz4KPENSRUFURUQgREFURT0iMTUt
+        U2VwLTE5OTciIERBWT0iMTUiIE1PTlRIPSIwOSIgWUVBUj0iMTk5NyIvPgo8
+        UEhPTkUgTlVNQkVSPSJ1bmxpc3RlZCIvPgo8T1dORVIgTkFNRT0idW5saXN0
+        ZWQiLz4KPEVNQUlMIEFERFI9ImRucy1hZG1pbkBnb29nbGUuY29tIi8+CjxB
+        TEVYQVBSTyBUSUVSPSJhZHZhbmNlZCIvPgo8TEFORyBMRVg9ImVuIi8+CjxM
+        SU5LU0lOIE5VTT0iNDgxMDA5NiIvPgo8U1BFRUQgVEVYVD0iMTIxNiIgUENU
+        PSI2MSIvPgo8UkVWSUVXUyBBVkc9IjQuMCIgTlVNPSIxNDA3Ii8+CjxDSElM
+        RCBTUkFUSU5HPSIwIi8+CjxBU1NPQ1M+CjxBU1NPQyBJRD0iZ29vZ2xlY29t
+        Ii8+PC9BU1NPQ1M+CjwvU0Q+Cgo8S0VZV09SRFM+CjxLRVlXT1JEIFZBTD0i
+        TW91bnRhaW4gVmlldyIvPgo8L0tFWVdPUkRTPjxETU9aPgo8U0lURSBCQVNF
+        PSJnb29nbGUuY29tLyIgVElUTEU9Ikdvb2dsZSIgREVTQz0iRW5hYmxlcyB1
+        c2VycyB0byBzZWFyY2ggdGhlIHdvcmxkJ3MgaW5mb3JtYXRpb24sIGluY2x1
+        ZGluZyB3ZWJwYWdlcywgaW1hZ2VzLCBhbmQgdmlkZW9zLiBPZmZlcnMgdW5p
+        cXVlIGZlYXR1cmVzIGFuZCBzZWFyY2ggdGVjaG5vbG9neS4iPgo8Q0FUUz4K
+        PENBVCBJRD0iVG9wL0NvbXB1dGVycy9JbnRlcm5ldC9TZWFyY2hpbmcvU2Vh
+        cmNoX0VuZ2luZXMvR29vZ2xlIiBUSVRMRT0iU2VhcmNoIEVuZ2luZXMvR29v
+        Z2xlIiBDSUQ9IjM3NDgyMiIvPgo8Q0FUIElEPSJUb3AvUmVnaW9uYWwvTm9y
+        dGhfQW1lcmljYS9Vbml0ZWRfU3RhdGVzL0NhbGlmb3JuaWEvTG9jYWxpdGll
+        cy9NL01vdW50YWluX1ZpZXcvQnVzaW5lc3NfYW5kX0Vjb25vbXkvSW5kdXN0
+        cmlhbC9Db21wdXRlcnNfYW5kX0ludGVybmV0IiBUSVRMRT0iSW5kdXN0cmlh
+        bC9Db21wdXRlcnMgYW5kIEludGVybmV0IiBDSUQ9IjYyNTM2NyIvPgo8Q0FU
+        IElEPSJUb3AvV29ybGQvRnJhbsOnYWlzL0luZm9ybWF0aXF1ZS9JbnRlcm5l
+        dC9SZWNoZXJjaGUvTW90ZXVyc19kZV9yZWNoZXJjaGUvR29vZ2xlIiBUSVRM
+        RT0iTW90ZXVycyBkZSByZWNoZXJjaGUvR29vZ2xlIiBDSUQ9IjI0NzM0NyIv
+        Pgo8Q0FUIElEPSJUb3AvV29ybGQvQXJhYmljL9il2YLZhNmK2YXZgNmKL9in
+        2YTYtNix2YJf2KfZhNij2YjYs9i3L9in2YTYs9i52YjYr9mK2Kkv2KrYrNin
+        2LHYqV/ZiF/Yo9mC2KrYtdin2K8v2YPZhdio2YrZiNiq2LFf2Yhf2KXZhtiq
+        2LHZhtiqL9mF2K3YsdmD2KfYql/YqNit2KsiIFRJVExFPSLZg9mF2KjZitmI
+        2KrYsSDZiCDYpdmG2KrYsdmG2Kov2YXYrdix2YPYp9iqINio2K3YqyIgQ0lE
+        PSIyMDQ5NTQiLz4KPENBVCBJRD0iVG9wL1dvcmxkL0VzcGHDsW9sL0NvbXB1
+        dGFkb3Jhcy9JbnRlcm5ldC9CdXNjYW5kb19lbl9JbnRlcm5ldC9Nb3RvcmVz
+        X2RlX2LDunNxdWVkYSIgVElUTEU9IkJ1c2NhbmRvIGVuIEludGVybmV0L01v
+        dG9yZXMgZGUgYsO6c3F1ZWRhIiBDSUQ9IjI5NDk4Ii8+CjwvQ0FUUz4KPC9T
+        SVRFPgo8L0RNT1o+CjxTRD4KPFBPUFVMQVJJVFkgVVJMPSJnb29nbGUuY29t
+        LyIgVEVYVD0iMSIgU09VUkNFPSJwYW5lbCIvPgo8UkVBQ0ggUkFOSz0iMSIv
+        Pgo8UkFOSyBERUxUQT0iLTEiLz4KPENPVU5UUlkgQ09ERT0iVVMiIE5BTUU9
+        IlVuaXRlZCBTdGF0ZXMiIFJBTks9IjEiLz4KPC9TRD4KPC9BTEVYQT4=
+    http_version: '1.1'
+  recorded_at: Thu, 14 Feb 2013 01:40:12 GMT
+- request:
     method: get
     uri: http://data.alexa.com/data?cli=10&dat=snbamz&url=google.com
-    body: 
-      string: ""
-    headers: 
-      user-agent: 
-      - Mozilla/5.0 (Macintosh; Intel Mac OS X 10_7_4) AppleWebKit/534.56.5 (KHTML, like Gecko) Version/5.1.6 Safari/534.56.5
-  response: 
-    status: 
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      user-agent:
+      - Mozilla/5.0 (Macintosh; Intel Mac OS X 10_7_4) AppleWebKit/534.56.5 (KHTML,
+        like Gecko) Version/5.1.6 Safari/534.56.5
+  response:
+    status:
       code: 200
       message: OK
-    headers: 
-      connection: 
-      - Close
-      content-type: 
+    headers:
+      content-type:
       - text/xml
-      content-length: 
-      - "2426"
-    body: 
-      string: "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n\
-        \r\n\
-        <ALEXA VER=\"0.9\" URL=\"google.com/\" HOME=\"0\" AID=\"=\">\r\n\
-        <RLS PREFIX=\"http://\" more=\"56\">\n\
-        <RL HREF=\"amazon.com/\" TITLE=\"Amazon.com\"/>\n\
-        <RL HREF=\"wikipedia.org/\" TITLE=\"Wikipedia\"/>\n\
-        <RL HREF=\"www.yahoo.com/\" TITLE=\"Yahoo!\"/>\n\
-        <RL HREF=\"youtube.com/\" TITLE=\"YouTube\"/>\n\
-        <RL HREF=\"yelp.com/\" TITLE=\"Yelp\"/>\n\
-        <RL HREF=\"statcounter.com/\" TITLE=\"StatCounter.com\"/>\n\
-        <RL HREF=\"myspace.com/\" TITLE=\"Myspace\"/>\n\
-        <RL HREF=\"linkedin.com/\" TITLE=\"LinkedIn\"/>\n\
-        <RL HREF=\"imdb.com/\" TITLE=\"The Internet Movie Database (imdb)\"/>\n\
-        <RL HREF=\"google.co.in/\" TITLE=\"Google India\"/>\n\
-        <RL HREF=\"ask.com/\" TITLE=\"ask.com/\"/>\n\
-        </RLS>\n\
-        <SD TITLE=\"A\" FLAGS=\"DMOZ\" HOST=\"google.com\">\n\
-        <TITLE TEXT=\"Google                             \"/>\n\
-        <ADDR STREET=\"\" CITY=\"\" STATE=\"\" ZIP=\"\" COUNTRY=\"\" />\n\
-        <CREATED DATE=\"15-Sep-1997\" DAY=\"15\" MONTH=\"09\" YEAR=\"1997\"/>\n\
-        <PHONE NUMBER=\"unlisted\"/>\n\
-        <OWNER NAME=\"unlisted\"/>\n\
-        <EMAIL ADDR=\"dns-admin@google.com\"/>\n\
-        <ALEXAPRO TIER=\"advanced\"/>\n\
-        <LANG LEX=\"en\"/>\n\
-        <LINKSIN NUM=\"5045207\"/>\n\
-        <SPEED TEXT=\"1276\" PCT=\"58\"/>\n\
-        <REVIEWS AVG=\"4.0\" NUM=\"1400\"/>\n\
-        <CHILD SRATING=\"0\"/>\n\
-        <ASSOCS>\n\
-        <ASSOC ID=\"googlecom\"/></ASSOCS>\n\
-        </SD>\n\n\
-        <KEYWORDS>\n\
-        <KEYWORD VAL=\"Mountain View\"/>\n\
-        </KEYWORDS><DMOZ>\n\
-        <SITE BASE=\"google.com/\" TITLE=\"Google\" DESC=\"Enables users to search the world's information, including webpages, images, and videos. Offers unique features and search technology.\">\n\
-        <CATS>\n\
-        <CAT ID=\"Top/Computers/Internet/Searching/Search_Engines/Google\" TITLE=\"Search Engines/Google\" CID=\"374822\"/>\n\
-        <CAT ID=\"Top/Regional/North_America/United_States/California/Localities/M/Mountain_View/Business_and_Economy/Industrial/Computers_and_Internet\" TITLE=\"Industrial/Computers and Internet\" CID=\"625367\"/>\n\
-        <CAT ID=\"Top/World/Fran\xC3\xA7ais/Informatique/Internet/Recherche/Moteurs_de_recherche/Google\" TITLE=\"Moteurs de recherche/Google\" CID=\"247347\"/>\n\
-        <CAT ID=\"Top/World/Arabic/\xD8\xA5\xD9\x82\xD9\x84\xD9\x8A\xD9\x85\xD9\x80\xD9\x8A/\xD8\xA7\xD9\x84\xD8\xB4\xD8\xB1\xD9\x82_\xD8\xA7\xD9\x84\xD8\xA3\xD9\x88\xD8\xB3\xD8\xB7/\xD8\xA7\xD9\x84\xD8\xB3\xD8\xB9\xD9\x88\xD8\xAF\xD9\x8A\xD8\xA9/\xD8\xAA\xD8\xAC\xD8\xA7\xD8\xB1\xD8\xA9_\xD9\x88_\xD8\xA3\xD9\x82\xD8\xAA\xD8\xB5\xD8\xA7\xD8\xAF/\xD9\x83\xD9\x85\xD8\xA8\xD9\x8A\xD9\x88\xD8\xAA\xD8\xB1_\xD9\x88_\xD8\xA5\xD9\x86\xD8\xAA\xD8\xB1\xD9\x86\xD8\xAA/\xD9\x85\xD8\xAD\xD8\xB1\xD9\x83\xD8\xA7\xD8\xAA_\xD8\xA8\xD8\xAD\xD8\xAB\" TITLE=\"\xD9\x83\xD9\x85\xD8\xA8\xD9\x8A\xD9\x88\xD8\xAA\xD8\xB1 \xD9\x88 \xD8\xA5\xD9\x86\xD8\xAA\xD8\xB1\xD9\x86\xD8\xAA/\xD9\x85\xD8\xAD\xD8\xB1\xD9\x83\xD8\xA7\xD8\xAA \xD8\xA8\xD8\xAD\xD8\xAB\" CID=\"204954\"/>\n\
-        <CAT ID=\"Top/World/Espa\xC3\xB1ol/Computadoras/Internet/Buscando_en_Internet/Motores_de_b\xC3\xBAsqueda\" TITLE=\"Buscando en Internet/Motores de b\xC3\xBAsqueda\" CID=\"29498\"/>\n\
-        </CATS>\n\
-        </SITE>\n\
-        </DMOZ>\n\
-        <SD>\n\
-        <POPULARITY URL=\"google.com/\" TEXT=\"1\" SOURCE=\"panel\"/>\n\
-        <REACH RANK=\"1\"/>\n\
-        <RANK DELTA=\"-1\"/>\n\
-        <COUNTRY CODE=\"US\" NAME=\"United States\" RANK=\"1\"/>\n\
-        </SD>\n\
-        </ALEXA>"
-    http_version: "1.1"
-  recorded_at: Mon, 17 Dec 2012 17:03:44 GMT
-- request: 
-    method: get
-    uri: http://toolbarqueries.google.com/tbr?features=Rank&q=info%3Awww.google.com&client=navclient-auto&ch=6340563836
-    body: 
-      string: ""
-    headers: 
-      user-agent: 
-      - Mozilla/5.0 (Macintosh; Intel Mac OS X 10_7_4) AppleWebKit/534.56.5 (KHTML, like Gecko) Version/5.1.6 Safari/534.56.5
-  response: 
-    status: 
-      code: 200
-      message: OK
-    headers: 
-      date: 
-      - Mon, 17 Dec 2012 17:03:44 GMT
-      x-frame-options: 
-      - SAMEORIGIN
-      set-cookie: 
-      - PREF=ID=e5ebc2a241cc4828:FF=0:TM=1355763824:LM=1355763824:S=gyK02HOD4wBpMsL5; expires=Wed, 17-Dec-2014 17:03:44 GMT; path=/; domain=.google.com
-      - NID=67=I3MvOn--B_AsloJ7hfARn2dslVpi6ml2io1CULncPJX4rNe8ESnCePmHFeQEsO5uH3CAcPkGXTNzkWT88a53fckMOGi3tns0a-tXb07zPIPIHE7H8OHruy3c_FMfqRJB; expires=Tue, 18-Jun-2013 17:03:44 GMT; path=/; domain=.google.com; HttpOnly
-      cache-control: 
-      - no-cache, must-revalidate
-      server: 
-      - gws
-      x-xss-protection: 
-      - 1; mode=block
-      connection: 
-      - close
-      p3p: 
-      - CP="This is not a P3P policy! See http://www.google.com/support/accounts/bin/answer.py?hl=en&answer=151657 for more info."
-      pragma: 
-      - no-cache
-      content-type: 
-      - text/html; charset=ISO-8859-1
-      expires: 
-      - Fri, 01 Jan 1990 00:00:00 GMT
-    body: 
-      string: |
-        Rank_1:1:9
-
-    http_version: "1.1"
-  recorded_at: Mon, 17 Dec 2012 17:03:44 GMT
-- request: 
-    method: get
-    uri: http://data.alexa.com/data?dat=snbamz&url=google.com&cli=10
-    body: 
-      string: ""
-    headers: 
-      user-agent: 
-      - Mozilla/5.0 (Macintosh; Intel Mac OS X 10_7_4) AppleWebKit/534.56.5 (KHTML, like Gecko) Version/5.1.6 Safari/534.56.5
-  response: 
-    status: 
-      code: 200
-      message: OK
-    headers: 
-      connection: 
+      content-length:
+      - '2426'
+      connection:
       - Close
-      content-type: 
-      - text/xml
-      content-length: 
-      - "30"
-    body: 
-      string: |
-        
-        <ALEXA VER="0.9" URL="404"/>
-
-    http_version: "1.1"
-  recorded_at: Tue, 18 Dec 2012 01:21:41 GMT
-- request: 
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4NCg0KPEFM
+        RVhBIFZFUj0iMC45IiBVUkw9Imdvb2dsZS5jb20vIiBIT01FPSIwIiBBSUQ9
+        Ij0iPg0KPFJMUyBQUkVGSVg9Imh0dHA6Ly8iIG1vcmU9IjU2Ij4KPFJMIEhS
+        RUY9ImFtYXpvbi5jb20vIiBUSVRMRT0iQW1hem9uLmNvbSIvPgo8UkwgSFJF
+        Rj0id2lraXBlZGlhLm9yZy8iIFRJVExFPSJXaWtpcGVkaWEiLz4KPFJMIEhS
+        RUY9Ind3dy55YWhvby5jb20vIiBUSVRMRT0iWWFob28hIi8+CjxSTCBIUkVG
+        PSJ5b3V0dWJlLmNvbS8iIFRJVExFPSJZb3VUdWJlIi8+CjxSTCBIUkVGPSJ5
+        ZWxwLmNvbS8iIFRJVExFPSJZZWxwIi8+CjxSTCBIUkVGPSJzdGF0Y291bnRl
+        ci5jb20vIiBUSVRMRT0iU3RhdENvdW50ZXIuY29tIi8+CjxSTCBIUkVGPSJt
+        eXNwYWNlLmNvbS8iIFRJVExFPSJNeXNwYWNlIi8+CjxSTCBIUkVGPSJsaW5r
+        ZWRpbi5jb20vIiBUSVRMRT0iTGlua2VkSW4iLz4KPFJMIEhSRUY9ImltZGIu
+        Y29tLyIgVElUTEU9IlRoZSBJbnRlcm5ldCBNb3ZpZSBEYXRhYmFzZSAoaW1k
+        YikiLz4KPFJMIEhSRUY9Imdvb2dsZS5jby5pbi8iIFRJVExFPSJHb29nbGUg
+        SW5kaWEiLz4KPFJMIEhSRUY9ImFzay5jb20vIiBUSVRMRT0iYXNrLmNvbS8i
+        Lz4KPC9STFM+CjxTRCBUSVRMRT0iQSIgRkxBR1M9IkRNT1oiIEhPU1Q9Imdv
+        b2dsZS5jb20iPgo8VElUTEUgVEVYVD0iR29vZ2xlICAgICAgICAgICAgICAg
+        ICAgICAgICAgICAgICAiLz4KPEFERFIgU1RSRUVUPSIiIENJVFk9IiIgU1RB
+        VEU9IiIgWklQPSIiIENPVU5UUlk9IiIgLz4KPENSRUFURUQgREFURT0iMTUt
+        U2VwLTE5OTciIERBWT0iMTUiIE1PTlRIPSIwOSIgWUVBUj0iMTk5NyIvPgo8
+        UEhPTkUgTlVNQkVSPSJ1bmxpc3RlZCIvPgo8T1dORVIgTkFNRT0idW5saXN0
+        ZWQiLz4KPEVNQUlMIEFERFI9ImRucy1hZG1pbkBnb29nbGUuY29tIi8+CjxB
+        TEVYQVBSTyBUSUVSPSJhZHZhbmNlZCIvPgo8TEFORyBMRVg9ImVuIi8+CjxM
+        SU5LU0lOIE5VTT0iNDgxMDA5NiIvPgo8U1BFRUQgVEVYVD0iMTIxNiIgUENU
+        PSI2MSIvPgo8UkVWSUVXUyBBVkc9IjQuMCIgTlVNPSIxNDA3Ii8+CjxDSElM
+        RCBTUkFUSU5HPSIwIi8+CjxBU1NPQ1M+CjxBU1NPQyBJRD0iZ29vZ2xlY29t
+        Ii8+PC9BU1NPQ1M+CjwvU0Q+Cgo8S0VZV09SRFM+CjxLRVlXT1JEIFZBTD0i
+        TW91bnRhaW4gVmlldyIvPgo8L0tFWVdPUkRTPjxETU9aPgo8U0lURSBCQVNF
+        PSJnb29nbGUuY29tLyIgVElUTEU9Ikdvb2dsZSIgREVTQz0iRW5hYmxlcyB1
+        c2VycyB0byBzZWFyY2ggdGhlIHdvcmxkJ3MgaW5mb3JtYXRpb24sIGluY2x1
+        ZGluZyB3ZWJwYWdlcywgaW1hZ2VzLCBhbmQgdmlkZW9zLiBPZmZlcnMgdW5p
+        cXVlIGZlYXR1cmVzIGFuZCBzZWFyY2ggdGVjaG5vbG9neS4iPgo8Q0FUUz4K
+        PENBVCBJRD0iVG9wL0NvbXB1dGVycy9JbnRlcm5ldC9TZWFyY2hpbmcvU2Vh
+        cmNoX0VuZ2luZXMvR29vZ2xlIiBUSVRMRT0iU2VhcmNoIEVuZ2luZXMvR29v
+        Z2xlIiBDSUQ9IjM3NDgyMiIvPgo8Q0FUIElEPSJUb3AvUmVnaW9uYWwvTm9y
+        dGhfQW1lcmljYS9Vbml0ZWRfU3RhdGVzL0NhbGlmb3JuaWEvTG9jYWxpdGll
+        cy9NL01vdW50YWluX1ZpZXcvQnVzaW5lc3NfYW5kX0Vjb25vbXkvSW5kdXN0
+        cmlhbC9Db21wdXRlcnNfYW5kX0ludGVybmV0IiBUSVRMRT0iSW5kdXN0cmlh
+        bC9Db21wdXRlcnMgYW5kIEludGVybmV0IiBDSUQ9IjYyNTM2NyIvPgo8Q0FU
+        IElEPSJUb3AvV29ybGQvRnJhbsOnYWlzL0luZm9ybWF0aXF1ZS9JbnRlcm5l
+        dC9SZWNoZXJjaGUvTW90ZXVyc19kZV9yZWNoZXJjaGUvR29vZ2xlIiBUSVRM
+        RT0iTW90ZXVycyBkZSByZWNoZXJjaGUvR29vZ2xlIiBDSUQ9IjI0NzM0NyIv
+        Pgo8Q0FUIElEPSJUb3AvV29ybGQvQXJhYmljL9il2YLZhNmK2YXZgNmKL9in
+        2YTYtNix2YJf2KfZhNij2YjYs9i3L9in2YTYs9i52YjYr9mK2Kkv2KrYrNin
+        2LHYqV/ZiF/Yo9mC2KrYtdin2K8v2YPZhdio2YrZiNiq2LFf2Yhf2KXZhtiq
+        2LHZhtiqL9mF2K3YsdmD2KfYql/YqNit2KsiIFRJVExFPSLZg9mF2KjZitmI
+        2KrYsSDZiCDYpdmG2KrYsdmG2Kov2YXYrdix2YPYp9iqINio2K3YqyIgQ0lE
+        PSIyMDQ5NTQiLz4KPENBVCBJRD0iVG9wL1dvcmxkL0VzcGHDsW9sL0NvbXB1
+        dGFkb3Jhcy9JbnRlcm5ldC9CdXNjYW5kb19lbl9JbnRlcm5ldC9Nb3RvcmVz
+        X2RlX2LDunNxdWVkYSIgVElUTEU9IkJ1c2NhbmRvIGVuIEludGVybmV0L01v
+        dG9yZXMgZGUgYsO6c3F1ZWRhIiBDSUQ9IjI5NDk4Ii8+CjwvQ0FUUz4KPC9T
+        SVRFPgo8L0RNT1o+CjxTRD4KPFBPUFVMQVJJVFkgVVJMPSJnb29nbGUuY29t
+        LyIgVEVYVD0iMSIgU09VUkNFPSJwYW5lbCIvPgo8UkVBQ0ggUkFOSz0iMSIv
+        Pgo8UkFOSyBERUxUQT0iLTEiLz4KPENPVU5UUlkgQ09ERT0iVVMiIE5BTUU9
+        IlVuaXRlZCBTdGF0ZXMiIFJBTks9IjEiLz4KPC9TRD4KPC9BTEVYQT4=
+    http_version: '1.1'
+  recorded_at: Thu, 14 Feb 2013 01:40:12 GMT
+- request:
     method: get
-    uri: http://data.alexa.com/data?dat=snbamz&url=google.com&cli=10
-    body: 
-      string: ""
-    headers: 
-      user-agent: 
-      - Mozilla/5.0 (Macintosh; Intel Mac OS X 10_7_4) AppleWebKit/534.56.5 (KHTML, like Gecko) Version/5.1.6 Safari/534.56.5
-  response: 
-    status: 
+    uri: http://data.alexa.com/data?cli=10&dat=snbamz&url=google.com
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      user-agent:
+      - Mozilla/5.0 (Macintosh; Intel Mac OS X 10_7_4) AppleWebKit/534.56.5 (KHTML,
+        like Gecko) Version/5.1.6 Safari/534.56.5
+  response:
+    status:
       code: 200
-      message: OK
-    headers: 
-      connection: 
-      - Close
-      content-type: 
-      - text/xml
-      content-length: 
-      - "30"
-    body: 
-      string: |
-        
-        <ALEXA VER="0.9" URL="404"/>
-
-    http_version: "1.1"
-  recorded_at: Tue, 18 Dec 2012 01:21:41 GMT
-- request: 
+      message: !binary |-
+        T0s=
+    headers:
+      !binary "Y29udGVudC10eXBl":
+      - !binary |-
+        dGV4dC94bWw=
+      !binary "Y29udGVudC1sZW5ndGg=":
+      - !binary |-
+        MjQyNg==
+      !binary "Y29ubmVjdGlvbg==":
+      - !binary |-
+        Q2xvc2U=
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4NCg0KPEFM
+        RVhBIFZFUj0iMC45IiBVUkw9Imdvb2dsZS5jb20vIiBIT01FPSIwIiBBSUQ9
+        Ij0iPg0KPFJMUyBQUkVGSVg9Imh0dHA6Ly8iIG1vcmU9IjU2Ij4KPFJMIEhS
+        RUY9ImFtYXpvbi5jb20vIiBUSVRMRT0iQW1hem9uLmNvbSIvPgo8UkwgSFJF
+        Rj0id2lraXBlZGlhLm9yZy8iIFRJVExFPSJXaWtpcGVkaWEiLz4KPFJMIEhS
+        RUY9Ind3dy55YWhvby5jb20vIiBUSVRMRT0iWWFob28hIi8+CjxSTCBIUkVG
+        PSJ5b3V0dWJlLmNvbS8iIFRJVExFPSJZb3VUdWJlIi8+CjxSTCBIUkVGPSJ5
+        ZWxwLmNvbS8iIFRJVExFPSJZZWxwIi8+CjxSTCBIUkVGPSJzdGF0Y291bnRl
+        ci5jb20vIiBUSVRMRT0iU3RhdENvdW50ZXIuY29tIi8+CjxSTCBIUkVGPSJt
+        eXNwYWNlLmNvbS8iIFRJVExFPSJNeXNwYWNlIi8+CjxSTCBIUkVGPSJsaW5r
+        ZWRpbi5jb20vIiBUSVRMRT0iTGlua2VkSW4iLz4KPFJMIEhSRUY9ImltZGIu
+        Y29tLyIgVElUTEU9IlRoZSBJbnRlcm5ldCBNb3ZpZSBEYXRhYmFzZSAoaW1k
+        YikiLz4KPFJMIEhSRUY9Imdvb2dsZS5jby5pbi8iIFRJVExFPSJHb29nbGUg
+        SW5kaWEiLz4KPFJMIEhSRUY9ImFzay5jb20vIiBUSVRMRT0iYXNrLmNvbS8i
+        Lz4KPC9STFM+CjxTRCBUSVRMRT0iQSIgRkxBR1M9IkRNT1oiIEhPU1Q9Imdv
+        b2dsZS5jb20iPgo8VElUTEUgVEVYVD0iR29vZ2xlICAgICAgICAgICAgICAg
+        ICAgICAgICAgICAgICAiLz4KPEFERFIgU1RSRUVUPSIiIENJVFk9IiIgU1RB
+        VEU9IiIgWklQPSIiIENPVU5UUlk9IiIgLz4KPENSRUFURUQgREFURT0iMTUt
+        U2VwLTE5OTciIERBWT0iMTUiIE1PTlRIPSIwOSIgWUVBUj0iMTk5NyIvPgo8
+        UEhPTkUgTlVNQkVSPSJ1bmxpc3RlZCIvPgo8T1dORVIgTkFNRT0idW5saXN0
+        ZWQiLz4KPEVNQUlMIEFERFI9ImRucy1hZG1pbkBnb29nbGUuY29tIi8+CjxB
+        TEVYQVBSTyBUSUVSPSJhZHZhbmNlZCIvPgo8TEFORyBMRVg9ImVuIi8+CjxM
+        SU5LU0lOIE5VTT0iNDgxMDA5NiIvPgo8U1BFRUQgVEVYVD0iMTIxNiIgUENU
+        PSI2MSIvPgo8UkVWSUVXUyBBVkc9IjQuMCIgTlVNPSIxNDA3Ii8+CjxDSElM
+        RCBTUkFUSU5HPSIwIi8+CjxBU1NPQ1M+CjxBU1NPQyBJRD0iZ29vZ2xlY29t
+        Ii8+PC9BU1NPQ1M+CjwvU0Q+Cgo8S0VZV09SRFM+CjxLRVlXT1JEIFZBTD0i
+        TW91bnRhaW4gVmlldyIvPgo8L0tFWVdPUkRTPjxETU9aPgo8U0lURSBCQVNF
+        PSJnb29nbGUuY29tLyIgVElUTEU9Ikdvb2dsZSIgREVTQz0iRW5hYmxlcyB1
+        c2VycyB0byBzZWFyY2ggdGhlIHdvcmxkJ3MgaW5mb3JtYXRpb24sIGluY2x1
+        ZGluZyB3ZWJwYWdlcywgaW1hZ2VzLCBhbmQgdmlkZW9zLiBPZmZlcnMgdW5p
+        cXVlIGZlYXR1cmVzIGFuZCBzZWFyY2ggdGVjaG5vbG9neS4iPgo8Q0FUUz4K
+        PENBVCBJRD0iVG9wL0NvbXB1dGVycy9JbnRlcm5ldC9TZWFyY2hpbmcvU2Vh
+        cmNoX0VuZ2luZXMvR29vZ2xlIiBUSVRMRT0iU2VhcmNoIEVuZ2luZXMvR29v
+        Z2xlIiBDSUQ9IjM3NDgyMiIvPgo8Q0FUIElEPSJUb3AvUmVnaW9uYWwvTm9y
+        dGhfQW1lcmljYS9Vbml0ZWRfU3RhdGVzL0NhbGlmb3JuaWEvTG9jYWxpdGll
+        cy9NL01vdW50YWluX1ZpZXcvQnVzaW5lc3NfYW5kX0Vjb25vbXkvSW5kdXN0
+        cmlhbC9Db21wdXRlcnNfYW5kX0ludGVybmV0IiBUSVRMRT0iSW5kdXN0cmlh
+        bC9Db21wdXRlcnMgYW5kIEludGVybmV0IiBDSUQ9IjYyNTM2NyIvPgo8Q0FU
+        IElEPSJUb3AvV29ybGQvRnJhbsOnYWlzL0luZm9ybWF0aXF1ZS9JbnRlcm5l
+        dC9SZWNoZXJjaGUvTW90ZXVyc19kZV9yZWNoZXJjaGUvR29vZ2xlIiBUSVRM
+        RT0iTW90ZXVycyBkZSByZWNoZXJjaGUvR29vZ2xlIiBDSUQ9IjI0NzM0NyIv
+        Pgo8Q0FUIElEPSJUb3AvV29ybGQvQXJhYmljL9il2YLZhNmK2YXZgNmKL9in
+        2YTYtNix2YJf2KfZhNij2YjYs9i3L9in2YTYs9i52YjYr9mK2Kkv2KrYrNin
+        2LHYqV/ZiF/Yo9mC2KrYtdin2K8v2YPZhdio2YrZiNiq2LFf2Yhf2KXZhtiq
+        2LHZhtiqL9mF2K3YsdmD2KfYql/YqNit2KsiIFRJVExFPSLZg9mF2KjZitmI
+        2KrYsSDZiCDYpdmG2KrYsdmG2Kov2YXYrdix2YPYp9iqINio2K3YqyIgQ0lE
+        PSIyMDQ5NTQiLz4KPENBVCBJRD0iVG9wL1dvcmxkL0VzcGHDsW9sL0NvbXB1
+        dGFkb3Jhcy9JbnRlcm5ldC9CdXNjYW5kb19lbl9JbnRlcm5ldC9Nb3RvcmVz
+        X2RlX2LDunNxdWVkYSIgVElUTEU9IkJ1c2NhbmRvIGVuIEludGVybmV0L01v
+        dG9yZXMgZGUgYsO6c3F1ZWRhIiBDSUQ9IjI5NDk4Ii8+CjwvQ0FUUz4KPC9T
+        SVRFPgo8L0RNT1o+CjxTRD4KPFBPUFVMQVJJVFkgVVJMPSJnb29nbGUuY29t
+        LyIgVEVYVD0iMSIgU09VUkNFPSJwYW5lbCIvPgo8UkVBQ0ggUkFOSz0iMSIv
+        Pgo8UkFOSyBERUxUQT0iLTEiLz4KPENPVU5UUlkgQ09ERT0iVVMiIE5BTUU9
+        IlVuaXRlZCBTdGF0ZXMiIFJBTks9IjEiLz4KPC9TRD4KPC9BTEVYQT4=
+    http_version: !binary |-
+      MS4x
+  recorded_at: Thu, 14 Feb 2013 01:40:12 GMT
+- request:
     method: get
     uri: http://toolbarqueries.google.com/tbr?client=navclient-auto&ch=6340563836&features=Rank&q=info%3Awww.google.com
-    body: 
-      string: ""
-    headers: 
-      user-agent: 
-      - Mozilla/5.0 (Macintosh; Intel Mac OS X 10_7_4) AppleWebKit/534.56.5 (KHTML, like Gecko) Version/5.1.6 Safari/534.56.5
-  response: 
-    status: 
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      user-agent:
+      - Mozilla/5.0 (Macintosh; Intel Mac OS X 10_7_4) AppleWebKit/534.56.5 (KHTML,
+        like Gecko) Version/5.1.6 Safari/534.56.5
+  response:
+    status:
       code: 200
       message: OK
-    headers: 
-      x-frame-options: 
-      - SAMEORIGIN
-      date: 
-      - Tue, 18 Dec 2012 01:21:41 GMT
-      set-cookie: 
-      - PREF=ID=b5fcd394cfd3e7e8:FF=0:TM=1355793701:LM=1355793701:S=vFu0XS_9jwEGiqkG; expires=Thu, 18-Dec-2014 01:21:41 GMT; path=/; domain=.google.com
-      - NID=67=d92ohKLYeAbG5-YwEVZMSeDCaMqVtkCl4ldpM0kBVPiE5BquTzbNusQXTlPIVBUiC-ldJC9pYbcV6DvnF0ORRxUCNxNo0ORJKQeBD40bLcHfIh3lmsgsXcEXaSu-5rN2; expires=Wed, 19-Jun-2013 01:21:41 GMT; path=/; domain=.google.com; HttpOnly
-      cache-control: 
-      - no-cache, must-revalidate
-      server: 
-      - gws
-      x-xss-protection: 
-      - 1; mode=block
-      connection: 
-      - close
-      p3p: 
-      - CP="This is not a P3P policy! See http://www.google.com/support/accounts/bin/answer.py?hl=en&answer=151657 for more info."
-      content-type: 
-      - text/html; charset=ISO-8859-1
-      pragma: 
+    headers:
+      date:
+      - Thu, 14 Feb 2013 01:40:10 GMT
+      pragma:
       - no-cache
-      expires: 
+      expires:
       - Fri, 01 Jan 1990 00:00:00 GMT
-    body: 
-      string: |
-        Rank_1:1:9
+      cache-control:
+      - no-cache, must-revalidate
+      content-type:
+      - text/html; charset=ISO-8859-1
+      set-cookie:
+      - PREF=ID=69ede3714740403e:FF=0:TM=1360806010:LM=1360806010:S=tknODLpeVlvpyj5q;
+        expires=Sat, 14-Feb-2015 01:40:10 GMT; path=/; domain=.google.com
+      - NID=67=jgM5jwm-8LiblvT7sKrsmK22pyY6Vg8N5wkzuujasIcZVa-y-XV_n-GBZmSGTN-g39EBhkXZQOba6NPsZ2NN4G6qlp9DcybVyqoC0iHQr8-1cDoAL04DL0rmZ9ZYKRUh;
+        expires=Fri, 16-Aug-2013 01:40:10 GMT; path=/; domain=.google.com; HttpOnly
+      p3p:
+      - CP="This is not a P3P policy! See http://www.google.com/support/accounts/bin/answer.py?hl=en&answer=151657
+        for more info."
+      server:
+      - gws
+      x-xss-protection:
+      - 1; mode=block
+      x-frame-options:
+      - SAMEORIGIN
+      connection:
+      - close
+    body:
+      encoding: US-ASCII
+      string: ! 'Rank_1:1:9
 
-    http_version: "1.1"
-  recorded_at: Tue, 18 Dec 2012 01:21:41 GMT
+'
+    http_version: '1.1'
+  recorded_at: Thu, 14 Feb 2013 01:40:13 GMT
 recorded_with: VCR 2.3.0

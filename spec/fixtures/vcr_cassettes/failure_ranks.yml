@@ -1,203 +1,138 @@
---- 
-http_interactions: 
-- request: 
-    method: get
-    uri: http://data.alexa.com/data?cli=10&dat=snbamz&url=please-dont-register-a-site-that-breaks-this-test.com
-    body: 
-      string: ""
-    headers: 
-      user-agent: 
-      - Mozilla/5.0 (Macintosh; Intel Mac OS X 10_7_4) AppleWebKit/534.56.5 (KHTML, like Gecko) Version/5.1.6 Safari/534.56.5
-  response: 
-    status: 
-      code: 200
-      message: OK
-    headers: 
-      connection: 
-      - Close
-      content-type: 
-      - text/xml
-      content-length: 
-      - "278"
-    body: 
-      string: |-
-        <?xml version="1.0" encoding="UTF-8"?>
-        
-        <ALEXA VER="0.9" URL="please-dont-register-a-site-that-breaks-this-test.com/" HOME="0" AID="=">
-        <RLS PREFIX="http://" more="0">
-        </RLS>
-        <SD TITLE="A" FLAGS="" HOST="please-dont-register-a-site-that-breaks-this-test.com">
-        </SD>
-        
-        </ALEXA>
-    http_version: "1.1"
-  recorded_at: Mon, 17 Dec 2012 17:03:45 GMT
-- request: 
-    method: get
-    uri: http://data.alexa.com/data?cli=10&dat=snbamz&url=please-dont-register-a-site-that-breaks-this-test.com
-    body: 
-      string: ""
-    headers: 
-      user-agent: 
-      - Mozilla/5.0 (Macintosh; Intel Mac OS X 10_7_4) AppleWebKit/534.56.5 (KHTML, like Gecko) Version/5.1.6 Safari/534.56.5
-  response: 
-    status: 
-      code: 200
-      message: OK
-    headers: 
-      connection: 
-      - Close
-      content-type: 
-      - text/xml
-      content-length: 
-      - "278"
-    body: 
-      string: |-
-        <?xml version="1.0" encoding="UTF-8"?>
-        
-        <ALEXA VER="0.9" URL="please-dont-register-a-site-that-breaks-this-test.com/" HOME="0" AID="=">
-        <RLS PREFIX="http://" more="0">
-        </RLS>
-        <SD TITLE="A" FLAGS="" HOST="please-dont-register-a-site-that-breaks-this-test.com">
-        </SD>
-        
-        </ALEXA>
-    http_version: "1.1"
-  recorded_at: Mon, 17 Dec 2012 17:03:45 GMT
-- request: 
-    method: get
-    uri: http://toolbarqueries.google.com/tbr?features=Rank&q=info%3Aplease-dont-register-a-site-that-breaks-this-test.com&client=navclient-auto&ch=63624986523
-    body: 
-      string: ""
-    headers: 
-      user-agent: 
-      - Mozilla/5.0 (Macintosh; Intel Mac OS X 10_7_4) AppleWebKit/534.56.5 (KHTML, like Gecko) Version/5.1.6 Safari/534.56.5
-  response: 
-    status: 
-      code: 200
-      message: OK
-    headers: 
-      date: 
-      - Mon, 17 Dec 2012 17:03:45 GMT
-      x-frame-options: 
-      - SAMEORIGIN
-      set-cookie: 
-      - PREF=ID=2e1388a52c6f0cc6:FF=0:TM=1355763825:LM=1355763825:S=9BA0IYGOrX8y23jT; expires=Wed, 17-Dec-2014 17:03:45 GMT; path=/; domain=.google.com
-      - NID=67=NMO-PBacn7BgKa0-CRV6Qop5XnR4sr1OJBFXv9CzqIdbWbfKnb7f2qIswPHnRWm7DRnhdxqD2eWpZBpCELo6-URGr_GcAHRti_PHmGlxV9R0DTOd5CvThB2wHOTmbRkp; expires=Tue, 18-Jun-2013 17:03:45 GMT; path=/; domain=.google.com; HttpOnly
-      cache-control: 
-      - no-cache, must-revalidate
-      server: 
-      - gws
-      x-xss-protection: 
-      - 1; mode=block
-      connection: 
-      - close
-      p3p: 
-      - CP="This is not a P3P policy! See http://www.google.com/support/accounts/bin/answer.py?hl=en&answer=151657 for more info."
-      pragma: 
-      - no-cache
-      content-type: 
-      - text/html; charset=ISO-8859-1
-      content-length: 
-      - "0"
-      expires: 
-      - Fri, 01 Jan 1990 00:00:00 GMT
-    body: 
-      string: ""
-    http_version: "1.1"
-  recorded_at: Mon, 17 Dec 2012 17:03:45 GMT
-- request: 
-    method: get
-    uri: http://data.alexa.com/data?dat=snbamz&url=please-dont-register-a-site-that-breaks-this-test.com&cli=10
-    body: 
-      string: ""
-    headers: 
-      user-agent: 
-      - Mozilla/5.0 (Macintosh; Intel Mac OS X 10_7_4) AppleWebKit/534.56.5 (KHTML, like Gecko) Version/5.1.6 Safari/534.56.5
-  response: 
-    status: 
-      code: 200
-      message: OK
-    headers: 
-      connection: 
-      - Close
-      content-type: 
-      - text/xml
-      content-length: 
-      - "30"
-    body: 
-      string: |
-        
-        <ALEXA VER="0.9" URL="404"/>
-
-    http_version: "1.1"
-  recorded_at: Tue, 18 Dec 2012 01:21:41 GMT
-- request: 
-    method: get
-    uri: http://data.alexa.com/data?dat=snbamz&url=please-dont-register-a-site-that-breaks-this-test.com&cli=10
-    body: 
-      string: ""
-    headers: 
-      user-agent: 
-      - Mozilla/5.0 (Macintosh; Intel Mac OS X 10_7_4) AppleWebKit/534.56.5 (KHTML, like Gecko) Version/5.1.6 Safari/534.56.5
-  response: 
-    status: 
-      code: 200
-      message: OK
-    headers: 
-      connection: 
-      - Close
-      content-type: 
-      - text/xml
-      content-length: 
-      - "30"
-    body: 
-      string: |
-        
-        <ALEXA VER="0.9" URL="404"/>
-
-    http_version: "1.1"
-  recorded_at: Tue, 18 Dec 2012 01:21:41 GMT
-- request: 
+---
+http_interactions:
+- request:
     method: get
     uri: http://toolbarqueries.google.com/tbr?client=navclient-auto&ch=63624986523&features=Rank&q=info%3Aplease-dont-register-a-site-that-breaks-this-test.com
-    body: 
-      string: ""
-    headers: 
-      user-agent: 
-      - Mozilla/5.0 (Macintosh; Intel Mac OS X 10_7_4) AppleWebKit/534.56.5 (KHTML, like Gecko) Version/5.1.6 Safari/534.56.5
-  response: 
-    status: 
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      user-agent:
+      - Mozilla/5.0 (Macintosh; Intel Mac OS X 10_7_4) AppleWebKit/534.56.5 (KHTML,
+        like Gecko) Version/5.1.6 Safari/534.56.5
+  response:
+    status:
       code: 200
       message: OK
-    headers: 
-      x-frame-options: 
-      - SAMEORIGIN
-      date: 
-      - Tue, 18 Dec 2012 01:21:41 GMT
-      set-cookie: 
-      - PREF=ID=10f461c3c0c846b8:FF=0:TM=1355793701:LM=1355793701:S=LT1u1l_1S3Zv-4Xa; expires=Thu, 18-Dec-2014 01:21:41 GMT; path=/; domain=.google.com
-      - NID=67=QNWz_zdrqgeeq1MuVvCo_efN0CQVTkZYFrTVhcrrFvhJjryFwo8wEN0mgfv302j6OPVu5n6VzltExKLKHy6qZkG50Pqly--Zx3knM6YoIlNfaEM5AZrEPWzutMwhsfTH; expires=Wed, 19-Jun-2013 01:21:41 GMT; path=/; domain=.google.com; HttpOnly
-      cache-control: 
-      - no-cache, must-revalidate
-      server: 
-      - gws
-      x-xss-protection: 
-      - 1; mode=block
-      connection: 
-      - close
-      p3p: 
-      - CP="This is not a P3P policy! See http://www.google.com/support/accounts/bin/answer.py?hl=en&answer=151657 for more info."
-      content-type: 
-      - text/html; charset=ISO-8859-1
-      pragma: 
+    headers:
+      date:
+      - Thu, 14 Feb 2013 01:40:10 GMT
+      pragma:
       - no-cache
-      content-length: 
-      - "0"
-      expires: 
+      expires:
       - Fri, 01 Jan 1990 00:00:00 GMT
-    body: 
-      string: ""
-    http_version: "1.1"
-  recorded_at: Tue, 18 Dec 2012 01:21:41 GMT
+      cache-control:
+      - no-cache, must-revalidate
+      content-type:
+      - text/html; charset=ISO-8859-1
+      set-cookie:
+      - PREF=ID=03d29a6573b7a147:FF=0:TM=1360806010:LM=1360806010:S=cEAZj8cCBeRPyz1N;
+        expires=Sat, 14-Feb-2015 01:40:10 GMT; path=/; domain=.google.com
+      - NID=67=e55WmqCQqnNJBf5V4WY3MjTbsC0t-YJSq-I3M240uQ2Z48ULvrgr7c4hRxYnWUU3wldIkGR58QAZpl7Yn1bZG1dDjIonA2xWX_Fd4c75zqWVpyQYFskkINyIA-EjktnT;
+        expires=Fri, 16-Aug-2013 01:40:10 GMT; path=/; domain=.google.com; HttpOnly
+      p3p:
+      - CP="This is not a P3P policy! See http://www.google.com/support/accounts/bin/answer.py?hl=en&answer=151657
+        for more info."
+      server:
+      - gws
+      content-length:
+      - '0'
+      x-xss-protection:
+      - 1; mode=block
+      x-frame-options:
+      - SAMEORIGIN
+      connection:
+      - close
+    body:
+      encoding: US-ASCII
+      string: ''
+    http_version: '1.1'
+  recorded_at: Thu, 14 Feb 2013 01:40:13 GMT
+- request:
+    method: get
+    uri: http://data.alexa.com/data?cli=10&dat=snbamz&url=please-dont-register-a-site-that-breaks-this-test.com
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      user-agent:
+      - Mozilla/5.0 (Macintosh; Intel Mac OS X 10_7_4) AppleWebKit/534.56.5 (KHTML,
+        like Gecko) Version/5.1.6 Safari/534.56.5
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      content-type:
+      - text/xml
+      content-length:
+      - '278'
+      connection:
+      - Close
+    body:
+      encoding: US-ASCII
+      string: ! "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n\r\n<ALEXA VER=\"0.9\"
+        URL=\"please-dont-register-a-site-that-breaks-this-test.com/\" HOME=\"0\"
+        AID=\"=\">\r\n<RLS PREFIX=\"http://\" more=\"0\">\n</RLS>\n<SD TITLE=\"A\"
+        FLAGS=\"\" HOST=\"please-dont-register-a-site-that-breaks-this-test.com\">\n</SD>\n\n</ALEXA>"
+    http_version: '1.1'
+  recorded_at: Thu, 14 Feb 2013 01:40:13 GMT
+- request:
+    method: get
+    uri: http://data.alexa.com/data?cli=10&dat=snbamz&url=please-dont-register-a-site-that-breaks-this-test.com
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      user-agent:
+      - Mozilla/5.0 (Macintosh; Intel Mac OS X 10_7_4) AppleWebKit/534.56.5 (KHTML,
+        like Gecko) Version/5.1.6 Safari/534.56.5
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      content-type:
+      - text/xml
+      content-length:
+      - '278'
+      connection:
+      - Close
+    body:
+      encoding: US-ASCII
+      string: ! "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n\r\n<ALEXA VER=\"0.9\"
+        URL=\"please-dont-register-a-site-that-breaks-this-test.com/\" HOME=\"0\"
+        AID=\"=\">\r\n<RLS PREFIX=\"http://\" more=\"0\">\n</RLS>\n<SD TITLE=\"A\"
+        FLAGS=\"\" HOST=\"please-dont-register-a-site-that-breaks-this-test.com\">\n</SD>\n\n</ALEXA>"
+    http_version: '1.1'
+  recorded_at: Thu, 14 Feb 2013 01:40:13 GMT
+- request:
+    method: get
+    uri: http://data.alexa.com/data?cli=10&dat=snbamz&url=please-dont-register-a-site-that-breaks-this-test.com
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      user-agent:
+      - Mozilla/5.0 (Macintosh; Intel Mac OS X 10_7_4) AppleWebKit/534.56.5 (KHTML,
+        like Gecko) Version/5.1.6 Safari/534.56.5
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      content-type:
+      - text/xml
+      content-length:
+      - '278'
+      connection:
+      - Close
+    body:
+      encoding: US-ASCII
+      string: ! "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n\r\n<ALEXA VER=\"0.9\"
+        URL=\"please-dont-register-a-site-that-breaks-this-test.com/\" HOME=\"0\"
+        AID=\"=\">\r\n<RLS PREFIX=\"http://\" more=\"0\">\n</RLS>\n<SD TITLE=\"A\"
+        FLAGS=\"\" HOST=\"please-dont-register-a-site-that-breaks-this-test.com\">\n</SD>\n\n</ALEXA>"
+    http_version: '1.1'
+  recorded_at: Thu, 14 Feb 2013 01:40:13 GMT
 recorded_with: VCR 2.3.0
