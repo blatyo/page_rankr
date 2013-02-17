@@ -1,5 +1,7 @@
 # Change Log
 
+## Version 4.1.0
+
 ## Version 4.0.0
 * Fix for Google pagerank check. Query parts were omitted which made the some pages get the same PR as the domain.
 * Switch from Typheous to HTTParty to avoid memory leaks and have better support on Windows.

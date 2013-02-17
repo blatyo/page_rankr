@@ -97,19 +97,19 @@ If you don't specify a rank provider, then all of them are used.
 
 ``` ruby
     PageRankr.ranks('www.google.com', :alexa_us, :alexa_global, :google)
-        #=> {:alexa_us=>1, :alexa_global=>1, :google=>10}
+        #=> {:alexa_us=>1, :alexa_global=>1, :alexa_country=>1, :google=>10}
 
     # this also gives the same result
     PageRankr.ranks('www.google.com')
-        #=> {:alexa_us=>1, :alexa_global=>1, :google=>10}
+        #=> {:alexa_us=>1, :alexa_global=>1, :alexa_country=>1, :google=>10}
 ```
 
 You can also use the alias `rank` instead of `ranks`.
 
-Valid rank trackers are: `:alexa_us, :alexa_global, :google`. To get this you can do:
+Valid rank trackers are: `:alexa_country, :alexa_global, :alexa_us, :google`. To get this you can do:
 
 ``` ruby
-    PageRankr.rank_trackers #=> [:alexa_global, :alexa_us, :google]
+    PageRankr.rank_trackers #=> [:alexa_country, :alexa_global, :alexa_us, :google]
 ```
 
 Alexa ranks are descending where 1 is the most popular. Google page ranks are in the range 0-10 where 10 is the most popular. If a site is unindexed then the rank will be nil.
@@ -217,26 +217,12 @@ Then, just make sure you require the class and PageRankr and whenever you call P
 
 * Fork the project.
 * Make your feature addition or bug fix.
-* Add tests for it. This is important so I don't break it in a
-  future version unintentionally.
-* Commit, do not mess with rakefile, version, or history.
-  (if you want to have your own version, that is fine but bump version in a commit by itself I can ignore when I pull)
+* Add tests for it. This is important so I don't break it in a future version unintentionally.
+* Commit, do not mess with rakefile, version, or history. (if you want to have your own version, that is fine but bump version in a commit by itself I can ignore when I pull)
 * Send me a pull request. Bonus points for topic branches.
 
 ## TODO Version 5
 * Detect request throttling
-
-## Contributors
-* [Dru Ibarra](https://github.com/Druwerd)
-* [Iteration Labs, LLC](https://github.com/iterationlabs)
-* [Marc Seeger](http://www.marc-seeger.de) ([Acquia](http://www.acquia.com))
-* [Rémy Coutable](https://github.com/rymai)
-* [Jonathan Rudenberg](https://github.com/titanous)
-* [Chris Corbyn](https://github.com/d11wtq)
-* [Hans Haselberg](https://github.com/i0rek)
-* [Priit Haamer](https://github.com/priithaamer)
-* [Marty McKenna](https://github.com/martyMM)
-* [Alexi Rahman](https://github.com/odynvolk)
 
 ## Shout Out
 Gotta give credit where credits due!
