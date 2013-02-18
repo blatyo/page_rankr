@@ -4,6 +4,8 @@ Provides an easy way to retrieve Google Page Rank, Alexa Rank, backlink counts, 
 
 __Note: Version ~> 2.0 and ~> 3.0 used typheous internally which caused memory leak issues and failures on windows. 4.0.0 changes the implementation to use a Net::HTTP based library for better compatability.__ 
 
+__Note: Version >= 4.1.0 no longer actively maintains compatibility with Ruby 1.8.X. It will probably still work for the time being.__ 
+
 Check out a little [web app][1] I wrote up that uses it or look at the [source][2].
 
 [1]: http://isitpopular.heroku.com
