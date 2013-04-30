@@ -6,11 +6,11 @@ module PageRankr
     class Google
       include Rank
 
-      def initialize(site)
+      def initialize(site, options = {})
         @site = PageRankr::Site(site)
         @checksum = Checksum.generate("info:#{tracked_url}")
         
-        super(site)
+        super(site, options)
       end
 
       def supported_components
