@@ -1,6 +1,10 @@
 # Change Log
 
+## Version 4.1.1
+* Fix issue where Google Rank tracker did not pass options to request.
+
 ## Version 4.1.0
+* Add Alexa Country rank.
 
 ## Version 4.0.0
 * Fix for Google pagerank check. Query parts were omitted which made the some pages get the same PR as the domain.
