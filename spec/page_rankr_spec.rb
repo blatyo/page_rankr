@@ -47,6 +47,7 @@ describe PageRankr do
     it{ should include(:alexa_us) }
     it{ should include(:alexa_global) }
     it{ should include(:google) }
+    it{ should include(:moz_rank) }
   end
 
   describe "#ranks", :focus => true do
@@ -61,11 +62,15 @@ describe PageRankr do
       it{ should have_key(:alexa_global) }
       it{ should have_key(:alexa_country) }
       it{ should have_key(:google) }
-    
+      it{ should have_key(:moz_rank) }
+      it{ should have_key(:page_authority) }
+
       it{ subject[:alexa_us].should be_number >= 1 }
       it{ subject[:alexa_global].should be_number >= 1 }
       it{ subject[:alexa_country].should be_number >= 1 }
       it{ subject[:google].should be_in(0..10) }
+      it{ subject[:moz_rank].should be_in(5..9) }
+      it{ subject[:page_authority].should be_in(90..99) }
     end
     
     describe "failure" do
@@ -79,11 +84,15 @@ describe PageRankr do
       it{ should have_key(:alexa_global) }
       it{ should have_key(:alexa_country) }
       it{ should have_key(:google) }
-    
+      it{ should have_key(:moz_rank) }
+      it{ should have_key(:page_authority) }
+
       it{ subject[:alexa_us].should be_nil }
       it{ subject[:alexa_global].should be_nil }
       it{ subject[:alexa_country].should be_nil }
       it{ subject[:google].should be_nil }
+      it{ subject[:moz_rank].should == 0 }
+      it{ subject[:page_authority].should == 1 }
     end
   end
   
