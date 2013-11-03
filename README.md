@@ -98,7 +98,7 @@ Ranks are ratings assigned to specify how popular a site is. The most famous exa
 If you don't specify a rank provider, then all of them are used.
 
 ``` ruby
-    PageRankr.ranks('www.google.com', :alexa_us, :alexa_global, :google, , :moz_rank, :page_authority)
+    PageRankr.ranks('www.google.com', :alexa_us, :alexa_global, :google, :moz_rank, :page_authority)
         #=> {:alexa_us=>1, :alexa_global=>1, :alexa_country=>1, :google=>10, :moz_rank => 8, :page_authority => 97}
 
     # this also gives the same result
