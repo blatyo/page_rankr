@@ -293,4 +293,198 @@ http_interactions:
 '
     http_version: '1.1'
   recorded_at: Thu, 14 Feb 2013 01:40:13 GMT
+- request:
+    method: get
+    uri: http://bagics.com/moz-rank.html?domain=google.com
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      user-agent:
+      - Mozilla/5.0 (Macintosh; Intel Mac OS X 10_7_4) AppleWebKit/534.56.5 (KHTML,
+        like Gecko) Version/5.1.6 Safari/534.56.5
+  response:
+    status:
+      code: 200
+      message: !binary |-
+        T0s=
+    headers:
+      !binary "ZGF0ZQ==":
+      - !binary |-
+        U2F0LCAwMiBOb3YgMjAxMyAyMjozOTozOCBHTVQ=
+      !binary "c2VydmVy":
+      - !binary |-
+        QXBhY2hl
+      !binary "dmFyeQ==":
+      - !binary |-
+        QWNjZXB0LUVuY29kaW5n
+      !binary "Y2FjaGUtY29udHJvbA==":
+      - !binary |-
+        4oCccHVibGlj4oCd
+      !binary "Y29ubmVjdGlvbg==":
+      - !binary |-
+        Y2xvc2U=
+      !binary "dHJhbnNmZXItZW5jb2Rpbmc=":
+      - !binary |-
+        Y2h1bmtlZA==
+      !binary "Y29udGVudC10eXBl":
+      - !binary |-
+        dGV4dC9odG1s
+    body:
+      encoding: US-ASCII
+      string: ! "<!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.0 Strict//EN\"\n    \"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd\">\n<html
+        xmlns=\"http://www.w3.org/1999/xhtml\" xml:lang=\"en\" lang=\"en\">\n<head>\n<title>Check
+        MOZ Rank of Domain for FREE | Bagics.com | All In One SEO Companion</title>\n<meta
+        name=\"description\" content=\"Moz Rank Checker - WhoIs LookUp  Check domain
+        availability  Check Page Rank  Check PageRank  DMOZ directory checker  Yahoo
+        directory checker  Proxy servers  Check domain age  Check Alexa Rank  Domain
+        IP lookup  Find domain owner Check Domain Authority  Check Page Authority
+        \ Check MozTrust  Check mozRank  Expired Domains  Backlinks checker  Check
+        Link Popularity  \"/>\n\n<meta name=\"keywords\" content=\"WhoIs LookUp,Check
+        domain availability,Check Page Rank,Check PageRank,DMOZ directory checker,Yahoo
+        directory checker,Proxy servers,Check domain age,Check Alexa Rank ,Check Domain
+        IP,lookup,Find domain owner ,Check domain Authority,Check Page Authority,Check
+        MozTrust,Check mozRank,Expired Domains,Backlinks checker,Check Link Popularity
+        \">\n<meta http-equiv=\"Content-Type\" content=\"text/html; charset=utf-8\"
+        />\n<link href=\"css/style.css\" rel=\"stylesheet\" type=\"text/css\" />\n</head>\n<div
+        id=\"container\">\n<div id=\"main\">\n<div id=\"topbanner\"></div>\n<div id=\"menu\"><center>\n\t\n<a
+        href=\"index.html\" title=\"bagics home page\">Home</a>\n<a href=\"whois.html\">WhoIs
+        LookUp</a>\n<a href=\"domainchecker.html\">Check domain availability</a>\n<a
+        href=\"pr.html\">Check Page Rank</a>\n<a href=\"alexarankchecker.html\">Check
+        Alexa Rank</a>\n<a href=\"domain-authority.html\">Check Domain Authority</a>\n<a
+        href=\"page-authority.html\">Check Page Authority</a>\n<a href=\"yahoodirchecker.html\">Yahoo
+        Directory check</a>\n<a href=\"alexabacklinkcheck.html\">Alexa Backlinks Check</a>\n<a
+        href=\"bingindexcheck.html\">Bing Index Check</a>\n<a href=\"moz-rank.html\">MOZ-Rank
+        Check</a>\n<a href=\"dofollow-links.html\">Dofollow Backlinks Check</a>\n<a
+        href=\"total-back-links.html\">Total Backlinks Check</a>\n<a href=\"fake-pr-check.html\">Fake
+        PR Check</a>\n<a href=\"domain-age.html\">Domain Age Check</a>\n<a href=\"site-value.html\">Estimated
+        Site Value</a>\n<a href=\"google-bot-access.html\">Google Bot Access Check</a>\n<a
+        href=\"get-technorati-rank.html\">Technorati rank Check</a>\n\n\t<!--<br />\n\t<a
+        href=\"./pr.php\">Check PageRank</a>\n\t<a href=\"#\">DMOZ directory checker</a>
+        \n\t<a href=\"#\">Yahoo directory checker</a> \n\t<a href=\"#\">Proxy servers</a>
+        \n\t<br />\n\t<a href=\"#\">Check domain age</a>\n\t<a href=\"#\">Check Alexa
+        Rank</a> \n\t<a href=\"#\">Domain IP lookup</a>\n\t<a href=\"#\">Find domain
+        owner</a>\n\t<br />\n\t<a href=\"#\">Check Domain Authority</a>\n\t<a href=\"#\">Check
+        Page Authority</a>\n\t<a href=\"#\">Check MozTrust</a>\n\t<a href=\"#\">Check
+        mozRank</a>\n\t<br />\n\t<a href=\"#\" class=\"updated\">Expired Domains</a>\n\t<a
+        href=\"#\">Backlinks checker</a>\n\t<a href=\"#\">Check Link Popularity</a>\n\t\t<br
+        /> -->\n\n</div>\n<div id=\"content\">\n<h1>Check MOZ RANK of Domain.</h1>\n<p>Here,
+        You can quickly check the MOZ RANKof your favorite sites. Just put your domain
+        name below and click CHECK button.</p>\n\n<div class=\"pr\">\n<form action=\"/moz-rank.html\"
+        method=\"post\">\nURL: <input name=\"domain\" type=\"text\" id=\"domain\"
+        value=\"\" maxlength=\"300\" class=\"prf\" size=\"45\">\n<input type=\"submit\"
+        name=\"Submit\" value=\"CHECK\"  >\n</form></div>\n\n<div class=\"seomozResult\">\n\t\t\t<strong
+        class=\"dac\" id=\"resId\">8</strong>\n\t\t\t<h3 class=\"daa\">Moz Rank</h3>\t\t\t\n\t\t\t<b
+        id=\"urlId\">google.com</b>\n\t\t\t</div></div>\n<div class=\"div\"></div>\n</div>\n\n\n\t\n<div
+        id=\"r\"></div>\n<div id=\"credits\">\n<p>Copyright by <a href=\"http://bagics.com\">Bagics</a></p>\n<p>&copy;2012,
+        All rights reserved.</p></div> \n\n\n\n</div><script type=\"text/javascript\">\n\n
+        \ var _gaq = _gaq || [];\n  _gaq.push(['_setAccount', 'UA-20641732-23']);\n
+        \ _gaq.push(['_setDomainName', 'bagics.com']);\n  _gaq.push(['_setAllowLinker',
+        true]);\n  _gaq.push(['_trackPageview']);\n\n  (function() {\n    var ga =
+        document.createElement('script'); ga.type = 'text/javascript'; ga.async =
+        true;\n    ga.src = ('https:' == document.location.protocol ? 'https://' :
+        'http://') + 'stats.g.doubleclick.net/dc.js';\n    var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(ga, s);\n  })();\n\n</script></body></html> name="
+    http_version: !binary |-
+      MS4x
+  recorded_at: Sat, 02 Nov 2013 22:39:56 GMT
+- request:
+    method: get
+    uri: http://bagics.com/page-authority.html?domain=google.com
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      user-agent:
+      - Mozilla/5.0 (Macintosh; Intel Mac OS X 10_7_4) AppleWebKit/534.56.5 (KHTML,
+        like Gecko) Version/5.1.6 Safari/534.56.5
+  response:
+    status:
+      code: 200
+      message: !binary |-
+        T0s=
+    headers:
+      !binary "ZGF0ZQ==":
+      - !binary |-
+        U2F0LCAwMiBOb3YgMjAxMyAyMjo0ODowMyBHTVQ=
+      !binary "c2VydmVy":
+      - !binary |-
+        QXBhY2hl
+      !binary "dmFyeQ==":
+      - !binary |-
+        QWNjZXB0LUVuY29kaW5n
+      !binary "Y2FjaGUtY29udHJvbA==":
+      - !binary |-
+        4oCccHVibGlj4oCd
+      !binary "Y29ubmVjdGlvbg==":
+      - !binary |-
+        Y2xvc2U=
+      !binary "dHJhbnNmZXItZW5jb2Rpbmc=":
+      - !binary |-
+        Y2h1bmtlZA==
+      !binary "Y29udGVudC10eXBl":
+      - !binary |-
+        dGV4dC9odG1s
+    body:
+      encoding: US-ASCII
+      string: ! "<!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.0 Strict//EN\"\n    \"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd\">\n<html
+        xmlns=\"http://www.w3.org/1999/xhtml\" xml:lang=\"en\" lang=\"en\">\n<head>\n<title>Check
+        Page Authority of Domain for FREE | Bagics.com | All In One SEO Companion</title>\n<meta
+        name=\"description\" content=\"Page Authority Checker -WhoIs LookUp  Check
+        domain availability  Check Page Rank  Check PageRank  DMOZ directory checker
+        \ Yahoo directory checker  Proxy servers  Check domain age  Check Alexa Rank
+        \ Domain IP lookup  Find domain owner Check Domain Authority  Check Page Authority
+        \ Check MozTrust  Check mozRank  Expired Domains  Backlinks checker  Check
+        Link Popularity  \"/>\n\n<meta name=\"keywords\" content=\"WhoIs LookUp,Check
+        domain availability,Check Page Rank,Check PageRank,DMOZ directory checker,Yahoo
+        directory checker,Proxy servers,Check domain age,Check Alexa Rank ,Check Domain
+        IP,lookup,Find domain owner ,Check domain Authority,Check Page Authority,Check
+        MozTrust,Check mozRank,Expired Domains,Backlinks checker,Check Link Popularity
+        \">\n<meta http-equiv=\"Content-Type\" content=\"text/html; charset=utf-8\"
+        />\n<link href=\"css/style.css\" rel=\"stylesheet\" type=\"text/css\" />\n</head>\n<body
+        onmouseover=\"window.status='';return true;\">\n\n<div id=\"container\">\n<div
+        id=\"main\">\n<div id=\"topbanner\"></div>\n<div id=\"menu\"><center>\n\t\n<a
+        href=\"index.html\" title=\"bagics home page\">Home</a>\n<a href=\"whois.html\">WhoIs
+        LookUp</a>\n<a href=\"domainchecker.html\">Check domain availability</a>\n<a
+        href=\"pr.html\">Check Page Rank</a>\n<a href=\"alexarankchecker.html\">Check
+        Alexa Rank</a>\n<a href=\"domain-authority.html\">Check Domain Authority</a>\n<a
+        href=\"page-authority.html\">Check Page Authority</a>\n<a href=\"yahoodirchecker.html\">Yahoo
+        Directory check</a>\n<a href=\"alexabacklinkcheck.html\">Alexa Backlinks Check</a>\n<a
+        href=\"bingindexcheck.html\">Bing Index Check</a>\n<a href=\"moz-rank.html\">MOZ-Rank
+        Check</a>\n<a href=\"dofollow-links.html\">Dofollow Backlinks Check</a>\n<a
+        href=\"total-back-links.html\">Total Backlinks Check</a>\n<a href=\"fake-pr-check.html\">Fake
+        PR Check</a>\n<a href=\"domain-age.html\">Domain Age Check</a>\n<a href=\"site-value.html\">Estimated
+        Site Value</a>\n<a href=\"google-bot-access.html\">Google Bot Access Check</a>\n<a
+        href=\"get-technorati-rank.html\">Technorati rank Check</a>\n\n\t<!--<br />\n\t<a
+        href=\"./pr.php\">Check PageRank</a>\n\t<a href=\"#\">DMOZ directory checker</a>
+        \n\t<a href=\"#\">Yahoo directory checker</a> \n\t<a href=\"#\">Proxy servers</a>
+        \n\t<br />\n\t<a href=\"#\">Check domain age</a>\n\t<a href=\"#\">Check Alexa
+        Rank</a> \n\t<a href=\"#\">Domain IP lookup</a>\n\t<a href=\"#\">Find domain
+        owner</a>\n\t<br />\n\t<a href=\"#\">Check Domain Authority</a>\n\t<a href=\"#\">Check
+        Page Authority</a>\n\t<a href=\"#\">Check MozTrust</a>\n\t<a href=\"#\">Check
+        mozRank</a>\n\t<br />\n\t<a href=\"#\" class=\"updated\">Expired Domains</a>\n\t<a
+        href=\"#\">Backlinks checker</a>\n\t<a href=\"#\">Check Link Popularity</a>\n\t\t<br
+        /> -->\n\n</div>\n<div id=\"content\">\n<h1>Check Page Authority of Domain.</h1>\n\n<h2>What
+        is Page Authority?</h2>\n\n<p>Page Authority is a measure of a website page
+        to rank higher in search engines.The higher the Page Authority, the more likely
+        the page will rank highly in the SERPs.\n.</P></br><p>Here, You can quickly
+        check the Domain Authority of your favorite sites. Just put your domain name
+        below and click CHECK button.</p>\n\n<br>\n<div class=\"pr\">\n<form action=\"/page-authority.html\"
+        method=\"post\">\nURL: <input name=\"domain\" type=\"text\" id=\"domain\"
+        value=\"\" maxlength=\"300\" class=\"prf\" size=\"45\">\n<input type=\"submit\"
+        name=\"Submit\" value=\"CHECK\">\n</form></div>\n\n<div class=\"seomozResult\">\n\t\t\t<strong
+        class=\"dac\" id=\"resId\">97</strong>\n\t\t\t<h3 class=\"daa\">Page Authority</h3>\t\t\t\n\t\t\t<b
+        id=\"urlId\">google.com</b>\n\t\t\t</div></div>\n<div class=\"div\"></div>\n</div>\n\n\n\t\n<div
+        id=\"r\"></div>\n<div id=\"credits\">\n<p>Copyright by <a href=\"http://bagics.com\">Bagics</a></p>\n<p>&copy;2012,
+        All rights reserved.</p></div> \n\n\n\n</div><script type=\"text/javascript\">\n\n
+        \ var _gaq = _gaq || [];\n  _gaq.push(['_setAccount', 'UA-20641732-23']);\n
+        \ _gaq.push(['_setDomainName', 'bagics.com']);\n  _gaq.push(['_setAllowLinker',
+        true]);\n  _gaq.push(['_trackPageview']);\n\n  (function() {\n    var ga =
+        document.createElement('script'); ga.type = 'text/javascript'; ga.async =
+        true;\n    ga.src = ('https:' == document.location.protocol ? 'https://' :
+        'http://') + 'stats.g.doubleclick.net/dc.js';\n    var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(ga, s);\n  })();\n\n</script></body></html>"
+    http_version: !binary |-
+      MS4x
+  recorded_at: Sat, 02 Nov 2013 22:48:03 GMT
 recorded_with: VCR 2.3.0

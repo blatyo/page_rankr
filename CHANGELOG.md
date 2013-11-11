@@ -1,5 +1,8 @@
 # Change Log
 
+## Version 4.2.0
+* Added Moz Rank and Page Authority metrics.
+
 ## Version 4.1.1
 * Fix issue where Google Rank tracker did not pass options to request.
 
