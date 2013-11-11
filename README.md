@@ -2,9 +2,11 @@
 
 Provides an easy way to retrieve Google Page Rank, Alexa Rank, backlink counts, and index counts.
 
-__Note: Version ~> 2.0 and ~> 3.0 used typheous internally which caused memory leak issues and failures on windows. 4.0.0 changes the implementation to use a Net::HTTP based library for better compatability.__ 
+__Note: Version ~> 2.0 and ~> 3.0 used typheous internally which caused memory leak issues and failures on windows. 4.0.0 changes the implementation to use a Net::HTTP based library for better compatability.__
 
-__Note: Version >= 4.1.0 no longer actively maintains compatibility with Ruby 1.8.X. It will probably still work for the time being.__ 
+__Note: Version >= 4.1.0 no longer actively maintains compatibility with Ruby 1.8.X. It will probably still work for the time being.__
+
+__Note: Version >= 4.2.0 no longer actively maintains compatibility with Ruby < 1.9.3. It will probably still work, but you may need to specify older versions for gems this library depends on in your Gemfile.__
 
 Check out a little [web app][1] I wrote up that uses it or look at the [source][2].
 
@@ -142,7 +144,7 @@ Also, once a tracker has run three values will be accessible from it:
 
 ## Rate limiting and proxies
 
-One of the annoying things about each of these services is that they really don't like you scraping data from them. In order to deal with this issue, they throttle traffic from a single machine. The simplest way to get around this is to use proxy machines to make the requests. 
+One of the annoying things about each of these services is that they really don't like you scraping data from them. In order to deal with this issue, they throttle traffic from a single machine. The simplest way to get around this is to use proxy machines to make the requests.
 
 In PageRankr >= 3.2.0, this is much simpler. The first thing you'll need is a proxy service. Two are provided [here](https://github.com/blatyo/page_rankr/tree/master/lib/page_rankr/proxy_services). A proxy service must define a `proxy` method that takes two arguments. It should return a string like `user:password@192.168.1.1:50501`.
 
