@@ -14,7 +14,11 @@ module PageRankr
       end
       
       def xpath
-        "//span[@id='resultCount']/text()"
+        "//div[@id='pg']/span/text()"
+      end
+
+      def clean
+        super(backlink_count.gsub(' results', ''))
       end
 
       def name
