@@ -22,5 +22,5 @@ end
 
 RSpec.configure do |c|
   c.formatter = Fuubar
-  c.color_enabled = true
+  c.color = true
 end
