@@ -2,6 +2,8 @@
 
 Provides an easy way to retrieve Google Page Rank, Alexa Rank, backlink counts, and index counts.
 
+I'm looking for co-maintainers. If you'd like to help maintain this project, let me know.
+
 __Note: Version ~> 2.0 and ~> 3.0 used typheous internally which caused memory leak issues and failures on windows. 4.0.0 changes the implementation to use a Net::HTTP based library for better compatability.__
 
 __Note: Version >= 4.1.0 no longer actively maintains compatibility with Ruby 1.8.X. It will probably still work for the time being.__

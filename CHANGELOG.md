@@ -1,5 +1,9 @@
 # Change Log
 
+## Version 4.2.1
+* Fix Yahoo trackers xpath
+* Require newer version of public_suffix_service
+
 ## Version 4.2.0
 * Added Moz Rank and Page Authority metrics.
 
