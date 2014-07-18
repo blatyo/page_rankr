@@ -4,7 +4,7 @@ RSpec::Matchers.define :be_in do |expected|
   match do |actual|
     expected === actual
   end
-  
+
   failure_message_for_should do |actual|
     "expected that #{actual} would be in #{expected}"
   end
@@ -19,7 +19,7 @@ RSpec::Matchers.define :be_number do
     @symbol = :>=
     @expected = expected
   end
-  
+
   chain :> do |expected|
     @symbol = :>
     @expected = expected
@@ -43,7 +43,7 @@ end
 describe PageRankr do
   describe "#rank_trackers" do
     subject{ PageRankr.rank_trackers }
-    
+
     it{ should include(:alexa_us) }
     it{ should include(:alexa_global) }
     it{ should include(:google) }
@@ -57,7 +57,7 @@ describe PageRankr do
           PageRankr.ranks("http://www.google.com")
         end
       end
-  
+
       it{ should have_key(:alexa_us) }
       it{ should have_key(:alexa_global) }
       it{ should have_key(:alexa_country) }
@@ -72,14 +72,14 @@ describe PageRankr do
       it{ subject[:moz_rank].should be_in(5..9) }
       it{ subject[:page_authority].should be_in(90..99) }
     end
-    
+
     describe "failure" do
       subject do
         VCR.use_cassette(:failure_ranks, :record => :new_episodes) do
           PageRankr.ranks("http://please-dont-register-a-site-that-breaks-this-test.com")
         end
       end
-      
+
       it{ should have_key(:alexa_us) }
       it{ should have_key(:alexa_global) }
       it{ should have_key(:alexa_country) }
@@ -95,16 +95,16 @@ describe PageRankr do
       it{ subject[:page_authority].should == 1 }
     end
   end
-  
+
   describe "#backlink_trackers" do
     subject{ PageRankr.backlink_trackers }
-    
+
     it{ should include(:alexa) }
     it{ should include(:bing) }
     it{ should include(:google) }
     it{ should include(:yahoo) }
   end
-  
+
   describe "#backlinks" do
     describe "success" do
       subject do
@@ -112,7 +112,7 @@ describe PageRankr do
           PageRankr.backlinks("http://www.google.com")
         end
       end
-    
+
       PageRankr.backlink_trackers.each do |tracker|
         it{ should have_key(tracker) }
 
@@ -121,14 +121,14 @@ describe PageRankr do
         end
       end
     end
-    
+
     describe "failure" do
       subject do
         VCR.use_cassette(:failure_backlinks, :record => :new_episodes) do
           PageRankr.backlinks("http://please-dont-register-a-site-that-breaks-this-test.com")
         end
       end
-      
+
       PageRankr.backlink_trackers.each do |tracker|
         it{ should have_key(tracker) }
 
@@ -138,14 +138,14 @@ describe PageRankr do
       end
     end
   end
-  
+
   describe "#index_trackers" do
     subject{ PageRankr.index_trackers }
-    
+
     it{ should include(:google) }
     it{ should include(:bing) }
   end
-  
+
   describe "#indexes" do
     describe "success" do
       subject do
@@ -153,26 +153,26 @@ describe PageRankr do
           PageRankr.indexes("http://www.google.com")
         end
       end
-      
+
       PageRankr.index_trackers.each do |tracker|
         it{ should have_key(tracker) }
-        
+
         it "#{tracker} should have a value greater than zero" do
           subject[tracker].should be_number > 0
         end
       end
     end
-    
+
     describe "failure" do
       subject do
         VCR.use_cassette(:failure_indexes, :record => :new_episodes) do
           PageRankr.indexes("http://please-dont-register-a-site-that-breaks-this-test.com")
         end
       end
-      
+
       PageRankr.index_trackers.each do |tracker|
         it{ should have_key(tracker) }
-        
+
         it "#{tracker} should have a nil value" do
           subject[tracker].should be_nil
         end

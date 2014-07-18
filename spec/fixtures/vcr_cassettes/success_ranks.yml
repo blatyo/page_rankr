@@ -18,7 +18,7 @@ http_interactions:
       content-type:
       - text/xml
       content-length:
-      - '2426'
+      - '2456'
       connection:
       - Close
     body:
@@ -26,60 +26,61 @@ http_interactions:
       string: !binary |-
         PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4NCg0KPEFM
         RVhBIFZFUj0iMC45IiBVUkw9Imdvb2dsZS5jb20vIiBIT01FPSIwIiBBSUQ9
-        Ij0iPg0KPFJMUyBQUkVGSVg9Imh0dHA6Ly8iIG1vcmU9IjU2Ij4KPFJMIEhS
-        RUY9ImFtYXpvbi5jb20vIiBUSVRMRT0iQW1hem9uLmNvbSIvPgo8UkwgSFJF
-        Rj0id2lraXBlZGlhLm9yZy8iIFRJVExFPSJXaWtpcGVkaWEiLz4KPFJMIEhS
-        RUY9Ind3dy55YWhvby5jb20vIiBUSVRMRT0iWWFob28hIi8+CjxSTCBIUkVG
-        PSJ5b3V0dWJlLmNvbS8iIFRJVExFPSJZb3VUdWJlIi8+CjxSTCBIUkVGPSJ5
-        ZWxwLmNvbS8iIFRJVExFPSJZZWxwIi8+CjxSTCBIUkVGPSJzdGF0Y291bnRl
-        ci5jb20vIiBUSVRMRT0iU3RhdENvdW50ZXIuY29tIi8+CjxSTCBIUkVGPSJt
-        eXNwYWNlLmNvbS8iIFRJVExFPSJNeXNwYWNlIi8+CjxSTCBIUkVGPSJsaW5r
-        ZWRpbi5jb20vIiBUSVRMRT0iTGlua2VkSW4iLz4KPFJMIEhSRUY9ImltZGIu
-        Y29tLyIgVElUTEU9IlRoZSBJbnRlcm5ldCBNb3ZpZSBEYXRhYmFzZSAoaW1k
-        YikiLz4KPFJMIEhSRUY9Imdvb2dsZS5jby5pbi8iIFRJVExFPSJHb29nbGUg
-        SW5kaWEiLz4KPFJMIEhSRUY9ImFzay5jb20vIiBUSVRMRT0iYXNrLmNvbS8i
-        Lz4KPC9STFM+CjxTRCBUSVRMRT0iQSIgRkxBR1M9IkRNT1oiIEhPU1Q9Imdv
-        b2dsZS5jb20iPgo8VElUTEUgVEVYVD0iR29vZ2xlICAgICAgICAgICAgICAg
-        ICAgICAgICAgICAgICAiLz4KPEFERFIgU1RSRUVUPSIiIENJVFk9IiIgU1RB
-        VEU9IiIgWklQPSIiIENPVU5UUlk9IiIgLz4KPENSRUFURUQgREFURT0iMTUt
-        U2VwLTE5OTciIERBWT0iMTUiIE1PTlRIPSIwOSIgWUVBUj0iMTk5NyIvPgo8
-        UEhPTkUgTlVNQkVSPSJ1bmxpc3RlZCIvPgo8T1dORVIgTkFNRT0idW5saXN0
-        ZWQiLz4KPEVNQUlMIEFERFI9ImRucy1hZG1pbkBnb29nbGUuY29tIi8+CjxB
-        TEVYQVBSTyBUSUVSPSJhZHZhbmNlZCIvPgo8TEFORyBMRVg9ImVuIi8+CjxM
-        SU5LU0lOIE5VTT0iNDgxMDA5NiIvPgo8U1BFRUQgVEVYVD0iMTIxNiIgUENU
-        PSI2MSIvPgo8UkVWSUVXUyBBVkc9IjQuMCIgTlVNPSIxNDA3Ii8+CjxDSElM
-        RCBTUkFUSU5HPSIwIi8+CjxBU1NPQ1M+CjxBU1NPQyBJRD0iZ29vZ2xlY29t
-        Ii8+PC9BU1NPQ1M+CjwvU0Q+Cgo8S0VZV09SRFM+CjxLRVlXT1JEIFZBTD0i
-        TW91bnRhaW4gVmlldyIvPgo8L0tFWVdPUkRTPjxETU9aPgo8U0lURSBCQVNF
-        PSJnb29nbGUuY29tLyIgVElUTEU9Ikdvb2dsZSIgREVTQz0iRW5hYmxlcyB1
-        c2VycyB0byBzZWFyY2ggdGhlIHdvcmxkJ3MgaW5mb3JtYXRpb24sIGluY2x1
-        ZGluZyB3ZWJwYWdlcywgaW1hZ2VzLCBhbmQgdmlkZW9zLiBPZmZlcnMgdW5p
-        cXVlIGZlYXR1cmVzIGFuZCBzZWFyY2ggdGVjaG5vbG9neS4iPgo8Q0FUUz4K
-        PENBVCBJRD0iVG9wL0NvbXB1dGVycy9JbnRlcm5ldC9TZWFyY2hpbmcvU2Vh
-        cmNoX0VuZ2luZXMvR29vZ2xlIiBUSVRMRT0iU2VhcmNoIEVuZ2luZXMvR29v
-        Z2xlIiBDSUQ9IjM3NDgyMiIvPgo8Q0FUIElEPSJUb3AvUmVnaW9uYWwvTm9y
-        dGhfQW1lcmljYS9Vbml0ZWRfU3RhdGVzL0NhbGlmb3JuaWEvTG9jYWxpdGll
-        cy9NL01vdW50YWluX1ZpZXcvQnVzaW5lc3NfYW5kX0Vjb25vbXkvSW5kdXN0
-        cmlhbC9Db21wdXRlcnNfYW5kX0ludGVybmV0IiBUSVRMRT0iSW5kdXN0cmlh
-        bC9Db21wdXRlcnMgYW5kIEludGVybmV0IiBDSUQ9IjYyNTM2NyIvPgo8Q0FU
-        IElEPSJUb3AvV29ybGQvRnJhbsOnYWlzL0luZm9ybWF0aXF1ZS9JbnRlcm5l
-        dC9SZWNoZXJjaGUvTW90ZXVyc19kZV9yZWNoZXJjaGUvR29vZ2xlIiBUSVRM
-        RT0iTW90ZXVycyBkZSByZWNoZXJjaGUvR29vZ2xlIiBDSUQ9IjI0NzM0NyIv
-        Pgo8Q0FUIElEPSJUb3AvV29ybGQvQXJhYmljL9il2YLZhNmK2YXZgNmKL9in
-        2YTYtNix2YJf2KfZhNij2YjYs9i3L9in2YTYs9i52YjYr9mK2Kkv2KrYrNin
-        2LHYqV/ZiF/Yo9mC2KrYtdin2K8v2YPZhdio2YrZiNiq2LFf2Yhf2KXZhtiq
-        2LHZhtiqL9mF2K3YsdmD2KfYql/YqNit2KsiIFRJVExFPSLZg9mF2KjZitmI
-        2KrYsSDZiCDYpdmG2KrYsdmG2Kov2YXYrdix2YPYp9iqINio2K3YqyIgQ0lE
-        PSIyMDQ5NTQiLz4KPENBVCBJRD0iVG9wL1dvcmxkL0VzcGHDsW9sL0NvbXB1
-        dGFkb3Jhcy9JbnRlcm5ldC9CdXNjYW5kb19lbl9JbnRlcm5ldC9Nb3RvcmVz
-        X2RlX2LDunNxdWVkYSIgVElUTEU9IkJ1c2NhbmRvIGVuIEludGVybmV0L01v
-        dG9yZXMgZGUgYsO6c3F1ZWRhIiBDSUQ9IjI5NDk4Ii8+CjwvQ0FUUz4KPC9T
-        SVRFPgo8L0RNT1o+CjxTRD4KPFBPUFVMQVJJVFkgVVJMPSJnb29nbGUuY29t
-        LyIgVEVYVD0iMSIgU09VUkNFPSJwYW5lbCIvPgo8UkVBQ0ggUkFOSz0iMSIv
-        Pgo8UkFOSyBERUxUQT0iLTEiLz4KPENPVU5UUlkgQ09ERT0iVVMiIE5BTUU9
-        IlVuaXRlZCBTdGF0ZXMiIFJBTks9IjEiLz4KPC9TRD4KPC9BTEVYQT4=
+        Ij0iIElETj0iZ29vZ2xlLmNvbS8iPg0KPFJMUyBQUkVGSVg9Imh0dHA6Ly8i
+        IG1vcmU9IjU2Ij4KPFJMIEhSRUY9ImFtYXpvbi5jb20vIiBUSVRMRT0iQW1h
+        em9uLmNvbSIvPgo8UkwgSFJFRj0id2lraXBlZGlhLm9yZy8iIFRJVExFPSJX
+        aWtpcGVkaWEiLz4KPFJMIEhSRUY9Ind3dy55YWhvby5jb20vIiBUSVRMRT0i
+        WWFob28hIi8+CjxSTCBIUkVGPSJ5b3V0dWJlLmNvbS8iIFRJVExFPSJZb3VU
+        dWJlIi8+CjxSTCBIUkVGPSJ5ZWxwLmNvbS8iIFRJVExFPSJZZWxwIi8+CjxS
+        TCBIUkVGPSJzdGF0Y291bnRlci5jb20vIiBUSVRMRT0iU3RhdENvdW50ZXIu
+        Y29tIi8+CjxSTCBIUkVGPSJteXNwYWNlLmNvbS8iIFRJVExFPSJNeXNwYWNl
+        Ii8+CjxSTCBIUkVGPSJsaW5rZWRpbi5jb20vIiBUSVRMRT0iTGlua2VkSW4i
+        Lz4KPFJMIEhSRUY9ImltZGIuY29tLyIgVElUTEU9IlRoZSBJbnRlcm5ldCBN
+        b3ZpZSBEYXRhYmFzZSAoaW1kYikiLz4KPFJMIEhSRUY9Imdvb2dsZS5jby5p
+        bi8iIFRJVExFPSJHb29nbGUgSW5kaWEiLz4KPFJMIEhSRUY9ImFzay5jb20v
+        IiBUSVRMRT0iYXNrLmNvbS8iLz4KPC9STFM+CjxTRCBUSVRMRT0iQSIgRkxB
+        R1M9IkRNT1oiIEhPU1Q9Imdvb2dsZS5jb20iPgo8VElUTEUgVEVYVD0iR29v
+        Z2xlICAgICAgICAgICAgICAgICAgICAgICAgICAgICAiLz4KPEFERFIgU1RS
+        RUVUPSJ1bmxpc3RlZCIgQ0lUWT0idW5saXN0ZWQiIFNUQVRFPSJ1bmxpc3Rl
+        ZCIgWklQPSJ1bmxpc3RlZCIgQ09VTlRSWT0idW5saXN0ZWQiIC8+CjxDUkVB
+        VEVEIERBVEU9IjE1LVNlcC0xOTk3IiBEQVk9IjE1IiBNT05USD0iMDkiIFlF
+        QVI9IjE5OTciLz4KPFBIT05FIE5VTUJFUj0idW5saXN0ZWQiLz4KPE9XTkVS
+        IE5BTUU9InVubGlzdGVkIi8+CjxFTUFJTCBBRERSPSJkbnMtYWRtaW5AZ29v
+        Z2xlLmNvbSIvPgo8TEFORyBMRVg9ImVuIi8+CjxMSU5LU0lOIE5VTT0iMzQ0
+        NzA0MiIvPgo8U1BFRUQgVEVYVD0iMTgyMSIgUENUPSI0NCIvPgo8UkVWSUVX
+        UyBBVkc9IjQuMCIgTlVNPSIxNTg4Ii8+CjxDSElMRCBTUkFUSU5HPSIwIi8+
+        CjxBU1NPQ1M+CjxBU1NPQyBJRD0iZ29vZ2xlY29tIi8+PC9BU1NPQ1M+Cjwv
+        U0Q+Cgo8S0VZV09SRFM+CjxLRVlXT1JEIFZBTD0iTW91bnRhaW4gVmlldyIv
+        Pgo8L0tFWVdPUkRTPjxETU9aPgo8U0lURSBCQVNFPSJnb29nbGUuY29tLyIg
+        VElUTEU9Ikdvb2dsZSIgREVTQz0iRW5hYmxlcyB1c2VycyB0byBzZWFyY2gg
+        dGhlIHdvcmxkJ3MgaW5mb3JtYXRpb24sIGluY2x1ZGluZyB3ZWJwYWdlcywg
+        aW1hZ2VzLCBhbmQgdmlkZW9zLiBPZmZlcnMgdW5pcXVlIGZlYXR1cmVzIGFu
+        ZCBzZWFyY2ggdGVjaG5vbG9neS4iPgo8Q0FUUz4KPENBVCBJRD0iVG9wL0Nv
+        bXB1dGVycy9JbnRlcm5ldC9TZWFyY2hpbmcvU2VhcmNoX0VuZ2luZXMvR29v
+        Z2xlIiBUSVRMRT0iU2VhcmNoIEVuZ2luZXMvR29vZ2xlIiBDSUQ9IjM3NDgy
+        MiIvPgo8Q0FUIElEPSJUb3AvUmVnaW9uYWwvTm9ydGhfQW1lcmljYS9Vbml0
+        ZWRfU3RhdGVzL0NhbGlmb3JuaWEvTG9jYWxpdGllcy9NL01vdW50YWluX1Zp
+        ZXcvQnVzaW5lc3NfYW5kX0Vjb25vbXkvSW5kdXN0cmlhbC9Db21wdXRlcnNf
+        YW5kX0ludGVybmV0IiBUSVRMRT0iSW5kdXN0cmlhbC9Db21wdXRlcnMgYW5k
+        IEludGVybmV0IiBDSUQ9IjYyNTM2NyIvPgo8Q0FUIElEPSJUb3AvV29ybGQv
+        QXJhYmljL9il2YLZhNmK2YXZgNmKL9in2YTYtNix2YJf2KfZhNij2YjYs9i3
+        L9in2YTYs9i52YjYr9mK2Kkv2KrYrNin2LHYqV/ZiF/Yo9mC2KrYtdin2K8v
+        2YPZhdio2YrZiNiq2LFf2Yhf2KXZhtiq2LHZhtiqL9mF2K3YsdmD2KfYql/Y
+        qNit2KsiIFRJVExFPSLZg9mF2KjZitmI2KrYsSDZiCDYpdmG2KrYsdmG2Kov
+        2YXYrdix2YPYp9iqINio2K3YqyIgQ0lEPSIyMDQ5NTQiLz4KPENBVCBJRD0i
+        VG9wL1dvcmxkL0ZyYW7Dp2Fpcy9JbmZvcm1hdGlxdWUvSW50ZXJuZXQvUmVj
+        aGVyY2hlL01vdGV1cnNfZGVfcmVjaGVyY2hlL0dvb2dsZSIgVElUTEU9Ik1v
+        dGV1cnMgZGUgcmVjaGVyY2hlL0dvb2dsZSIgQ0lEPSIyNDczNDciLz4KPENB
+        VCBJRD0iVG9wL1dvcmxkL0VzcGHDsW9sL0luZm9ybcOhdGljYS9JbnRlcm5l
+        dC9CdXNjYW5kb19lbl9JbnRlcm5ldC9Nb3RvcmVzX2RlX2LDunNxdWVkYSIg
+        VElUTEU9IkJ1c2NhbmRvIGVuIEludGVybmV0L01vdG9yZXMgZGUgYsO6c3F1
+        ZWRhIiBDSUQ9IjI5NDk4Ii8+CjwvQ0FUUz4KPC9TSVRFPgo8L0RNT1o+CjxT
+        RD4KPFBPUFVMQVJJVFkgVVJMPSJnb29nbGUuY29tLyIgVEVYVD0iMSIgU09V
+        UkNFPSJwYW5lbCIvPgo8UkVBQ0ggUkFOSz0iMSIvPgo8UkFOSyBERUxUQT0i
+        KzAiLz4KPENPVU5UUlkgQ09ERT0iVVMiIE5BTUU9IlVuaXRlZCBTdGF0ZXMi
+        IFJBTks9IjEiLz4KPC9TRD4KPC9BTEVYQT4=
     http_version: '1.1'
-  recorded_at: Thu, 14 Feb 2013 01:40:12 GMT
+  recorded_at: Fri, 18 Jul 2014 02:00:28 GMT
 - request:
     method: get
     uri: http://data.alexa.com/data?cli=10&dat=snbamz&url=google.com
@@ -98,7 +99,7 @@ http_interactions:
       content-type:
       - text/xml
       content-length:
-      - '2426'
+      - '2456'
       connection:
       - Close
     body:
@@ -106,140 +107,61 @@ http_interactions:
       string: !binary |-
         PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4NCg0KPEFM
         RVhBIFZFUj0iMC45IiBVUkw9Imdvb2dsZS5jb20vIiBIT01FPSIwIiBBSUQ9
-        Ij0iPg0KPFJMUyBQUkVGSVg9Imh0dHA6Ly8iIG1vcmU9IjU2Ij4KPFJMIEhS
-        RUY9ImFtYXpvbi5jb20vIiBUSVRMRT0iQW1hem9uLmNvbSIvPgo8UkwgSFJF
-        Rj0id2lraXBlZGlhLm9yZy8iIFRJVExFPSJXaWtpcGVkaWEiLz4KPFJMIEhS
-        RUY9Ind3dy55YWhvby5jb20vIiBUSVRMRT0iWWFob28hIi8+CjxSTCBIUkVG
-        PSJ5b3V0dWJlLmNvbS8iIFRJVExFPSJZb3VUdWJlIi8+CjxSTCBIUkVGPSJ5
-        ZWxwLmNvbS8iIFRJVExFPSJZZWxwIi8+CjxSTCBIUkVGPSJzdGF0Y291bnRl
-        ci5jb20vIiBUSVRMRT0iU3RhdENvdW50ZXIuY29tIi8+CjxSTCBIUkVGPSJt
-        eXNwYWNlLmNvbS8iIFRJVExFPSJNeXNwYWNlIi8+CjxSTCBIUkVGPSJsaW5r
-        ZWRpbi5jb20vIiBUSVRMRT0iTGlua2VkSW4iLz4KPFJMIEhSRUY9ImltZGIu
-        Y29tLyIgVElUTEU9IlRoZSBJbnRlcm5ldCBNb3ZpZSBEYXRhYmFzZSAoaW1k
-        YikiLz4KPFJMIEhSRUY9Imdvb2dsZS5jby5pbi8iIFRJVExFPSJHb29nbGUg
-        SW5kaWEiLz4KPFJMIEhSRUY9ImFzay5jb20vIiBUSVRMRT0iYXNrLmNvbS8i
-        Lz4KPC9STFM+CjxTRCBUSVRMRT0iQSIgRkxBR1M9IkRNT1oiIEhPU1Q9Imdv
-        b2dsZS5jb20iPgo8VElUTEUgVEVYVD0iR29vZ2xlICAgICAgICAgICAgICAg
-        ICAgICAgICAgICAgICAiLz4KPEFERFIgU1RSRUVUPSIiIENJVFk9IiIgU1RB
-        VEU9IiIgWklQPSIiIENPVU5UUlk9IiIgLz4KPENSRUFURUQgREFURT0iMTUt
-        U2VwLTE5OTciIERBWT0iMTUiIE1PTlRIPSIwOSIgWUVBUj0iMTk5NyIvPgo8
-        UEhPTkUgTlVNQkVSPSJ1bmxpc3RlZCIvPgo8T1dORVIgTkFNRT0idW5saXN0
-        ZWQiLz4KPEVNQUlMIEFERFI9ImRucy1hZG1pbkBnb29nbGUuY29tIi8+CjxB
-        TEVYQVBSTyBUSUVSPSJhZHZhbmNlZCIvPgo8TEFORyBMRVg9ImVuIi8+CjxM
-        SU5LU0lOIE5VTT0iNDgxMDA5NiIvPgo8U1BFRUQgVEVYVD0iMTIxNiIgUENU
-        PSI2MSIvPgo8UkVWSUVXUyBBVkc9IjQuMCIgTlVNPSIxNDA3Ii8+CjxDSElM
-        RCBTUkFUSU5HPSIwIi8+CjxBU1NPQ1M+CjxBU1NPQyBJRD0iZ29vZ2xlY29t
-        Ii8+PC9BU1NPQ1M+CjwvU0Q+Cgo8S0VZV09SRFM+CjxLRVlXT1JEIFZBTD0i
-        TW91bnRhaW4gVmlldyIvPgo8L0tFWVdPUkRTPjxETU9aPgo8U0lURSBCQVNF
-        PSJnb29nbGUuY29tLyIgVElUTEU9Ikdvb2dsZSIgREVTQz0iRW5hYmxlcyB1
-        c2VycyB0byBzZWFyY2ggdGhlIHdvcmxkJ3MgaW5mb3JtYXRpb24sIGluY2x1
-        ZGluZyB3ZWJwYWdlcywgaW1hZ2VzLCBhbmQgdmlkZW9zLiBPZmZlcnMgdW5p
-        cXVlIGZlYXR1cmVzIGFuZCBzZWFyY2ggdGVjaG5vbG9neS4iPgo8Q0FUUz4K
-        PENBVCBJRD0iVG9wL0NvbXB1dGVycy9JbnRlcm5ldC9TZWFyY2hpbmcvU2Vh
-        cmNoX0VuZ2luZXMvR29vZ2xlIiBUSVRMRT0iU2VhcmNoIEVuZ2luZXMvR29v
-        Z2xlIiBDSUQ9IjM3NDgyMiIvPgo8Q0FUIElEPSJUb3AvUmVnaW9uYWwvTm9y
-        dGhfQW1lcmljYS9Vbml0ZWRfU3RhdGVzL0NhbGlmb3JuaWEvTG9jYWxpdGll
-        cy9NL01vdW50YWluX1ZpZXcvQnVzaW5lc3NfYW5kX0Vjb25vbXkvSW5kdXN0
-        cmlhbC9Db21wdXRlcnNfYW5kX0ludGVybmV0IiBUSVRMRT0iSW5kdXN0cmlh
-        bC9Db21wdXRlcnMgYW5kIEludGVybmV0IiBDSUQ9IjYyNTM2NyIvPgo8Q0FU
-        IElEPSJUb3AvV29ybGQvRnJhbsOnYWlzL0luZm9ybWF0aXF1ZS9JbnRlcm5l
-        dC9SZWNoZXJjaGUvTW90ZXVyc19kZV9yZWNoZXJjaGUvR29vZ2xlIiBUSVRM
-        RT0iTW90ZXVycyBkZSByZWNoZXJjaGUvR29vZ2xlIiBDSUQ9IjI0NzM0NyIv
-        Pgo8Q0FUIElEPSJUb3AvV29ybGQvQXJhYmljL9il2YLZhNmK2YXZgNmKL9in
-        2YTYtNix2YJf2KfZhNij2YjYs9i3L9in2YTYs9i52YjYr9mK2Kkv2KrYrNin
-        2LHYqV/ZiF/Yo9mC2KrYtdin2K8v2YPZhdio2YrZiNiq2LFf2Yhf2KXZhtiq
-        2LHZhtiqL9mF2K3YsdmD2KfYql/YqNit2KsiIFRJVExFPSLZg9mF2KjZitmI
-        2KrYsSDZiCDYpdmG2KrYsdmG2Kov2YXYrdix2YPYp9iqINio2K3YqyIgQ0lE
-        PSIyMDQ5NTQiLz4KPENBVCBJRD0iVG9wL1dvcmxkL0VzcGHDsW9sL0NvbXB1
-        dGFkb3Jhcy9JbnRlcm5ldC9CdXNjYW5kb19lbl9JbnRlcm5ldC9Nb3RvcmVz
-        X2RlX2LDunNxdWVkYSIgVElUTEU9IkJ1c2NhbmRvIGVuIEludGVybmV0L01v
-        dG9yZXMgZGUgYsO6c3F1ZWRhIiBDSUQ9IjI5NDk4Ii8+CjwvQ0FUUz4KPC9T
-        SVRFPgo8L0RNT1o+CjxTRD4KPFBPUFVMQVJJVFkgVVJMPSJnb29nbGUuY29t
-        LyIgVEVYVD0iMSIgU09VUkNFPSJwYW5lbCIvPgo8UkVBQ0ggUkFOSz0iMSIv
-        Pgo8UkFOSyBERUxUQT0iLTEiLz4KPENPVU5UUlkgQ09ERT0iVVMiIE5BTUU9
-        IlVuaXRlZCBTdGF0ZXMiIFJBTks9IjEiLz4KPC9TRD4KPC9BTEVYQT4=
+        Ij0iIElETj0iZ29vZ2xlLmNvbS8iPg0KPFJMUyBQUkVGSVg9Imh0dHA6Ly8i
+        IG1vcmU9IjU2Ij4KPFJMIEhSRUY9ImFtYXpvbi5jb20vIiBUSVRMRT0iQW1h
+        em9uLmNvbSIvPgo8UkwgSFJFRj0id2lraXBlZGlhLm9yZy8iIFRJVExFPSJX
+        aWtpcGVkaWEiLz4KPFJMIEhSRUY9Ind3dy55YWhvby5jb20vIiBUSVRMRT0i
+        WWFob28hIi8+CjxSTCBIUkVGPSJ5b3V0dWJlLmNvbS8iIFRJVExFPSJZb3VU
+        dWJlIi8+CjxSTCBIUkVGPSJ5ZWxwLmNvbS8iIFRJVExFPSJZZWxwIi8+CjxS
+        TCBIUkVGPSJzdGF0Y291bnRlci5jb20vIiBUSVRMRT0iU3RhdENvdW50ZXIu
+        Y29tIi8+CjxSTCBIUkVGPSJteXNwYWNlLmNvbS8iIFRJVExFPSJNeXNwYWNl
+        Ii8+CjxSTCBIUkVGPSJsaW5rZWRpbi5jb20vIiBUSVRMRT0iTGlua2VkSW4i
+        Lz4KPFJMIEhSRUY9ImltZGIuY29tLyIgVElUTEU9IlRoZSBJbnRlcm5ldCBN
+        b3ZpZSBEYXRhYmFzZSAoaW1kYikiLz4KPFJMIEhSRUY9Imdvb2dsZS5jby5p
+        bi8iIFRJVExFPSJHb29nbGUgSW5kaWEiLz4KPFJMIEhSRUY9ImFzay5jb20v
+        IiBUSVRMRT0iYXNrLmNvbS8iLz4KPC9STFM+CjxTRCBUSVRMRT0iQSIgRkxB
+        R1M9IkRNT1oiIEhPU1Q9Imdvb2dsZS5jb20iPgo8VElUTEUgVEVYVD0iR29v
+        Z2xlICAgICAgICAgICAgICAgICAgICAgICAgICAgICAiLz4KPEFERFIgU1RS
+        RUVUPSJ1bmxpc3RlZCIgQ0lUWT0idW5saXN0ZWQiIFNUQVRFPSJ1bmxpc3Rl
+        ZCIgWklQPSJ1bmxpc3RlZCIgQ09VTlRSWT0idW5saXN0ZWQiIC8+CjxDUkVB
+        VEVEIERBVEU9IjE1LVNlcC0xOTk3IiBEQVk9IjE1IiBNT05USD0iMDkiIFlF
+        QVI9IjE5OTciLz4KPFBIT05FIE5VTUJFUj0idW5saXN0ZWQiLz4KPE9XTkVS
+        IE5BTUU9InVubGlzdGVkIi8+CjxFTUFJTCBBRERSPSJkbnMtYWRtaW5AZ29v
+        Z2xlLmNvbSIvPgo8TEFORyBMRVg9ImVuIi8+CjxMSU5LU0lOIE5VTT0iMzQ0
+        NzA0MiIvPgo8U1BFRUQgVEVYVD0iMTgyMSIgUENUPSI0NCIvPgo8UkVWSUVX
+        UyBBVkc9IjQuMCIgTlVNPSIxNTg4Ii8+CjxDSElMRCBTUkFUSU5HPSIwIi8+
+        CjxBU1NPQ1M+CjxBU1NPQyBJRD0iZ29vZ2xlY29tIi8+PC9BU1NPQ1M+Cjwv
+        U0Q+Cgo8S0VZV09SRFM+CjxLRVlXT1JEIFZBTD0iTW91bnRhaW4gVmlldyIv
+        Pgo8L0tFWVdPUkRTPjxETU9aPgo8U0lURSBCQVNFPSJnb29nbGUuY29tLyIg
+        VElUTEU9Ikdvb2dsZSIgREVTQz0iRW5hYmxlcyB1c2VycyB0byBzZWFyY2gg
+        dGhlIHdvcmxkJ3MgaW5mb3JtYXRpb24sIGluY2x1ZGluZyB3ZWJwYWdlcywg
+        aW1hZ2VzLCBhbmQgdmlkZW9zLiBPZmZlcnMgdW5pcXVlIGZlYXR1cmVzIGFu
+        ZCBzZWFyY2ggdGVjaG5vbG9neS4iPgo8Q0FUUz4KPENBVCBJRD0iVG9wL0Nv
+        bXB1dGVycy9JbnRlcm5ldC9TZWFyY2hpbmcvU2VhcmNoX0VuZ2luZXMvR29v
+        Z2xlIiBUSVRMRT0iU2VhcmNoIEVuZ2luZXMvR29vZ2xlIiBDSUQ9IjM3NDgy
+        MiIvPgo8Q0FUIElEPSJUb3AvUmVnaW9uYWwvTm9ydGhfQW1lcmljYS9Vbml0
+        ZWRfU3RhdGVzL0NhbGlmb3JuaWEvTG9jYWxpdGllcy9NL01vdW50YWluX1Zp
+        ZXcvQnVzaW5lc3NfYW5kX0Vjb25vbXkvSW5kdXN0cmlhbC9Db21wdXRlcnNf
+        YW5kX0ludGVybmV0IiBUSVRMRT0iSW5kdXN0cmlhbC9Db21wdXRlcnMgYW5k
+        IEludGVybmV0IiBDSUQ9IjYyNTM2NyIvPgo8Q0FUIElEPSJUb3AvV29ybGQv
+        QXJhYmljL9il2YLZhNmK2YXZgNmKL9in2YTYtNix2YJf2KfZhNij2YjYs9i3
+        L9in2YTYs9i52YjYr9mK2Kkv2KrYrNin2LHYqV/ZiF/Yo9mC2KrYtdin2K8v
+        2YPZhdio2YrZiNiq2LFf2Yhf2KXZhtiq2LHZhtiqL9mF2K3YsdmD2KfYql/Y
+        qNit2KsiIFRJVExFPSLZg9mF2KjZitmI2KrYsSDZiCDYpdmG2KrYsdmG2Kov
+        2YXYrdix2YPYp9iqINio2K3YqyIgQ0lEPSIyMDQ5NTQiLz4KPENBVCBJRD0i
+        VG9wL1dvcmxkL0ZyYW7Dp2Fpcy9JbmZvcm1hdGlxdWUvSW50ZXJuZXQvUmVj
+        aGVyY2hlL01vdGV1cnNfZGVfcmVjaGVyY2hlL0dvb2dsZSIgVElUTEU9Ik1v
+        dGV1cnMgZGUgcmVjaGVyY2hlL0dvb2dsZSIgQ0lEPSIyNDczNDciLz4KPENB
+        VCBJRD0iVG9wL1dvcmxkL0VzcGHDsW9sL0luZm9ybcOhdGljYS9JbnRlcm5l
+        dC9CdXNjYW5kb19lbl9JbnRlcm5ldC9Nb3RvcmVzX2RlX2LDunNxdWVkYSIg
+        VElUTEU9IkJ1c2NhbmRvIGVuIEludGVybmV0L01vdG9yZXMgZGUgYsO6c3F1
+        ZWRhIiBDSUQ9IjI5NDk4Ii8+CjwvQ0FUUz4KPC9TSVRFPgo8L0RNT1o+CjxT
+        RD4KPFBPUFVMQVJJVFkgVVJMPSJnb29nbGUuY29tLyIgVEVYVD0iMSIgU09V
+        UkNFPSJwYW5lbCIvPgo8UkVBQ0ggUkFOSz0iMSIvPgo8UkFOSyBERUxUQT0i
+        KzAiLz4KPENPVU5UUlkgQ09ERT0iVVMiIE5BTUU9IlVuaXRlZCBTdGF0ZXMi
+        IFJBTks9IjEiLz4KPC9TRD4KPC9BTEVYQT4=
     http_version: '1.1'
-  recorded_at: Thu, 14 Feb 2013 01:40:12 GMT
-- request:
-    method: get
-    uri: http://data.alexa.com/data?cli=10&dat=snbamz&url=google.com
-    body:
-      encoding: US-ASCII
-      string: ''
-    headers:
-      user-agent:
-      - Mozilla/5.0 (Macintosh; Intel Mac OS X 10_7_4) AppleWebKit/534.56.5 (KHTML,
-        like Gecko) Version/5.1.6 Safari/534.56.5
-  response:
-    status:
-      code: 200
-      message: OK
-    headers:
-      content-type:
-      - text/xml
-      content-length:
-      - '2426'
-      connection:
-      - Close
-    body:
-      encoding: ASCII-8BIT
-      string: !binary |-
-        PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4NCg0KPEFM
-        RVhBIFZFUj0iMC45IiBVUkw9Imdvb2dsZS5jb20vIiBIT01FPSIwIiBBSUQ9
-        Ij0iPg0KPFJMUyBQUkVGSVg9Imh0dHA6Ly8iIG1vcmU9IjU2Ij4KPFJMIEhS
-        RUY9ImFtYXpvbi5jb20vIiBUSVRMRT0iQW1hem9uLmNvbSIvPgo8UkwgSFJF
-        Rj0id2lraXBlZGlhLm9yZy8iIFRJVExFPSJXaWtpcGVkaWEiLz4KPFJMIEhS
-        RUY9Ind3dy55YWhvby5jb20vIiBUSVRMRT0iWWFob28hIi8+CjxSTCBIUkVG
-        PSJ5b3V0dWJlLmNvbS8iIFRJVExFPSJZb3VUdWJlIi8+CjxSTCBIUkVGPSJ5
-        ZWxwLmNvbS8iIFRJVExFPSJZZWxwIi8+CjxSTCBIUkVGPSJzdGF0Y291bnRl
-        ci5jb20vIiBUSVRMRT0iU3RhdENvdW50ZXIuY29tIi8+CjxSTCBIUkVGPSJt
-        eXNwYWNlLmNvbS8iIFRJVExFPSJNeXNwYWNlIi8+CjxSTCBIUkVGPSJsaW5r
-        ZWRpbi5jb20vIiBUSVRMRT0iTGlua2VkSW4iLz4KPFJMIEhSRUY9ImltZGIu
-        Y29tLyIgVElUTEU9IlRoZSBJbnRlcm5ldCBNb3ZpZSBEYXRhYmFzZSAoaW1k
-        YikiLz4KPFJMIEhSRUY9Imdvb2dsZS5jby5pbi8iIFRJVExFPSJHb29nbGUg
-        SW5kaWEiLz4KPFJMIEhSRUY9ImFzay5jb20vIiBUSVRMRT0iYXNrLmNvbS8i
-        Lz4KPC9STFM+CjxTRCBUSVRMRT0iQSIgRkxBR1M9IkRNT1oiIEhPU1Q9Imdv
-        b2dsZS5jb20iPgo8VElUTEUgVEVYVD0iR29vZ2xlICAgICAgICAgICAgICAg
-        ICAgICAgICAgICAgICAiLz4KPEFERFIgU1RSRUVUPSIiIENJVFk9IiIgU1RB
-        VEU9IiIgWklQPSIiIENPVU5UUlk9IiIgLz4KPENSRUFURUQgREFURT0iMTUt
-        U2VwLTE5OTciIERBWT0iMTUiIE1PTlRIPSIwOSIgWUVBUj0iMTk5NyIvPgo8
-        UEhPTkUgTlVNQkVSPSJ1bmxpc3RlZCIvPgo8T1dORVIgTkFNRT0idW5saXN0
-        ZWQiLz4KPEVNQUlMIEFERFI9ImRucy1hZG1pbkBnb29nbGUuY29tIi8+CjxB
-        TEVYQVBSTyBUSUVSPSJhZHZhbmNlZCIvPgo8TEFORyBMRVg9ImVuIi8+CjxM
-        SU5LU0lOIE5VTT0iNDgxMDA5NiIvPgo8U1BFRUQgVEVYVD0iMTIxNiIgUENU
-        PSI2MSIvPgo8UkVWSUVXUyBBVkc9IjQuMCIgTlVNPSIxNDA3Ii8+CjxDSElM
-        RCBTUkFUSU5HPSIwIi8+CjxBU1NPQ1M+CjxBU1NPQyBJRD0iZ29vZ2xlY29t
-        Ii8+PC9BU1NPQ1M+CjwvU0Q+Cgo8S0VZV09SRFM+CjxLRVlXT1JEIFZBTD0i
-        TW91bnRhaW4gVmlldyIvPgo8L0tFWVdPUkRTPjxETU9aPgo8U0lURSBCQVNF
-        PSJnb29nbGUuY29tLyIgVElUTEU9Ikdvb2dsZSIgREVTQz0iRW5hYmxlcyB1
-        c2VycyB0byBzZWFyY2ggdGhlIHdvcmxkJ3MgaW5mb3JtYXRpb24sIGluY2x1
-        ZGluZyB3ZWJwYWdlcywgaW1hZ2VzLCBhbmQgdmlkZW9zLiBPZmZlcnMgdW5p
-        cXVlIGZlYXR1cmVzIGFuZCBzZWFyY2ggdGVjaG5vbG9neS4iPgo8Q0FUUz4K
-        PENBVCBJRD0iVG9wL0NvbXB1dGVycy9JbnRlcm5ldC9TZWFyY2hpbmcvU2Vh
-        cmNoX0VuZ2luZXMvR29vZ2xlIiBUSVRMRT0iU2VhcmNoIEVuZ2luZXMvR29v
-        Z2xlIiBDSUQ9IjM3NDgyMiIvPgo8Q0FUIElEPSJUb3AvUmVnaW9uYWwvTm9y
-        dGhfQW1lcmljYS9Vbml0ZWRfU3RhdGVzL0NhbGlmb3JuaWEvTG9jYWxpdGll
-        cy9NL01vdW50YWluX1ZpZXcvQnVzaW5lc3NfYW5kX0Vjb25vbXkvSW5kdXN0
-        cmlhbC9Db21wdXRlcnNfYW5kX0ludGVybmV0IiBUSVRMRT0iSW5kdXN0cmlh
-        bC9Db21wdXRlcnMgYW5kIEludGVybmV0IiBDSUQ9IjYyNTM2NyIvPgo8Q0FU
-        IElEPSJUb3AvV29ybGQvRnJhbsOnYWlzL0luZm9ybWF0aXF1ZS9JbnRlcm5l
-        dC9SZWNoZXJjaGUvTW90ZXVyc19kZV9yZWNoZXJjaGUvR29vZ2xlIiBUSVRM
-        RT0iTW90ZXVycyBkZSByZWNoZXJjaGUvR29vZ2xlIiBDSUQ9IjI0NzM0NyIv
-        Pgo8Q0FUIElEPSJUb3AvV29ybGQvQXJhYmljL9il2YLZhNmK2YXZgNmKL9in
-        2YTYtNix2YJf2KfZhNij2YjYs9i3L9in2YTYs9i52YjYr9mK2Kkv2KrYrNin
-        2LHYqV/ZiF/Yo9mC2KrYtdin2K8v2YPZhdio2YrZiNiq2LFf2Yhf2KXZhtiq
-        2LHZhtiqL9mF2K3YsdmD2KfYql/YqNit2KsiIFRJVExFPSLZg9mF2KjZitmI
-        2KrYsSDZiCDYpdmG2KrYsdmG2Kov2YXYrdix2YPYp9iqINio2K3YqyIgQ0lE
-        PSIyMDQ5NTQiLz4KPENBVCBJRD0iVG9wL1dvcmxkL0VzcGHDsW9sL0NvbXB1
-        dGFkb3Jhcy9JbnRlcm5ldC9CdXNjYW5kb19lbl9JbnRlcm5ldC9Nb3RvcmVz
-        X2RlX2LDunNxdWVkYSIgVElUTEU9IkJ1c2NhbmRvIGVuIEludGVybmV0L01v
-        dG9yZXMgZGUgYsO6c3F1ZWRhIiBDSUQ9IjI5NDk4Ii8+CjwvQ0FUUz4KPC9T
-        SVRFPgo8L0RNT1o+CjxTRD4KPFBPUFVMQVJJVFkgVVJMPSJnb29nbGUuY29t
-        LyIgVEVYVD0iMSIgU09VUkNFPSJwYW5lbCIvPgo8UkVBQ0ggUkFOSz0iMSIv
-        Pgo8UkFOSyBERUxUQT0iLTEiLz4KPENPVU5UUlkgQ09ERT0iVVMiIE5BTUU9
-        IlVuaXRlZCBTdGF0ZXMiIFJBTks9IjEiLz4KPC9TRD4KPC9BTEVYQT4=
-    http_version: '1.1'
-  recorded_at: Thu, 14 Feb 2013 01:40:12 GMT
+  recorded_at: Fri, 18 Jul 2014 02:00:28 GMT
 - request:
     method: get
     uri: http://toolbarqueries.google.com/tbr?client=navclient-auto&ch=6340563836&features=Rank&q=info%3Awww.google.com
@@ -256,7 +178,7 @@ http_interactions:
       message: OK
     headers:
       date:
-      - Thu, 14 Feb 2013 01:40:10 GMT
+      - Fri, 18 Jul 2014 02:00:28 GMT
       pragma:
       - no-cache
       expires:
@@ -266,10 +188,10 @@ http_interactions:
       content-type:
       - text/html; charset=ISO-8859-1
       set-cookie:
-      - PREF=ID=69ede3714740403e:FF=0:TM=1360806010:LM=1360806010:S=tknODLpeVlvpyj5q;
-        expires=Sat, 14-Feb-2015 01:40:10 GMT; path=/; domain=.google.com
-      - NID=67=jgM5jwm-8LiblvT7sKrsmK22pyY6Vg8N5wkzuujasIcZVa-y-XV_n-GBZmSGTN-g39EBhkXZQOba6NPsZ2NN4G6qlp9DcybVyqoC0iHQr8-1cDoAL04DL0rmZ9ZYKRUh;
-        expires=Fri, 16-Aug-2013 01:40:10 GMT; path=/; domain=.google.com; HttpOnly
+      - PREF=ID=409cbb982f25b5be:FF=0:TM=1405648828:LM=1405648828:S=XV8SuGjC1YPcib8r;
+        expires=Sun, 17-Jul-2016 02:00:28 GMT; path=/; domain=.google.com
+      - NID=67=Vmy1_Ou5hW-3MC8T_IoV-HK6SG-UfbGGhL1EgZnXMOSJkLHM98MYG0SFjB23vqpdmtS9EY7NxxYaKpTMvLVxD8XxEdY2Y7XyxRE71Jsy7flpvlGAF2DFw8499i6Wl2et;
+        expires=Sat, 17-Jan-2015 02:00:28 GMT; path=/; domain=.google.com; HttpOnly
       p3p:
       - CP="This is not a P3P policy! See http://www.google.com/support/accounts/bin/answer.py?hl=en&answer=151657
         for more info."
@@ -279,17 +201,19 @@ http_interactions:
       - 1; mode=block
       x-frame-options:
       - SAMEORIGIN
+      alternate-protocol:
+      - 80:quic
       connection:
       - close
     body:
-      encoding: US-ASCII
+      encoding: UTF-8
       string: |
         Rank_1:1:9
     http_version: '1.1'
-  recorded_at: Thu, 14 Feb 2013 01:40:13 GMT
+  recorded_at: Fri, 18 Jul 2014 02:00:28 GMT
 - request:
     method: get
-    uri: http://bagics.com/moz-rank.html?domain=google.com
+    uri: http://data.alexa.com/data?cli=10&dat=snbamz&url=google.com
     body:
       encoding: US-ASCII
       string: ''
@@ -302,169 +226,72 @@ http_interactions:
       code: 200
       message: OK
     headers:
-      date:
-      - Sat, 02 Nov 2013 22:39:38 GMT
-      server:
-      - Apache
-      vary:
-      - Accept-Encoding
-      cache-control:
-      - !binary |-
-        4oCccHVibGlj4oCd
-      connection:
-      - close
-      transfer-encoding:
-      - chunked
       content-type:
-      - text/html
-    body:
-      encoding: US-ASCII
-      string: "<!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.0 Strict//EN\"\n    \"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd\">\n<html
-        xmlns=\"http://www.w3.org/1999/xhtml\" xml:lang=\"en\" lang=\"en\">\n<head>\n<title>Check
-        MOZ Rank of Domain for FREE | Bagics.com | All In One SEO Companion</title>\n<meta
-        name=\"description\" content=\"Moz Rank Checker - WhoIs LookUp  Check domain
-        availability  Check Page Rank  Check PageRank  DMOZ directory checker  Yahoo
-        directory checker  Proxy servers  Check domain age  Check Alexa Rank  Domain
-        IP lookup  Find domain owner Check Domain Authority  Check Page Authority
-        \ Check MozTrust  Check mozRank  Expired Domains  Backlinks checker  Check
-        Link Popularity  \"/>\n\n<meta name=\"keywords\" content=\"WhoIs LookUp,Check
-        domain availability,Check Page Rank,Check PageRank,DMOZ directory checker,Yahoo
-        directory checker,Proxy servers,Check domain age,Check Alexa Rank ,Check Domain
-        IP,lookup,Find domain owner ,Check domain Authority,Check Page Authority,Check
-        MozTrust,Check mozRank,Expired Domains,Backlinks checker,Check Link Popularity
-        \">\n<meta http-equiv=\"Content-Type\" content=\"text/html; charset=utf-8\"
-        />\n<link href=\"css/style.css\" rel=\"stylesheet\" type=\"text/css\" />\n</head>\n<div
-        id=\"container\">\n<div id=\"main\">\n<div id=\"topbanner\"></div>\n<div id=\"menu\"><center>\n\t\n<a
-        href=\"index.html\" title=\"bagics home page\">Home</a>\n<a href=\"whois.html\">WhoIs
-        LookUp</a>\n<a href=\"domainchecker.html\">Check domain availability</a>\n<a
-        href=\"pr.html\">Check Page Rank</a>\n<a href=\"alexarankchecker.html\">Check
-        Alexa Rank</a>\n<a href=\"domain-authority.html\">Check Domain Authority</a>\n<a
-        href=\"page-authority.html\">Check Page Authority</a>\n<a href=\"yahoodirchecker.html\">Yahoo
-        Directory check</a>\n<a href=\"alexabacklinkcheck.html\">Alexa Backlinks Check</a>\n<a
-        href=\"bingindexcheck.html\">Bing Index Check</a>\n<a href=\"moz-rank.html\">MOZ-Rank
-        Check</a>\n<a href=\"dofollow-links.html\">Dofollow Backlinks Check</a>\n<a
-        href=\"total-back-links.html\">Total Backlinks Check</a>\n<a href=\"fake-pr-check.html\">Fake
-        PR Check</a>\n<a href=\"domain-age.html\">Domain Age Check</a>\n<a href=\"site-value.html\">Estimated
-        Site Value</a>\n<a href=\"google-bot-access.html\">Google Bot Access Check</a>\n<a
-        href=\"get-technorati-rank.html\">Technorati rank Check</a>\n\n\t<!--<br />\n\t<a
-        href=\"./pr.php\">Check PageRank</a>\n\t<a href=\"#\">DMOZ directory checker</a>
-        \n\t<a href=\"#\">Yahoo directory checker</a> \n\t<a href=\"#\">Proxy servers</a>
-        \n\t<br />\n\t<a href=\"#\">Check domain age</a>\n\t<a href=\"#\">Check Alexa
-        Rank</a> \n\t<a href=\"#\">Domain IP lookup</a>\n\t<a href=\"#\">Find domain
-        owner</a>\n\t<br />\n\t<a href=\"#\">Check Domain Authority</a>\n\t<a href=\"#\">Check
-        Page Authority</a>\n\t<a href=\"#\">Check MozTrust</a>\n\t<a href=\"#\">Check
-        mozRank</a>\n\t<br />\n\t<a href=\"#\" class=\"updated\">Expired Domains</a>\n\t<a
-        href=\"#\">Backlinks checker</a>\n\t<a href=\"#\">Check Link Popularity</a>\n\t\t<br
-        /> -->\n\n</div>\n<div id=\"content\">\n<h1>Check MOZ RANK of Domain.</h1>\n<p>Here,
-        You can quickly check the MOZ RANKof your favorite sites. Just put your domain
-        name below and click CHECK button.</p>\n\n<div class=\"pr\">\n<form action=\"/moz-rank.html\"
-        method=\"post\">\nURL: <input name=\"domain\" type=\"text\" id=\"domain\"
-        value=\"\" maxlength=\"300\" class=\"prf\" size=\"45\">\n<input type=\"submit\"
-        name=\"Submit\" value=\"CHECK\"  >\n</form></div>\n\n<div class=\"seomozResult\">\n\t\t\t<strong
-        class=\"dac\" id=\"resId\">8</strong>\n\t\t\t<h3 class=\"daa\">Moz Rank</h3>\t\t\t\n\t\t\t<b
-        id=\"urlId\">google.com</b>\n\t\t\t</div></div>\n<div class=\"div\"></div>\n</div>\n\n\n\t\n<div
-        id=\"r\"></div>\n<div id=\"credits\">\n<p>Copyright by <a href=\"http://bagics.com\">Bagics</a></p>\n<p>&copy;2012,
-        All rights reserved.</p></div> \n\n\n\n</div><script type=\"text/javascript\">\n\n
-        \ var _gaq = _gaq || [];\n  _gaq.push(['_setAccount', 'UA-20641732-23']);\n
-        \ _gaq.push(['_setDomainName', 'bagics.com']);\n  _gaq.push(['_setAllowLinker',
-        true]);\n  _gaq.push(['_trackPageview']);\n\n  (function() {\n    var ga =
-        document.createElement('script'); ga.type = 'text/javascript'; ga.async =
-        true;\n    ga.src = ('https:' == document.location.protocol ? 'https://' :
-        'http://') + 'stats.g.doubleclick.net/dc.js';\n    var s = document.getElementsByTagName('script')[0];
-        s.parentNode.insertBefore(ga, s);\n  })();\n\n</script></body></html> name="
-    http_version: '1.1'
-  recorded_at: Sat, 02 Nov 2013 22:39:56 GMT
-- request:
-    method: get
-    uri: http://bagics.com/page-authority.html?domain=google.com
-    body:
-      encoding: US-ASCII
-      string: ''
-    headers:
-      user-agent:
-      - Mozilla/5.0 (Macintosh; Intel Mac OS X 10_7_4) AppleWebKit/534.56.5 (KHTML,
-        like Gecko) Version/5.1.6 Safari/534.56.5
-  response:
-    status:
-      code: 200
-      message: OK
-    headers:
-      date:
-      - Sat, 02 Nov 2013 22:48:03 GMT
-      server:
-      - Apache
-      vary:
-      - Accept-Encoding
-      cache-control:
-      - !binary |-
-        4oCccHVibGlj4oCd
+      - text/xml
+      content-length:
+      - '2456'
       connection:
-      - close
-      transfer-encoding:
-      - chunked
-      content-type:
-      - text/html
+      - Close
     body:
-      encoding: US-ASCII
-      string: "<!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.0 Strict//EN\"\n    \"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd\">\n<html
-        xmlns=\"http://www.w3.org/1999/xhtml\" xml:lang=\"en\" lang=\"en\">\n<head>\n<title>Check
-        Page Authority of Domain for FREE | Bagics.com | All In One SEO Companion</title>\n<meta
-        name=\"description\" content=\"Page Authority Checker -WhoIs LookUp  Check
-        domain availability  Check Page Rank  Check PageRank  DMOZ directory checker
-        \ Yahoo directory checker  Proxy servers  Check domain age  Check Alexa Rank
-        \ Domain IP lookup  Find domain owner Check Domain Authority  Check Page Authority
-        \ Check MozTrust  Check mozRank  Expired Domains  Backlinks checker  Check
-        Link Popularity  \"/>\n\n<meta name=\"keywords\" content=\"WhoIs LookUp,Check
-        domain availability,Check Page Rank,Check PageRank,DMOZ directory checker,Yahoo
-        directory checker,Proxy servers,Check domain age,Check Alexa Rank ,Check Domain
-        IP,lookup,Find domain owner ,Check domain Authority,Check Page Authority,Check
-        MozTrust,Check mozRank,Expired Domains,Backlinks checker,Check Link Popularity
-        \">\n<meta http-equiv=\"Content-Type\" content=\"text/html; charset=utf-8\"
-        />\n<link href=\"css/style.css\" rel=\"stylesheet\" type=\"text/css\" />\n</head>\n<body
-        onmouseover=\"window.status='';return true;\">\n\n<div id=\"container\">\n<div
-        id=\"main\">\n<div id=\"topbanner\"></div>\n<div id=\"menu\"><center>\n\t\n<a
-        href=\"index.html\" title=\"bagics home page\">Home</a>\n<a href=\"whois.html\">WhoIs
-        LookUp</a>\n<a href=\"domainchecker.html\">Check domain availability</a>\n<a
-        href=\"pr.html\">Check Page Rank</a>\n<a href=\"alexarankchecker.html\">Check
-        Alexa Rank</a>\n<a href=\"domain-authority.html\">Check Domain Authority</a>\n<a
-        href=\"page-authority.html\">Check Page Authority</a>\n<a href=\"yahoodirchecker.html\">Yahoo
-        Directory check</a>\n<a href=\"alexabacklinkcheck.html\">Alexa Backlinks Check</a>\n<a
-        href=\"bingindexcheck.html\">Bing Index Check</a>\n<a href=\"moz-rank.html\">MOZ-Rank
-        Check</a>\n<a href=\"dofollow-links.html\">Dofollow Backlinks Check</a>\n<a
-        href=\"total-back-links.html\">Total Backlinks Check</a>\n<a href=\"fake-pr-check.html\">Fake
-        PR Check</a>\n<a href=\"domain-age.html\">Domain Age Check</a>\n<a href=\"site-value.html\">Estimated
-        Site Value</a>\n<a href=\"google-bot-access.html\">Google Bot Access Check</a>\n<a
-        href=\"get-technorati-rank.html\">Technorati rank Check</a>\n\n\t<!--<br />\n\t<a
-        href=\"./pr.php\">Check PageRank</a>\n\t<a href=\"#\">DMOZ directory checker</a>
-        \n\t<a href=\"#\">Yahoo directory checker</a> \n\t<a href=\"#\">Proxy servers</a>
-        \n\t<br />\n\t<a href=\"#\">Check domain age</a>\n\t<a href=\"#\">Check Alexa
-        Rank</a> \n\t<a href=\"#\">Domain IP lookup</a>\n\t<a href=\"#\">Find domain
-        owner</a>\n\t<br />\n\t<a href=\"#\">Check Domain Authority</a>\n\t<a href=\"#\">Check
-        Page Authority</a>\n\t<a href=\"#\">Check MozTrust</a>\n\t<a href=\"#\">Check
-        mozRank</a>\n\t<br />\n\t<a href=\"#\" class=\"updated\">Expired Domains</a>\n\t<a
-        href=\"#\">Backlinks checker</a>\n\t<a href=\"#\">Check Link Popularity</a>\n\t\t<br
-        /> -->\n\n</div>\n<div id=\"content\">\n<h1>Check Page Authority of Domain.</h1>\n\n<h2>What
-        is Page Authority?</h2>\n\n<p>Page Authority is a measure of a website page
-        to rank higher in search engines.The higher the Page Authority, the more likely
-        the page will rank highly in the SERPs.\n.</P></br><p>Here, You can quickly
-        check the Domain Authority of your favorite sites. Just put your domain name
-        below and click CHECK button.</p>\n\n<br>\n<div class=\"pr\">\n<form action=\"/page-authority.html\"
-        method=\"post\">\nURL: <input name=\"domain\" type=\"text\" id=\"domain\"
-        value=\"\" maxlength=\"300\" class=\"prf\" size=\"45\">\n<input type=\"submit\"
-        name=\"Submit\" value=\"CHECK\">\n</form></div>\n\n<div class=\"seomozResult\">\n\t\t\t<strong
-        class=\"dac\" id=\"resId\">97</strong>\n\t\t\t<h3 class=\"daa\">Page Authority</h3>\t\t\t\n\t\t\t<b
-        id=\"urlId\">google.com</b>\n\t\t\t</div></div>\n<div class=\"div\"></div>\n</div>\n\n\n\t\n<div
-        id=\"r\"></div>\n<div id=\"credits\">\n<p>Copyright by <a href=\"http://bagics.com\">Bagics</a></p>\n<p>&copy;2012,
-        All rights reserved.</p></div> \n\n\n\n</div><script type=\"text/javascript\">\n\n
-        \ var _gaq = _gaq || [];\n  _gaq.push(['_setAccount', 'UA-20641732-23']);\n
-        \ _gaq.push(['_setDomainName', 'bagics.com']);\n  _gaq.push(['_setAllowLinker',
-        true]);\n  _gaq.push(['_trackPageview']);\n\n  (function() {\n    var ga =
-        document.createElement('script'); ga.type = 'text/javascript'; ga.async =
-        true;\n    ga.src = ('https:' == document.location.protocol ? 'https://' :
-        'http://') + 'stats.g.doubleclick.net/dc.js';\n    var s = document.getElementsByTagName('script')[0];
-        s.parentNode.insertBefore(ga, s);\n  })();\n\n</script></body></html>"
+      encoding: ASCII-8BIT
+      string: !binary |-
+        PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4NCg0KPEFM
+        RVhBIFZFUj0iMC45IiBVUkw9Imdvb2dsZS5jb20vIiBIT01FPSIwIiBBSUQ9
+        Ij0iIElETj0iZ29vZ2xlLmNvbS8iPg0KPFJMUyBQUkVGSVg9Imh0dHA6Ly8i
+        IG1vcmU9IjU2Ij4KPFJMIEhSRUY9ImFtYXpvbi5jb20vIiBUSVRMRT0iQW1h
+        em9uLmNvbSIvPgo8UkwgSFJFRj0id2lraXBlZGlhLm9yZy8iIFRJVExFPSJX
+        aWtpcGVkaWEiLz4KPFJMIEhSRUY9Ind3dy55YWhvby5jb20vIiBUSVRMRT0i
+        WWFob28hIi8+CjxSTCBIUkVGPSJ5b3V0dWJlLmNvbS8iIFRJVExFPSJZb3VU
+        dWJlIi8+CjxSTCBIUkVGPSJ5ZWxwLmNvbS8iIFRJVExFPSJZZWxwIi8+CjxS
+        TCBIUkVGPSJzdGF0Y291bnRlci5jb20vIiBUSVRMRT0iU3RhdENvdW50ZXIu
+        Y29tIi8+CjxSTCBIUkVGPSJteXNwYWNlLmNvbS8iIFRJVExFPSJNeXNwYWNl
+        Ii8+CjxSTCBIUkVGPSJsaW5rZWRpbi5jb20vIiBUSVRMRT0iTGlua2VkSW4i
+        Lz4KPFJMIEhSRUY9ImltZGIuY29tLyIgVElUTEU9IlRoZSBJbnRlcm5ldCBN
+        b3ZpZSBEYXRhYmFzZSAoaW1kYikiLz4KPFJMIEhSRUY9Imdvb2dsZS5jby5p
+        bi8iIFRJVExFPSJHb29nbGUgSW5kaWEiLz4KPFJMIEhSRUY9ImFzay5jb20v
+        IiBUSVRMRT0iYXNrLmNvbS8iLz4KPC9STFM+CjxTRCBUSVRMRT0iQSIgRkxB
+        R1M9IkRNT1oiIEhPU1Q9Imdvb2dsZS5jb20iPgo8VElUTEUgVEVYVD0iR29v
+        Z2xlICAgICAgICAgICAgICAgICAgICAgICAgICAgICAiLz4KPEFERFIgU1RS
+        RUVUPSJ1bmxpc3RlZCIgQ0lUWT0idW5saXN0ZWQiIFNUQVRFPSJ1bmxpc3Rl
+        ZCIgWklQPSJ1bmxpc3RlZCIgQ09VTlRSWT0idW5saXN0ZWQiIC8+CjxDUkVB
+        VEVEIERBVEU9IjE1LVNlcC0xOTk3IiBEQVk9IjE1IiBNT05USD0iMDkiIFlF
+        QVI9IjE5OTciLz4KPFBIT05FIE5VTUJFUj0idW5saXN0ZWQiLz4KPE9XTkVS
+        IE5BTUU9InVubGlzdGVkIi8+CjxFTUFJTCBBRERSPSJkbnMtYWRtaW5AZ29v
+        Z2xlLmNvbSIvPgo8TEFORyBMRVg9ImVuIi8+CjxMSU5LU0lOIE5VTT0iMzQ0
+        NzA0MiIvPgo8U1BFRUQgVEVYVD0iMTgyMSIgUENUPSI0NCIvPgo8UkVWSUVX
+        UyBBVkc9IjQuMCIgTlVNPSIxNTg4Ii8+CjxDSElMRCBTUkFUSU5HPSIwIi8+
+        CjxBU1NPQ1M+CjxBU1NPQyBJRD0iZ29vZ2xlY29tIi8+PC9BU1NPQ1M+Cjwv
+        U0Q+Cgo8S0VZV09SRFM+CjxLRVlXT1JEIFZBTD0iTW91bnRhaW4gVmlldyIv
+        Pgo8L0tFWVdPUkRTPjxETU9aPgo8U0lURSBCQVNFPSJnb29nbGUuY29tLyIg
+        VElUTEU9Ikdvb2dsZSIgREVTQz0iRW5hYmxlcyB1c2VycyB0byBzZWFyY2gg
+        dGhlIHdvcmxkJ3MgaW5mb3JtYXRpb24sIGluY2x1ZGluZyB3ZWJwYWdlcywg
+        aW1hZ2VzLCBhbmQgdmlkZW9zLiBPZmZlcnMgdW5pcXVlIGZlYXR1cmVzIGFu
+        ZCBzZWFyY2ggdGVjaG5vbG9neS4iPgo8Q0FUUz4KPENBVCBJRD0iVG9wL0Nv
+        bXB1dGVycy9JbnRlcm5ldC9TZWFyY2hpbmcvU2VhcmNoX0VuZ2luZXMvR29v
+        Z2xlIiBUSVRMRT0iU2VhcmNoIEVuZ2luZXMvR29vZ2xlIiBDSUQ9IjM3NDgy
+        MiIvPgo8Q0FUIElEPSJUb3AvUmVnaW9uYWwvTm9ydGhfQW1lcmljYS9Vbml0
+        ZWRfU3RhdGVzL0NhbGlmb3JuaWEvTG9jYWxpdGllcy9NL01vdW50YWluX1Zp
+        ZXcvQnVzaW5lc3NfYW5kX0Vjb25vbXkvSW5kdXN0cmlhbC9Db21wdXRlcnNf
+        YW5kX0ludGVybmV0IiBUSVRMRT0iSW5kdXN0cmlhbC9Db21wdXRlcnMgYW5k
+        IEludGVybmV0IiBDSUQ9IjYyNTM2NyIvPgo8Q0FUIElEPSJUb3AvV29ybGQv
+        QXJhYmljL9il2YLZhNmK2YXZgNmKL9in2YTYtNix2YJf2KfZhNij2YjYs9i3
+        L9in2YTYs9i52YjYr9mK2Kkv2KrYrNin2LHYqV/ZiF/Yo9mC2KrYtdin2K8v
+        2YPZhdio2YrZiNiq2LFf2Yhf2KXZhtiq2LHZhtiqL9mF2K3YsdmD2KfYql/Y
+        qNit2KsiIFRJVExFPSLZg9mF2KjZitmI2KrYsSDZiCDYpdmG2KrYsdmG2Kov
+        2YXYrdix2YPYp9iqINio2K3YqyIgQ0lEPSIyMDQ5NTQiLz4KPENBVCBJRD0i
+        VG9wL1dvcmxkL0ZyYW7Dp2Fpcy9JbmZvcm1hdGlxdWUvSW50ZXJuZXQvUmVj
+        aGVyY2hlL01vdGV1cnNfZGVfcmVjaGVyY2hlL0dvb2dsZSIgVElUTEU9Ik1v
+        dGV1cnMgZGUgcmVjaGVyY2hlL0dvb2dsZSIgQ0lEPSIyNDczNDciLz4KPENB
+        VCBJRD0iVG9wL1dvcmxkL0VzcGHDsW9sL0luZm9ybcOhdGljYS9JbnRlcm5l
+        dC9CdXNjYW5kb19lbl9JbnRlcm5ldC9Nb3RvcmVzX2RlX2LDunNxdWVkYSIg
+        VElUTEU9IkJ1c2NhbmRvIGVuIEludGVybmV0L01vdG9yZXMgZGUgYsO6c3F1
+        ZWRhIiBDSUQ9IjI5NDk4Ii8+CjwvQ0FUUz4KPC9TSVRFPgo8L0RNT1o+CjxT
+        RD4KPFBPUFVMQVJJVFkgVVJMPSJnb29nbGUuY29tLyIgVEVYVD0iMSIgU09V
+        UkNFPSJwYW5lbCIvPgo8UkVBQ0ggUkFOSz0iMSIvPgo8UkFOSyBERUxUQT0i
+        KzAiLz4KPENPVU5UUlkgQ09ERT0iVVMiIE5BTUU9IlVuaXRlZCBTdGF0ZXMi
+        IFJBTks9IjEiLz4KPC9TRD4KPC9BTEVYQT4=
     http_version: '1.1'
-  recorded_at: Sat, 02 Nov 2013 22:48:03 GMT
+  recorded_at: Fri, 18 Jul 2014 02:00:28 GMT
 - request:
     method: get
     uri: http://bagics.com/page-authority.html?domain=www.google.com
@@ -480,23 +307,28 @@ http_interactions:
       code: 200
       message: OK
     headers:
-      date:
-      - Mon, 11 Nov 2013 14:16:59 GMT
       server:
-      - Apache
+      - cloudflare-nginx
+      date:
+      - Fri, 18 Jul 2014 02:00:28 GMT
+      content-type:
+      - text/html; charset=UTF-8
+      transfer-encoding:
+      - chunked
+      connection:
+      - close
+      set-cookie:
+      - __cfduid=dcbe4acd283a30165ba1f6e7bc8bdcc6d1405648828154; expires=Mon, 23-Dec-2019
+        23:50:00 GMT; path=/; domain=.bagics.com; HttpOnly
+      x-powered-by:
+      - PHP/5.3.3
+      vary:
+      - Accept-Encoding,User-Agent
       cache-control:
       - !binary |-
         4oCccHVibGlj4oCd
-      keep-alive:
-      - timeout=10, max=30
-      content-type:
-      - text/html
-      content-length:
-      - '4487'
-      accept-ranges:
-      - none
-      connection:
-      - close
+      cf-ray:
+      - 14bb15f7fba703f4-EWR
     body:
       encoding: UTF-8
       string: "<!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.0 Strict//EN\"\n    \"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd\">\n<html
@@ -507,15 +339,16 @@ http_interactions:
         \ Yahoo directory checker  Proxy servers  Check domain age  Check Alexa Rank
         \ Domain IP lookup  Find domain owner Check Domain Authority  Check Page Authority
         \ Check MozTrust  Check mozRank  Expired Domains  Backlinks checker  Check
-        Link Popularity  \"/>\n\n<meta name=\"keywords\" content=\"WhoIs LookUp,Check
+        Link Popularity  \"/>\n<meta name=\"keywords\" content=\"WhoIs LookUp,Check
         domain availability,Check Page Rank,Check PageRank,DMOZ directory checker,Yahoo
         directory checker,Proxy servers,Check domain age,Check Alexa Rank ,Check Domain
         IP,lookup,Find domain owner ,Check domain Authority,Check Page Authority,Check
         MozTrust,Check mozRank,Expired Domains,Backlinks checker,Check Link Popularity
-        \">\n<meta http-equiv=\"Content-Type\" content=\"text/html; charset=utf-8\"
-        />\n<link href=\"css/style.css\" rel=\"stylesheet\" type=\"text/css\" />\n</head>\n<body
-        onmouseover=\"window.status='';return true;\">\n\n<div id=\"container\">\n<div
-        id=\"main\">\n<div id=\"topbanner\"></div>\n<div id=\"menu\"><center>\n\t\n<a
+        \">\n<meta http-equiv=\"Content-Type\" content=\"text/html; charset=utf-8\"/>\n<script
+        type=\"text/javascript\">\n//<![CDATA[\ntry{if (!window.CloudFlare) {var CloudFlare=[{verbose:0,p:0,byc:0,owlid:\"cf\",bag2:1,mirage2:0,oracle:0,paths:{cloudflare:\"/cdn-cgi/nexp/dokv=88e434a982/\"},atok:\"31820ecba16e6370d5b43e3174c019f9\",petok:\"aed939f007b5377faf6a8dc8204379f283c687ce-1405648828-1800\",zone:\"bagics.com\",rocket:\"0\",apps:{}}];CloudFlare.push({\"apps\":{\"ape\":\"ac847eb4663c36628e13942553e33f5f\"}});!function(a,b){a=document.createElement(\"script\"),b=document.getElementsByTagName(\"script\")[0],a.async=!0,a.src=\"//ajax.cloudflare.com/cdn-cgi/nexp/dokv=97fb4d042e/cloudflare.min.js\",b.parentNode.insertBefore(a,b)}()}}catch(e){};\n//]]>\n</script>\n<link
+        href=\"css/style.css\" rel=\"stylesheet\" type=\"text/css\"/>\n</head>\n<body
+        onmouseover=\"window.status='';return true;\">\n<div id=\"container\">\n<div
+        id=\"main\">\n<div id=\"topbanner\"></div>\n<div id=\"menu\"><center>\n<a
         href=\"index.html\" title=\"bagics home page\">Home</a>\n<a href=\"whois.html\">WhoIs
         LookUp</a>\n<a href=\"domainchecker.html\">Check domain availability</a>\n<a
         href=\"pr.html\">Check Page Rank</a>\n<a href=\"alexarankchecker.html\">Check
@@ -527,28 +360,20 @@ http_interactions:
         href=\"total-back-links.html\">Total Backlinks Check</a>\n<a href=\"fake-pr-check.html\">Fake
         PR Check</a>\n<a href=\"domain-age.html\">Domain Age Check</a>\n<a href=\"site-value.html\">Estimated
         Site Value</a>\n<a href=\"google-bot-access.html\">Google Bot Access Check</a>\n<a
-        href=\"get-technorati-rank.html\">Technorati rank Check</a>\n\n\t<!--<br />\n\t<a
-        href=\"./pr.php\">Check PageRank</a>\n\t<a href=\"#\">DMOZ directory checker</a>
-        \n\t<a href=\"#\">Yahoo directory checker</a> \n\t<a href=\"#\">Proxy servers</a>
-        \n\t<br />\n\t<a href=\"#\">Check domain age</a>\n\t<a href=\"#\">Check Alexa
-        Rank</a> \n\t<a href=\"#\">Domain IP lookup</a>\n\t<a href=\"#\">Find domain
-        owner</a>\n\t<br />\n\t<a href=\"#\">Check Domain Authority</a>\n\t<a href=\"#\">Check
-        Page Authority</a>\n\t<a href=\"#\">Check MozTrust</a>\n\t<a href=\"#\">Check
-        mozRank</a>\n\t<br />\n\t<a href=\"#\" class=\"updated\">Expired Domains</a>\n\t<a
-        href=\"#\">Backlinks checker</a>\n\t<a href=\"#\">Check Link Popularity</a>\n\t\t<br
-        /> -->\n\n</div>\n<div id=\"content\">\n<h1>Check Page Authority of Domain.</h1>\n\n<h2>What
-        is Page Authority?</h2>\n\n<p>Page Authority is a measure of a website page
-        to rank higher in search engines.The higher the Page Authority, the more likely
-        the page will rank highly in the SERPs.\n.</P></br><p>Here, You can quickly
-        check the Domain Authority of your favorite sites. Just put your domain name
-        below and click CHECK button.</p>\n\n<br>\n<div class=\"pr\">\n<form action=\"/page-authority.html\"
+        href=\"get-technorati-rank.html\">Technorati rank Check</a>\n \n</div>\n<div
+        id=\"content\">\n<h1>Check Page Authority of Domain.</h1>\n<h2>What is Page
+        Authority?</h2>\n<p>Page Authority is a measure of a website page to rank
+        higher in search engines.The higher the Page Authority, the more likely the
+        page will rank highly in the SERPs.\n.</P></br><p>Here, You can quickly check
+        the Domain Authority of your favorite sites. Just put your domain name below
+        and click CHECK button.</p>\n<br>\n<div class=\"pr\">\n<form action=\"/page-authority.html\"
         method=\"post\">\nURL: <input name=\"domain\" type=\"text\" id=\"domain\"
         value=\"\" maxlength=\"300\" class=\"prf\" size=\"45\">\n<input type=\"submit\"
-        name=\"Submit\" value=\"CHECK\">\n</form></div>\n\n<div class=\"seomozResult\">\n\t\t\t<strong
-        class=\"dac\" id=\"resId\">97</strong>\n\t\t\t<h3 class=\"daa\">Page Authority</h3>\t\t\t\n\t\t\t<b
-        id=\"urlId\">www.google.com</b>\n\t\t\t</div></div>\n<div class=\"div\"></div>\n</div>\n\n\n\t\n<div
+        name=\"Submit\" value=\"CHECK\">\n</form></div>\n<div class=\"seomozResult\">\n<strong
+        class=\"dac\" id=\"resId\">96</strong>\n<h3 class=\"daa\">Page Authority</h3>\n<b
+        id=\"urlId\">www.google.com</b>\n</div></div>\n<div class=\"div\"></div>\n</div>\n<div
         id=\"r\"></div>\n<div id=\"credits\">\n<p>Copyright by <a href=\"http://bagics.com\">Bagics</a></p>\n<p>&copy;2012,
-        All rights reserved.</p></div> \n\n\n\n</div><script type=\"text/javascript\">\n\n
+        All rights reserved.</p></div>\n</div><script type=\"text/javascript\">\n\n
         \ var _gaq = _gaq || [];\n  _gaq.push(['_setAccount', 'UA-20641732-23']);\n
         \ _gaq.push(['_setDomainName', 'bagics.com']);\n  _gaq.push(['_setAllowLinker',
         true]);\n  _gaq.push(['_trackPageview']);\n\n  (function() {\n    var ga =
@@ -557,7 +382,7 @@ http_interactions:
         'http://') + 'stats.g.doubleclick.net/dc.js';\n    var s = document.getElementsByTagName('script')[0];
         s.parentNode.insertBefore(ga, s);\n  })();\n\n</script></body></html>"
     http_version: '1.1'
-  recorded_at: Mon, 11 Nov 2013 14:17:00 GMT
+  recorded_at: Fri, 18 Jul 2014 02:00:28 GMT
 - request:
     method: get
     uri: http://bagics.com/moz-rank.html?domain=www.google.com
@@ -573,23 +398,28 @@ http_interactions:
       code: 200
       message: OK
     headers:
-      date:
-      - Mon, 11 Nov 2013 14:16:59 GMT
       server:
-      - Apache
+      - cloudflare-nginx
+      date:
+      - Fri, 18 Jul 2014 02:00:37 GMT
+      content-type:
+      - text/html; charset=UTF-8
+      transfer-encoding:
+      - chunked
+      connection:
+      - close
+      set-cookie:
+      - __cfduid=da091098131026bb88522a828a923e4261405648828160; expires=Mon, 23-Dec-2019
+        23:50:00 GMT; path=/; domain=.bagics.com; HttpOnly
+      x-powered-by:
+      - PHP/5.3.3
+      vary:
+      - Accept-Encoding,User-Agent
       cache-control:
       - !binary |-
         4oCccHVibGlj4oCd
-      keep-alive:
-      - timeout=10, max=30
-      content-type:
-      - text/html
-      content-length:
-      - '4185'
-      accept-ranges:
-      - none
-      connection:
-      - close
+      cf-ray:
+      - 14bb15f80f4103f4-EWR
     body:
       encoding: UTF-8
       string: "<!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.0 Strict//EN\"\n    \"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd\">\n<html
@@ -600,14 +430,15 @@ http_interactions:
         directory checker  Proxy servers  Check domain age  Check Alexa Rank  Domain
         IP lookup  Find domain owner Check Domain Authority  Check Page Authority
         \ Check MozTrust  Check mozRank  Expired Domains  Backlinks checker  Check
-        Link Popularity  \"/>\n\n<meta name=\"keywords\" content=\"WhoIs LookUp,Check
+        Link Popularity  \"/>\n<meta name=\"keywords\" content=\"WhoIs LookUp,Check
         domain availability,Check Page Rank,Check PageRank,DMOZ directory checker,Yahoo
         directory checker,Proxy servers,Check domain age,Check Alexa Rank ,Check Domain
         IP,lookup,Find domain owner ,Check domain Authority,Check Page Authority,Check
         MozTrust,Check mozRank,Expired Domains,Backlinks checker,Check Link Popularity
-        \">\n<meta http-equiv=\"Content-Type\" content=\"text/html; charset=utf-8\"
-        />\n<link href=\"css/style.css\" rel=\"stylesheet\" type=\"text/css\" />\n</head>\n<div
-        id=\"container\">\n<div id=\"main\">\n<div id=\"topbanner\"></div>\n<div id=\"menu\"><center>\n\t\n<a
+        \">\n<meta http-equiv=\"Content-Type\" content=\"text/html; charset=utf-8\"/>\n<script
+        type=\"text/javascript\">\n//<![CDATA[\ntry{if (!window.CloudFlare) {var CloudFlare=[{verbose:0,p:0,byc:0,owlid:\"cf\",bag2:1,mirage2:0,oracle:0,paths:{cloudflare:\"/cdn-cgi/nexp/dokv=88e434a982/\"},atok:\"31820ecba16e6370d5b43e3174c019f9\",petok:\"ad4421b33f8acb37c58409984d0370af451bdb76-1405648837-1800\",zone:\"bagics.com\",rocket:\"0\",apps:{}}];CloudFlare.push({\"apps\":{\"ape\":\"302e469c402e2165c29352f41a330544\"}});!function(a,b){a=document.createElement(\"script\"),b=document.getElementsByTagName(\"script\")[0],a.async=!0,a.src=\"//ajax.cloudflare.com/cdn-cgi/nexp/dokv=97fb4d042e/cloudflare.min.js\",b.parentNode.insertBefore(a,b)}()}}catch(e){};\n//]]>\n</script>\n<link
+        href=\"css/style.css\" rel=\"stylesheet\" type=\"text/css\"/>\n</head>\n<div
+        id=\"container\">\n<div id=\"main\">\n<div id=\"topbanner\"></div>\n<div id=\"menu\"><center>\n<a
         href=\"index.html\" title=\"bagics home page\">Home</a>\n<a href=\"whois.html\">WhoIs
         LookUp</a>\n<a href=\"domainchecker.html\">Check domain availability</a>\n<a
         href=\"pr.html\">Check Page Rank</a>\n<a href=\"alexarankchecker.html\">Check
@@ -619,25 +450,17 @@ http_interactions:
         href=\"total-back-links.html\">Total Backlinks Check</a>\n<a href=\"fake-pr-check.html\">Fake
         PR Check</a>\n<a href=\"domain-age.html\">Domain Age Check</a>\n<a href=\"site-value.html\">Estimated
         Site Value</a>\n<a href=\"google-bot-access.html\">Google Bot Access Check</a>\n<a
-        href=\"get-technorati-rank.html\">Technorati rank Check</a>\n\n\t<!--<br />\n\t<a
-        href=\"./pr.php\">Check PageRank</a>\n\t<a href=\"#\">DMOZ directory checker</a>
-        \n\t<a href=\"#\">Yahoo directory checker</a> \n\t<a href=\"#\">Proxy servers</a>
-        \n\t<br />\n\t<a href=\"#\">Check domain age</a>\n\t<a href=\"#\">Check Alexa
-        Rank</a> \n\t<a href=\"#\">Domain IP lookup</a>\n\t<a href=\"#\">Find domain
-        owner</a>\n\t<br />\n\t<a href=\"#\">Check Domain Authority</a>\n\t<a href=\"#\">Check
-        Page Authority</a>\n\t<a href=\"#\">Check MozTrust</a>\n\t<a href=\"#\">Check
-        mozRank</a>\n\t<br />\n\t<a href=\"#\" class=\"updated\">Expired Domains</a>\n\t<a
-        href=\"#\">Backlinks checker</a>\n\t<a href=\"#\">Check Link Popularity</a>\n\t\t<br
-        /> -->\n\n</div>\n<div id=\"content\">\n<h1>Check MOZ RANK of Domain.</h1>\n<p>Here,
-        You can quickly check the MOZ RANKof your favorite sites. Just put your domain
-        name below and click CHECK button.</p>\n\n<div class=\"pr\">\n<form action=\"/moz-rank.html\"
+        href=\"get-technorati-rank.html\">Technorati rank Check</a>\n \n</div>\n<div
+        id=\"content\">\n<h1>Check MOZ RANK of Domain.</h1>\n<p>Here, You can quickly
+        check the MOZ RANKof your favorite sites. Just put your domain name below
+        and click CHECK button.</p>\n<div class=\"pr\">\n<form action=\"/moz-rank.html\"
         method=\"post\">\nURL: <input name=\"domain\" type=\"text\" id=\"domain\"
         value=\"\" maxlength=\"300\" class=\"prf\" size=\"45\">\n<input type=\"submit\"
-        name=\"Submit\" value=\"CHECK\"  >\n</form></div>\n\n<div class=\"seomozResult\">\n\t\t\t<strong
-        class=\"dac\" id=\"resId\">8</strong>\n\t\t\t<h3 class=\"daa\">Moz Rank</h3>\t\t\t\n\t\t\t<b
-        id=\"urlId\">www.google.com</b>\n\t\t\t</div></div>\n<div class=\"div\"></div>\n</div>\n\n\n\t\n<div
+        name=\"Submit\" value=\"CHECK\">\n</form></div>\n<div class=\"seomozResult\">\n<strong
+        class=\"dac\" id=\"resId\">8</strong>\n<h3 class=\"daa\">Moz Rank</h3>\n<b
+        id=\"urlId\">www.google.com</b>\n</div></div>\n<div class=\"div\"></div>\n</div>\n<div
         id=\"r\"></div>\n<div id=\"credits\">\n<p>Copyright by <a href=\"http://bagics.com\">Bagics</a></p>\n<p>&copy;2012,
-        All rights reserved.</p></div> \n\n\n\n</div><script type=\"text/javascript\">\n\n
+        All rights reserved.</p></div>\n</div><script type=\"text/javascript\">\n\n
         \ var _gaq = _gaq || [];\n  _gaq.push(['_setAccount', 'UA-20641732-23']);\n
         \ _gaq.push(['_setDomainName', 'bagics.com']);\n  _gaq.push(['_setAllowLinker',
         true]);\n  _gaq.push(['_trackPageview']);\n\n  (function() {\n    var ga =
@@ -646,5 +469,96 @@ http_interactions:
         'http://') + 'stats.g.doubleclick.net/dc.js';\n    var s = document.getElementsByTagName('script')[0];
         s.parentNode.insertBefore(ga, s);\n  })();\n\n</script></body></html> name="
     http_version: '1.1'
-  recorded_at: Mon, 11 Nov 2013 14:17:09 GMT
+  recorded_at: Fri, 18 Jul 2014 02:00:37 GMT
+- request:
+    method: get
+    uri: http://bagics.com/page-authority.html?domain=www.google.com
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      user-agent:
+      - Mozilla/5.0 (Macintosh; Intel Mac OS X 10_7_4) AppleWebKit/534.56.5 (KHTML,
+        like Gecko) Version/5.1.6 Safari/534.56.5
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      server:
+      - cloudflare-nginx
+      date:
+      - Fri, 18 Jul 2014 02:00:38 GMT
+      content-type:
+      - text/html; charset=UTF-8
+      transfer-encoding:
+      - chunked
+      connection:
+      - close
+      set-cookie:
+      - __cfduid=d7c487b4afb409c7ee122b24b94f0f6831405648837854; expires=Mon, 23-Dec-2019
+        23:50:00 GMT; path=/; domain=.bagics.com; HttpOnly
+      x-powered-by:
+      - PHP/5.3.3
+      vary:
+      - Accept-Encoding,User-Agent
+      cache-control:
+      - !binary |-
+        4oCccHVibGlj4oCd
+      cf-ray:
+      - 14bb163499f301ef-EWR
+    body:
+      encoding: UTF-8
+      string: "<!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.0 Strict//EN\"\n    \"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd\">\n<html
+        xmlns=\"http://www.w3.org/1999/xhtml\" xml:lang=\"en\" lang=\"en\">\n<head>\n<title>Check
+        Page Authority of Domain for FREE | Bagics.com | All In One SEO Companion</title>\n<meta
+        name=\"description\" content=\"Page Authority Checker -WhoIs LookUp  Check
+        domain availability  Check Page Rank  Check PageRank  DMOZ directory checker
+        \ Yahoo directory checker  Proxy servers  Check domain age  Check Alexa Rank
+        \ Domain IP lookup  Find domain owner Check Domain Authority  Check Page Authority
+        \ Check MozTrust  Check mozRank  Expired Domains  Backlinks checker  Check
+        Link Popularity  \"/>\n<meta name=\"keywords\" content=\"WhoIs LookUp,Check
+        domain availability,Check Page Rank,Check PageRank,DMOZ directory checker,Yahoo
+        directory checker,Proxy servers,Check domain age,Check Alexa Rank ,Check Domain
+        IP,lookup,Find domain owner ,Check domain Authority,Check Page Authority,Check
+        MozTrust,Check mozRank,Expired Domains,Backlinks checker,Check Link Popularity
+        \">\n<meta http-equiv=\"Content-Type\" content=\"text/html; charset=utf-8\"/>\n<script
+        type=\"text/javascript\">\n//<![CDATA[\ntry{if (!window.CloudFlare) {var CloudFlare=[{verbose:0,p:0,byc:0,owlid:\"cf\",bag2:1,mirage2:0,oracle:0,paths:{cloudflare:\"/cdn-cgi/nexp/dokv=88e434a982/\"},atok:\"31820ecba16e6370d5b43e3174c019f9\",petok:\"818bf1901ec40ecd6f9c86131fb5385603d0c5fa-1405648838-1800\",zone:\"bagics.com\",rocket:\"0\",apps:{}}];CloudFlare.push({\"apps\":{\"ape\":\"dc174c28319eb87b7b70d7fcbdee46d1\"}});!function(a,b){a=document.createElement(\"script\"),b=document.getElementsByTagName(\"script\")[0],a.async=!0,a.src=\"//ajax.cloudflare.com/cdn-cgi/nexp/dokv=97fb4d042e/cloudflare.min.js\",b.parentNode.insertBefore(a,b)}()}}catch(e){};\n//]]>\n</script>\n<link
+        href=\"css/style.css\" rel=\"stylesheet\" type=\"text/css\"/>\n</head>\n<body
+        onmouseover=\"window.status='';return true;\">\n<div id=\"container\">\n<div
+        id=\"main\">\n<div id=\"topbanner\"></div>\n<div id=\"menu\"><center>\n<a
+        href=\"index.html\" title=\"bagics home page\">Home</a>\n<a href=\"whois.html\">WhoIs
+        LookUp</a>\n<a href=\"domainchecker.html\">Check domain availability</a>\n<a
+        href=\"pr.html\">Check Page Rank</a>\n<a href=\"alexarankchecker.html\">Check
+        Alexa Rank</a>\n<a href=\"domain-authority.html\">Check Domain Authority</a>\n<a
+        href=\"page-authority.html\">Check Page Authority</a>\n<a href=\"yahoodirchecker.html\">Yahoo
+        Directory check</a>\n<a href=\"alexabacklinkcheck.html\">Alexa Backlinks Check</a>\n<a
+        href=\"bingindexcheck.html\">Bing Index Check</a>\n<a href=\"moz-rank.html\">MOZ-Rank
+        Check</a>\n<a href=\"dofollow-links.html\">Dofollow Backlinks Check</a>\n<a
+        href=\"total-back-links.html\">Total Backlinks Check</a>\n<a href=\"fake-pr-check.html\">Fake
+        PR Check</a>\n<a href=\"domain-age.html\">Domain Age Check</a>\n<a href=\"site-value.html\">Estimated
+        Site Value</a>\n<a href=\"google-bot-access.html\">Google Bot Access Check</a>\n<a
+        href=\"get-technorati-rank.html\">Technorati rank Check</a>\n \n</div>\n<div
+        id=\"content\">\n<h1>Check Page Authority of Domain.</h1>\n<h2>What is Page
+        Authority?</h2>\n<p>Page Authority is a measure of a website page to rank
+        higher in search engines.The higher the Page Authority, the more likely the
+        page will rank highly in the SERPs.\n.</P></br><p>Here, You can quickly check
+        the Domain Authority of your favorite sites. Just put your domain name below
+        and click CHECK button.</p>\n<br>\n<div class=\"pr\">\n<form action=\"/page-authority.html\"
+        method=\"post\">\nURL: <input name=\"domain\" type=\"text\" id=\"domain\"
+        value=\"\" maxlength=\"300\" class=\"prf\" size=\"45\">\n<input type=\"submit\"
+        name=\"Submit\" value=\"CHECK\">\n</form></div>\n<div class=\"seomozResult\">\n<strong
+        class=\"dac\" id=\"resId\">96</strong>\n<h3 class=\"daa\">Page Authority</h3>\n<b
+        id=\"urlId\">www.google.com</b>\n</div></div>\n<div class=\"div\"></div>\n</div>\n<div
+        id=\"r\"></div>\n<div id=\"credits\">\n<p>Copyright by <a href=\"http://bagics.com\">Bagics</a></p>\n<p>&copy;2012,
+        All rights reserved.</p></div>\n</div><script type=\"text/javascript\">\n\n
+        \ var _gaq = _gaq || [];\n  _gaq.push(['_setAccount', 'UA-20641732-23']);\n
+        \ _gaq.push(['_setDomainName', 'bagics.com']);\n  _gaq.push(['_setAllowLinker',
+        true]);\n  _gaq.push(['_trackPageview']);\n\n  (function() {\n    var ga =
+        document.createElement('script'); ga.type = 'text/javascript'; ga.async =
+        true;\n    ga.src = ('https:' == document.location.protocol ? 'https://' :
+        'http://') + 'stats.g.doubleclick.net/dc.js';\n    var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(ga, s);\n  })();\n\n</script></body></html>"
+    http_version: '1.1'
+  recorded_at: Fri, 18 Jul 2014 02:00:38 GMT
 recorded_with: VCR 2.7.0
