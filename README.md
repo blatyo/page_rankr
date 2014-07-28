@@ -148,14 +148,14 @@ Also, once a tracker has run three values will be accessible from it:
 
 One of the annoying things about each of these services is that they really don't like you scraping data from them. In order to deal with this issue, they throttle traffic from a single machine. The simplest way to get around this is to use proxy machines to make the requests.
 
-In PageRankr >= 3.2.0, this is much simpler. The first thing you'll need is a proxy service. Two are provided [here](https://github.com/blatyo/page_rankr/tree/master/lib/page_rankr/proxy_services). A proxy service must define a `proxy` method that takes two arguments. It should return a string like `user:password@192.168.1.1:50501`.
+In PageRankr >= 3.2.0, this is much simpler. The first thing you'll need is a proxy service. Two are provided [here](https://github.com/blatyo/page_rankr/tree/master/lib/page_rankr/proxy_services). A proxy service must define a `proxy` method that takes two arguments. It should return a string like `http://user:password@192.168.1.1:50501`.
 
 Once you have a proxy service, you can tell PageRankr to use it. For example:
 
 ``` ruby
     PageRankr.proxy_service = PageRankr::ProxyServices::Random.new([
-      'user:password@192.168.1.1:50501',
-      'user:password@192.168.1.2:50501'
+      'http://user:password@192.168.1.1:50501',
+      'http://user:password@192.168.1.2:50501'
     ])
 ```
 
