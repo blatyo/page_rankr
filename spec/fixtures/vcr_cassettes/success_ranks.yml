@@ -206,7 +206,7 @@ http_interactions:
       connection:
       - close
     body:
-      encoding: UTF-8
+      encoding: ISO-8859-1
       string: |
         Rank_1:1:9
     http_version: '1.1'
@@ -561,4 +561,92 @@ http_interactions:
         s.parentNode.insertBefore(ga, s);\n  })();\n\n</script></body></html>"
     http_version: '1.1'
   recorded_at: Fri, 18 Jul 2014 02:00:38 GMT
-recorded_with: VCR 2.7.0
+- request:
+    method: get
+    uri: http://bagics.com/domain-authority.html?domain=www.google.com
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      user-agent:
+      - Mozilla/5.0 (Macintosh; Intel Mac OS X 10_7_4) AppleWebKit/534.56.5 (KHTML,
+        like Gecko) Version/5.1.6 Safari/534.56.5
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      date:
+      - Wed, 29 Oct 2014 21:57:34 GMT
+      content-type:
+      - text/html; charset=UTF-8
+      transfer-encoding:
+      - chunked
+      connection:
+      - close
+      set-cookie:
+      - __cfduid=deb16260d82b401bef8f5b7161ec68ea81414619853987; expires=Mon, 23-Dec-2019
+        23:50:00 GMT; path=/; domain=.bagics.com; HttpOnly
+      x-powered-by:
+      - PHP/5.3.3
+      vary:
+      - Accept-Encoding,User-Agent
+      cache-control:
+      - !binary |-
+        4oCccHVibGlj4oCd
+      server:
+      - cloudflare-nginx
+      cf-ray:
+      - 1812a127697e08a5-FRA
+    body:
+      encoding: UTF-8
+      string: "<!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.0 Strict//EN\"\n    \"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd\">\n<html
+        xmlns=\"http://www.w3.org/1999/xhtml\" xml:lang=\"en\" lang=\"en\">\n<head>\n<title>Check
+        Domain Authority of your Domain for FREE | Bagics.com - All In One SEO Companion</title>\n<meta
+        name=\"description\" content=\"Domain Authority Checker - WhoIs LookUp  Check
+        domain availability  Check Page Rank  Check PageRank  DMOZ directory checker
+        \ Yahoo directory checker  Proxy servers  Check domain age  Check Alexa Rank
+        \ Domain IP lookup  Find domain owner Check Domain Authority  Check Page Authority
+        \ Check MozTrust  Check mozRank  Expired Domains  Backlinks checker  Check
+        Link Popularity  \"/>\n<meta name=\"keywords\" content=\"WhoIs LookUp,Check
+        domain availability,Check Page Rank,Check PageRank,DMOZ directory checker,Yahoo
+        directory checker,Proxy servers,Check domain age,Check Alexa Rank ,Check Domain
+        IP,lookup,Find domain owner ,Check domain Authority,Check Page Authority,Check
+        MozTrust,Check mozRank,Expired Domains,Backlinks checker,Check Link Popularity
+        \">\n<meta http-equiv=\"Content-Type\" content=\"text/html; charset=utf-8\"/>\n<script
+        type=\"text/javascript\">\n//<![CDATA[\ntry{if (!window.CloudFlare) {var CloudFlare=[{verbose:0,p:0,byc:0,owlid:\"cf\",bag2:1,mirage2:0,oracle:0,paths:{cloudflare:\"/cdn-cgi/nexp/dok2v=1613a3a185/\"},atok:\"d679e02f3d57d24c3704c9784605e43d\",petok:\"ed8a858233905d0f7011b6ed68081f590988e9f8-1414619854-1800\",zone:\"bagics.com\",rocket:\"0\",apps:{}}];CloudFlare.push({\"apps\":{\"ape\":\"f382648865761b4b4f0c9bf9a0512314\"}});!function(a,b){a=document.createElement(\"script\"),b=document.getElementsByTagName(\"script\")[0],a.async=!0,a.src=\"//ajax.cloudflare.com/cdn-cgi/nexp/dok2v=919620257c/cloudflare.min.js\",b.parentNode.insertBefore(a,b)}()}}catch(e){};\n//]]>\n</script>\n<link
+        href=\"css/style.css\" rel=\"stylesheet\" type=\"text/css\"/>\n</head>\n<body
+        onmouseover=\"window.status='';return true;\">\n<div id=\"container\">\n<div
+        id=\"main\">\n<div id=\"topbanner\"></div>\n<div id=\"menu\"><center>\n<a
+        href=\"index.html\" title=\"bagics home page\">Home</a>\n<a href=\"whois.html\">WhoIs
+        LookUp</a>\n<a href=\"domainchecker.html\">Check domain availability</a>\n<a
+        href=\"pr.html\">Check Page Rank</a>\n<a href=\"alexarankchecker.html\">Check
+        Alexa Rank</a>\n<a href=\"domain-authority.html\">Check Domain Authority</a>\n<a
+        href=\"page-authority.html\">Check Page Authority</a>\n<a href=\"yahoodirchecker.html\">Yahoo
+        Directory check</a>\n<a href=\"alexabacklinkcheck.html\">Alexa Backlinks Check</a>\n<a
+        href=\"bingindexcheck.html\">Bing Index Check</a>\n<a href=\"moz-rank.html\">MOZ-Rank
+        Check</a>\n<a href=\"dofollow-links.html\">Dofollow Backlinks Check</a>\n<a
+        href=\"total-back-links.html\">Total Backlinks Check</a>\n<a href=\"fake-pr-check.html\">Fake
+        PR Check</a>\n<a href=\"domain-age.html\">Domain Age Check</a>\n<a href=\"site-value.html\">Estimated
+        Site Value</a>\n<a href=\"google-bot-access.html\">Google Bot Access Check</a>\n<a
+        href=\"get-technorati-rank.html\">Technorati rank Check</a>\n \n</div>\n<div
+        id=\"content\">\n<h1>Check Domain Authority of Domain.</h1>\n<p>Here, You
+        can quickly check the Domain Authority of your favorite sites. Just put your
+        domain name below and click CHECK button.</p>\n<br>\n<div class=\"pr\">\n<form
+        action=\"/domain-authority.html\" method=\"post\">\nURL: <input name=\"domain\"
+        type=\"text\" id=\"domain\" value=\"\" maxlength=\"300\" class=\"prf\" size=\"45\">\n<input
+        type=\"submit\" name=\"Submit\" value=\"CHECK\">\n</form></div>\n<div class=\"seomozResult\">\n<strong
+        class=\"dac\" id=\"resId\">100</strong>\n<h3 class=\"daa\">Domain Authority</h3>\n<b
+        id=\"urlId\">www.google.com</b>\n</div></div>\n<div class=\"div\"></div>\n</div>\n<div
+        id=\"r\"></div>\n<div id=\"credits\">\n<p>Copyright by <a href=\"http://bagics.com\">Bagics</a></p>\n<p>&copy;2012,
+        All rights reserved.</p></div>\n</div><script type=\"text/javascript\">\n\n
+        \ var _gaq = _gaq || [];\n  _gaq.push(['_setAccount', 'UA-20641732-23']);\n
+        \ _gaq.push(['_setDomainName', 'bagics.com']);\n  _gaq.push(['_setAllowLinker',
+        true]);\n  _gaq.push(['_trackPageview']);\n\n  (function() {\n    var ga =
+        document.createElement('script'); ga.type = 'text/javascript'; ga.async =
+        true;\n    ga.src = ('https:' == document.location.protocol ? 'https://' :
+        'http://') + 'stats.g.doubleclick.net/dc.js';\n    var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(ga, s);\n  })();\n\n</script></body></html>"
+    http_version: '1.1'
+  recorded_at: Wed, 29 Oct 2014 21:57:34 GMT
+recorded_with: VCR 2.9.3

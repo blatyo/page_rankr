@@ -64,6 +64,7 @@ describe PageRankr do
       it{ should have_key(:google) }
       it{ should have_key(:moz_rank) }
       it{ should have_key(:page_authority) }
+      it{ should have_key(:domain_authority) }
 
       it{ subject[:alexa_us].should be_number >= 1 }
       it{ subject[:alexa_global].should be_number >= 1 }
@@ -71,6 +72,7 @@ describe PageRankr do
       it{ subject[:google].should be_in(0..10) }
       it{ subject[:moz_rank].should be_in(5..9) }
       it{ subject[:page_authority].should be_in(90..99) }
+      it{ subject[:domain_authority].should be_in(90..100) }
     end
 
     describe "failure" do
@@ -86,6 +88,7 @@ describe PageRankr do
       it{ should have_key(:google) }
       it{ should have_key(:moz_rank) }
       it{ should have_key(:page_authority) }
+      it{ should have_key(:domain_authority) }
 
       it{ subject[:alexa_us].should be_nil }
       it{ subject[:alexa_global].should be_nil }
@@ -93,6 +96,7 @@ describe PageRankr do
       it{ subject[:google].should be_nil }
       it{ subject[:moz_rank].should == 0 }
       it{ subject[:page_authority].should == 1 }
+      it{ subject[:domain_authority].should == 1 }
     end
   end
 
