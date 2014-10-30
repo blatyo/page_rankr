@@ -1,5 +1,8 @@
 # Change Log
 
+## Version 4.3.0
+* Add Page Authority and Domain Authority ranks
+
 ## Version 4.2.1
 * Fix Yahoo trackers xpath
 * Require newer version of public_suffix_service
