@@ -107,7 +107,7 @@ If you don't specify a rank provider, then all of them are used.
 
     # this also gives the same result
     PageRankr.ranks('www.google.com')
-        #=> {:alexa_us=>1, :alexa_global=>1, :alexa_country=>1, :google=>10, :moz_rank => 8, :page_authority => 97}
+        #=> {:alexa_us=>1, :alexa_global=>1, :alexa_country=>1, :google=>9, :moz_rank=>8, :domain_authority=>100, :page_authority=>96}
 ```
 
 You can also use the alias `rank` instead of `ranks`.
@@ -115,7 +115,7 @@ You can also use the alias `rank` instead of `ranks`.
 Valid rank trackers are: `:alexa_country, :alexa_global, :alexa_us, :google, :moz_rank, :page_authority`. To get this you can do:
 
 ``` ruby
-    PageRankr.rank_trackers #=> [:alexa_country, :alexa_global, :alexa_us, :google, :moz_rank, :page_authority]
+    PageRankr.rank_trackers #=> [:alexa_us, :alexa_global, :alexa_country, :google, :moz_rank, :domain_authority, :page_authority]
 ```
 
 Alexa ranks are descending where 1 is the most popular. Google page ranks are in the range 0-10 where 10 is the most popular. If a site is unindexed then the rank will be nil.

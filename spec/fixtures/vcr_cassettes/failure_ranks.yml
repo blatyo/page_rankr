@@ -2,64 +2,6 @@
 http_interactions:
 - request:
     method: get
-    uri: http://data.alexa.com/data?cli=10&dat=snbamz&url=please-dont-register-a-site-that-breaks-this-test.com
-    body:
-      encoding: US-ASCII
-      string: ''
-    headers:
-      user-agent:
-      - Mozilla/5.0 (Macintosh; Intel Mac OS X 10_7_4) AppleWebKit/534.56.5 (KHTML,
-        like Gecko) Version/5.1.6 Safari/534.56.5
-  response:
-    status:
-      code: 200
-      message: OK
-    headers:
-      content-type:
-      - text/xml
-      content-length:
-      - '339'
-      connection:
-      - Close
-    body:
-      encoding: UTF-8
-      string: "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n\r\n<ALEXA VER=\"0.9\"
-        URL=\"please-dont-register-a-site-that-breaks-this-test.com/\" HOME=\"0\"
-        AID=\"=\" IDN=\"please-dont-register-a-site-that-breaks-this-test.com/\">\r\n<RLS
-        PREFIX=\"http://\" more=\"0\">\n</RLS>\n<SD TITLE=\"A\" FLAGS=\"\" HOST=\"please-dont-register-a-site-that-breaks-this-test.com\">\n</SD>\n\n</ALEXA>"
-    http_version: '1.1'
-  recorded_at: Fri, 18 Jul 2014 02:00:38 GMT
-- request:
-    method: get
-    uri: http://data.alexa.com/data?cli=10&dat=snbamz&url=please-dont-register-a-site-that-breaks-this-test.com
-    body:
-      encoding: US-ASCII
-      string: ''
-    headers:
-      user-agent:
-      - Mozilla/5.0 (Macintosh; Intel Mac OS X 10_7_4) AppleWebKit/534.56.5 (KHTML,
-        like Gecko) Version/5.1.6 Safari/534.56.5
-  response:
-    status:
-      code: 200
-      message: OK
-    headers:
-      content-type:
-      - text/xml
-      content-length:
-      - '339'
-      connection:
-      - Close
-    body:
-      encoding: UTF-8
-      string: "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n\r\n<ALEXA VER=\"0.9\"
-        URL=\"please-dont-register-a-site-that-breaks-this-test.com/\" HOME=\"0\"
-        AID=\"=\" IDN=\"please-dont-register-a-site-that-breaks-this-test.com/\">\r\n<RLS
-        PREFIX=\"http://\" more=\"0\">\n</RLS>\n<SD TITLE=\"A\" FLAGS=\"\" HOST=\"please-dont-register-a-site-that-breaks-this-test.com\">\n</SD>\n\n</ALEXA>"
-    http_version: '1.1'
-  recorded_at: Fri, 18 Jul 2014 02:00:38 GMT
-- request:
-    method: get
     uri: http://toolbarqueries.google.com/tbr?client=navclient-auto&ch=63624986523&features=Rank&q=info%3Aplease-dont-register-a-site-that-breaks-this-test.com
     body:
       encoding: US-ASCII
@@ -74,7 +16,7 @@ http_interactions:
       message: OK
     headers:
       date:
-      - Fri, 18 Jul 2014 02:00:38 GMT
+      - Wed, 29 Oct 2014 21:59:32 GMT
       pragma:
       - no-cache
       expires:
@@ -84,10 +26,10 @@ http_interactions:
       content-type:
       - text/html; charset=ISO-8859-1
       set-cookie:
-      - PREF=ID=4fff13a95be22a07:FF=0:TM=1405648838:LM=1405648838:S=a2JLhV3JUxpwwpFs;
-        expires=Sun, 17-Jul-2016 02:00:38 GMT; path=/; domain=.google.com
-      - NID=67=PXVTGz9jDx1x5rUrMSeUXlDRudjNGzzrVtrH5T1pGmOrpvZS8AIP2pO1G3_EHNkX8LAEnpq_UIvV6PJFZMZ6IfMP8YKGHWAMj1GUcbY_h2B9mqABROAZJDhPQzvedlN9;
-        expires=Sat, 17-Jan-2015 02:00:38 GMT; path=/; domain=.google.com; HttpOnly
+      - PREF=ID=ec9644e9c1744326:FF=0:TM=1414619972:LM=1414619973:S=Ozpui5pIQJ06X3pc;
+        expires=Fri, 28-Oct-2016 21:59:33 GMT; path=/; domain=.google.com
+      - NID=67=D6JWf7NCqCBmx0isLPhPcI7XcJL7Wkee1HQjrugO5M66UKaz6HTz5o5dncxSsQ_VpHpi1_HxYyWhLF7ufFBh4KvRDFB-fU8w7iECu8DpCXN9gHm5Yr5fE7lnoNiddFiX;
+        expires=Thu, 30-Apr-2015 21:59:33 GMT; path=/; domain=.google.com; HttpOnly
       p3p:
       - CP="This is not a P3P policy! See http://www.google.com/support/accounts/bin/answer.py?hl=en&answer=151657
         for more info."
@@ -100,17 +42,17 @@ http_interactions:
       x-frame-options:
       - SAMEORIGIN
       alternate-protocol:
-      - 80:quic
+      - 80:quic,p=0.002
       connection:
       - close
     body:
       encoding: UTF-8
       string: ''
     http_version: '1.1'
-  recorded_at: Fri, 18 Jul 2014 02:00:38 GMT
+  recorded_at: Wed, 29 Oct 2014 21:59:33 GMT
 - request:
     method: get
-    uri: http://data.alexa.com/data?cli=10&dat=snbamz&url=please-dont-register-a-site-that-breaks-this-test.com
+    uri: http://bagics.com/domain-authority.html?domain=please-dont-register-a-site-that-breaks-this-test.com
     body:
       encoding: US-ASCII
       string: ''
@@ -123,20 +65,86 @@ http_interactions:
       code: 200
       message: OK
     headers:
+      date:
+      - Wed, 29 Oct 2014 21:59:33 GMT
       content-type:
-      - text/xml
-      content-length:
-      - '339'
+      - text/html; charset=UTF-8
+      transfer-encoding:
+      - chunked
       connection:
-      - Close
+      - close
+      set-cookie:
+      - __cfduid=d89ec46b0ddb7b50f792863988e1934421414619972904; expires=Mon, 23-Dec-2019
+        23:50:00 GMT; path=/; domain=.bagics.com; HttpOnly
+      x-powered-by:
+      - PHP/5.3.3
+      cache-control:
+      - !binary |-
+        4oCccHVibGlj4oCd
+      expires:
+      - Fri, 31 Oct 2014 21:59:33 GMT
+      vary:
+      - Accept-Encoding,User-Agent
+      server:
+      - cloudflare-nginx
+      cf-ray:
+      - 1812a40ea71308a5-FRA
     body:
       encoding: UTF-8
-      string: "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n\r\n<ALEXA VER=\"0.9\"
-        URL=\"please-dont-register-a-site-that-breaks-this-test.com/\" HOME=\"0\"
-        AID=\"=\" IDN=\"please-dont-register-a-site-that-breaks-this-test.com/\">\r\n<RLS
-        PREFIX=\"http://\" more=\"0\">\n</RLS>\n<SD TITLE=\"A\" FLAGS=\"\" HOST=\"please-dont-register-a-site-that-breaks-this-test.com\">\n</SD>\n\n</ALEXA>"
+      string: "<!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.0 Strict//EN\"\n    \"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd\">\n<html
+        xmlns=\"http://www.w3.org/1999/xhtml\" xml:lang=\"en\" lang=\"en\">\n<head>\n<title>Check
+        Domain Authority of your Domain for FREE | Bagics.com - All In One SEO Companion</title>\n<meta
+        name=\"description\" content=\"Domain Authority Checker - WhoIs LookUp  Check
+        domain availability  Check Page Rank  Check PageRank  DMOZ directory checker
+        \ Yahoo directory checker  Proxy servers  Check domain age  Check Alexa Rank
+        \ Domain IP lookup  Find domain owner Check Domain Authority  Check Page Authority
+        \ Check MozTrust  Check mozRank  Expired Domains  Backlinks checker  Check
+        Link Popularity  \"/>\n<meta name=\"keywords\" content=\"WhoIs LookUp,Check
+        domain availability,Check Page Rank,Check PageRank,DMOZ directory checker,Yahoo
+        directory checker,Proxy servers,Check domain age,Check Alexa Rank ,Check Domain
+        IP,lookup,Find domain owner ,Check domain Authority,Check Page Authority,Check
+        MozTrust,Check mozRank,Expired Domains,Backlinks checker,Check Link Popularity
+        \">\n<meta http-equiv=\"Content-Type\" content=\"text/html; charset=utf-8\"/>\n<script
+        type=\"text/javascript\">\n//<![CDATA[\ntry{if (!window.CloudFlare) {var CloudFlare=[{verbose:0,p:0,byc:0,owlid:\"cf\",bag2:1,mirage2:0,oracle:0,paths:{cloudflare:\"/cdn-cgi/nexp/dok2v=1613a3a185/\"},atok:\"d679e02f3d57d24c3704c9784605e43d\",petok:\"c1ea7102f7119b121dab70d6e2d4f28d088eb1ae-1414619973-86400\",zone:\"bagics.com\",rocket:\"0\",apps:{}}];CloudFlare.push({\"apps\":{\"ape\":\"8cf64af6a2fdca5ba142c27997b122a4\"}});!function(a,b){a=document.createElement(\"script\"),b=document.getElementsByTagName(\"script\")[0],a.async=!0,a.src=\"//ajax.cloudflare.com/cdn-cgi/nexp/dok2v=919620257c/cloudflare.min.js\",b.parentNode.insertBefore(a,b)}()}}catch(e){};\n//]]>\n</script>\n<link
+        href=\"css/style.css\" rel=\"stylesheet\" type=\"text/css\"/>\n</head>\n<body
+        onmouseover=\"window.status='';return true;\">\n<div id=\"container\">\n<div
+        id=\"main\">\n<div id=\"topbanner\"></div>\n<div id=\"menu\"><center>\n<a
+        href=\"index.html\" title=\"bagics home page\">Home</a>\n<a href=\"whois.html\">WhoIs
+        LookUp</a>\n<a href=\"domainchecker.html\">Check domain availability</a>\n<a
+        href=\"pr.html\">Check Page Rank</a>\n<a href=\"alexarankchecker.html\">Check
+        Alexa Rank</a>\n<a href=\"domain-authority.html\">Check Domain Authority</a>\n<a
+        href=\"page-authority.html\">Check Page Authority</a>\n<a href=\"yahoodirchecker.html\">Yahoo
+        Directory check</a>\n<a href=\"alexabacklinkcheck.html\">Alexa Backlinks Check</a>\n<a
+        href=\"bingindexcheck.html\">Bing Index Check</a>\n<a href=\"moz-rank.html\">MOZ-Rank
+        Check</a>\n<a href=\"dofollow-links.html\">Dofollow Backlinks Check</a>\n<a
+        href=\"total-back-links.html\">Total Backlinks Check</a>\n<a href=\"fake-pr-check.html\">Fake
+        PR Check</a>\n<a href=\"domain-age.html\">Domain Age Check</a>\n<a href=\"site-value.html\">Estimated
+        Site Value</a>\n<a href=\"google-bot-access.html\">Google Bot Access Check</a>\n<a
+        href=\"get-technorati-rank.html\">Technorati rank Check</a>\n \n</div>\n<div
+        id=\"content\">\n<h1>Check Domain Authority of Domain.</h1>\n<p>Here, You
+        can quickly check the Domain Authority of your favorite sites. Just put your
+        domain name below and click CHECK button.</p>\n<br>\n<div class=\"pr\">\n<form
+        action=\"/domain-authority.html\" method=\"post\">\nURL: <input name=\"domain\"
+        type=\"text\" id=\"domain\" value=\"\" maxlength=\"300\" class=\"prf\" size=\"45\">\n<input
+        type=\"submit\" name=\"Submit\" value=\"CHECK\">\n</form></div>\n<div class=\"seomozResult\">\n<strong
+        class=\"dac\" id=\"resId\">1</strong>\n<h3 class=\"daa\">Domain Authority</h3>\n<b
+        id=\"urlId\">please-dont-register-a-site-that-breaks-this-test.com</b>\n</div></div>\n<div
+        class=\"div\"></div>\n</div>\n<div id=\"r\"></div>\n<div id=\"credits\">\n<p>Copyright
+        by <a href=\"http://bagics.com\">Bagics</a></p>\n<p>&copy;2012, All rights
+        reserved.</p></div>\n</div><script src=\"http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js\"></script>\n<script
+        type=\"text/javascript\">\n\n  var _gaq = _gaq || [];\n  _gaq.push(['_setAccount',
+        'UA-20641732-23']);\n  _gaq.push(['_setDomainName', 'bagics.com']);\n  _gaq.push(['_setAllowLinker',
+        true]);\n  _gaq.push(['_trackPageview']);\n\n  (function() {\n    var ga =
+        document.createElement('script'); ga.type = 'text/javascript'; ga.async =
+        true;\n    ga.src = ('https:' == document.location.protocol ? 'https://' :
+        'http://') + 'stats.g.doubleclick.net/dc.js';\n    var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(ga, s);\n  })();\n\n  window.onload = function(){\n
+        \  var link = \"http://www.flipkart.com/affiliate/displayWidget?affrid=WRID-139558488367240641\"\nvar
+        iframe = document.createElement('iframe');\niframe.frameBorder=0;\niframe.width=\"160px\";\niframe.height=\"600px\";\niframe.id=\"randomid\";\niframe.setAttribute(\"src\",
+        link);\ndocument.getElementById(\"r\").appendChild(iframe);\n\n}\n\n</script>\n<style
+        type=\"text/css\">IFRAME{position:absolute;left:0;top:0px;overflow:hidden;}</style></body></html>"
     http_version: '1.1'
-  recorded_at: Fri, 18 Jul 2014 02:00:38 GMT
+  recorded_at: Wed, 29 Oct 2014 21:59:33 GMT
 - request:
     method: get
     uri: http://bagics.com/page-authority.html?domain=please-dont-register-a-site-that-breaks-this-test.com
@@ -152,10 +160,8 @@ http_interactions:
       code: 200
       message: OK
     headers:
-      server:
-      - cloudflare-nginx
       date:
-      - Fri, 18 Jul 2014 02:00:38 GMT
+      - Wed, 29 Oct 2014 21:59:33 GMT
       content-type:
       - text/html; charset=UTF-8
       transfer-encoding:
@@ -163,7 +169,7 @@ http_interactions:
       connection:
       - close
       set-cookie:
-      - __cfduid=d024659f7a0063b6ad193de1cf463d1861405648838648; expires=Mon, 23-Dec-2019
+      - __cfduid=df1a463531dfae50ef0bbc74e4d34a6bf1414619972902; expires=Mon, 23-Dec-2019
         23:50:00 GMT; path=/; domain=.bagics.com; HttpOnly
       x-powered-by:
       - PHP/5.3.3
@@ -172,8 +178,10 @@ http_interactions:
       cache-control:
       - !binary |-
         4oCccHVibGlj4oCd
+      server:
+      - cloudflare-nginx
       cf-ray:
-      - 14bb16398aa901ef-EWR
+      - 1812a40ea5c008a5-FRA
     body:
       encoding: UTF-8
       string: "<!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.0 Strict//EN\"\n    \"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd\">\n<html
@@ -190,7 +198,7 @@ http_interactions:
         IP,lookup,Find domain owner ,Check domain Authority,Check Page Authority,Check
         MozTrust,Check mozRank,Expired Domains,Backlinks checker,Check Link Popularity
         \">\n<meta http-equiv=\"Content-Type\" content=\"text/html; charset=utf-8\"/>\n<script
-        type=\"text/javascript\">\n//<![CDATA[\ntry{if (!window.CloudFlare) {var CloudFlare=[{verbose:0,p:0,byc:0,owlid:\"cf\",bag2:1,mirage2:0,oracle:0,paths:{cloudflare:\"/cdn-cgi/nexp/dokv=88e434a982/\"},atok:\"31820ecba16e6370d5b43e3174c019f9\",petok:\"818bf1901ec40ecd6f9c86131fb5385603d0c5fa-1405648838-1800\",zone:\"bagics.com\",rocket:\"0\",apps:{}}];CloudFlare.push({\"apps\":{\"ape\":\"61a470ec965d5d587cd5c8d1882757ba\"}});!function(a,b){a=document.createElement(\"script\"),b=document.getElementsByTagName(\"script\")[0],a.async=!0,a.src=\"//ajax.cloudflare.com/cdn-cgi/nexp/dokv=97fb4d042e/cloudflare.min.js\",b.parentNode.insertBefore(a,b)}()}}catch(e){};\n//]]>\n</script>\n<link
+        type=\"text/javascript\">\n//<![CDATA[\ntry{if (!window.CloudFlare) {var CloudFlare=[{verbose:0,p:0,byc:0,owlid:\"cf\",bag2:1,mirage2:0,oracle:0,paths:{cloudflare:\"/cdn-cgi/nexp/dok2v=1613a3a185/\"},atok:\"d679e02f3d57d24c3704c9784605e43d\",petok:\"d02a6b091fdc7f3e04b72e4e1da3d97dceb3d435-1414619973-1800\",zone:\"bagics.com\",rocket:\"0\",apps:{}}];CloudFlare.push({\"apps\":{\"ape\":\"4a65d2a05db8d4322fd3ddd775384529\"}});!function(a,b){a=document.createElement(\"script\"),b=document.getElementsByTagName(\"script\")[0],a.async=!0,a.src=\"//ajax.cloudflare.com/cdn-cgi/nexp/dok2v=919620257c/cloudflare.min.js\",b.parentNode.insertBefore(a,b)}()}}catch(e){};\n//]]>\n</script>\n<link
         href=\"css/style.css\" rel=\"stylesheet\" type=\"text/css\"/>\n</head>\n<body
         onmouseover=\"window.status='';return true;\">\n<div id=\"container\">\n<div
         id=\"main\">\n<div id=\"topbanner\"></div>\n<div id=\"menu\"><center>\n<a
@@ -228,7 +236,94 @@ http_interactions:
         document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga,
         s);\n  })();\n\n</script></body></html>"
     http_version: '1.1'
-  recorded_at: Fri, 18 Jul 2014 02:00:39 GMT
+  recorded_at: Wed, 29 Oct 2014 21:59:33 GMT
+- request:
+    method: get
+    uri: http://data.alexa.com/data?cli=10&dat=snbamz&url=please-dont-register-a-site-that-breaks-this-test.com
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      user-agent:
+      - Mozilla/5.0 (Macintosh; Intel Mac OS X 10_7_4) AppleWebKit/534.56.5 (KHTML,
+        like Gecko) Version/5.1.6 Safari/534.56.5
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      content-type:
+      - text/xml
+      content-length:
+      - '339'
+      connection:
+      - Close
+    body:
+      encoding: UTF-8
+      string: "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n\r\n<ALEXA VER=\"0.9\"
+        URL=\"please-dont-register-a-site-that-breaks-this-test.com/\" HOME=\"0\"
+        AID=\"=\" IDN=\"please-dont-register-a-site-that-breaks-this-test.com/\">\r\n<RLS
+        PREFIX=\"http://\" more=\"0\">\n</RLS>\n<SD TITLE=\"A\" FLAGS=\"\" HOST=\"please-dont-register-a-site-that-breaks-this-test.com\">\n</SD>\n\n</ALEXA>"
+    http_version: '1.1'
+  recorded_at: Wed, 29 Oct 2014 21:59:33 GMT
+- request:
+    method: get
+    uri: http://data.alexa.com/data?cli=10&dat=snbamz&url=please-dont-register-a-site-that-breaks-this-test.com
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      user-agent:
+      - Mozilla/5.0 (Macintosh; Intel Mac OS X 10_7_4) AppleWebKit/534.56.5 (KHTML,
+        like Gecko) Version/5.1.6 Safari/534.56.5
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      content-type:
+      - text/xml
+      content-length:
+      - '339'
+      connection:
+      - Close
+    body:
+      encoding: UTF-8
+      string: "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n\r\n<ALEXA VER=\"0.9\"
+        URL=\"please-dont-register-a-site-that-breaks-this-test.com/\" HOME=\"0\"
+        AID=\"=\" IDN=\"please-dont-register-a-site-that-breaks-this-test.com/\">\r\n<RLS
+        PREFIX=\"http://\" more=\"0\">\n</RLS>\n<SD TITLE=\"A\" FLAGS=\"\" HOST=\"please-dont-register-a-site-that-breaks-this-test.com\">\n</SD>\n\n</ALEXA>"
+    http_version: '1.1'
+  recorded_at: Wed, 29 Oct 2014 21:59:33 GMT
+- request:
+    method: get
+    uri: http://data.alexa.com/data?cli=10&dat=snbamz&url=please-dont-register-a-site-that-breaks-this-test.com
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      user-agent:
+      - Mozilla/5.0 (Macintosh; Intel Mac OS X 10_7_4) AppleWebKit/534.56.5 (KHTML,
+        like Gecko) Version/5.1.6 Safari/534.56.5
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      content-type:
+      - text/xml
+      content-length:
+      - '339'
+      connection:
+      - Close
+    body:
+      encoding: UTF-8
+      string: "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n\r\n<ALEXA VER=\"0.9\"
+        URL=\"please-dont-register-a-site-that-breaks-this-test.com/\" HOME=\"0\"
+        AID=\"=\" IDN=\"please-dont-register-a-site-that-breaks-this-test.com/\">\r\n<RLS
+        PREFIX=\"http://\" more=\"0\">\n</RLS>\n<SD TITLE=\"A\" FLAGS=\"\" HOST=\"please-dont-register-a-site-that-breaks-this-test.com\">\n</SD>\n\n</ALEXA>"
+    http_version: '1.1'
+  recorded_at: Wed, 29 Oct 2014 21:59:33 GMT
 - request:
     method: get
     uri: http://bagics.com/moz-rank.html?domain=please-dont-register-a-site-that-breaks-this-test.com
@@ -244,10 +339,8 @@ http_interactions:
       code: 200
       message: OK
     headers:
-      server:
-      - cloudflare-nginx
       date:
-      - Fri, 18 Jul 2014 02:00:47 GMT
+      - Wed, 29 Oct 2014 21:59:42 GMT
       content-type:
       - text/html; charset=UTF-8
       transfer-encoding:
@@ -255,7 +348,7 @@ http_interactions:
       connection:
       - close
       set-cookie:
-      - __cfduid=d88d8197a76bd5ef36a3558dd10fe39871405648838631; expires=Mon, 23-Dec-2019
+      - __cfduid=dbb379f766ae0b552782d42c45c93c9b21414619972900; expires=Mon, 23-Dec-2019
         23:50:00 GMT; path=/; domain=.bagics.com; HttpOnly
       x-powered-by:
       - PHP/5.3.3
@@ -263,11 +356,13 @@ http_interactions:
       - !binary |-
         4oCccHVibGlj4oCd
       expires:
-      - Sun, 20 Jul 2014 02:00:38 GMT
+      - Fri, 31 Oct 2014 21:59:33 GMT
       vary:
       - Accept-Encoding,User-Agent
+      server:
+      - cloudflare-nginx
       cf-ray:
-      - 14bb16397b3701ef-EWR
+      - 1812a40ea71108a5-FRA
     body:
       encoding: UTF-8
       string: "<!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.0 Strict//EN\"\n    \"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd\">\n<html
@@ -284,7 +379,7 @@ http_interactions:
         IP,lookup,Find domain owner ,Check domain Authority,Check Page Authority,Check
         MozTrust,Check mozRank,Expired Domains,Backlinks checker,Check Link Popularity
         \">\n<meta http-equiv=\"Content-Type\" content=\"text/html; charset=utf-8\"/>\n<script
-        type=\"text/javascript\">\n//<![CDATA[\ntry{if (!window.CloudFlare) {var CloudFlare=[{verbose:0,p:0,byc:0,owlid:\"cf\",bag2:1,mirage2:0,oracle:0,paths:{cloudflare:\"/cdn-cgi/nexp/dokv=88e434a982/\"},atok:\"31820ecba16e6370d5b43e3174c019f9\",petok:\"0cc18f060ee875ebc695caebd167c81fbcb0ef8a-1405648847-86400\",zone:\"bagics.com\",rocket:\"0\",apps:{}}];CloudFlare.push({\"apps\":{\"ape\":\"317cc198b4f34cc0667f790f0ad63326\"}});!function(a,b){a=document.createElement(\"script\"),b=document.getElementsByTagName(\"script\")[0],a.async=!0,a.src=\"//ajax.cloudflare.com/cdn-cgi/nexp/dokv=97fb4d042e/cloudflare.min.js\",b.parentNode.insertBefore(a,b)}()}}catch(e){};\n//]]>\n</script>\n<link
+        type=\"text/javascript\">\n//<![CDATA[\ntry{if (!window.CloudFlare) {var CloudFlare=[{verbose:0,p:0,byc:0,owlid:\"cf\",bag2:1,mirage2:0,oracle:0,paths:{cloudflare:\"/cdn-cgi/nexp/dok2v=1613a3a185/\"},atok:\"d679e02f3d57d24c3704c9784605e43d\",petok:\"8c97f20ea34153e52d7d7e97427638ff615c21cb-1414619982-86400\",zone:\"bagics.com\",rocket:\"0\",apps:{}}];CloudFlare.push({\"apps\":{\"ape\":\"9a7071e583ad9819639e87a070b2b16f\"}});!function(a,b){a=document.createElement(\"script\"),b=document.getElementsByTagName(\"script\")[0],a.async=!0,a.src=\"//ajax.cloudflare.com/cdn-cgi/nexp/dok2v=919620257c/cloudflare.min.js\",b.parentNode.insertBefore(a,b)}()}}catch(e){};\n//]]>\n</script>\n<link
         href=\"css/style.css\" rel=\"stylesheet\" type=\"text/css\"/>\n</head>\n<div
         id=\"container\">\n<div id=\"main\">\n<div id=\"topbanner\"></div>\n<div id=\"menu\"><center>\n<a
         href=\"index.html\" title=\"bagics home page\">Home</a>\n<a href=\"whois.html\">WhoIs
@@ -323,5 +418,5 @@ http_interactions:
         type=\"text/css\">IFRAME{position:absolute;left:0;top:0px;overflow:hidden;}</style></body></html>
         name="
     http_version: '1.1'
-  recorded_at: Fri, 18 Jul 2014 02:00:48 GMT
-recorded_with: VCR 2.7.0
+  recorded_at: Wed, 29 Oct 2014 21:59:42 GMT
+recorded_with: VCR 2.9.3
