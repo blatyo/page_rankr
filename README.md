@@ -120,6 +120,32 @@ Valid rank trackers are: `:alexa_country, :alexa_global, :alexa_us, :google, :mo
 
 Alexa ranks are descending where 1 is the most popular. Google page ranks are in the range 0-10 where 10 is the most popular. If a site is unindexed then the rank will be nil.
 
+### Socials
+
+Social signals are a somewhat oversimplified way of telling how popular a site or page currently is.
+
+``` ruby
+    PageRankr.socials('www.google.com', :linked_in)        #=> {:linked_in=>1001}
+```
+
+If you don't specify a social tracker, then all of them are used.
+
+``` ruby
+    PageRankr.ranks('www.google.com', :linked_in)
+        #=> {:linked_in=>1001}
+
+    # this also gives the same result
+    PageRankr.ranks('www.google.com')
+        #=> {:linked_in=>1001}
+```
+
+Valid social trackers are: ':linked_in`. To get this you can do:
+
+``` ruby
+    PageRankr.social_trackers #=> [:linked_in]
+```
+
+
 ## Use it a la carte!
 
 From versions >= 3, everything should be usable in a much more a la carte manner. If all you care about is google page rank (which I speculate is common) you can get that all by itself:
