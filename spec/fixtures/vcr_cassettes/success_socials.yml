@@ -1,0 +1,56 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://www.linkedin.com/countserv/count/share?url=www.google.com&callback=_&format=json
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      user-agent:
+      - Mozilla/5.0 (Macintosh; Intel Mac OS X 10_7_4) AppleWebKit/534.56.5 (KHTML,
+        like Gecko) Version/5.1.6 Safari/534.56.5
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      server:
+      - Apache-Coyote/1.1
+      content-type:
+      - application/json;charset=UTF-8
+      content-length:
+      - '74'
+      vary:
+      - Accept-Encoding
+      date:
+      - Sat, 13 Dec 2014 12:40:01 GMT
+      x-frame-options:
+      - sameorigin
+      x-content-type-options:
+      - nosniff
+      x-xss-protection:
+      - 1; mode=block
+      x-li-fabric:
+      - prod-ltx1
+      strict-transport-security:
+      - max-age=0
+      pragma:
+      - no-cache
+      expires:
+      - Thu, 01 Jan 1970 00:00:00 GMT
+      cache-control:
+      - no-cache, no-store
+      x-li-pop:
+      - PROD-IDB2
+      x-li-uuid:
+      - PfwBGPRurxOg8uv8GysAAA==
+      set-cookie:
+      - lidc="b=TB21:g=16:u=1:i=1418474402:t=1418560802:s=2246595539"; Expires=Sun,
+        14 Dec 2014 12:40:02 GMT; domain=.linkedin.com; Path=/
+    body:
+      encoding: UTF-8
+      string: '{"count":1000,"fCnt":"1,000","fCntPlusOne":"1,001","url":"www.google.com"}'
+    http_version: '1.1'
+  recorded_at: Sat, 13 Dec 2014 12:40:02 GMT
+recorded_with: VCR 2.9.3
