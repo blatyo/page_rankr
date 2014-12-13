@@ -2,6 +2,7 @@ require File.expand_path("../page_rankr/backlinks", __FILE__)
 require File.expand_path("../page_rankr/ranks", __FILE__)
 require File.expand_path("../page_rankr/indexes", __FILE__)
 require File.expand_path("../page_rankr/proxy_services", __FILE__)
+require File.expand_path("../page_rankr/socials", __FILE__)
 
 module PageRankr
   class MethodRequired             < StandardError; end
@@ -36,6 +37,15 @@ module PageRankr
     
     def index_trackers
       Indexes.new.index_trackers
+    end
+
+    def socials(site, *social_trackers)
+      Socials.new.lookup(Site.new(site), *social_trackers)
+    end
+    alias_method :social, :socials
+
+    def social_trackers
+      Socials.new.social_trackers
     end
   end
 end
