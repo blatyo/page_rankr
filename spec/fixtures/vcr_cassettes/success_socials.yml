@@ -238,4 +238,58 @@ http_interactions:
       string: _({"url":"http://www.google.com","count":75108})
     http_version: '1.1'
   recorded_at: Sun, 14 Dec 2014 22:12:04 GMT
+- request:
+    method: get
+    uri: http://urls.api.twitter.com/1/urls/count.json?url=www.google.com
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      user-agent:
+      - Mozilla/5.0 (Macintosh; Intel Mac OS X 10_7_4) AppleWebKit/534.56.5 (KHTML,
+        like Gecko) Version/5.1.6 Safari/534.56.5
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      cache-control:
+      - must-revalidate, max-age=900
+      content-type:
+      - application/json;charset=utf-8
+      expires:
+      - Sun, 14 Dec 2014 22:48:48 GMT
+      last-modified:
+      - Sun, 14 Dec 2014 22:33:48 GMT
+      server:
+      - tsa_b
+      x-connection-hash:
+      - 93d07126dedfeb56aeadead08d3e2146
+      x-response-time:
+      - '4'
+      content-length:
+      - '52'
+      accept-ranges:
+      - bytes
+      date:
+      - Sun, 14 Dec 2014 22:33:48 GMT
+      via:
+      - 1.1 varnish
+      age:
+      - '0'
+      connection:
+      - close
+      x-served-by:
+      - cache-tw-lon2-cr1-24-TWLON2
+      x-cache:
+      - MISS
+      x-cache-hits:
+      - '0'
+      vary:
+      - Accept-Encoding
+    body:
+      encoding: UTF-8
+      string: '{"count":21933764,"url":"http:\/\/www.google.com\/"}'
+    http_version: '1.1'
+  recorded_at: Sun, 14 Dec 2014 22:33:48 GMT
 recorded_with: VCR 2.9.3
