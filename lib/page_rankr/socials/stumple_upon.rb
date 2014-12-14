@@ -2,7 +2,7 @@ require File.expand_path('../../social', __FILE__)
 
 module PageRankr
   class Socials
-    class StumpledUpon
+    class StumpleUpon
       include Social
 
       def url
