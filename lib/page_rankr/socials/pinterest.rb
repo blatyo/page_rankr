@@ -1,7 +1,5 @@
 require File.expand_path('../../social', __FILE__)
 
-require 'pry'
-
 module PageRankr
   class Socials
     class Pinterest
