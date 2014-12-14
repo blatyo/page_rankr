@@ -2,6 +2,45 @@
 http_interactions:
 - request:
     method: get
+    uri: http://www.stumbleupon.com/services/1.01/badge.getinfo?url=please-dont-register-a-site-that-breaks-this-test.com
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      user-agent:
+      - Mozilla/5.0 (Macintosh; Intel Mac OS X 10_7_4) AppleWebKit/534.56.5 (KHTML,
+        like Gecko) Version/5.1.6 Safari/534.56.5
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      server:
+      - Apache
+      p3p:
+      - policyref="/w3c/p3p.xml", CP="CURa ADMa DEVa PSAo PSDo OUR BUS UNI PUR INT
+        DEM STA PRE COM NAV OTC NOI DSP COR"
+      vary:
+      - Accept-Encoding
+      content-type:
+      - text/plain; charset=iso-8859-1
+      content-length:
+      - '140'
+      accept-ranges:
+      - bytes
+      date:
+      - Sun, 14 Dec 2014 20:30:37 GMT
+      age:
+      - '0'
+      connection:
+      - close
+    body:
+      encoding: UTF-8
+      string: '{"result":{"url":"http:\/\/please-dont-register-a-site-that-breaks-this-test.com\/","in_index":false},"timestamp":1418589037,"success":true}'
+    http_version: '1.1'
+  recorded_at: Sun, 14 Dec 2014 20:30:37 GMT
+- request:
+    method: get
     uri: https://www.linkedin.com/countserv/count/share?url=please-dont-register-a-site-that-breaks-this-test.com&callback=_&format=json
     body:
       encoding: US-ASCII
@@ -24,7 +63,7 @@ http_interactions:
       vary:
       - Accept-Encoding
       date:
-      - Sat, 13 Dec 2014 12:40:02 GMT
+      - Sun, 14 Dec 2014 20:30:37 GMT
       x-frame-options:
       - sameorigin
       x-content-type-options:
@@ -44,13 +83,13 @@ http_interactions:
       x-li-pop:
       - PROD-IDB2
       x-li-uuid:
-      - AlD9NfRurxOgEyr9GysAAA==
+      - +VTSvjbXrxNAjNwANSsAAA==
       set-cookie:
-      - lidc="b=TB21:g=16:u=1:i=1418474402:t=1418560802:s=2246595539"; Expires=Sun,
-        14 Dec 2014 12:40:02 GMT; domain=.linkedin.com; Path=/
+      - lidc="b=TB21:g=17:u=1:i=1418589037:t=1418675437:s=3710382154"; Expires=Mon,
+        15 Dec 2014 20:30:37 GMT; domain=.linkedin.com; Path=/
     body:
       encoding: UTF-8
       string: '{"count":0,"fCnt":"0","fCntPlusOne":"1","url":"please-dont-register-a-site-that-breaks-this-test.com"}'
     http_version: '1.1'
-  recorded_at: Sat, 13 Dec 2014 12:40:02 GMT
+  recorded_at: Sun, 14 Dec 2014 20:30:37 GMT
 recorded_with: VCR 2.9.3

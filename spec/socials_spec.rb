@@ -16,8 +16,10 @@ describe PageRankr do
       end
 
       it{ should have_key(:linked_in) }
+      it{ should have_key(:stumpled_upon) }
 
       it{ subject[:linked_in].should > 500 }
+      it{ subject[:stumpled_upon].should > 20000 }
     end
 
     describe "failure" do
@@ -30,6 +32,7 @@ describe PageRankr do
       it{ should have_key(:linked_in) }
 
       it{ subject[:linked_in].should == 0 }
+      it{ subject[:stumpled_upon].should be_nil }
     end
   end
 

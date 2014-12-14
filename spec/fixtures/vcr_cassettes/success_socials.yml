@@ -24,7 +24,7 @@ http_interactions:
       vary:
       - Accept-Encoding
       date:
-      - Sat, 13 Dec 2014 12:40:01 GMT
+      - Sun, 14 Dec 2014 20:30:35 GMT
       x-frame-options:
       - sameorigin
       x-content-type-options:
@@ -44,13 +44,52 @@ http_interactions:
       x-li-pop:
       - PROD-IDB2
       x-li-uuid:
-      - PfwBGPRurxOg8uv8GysAAA==
+      - jzYJTzbXrxMwY7vjNCsAAA==
       set-cookie:
-      - lidc="b=TB21:g=16:u=1:i=1418474402:t=1418560802:s=2246595539"; Expires=Sun,
-        14 Dec 2014 12:40:02 GMT; domain=.linkedin.com; Path=/
+      - lidc="b=TB21:g=17:u=1:i=1418589036:t=1418675436:s=3661554024"; Expires=Mon,
+        15 Dec 2014 20:30:36 GMT; domain=.linkedin.com; Path=/
     body:
       encoding: UTF-8
-      string: '{"count":1000,"fCnt":"1,000","fCntPlusOne":"1,001","url":"www.google.com"}'
+      string: '{"count":1003,"fCnt":"1,003","fCntPlusOne":"1,004","url":"www.google.com"}'
     http_version: '1.1'
-  recorded_at: Sat, 13 Dec 2014 12:40:02 GMT
+  recorded_at: Sun, 14 Dec 2014 20:30:36 GMT
+- request:
+    method: get
+    uri: http://www.stumbleupon.com/services/1.01/badge.getinfo?url=www.google.com
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      user-agent:
+      - Mozilla/5.0 (Macintosh; Intel Mac OS X 10_7_4) AppleWebKit/534.56.5 (KHTML,
+        like Gecko) Version/5.1.6 Safari/534.56.5
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      server:
+      - Apache
+      p3p:
+      - policyref="/w3c/p3p.xml", CP="CURa ADMa DEVa PSAo PSDo OUR BUS UNI PUR INT
+        DEM STA PRE COM NAV OTC NOI DSP COR"
+      vary:
+      - Accept-Encoding
+      content-type:
+      - text/plain; charset=iso-8859-1
+      content-length:
+      - '521'
+      accept-ranges:
+      - bytes
+      date:
+      - Sun, 14 Dec 2014 20:30:36 GMT
+      age:
+      - '0'
+      connection:
+      - close
+    body:
+      encoding: UTF-8
+      string: '{"result":{"url":"http:\/\/www.google.com\/","in_index":true,"publicid":"2pI1xR","views":255078,"title":"Google","thumbnail":"http:\/\/cdn.stumble-upon.com\/mthumb\/31\/10031.jpg","thumbnail_b":"http:\/\/cdn.stumble-upon.com\/bthumb\/31\/10031.jpg","submit_link":"http:\/\/www.stumbleupon.com\/badge\/?url=http:\/\/www.google.com\/","badge_link":"http:\/\/www.stumbleupon.com\/badge\/?url=http:\/\/www.google.com\/","info_link":"http:\/\/www.stumbleupon.com\/url\/www.google.com\/"},"timestamp":1418589036,"success":true}'
+    http_version: '1.1'
+  recorded_at: Sun, 14 Dec 2014 20:30:36 GMT
 recorded_with: VCR 2.9.3
