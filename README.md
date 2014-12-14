@@ -131,18 +131,18 @@ Social signals are a somewhat oversimplified way of telling how popular a site o
 If you don't specify a social tracker, then all of them are used.
 
 ``` ruby
-    PageRankr.socials('www.google.com', :linked_in, :pinterest, :stumpled_upon, :twitter)
-        #=> {:linked_in=>1001, :pinterest=>75108, :stumpled_upon=>255078, :twitter=>21933764}
+    PageRankr.socials('www.google.com', :linked_in, :pinterest, :stumbled_upon, :twitter)
+        #=> {:linked_in=>1001, :pinterest=>75108, :stumple_upon=>255078, :twitter=>21933764}
 
     # this also gives the same result
     PageRankr.socials('www.google.com')
-        #=> {:linked_in=>1001, :pinterest=>75108, :stumpled_upon=>255078, :twitter=>21933764}
+        #=> {:linked_in=>1001, :pinterest=>75108, :stumble_upon=>255078, :twitter=>21933764}
 ```
 
-Valid social trackers are: `:linked_in, :pinterest, :stumpled_upon, :twitter`. To get this you can do:
+Valid social trackers are: `:linked_in, :pinterest, :stumble_upon, :twitter`. To get this you can do:
 
 ``` ruby
-    PageRankr.social_trackers #=> [:linked_in, :pinterest, :stumpled_upon, :twitter]
+    PageRankr.social_trackers #=> [:linked_in, :pinterest, :stumble_upon, :twitter]
 ```
 
 
