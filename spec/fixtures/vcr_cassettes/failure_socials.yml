@@ -35,7 +35,7 @@ http_interactions:
       connection:
       - close
     body:
-      encoding: UTF-8
+      encoding: ISO-8859-1
       string: '{"result":{"url":"http:\/\/please-dont-register-a-site-that-breaks-this-test.com\/","in_index":false},"timestamp":1418589037,"success":true}'
     http_version: '1.1'
   recorded_at: Sun, 14 Dec 2014 20:30:37 GMT
@@ -92,4 +92,116 @@ http_interactions:
       string: '{"count":0,"fCnt":"0","fCntPlusOne":"1","url":"please-dont-register-a-site-that-breaks-this-test.com"}'
     http_version: '1.1'
   recorded_at: Sun, 14 Dec 2014 20:30:37 GMT
+- request:
+    method: get
+    uri: http://api.pinterest.com/v1/urls/count.json?url=http%3A%2F%2Fplease-dont-register-a-site-that-breaks-this-test.com
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      user-agent:
+      - Mozilla/5.0 (Macintosh; Intel Mac OS X 10_7_4) AppleWebKit/534.56.5 (KHTML,
+        like Gecko) Version/5.1.6 Safari/534.56.5
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      cache-control:
+      - private
+      content-type:
+      - application/javascript
+      expires:
+      - Sun, 14 Dec 2014 22:21:08 GMT
+      x-pinterest-rid:
+      - '322346816351'
+      x-varnish:
+      - '2086744508'
+      date:
+      - Sun, 14 Dec 2014 22:06:08 GMT
+      content-length:
+      - '94'
+      connection:
+      - close
+    body:
+      encoding: UTF-8
+      string: receiveCount({"url":"http://please-dont-register-a-site-that-breaks-this-test.com","count":0})
+    http_version: '1.1'
+  recorded_at: Sun, 14 Dec 2014 22:06:08 GMT
+- request:
+    method: get
+    uri: http://api.pinterest.com/v1/urls/count.json?url=http%3A%2F%2Fplease-dont-register-a-site-that-breaks-this-test.com&callback=json
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      user-agent:
+      - Mozilla/5.0 (Macintosh; Intel Mac OS X 10_7_4) AppleWebKit/534.56.5 (KHTML,
+        like Gecko) Version/5.1.6 Safari/534.56.5
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      accept-ranges:
+      - bytes
+      cache-control:
+      - private
+      content-type:
+      - application/javascript
+      expires:
+      - Sun, 14 Dec 2014 22:23:57 GMT
+      x-pinterest-rid:
+      - '829505444727'
+      x-varnish:
+      - '2974100925'
+      content-length:
+      - '86'
+      date:
+      - Sun, 14 Dec 2014 22:08:57 GMT
+      connection:
+      - close
+    body:
+      encoding: UTF-8
+      string: json({"url":"http://please-dont-register-a-site-that-breaks-this-test.com","count":0})
+    http_version: '1.1'
+  recorded_at: Sun, 14 Dec 2014 22:08:57 GMT
+- request:
+    method: get
+    uri: http://api.pinterest.com/v1/urls/count.json?url=http%3A%2F%2Fplease-dont-register-a-site-that-breaks-this-test.com&callback=_
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      user-agent:
+      - Mozilla/5.0 (Macintosh; Intel Mac OS X 10_7_4) AppleWebKit/534.56.5 (KHTML,
+        like Gecko) Version/5.1.6 Safari/534.56.5
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      accept-ranges:
+      - bytes
+      cache-control:
+      - private
+      content-type:
+      - application/javascript
+      expires:
+      - Sun, 14 Dec 2014 22:27:04 GMT
+      x-pinterest-rid:
+      - '444313885856'
+      x-varnish:
+      - '2396561074'
+      content-length:
+      - '83'
+      date:
+      - Sun, 14 Dec 2014 22:12:04 GMT
+      connection:
+      - close
+    body:
+      encoding: UTF-8
+      string: _({"url":"http://please-dont-register-a-site-that-breaks-this-test.com","count":0})
+    http_version: '1.1'
+  recorded_at: Sun, 14 Dec 2014 22:12:04 GMT
 recorded_with: VCR 2.9.3
