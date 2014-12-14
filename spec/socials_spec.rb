@@ -37,6 +37,9 @@ describe PageRankr do
       end
 
       it{ should have_key(:linked_in) }
+      it{ should have_key(:pinterest) }
+      it{ should have_key(:stumpled_upon) }
+      it{ should have_key(:twitter) }
 
       it{ subject[:linked_in].should == 0 }
       it{ subject[:pinterest].should == 0 }
