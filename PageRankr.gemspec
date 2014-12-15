@@ -8,8 +8,8 @@ Gem::Specification.new do |s|
   s.email       = ["blatyo@gmail.com"]
   s.license     = 'MIT'
   s.homepage    = "http://github.com/blatyo/page_rankr"
-  s.summary     = "Easy way to retrieve Google Page Rank, Alexa Rank, backlink counts, and index counts."
-  s.description = "Easy way to retrieve Google Page Rank, Alexa Rank, backlink counts, and index counts."
+  s.summary     = "Easy way to retrieve Google Page Rank, Alexa Rank, backlink counts, index counts and different types of social signals"
+  s.description = "Easy way to retrieve Google Page Rank, Alexa Rank, backlink counts, index counts and different types of social signals"
 
   s.required_rubygems_version = ">= 1.3.6"
   s.add_development_dependency "rake"
