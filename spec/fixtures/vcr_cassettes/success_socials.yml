@@ -2,6 +2,42 @@
 http_interactions:
 - request:
     method: get
+    uri: http://api.pinterest.com/v1/urls/count.json?url=http%3A%2F%2Fwww.google.com&regex=
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      user-agent:
+      - Mozilla/5.0 (Macintosh; Intel Mac OS X 10_7_4) AppleWebKit/534.56.5 (KHTML,
+        like Gecko) Version/5.1.6 Safari/534.56.5
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      cache-control:
+      - private
+      content-type:
+      - application/javascript
+      expires:
+      - Sun, 14 Dec 2014 21:50:19 GMT
+      x-pinterest-rid:
+      - '719785536047'
+      x-varnish:
+      - '2943351080'
+      date:
+      - Sun, 14 Dec 2014 21:35:19 GMT
+      content-length:
+      - '59'
+      connection:
+      - close
+    body:
+      encoding: UTF-8
+      string: receiveCount({"url":"http://www.google.com","count":75108})
+    http_version: '1.1'
+  recorded_at: Sun, 14 Dec 2014 21:35:19 GMT
+- request:
+    method: get
     uri: https://www.linkedin.com/countserv/count/share?url=www.google.com&callback=_&format=json
     body:
       encoding: US-ASCII
@@ -24,7 +60,7 @@ http_interactions:
       vary:
       - Accept-Encoding
       date:
-      - Sat, 13 Dec 2014 12:40:01 GMT
+      - Sun, 14 Dec 2014 21:35:19 GMT
       x-frame-options:
       - sameorigin
       x-content-type-options:
@@ -44,13 +80,417 @@ http_interactions:
       x-li-pop:
       - PROD-IDB2
       x-li-uuid:
-      - PfwBGPRurxOg8uv8GysAAA==
+      - oWvbq77arxNAvwkANSsAAA==
       set-cookie:
-      - lidc="b=TB21:g=16:u=1:i=1418474402:t=1418560802:s=2246595539"; Expires=Sun,
-        14 Dec 2014 12:40:02 GMT; domain=.linkedin.com; Path=/
+      - lidc="b=TB21:g=17:u=1:i=1418592920:t=1418679320:s=1903743844"; Expires=Mon,
+        15 Dec 2014 21:35:20 GMT; domain=.linkedin.com; Path=/
     body:
       encoding: UTF-8
-      string: '{"count":1000,"fCnt":"1,000","fCntPlusOne":"1,001","url":"www.google.com"}'
+      string: '{"count":1004,"fCnt":"1,004","fCntPlusOne":"1,005","url":"www.google.com"}'
     http_version: '1.1'
-  recorded_at: Sat, 13 Dec 2014 12:40:02 GMT
+  recorded_at: Sun, 14 Dec 2014 21:35:20 GMT
+- request:
+    method: get
+    uri: http://www.stumbleupon.com/services/1.01/badge.getinfo?url=www.google.com
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      user-agent:
+      - Mozilla/5.0 (Macintosh; Intel Mac OS X 10_7_4) AppleWebKit/534.56.5 (KHTML,
+        like Gecko) Version/5.1.6 Safari/534.56.5
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      server:
+      - Apache
+      p3p:
+      - policyref="/w3c/p3p.xml", CP="CURa ADMa DEVa PSAo PSDo OUR BUS UNI PUR INT
+        DEM STA PRE COM NAV OTC NOI DSP COR"
+      vary:
+      - Accept-Encoding
+      content-type:
+      - text/plain; charset=iso-8859-1
+      content-length:
+      - '521'
+      accept-ranges:
+      - bytes
+      date:
+      - Sun, 14 Dec 2014 21:35:20 GMT
+      age:
+      - '0'
+      connection:
+      - close
+    body:
+      encoding: ISO-8859-1
+      string: '{"result":{"url":"http:\/\/www.google.com\/","in_index":true,"publicid":"2pI1xR","views":255078,"title":"Google","thumbnail":"http:\/\/cdn.stumble-upon.com\/mthumb\/31\/10031.jpg","thumbnail_b":"http:\/\/cdn.stumble-upon.com\/bthumb\/31\/10031.jpg","submit_link":"http:\/\/www.stumbleupon.com\/badge\/?url=http:\/\/www.google.com\/","badge_link":"http:\/\/www.stumbleupon.com\/badge\/?url=http:\/\/www.google.com\/","info_link":"http:\/\/www.stumbleupon.com\/url\/www.google.com\/"},"timestamp":1418592920,"success":true}'
+    http_version: '1.1'
+  recorded_at: Sun, 14 Dec 2014 21:35:20 GMT
+- request:
+    method: get
+    uri: http://api.pinterest.com/v1/urls/count.json?url=http%3A%2F%2Fwww.google.com
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      user-agent:
+      - Mozilla/5.0 (Macintosh; Intel Mac OS X 10_7_4) AppleWebKit/534.56.5 (KHTML,
+        like Gecko) Version/5.1.6 Safari/534.56.5
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      cache-control:
+      - private
+      content-type:
+      - application/javascript
+      expires:
+      - Sun, 14 Dec 2014 21:50:35 GMT
+      x-pinterest-rid:
+      - '513151227267'
+      x-varnish:
+      - '3994528966'
+      date:
+      - Sun, 14 Dec 2014 21:35:35 GMT
+      content-length:
+      - '59'
+      connection:
+      - close
+    body:
+      encoding: UTF-8
+      string: receiveCount({"url":"http://www.google.com","count":75108})
+    http_version: '1.1'
+  recorded_at: Sun, 14 Dec 2014 21:35:35 GMT
+- request:
+    method: get
+    uri: http://api.pinterest.com/v1/urls/count.json?url=http%3A%2F%2Fwww.google.com&callback=json
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      user-agent:
+      - Mozilla/5.0 (Macintosh; Intel Mac OS X 10_7_4) AppleWebKit/534.56.5 (KHTML,
+        like Gecko) Version/5.1.6 Safari/534.56.5
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      accept-ranges:
+      - bytes
+      cache-control:
+      - private
+      content-type:
+      - application/javascript
+      expires:
+      - Sun, 14 Dec 2014 22:23:57 GMT
+      x-pinterest-rid:
+      - '295300042660'
+      x-varnish:
+      - '2232579985'
+      content-length:
+      - '51'
+      date:
+      - Sun, 14 Dec 2014 22:08:57 GMT
+      connection:
+      - close
+    body:
+      encoding: UTF-8
+      string: json({"url":"http://www.google.com","count":75108})
+    http_version: '1.1'
+  recorded_at: Sun, 14 Dec 2014 22:08:57 GMT
+- request:
+    method: get
+    uri: http://api.pinterest.com/v1/urls/count.json?url=http%3A%2F%2Fwww.google.com&callback=_
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      user-agent:
+      - Mozilla/5.0 (Macintosh; Intel Mac OS X 10_7_4) AppleWebKit/534.56.5 (KHTML,
+        like Gecko) Version/5.1.6 Safari/534.56.5
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      cache-control:
+      - private
+      content-type:
+      - application/javascript
+      expires:
+      - Sun, 14 Dec 2014 22:27:04 GMT
+      x-pinterest-rid:
+      - '159754960482'
+      x-varnish:
+      - '3209661084'
+      date:
+      - Sun, 14 Dec 2014 22:12:04 GMT
+      content-length:
+      - '48'
+      connection:
+      - close
+    body:
+      encoding: UTF-8
+      string: _({"url":"http://www.google.com","count":75108})
+    http_version: '1.1'
+  recorded_at: Sun, 14 Dec 2014 22:12:04 GMT
+- request:
+    method: get
+    uri: http://urls.api.twitter.com/1/urls/count.json?url=www.google.com
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      user-agent:
+      - Mozilla/5.0 (Macintosh; Intel Mac OS X 10_7_4) AppleWebKit/534.56.5 (KHTML,
+        like Gecko) Version/5.1.6 Safari/534.56.5
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      cache-control:
+      - must-revalidate, max-age=900
+      content-type:
+      - application/json;charset=utf-8
+      expires:
+      - Sun, 14 Dec 2014 22:48:48 GMT
+      last-modified:
+      - Sun, 14 Dec 2014 22:33:48 GMT
+      server:
+      - tsa_b
+      x-connection-hash:
+      - 93d07126dedfeb56aeadead08d3e2146
+      x-response-time:
+      - '4'
+      content-length:
+      - '52'
+      accept-ranges:
+      - bytes
+      date:
+      - Sun, 14 Dec 2014 22:33:48 GMT
+      via:
+      - 1.1 varnish
+      age:
+      - '0'
+      connection:
+      - close
+      x-served-by:
+      - cache-tw-lon2-cr1-24-TWLON2
+      x-cache:
+      - MISS
+      x-cache-hits:
+      - '0'
+      vary:
+      - Accept-Encoding
+    body:
+      encoding: UTF-8
+      string: '{"count":21933764,"url":"http:\/\/www.google.com\/"}'
+    http_version: '1.1'
+  recorded_at: Sun, 14 Dec 2014 22:33:48 GMT
+- request:
+    method: get
+    uri: http://graph.facebook.com/?id=www.google.com
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      user-agent:
+      - Mozilla/5.0 (Macintosh; Intel Mac OS X 10_7_4) AppleWebKit/534.56.5 (KHTML,
+        like Gecko) Version/5.1.6 Safari/534.56.5
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      facebook-api-version:
+      - v1.0
+      etag:
+      - '"c5abac86a2d9b9b4831a554a6560eed69975656e"'
+      content-type:
+      - text/javascript; charset=UTF-8
+      pragma:
+      - no-cache
+      access-control-allow-origin:
+      - '*'
+      x-fb-rev:
+      - '1531031'
+      cache-control:
+      - private, no-cache, no-store, must-revalidate
+      expires:
+      - Sat, 01 Jan 2000 00:00:00 GMT
+      x-fb-debug:
+      - Ge+TmdEu8GPFOsiZ02gMvdxWojhg9141t2mPwTmxS2K0lLvppzy0m544OpHksvgOm39tCoY49+rkwOdOxUm3wQ==
+      date:
+      - Mon, 15 Dec 2014 07:38:08 GMT
+      connection:
+      - close
+    body:
+      encoding: UTF-8
+      string: |-
+        {
+           "id": "555777511121126",
+           "about": "\u0628\u064a\u062f\u062c \u0644\u0644\u0641\u0631\u0641\u0634\u0629 \u0645\u0644\u0646\u0627\u0634 \u0639\u0644\u0627\u0642\u0629 \u0628\u0627\u0644\u0633\u064a\u0627\u0633\u0629 ",
+           "can_post": false,
+           "category": "Community",
+           "checkins": 0,
+           "cover": {
+              "cover_id": 827181123980762,
+              "offset_x": 0,
+              "offset_y": 100,
+              "source": "https://fbcdn-sphotos-c-a.akamaihd.net/hphotos-ak-xap1/v/t1.0-9/941251_827181123980762_4585330140254408769_n.jpg?oh=259182ec68116579fbb0e33bb43807f9&oe=5512BF4E&__gda__=1426087603_482a0ac01f1f32e0f819f7fcff8af039",
+              "id": "827181123980762"
+           },
+           "description": "\u0627\u0646\u0627 \u062d\u0644\u0645\u0649 \u0645\u062c\u0646\u0648\u0646 \u0628\u0633 \u0627\u0644\u0635\u0631\u0627\u062d\u0629 \u0647\u0648 \u0645\u0636\u0645\u0648\u0646 \u0627\u0648\u0642\u0627\u062a \u0628\u064a\u0639\u0627\u0646\u062f \u0641\u064a\u0627...\u0648\u0643\u062a\u064a\u0631 \u0628\u062d\u0633 \u0627\u0646\u0647 \u0645\u0634 \u0644\u064a\u0627 \u0628\u0633 \u0628\u064a\u0631\u062c\u0639 \u0648\u064a\u0642\u0648\u0644\u0649 \u0627\u0646\u062a\u0649 \u0642\u062f \u0627\u0644\u0645\u0633\u0626\u0648\u0644\u064a\u0629",
+           "has_added_app": false,
+           "is_community_page": false,
+           "is_published": true,
+           "likes": 1804,
+           "link": "https://www.facebook.com/wwwgooglecom",
+           "location": {
+              "city": "\u0627\u0644\u0642\u0627\u0647\u0631\u0629",
+              "street": "\u0627\u0644\u0645\u0639\u0627\u062f\u0649"
+           },
+           "name": "\u0641\u062a\u064a\u0627\u062a \u0627\u0644\u0645\u0633\u062a\u0642\u0628\u0644",
+           "parking": {
+              "lot": 0,
+              "street": 0,
+              "valet": 0
+           },
+           "talking_about_count": 6,
+           "username": "wwwgooglecom",
+           "were_here_count": 0
+        }
+    http_version: '1.1'
+  recorded_at: Mon, 15 Dec 2014 07:38:07 GMT
+- request:
+    method: get
+    uri: http://graph.facebook.com/?id=http%3A%2F%2Fwww.google.com
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      user-agent:
+      - Mozilla/5.0 (Macintosh; Intel Mac OS X 10_7_4) AppleWebKit/534.56.5 (KHTML,
+        like Gecko) Version/5.1.6 Safari/534.56.5
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      facebook-api-version:
+      - v1.0
+      etag:
+      - '"8d8cc20239cd168ed7eef1959701c05ac0b5fd9e"'
+      content-type:
+      - text/javascript; charset=UTF-8
+      pragma:
+      - no-cache
+      access-control-allow-origin:
+      - '*'
+      x-fb-rev:
+      - '1531031'
+      cache-control:
+      - private, no-cache, no-store, must-revalidate
+      expires:
+      - Sat, 01 Jan 2000 00:00:00 GMT
+      x-fb-debug:
+      - Dz6KIND/MqOFlj0NjhUqHRaLh1u5ZKxHlzR3STP9yMdtrRxYrGyZA6dg6FgljfarWmdxE8Bp0tSoF7O+8MFY2w==
+      date:
+      - Mon, 15 Dec 2014 07:39:09 GMT
+      connection:
+      - close
+      content-length:
+      - '79'
+    body:
+      encoding: UTF-8
+      string: |-
+        {
+           "id": "http://www.google.com",
+           "shares": 10009903,
+           "comments": 934
+        }
+    http_version: '1.1'
+  recorded_at: Mon, 15 Dec 2014 07:39:09 GMT
+- request:
+    method: get
+    uri: http://share.yandex.ru/gpp.xml?url=http%3A%2F%2Fwww.google.com
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      user-agent:
+      - Mozilla/5.0 (Macintosh; Intel Mac OS X 10_7_4) AppleWebKit/534.56.5 (KHTML,
+        like Gecko) Version/5.1.6 Safari/534.56.5
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      server:
+      - nginx/1.6.2
+      date:
+      - Mon, 15 Dec 2014 19:34:55 GMT
+      content-type:
+      - text/javascript; charset=utf-8
+      transfer-encoding:
+      - chunked
+      connection:
+      - close
+      cache-control:
+      - max-age=0, must-revalidate, proxy-revalidate, no-cache, no-store, private
+      expires:
+      - Mon, 15 Dec 2014 19:34:55 GMT
+      pragma:
+      - no-cache
+      set-cookie:
+      - yandexuid=587059891418672095; domain=.yandex.ru; path=/; expires=Tue, 19 Jan
+        2038 03:14:07 GMT
+    body:
+      encoding: UTF-8
+      string: services.gplus.cb("10000");
+    http_version: '1.1'
+  recorded_at: Mon, 15 Dec 2014 19:34:55 GMT
+- request:
+    method: get
+    uri: http://vk.com/share.php?url=http%3A%2F%2Fwww.google.com&act=count
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      user-agent:
+      - Mozilla/5.0 (Macintosh; Intel Mac OS X 10_7_4) AppleWebKit/534.56.5 (KHTML,
+        like Gecko) Version/5.1.6 Safari/534.56.5
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      server:
+      - Apache
+      date:
+      - Mon, 15 Dec 2014 19:57:48 GMT
+      content-type:
+      - text/html; charset=windows-1251
+      content-length:
+      - '24'
+      connection:
+      - close
+      x-powered-by:
+      - PHP/3.9812
+      set-cookie:
+      - remixlang=3; expires=Sun, 06 Dec 2015 22:21:34 GMT; path=/; domain=.vk.com
+      pragma:
+      - no-cache
+      cache-control:
+      - no-store
+    body:
+      encoding: UTF-8
+      string: VK.Share.count(0, 3725);
+    http_version: '1.1'
+  recorded_at: Mon, 15 Dec 2014 19:57:49 GMT
 recorded_with: VCR 2.9.3

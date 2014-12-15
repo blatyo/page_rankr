@@ -1,6 +1,6 @@
 # PageRankr [![Build Status](https://api.travis-ci.org/blatyo/page_rankr.png)](http://travis-ci.org/blatyo/page_rankr)
 
-Provides an easy way to retrieve Google Page Rank, Alexa Rank, backlink counts, and index counts.
+Provides an easy way to retrieve Google Page Rank, Alexa Rank, backlink counts, index counts and different types of social signals.
 
 I'm looking for co-maintainers. If you'd like to help maintain this project, let me know.
 
@@ -131,18 +131,18 @@ Social signals are a somewhat oversimplified way of telling how popular a site o
 If you don't specify a social tracker, then all of them are used.
 
 ``` ruby
-    PageRankr.ranks('www.google.com', :linked_in)
-        #=> {:linked_in=>1001}
+    PageRankr.socials('www.google.com', :google, :linked_in, :pinterest, :stumbled_upon, :twitter, :vk)
+        #=> {:google=>10000, :linked_in=>1001, :pinterest=>75108, :stumple_upon=>255078, :twitter=>21933764, :vk=>3725}
 
     # this also gives the same result
-    PageRankr.ranks('www.google.com')
-        #=> {:linked_in=>1001}
+    PageRankr.socials('www.google.com')
+        #=> {:google=>10000, :linked_in=>1001, :pinterest=>75108, :stumble_upon=>255078, :twitter=>21933764, :vk=>3725}
 ```
 
-Valid social trackers are: ':linked_in`. To get this you can do:
+Valid social trackers are: `:google, :linked_in, :pinterest, :stumble_upon, :twitter, :vk`. To get this you can do:
 
 ``` ruby
-    PageRankr.social_trackers #=> [:linked_in]
+    PageRankr.social_trackers #=> [:google, :linked_in, :pinterest, :stumble_upon, :twitter, :vk]
 ```
 
 

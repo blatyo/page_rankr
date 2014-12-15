@@ -2,6 +2,45 @@
 http_interactions:
 - request:
     method: get
+    uri: http://www.stumbleupon.com/services/1.01/badge.getinfo?url=please-dont-register-a-site-that-breaks-this-test.com
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      user-agent:
+      - Mozilla/5.0 (Macintosh; Intel Mac OS X 10_7_4) AppleWebKit/534.56.5 (KHTML,
+        like Gecko) Version/5.1.6 Safari/534.56.5
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      server:
+      - Apache
+      p3p:
+      - policyref="/w3c/p3p.xml", CP="CURa ADMa DEVa PSAo PSDo OUR BUS UNI PUR INT
+        DEM STA PRE COM NAV OTC NOI DSP COR"
+      vary:
+      - Accept-Encoding
+      content-type:
+      - text/plain; charset=iso-8859-1
+      content-length:
+      - '140'
+      accept-ranges:
+      - bytes
+      date:
+      - Sun, 14 Dec 2014 20:30:37 GMT
+      age:
+      - '0'
+      connection:
+      - close
+    body:
+      encoding: ISO-8859-1
+      string: '{"result":{"url":"http:\/\/please-dont-register-a-site-that-breaks-this-test.com\/","in_index":false},"timestamp":1418589037,"success":true}'
+    http_version: '1.1'
+  recorded_at: Sun, 14 Dec 2014 20:30:37 GMT
+- request:
+    method: get
     uri: https://www.linkedin.com/countserv/count/share?url=please-dont-register-a-site-that-breaks-this-test.com&callback=_&format=json
     body:
       encoding: US-ASCII
@@ -24,7 +63,7 @@ http_interactions:
       vary:
       - Accept-Encoding
       date:
-      - Sat, 13 Dec 2014 12:40:02 GMT
+      - Sun, 14 Dec 2014 20:30:37 GMT
       x-frame-options:
       - sameorigin
       x-content-type-options:
@@ -44,13 +83,355 @@ http_interactions:
       x-li-pop:
       - PROD-IDB2
       x-li-uuid:
-      - AlD9NfRurxOgEyr9GysAAA==
+      - +VTSvjbXrxNAjNwANSsAAA==
       set-cookie:
-      - lidc="b=TB21:g=16:u=1:i=1418474402:t=1418560802:s=2246595539"; Expires=Sun,
-        14 Dec 2014 12:40:02 GMT; domain=.linkedin.com; Path=/
+      - lidc="b=TB21:g=17:u=1:i=1418589037:t=1418675437:s=3710382154"; Expires=Mon,
+        15 Dec 2014 20:30:37 GMT; domain=.linkedin.com; Path=/
     body:
       encoding: UTF-8
       string: '{"count":0,"fCnt":"0","fCntPlusOne":"1","url":"please-dont-register-a-site-that-breaks-this-test.com"}'
     http_version: '1.1'
-  recorded_at: Sat, 13 Dec 2014 12:40:02 GMT
+  recorded_at: Sun, 14 Dec 2014 20:30:37 GMT
+- request:
+    method: get
+    uri: http://api.pinterest.com/v1/urls/count.json?url=http%3A%2F%2Fplease-dont-register-a-site-that-breaks-this-test.com
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      user-agent:
+      - Mozilla/5.0 (Macintosh; Intel Mac OS X 10_7_4) AppleWebKit/534.56.5 (KHTML,
+        like Gecko) Version/5.1.6 Safari/534.56.5
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      cache-control:
+      - private
+      content-type:
+      - application/javascript
+      expires:
+      - Sun, 14 Dec 2014 22:21:08 GMT
+      x-pinterest-rid:
+      - '322346816351'
+      x-varnish:
+      - '2086744508'
+      date:
+      - Sun, 14 Dec 2014 22:06:08 GMT
+      content-length:
+      - '94'
+      connection:
+      - close
+    body:
+      encoding: UTF-8
+      string: receiveCount({"url":"http://please-dont-register-a-site-that-breaks-this-test.com","count":0})
+    http_version: '1.1'
+  recorded_at: Sun, 14 Dec 2014 22:06:08 GMT
+- request:
+    method: get
+    uri: http://api.pinterest.com/v1/urls/count.json?url=http%3A%2F%2Fplease-dont-register-a-site-that-breaks-this-test.com&callback=json
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      user-agent:
+      - Mozilla/5.0 (Macintosh; Intel Mac OS X 10_7_4) AppleWebKit/534.56.5 (KHTML,
+        like Gecko) Version/5.1.6 Safari/534.56.5
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      accept-ranges:
+      - bytes
+      cache-control:
+      - private
+      content-type:
+      - application/javascript
+      expires:
+      - Sun, 14 Dec 2014 22:23:57 GMT
+      x-pinterest-rid:
+      - '829505444727'
+      x-varnish:
+      - '2974100925'
+      content-length:
+      - '86'
+      date:
+      - Sun, 14 Dec 2014 22:08:57 GMT
+      connection:
+      - close
+    body:
+      encoding: UTF-8
+      string: json({"url":"http://please-dont-register-a-site-that-breaks-this-test.com","count":0})
+    http_version: '1.1'
+  recorded_at: Sun, 14 Dec 2014 22:08:57 GMT
+- request:
+    method: get
+    uri: http://api.pinterest.com/v1/urls/count.json?url=http%3A%2F%2Fplease-dont-register-a-site-that-breaks-this-test.com&callback=_
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      user-agent:
+      - Mozilla/5.0 (Macintosh; Intel Mac OS X 10_7_4) AppleWebKit/534.56.5 (KHTML,
+        like Gecko) Version/5.1.6 Safari/534.56.5
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      accept-ranges:
+      - bytes
+      cache-control:
+      - private
+      content-type:
+      - application/javascript
+      expires:
+      - Sun, 14 Dec 2014 22:27:04 GMT
+      x-pinterest-rid:
+      - '444313885856'
+      x-varnish:
+      - '2396561074'
+      content-length:
+      - '83'
+      date:
+      - Sun, 14 Dec 2014 22:12:04 GMT
+      connection:
+      - close
+    body:
+      encoding: UTF-8
+      string: _({"url":"http://please-dont-register-a-site-that-breaks-this-test.com","count":0})
+    http_version: '1.1'
+  recorded_at: Sun, 14 Dec 2014 22:12:04 GMT
+- request:
+    method: get
+    uri: http://urls.api.twitter.com/1/urls/count.json?url=please-dont-register-a-site-that-breaks-this-test.com
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      user-agent:
+      - Mozilla/5.0 (Macintosh; Intel Mac OS X 10_7_4) AppleWebKit/534.56.5 (KHTML,
+        like Gecko) Version/5.1.6 Safari/534.56.5
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      cache-control:
+      - must-revalidate, max-age=900
+      content-type:
+      - application/json;charset=utf-8
+      expires:
+      - Sun, 14 Dec 2014 22:48:49 GMT
+      last-modified:
+      - Sun, 14 Dec 2014 22:33:49 GMT
+      server:
+      - tsa_a
+      x-connection-hash:
+      - ea0f5dcf71ab0ef5536264127bdf22d1
+      x-response-time:
+      - '5'
+      content-length:
+      - '84'
+      accept-ranges:
+      - bytes
+      date:
+      - Sun, 14 Dec 2014 22:33:49 GMT
+      via:
+      - 1.1 varnish
+      age:
+      - '0'
+      connection:
+      - close
+      x-served-by:
+      - cache-tw-lon2-cr1-5-TWLON2
+      x-cache:
+      - MISS
+      x-cache-hits:
+      - '0'
+      vary:
+      - Accept-Encoding
+    body:
+      encoding: UTF-8
+      string: '{"count":0,"url":"http:\/\/please-dont-register-a-site-that-breaks-this-test.com\/"}'
+    http_version: '1.1'
+  recorded_at: Sun, 14 Dec 2014 22:33:49 GMT
+- request:
+    method: get
+    uri: http://graph.facebook.com/?id=please-dont-register-a-site-that-breaks-this-test.com
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      user-agent:
+      - Mozilla/5.0 (Macintosh; Intel Mac OS X 10_7_4) AppleWebKit/534.56.5 (KHTML,
+        like Gecko) Version/5.1.6 Safari/534.56.5
+  response:
+    status:
+      code: 404
+      message: Not Found
+    headers:
+      www-authenticate:
+      - 'OAuth "Facebook Platform" "not_found" "(#803) Some of the aliases you requested
+        do not exist: please-dont-register-a-site-that-breaks-this-test.com"'
+      facebook-api-version:
+      - v1.0
+      content-type:
+      - text/javascript; charset=UTF-8
+      pragma:
+      - no-cache
+      access-control-allow-origin:
+      - '*'
+      x-fb-rev:
+      - '1531031'
+      cache-control:
+      - no-store
+      expires:
+      - Sat, 01 Jan 2000 00:00:00 GMT
+      x-fb-debug:
+      - TlH+xLP2+oomGtR1bxlsFsa2I7w5d8+XAfIpxcb5SmIDizawkopWpFrN9G0H/ZFsjrtePGQu/6b8MgP7qm677Q==
+      date:
+      - Mon, 15 Dec 2014 07:38:08 GMT
+      connection:
+      - close
+      content-length:
+      - '201'
+    body:
+      encoding: UTF-8
+      string: |-
+        {
+           "error": {
+              "message": "(#803) Some of the aliases you requested do not exist: please-dont-register-a-site-that-breaks-this-test.com",
+              "type": "OAuthException",
+              "code": 803
+           }
+        }
+    http_version: '1.1'
+  recorded_at: Mon, 15 Dec 2014 07:38:08 GMT
+- request:
+    method: get
+    uri: http://graph.facebook.com/?id=http%3A%2F%2Fplease-dont-register-a-site-that-breaks-this-test.com
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      user-agent:
+      - Mozilla/5.0 (Macintosh; Intel Mac OS X 10_7_4) AppleWebKit/534.56.5 (KHTML,
+        like Gecko) Version/5.1.6 Safari/534.56.5
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      facebook-api-version:
+      - v1.0
+      etag:
+      - '"084a2bbc7382540addc052eab83eb70ab32dd140"'
+      content-type:
+      - text/javascript; charset=UTF-8
+      pragma:
+      - no-cache
+      access-control-allow-origin:
+      - '*'
+      x-fb-rev:
+      - '1531031'
+      cache-control:
+      - private, no-cache, no-store, must-revalidate
+      expires:
+      - Sat, 01 Jan 2000 00:00:00 GMT
+      x-fb-debug:
+      - 3IhMEVhr5gbcFsVsCkRs/bgQ1xT7TF3nPs7+G66yNmp7yTznzRh719gPv/Hno+pw6Ry3kw4rw0TN6h13wIaZqQ==
+      date:
+      - Mon, 15 Dec 2014 07:39:11 GMT
+      connection:
+      - close
+      content-length:
+      - '75'
+    body:
+      encoding: UTF-8
+      string: |-
+        {
+           "id": "http://please-dont-register-a-site-that-breaks-this-test.com"
+        }
+    http_version: '1.1'
+  recorded_at: Mon, 15 Dec 2014 07:39:10 GMT
+- request:
+    method: get
+    uri: http://share.yandex.ru/gpp.xml?url=http%3A%2F%2Fplease-dont-register-a-site-that-breaks-this-test.com
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      user-agent:
+      - Mozilla/5.0 (Macintosh; Intel Mac OS X 10_7_4) AppleWebKit/534.56.5 (KHTML,
+        like Gecko) Version/5.1.6 Safari/534.56.5
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      server:
+      - nginx/1.6.2
+      date:
+      - Mon, 15 Dec 2014 19:34:56 GMT
+      content-type:
+      - text/javascript; charset=utf-8
+      transfer-encoding:
+      - chunked
+      connection:
+      - close
+      cache-control:
+      - max-age=0, must-revalidate, proxy-revalidate, no-cache, no-store, private
+      expires:
+      - Mon, 15 Dec 2014 19:34:56 GMT
+      pragma:
+      - no-cache
+      set-cookie:
+      - yandexuid=4575016491418672096; domain=.yandex.ru; path=/; expires=Tue, 19
+        Jan 2038 03:14:07 GMT
+    body:
+      encoding: UTF-8
+      string: services.gplus.cb("0");
+    http_version: '1.1'
+  recorded_at: Mon, 15 Dec 2014 19:34:56 GMT
+- request:
+    method: get
+    uri: http://vk.com/share.php?url=http%3A%2F%2Fplease-dont-register-a-site-that-breaks-this-test.com&act=count
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      user-agent:
+      - Mozilla/5.0 (Macintosh; Intel Mac OS X 10_7_4) AppleWebKit/534.56.5 (KHTML,
+        like Gecko) Version/5.1.6 Safari/534.56.5
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      server:
+      - Apache
+      date:
+      - Mon, 15 Dec 2014 19:57:49 GMT
+      content-type:
+      - text/html; charset=windows-1251
+      content-length:
+      - '21'
+      connection:
+      - close
+      x-powered-by:
+      - PHP/3.9812
+      set-cookie:
+      - remixlang=3; expires=Mon, 21 Dec 2015 00:42:36 GMT; path=/; domain=.vk.com
+      pragma:
+      - no-cache
+      cache-control:
+      - no-store
+    body:
+      encoding: UTF-8
+      string: VK.Share.count(0, 0);
+    http_version: '1.1'
+  recorded_at: Mon, 15 Dec 2014 19:57:49 GMT
 recorded_with: VCR 2.9.3
