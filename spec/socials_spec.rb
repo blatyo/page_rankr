@@ -10,6 +10,7 @@ describe PageRankr do
     it{ should include(:pinterest) }
     it{ should include(:stumble_upon) }
     it{ should include(:twitter) }
+    it{ should include(:vk) }
   end
 
   describe "#socials", :focus => true do
@@ -26,6 +27,7 @@ describe PageRankr do
       it{ should have_key(:pinterest) }
       it{ should have_key(:stumble_upon) }
       it{ should have_key(:twitter) }
+      it{ should have_key(:vk) }
 
       it{ subject[:facebook].should > 1000000 }
       it{ subject[:google].should > 5000 }
@@ -33,6 +35,7 @@ describe PageRankr do
       it{ subject[:pinterest].should > 70000 }
       it{ subject[:stumble_upon].should > 20000 }
       it{ subject[:twitter].should > 100000 }
+      it{ subject[:vk].should > 3000 }
     end
 
     describe "failure" do
@@ -48,6 +51,7 @@ describe PageRankr do
       it{ should have_key(:pinterest) }
       it{ should have_key(:stumble_upon) }
       it{ should have_key(:twitter) }
+      it{ should have_key(:vk) }
 
       it{ subject[:facebook].should be_nil }
       it{ subject[:google].should == 0 }
@@ -55,6 +59,7 @@ describe PageRankr do
       it{ subject[:pinterest].should == 0 }
       it{ subject[:stumble_upon].should be_nil }
       it{ subject[:twitter].should == 0 }
+      it{ subject[:vk].should == 0 }
     end
   end
 

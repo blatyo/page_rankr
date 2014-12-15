@@ -455,4 +455,42 @@ http_interactions:
       string: services.gplus.cb("10000");
     http_version: '1.1'
   recorded_at: Mon, 15 Dec 2014 19:34:55 GMT
+- request:
+    method: get
+    uri: http://vk.com/share.php?url=http%3A%2F%2Fwww.google.com&act=count
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      user-agent:
+      - Mozilla/5.0 (Macintosh; Intel Mac OS X 10_7_4) AppleWebKit/534.56.5 (KHTML,
+        like Gecko) Version/5.1.6 Safari/534.56.5
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      server:
+      - Apache
+      date:
+      - Mon, 15 Dec 2014 19:57:48 GMT
+      content-type:
+      - text/html; charset=windows-1251
+      content-length:
+      - '24'
+      connection:
+      - close
+      x-powered-by:
+      - PHP/3.9812
+      set-cookie:
+      - remixlang=3; expires=Sun, 06 Dec 2015 22:21:34 GMT; path=/; domain=.vk.com
+      pragma:
+      - no-cache
+      cache-control:
+      - no-store
+    body:
+      encoding: UTF-8
+      string: VK.Share.count(0, 3725);
+    http_version: '1.1'
+  recorded_at: Mon, 15 Dec 2014 19:57:49 GMT
 recorded_with: VCR 2.9.3
