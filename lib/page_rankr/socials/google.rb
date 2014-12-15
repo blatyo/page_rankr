@@ -6,7 +6,7 @@ module PageRankr
       include Social
 
       def url
-        # Yandex supplies Google +1 counts in a convenient matter
+        # Yandex supplies Google +1 counts in a convenient matter without need for an API key
         'http://share.yandex.ru/gpp.xml'
       end
 
