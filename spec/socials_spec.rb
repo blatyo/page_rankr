@@ -5,6 +5,7 @@ describe PageRankr do
     subject{ PageRankr.social_trackers }
 
     it{ should include(:facebook) }
+    it{ should include(:google) }
     it{ should include(:linked_in) }
     it{ should include(:pinterest) }
     it{ should include(:stumble_upon) }
@@ -20,12 +21,14 @@ describe PageRankr do
       end
 
       it{ should have_key(:facebook) }
+      it{ should have_key(:google) }
       it{ should have_key(:linked_in) }
       it{ should have_key(:pinterest) }
       it{ should have_key(:stumble_upon) }
       it{ should have_key(:twitter) }
 
       it{ subject[:facebook].should > 1000000 }
+      it{ subject[:google].should > 5000 }
       it{ subject[:linked_in].should > 500 }
       it{ subject[:pinterest].should > 70000 }
       it{ subject[:stumble_upon].should > 20000 }
@@ -40,12 +43,14 @@ describe PageRankr do
       end
 
       it{ should have_key(:facebook) }
+      it{ should have_key(:google) }
       it{ should have_key(:linked_in) }
       it{ should have_key(:pinterest) }
       it{ should have_key(:stumble_upon) }
       it{ should have_key(:twitter) }
 
       it{ subject[:facebook].should be_nil }
+      it{ subject[:google].should == 0 }
       it{ subject[:linked_in].should == 0 }
       it{ subject[:pinterest].should == 0 }
       it{ subject[:stumble_upon].should be_nil }
