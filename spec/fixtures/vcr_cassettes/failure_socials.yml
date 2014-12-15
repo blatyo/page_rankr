@@ -258,4 +258,103 @@ http_interactions:
       string: '{"count":0,"url":"http:\/\/please-dont-register-a-site-that-breaks-this-test.com\/"}'
     http_version: '1.1'
   recorded_at: Sun, 14 Dec 2014 22:33:49 GMT
+- request:
+    method: get
+    uri: http://graph.facebook.com/?id=please-dont-register-a-site-that-breaks-this-test.com
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      user-agent:
+      - Mozilla/5.0 (Macintosh; Intel Mac OS X 10_7_4) AppleWebKit/534.56.5 (KHTML,
+        like Gecko) Version/5.1.6 Safari/534.56.5
+  response:
+    status:
+      code: 404
+      message: Not Found
+    headers:
+      www-authenticate:
+      - 'OAuth "Facebook Platform" "not_found" "(#803) Some of the aliases you requested
+        do not exist: please-dont-register-a-site-that-breaks-this-test.com"'
+      facebook-api-version:
+      - v1.0
+      content-type:
+      - text/javascript; charset=UTF-8
+      pragma:
+      - no-cache
+      access-control-allow-origin:
+      - '*'
+      x-fb-rev:
+      - '1531031'
+      cache-control:
+      - no-store
+      expires:
+      - Sat, 01 Jan 2000 00:00:00 GMT
+      x-fb-debug:
+      - TlH+xLP2+oomGtR1bxlsFsa2I7w5d8+XAfIpxcb5SmIDizawkopWpFrN9G0H/ZFsjrtePGQu/6b8MgP7qm677Q==
+      date:
+      - Mon, 15 Dec 2014 07:38:08 GMT
+      connection:
+      - close
+      content-length:
+      - '201'
+    body:
+      encoding: UTF-8
+      string: |-
+        {
+           "error": {
+              "message": "(#803) Some of the aliases you requested do not exist: please-dont-register-a-site-that-breaks-this-test.com",
+              "type": "OAuthException",
+              "code": 803
+           }
+        }
+    http_version: '1.1'
+  recorded_at: Mon, 15 Dec 2014 07:38:08 GMT
+- request:
+    method: get
+    uri: http://graph.facebook.com/?id=http%3A%2F%2Fplease-dont-register-a-site-that-breaks-this-test.com
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      user-agent:
+      - Mozilla/5.0 (Macintosh; Intel Mac OS X 10_7_4) AppleWebKit/534.56.5 (KHTML,
+        like Gecko) Version/5.1.6 Safari/534.56.5
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      facebook-api-version:
+      - v1.0
+      etag:
+      - '"084a2bbc7382540addc052eab83eb70ab32dd140"'
+      content-type:
+      - text/javascript; charset=UTF-8
+      pragma:
+      - no-cache
+      access-control-allow-origin:
+      - '*'
+      x-fb-rev:
+      - '1531031'
+      cache-control:
+      - private, no-cache, no-store, must-revalidate
+      expires:
+      - Sat, 01 Jan 2000 00:00:00 GMT
+      x-fb-debug:
+      - 3IhMEVhr5gbcFsVsCkRs/bgQ1xT7TF3nPs7+G66yNmp7yTznzRh719gPv/Hno+pw6Ry3kw4rw0TN6h13wIaZqQ==
+      date:
+      - Mon, 15 Dec 2014 07:39:11 GMT
+      connection:
+      - close
+      content-length:
+      - '75'
+    body:
+      encoding: UTF-8
+      string: |-
+        {
+           "id": "http://please-dont-register-a-site-that-breaks-this-test.com"
+        }
+    http_version: '1.1'
+  recorded_at: Mon, 15 Dec 2014 07:39:10 GMT
 recorded_with: VCR 2.9.3
