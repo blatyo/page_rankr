@@ -1,5 +1,8 @@
 # Change Log
 
+## Version 4.4.0
+* Adds social signals for google, linked_in, pinterest, stumble_upon, twitter, and vk
+
 ## Version 4.3.0
 * Add Page Authority and Domain Authority ranks
 
