@@ -8,15 +8,15 @@ Gem::Specification.new do |s|
   s.email       = ["blatyo@gmail.com"]
   s.license     = 'MIT'
   s.homepage    = "http://github.com/blatyo/page_rankr"
-  s.summary     = "Easy way to retrieve Google Page Rank, Alexa Rank, backlink counts, and index counts."
-  s.description = "Easy way to retrieve Google Page Rank, Alexa Rank, backlink counts, and index counts."
+  s.summary     = "Easy way to retrieve Google Page Rank, Alexa Rank, backlink counts, index counts and different types of social signals"
+  s.description = "Easy way to retrieve Google Page Rank, Alexa Rank, backlink counts, index counts and different types of social signals"
 
   s.required_rubygems_version = ">= 1.3.6"
   s.add_development_dependency "rake"
   s.add_development_dependency "rspec",   ">= 2.6.0"
   s.add_development_dependency "bundler", ">= 1.0.0"
   s.add_development_dependency "fuubar",  ">= 0.0.1"
-  s.add_development_dependency "vcr"
+  s.add_development_dependency "vcr",  ">= 2.9.3"
   s.add_development_dependency "fakeweb"
 
   s.add_runtime_dependency "nokogiri",              ">= 1.4.1"

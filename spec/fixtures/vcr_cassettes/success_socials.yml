@@ -2,6 +2,213 @@
 http_interactions:
 - request:
     method: get
+    uri: http://vk.com/share.php?url=http%3A%2F%2Fwww.google.com&act=count
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      user-agent:
+      - Mozilla/5.0 (Macintosh; Intel Mac OS X 10_7_4) AppleWebKit/534.56.5 (KHTML,
+        like Gecko) Version/5.1.6 Safari/534.56.5
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      server:
+      - Apache
+      date:
+      - Mon, 15 Dec 2014 20:52:34 GMT
+      content-type:
+      - text/html; charset=windows-1251
+      content-length:
+      - '24'
+      connection:
+      - close
+      x-powered-by:
+      - PHP/3.9812
+      set-cookie:
+      - remixlang=3; expires=Thu, 17 Dec 2015 16:12:36 GMT; path=/; domain=.vk.com
+      pragma:
+      - no-cache
+      cache-control:
+      - no-store
+    body:
+      encoding: UTF-8
+      string: VK.Share.count(0, 3725);
+    http_version: '1.1'
+  recorded_at: Mon, 15 Dec 2014 20:52:34 GMT
+- request:
+    method: get
+    uri: http://api.pinterest.com/v1/urls/count.json?url=http%3A%2F%2Fwww.google.com&callback=_
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      user-agent:
+      - Mozilla/5.0 (Macintosh; Intel Mac OS X 10_7_4) AppleWebKit/534.56.5 (KHTML,
+        like Gecko) Version/5.1.6 Safari/534.56.5
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      accept-ranges:
+      - bytes
+      cache-control:
+      - private
+      content-type:
+      - application/javascript
+      expires:
+      - Mon, 15 Dec 2014 21:07:34 GMT
+      x-pinterest-rid:
+      - '420796907025'
+      x-varnish:
+      - '3153189879'
+      content-length:
+      - '48'
+      date:
+      - Mon, 15 Dec 2014 20:52:34 GMT
+      connection:
+      - close
+    body:
+      encoding: UTF-8
+      string: _({"url":"http://www.google.com","count":75108})
+    http_version: '1.1'
+  recorded_at: Mon, 15 Dec 2014 20:52:34 GMT
+- request:
+    method: get
+    uri: http://graph.facebook.com/?id=http%3A%2F%2Fwww.google.com
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      user-agent:
+      - Mozilla/5.0 (Macintosh; Intel Mac OS X 10_7_4) AppleWebKit/534.56.5 (KHTML,
+        like Gecko) Version/5.1.6 Safari/534.56.5
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      facebook-api-version:
+      - v1.0
+      etag:
+      - '"b763721b57603f6520b06f4622e3f2ba5c6a722e"'
+      content-type:
+      - text/javascript; charset=UTF-8
+      pragma:
+      - no-cache
+      access-control-allow-origin:
+      - '*'
+      x-fb-rev:
+      - '1532468'
+      cache-control:
+      - private, no-cache, no-store, must-revalidate
+      expires:
+      - Sat, 01 Jan 2000 00:00:00 GMT
+      x-fb-debug:
+      - g5R1Oyw08FasCZhz5GfUXKQCI+BzYr1q4RDlS6ke0Uk276RwDb9fJ8mTYJvatpU0jz/glCqIRqQV+wdUQ2B2mg==
+      date:
+      - Mon, 15 Dec 2014 20:52:34 GMT
+      connection:
+      - close
+      content-length:
+      - '79'
+    body:
+      encoding: UTF-8
+      string: |-
+        {
+           "id": "http://www.google.com",
+           "shares": 10012603,
+           "comments": 934
+        }
+    http_version: '1.1'
+  recorded_at: Mon, 15 Dec 2014 20:52:34 GMT
+- request:
+    method: get
+    uri: http://urls.api.twitter.com/1/urls/count.json?url=www.google.com
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      user-agent:
+      - Mozilla/5.0 (Macintosh; Intel Mac OS X 10_7_4) AppleWebKit/534.56.5 (KHTML,
+        like Gecko) Version/5.1.6 Safari/534.56.5
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      cache-control:
+      - max-age=900
+      content-type:
+      - application/json;charset=utf-8
+      date:
+      - Mon, 15 Dec 2014 20:52:34 UTC
+      expires:
+      - Mon, 15 Dec 2014 21:07:34 GMT
+      last-modified:
+      - Mon, 15 Dec 2014 20:52:34 GMT
+      server:
+      - tsa_b
+      set-cookie:
+      - guest_id=v1%3A141867675457322338; Domain=.twitter.com; Path=/; Expires=Wed,
+        14-Dec-2016 20:52:34 UTC
+      x-connection-hash:
+      - 5839fc5d0eaaf756cee243cb1995c5c1
+      x-response-time:
+      - '3'
+      content-length:
+      - '52'
+      connection:
+      - close
+    body:
+      encoding: UTF-8
+      string: '{"count":21936956,"url":"http:\/\/www.google.com\/"}'
+    http_version: '1.1'
+  recorded_at: Mon, 15 Dec 2014 20:52:34 GMT
+- request:
+    method: get
+    uri: http://share.yandex.ru/gpp.xml?url=http%3A%2F%2Fwww.google.com
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      user-agent:
+      - Mozilla/5.0 (Macintosh; Intel Mac OS X 10_7_4) AppleWebKit/534.56.5 (KHTML,
+        like Gecko) Version/5.1.6 Safari/534.56.5
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      server:
+      - nginx/1.6.2
+      date:
+      - Mon, 15 Dec 2014 20:52:34 GMT
+      content-type:
+      - text/javascript; charset=utf-8
+      transfer-encoding:
+      - chunked
+      connection:
+      - close
+      cache-control:
+      - max-age=0, must-revalidate, proxy-revalidate, no-cache, no-store, private
+      expires:
+      - Mon, 15 Dec 2014 20:52:34 GMT
+      pragma:
+      - no-cache
+      set-cookie:
+      - yandexuid=45368231418676754; domain=.yandex.ru; path=/; expires=Tue, 19 Jan
+        2038 03:14:07 GMT
+    body:
+      encoding: UTF-8
+      string: services.gplus.cb("10000");
+    http_version: '1.1'
+  recorded_at: Mon, 15 Dec 2014 20:52:34 GMT
+- request:
+    method: get
     uri: https://www.linkedin.com/countserv/count/share?url=www.google.com&callback=_&format=json
     body:
       encoding: US-ASCII
@@ -24,7 +231,7 @@ http_interactions:
       vary:
       - Accept-Encoding
       date:
-      - Sat, 13 Dec 2014 12:40:01 GMT
+      - Mon, 15 Dec 2014 20:52:34 GMT
       x-frame-options:
       - sameorigin
       x-content-type-options:
@@ -44,13 +251,52 @@ http_interactions:
       x-li-pop:
       - PROD-IDB2
       x-li-uuid:
-      - PfwBGPRurxOg8uv8GysAAA==
+      - YZcC9v0msBOg4JUkeisAAA==
       set-cookie:
-      - lidc="b=TB21:g=16:u=1:i=1418474402:t=1418560802:s=2246595539"; Expires=Sun,
-        14 Dec 2014 12:40:02 GMT; domain=.linkedin.com; Path=/
+      - lidc="b=TB21:g=19:u=1:i=1418676754:t=1418763154:s=498524689"; Expires=Tue,
+        16 Dec 2014 20:52:34 GMT; domain=.linkedin.com; Path=/
     body:
       encoding: UTF-8
-      string: '{"count":1000,"fCnt":"1,000","fCntPlusOne":"1,001","url":"www.google.com"}'
+      string: '{"count":1023,"fCnt":"1,023","fCntPlusOne":"1,024","url":"www.google.com"}'
     http_version: '1.1'
-  recorded_at: Sat, 13 Dec 2014 12:40:02 GMT
+  recorded_at: Mon, 15 Dec 2014 20:52:34 GMT
+- request:
+    method: get
+    uri: http://www.stumbleupon.com/services/1.01/badge.getinfo?url=www.google.com
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      user-agent:
+      - Mozilla/5.0 (Macintosh; Intel Mac OS X 10_7_4) AppleWebKit/534.56.5 (KHTML,
+        like Gecko) Version/5.1.6 Safari/534.56.5
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      server:
+      - Apache
+      p3p:
+      - policyref="/w3c/p3p.xml", CP="CURa ADMa DEVa PSAo PSDo OUR BUS UNI PUR INT
+        DEM STA PRE COM NAV OTC NOI DSP COR"
+      vary:
+      - Accept-Encoding
+      content-type:
+      - text/plain; charset=iso-8859-1
+      content-length:
+      - '521'
+      accept-ranges:
+      - bytes
+      date:
+      - Mon, 15 Dec 2014 20:52:34 GMT
+      age:
+      - '0'
+      connection:
+      - close
+    body:
+      encoding: UTF-8
+      string: '{"result":{"url":"http:\/\/www.google.com\/","in_index":true,"publicid":"2pI1xR","views":255079,"title":"Google","thumbnail":"http:\/\/cdn.stumble-upon.com\/mthumb\/31\/10031.jpg","thumbnail_b":"http:\/\/cdn.stumble-upon.com\/bthumb\/31\/10031.jpg","submit_link":"http:\/\/www.stumbleupon.com\/badge\/?url=http:\/\/www.google.com\/","badge_link":"http:\/\/www.stumbleupon.com\/badge\/?url=http:\/\/www.google.com\/","info_link":"http:\/\/www.stumbleupon.com\/url\/www.google.com\/"},"timestamp":1418676754,"success":true}'
+    http_version: '1.1'
+  recorded_at: Mon, 15 Dec 2014 20:52:35 GMT
 recorded_with: VCR 2.9.3
