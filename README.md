@@ -10,6 +10,8 @@ __Note: Version >= 4.1.0 no longer actively maintains compatibility with Ruby 1.
 
 __Note: Version >= 4.2.0 no longer actively maintains compatibility with Ruby < 1.9.3. It will probably still work, but you may need to specify older versions for gems this library depends on in your Gemfile.__
 
+__Note: Version >= 4.5.0 no longer actively maintains compatibility with Ruby < 2.0.__
+
 Check out a little [web app][1] I wrote up that uses it or look at the [source][2].
 
 [1]: http://isitpopular.heroku.com
