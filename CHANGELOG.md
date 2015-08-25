@@ -1,5 +1,9 @@
 # Change Log
 
+## Version 4.5.0
+* Bumps to public_suffix Gem to 1.5.1
+* Deprecates support for Ruby < 2.0
+
 ## Version 4.4.1
 * Fixes Alexa US to use correct rank
 
