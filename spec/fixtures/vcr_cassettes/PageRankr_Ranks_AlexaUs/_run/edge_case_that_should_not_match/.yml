@@ -1,0 +1,49 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://data.alexa.com/data?cli=10&dat=snbamz&url=slocourts.net
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Mozilla/5.0 (Macintosh; Intel Mac OS X 10_7_4) AppleWebKit/534.56.5 (KHTML,
+        like Gecko) Version/5.1.6 Safari/534.56.5
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - text/xml
+      Date:
+      - Mon, 14 Sep 2015 23:34:56 GMT
+      Server:
+      - nginx
+      Content-Length:
+      - '1304'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n\r\n<!-- Need more Alexa
+        data?  Find our APIs here: https://aws.amazon.com/alexa/ -->\r\n<ALEXA VER=\"0.9\"
+        URL=\"slocourts.net/\" HOME=\"0\" AID=\"=\" IDN=\"slocourts.net/\">\r\n<RLS
+        PREFIX=\"http://\" more=\"0\">\n<RL HREF=\"courts.countyofventura.org/\" TITLE=\"Superior
+        Court, Ventura\"/>\n<RL HREF=\"www.co.san-bernardino.ca.us/Courts\" TITLE=\"Superior
+        Court, San Bernardino\"/>\n<RL HREF=\"www.co.riverside.ca.us/depts/courts\"
+        TITLE=\"Superior Court Of California County Of Riverside\"/>\n<RL HREF=\"www.ci.sf.ca.us/courts\"
+        TITLE=\"Superior Court, San Francisco\"/>\n<RL HREF=\"www.sbcourts.org/\"
+        TITLE=\"Superior Court, Santa Barbara\"/>\n<RL HREF=\"www.stocktoncourt.org/courts\"
+        TITLE=\"Superior Court, San Joaquin County\"/>\n<RL HREF=\"www.sonomasuperiorcourt.com/\"
+        TITLE=\"Superior Court, Sonoma\"/>\n<RL HREF=\"www.solanocourts.com/\" TITLE=\"Superior
+        Court, Solano\"/>\n<RL HREF=\"www.sccsuperiorcourt.org/\" TITLE=\"Superior
+        Court, Santa Clara\"/>\n<RL HREF=\"www.sanmateocourt.org/\" TITLE=\"Superior
+        Court, San Mateo\"/>\n</RLS>\n<SD TITLE=\"A\" FLAGS=\"\" HOST=\"slocourts.net\">\n<TITLE
+        TEXT=\"Superior Court, San Luis Obispo\"/>\n</SD>\n<SD>\n<POPULARITY URL=\"slocourts.net/\"
+        TEXT=\"832124\" SOURCE=\"panel\"/>\n<REACH RANK=\"911408\"/>\n<RANK DELTA=\"+33334\"/>\n<COUNTRY
+        CODE=\"US\" NAME=\"United States\" RANK=\"127410\"/>\n</SD>\n</ALEXA>"
+    http_version: 
+  recorded_at: Mon, 14 Sep 2015 23:34:56 GMT
+recorded_with: VCR 2.9.3

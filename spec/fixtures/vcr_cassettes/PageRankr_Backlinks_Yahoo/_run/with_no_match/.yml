@@ -1,0 +1,642 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://search.yahoo.com/search?p=inbody:please-dont-register-a-site-that-breaks-this-test.com
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Mozilla/5.0 (Macintosh; Intel Mac OS X 10_7_4) AppleWebKit/534.56.5 (KHTML,
+        like Gecko) Version/5.1.6 Safari/534.56.5
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Mon, 14 Sep 2015 22:23:41 GMT
+      P3p:
+      - policyref="https://policies.yahoo.com/w3c/p3p.xml", CP="CAO DSP COR CUR ADM
+        DEV TAI PSA PSD IVAi IVDi CONi TELo OTPi OUR DELi SAMi OTRi UNRi PUBi IND
+        PHY ONL UNI PUR FIN COM NAV INT DEM CNT STA POL HEA PRE LOC GOV"
+      Set-Cookie:
+      - B=4ogs9flavei7d&b=3&s=jh; expires=Thu, 14-Sep-2017 22:23:41 GMT; path=/; domain=.yahoo.com
+      - sSN=hbih2vY2wWEfOqTa6w76KhP5tXDL82RlgwGXz7DIVjOM.mZP0ZuMfOPnfFh6jePQH3p1.FPQNi5UWLY5BuVS4w--;
+        path=/; domain=.search.yahoo.com
+      X-Frame-Options:
+      - SAMEORIGIN
+      Content-Security-Policy:
+      - default-src 'self' 'unsafe-inline' 'unsafe-eval' *.yahoo.com https://*.yahoo.com
+        *.yimg.com https://*.yimg.com *.yahooapis.com https://*.yahooapis.com *.youtube.com
+        https://*.youtube.com *.dailymotion.com https://*.dailymotion.com vine.co
+        https://vine.co vimeo.com https://vimeo.com *.izlesene.com https://*.izlesene.com
+        https://*.uservoice.com *.google.com; img-src *; media-src *; object-src *;
+        connect-src *; font-src *
+      Cache-Control:
+      - private
+      Vary:
+      - Accept-Encoding
+      Content-Type:
+      - text/html; charset=UTF-8
+      Age:
+      - '0'
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Server:
+      - ATS
+    body:
+      encoding: UTF-8
+      string: "<!doctype html><html id=\"Stencil\" class=\"NoJs\" lang=\"en-US\"><head><meta
+        http-equiv=\"content-type\" content=\"text/html; charset=UTF-8\"><link rel=\"apple-touch-icon\"
+        sizes=\"72x72\" href=\"http://l.yimg.com/pv/static/img/yahoo_purple_icon_ipad_76.png\"
+        /><link rel=\"apple-touch-icon\" sizes=\"144x144\" href=\"http://l.yimg.com/pv/static/img/yahoo_purple_icon_ipad_152.png\"
+        /><meta http-equiv=\"x-dns-prefetch-control\" content=\"on\"><noscript><meta
+        http-equiv=\"refresh\" content=\"0;url=http://search.yahoo.com/search?p=inbody%3Aplease-dont-register-a-site-that-breaks-this-test.com&ei=UTF-8&nojs=1\"></noscript><script>(function(){var
+        o=window,m=document,q,f,i;var h=2,g=\"\\x03\",e=\"\\x04\",a=\"ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789._-\";function
+        c(w){if(!w){return null}w._r=h;var x=[],t=0,s;for(s in w){var d=w[s];if(typeof
+        d!==\"string\"){d=String(d);w[s]=d}if(s.length<1){return null}if(s.length>8){return
+        null}if(s.indexOf(\" \")!==-1){return null}if(n(s)||n(d)){return null}x[t++]=s}x=x.sort();var
+        u=[];for(t=0;t<x.length;t++){u[t]=x[t]+g+w[x[t]]}u=u.join(e);if(u.length<1||u.length>1024){return
+        null}return r(u)}function n(t){var d=0;for(;d<t.length;d++){if(t.charCodeAt(d)<32){return
+        true}}return false}function r(t){var d=\"\";var A,y,w=\"\";var z,x,v,u=\"\";var
+        s=0;do{A=t.charCodeAt(s++);y=t.charCodeAt(s++);w=t.charCodeAt(s++);z=A>>2;x=((A&3)<<4)|(y>>4);v=((y&15)<<2)|(w>>6);u=w&63;if(isNaN(y)){v=u=64}else{if(isNaN(w)){u=64}}d=d+a.charAt(z)+a.charAt(x)+a.charAt(v)+a.charAt(u);A=y=w=\"\";z=x=v=u=\"\"}while(s<t.length);return
+        d}function j(d){return !!(d.tagName&&d.tagName.toLowerCase()===\"a\"&&typeof
+        d.getAttribute===\"function\"&&d.getAttribute(\"href\"))}var b=/(;?)(_ylt=[0-9a-zA-Z\\._\\-]+)(;_ylu=[0-9a-zA-Z\\._\\-]+)?(;_ylc=[0-9a-zA-Z\\._\\-]+)?/;function
+        p(s,d){var t=c(d);if(!b.test(s)||!t){return s}s=s.replace(b,\"$1$2$3;_ylc=\"+t);return
+        s}function k(d){var s=d.target;while(s){if(j(s)){url=s.getAttribute(\"href\");if(i.test(url)){url=p(url,f.ylcParam);s.setAttribute(\"href\",url)}break}s=s.parentNode}return
+        true}function l(){}l.prototype={mdeh:function(d){return k(d)},init:function(d){f=d;this.injectYlc=p;if(f.cbclk_regexp){i=new
+        RegExp(f.cbclk_regexp)}if(f.ylcParam){o.addEventListener(\"mousedown\",this.mdeh)}},updateUrl:function(d){if(f&&f.ylcParam&&i&&i.test(d)){d=p(d,f.ylcParam)}return
+        d}};window.cwh=new l()})();window.cwh.init({\"cbclk_regexp\":\"(qa-r|qa-ri|r|ri)\\\\.search\\\\.yahoo\\\\.com\\\\\\/(cbclk2|cbclk)(\\\\\\/.+\\\\\\/RU=([^\\\\\\/]+)\\\\\\/.+?)(;_ylc=[0-9a-zA-Z\\\\._\\\\-]+)?$\",\"ylcParam\":{\"rt\":0}});var
+        pL=0, pUrl='/beacon/bai/bf/4?IG=0ac14fc9e43b43849a00000000696e04&CID=05e16e33faa25b5980ed05e1c7a528b5&Type=Event.CPT';function
+        SLB(s,pUrl){var url,img=new Image(),dat='&DATA=';dat+=s?'%7B%22pp%22%3A%7B%22S%22%3A%22A%22%7D%7D':'%7B%22pp%22%3A%7B%22S%22%3A%22L%22%7D%7D';url=pUrl+dat;img.src=url+'&'+(new
+        Date()).getTime();pL=1}window.onbeforeunload=function(){(!pL)?SLB(\"A\",pUrl):\"\"};window.onload=function(){SLB(\"\",pUrl)};(function(){var
+        h=document.documentElement;h.className+=\" js\";(new Image()).src='http://l.yimg.com/pv/static/img/srp-sprite-201311141711.png';})();</script><title>inbody:please-dont-register-a-site-that-breaks-this-test.com
+        - Yahoo Search Results</title><link rel=\"stylesheet\" type=\"text/css\" href=\"http://l.yimg.com/zz/combo?kx/yucs/uh3/uh/1132/css/uh_non_mail-min.css&kx/yucs/uh3s/atomic/63/css/atomic-min.css&kx/yucs/uh_common/meta/3/css/meta-min.css&kx/yucs/uh3/top-bar/366/css/no_icons-min.css&pv/static/lib/srp-header-css-light-us_9082c82048b30114758d6dce53b2533a.css&pv/static/lib/srp-core-css-light-us_3da41e3940ef9949aff415e7909f6af1.css\"
+        class=\"inline\"><link rel=\"search\" type=\"application/opensearchdescription+xml\"
+        href=\"http://search.yahoo.com/opensearch.xml\" title=\"Get the best of the
+        web with Yahoo\" ><style type=\"text/css\">s,.sprite,#att_icon,#verizon_icon
+        .ico,#at-tog,.ssbang,.sschk,.ssochk,.ssbx,#ss a.ss-remove,.ads a.pp-l,.news-nph,.stars-sm
+        span,.stars-lg span,.thmbplay,.sc-promo-img,.sc-close,#pnkribn .sym{background-image:url(http://l.yimg.com/pv/static/img/srp-sprite-201311141711.png);}#logo{height:21px;width:88px;top:
+        0;left: 0;margin:15px 0 0 90px; *margin-top:5px;display: block;overflow: hidden;text-indent:
+        -9999px;background-repeat:no-repeat;outline: none;}#logo{ background-image:url(http://l.yimg.com/pv/static/img/logo-201505121856.png);*background-image:url(http://l.yimg.com/pv/static/img/logo-88x22-201502250136.gif);}@media
+        (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {#logo{background-image:url(http://l.yimg.com/pv/static/img/logo-2x-201505121857.png);
+        background-size: 88px}}#att-tab{height:13px;position:relative;width:49px;z-index:4}#att_icon{background-position:-160px
+        -124px;display:block;font-size:0;height:18px;line-height:0;margin-right:3px;overflow:hidden;width:40px}#att-tab
+        .menu-link{border:1px solid transparent;_border:1px solid #F5F8F9;bottom:6px;_bottom:3px;height:18px;left:-16px;_left:0;padding:3px
+        10px;width:auto;max-width:100px}#att-tab a.m-active{border:1px solid #C6C9CB;_height:16px}#att-tab
+        a:hover{cursor:pointer;text-decoration:none}#att-tab a.menu-link s{right:-14px;_right:0;top:10px}#att-menu.cobrand{height:60px;left:-6.7em;*left:-6.5em;_left:-4.75em;top:2.1em;width:135px}#att-menu.cobrand
+        ul{float:left;width:35%}#att-menu.cobrand ul.first{width:64%}#uh .menu-bd.cobrand
+        ul li{border:none;padding:0}.menu-bd.cobrand ul.first li{padding-right:0}.menu-bd.cobrand
+        ul li a{font-size:116%}#uh .menu-bd.cobrand ul li a:hover{color:#FFF;text-decoration:none}#verizon-link{height:15px}#verizon_icon{display:block;overflow:hidden;padding-left:20px}#verizon_icon
+        .ico{background-position:-185px -124px;border:none;height:15px;left:0;margin-right:3px;padding:0;top:0;width:15px}#verizon-link
+        s{top:5px}#verizon-tab{position:relative;_width:11em;z-index:5}#verizon-menu.menu-bd{left:1.5em;top:1.75em;min-width:100px;_left:0;_z-index:3}#verizon-menu.cobrand
+        ul.first{width:100%}.menu-link #verizon_icon s{-moz-transform:rotate(0deg);-webkit-transform:rotate(0deg);filter:none}#rogers-link{padding-right:0}#rogers_icon
+        .ico{display:none}ul li#partner-tab{height:13px;position:relative;width:auto;_width:0;white-space:nowrap;max-width:200px;z-index:4}#partner-link
+        #partner_icon{position:relative;top:-2px;display:inline;font-size:0;line-height:0;margin-right:5px;overflow:hidden;vertical-align:middle}#partner-link
+        #partner_logo_caption{position:relative;margin-left:2px}#partner_caption{position:relative;top:2px}#partner-tab
+        .menu-link{border:1px solid transparent;*border:1px solid white;_border:1px
+        solid white;top:-1px;height:18px;left:0;_left:0;padding:0 6px 5px 0;width:auto;_width:auto;max-width:200px;_max-width:200px}#partner-tab
+        a.m-active{border:1px solid #C6C9CB;_height:16px}#partner-tab a:hover{cursor:pointer;text-decoration:none}#partner-tab
+        a.menu-link s{right:-2px;*right:-2px;_right:-2px;margin-right:0;top:5px;border:none;:}#partner-menu.cobrand{left:.5em;*left:.5em;_left:.5em;top:2.1em;width:100%}#partner-menu.cobrand
+        ul{float:left}#partner-menu.cobrand ul.first{width:100%}#partner-menu.menu-bd{min-width:4em;width:auto;right:5px;*right:5px;_right:5px;left:auto}#partner-menu.menu-bd.cobrand
+        ul li{border:none;padding:0 10px;display:block;clear:both}#partner-menu.menu-bd.cobrand
+        ul.first li{height:50%}.menu-bd.cobrand ul li a{font-size:116%}#uh .menu-bd.cobrand
+        ul li a:hover{color:#FFF;text-decoration:none}html,#sticky-hd,#doc.uh3-p #yucs{background-color:#fff
+        !important}#main{border-color:#fff !important}#main #web .dd .title a{text-decoration:
+        none}#main #web b,#main #web .cite{font-weight: normal}</style></head><body
+        id=\"ysch\" class=\"safari webkit mac v5_1\"><div id=\"doc\"class=\"uh3-p
+        \"><h1 class=\"off-left\">Yahoo Web Search</h1><div id=\"sticky-hd\" referrer=\"unsafe-url\"><style>#yucs{padding:0}#yucs
+        .yucs-avatar{width:22px;height:22px}#yucs a#yucs-mail_link_id{_width:30px;_text-indent:0;_background-position:0
+        -4352px}#yucs-profile{_margin-right:-10px;_width:75px}#yucs #yucs-profile_text
+        .yuhead-name-greeting{display:none}#yucs #yucs-profile_text .yuhead-name{top:0;max-width:65px;_width:40px}#yucs-profile_text{max-width:65px}#yucs
+        #yucs-nav .yucs-menu ul li a:hover,#yucs #yucs-help .yucs-menu ul li a:hover,#yucs
+        .yucs-profile-items-panel a:hover{background-color:transparent;text-decoration:underline}#yucs-top-inner{margin-left:0}#doc.uh3-p
+        #yucsHead #yucs-top-home{margin-top:2px !important}#yucs .yucs-noscript .yucs-no_menu
+        .yucs-signout:link{left:30px;top:10px;position:absolute;*left:0}#yucsHead{background-color:#fafafc}#yucs
+        #yucs-profile_inner.yucs-nv3 .yucs-profile-items-panel li a{white-space:normal}</style>
+        \ <div id=\"yucsHead\" class=\"yucs-srp yucs-en-us  yucs-standard yucs-fcb-\"><!--
+        meta --><div id=\"yucs-meta\" data-authstate=\"signedout\" data-cobrand=\"standard\"
+        data-crumb=\"\" data-mc-crumb=\"\" data-gta=\"\" data-device=\"desktop\" data-experience=\"uh3\"
+        data-firstname=\"\" data-style=\"\" data-flight=\"1442269421\" data-forcecobrand=\"standard\"
+        data-guid=\"\" data-host=\"search.yahoo.com\" data-https=\"0\" data-languagetag=\"en-us\"
+        data-property=\"srp\" data-protocol=\"http\" data-shortfirstname=\"\" data-shortuserid=\"\"
+        data-status=\"active\" data-spaceid=\"2766679\" data-test_id=\"\" data-userid=\"\"
+        data-stickyheader=\"true\" data-headercollapse=\"\" data-uh-test=\"acctswitch\"
+        ></div><!-- /meta --><div id=\"yucs-comet\" style=\"display:none;\"></div><div
+        id=\"yucs-disclaimer\" class=\"yucs-disclaimer yucs-activate yucs-hide yucs-property-srp
+        yucs-fcb- \" data-cobrand=\"standard\" data-cu = \"0\" data-dsstext=\"Want
+        a better search experience? {dssLink}Set your Search to Yahoo{linkEnd}\" data-dsstext-mobile=\"Search
+        Less, Find More\" data-dsstext-mobile-ok=\"OK\" data-dsstext-mobile-set-search=\"Set
+        Search to Yahoo\" data-dssstbtext=\"Yahoo is the preferred search engine for
+        Firefox. Switch now.\" data-dssstb-ok=\"Yes\" data-dssstb-no=\"Not Now\" data-ylt-link=\"https://search.yahoo.com/searchset;_ylt=AwrBT8ntSPdVhxIADrBXNyoA?pn=\"
+        data-ylt-dssbarclose=\"/;_ylt=AwrBT8ntSPdVhxIAD7BXNyoA\" data-ylt-dssbaropen=\"/;_ylt=AwrBT8ntSPdVhxIAELBXNyoA\"
+        data-ylt-dssstb-link=\"https://downloads.yahoo.com/sp-firefox;_ylt=AwrBT8ntSPdVhxIAEbBXNyoA\"
+        data-ylt-dssstbbarclose=\"/;_ylt=AwrBT8ntSPdVhxIAErBXNyoA\" data-ylt-dssstbbaropen=\"/;_ylt=AwrBT8ntSPdVhxIAE7BXNyoA\"
+        data-ylt-dssCookieCleanedSuccess=\"/;_ylt=AwrBT8ntSPdVhxIAFLBXNyoA\" data-ylt-dssCookieCleanedFailed=\"/;_ylt=AwrBT8ntSPdVhxIAFbBXNyoA\"
+        data-linktarget=\"_top\" data-lang=\"en-us\" data-property=\"srp\" data-device=\"Desktop\"
+        data-close-txt=\"Close this window\" data-maybelater-txt = \"Maybe Later\"
+        data-killswitch = \"0\" data-host=\"search.yahoo.com\" data-spaceid=\"2766679\"
+        data-pn=\"\" data-dss-cookie-cleanup=\"\" data-pn-en-ca-mobile-frontpage=\"\"
+        data-pn-de-de-mobile-frontpage=\"\" data-pn-es-es-mobile-frontpage=\"\" data-pn-fr-fr-mobile-frontpage=\"\"
+        data-pn-en-in-mobile-frontpage=\"\" data-pn-it-it-mobile-frontpage=\"\" data-pn-en-us-mobile-frontpage=\"\"
+        data-pn-en-sg-mobile-frontpage=\"\" data-pn-en-gb-mobile-frontpage=\"\" data-pn-en-us-mobile-mail=\"\"
+        data-pn-en-ca-mobile-mail=\"\" data-pn-de-de-mobile-mail=\"\" data-pn-es-es-mobile-mail=\"\"
+        data-pn-fr-fr-mobile-mail=\"\" data-pn-en-in-mobile-mail=\"\" data-pn-it-it-mobile-mail=\"\"
+        data-pn-en-sg-mobile-mail=\"\" data-pn-en-gb-mobile-mail=\"\" data-pn-pt-br-mobile-mail=\"\"
+        data-pn-en-us-tablet-frontpage=\"\" data-pn-en-us-tablet-mail=\"\" data-pn-en-ca-tablet-mail=\"\"
+        data-pn-de-de-tablet-mail=\"\" data-pn-es-es-tablet-mail=\"\" data-pn-fr-fr-tablet-mail=\"\"
+        data-pn-en-in-tablet-mail=\"\" data-pn-it-it-tablet-mail=\"\" data-pn-en-sg-tablet-mail=\"\"
+        data-pn-en-gb-tablet-mail=\"\" data-pn-pt-br-tablet-mail=\"\" data-news-search-yahoo-com=\"\"
+        data-answers-search-yahoo-com=\"\" data-finance-search-yahoo-com=\"\" data-images-search-yahoo-com=\"\"
+        data-video-search-yahoo-com=\"\" data-sports-search-yahoo-com=\"\" data-shopping-search-yahoo-com=\"\"
+        data-shopping-yahoo-com=\"\" data-us-qa-trunk-news-search-yahoo-com =\"\"
+        data-dss=\"1\"></div><script type=\"text/javascript\" src=\"https://s.yimg.com/kx/yucs/uh3/disclaimer/337/js/safari-set-min.js\"
+        async></script>   <style>#doc.uh3lite, .uh3lite #yucsHead, #yucsHead, #doc.uh3lite
+        #hd {\r\n    margin-top: 0!important;\r\n}</style><div id=\"yucs-top-bar\"
+        class='yucs-ps' ><div id='yucs-top-inner'><ul id=\"yucs-top-list\"><li id=\"yucs-top-home\"><a
+        href=\"http://ri.search.yahoo.com/_ylt=AwrBT8ntSPdVhxIAFrBXNyoA/RV=2/RE=1442298221/RO=10/RU=https%3a%2f%2fwww.yahoo.com%2f/RK=0/RS=2BCDMGyc1w1onZmFfVSDjxo0WUI-\"
+        ><span class=\"sp yucs-top-ico\"></span>Home</a></li><li id=\"yucs-top-mail\"><a
+        href=\"https://mail.yahoo.com/;_ylt=AwrBT8ntSPdVhxIAF7BXNyoA?.intl=us&.lang=en-US&.src=ym\"
+        >Mail</a></li><li id=\"yucs-top-search\"><a href=\"https://search.yahoo.com/search;_ylt=AwrBT8ntSPdVhxIAGLBXNyoA\"
+        >Search</a></li><li id=\"yucs-top-news\"><a href=\"http://news.yahoo.com/;_ylt=AwrBT8ntSPdVhxIAGbBXNyoA\"
+        >News</a></li><li id=\"yucs-top-sports\"><a href=\"http://sports.yahoo.com/;_ylt=AwrBT8ntSPdVhxIAGrBXNyoA\"
+        >Sports</a></li><li id=\"yucs-top-finance\"><a href=\"http://finance.yahoo.com/;_ylt=AwrBT8ntSPdVhxIAG7BXNyoA\"
+        >Finance</a></li><li id=\"yucs-top-weather\"><a href=\"https://weather.yahoo.com/;_ylt=AwrBT8ntSPdVhxIAHLBXNyoA\"
+        >Weather</a></li><li id=\"yucs-top-games\"><a href=\"https://games.yahoo.com/;_ylt=AwrBT8ntSPdVhxIAHbBXNyoA\"
+        >Games</a></li><li id=\"yucs-top-answers\"><a href=\"https://answers.yahoo.com/;_ylt=AwrBT8ntSPdVhxIAHrBXNyoA\"
+        >Answers</a></li><li id=\"yucs-top-screen\"><a href=\"http://ri.search.yahoo.com/_ylt=AwrBT8ntSPdVhxIAH7BXNyoA/RV=2/RE=1442298221/RO=10/RU=https%3a%2f%2fscreen.yahoo.com%2f/RK=0/RS=L4e3GfBw8kIyo8Why8NPCcGsHp4-\"
+        >Screen</a></li><li id=\"yucs-top-flickr\"><a href=\"http://ri.search.yahoo.com/_ylt=AwrBT8ntSPdVhxIAILBXNyoA/RV=2/RE=1442298221/RO=10/RU=https%3a%2f%2fwww.flickr.com%2f/RK=0/RS=gIkAfNX2aP7YQ9pWM48rou2hxe0-\"
+        >Flickr</a></li><li id=\"yucs-top-mobile\"><a href=\"https://mobile.yahoo.com/;_ylt=AwrBT8ntSPdVhxIAIbBXNyoA\"
+        >Mobile</a></li><li id='yucs-more' class='yucs-menu yucs-more-activate' data-ylt=\"/;_ylt=AwrBT8ntSPdVhxIAIrBXNyoA\"><a
+        href=\"http://everything.yahoo.com/\" id='yucs-more-link'>More<span class=\"sp
+        yucs-top-ico\"></span></a><div id='yucs-top-menu'><div class=\"yui3-menu-content\"><ul
+        class=\"yucs-hide yucs-leavable\"><li id='yucs-top-politics'><a href=\"http://ri.search.yahoo.com/_ylt=AwrBT8ntSPdVhxIAI7BXNyoA/RV=2/RE=1442298221/RO=10/RU=https%3a%2f%2fwww.yahoo.com%2fpolitics/RK=0/RS=bemJVyNa7m3FHAfJEhzsEdjmmwg-\"
+        >Politics</a></li><li id='yucs-top-celebrity'><a href=\"http://ri.search.yahoo.com/_ylt=AwrBT8ntSPdVhxIAJLBXNyoA/RV=2/RE=1442298221/RO=10/RU=https%3a%2f%2fcelebrity.yahoo.com%2f/RK=0/RS=5LNPnZodXQemjUavN2rln6V3TKc-\"
+        >Celebrity</a></li><li id='yucs-top-movies'><a href=\"http://ri.search.yahoo.com/_ylt=AwrBT8ntSPdVhxIAJbBXNyoA/RV=2/RE=1442298221/RO=10/RU=https%3a%2f%2fwww.yahoo.com%2fmovies/RK=0/RS=oNm2YncoXJMTaKeRzGKVZZvN_fs-\"
+        >Movies</a></li><li id='yucs-top-music'><a href=\"http://ri.search.yahoo.com/_ylt=AwrBT8ntSPdVhxIAJrBXNyoA/RV=2/RE=1442298221/RO=10/RU=https%3a%2f%2fwww.yahoo.com%2fmusic/RK=0/RS=OY5JwJUyUeQ2OjZ.pKVr2667DHk-\"
+        >Music</a></li><li id='yucs-top-tv'><a href=\"http://ri.search.yahoo.com/_ylt=AwrBT8ntSPdVhxIAJ7BXNyoA/RV=2/RE=1442298221/RO=10/RU=https%3a%2f%2fwww.yahoo.com%2ftv/RK=0/RS=mdp.mulH88RcyD5bl8S.nGL5kik-\"
+        >TV</a></li><li id='yucs-top-groups'><a href=\"http://ri.search.yahoo.com/_ylt=AwrBT8ntSPdVhxIAKLBXNyoA/RV=2/RE=1442298221/RO=10/RU=https%3a%2f%2fgroups.yahoo.com%2f/RK=0/RS=3XFFd7xygbwcSadIIU.jVg1vzBo-\"
+        >Groups</a></li><li id='yucs-top-health'><a href=\"http://ri.search.yahoo.com/_ylt=AwrBT8ntSPdVhxIAKbBXNyoA/RV=2/RE=1442298221/RO=10/RU=https%3a%2f%2fwww.yahoo.com%2fhealth/RK=0/RS=kZjhlPmreifO_hMieY9o4QHg24A-\"
+        >Health</a></li><li id='yucs-top-style'><a href=\"http://ri.search.yahoo.com/_ylt=AwrBT8ntSPdVhxIAKrBXNyoA/RV=2/RE=1442298221/RO=10/RU=https%3a%2f%2fwww.yahoo.com%2fstyle/RK=0/RS=j2w5hPIKnEiuUwzAqnK3mktuoZI-\"
+        >Style</a></li><li id='yucs-top-beauty'><a href=\"http://ri.search.yahoo.com/_ylt=AwrBT8ntSPdVhxIAK7BXNyoA/RV=2/RE=1442298221/RO=10/RU=https%3a%2f%2fwww.yahoo.com%2fbeauty/RK=0/RS=PbVePQ6JkS7bjl3T6nzGl0MCzkg-\"
+        >Beauty</a></li><li id='yucs-top-food'><a href=\"http://ri.search.yahoo.com/_ylt=AwrBT8ntSPdVhxIALLBXNyoA/RV=2/RE=1442298221/RO=10/RU=https%3a%2f%2fwww.yahoo.com%2ffood/RK=0/RS=JB7tphXbxQ.I20XK8hluNY6MAKk-\"
+        >Food</a></li><li id='yucs-top-parenting'><a href=\"http://ri.search.yahoo.com/_ylt=AwrBT8ntSPdVhxIALbBXNyoA/RV=2/RE=1442298221/RO=10/RU=https%3a%2f%2fwww.yahoo.com%2fparenting/RK=0/RS=NlprtXfQ7hRGL0Sj8qlbyGR5cPk-\"
+        >Parenting</a></li><li id='yucs-top-makers'><a href=\"http://ri.search.yahoo.com/_ylt=AwrBT8ntSPdVhxIALrBXNyoA/RV=2/RE=1442298221/RO=10/RU=https%3a%2f%2fwww.yahoo.com%2fmakers/RK=0/RS=1ems2dTAjlok4lJnayFIFEFdqXQ-\"
+        >Makers</a></li><li id='yucs-top-tech'><a href=\"http://ri.search.yahoo.com/_ylt=AwrBT8ntSPdVhxIAL7BXNyoA/RV=2/RE=1442298221/RO=10/RU=https%3a%2f%2fwww.yahoo.com%2ftech/RK=0/RS=P04WuwFx4wSPCS8WoVyo9IPeBt8-\"
+        >Tech</a></li><li id='yucs-top-shopping'><a href=\"http://shopping.yahoo.com/;_ylt=AwrBT8ntSPdVhxIAMLBXNyoA\"
+        >Shopping</a></li><li id='yucs-top-travel'><a href=\"http://ri.search.yahoo.com/_ylt=AwrBT8ntSPdVhxIAMbBXNyoA/RV=2/RE=1442298221/RO=10/RU=https%3a%2f%2fwww.yahoo.com%2ftravel/RK=0/RS=KBNmwAGpTAKkac.t_tucBoCPFV8-\"
+        >Travel</a></li><li id='yucs-top-autos'><a href=\"https://autos.yahoo.com/;_ylt=AwrBT8ntSPdVhxIAMrBXNyoA\"
+        >Autos</a></li><li id='yucs-top-homes'><a href=\"http://ri.search.yahoo.com/_ylt=AwrBT8ntSPdVhxIAM7BXNyoA/RV=2/RE=1442298221/RO=10/RU=https%3a%2f%2fhomes.yahoo.com%2fown-rent%2f/RK=0/RS=0q.Cccrh8Fgt2DG.lBn_qye1G8Q-\"
+        >Homes</a></li></ul></div></div></li></ul></div><style>#yucs-top-ff-promo
+        { position:absolute; right:0; right:auto\\9; left:950px\\9; right:auto\\9\\0;
+        left:auto\\9\\0; margin-right:18px; display:block; white-space: nowrap; z-index:15001;}#yucs-top-ff-promo
+        img { border: none; height: 15px; width: 15px;}#yucs-top-ff-promo a span {
+        text-decoration: none; display: inline-block;}#yucs-ff-img { vertical-align:
+        middle; padding-right: 4px;}@media screen and (max-width:1150px) { #yucs-top-bar
+        #yucs-top-ff-promo { right: auto; left:950px; }}</style><li id='yucs-top-ff-promo'
+        class=\"yucs-hide\"><a href=\"http://ri.search.yahoo.com/_ylt=AwrBT8ntSPdVhxIANLBXNyoA/RV=2/RE=1442298221/RO=10/RU=https%3a%2f%2fwww.mozilla.org%2ffirefox%2fnew%2f%3futm_source%3dyahoo%26utm_medium%3dreferral%26utm_campaign%3dy-uh%26utm_content%3dy-search-try/RK=0/RS=zZodTuQLmpEjIbOLkRedODGKPBU-\"
+        target=\"_blank\"><img id=\"yucs-ff-img\" src='https://s.yimg.com/kx/yucs/uh3s/promo-ff/1/images/ff_icon-compressed.png'
+        width=\"15\" height=\"15\" alt=\"Firefox\" />Try Yahoo Search on Firefox<span>&nbsp;&raquo;</span></a></li><script>
+        var s = false, ts,re2,sdts,v2= null, cookies = \"; \" + document.cookie, dss
+        = cookies.split(\"; DSS=\"), m, ua = window.navigator.userAgent.toLowerCase();
+        m = ua.match(/firefox\\/(\\d+)/); if (!m || (m && m[1] && parseInt(m[1]) <
+        34)) { if (ua.indexOf('version') >= 0 && ua.indexOf('crios') < 0) { s = true;
+        } if (!!window.opera || navigator.userAgent.indexOf(' OPR/') >= 0) { s = true;
+        } if (dss && dss.length === 2) { re2 = new RegExp('sdts=(\\\\d+)'); v2 = re2.exec(dss[1]);
+        if (v2 && v2.length === 2) { sdts = v2[1]; } if (sdts && (parseInt(new Date().getTime())
+        - sdts) < 60480000) { s = true; } } if (!s) { m = document.getElementById('yucs-top-ff-promo');
+        m.className = m.className.replace(/yucs-hide/g,''); } }</script></div><div
+        id=\"yucs\" class=\"yucs yucs-mc  yog-grid\" data-lang=\"en-us\" data-property=\"srp\"
+        data-flight=\"1442269421\" data-linktarget=\"_top\" data-uhvc=\"/;_ylt=AwrBT8ntSPdVhxIANbBXNyoA\">
+        <div class=\"yucs-fl-left yog-cp\">     </div><div class=\"yucs-fl-right\">
+        <div id=\"yucs-profile\" class=\"yucs-profile yucs-signedout\"> <a id=\"yucs-menu_link_profile_signed_out\"
+        href=\"https://login.yahoo.com/config/login;_ylt=AwrBT8ntSPdVhxIANrBXNyoA?.src=&.intl=us&.lang=en-US&.done=http://search.yahoo.com/search%3fp=inbody%253Aplease-dont-register-a-site-that-breaks-this-test.com\"
+        target=\"_top\" rel=\"nofollow\" class=\"sp yucs-fc\" aria-label=\"Profile\">
+        </a> <div id=\"yucs-profile_text\" class=\"yucs-fc\"> <a id=\"yucs-login_signIn\"
+        href=\"https://login.yahoo.com/config/login;_ylt=AwrBT8ntSPdVhxIAN7BXNyoA?.src=&.intl=us&.lang=en-US&.done=http://search.yahoo.com/search%3fp=inbody%253Aplease-dont-register-a-site-that-breaks-this-test.com\"
+        target=\"_top\" rel=\"nofollow\" class=\"yucs-fc\"> Sign In </a> </div></div><div
+        class=\"yucs-mail_link yucs-mailpreview-ancestor\"><a id=\"yucs-mail_link_id\"
+        class=\"sp yltasis yucs-fc\" href=\"https://mail.yahoo.com/;_ylt=AwrBT8ntSPdVhxIAOLBXNyoA?.intl=us&.lang=en-US&.src=ym\"
+        rel=\"nofollow\" target=\"_top\"> Mail <span class=\"yucs-activate yucs-mail-count
+        yucs-hide yucs-alert-count-con\" data-uri-scheme=\"https\" data-uri-path=\"mg.mail.yahoo.com/mailservices/v1/newmailcount\"
+        data-authstate=\"signedout\" data-crumb=\"\" data-mc-crumb=\"\"><span class=\"yucs-alert-count\"></span></span></a><div
+        class=\"yucs-mail-preview-panel yucs-menu yucs-hide\" data-mail-txt=\"Mail\"
+        data-uri-scheme=\"http\" data-uri-path=\"ucs.query.yahoo.com/v1/console/yql\"
+        data-mail-view=\"Go to Mail\" data-mail-help-txt=\"Help\" data-mail-help-url=\"http://help.yahoo.com/l/us/yahoo/mail/ymail/\"
+        data-mail-loading-txt=\"Loading...\" data-languagetag=\"en-us\" data-mrd-crumb=\"\"
+        data-authstate=\"signedout\" data-middleauth-signin-text=\"Click here to view
+        your mail\" data-popup-login-url=\"https://login.yahoo.com/config/login_verify2?.pd=c%3DOIVaOGq62e5hAP8Tv..nr5E3&.src=sc\"
+        data-middleauthtext=\"You have {count} new messages.\" data-yltmessage-link=\"https://mrd.mail.yahoo.com/msg;_ylt=AwrBT8ntSPdVhxIAObBXNyoA?mid={msgID}&fid=Inbox&src=uh&.crumb=\"
+        data-yltviewall-link=\"https://mail.yahoo.com/;_ylt=AwrBT8ntSPdVhxIAOrBXNyoA\"
+        data-yltpanelshown=\"/;_ylt=AwrBT8ntSPdVhxIAO7BXNyoA\" data-ylterror=\"/;_ylt=AwrBT8ntSPdVhxIAPLBXNyoA\"
+        data-ylttimeout=\"/;_ylt=AwrBT8ntSPdVhxIAPbBXNyoA\" data-generic-error=\"We're
+        unable to preview your mail.<br>Go to Mail.\" data-nosubject=\"[No Subject]\"
+        data-timestamp='short'></div></div> <div id=\"yucs-help\" class=\"yucs-activate
+        yucs-help yucs-menu_nav\"> <a id=\"yucs-help_button\" class=\"sp yltasis\"
+        href=\"javascript:void(0);\" aria-label=\"Help\" rel=\"nofollow\"> <em class=\"yucs-hide
+        yucs-menu_anchor\">Help</em> </a> <div id=\"yucs-help_inner\" class=\"yucs-hide
+        yucs-menu yucs-hm-activate\" data-yltmenushown=\"/;_ylt=AwrBT8ntSPdVhxIAPrBXNyoA\">
+        <span class=\"sp yucs-dock\"></span> <div class=\"yucs-yql_loading\"> <ul
+        id=\"yuhead-help-panel\"> <li><a class=\"yucs-acct-link\" href=\"https://login.yahoo.com/account/personalinfo;_ylt=AwrBT8ntSPdVhxIAP7BXNyoA?.intl=us&.lang=en-US&.done=http://search.yahoo.com/search%3fp=inbody%253Aplease-dont-register-a-site-that-breaks-this-test.com&amp;.src=&amp;.intl=us&amp;.lang=en-US\"
+        target=\"_top\">Account Info</a></li>  </ul> </div> </div></div>  <div id=\"yucs-network_link\"><a
+        id=\"yucs-home_link\" href=\"http://ri.search.yahoo.com/_ylt=AwrBT8ntSPdVhxIAQLBXNyoA/RV=2/RE=1442298221/RO=10/RU=https%3a%2f%2fwww.yahoo.com%2f/RK=0/RS=2BCDMGyc1w1onZmFfVSDjxo0WUI-\"
+        rel=\"nofollow\" target=\"_top\"><em class=\"sp\">Yahoo</em><span class=\"yucs-fc\">Home</span></a></div>
+        \ <!-- empty breaking news component -->      </div>   </div> <!-- alert --><!--
+        /alert --><div id=\"yUnivHead\" class=\"yucs-hide\"><!-- empty --></div></div><!--
+        section hd --><div id=\"hd\" class=\"clr\"data-b38=\"55f748ed8cf6c\"><a id=\"logo\"
+        target=\"_top\" href=\"http://ri.search.yahoo.com/_ylt=AwrBT8ntSPdVhxIAQrBXNyoA/RV=2/RE=1442298221/RO=10/RU=http%3a%2f%2fwww.yahoo.com%2f/RK=0/RS=DcYx8iUlrbmJGrhc06YVvYuN5tM-\">Yahoo</a><div
+        class=\"sbx\"><form method=\"get\" name=\"s\" id=\"sf\" role=\"search\" action=\"http://search.yahoo.com/search;_ylt=AwrBT8ntSPdVhxIAQ7BXNyoA\"accept-charset=\"utf-8\"><label
+        for=\"yschsp\" class=\"off-left\">Search query</label><div id=\"sbq-wrap\"
+        class=\"sbq-w\"><input type=\"text\" class=\"sbq\" id=\"yschsp\" name=\"p\"
+        value=\"inbody:please-dont-register-a-site-that-breaks-this-test.com\" autocomplete=\"off\"
+        tabindex=\"1\"></div><button id=\"sbq-clear\" type=\"button\" class=\"sbq-x\"><span
+        class=\"sprite\"></span></button><input type=\"submit\" class=\"sbb\" value=\"Search\"
+        tabindex=\"2\"><input type=\"hidden\" name=\"fr2\" value=\"sb-top\"></form></div></div><!--
+        end section hd --></div><style type=\"text/css\">#right{padding-left:56px;}#bd{max-width:1261px;min-width:1057px;}.dd
+        a{color:#2C46C7;} .searchBottom .dd a{color:#324FE1;} .searchCenterFooter
+        .dd a{color:#324FE1;} .dd a.c-styl-5{color:#2C46C7;}.eclz4 .dd{background-color:#fff;border:1px
+        solid #e2e2e6;margin-top:13px;padding:10px}.eclz4 .first .dd{margin-top:0}.eclz4
+        .dd.not-card{border:none;padding:11px}.eclz4{overflow:hidden;background:none;border:none;padding:0;margin-bottom:13px}#web{margin-top:
+        0px !important;}.n89n1{overflow:hidden}.n89n1 li{*zoom:1}.n89n1 li li{*zoom:normal}#bd
+        #sidebar .dd .compFeedBack a{font-size:13px}#main #web b{font-weight: bold
+        !important;}</style><div id=\"ys\"><div id=\"horizontal-bar\"data-b38=\"55f748ee24da9\"
+        class=\"ys-grid ys-hmenu\"><ol class=\" reg searchLeftTop\"><li   class=\"first\"><div
+        class=\"dd assist horizontal-pivots pt-2u ys-lgc fl-l   fst vrtPivots\"><div
+        class=\"compList visible-pivots fl-l  \" ><ul><li class=\"active bds-s bd-0
+        bdb-2 bdc-red p-3u mr-3u fl-l \"><span class=\" t1 c-black-h td-n td-n-h c-dgray\">Web</span></li><li
+        class=\"p-3u mr-3u fl-l\"><a class=\" t1 c-black-h td-n td-n-h c-dgray\" href=\"https://images.search.yahoo.com/search/images;_ylt=AwrBT8ntSPdVhxIARbBXNyoA;_ylu=X3oDMTB0N2Noc21lBGNvbG8DYmYxBHBvcwMxBHZ0aWQDBHNlYwNwaXZz?p=inbody%3Aplease-dont-register-a-site-that-breaks-this-test.com&fr=sfp&fr2=piv-web\">Images</a></li><li
+        class=\"p-3u mr-3u fl-l\"><a class=\" t1 c-black-h td-n td-n-h c-dgray\" href=\"https://video.search.yahoo.com/search/video;_ylt=AwrBT8ntSPdVhxIARrBXNyoA;_ylu=X3oDMTB0N2Noc21lBGNvbG8DYmYxBHBvcwMxBHZ0aWQDBHNlYwNwaXZz?p=inbody%3Aplease-dont-register-a-site-that-breaks-this-test.com&fr=sfp&fr2=piv-web\">Video</a></li><li
+        class=\"p-3u mr-3u fl-l last\"><a class=\" t1 c-black-h td-n td-n-h c-dgray\"
+        href=\"https://news.search.yahoo.com/search;_ylt=AwrBT8ntSPdVhxIAR7BXNyoA;_ylu=X3oDMTB0N2Noc21lBGNvbG8DYmYxBHBvcwMxBHZ0aWQDBHNlYwNwaXZz?p=inbody%3Aplease-dont-register-a-site-that-breaks-this-test.com&fr=sfp&fr2=piv-web\">News</a></li></ul></div><div
+        class=\"compJsToggle more-pivots-toggle p-3u mr-2u fl-l\"><a class=\" t1 c-black-h
+        td-n td-n-h drop_down_black_on_hover c-dgray\" data-beacon=\"http://geo.yahoo.com/t;_ylt=AwrBT8ntSPdVhxIASLBXNyoA;_ylu=X3oDMTB0N2Noc21lBGNvbG8DYmYxBHBvcwMxBHZ0aWQDBHNlYwNwaXZz\"
+        href=\"#\" target=\"_blank\">More<span class='ml-1u mb-1 ico down-arrow-gray-thin'></span></a></div><div
+        class=\"compList more-pivots hidden z-4 bgc-white bd-1 bds-s bdc-lgray1 bs-type1
+        pt-1u pb-1u c-dgray\" ><ul><li class=\" \"><a class=\" t1 c-black-h td-n td-n-h
+        bgc-lgray4-h d-b pl-3u pr-3u pt-1u pb-1u c-dgray\" href=\"https://search.yahoo.com/local/s;_ylt=AwrBT8ntSPdVhxIASbBXNyoA;_ylu=X3oDMTB0N2Noc21lBGNvbG8DYmYxBHBvcwMxBHZ0aWQDBHNlYwNwaXZz?p=inbody%3Aplease-dont-register-a-site-that-breaks-this-test.com&fr=sfp&fr2=piv-web\">Local</a></li><li><a
+        class=\" t1 c-black-h td-n td-n-h bgc-lgray4-h d-b pl-3u pr-3u pt-1u pb-1u
+        c-dgray\" href=\"https://answers.search.yahoo.com/search;_ylt=AwrBT8ntSPdVhxIASrBXNyoA;_ylu=X3oDMTB0N2Noc21lBGNvbG8DYmYxBHBvcwMxBHZ0aWQDBHNlYwNwaXZz?p=inbody%3Aplease-dont-register-a-site-that-breaks-this-test.com&fr=sfp&fr2=piv-web\">Answers</a></li><li><a
+        class=\" t1 c-black-h td-n td-n-h bgc-lgray4-h d-b pl-3u pr-3u pt-1u pb-1u
+        c-dgray\" href=\"https://shopping.search.yahoo.com/search;_ylt=AwrBT8ntSPdVhxIAS7BXNyoA;_ylu=X3oDMTB0N2Noc21lBGNvbG8DYmYxBHBvcwMxBHZ0aWQDBHNlYwNwaXZz?p=inbody%3Aplease-dont-register-a-site-that-breaks-this-test.com&fr=sfp&fr2=piv-web\">Shopping</a></li><li><a
+        class=\" t1 c-black-h td-n td-n-h bgc-lgray4-h d-b pl-3u pr-3u pt-1u pb-1u
+        c-dgray\" href=\"https://autos.search.yahoo.com/search;_ylt=AwrBT8ntSPdVhxIATLBXNyoA;_ylu=X3oDMTB0N2Noc21lBGNvbG8DYmYxBHBvcwMxBHZ0aWQDBHNlYwNwaXZz?p=inbody%3Aplease-dont-register-a-site-that-breaks-this-test.com&fr=sfp&fr2=piv-web\">Autos</a></li><li><a
+        class=\" t1 c-black-h td-n td-n-h bgc-lgray4-h d-b pl-3u pr-3u pt-1u pb-1u
+        c-dgray\" href=\"https://recipes.search.yahoo.com/search;_ylt=AwrBT8ntSPdVhxIATbBXNyoA;_ylu=X3oDMTB0N2Noc21lBGNvbG8DYmYxBHBvcwMxBHZ0aWQDBHNlYwNwaXZz?p=inbody%3Aplease-dont-register-a-site-that-breaks-this-test.com&fr=sfp&fr2=piv-web\">Recipes</a></li><li><a
+        class=\" t1 c-black-h td-n td-n-h bgc-lgray4-h d-b pl-3u pr-3u pt-1u pb-1u
+        c-dgray\" href=\"https://sports.search.yahoo.com/search;_ylt=AwrBT8ntSPdVhxIATrBXNyoA;_ylu=X3oDMTB0N2Noc21lBGNvbG8DYmYxBHBvcwMxBHZ0aWQDBHNlYwNwaXZz?p=inbody%3Aplease-dont-register-a-site-that-breaks-this-test.com&fr=sfp&fr2=piv-web\">Sports</a></li><li><a
+        class=\" t1 c-black-h td-n td-n-h bgc-lgray4-h d-b pl-3u pr-3u pt-1u pb-1u
+        c-dgray\" href=\"https://finance.search.yahoo.com/search;_ylt=AwrBT8ntSPdVhxIAT7BXNyoA;_ylu=X3oDMTB0N2Noc21lBGNvbG8DYmYxBHBvcwMxBHZ0aWQDBHNlYwNwaXZz?p=inbody%3Aplease-dont-register-a-site-that-breaks-this-test.com&fr=sfp&fr2=piv-web\">Finance</a></li><li><a
+        class=\" t1 c-black-h td-n td-n-h bgc-lgray4-h d-b pl-3u pr-3u pt-1u pb-1u
+        c-dgray\" href=\"https://celebrity.search.yahoo.com/search;_ylt=AwrBT8ntSPdVhxIAULBXNyoA;_ylu=X3oDMTB0N2Noc21lBGNvbG8DYmYxBHBvcwMxBHZ0aWQDBHNlYwNwaXZz?p=inbody%3Aplease-dont-register-a-site-that-breaks-this-test.com&fr=sfp&fr2=piv-web\">Celebrity</a></li><li><a
+        class=\" t1 c-black-h td-n td-n-h bgc-lgray4-h d-b pl-3u pr-3u pt-1u pb-1u
+        c-dgray\" href=\"https://dictionary.search.yahoo.com/search;_ylt=AwrBT8ntSPdVhxIAUbBXNyoA;_ylu=X3oDMTB0N2Noc21lBGNvbG8DYmYxBHBvcwMxBHZ0aWQDBHNlYwNwaXZz?p=inbody%3Aplease-dont-register-a-site-that-breaks-this-test.com&fr=sfp&fr2=piv-web\">Dictionary</a></li><li
+        class=\" last\"><a class=\" t1 c-black-h td-n td-n-h bgc-lgray4-h d-b pl-3u
+        pr-3u pt-1u pb-1u c-dgray\" href=\"https://games.search.yahoo.com/search;_ylt=AwrBT8ntSPdVhxIAUrBXNyoA;_ylu=X3oDMTB0N2Noc21lBGNvbG8DYmYxBHBvcwMxBHZ0aWQDBHNlYwNwaXZz?p=inbody%3Aplease-dont-register-a-site-that-breaks-this-test.com&fr=sfp&fr2=piv-web\">Games</a></li></ul></div></div></li><li
+        \  class=\"last\"><div class=\"dd assist horizontal-timefilter fl-l pl-0u
+        pr-0u pt-2u lst timefilter\"><div class=\"compList timefilter-list hidden
+        z-4 bgc-white bd-1 bds-s bdc-lgray1 bs-type1 pt-1u pb-1u\" ><ul><li class=\"active
+        mb-0 \"><span class=\" t1 c-black-h td-n td-n-h bgc-lgray4-h d-b pl-3u pr-3u
+        pt-1u pb-1u fw-n c-dgray\">Anytime</span></li><li class=\"mb-0\"><a class=\"
+        t1 c-black-h td-n td-n-h bgc-lgray4-h d-b pl-3u pr-3u pt-1u pb-1u fw-n c-dgray\"
+        href=\"http://search.yahoo.com/search;_ylt=AwrBT8ntSPdVhxIAU7BXNyoA;_ylu=X3oDMTB2cjJqazFuBGNvbG8DYmYxBHBvcwMxBHZ0aWQDBHNlYwNmaWx0ZXI-?p=inbody%3Aplease-dont-register-a-site-that-breaks-this-test.com&ei=UTF-8&fr2=time&age=1d&btf=d&b=_UNSET_&pz=_UNSET_&pstart=_UNSET_\">Past
+        day</a></li><li class=\"mb-0\"><a class=\" t1 c-black-h td-n td-n-h bgc-lgray4-h
+        d-b pl-3u pr-3u pt-1u pb-1u fw-n c-dgray\" href=\"http://search.yahoo.com/search;_ylt=AwrBT8ntSPdVhxIAVLBXNyoA;_ylu=X3oDMTB2cjJqazFuBGNvbG8DYmYxBHBvcwMxBHZ0aWQDBHNlYwNmaWx0ZXI-?p=inbody%3Aplease-dont-register-a-site-that-breaks-this-test.com&ei=UTF-8&fr2=time&age=1w&btf=w&b=_UNSET_&pz=_UNSET_&pstart=_UNSET_\">Past
+        week</a></li><li class=\"mb-0 last\"><a class=\" t1 c-black-h td-n td-n-h
+        bgc-lgray4-h d-b pl-3u pr-3u pt-1u pb-1u fw-n c-dgray\" href=\"http://search.yahoo.com/search;_ylt=AwrBT8ntSPdVhxIAVbBXNyoA;_ylu=X3oDMTB2cjJqazFuBGNvbG8DYmYxBHBvcwMxBHZ0aWQDBHNlYwNmaWx0ZXI-?p=inbody%3Aplease-dont-register-a-site-that-breaks-this-test.com&ei=UTF-8&fr2=time&age=1m&btf=m&b=_UNSET_&pz=_UNSET_&pstart=_UNSET_\">Past
+        month</a></li></ul></div><div class=\"compJsToggle timefilter-toggle p-3u
+        mr-2u fl-l\"><a class=\" t1 c-black-h td-n td-n-h drop_down_black_on_hover
+        c-dgray\" href=\"#\" target=\"_blank\">Anytime<span class='ml-1u mb-1 ico
+        down-arrow-gray-thin'></span></a></div></div></li></ol></div></div><div id=\"bd\"
+        role=\"document\"><div id=\"results\"><style type=\"text/css\">.dd-overlay
+        .ico, .dd .ico { background-image: url(\"http://l.yimg.com/pv/static/img/cosmos_sprite1x-1439414812153.min.png\");}
+        @media    only screen and (-webkit-min-device-pixel-ratio: 2),   only screen
+        and (   min--moz-device-pixel-ratio: 2),   only screen and (     -o-min-device-pixel-ratio:
+        2/1),   only screen and (        min-device-pixel-ratio: 2),   only screen
+        and (                min-resolution: 192dpi),   only screen and (                min-resolution:
+        2dppx) {.dd-overlay .ico, .dd .ico { background-image: url(\"http://l.yimg.com/pv/static/img/cosmos_sprite2x-1439414812153.min.png\");}}.compTitle
+        .title{display:inline-block}.compTitle{overflow:hidden;position:relative}.ie.v6_0
+        .compTitle .title,.ie.v7_0 .compTitle .title,.ie.v6_0 .compTitle .ttl-img,.ie.v7_0
+        .compTitle .ttl-img{display:inline}.compTitle label{font-size:85%;margin-right:4px}.compTitle
+        .time{margin-left:10px}.compTitle .title.d-inline{display:inline}.compTitle
+        .metered_call_number{padding-right:10px;color:#3F3F3F}.compTitle .sponsored
+        a{float:right;color:#5F5F5F}#algo-bd ol.reg{margin:0;padding:0;list-style-type:none}.dd-overlay
+        .ico, .dd .ico { background-image: url(\"http://l.yimg.com/pv/static/img/cosmos_sprite1x-1439414812153.min.png\");}
+        @media    only screen and (-webkit-min-device-pixel-ratio: 2),   only screen
+        and (   min--moz-device-pixel-ratio: 2),   only screen and (     -o-min-device-pixel-ratio:
+        2/1),   only screen and (        min-device-pixel-ratio: 2),   only screen
+        and (                min-resolution: 192dpi),   only screen and (                min-resolution:
+        2dppx) {.dd-overlay .ico, .dd .ico { background-image: url(\"http://l.yimg.com/pv/static/img/cosmos_sprite2x-1439414812153.min.png\");}}.compDlink{height:17px;line-height:17px;overflow:hidden;margin-bottom:2px;zoom:1}.compDlink.iconisd{height:auto}.compDlink.iconisd
+        a{display:inline-block}.compDlink li{display:inline-block;overflow:hidden;list-style-type:none;white-space:nowrap;*display:inline;zoom:1}.compDlink
+        .sep{text-align:center;display:inline-block;*display:inline;zoom:1}.compDlink
+        li:last-child{margin:0}.compDlink.toggleLinks{text-align:right;cursor:pointer;color:#324fe1}.compDlink.toggleLinks
+        li,.compDlink.toggleLinks .sep{display:inline;float:none}.compDlink.toggleLinks
+        .sep{padding-right:4px}.compDlink.toggleLinks .selected{color:#000;font-weight:bold}.compDlink.tab{height:auto}.compDlink.tab
+        li{line-height:160%}.compDlink.tab li span.txt{color:#5F5F5F}.compDlink.tab
+        li span.txt:hover{color:#000}.compDlink.tab li.selected span.txt{border-bottom:2px
+        solid #006e8e;color:#000}.compDlink .ico{display:inline-block;margin-right:0;vertical-align:middle;margin-top:-2px}.compDlink.bdr{overflow:visible;height:auto;margin-bottom:5px}.compDlink.bdr
+        li{border:1px #E2E2E6 solid;margin-right:-1px;text-align:center}.compText.summary
+        .attr a{color:#757575;margin-left:5px}.compText.summary .attr a:hover{text-decoration:underline}.compText.sc-more{margin-top:15px}.compText
+        .play-video-big{vertical-align:middle}.compText.rt-align{color:#757575;font-size:11px;line-height:22px;padding-right:10px;text-align:right;border-left:1px
+        solid #E2E2E6;border-right:1px solid #E2E2E6}.compText.rt-align-nb{color:#757575;font-size:11px;line-height:22px;padding-right:10px;text-align:right}.compArticleList
+        li{position:relative;margin-top:10px;overflow:auto;zoom:1}.ie.v6_0 .compArticleList
+        li{zoom:1}.compArticleList .poa-rt{position:absolute;top:0;right:0}.compArticleList
+        .subline .csub a{padding-right:1em}.compArticleList .subline a{display:inline}.compArticleList
+        .cite{margin-right:10px;font-weight:normal;color:#1e7d83}.compArticleList
+        .thmb{float:left;margin:2px 10px 0 0}.compArticleList .fst{margin-top:0}.compArticleList
+        .subline{overflow:hidden;zoom:1}.compArticleList .capwrap{float:left;position:relative}.compArticleList
+        noscript img,.js .compArticleList img,.yui3-js-enabled .compArticleList img{display:block}.compArticleList
+        li.bdb{border-bottom:1px solid #EAEAEA;padding-bottom:10px}.compArticleList
+        li.lst.bdb{border-bottom:none}.sc .viddd{margin-top:5px}#web .sc.vddbot{top:15px;margin-bottom:45px}.sc
+        .viddd ol{margin-bottom:-5px}.sc .viddd ol li{position:relative;display:inline-block;*float:left;line-height:normal;margin:0
+        6px 5px 0;vertical-align:top;zoom:1}.sc .viddd ol li.last{margin-right:0}.sc
+        .viddd li a{text-decoration:none;display:block;position:relative}.sc .viddd
+        .thm{border:medium none;margin:0;padding:0}.sc .viddd .m-thmb{background-color:#000;display:block;width:160px;height:91px;position:relative;overflow:hidden}.sc
+        .viddd .m-thmb q,.sc .viddd .m-thmb span{bottom:1px;color:#FFF;cursor:pointer;display:block;left:0;margin:0
+        1px;padding:3px 0 3px 25px;position:absolute;right:0;text-align:left;white-space:nowrap}.sc
+        .viddd q{width:124px;background:url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzAwMDAwMCIgc3RvcC1vcGFjaXR5PSIwLjAzIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiMwMDAwMDAiIHN0b3Atb3BhY2l0eT0iMC43MiIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);background:-moz-linear-gradient(top,rgba(0,0,0,0.03)
+        0,rgba(0,0,0,0.72) 100%);background:-webkit-gradient(linear,left top,left
+        bottom,color-stop(0%,rgba(0,0,0,0.03)),color-stop(100%,rgba(0,0,0,0.72)));background:-webkit-linear-gradient(top,rgba(0,0,0,0.03)
+        0,rgba(0,0,0,0.72) 100%);background:-o-linear-gradient(top,rgba(0,0,0,0.03)
+        0,rgba(0,0,0,0.72) 100%);background:-ms-linear-gradient(top,rgba(0,0,0,0.03)
+        0,rgba(0,0,0,0.72) 100%);background:linear-gradient(to bottom,rgba(0,0,0,0.03)
+        0,rgba(0,0,0,0.72) 100%);filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#08000000',endColorstr='#b8000000',GradientType=0)}.sc
+        .viddd span.thmbplay{background-position:-183px -92px;left:4px;bottom:4px;height:17px;text-indent:-9000px;width:17px;z-index:1;padding:0}.sc
+        .viddd .desc{overflow:hidden;text-overflow:ellipsis;width:122px;text-shadow:0
+        1px #000}.sc .viddd .yschmore{clear:both}.mmwrap.hide{display:none}.vsycwrap
+        .card .ico{visibility:hidden}#vsycdeck .card .ico{visibility:visible}.vsycwrap
+        s,.vrplay,.vsycwrap .mg,.vsycwrap .mm-nav a,.vsycwrap .play,.vsycwrap .ico,.vsycwrap
+        .btn,.vsycwrap .sbxclr{background-image:url(\"https://s.yimg.com/pv/static/img/vsyc-nonretina-201401130203.png\");background-repeat:no-repeat}body.ie.v6_0
+        .vsycwrap .mm-nav a,body.ie.v6_0 .vsycwrap s,body.ie.v6_0 #vsycdeck .ico,body.ie.v6_0
+        .qsb,body.ie.v6_0 #vsycdeck .btn,body.ie.v6_0 .vsycwrap .mg,body.ie.v6_0 .vsycwrap
+        .play,body.ie.v6_0 .vrplay{background-image:url(\"https://s.yimg.com/pv/static/img/vsyc-ie6-201401130203.png\");background-position-y:50%}@media(-webkit-min-device-pixel-ratio:2),(min-resolution:192dpi){.vsycwrap
+        s,.vrplay,.vsycwrap .mg,.vsycwrap .mm-nav a,.vsycwrap .play,.vsycwrap .ico,.vsycwrap
+        .btn,.vsycwrap .sbxclr{background-image:url(\"https://s.yimg.com/pv/static/img/vsyc-retina-201401130203.png\");background-size:859px
+        60px}}.compList ul{vertical-align:top}.compList li{overflow:hidden}.compList
+        li.active{font-weight:bold;color:#3f3f3f}.compList img{vertical-align:middle}.compList
+        ul li p{font-size:13px;line-height:17px}.compJsToggle.t-arrow{border-bottom:1px
+        solid #E2E2E6}.compJsToggle.t-arrow.no-bb{border-bottom:none}.compJsToggle.t-arrow
+        a{display:block;height:32px;line-height:35px;text-align:center;-webkit-tap-highlight-color:rgba(0,0,0,0)}.compJsToggle.t-arrow
+        a.hidden{display:none}.compJsToggle .ico{display:inline-block;*display:inline;*margin-top:10px}.compJsToggle.bb-0{border-bottom:0}.compPagination{overflow:hidden}.compPagination
+        a{border:1px solid #fafafc;float:left;margin:0 5px 0 0;padding:2px 8px;text-align:center}.compPagination
+        a:hover{border:1px solid #e2e2e6;background-color:#fff;text-decoration:none}.compPagination
+        strong{color:#3f3f3f;font-weight:bold;float:left;margin:0 5px 0 0;padding:2px
+        6px;border:1px solid #e2e2e6;background-color:#fff}.compPagination span{float:right;color:#757575;font-size:11px;margin-right:10px;margin-top:3px}.compPagination
+        .prev:hover,.compPagination .next:hover{border:1px solid #fafafc;text-decoration:underline;background-color:#fff}.ie.v6_0
+        #sticky-hd,.ie.v7_0 #sticky-hd{position:relative}#sticky-hd{position:absolute;top:0;width:100%;min-width:1000px;background-color:#fafafc;z-index:15000}#sticky-hd.active{border-bottom:solid
+        1px #ccc;box-shadow:0 0 9px 0 #ccc;-webkit-box-shadow:0 0 9px 0 #ccc;-moz-box-shadow:0
+        0 9px 0 #ccc;position:fixed;padding-bottom:8px;top:-78px}.ie.v6_0 #sticky-hd
+        ~ #bd,.ie.v7_0 #sticky-hd ~ #bd{margin-top:13px}#sticky-hd ~ #bd{margin-top:83px}#doc.uh3-p
+        #sticky-hd.active #yucs .yucs-fl-right{display:none!important}</style><div
+        id=\"cols\"><div id=\"left\"><div><div id=\"main\"><div><div id=\"web\"><ol
+        class=\" reg searchCenterTop\"><li   class=\"first last\"><div class=\"dd
+        assist fst lst Sugg\" style=\"margin-top:0;margin-bottom:32px;\" data-b38=\"55f748ee25d23\"><div
+        class=\"compTitle\"><h3 class=\"title\">Did you mean</h3> <span class=\"stxt
+        \"><a href=\"http://search.yahoo.com/search;_ylt=AwrBT8ntSPdVhxIAVrBXNyoA;_ylu=X3oDMTEwcTc4aWkwBGNvbG8DYmYxBHBvcwMxBHZ0aWQDBHNlYwNxc3MtcXJ3?ei=UTF-8&p=inbody+please+don%27t+register+a+site+that+breaks+this+test&fr2=12642\">inbody
+        please <strong><i>don&#39;t</i></strong> register a site that breaks this
+        test</a></span></div></div></li></ol><style>.algo a,.algo a b,.algo .cite,.algo
+        .cite b,.algo .compText,.algo .compText b{font-weight:normal}.algo .title
+        a{text-decoration:none !important} .algo {margin-top: 30px !important} .first
+        .algo.fst {margin-top: 0px !important}#web .algo .cite, #web .algo .cite b{font-size:
+        15px;}#web .dd.SrQkLnk{width:542px;margin-right:2px;}</style><ol class=\"mb-15
+        reg searchCenterMiddle\"><li id=\"b380\"  class=\"first\"><div class=\"dd
+        algo x2b2s48 fst lst Sr\" data-b38=\"55f748ee25ebd\"><div class=\"compTitle
+        options-toggle\"><h3 class=\"title\"><a class=\" ac-algo ac-21th\" href=\"http://ri.search.yahoo.com/_ylt=AwrBT8ntSPdVhxIAV7BXNyoA;_ylu=X3oDMTByOHZyb21tBGNvbG8DYmYxBHBvcwMxBHZ0aWQDBHNlYwNzcg--/RV=2/RE=1442298222/RO=10/RU=https%3a%2f%2fgithub.com%2fblatyo%2fpage_rankr%2fcommit%2fbcffabad92a343bedc00cdcf24d24fe83295d305/RK=0/RS=Ot8D.Uo3haQr9BcLsMM9F9ZRpGM-\"
+        target=\"_blank\" data-b38=\"55f748ee26042\">blatyo/page_rankr@bcffaba - GitHub</a></h3>
+        </div><ul class=\"compDlink\"><li class=\"selected\"><span class=\"txt\"><span
+        class=\" cite fw-m\">github.<b>com</b></span></span></li><li><span class=\"sep
+        clrGrey fc-12th fw-xl\">&nbsp;&nbsp;&#155;&nbsp;</span><span class=\"txt\"><a
+        class=\" cite fw-m\" href=\"http://ri.search.yahoo.com/_ylt=AwrBT8ntSPdVhxIAWLBXNyoA;_ylu=X3oDMTByOHZyb21tBGNvbG8DYmYxBHBvcwMxBHZ0aWQDBHNlYwNzcg--/RV=2/RE=1442298222/RO=10/RU=https%3a%2f%2fgithub.com%2fblatyo/RK=0/RS=hhb7P7ExgJTJJEOrIjcXk9h4QzE-\"
+        target=\"_blank\" data-b38=\"55f748ee26196\">blatyo</a></span></li></ul><div
+        class=\"compText aAbs\" ><p class=\"lh-18\">@@ -13,14 +13,16 @@ content-type:
+        - text/html; charset=ISO-8859-1: date: - - Wed, 26 Oct 2011 23:48:16 GMT +
+        - Mon, 12 Dec 2011 02:35:48 GMT: expires: - &quot;-1 &quot; cache ... </p></div></div></li><li
+        id=\"b381\"  class=\"last\"><div class=\"dd bing_dd fst lst Video\" data-b38=\"55f748ee26251\"><div
+        class=\"compTitle mb-5\"><h3 class=\"title\"><a style=\" \" class=\" td-hu\"
+        href=\"https://video.search.yahoo.com/search/video;_ylt=AwrBT8ntSPdVhxIAWbBXNyoA;_ylu=X3oDMTByMjB0aG5zBGNvbG8DYmYxBHBvcwMxBHZ0aWQDBHNlYwNzYw--?p=Inbody%3Aplease-dont-register-a-site-that-breaks-this-test.com\"
+        target=\"_blank\"><b>Inbody</b>:<b>please</b>-<b>dont</b>-<b>register</b>-<b>a</b>-<b>site</b>-<b>that</b>-<b>breaks</b>-<b>this</b>-<b>test</b>.<b>com
+        </b>- Video Results</a></h3> </div><ul class=\"compArticleList\"><li class=\"ov-a
+        fst mt-3\"><div class=\"capwrap\"><a data-pos=\"0\" class=\"thmb bgc-5th\"
+        href=\"http://video.search.yahoo.com/video/play;_ylt=AwrBT8ntSPdVhxIAW7BXNyoA;_ylu=X3oDMTByMjB0aG5zBGNvbG8DYmYxBHBvcwMxBHZ0aWQDBHNlYwNzYw--?p=inbody%3Aplease-dont-register-a-site-that-breaks-this-test.com&back=http%3A%2F%2Fsearch.yahoo.com%2Fsearch%3Fp%3Dinbody%253Aplease-dont-register-a-site-that-breaks-this-test.com%26ei%3DUTF-8&turl=http%3A%2F%2Fts2.mm.bing.net%2Fth%3Fid%3DWN.0Itgdf8hEp0ezlgpB0fKYA%26pid%3D15.1&rurl=http%3A%2F%2Fwww.mtv.com%2Fvideos%2Fpharrell-williams%2F982367%2Fhappy.jhtml&tit=Pharrell+Williams+-+%26quot%3BHappy%26quot%3B&l=239&vid=4ea4a20a9f4e0a1b3433aad34bb46abe&sigr=11umdrgc6&sigb=138mvf9sl&sigt=1156rvrqd&sigi=11v0fb6fb\"
+        target=\"_blank\" title=\"Pharrell Williams - &quot;Happy&quot;\" data-pos=\"0\"><img
+        class=\"s-img hidden\" style=\"padding:13px 0px 13px 0px;\" alt=\"Pharrell
+        Williams - &quot;Happy&quot;\" title=\"Pharrell Williams - &quot;Happy&quot;\"
+        width=\"140\" height=\"54\" data-src=\"http://ts2.mm.bing.net/th?id=WN.0Itgdf8hEp0ezlgpB0fKYA&pid=15.1\"/><div
+        class=\"ctimestamp\">3:59</div></a><div class=\"capbox noshade z-1\"><span
+        class=\"bgico ico play-video\"></span></div></div><h4><a href=\"http://video.search.yahoo.com/video/play;_ylt=AwrBT8ntSPdVhxIAWrBXNyoA;_ylu=X3oDMTByMjB0aG5zBGNvbG8DYmYxBHBvcwMxBHZ0aWQDBHNlYwNzYw--?p=inbody%3Aplease-dont-register-a-site-that-breaks-this-test.com&back=http%3A%2F%2Fsearch.yahoo.com%2Fsearch%3Fp%3Dinbody%253Aplease-dont-register-a-site-that-breaks-this-test.com%26ei%3DUTF-8&turl=http%3A%2F%2Fts2.mm.bing.net%2Fth%3Fid%3DWN.0Itgdf8hEp0ezlgpB0fKYA%26pid%3D15.1&rurl=http%3A%2F%2Fwww.mtv.com%2Fvideos%2Fpharrell-williams%2F982367%2Fhappy.jhtml&tit=Pharrell+Williams+-+%26quot%3BHappy%26quot%3B&l=239&vid=4ea4a20a9f4e0a1b3433aad34bb46abe&sigr=11umdrgc6&sigb=138mvf9sl&sigt=1156rvrqd&sigi=11v0fb6fb\"
+        target=\"_blank\" data-pos=\"0\">Pharrell Williams - &quot;Happy&quot;</a></h4><span
+        class=\"cite\">mtv.<b>com</b></span></li><li class=\"ov-a lst mt-3\"><div
+        class=\"capwrap\"><a data-pos=\"1\" class=\"thmb bgc-5th\" href=\"http://video.search.yahoo.com/video/play;_ylt=AwrBT8ntSPdVhxIAXbBXNyoA;_ylu=X3oDMTByMjB0aG5zBGNvbG8DYmYxBHBvcwMxBHZ0aWQDBHNlYwNzYw--?p=inbody%3Aplease-dont-register-a-site-that-breaks-this-test.com&back=http%3A%2F%2Fsearch.yahoo.com%2Fsearch%3Fp%3Dinbody%253Aplease-dont-register-a-site-that-breaks-this-test.com%26ei%3DUTF-8&turl=http%3A%2F%2Fts2.mm.bing.net%2Fth%3Fid%3DWN.%252f%252bxwXomaqp6O9qJIAkDm2Q%26pid%3D15.1&rurl=http%3A%2F%2Fwww.mtv.com%2Fvideos%2Fmiley-cyrus%2F954189%2Fwrecking-ball.jhtml&tit=Miley+Cyrus+-+%26quot%3BWrecking+Ball%26quot%3B&l=221&vid=83a84d313271200f8d2a1f6c6e299499&sigr=120etf571&sigb=138mvf9sl&sigt=117s5k1kg&sigi=123fkc197\"
+        target=\"_blank\" title=\"Miley Cyrus - &quot;Wrecking Ball&quot;\" data-pos=\"1\"><img
+        class=\"s-img hidden\" style=\"padding:4px 0px 3px 0px;\" alt=\"Miley Cyrus
+        - &quot;Wrecking Ball&quot;\" title=\"Miley Cyrus - &quot;Wrecking Ball&quot;\"
+        width=\"140\" height=\"73\" data-src=\"http://ts2.mm.bing.net/th?id=WN.%2f%2bxwXomaqp6O9qJIAkDm2Q&pid=15.1\"/><div
+        class=\"ctimestamp\">3:41</div></a><div class=\"capbox noshade z-1\"><span
+        class=\"bgico ico play-video\"></span></div></div><h4><a href=\"http://video.search.yahoo.com/video/play;_ylt=AwrBT8ntSPdVhxIAXLBXNyoA;_ylu=X3oDMTByMjB0aG5zBGNvbG8DYmYxBHBvcwMxBHZ0aWQDBHNlYwNzYw--?p=inbody%3Aplease-dont-register-a-site-that-breaks-this-test.com&back=http%3A%2F%2Fsearch.yahoo.com%2Fsearch%3Fp%3Dinbody%253Aplease-dont-register-a-site-that-breaks-this-test.com%26ei%3DUTF-8&turl=http%3A%2F%2Fts2.mm.bing.net%2Fth%3Fid%3DWN.%252f%252bxwXomaqp6O9qJIAkDm2Q%26pid%3D15.1&rurl=http%3A%2F%2Fwww.mtv.com%2Fvideos%2Fmiley-cyrus%2F954189%2Fwrecking-ball.jhtml&tit=Miley+Cyrus+-+%26quot%3BWrecking+Ball%26quot%3B&l=221&vid=83a84d313271200f8d2a1f6c6e299499&sigr=120etf571&sigb=138mvf9sl&sigt=117s5k1kg&sigi=123fkc197\"
+        target=\"_blank\" data-pos=\"1\">Miley Cyrus - &quot;Wrecking Ball&quot;</a></h4><span
+        class=\"cite\">mtv.<b>com</b></span></li><li class=\"ov-a  mt-3\"><div class=\"capwrap\"><a
+        data-pos=\"2\" class=\"thmb bgc-5th\" href=\"http://video.search.yahoo.com/video/play;_ylt=AwrBT8ntSPdVhxIAX7BXNyoA;_ylu=X3oDMTByMjB0aG5zBGNvbG8DYmYxBHBvcwMxBHZ0aWQDBHNlYwNzYw--?p=inbody%3Aplease-dont-register-a-site-that-breaks-this-test.com&back=http%3A%2F%2Fsearch.yahoo.com%2Fsearch%3Fp%3Dinbody%253Aplease-dont-register-a-site-that-breaks-this-test.com%26ei%3DUTF-8&turl=http%3A%2F%2Fts4.mm.bing.net%2Fth%3Fid%3DWN.i5Ae58wWzM6caohFCmU2BA%26pid%3D15.1&rurl=http%3A%2F%2Fwww.artistdirect.com%2Fvideo%2Fbecky-g-becky-from-the-block-behind-the-scenes%2F151870&tit=Becky+G+-+Becky+from+The+Block+%28Behind+The+Scenes%29&l=246&vid=224ede046fecf722de7ef3e551468349&sigr=12nbs9t0j&sigb=138mvf9sl&sigt=11i51n03v&sigi=11v9f88o5\"
+        target=\"_blank\" title=\"Becky G - Becky from The Block (Behind The Scenes)\"
+        data-pos=\"2\"><img class=\"s-img hidden\" style=\"padding:1px 0px 1px 0px;\"
+        alt=\"Becky G - Becky from The Block (Behind The Scenes)\" title=\"Becky G
+        - Becky from The Block (Behind The Scenes)\" width=\"140\" height=\"78\" data-src=\"http://ts4.mm.bing.net/th?id=WN.i5Ae58wWzM6caohFCmU2BA&pid=15.1\"/><div
+        class=\"ctimestamp\">4:06</div></a><div class=\"capbox noshade z-1\"><span
+        class=\"bgico ico play-video\"></span></div></div><h4><a href=\"http://video.search.yahoo.com/video/play;_ylt=AwrBT8ntSPdVhxIAXrBXNyoA;_ylu=X3oDMTByMjB0aG5zBGNvbG8DYmYxBHBvcwMxBHZ0aWQDBHNlYwNzYw--?p=inbody%3Aplease-dont-register-a-site-that-breaks-this-test.com&back=http%3A%2F%2Fsearch.yahoo.com%2Fsearch%3Fp%3Dinbody%253Aplease-dont-register-a-site-that-breaks-this-test.com%26ei%3DUTF-8&turl=http%3A%2F%2Fts4.mm.bing.net%2Fth%3Fid%3DWN.i5Ae58wWzM6caohFCmU2BA%26pid%3D15.1&rurl=http%3A%2F%2Fwww.artistdirect.com%2Fvideo%2Fbecky-g-becky-from-the-block-behind-the-scenes%2F151870&tit=Becky+G+-+Becky+from+The+Block+%28Behind+The+Scenes%29&l=246&vid=224ede046fecf722de7ef3e551468349&sigr=12nbs9t0j&sigb=138mvf9sl&sigt=11i51n03v&sigi=11v9f88o5\"
+        target=\"_blank\" data-pos=\"2\">Becky G - Becky from The Block (Behind The
+        Scenes)</a></h4><span class=\"cite\">artistdirect.<b>com</b></span></li><li
+        class=\"ov-a  mt-3\"><div class=\"capwrap\"><a data-pos=\"3\" class=\"thmb
+        bgc-5th\" href=\"http://video.search.yahoo.com/video/play;_ylt=AwrBT8ntSPdVhxIAYbBXNyoA;_ylu=X3oDMTByMjB0aG5zBGNvbG8DYmYxBHBvcwMxBHZ0aWQDBHNlYwNzYw--?p=inbody%3Aplease-dont-register-a-site-that-breaks-this-test.com&back=http%3A%2F%2Fsearch.yahoo.com%2Fsearch%3Fp%3Dinbody%253Aplease-dont-register-a-site-that-breaks-this-test.com%26ei%3DUTF-8&turl=http%3A%2F%2Fts2.mm.bing.net%2Fth%3Fid%3DWN.uX%252bmRqFdzP8boksT7M540A%26pid%3D15.1&rurl=http%3A%2F%2Fwww.mtv.com%2Fvideos%2Feminem%2F954173%2Fberzerk-explicit.jhtml&tit=Eminem+-+%26quot%3BBerzerk+%28Explicit%29%26quot%3B&l=260&vid=b0360d187c945101d44ea71ee8e9ac55&sigr=11u8ks30u&sigb=138mvf9sl&sigt=11754ribs&sigi=121euo969\"
+        target=\"_blank\" title=\"Eminem - &quot;Berzerk (Explicit)&quot;\" data-pos=\"3\"><img
+        class=\"s-img hidden\" style=\"padding:4px 0px 3px 0px;\" alt=\"Eminem - &quot;Berzerk
+        (Explicit)&quot;\" title=\"Eminem - &quot;Berzerk (Explicit)&quot;\" width=\"140\"
+        height=\"73\" data-src=\"http://ts2.mm.bing.net/th?id=WN.uX%2bmRqFdzP8boksT7M540A&pid=15.1\"/><div
+        class=\"ctimestamp\">4:20</div></a><div class=\"capbox noshade z-1\"><span
+        class=\"bgico ico play-video\"></span></div></div><h4><a href=\"http://video.search.yahoo.com/video/play;_ylt=AwrBT8ntSPdVhxIAYLBXNyoA;_ylu=X3oDMTByMjB0aG5zBGNvbG8DYmYxBHBvcwMxBHZ0aWQDBHNlYwNzYw--?p=inbody%3Aplease-dont-register-a-site-that-breaks-this-test.com&back=http%3A%2F%2Fsearch.yahoo.com%2Fsearch%3Fp%3Dinbody%253Aplease-dont-register-a-site-that-breaks-this-test.com%26ei%3DUTF-8&turl=http%3A%2F%2Fts2.mm.bing.net%2Fth%3Fid%3DWN.uX%252bmRqFdzP8boksT7M540A%26pid%3D15.1&rurl=http%3A%2F%2Fwww.mtv.com%2Fvideos%2Feminem%2F954173%2Fberzerk-explicit.jhtml&tit=Eminem+-+%26quot%3BBerzerk+%28Explicit%29%26quot%3B&l=260&vid=b0360d187c945101d44ea71ee8e9ac55&sigr=11u8ks30u&sigb=138mvf9sl&sigt=11754ribs&sigi=121euo969\"
+        target=\"_blank\" data-pos=\"3\">Eminem - &quot;Berzerk (Explicit)&quot;</a></h4><span
+        class=\"cite\">mtv.<b>com</b></span></li></ul><div class=\"compText mt-8\"
+        ><p class=\"\"><a href=\"https://video.search.yahoo.com/search/video;_ylt=AwrBT8ntSPdVhxIAYrBXNyoA;_ylu=X3oDMTByMjB0aG5zBGNvbG8DYmYxBHBvcwMxBHZ0aWQDBHNlYwNzYw--?p=Inbody%3Aplease-dont-register-a-site-that-breaks-this-test.com\"
+        target=\"_blank\">More <b>Inbody</b>:<b>please</b>-<b>dont</b>-<b>register</b>-<b>a</b>-<b>site</b>-<b>that</b>-<b>breaks</b>-<b>this</b>-<b>test</b>.<b>com
+        </b>videos</a> </p></div></div></li></ol></div></div></div><ol class=\" reg
+        searchBottom\"><li   class=\"first\"><div class=\"dd pagination fst lst Pgntn\"><div
+        class=\"compPagination\"><span>1 result</span></div></div></li></ol></div></div><div
+        id=\"right\"><div class=\"j229\"></div></div></div></div><div class=\"bdc\"><div
+        class=\"sbx\"><form method=\"get\" name=\"sB\" id=\"sB\" role=\"search\" action=\"http://search.yahoo.com/search;_ylt=AwrBT8ntSPdVhxIAY7BXNyoA\"accept-charset=\"utf-8\"><label
+        for=\"yschsp-bot\" class=\"off-left\">Search query</label><div id=\"sbq-wrap-bot\"
+        class=\"sbq-w\"><input type=\"text\" class=\"sbq\" id=\"yschsp-bot\" name=\"p\"
+        value=\"inbody:please-dont-register-a-site-that-breaks-this-test.com\" autocomplete=\"off\"></div><button
+        id=\"sbq-clear-bot\" type=\"button\" class=\"sbq-x\"><span class=\"sprite\"></span></button><input
+        type=\"submit\" class=\"sbb\" value=\"Search\"><input type=\"hidden\" name=\"fr2\"
+        value=\"sb-bot\"></form></div><div id=\"ft\" role=\"contentinfo\"data-b38=\"55f748ee26ea7\"
+        referrer=\"unsafe-url\"><ul><li class=\"copyright\">Yahoo</li><li><a href=\"http://help.yahoo.com/l/us/yahoo/search/;_ylt=AwrBT8ntSPdVhxIAZLBXNyoA\">Help</a></li><li><a
+        href=\"http://ri.search.yahoo.com/_ylt=AwrBT8ntSPdVhxIAZbBXNyoA/RV=2/RE=1442298222/RO=10/RU=https%3a%2f%2fyahoo.uservoice.com%2fforums%2f193847-search/RK=0/RS=xGQUZv8sWucvNR.2h4t9TLxCoKw-\"
+        id=\"usr-fdb-lnk\" class=\"etl\" data-url=\"http://l.yimg.com/pv/static/lib/uservoice_201404181503.js\"
+        data-timeout=\"2000\" data-uv-lightbox=\"classic_widget\" data-uv-mode=\"feedback\"
+        data-uv-primary-color=\"#cc6d00\" data-uv-link-color=\"#007dbf\" data-uv-forum-id=\"193847\">Suggestions</a></li><li><a
+        href=\"http://ri.search.yahoo.com/_ylt=AwrBT8ntSPdVhxIAZrBXNyoA/RV=2/RE=1442298222/RO=10/RU=http%3a%2f%2finfo.yahoo.com%2fprivacy%2fus%2fyahoo%2fsearch%2fdetails.html/RK=0/RS=tV10J0xGepJWH1dwgBb3rXaUB68-\">Privacy</a></li><li><a
+        href=\"http://ri.search.yahoo.com/_ylt=AwrBT8ntSPdVhxIAZ7BXNyoA/RV=2/RE=1442298222/RO=10/RU=http%3a%2f%2finfo.yahoo.com%2flegal%2fus%2fyahoo%2futos%2futos-173.html/RK=0/RS=Sh_Xl.rTghgCpfWzxCyTU87O55M-\">Terms</a></li><li><a
+        href=\"http://ri.search.yahoo.com/_ylt=AwrBT8ntSPdVhxIAaLBXNyoA/RV=2/RE=1442298222/RO=10/RU=http%3a%2f%2fadvertising.yahoo.com%2farticle%2fsearch-advertising.html/RK=0/RS=lmu6.6EQNlKuKkzsC9Jw9t8ELeg-\">Advertise</a></li><li><a
+        href=\"http://search.yahoo.com/info/submit.html;_ylt=AwrBT8ntSPdVhxIAabBXNyoA\">Submit
+        Your Site</a></li><li class=\"pbb\">Powered by Bing&trade;</li></ul></div></div></div></div><div
+        class=\"adBlock160x600Spot1 abdt\" style=\"height:1px;position:absolute;left:-10px;top:-10px\"></div><script
+        id=\"template-vcard\" type=\"text/x-handlebars-template\"><div class=\"ccont\"><div
+        class=\"card-m\"><a class=\"card-a\" href=\"<%=data.iturl%>\" target=\"_blank\"
+        title=\"Play\"><img src=\"<%=data.turl%>\" alt=\"\"><span class=\"card-ico\"><s
+        class=\"ico\"></s><strong class=\"ttdd\"><%==data.tit%></strong></span></a><div
+        class=\"playpod\"></div></div><div class=\"card-d\"><div class=\"cdd\"><h3><%==data.tit%></h3><span
+        class=\"desc\"><%==data.des%></span><span class=\"attr\"><a class=\"url\"
+        target=\"_blank\" href=\"<%=data.trurl%>\"><%=data.host%></a>&nbsp;&nbsp;&nbsp;<%
+        if(data.l){ %><%=data.l%>&nbsp;&nbsp;&nbsp;<% } %><% if(data.age){ %><%=data.age%>&nbsp;&nbsp;&nbsp;<%
+        } %></span></div><div class=\"upn\"></div></div></div></script><script id=\"template-upn\"
+        type=\"text/x-handlebars-template\"><strong>Up Next</strong><div class=\"vr\"><%
+        var url = data.url?data.url:data.fpurl;%><a class=\"res\" href=\"<%=url%>\"><img
+        alt=\"\" src=\"<%=data.turl%>\"><div class=\"stack grad\"><div class=\"bt
+        inf\"><h3 class=\"shadow\"><%==data.tit%></h3></div><% if(data.l){ %><span
+        class=\"note dur\"><%=data.l%></span><% } %></div></a></div></script><script
+        id=\"template-qs\" type=\"text/x-handlebars-template\"><% var url = data.url?data.url:data.fpurl;%><a
+        href=\"<%=url%>\" data-pos=\"<%=data.pos%>\" class=\"res vg\"><img class=\"thm\"
+        alt=\"\" src=\"<%=data.turl%>\"><div class=\"stack grad\"><div class=\"bt
+        inf\"><h3 class=\"shadow\"><span class=\"spw\"><s class=\"splay\"></s></span><span
+        class=\"qtt\"><%==data.tit%></span></h3><h5 class=\"shadow\"><%==data.host%></h5></div><%
+        if(data.age && !Y.Lang.isValue(data.stale) &&(data.latest ||(data.plr && data.plr.plr!=6
+        && data.plr.plr!=2 && (data.group==\"latest\" || (data.sr && data.sr!=\"hq\"
+        && data.sr!=\"pr\"))))){ %><span class=\"age shadow note\"><%=data.age%></span><%
+        } %><% if(data.l){ %><span class=\"note dur\"><%=data.l%></span><% } %></div></a></script><script>YUI_config={\"spaceid\":\"2766679\",\"pvid\":\"5DtDhDk4LjGxXonFnBzpGQnaMjQuMgAAAACEiW4G\",\"beacon\":\"http:\\/\\/geo.yahoo.com\\/t\",\"testid\":\"\",\"geo\":[],\"mtestid\":\"\",\"fetchCSS\":true};(function(){var
+        e=window.location,d,b;function c(f){return decodeURIComponent(f.replace(/\\+/g,\"
+        \"))}function a(j){var h=j.match(/([^\\?#&]+)=([^#&]*)/g)||[],l={},g,f,k;for(g=0,f=h.length;g<f;++g){k=h[g].split(\"=\");l[c(k[0])]=c(k[1])}return
+        l}if(window.navigator&&window.navigator.userAgent.match(/Gecko\\//)){d=/#.*$/.exec(e.href);d=d&&d[0]?d[0]:\"\"}else{d=e.hash}b=a(d);if(b.sd){document.getElementById(\"yschsp\").value=b.sd}else{if(b._sd){document.getElementById(\"yschsp\").value=\"\"}}})();(function(){YUI={Env:{mods:{},add:function(n,m,l,d){if(n&&n.addEventListener){n.addEventListener(m,l,d)}else{if(n&&n.attachEvent){n.attachEvent(\"on\"+m,l)}}},remove:function(o,n,m,d){if(o&&o.removeEventListener){try{o.removeEventListener(n,m,d)}catch(l){}}else{if(o&&o.detachEvent){o.detachEvent(\"on\"+n,m)}}}},add:function(l,n,d,m){YUI.Env.mods[l]={name:l,fn:n,version:d,details:m||{}}}};Y={_pending:[],use:function(){Y._pending.push(arguments)},Search:{}};var
+        i=window,g=document,k=YUI.Env.add,f=YUI.Env.remove,b=(function(){var d=[];function
+        l(){setTimeout(function(){var n=0,m=d.length;for(;n<m;n++){d[n]()}f(i,\"load\",l)},0)}k(i,\"load\",l);return{add:function(m){d.push(m)}}}()),a=(function(){var
+        d=navigator.userAgent.match(/MSIE\\s([^;]*)/);if(d){return parseFloat(d[1])}return
+        0}());function c(d){return d.replace(/^\\s+|\\s+$/g,\"\")}function e(m,d){var
+        l=new RegExp(\"(\\\\s|^)\"+d+\"(\\\\s|$)\");return m.className.match(l)}function
+        j(m,d){var l=new RegExp(\"(\\\\s|^)\"+d+\"(\\\\s|$)\");m.className=c(m.className.replace(l,\"
+        \"))}function h(l){var d=g.getElementById(l);if(d){d.reset()}}Y.Search.Loader=(function(){var
+        l=[],m=false;function o(q,p){var s=g.createElement(q),r,t;for(r in p){if(p.hasOwnProperty(r)){t=p[r];s.setAttribute(r,t)}}return
+        s}function d(){var r=0,p=l.length,s,t,q=g.getElementsByTagName(\"head\")[0];for(;r<p;r++){s=l[r];if(s.type===\"css\"){t=o(\"link\",{href:s.url,rel:\"stylesheet\",type:\"text/css\"})}else{if(s.type===\"js\"){t=o(\"script\",{src:s.url})}else{continue}}q.appendChild(t)}m=true;l=[]}function
+        n(){var r=arguments[0],s=Array.prototype.slice.call(arguments,1),q=0,p=s.length;for(;q<p;q++){l.push({type:r,url:s[q]})}if(m){d()}}b.add(d);return{js:function(){var
+        p=Array.prototype.slice.call(arguments);n.apply(null,[\"js\"].concat(p))},css:function(){var
+        p=Array.prototype.slice.call(arguments);n.apply(null,[\"css\"].concat(p))}}}());(function(){var
+        d=i.performance||i.webkitPerformance||i.msPerformance||i.mozPerformance||i.Performance;if(d){d.now=d.now||d.webkitNow||d.msNow||d.mozNow;if(typeof
+        d.now===\"function\"){Y.Search.performance=d}}}());(function(){var l=0;function
+        o(){if(--l===0&&typeof rt_AddTime===\"function\"){rt_AddTime(\"t2\")}if(l===0&&typeof
+        T!==\"undefined\"){T.stamp(\"img\")}}function p(){var C=this,B=C.parentNode.parentNode,v,z,y,A,u;o();if(C.getAttribute(\"allowResize\")===\"true\"||e(C,\"sm-thumb\")){j(B,\"sm-hide\");if(a&&e(B,\"sm-media\")){v=B.offsetWidth;z=B.offsetHeight;y=C.width;A=C.height;u=Math.max(y/v,A/z);if(u&&y&&A){C.style.width=(y/u)+\"px\";C.style.height=(A/u)+\"px\"}}}}function
+        d(){o();this.style.display=\"none\"}var m=[],s=[];function r(x){var u=i,w=x.getBoundingClientRect(),y=g.documentElement,v=g.getElementsByTagName(\"body\")[0];while(w.height===0&&w.width===0&&x.parentNode&&typeof
+        x.parentNode.getBoundingClientRect===\"function\"){x=x.parentNode;w=x.getBoundingClientRect()}return{v:w.height&&w.width&&w.top&&w.left&&w.bottom<=(u.innerHeight||y.clientHeight||v.clientHeight)&&w.right<=(u.innerWidth||y.clientWidth||v.clientWidth),d:w.top*w.top+w.left*w.left,a:w.height&&w.width}}function
+        q(u){if(window.devicePixelRatio>1&&u.hasAttribute(\"data-src2\")){return u.getAttribute(\"data-src2\")}else{return
+        u.getAttribute(\"data-src\")||u.getAttribute(\"__src\")||u.getAttribute(\"_src\")}}function
+        t(u){var v=q(u);if(v){u.onload=p;u.onerror=d;u.setAttribute(\"src\",v);u.removeAttribute(\"data-src2\");u.removeAttribute(\"data-src\");u.removeAttribute(\"__src\");u.removeAttribute(\"_src\");j(u,\"hidden\")}}function
+        n(){var u=g.images,x=u.length,y,z;for(var w=0;w<x;w++){y=u[w];z=q(y);if(z){var
+        v=r(y);v.i=y;if(v.v){m.push(v)}else{s.push(v)}}}m.sort(function(B,A){return
+        B.d-A.d});s.sort(function(B,A){return B.d-A.d});atfCount=m.length;while(m.length){var
+        v=m.shift();t(v.i)}while(s.length){var v=s.shift();t(v.i)}}b.add(n)}());b.add(function(){var
+        l=g.getElementById(\"yschsp\"),d=/(^|\\s)sd(\\s|$)/;if(l&&d.test(l.parentNode.className)){return}if(a&&(!l||!l.getAttribute(\"dirty\"))){h(\"sf\");h(\"sB\")}});(function(){var
+        q=g.getElementById(\"web\"),l=g.getElementById(\"srp\"),m=(q)?q.getElementsByTagName(\"a\"):[],m=(l)?l.getElementsByTagName(\"a\"):m,s=/(?:^|\\s+)yschttl(?:\\s+|$)/,o=m.length,n,r=(function(){if(a&&a<7){return
+        function(w,u){var v=new RegExp(\"^<a.*\\\\s\"+u+'=\"([^\"]*)\"',\"i\"),t=v.exec(w.outerHTML);return
+        t?t[1]:null}}else{return function(u,t){return u.getAttribute(t)}}}());function
+        p(u){var x=u||i.event,v=x.target||x.srcElement,w;while(v){if(v.tagName&&v.tagName.toLowerCase()===\"a\"&&v.getAttribute(\"dirtyhref\")){w=r(v,\"dirtyhref\");if(w){v.setAttribute(\"href\",w)}break}v=v.parentNode}}k(g,\"mousedown\",p);k(g,\"click\",p);function
+        d(w){var t,y,x,v,u;t=r(w,\"href\");if(!t){return}y=r(w,\"ourl\");if(!y){x=t.match(/\\/RU=([^\\/]+)\\//);if(!x||!x[1]){return}y=decodeURIComponent(x[1])}v=w.cloneNode(true);v.setAttribute(\"href\",y);v.setAttribute(\"dirtyhref\",t);if(a){u=v.innerHTML;t=r(v,\"dirtyhref\");v.setAttribute(\"href\",t);if(v.innerHTML!==u){return}v.setAttribute(\"href\",y)}w.parentNode.replaceChild(v,w)}while(o--){n=m[o];if(s.test(n.className)){d(n)}}}())}());Y.use(\"srp\",function(){Y.Search.SRP.init({\"enable_sidebar_collapse\":\"\",\"pvid\":\"5DtDhDk4LjGxXonFnBzpGQnaMjQuMgAAAACEiW4G\",\"url_img_progress\":\"http:\\/\\/l.yimg.com\\/pv\\/i\\/us\\/sch\\/gr4\\/sp-progress2.gif\",\"tts\":null},{\"aria_loading_results\":\"Retrieving
+        search results. Please wait.\",\"aria_results_loaded\":\"New search results
+        have been retrieved. Press control shift and down arrow key to jump to the
+        first search result. Press control shift and up arrow key to jump back to
+        the search box.\",\"common.expando.playvideo\":\"Play Video\",\"common.expando.closevideo\":\"Close
+        Video\",\"common.results.error\":\"Sorry, there was a problem retrieving search
+        results. Please try again.\",\"common.results.loading\":\"Loading results...\",\"srp.title\":\"%q
+        - Yahoo Search Results\",\"common.more_dots\":\"more...\",\"common.less\":\"Less\"});});Y.use(\"srp-bing-beacon\",
+        function(){Y.Search.SRP.initBTrack({\"cUrl\":\"\\/beacon\\/bac\\/bf\\/4?IG=0ac14fc9e43b43849a00000000696e04\\u0026CID=05e16e33faa25b5980ed05e1c7a528b5\",\"pUrl\":\"\\/beacon\\/bai\\/bf\\/4?IG=0ac14fc9e43b43849a00000000696e04\\u0026CID=05e16e33faa25b5980ed05e1c7a528b5\\u0026Type=Event.CPT\",\"Attr\":[\"data-bns\",\"data-bk\"],\"bidAttr\":\"data-b38\",\"bidMap\":{\"55f748ed8cedf\":{\"bns\":\"Yahoo\",\"bk\":3.1},\"55f748ed8cf6c\":{\"bns\":\"Yahoo\",\"bk\":3.1},\"55f748ee24da9\":{\"bns\":\"Yahoo\",\"bk\":6.1},\"55f748ee25d23\":{\"bk\":\"105.1\",\"bns\":\"Yahoo\"},\"55f748ee25ebd\":{\"bk\":\"110.1\",\"bns\":\"Yahoo\"},\"55f748ee26042\":{\"bk\":\"5029.1\",\"bns\":\"API\"},\"55f748ee26196\":{\"bk\":\"5024\"},\"55f748ee26251\":{\"bk\":\"112.1\",\"bns\":\"Yahoo\"},\"55f748ee26ea7\":{\"bns\":\"Yahoo\",\"bk\":9.1}}});});Y.use(\"srp-session-tracking\",
+        function(){Y.Search.SRP.SessionTracking.init({\"beaconUrl\":\"\\/ra\\/click\",\"bcrumb\":\"tgV3Ev6Ei5.\",\"skey\":\"dLuYGdWeiYYsRyKmXa6X1g--\"});});YUI.add(\"abtr\",function(h){h.namespace(\"Search.AdbTr\");var
+        c=\".horiz.abdt\",e=null,g=\"sme\",a=null,b={};var f=function(s){var u={b:\"display:block!important\",i:\"display:inline!important\",ib:\"display:inline-block
+        !important;*zoom:1;*display:inline !important;\"},r={div:\"b\",li:\"b\",a:\"i\",ul:\"b\",ol:\"b\",p:\"b\",h3:\"b\",strong:\"i\",b:\"i\",em:\"i\",span:\"i\"},q={span:{\"fz-ms\":\"i\",strs:\"ib\",ico:\"ib\"}},m=s.data.split(\",\"),j=[],k=null;var
+        o=function(y){var z=null,i=y.get(\"tagName\").toLowerCase();if(q[i]){var x=y.getAttribute(\"class\").split(\"
+        \");for(var w=0,v=x.length;w<v;w++){if(q[i][x[w]]){z=q[i][x[w]]}}}if(!z){z=r[i]}return
+        z?u[z]:\"\"};m=s.data.split(\",\");for(var n=0,l=m.length;n<l;n++){j.push(m[n]);j.push(m[n]+\"
+        *\")}k=h.all(j.join(\",\"));if(k){var t,p;h.each(k,function(i){if(i.getComputedStyle(\"display\").indexOf(\"none\")>-1){p=i.getAttribute(\"style\");if(p&&p[p.length-1]!==\";\"){p+=\";\"}p+=o(i);i.setAttribute(\"style\",p)}})}};var
+        d=function(){if(!a){var i=new Date();i.setTime(i.getTime()+(1000*86400*365*2));a={domain:\"search.yahoo.com\",path:\"/\",expires:i}}return
+        a};h.Search.AdbTr={inl_rem:false,cfg:{},init:function(i){this.cfg=i},isOn:function(){if(e===null){e=false;b={};var
+        k=(this.cfg.abScout||\"\")+\".abdt\",i=h.one(k),j=null;if(i&&i.get(\"clientHeight\")===0){j=i.getComputedStyle(\"display\");if(j&&j.indexOf(\"none\")>-1){b.p=0;e=true}else{j=i.getComputedStyle(\"MozBinding\");if(j&&j!==\"none\"&&j.indexOf(\"elemhide\")>-1){b.p=1;e=true}}}}return
+        e},detOn:function(i){var k=h.all(i),j=false;if(k){k.some(function(l){if(l.get(\"clientHeight\")===0){j=true;return
+        true}})}return j},blkType:function(){if(e===null){this.isOn()}return b.p},setTrack:function(){if(e===null){this.isOn()}b.e=e?1:0;h.Cookie.setSubs(g,b,d())},unblockDisplaySheet:function(){var
+        m,k,l,j,n=document.styleSheets;if(n){for(m=0;m<n.length;m++){l=n[m];if(l&&!(l.href)){j=l.cssRules[0].cssText;if(!j||j.length<400){continue}if(j.substring(j.length-40,j.length-1).indexOf(\"orphans\")===-1){continue}l.disabled=true;this.inl_rem=true;break}}}},setupObserver:function(q){if(this.blkType()!==0||this.inl_rem){return}var
+        l=q.data,i=h.all(l),o=7,k={},n=0,p=null,j=false,m=false,r=function(){var s=0;i.some(function(t){n=t.get(\"clientHeight\");s+=n;if(k[t]&&k[t]>n){m=true;return
+        true}else{k[t]=n}});if(m||--o===0||s===0){window.clearTimeout(p);if(!j){f(q)}j=true}else{p=setTimeout(r,250)}};r()}}},\"1.0.0\",{requires:[\"node\",\"cookie\"]});YUI.add(\"comp-ab\",function(a){a.namespace(\"Search.CJSDefend\");var
+        e=null,h=\"\";var c=function(){if(e.browser===\"chrome\"){var k=document.documentElement.shadowRoot;if(k){var
+        j=k.querySelectorAll?k.querySelectorAll(\"style\"):k.getElementsByTagName(\"style\");if(j.length){k.removeChild(j[0])}}}},i=function(){var
+        j=a.one(\"#cols\");if(j){j.detach()}},f=function(j){return(j.browser.split(\",\").indexOf(e.browser)>-1)},b=function(j){if(j.cond===\"0\"){return(e.https===\"false\")}else{if(j.cond===\"1\"){return(e.https===\"true\")}else{if(j.cond===\"2\"){return
+        true}}}return false},g=function(j){var m=\"\",l=\"ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz\";for(var
+        k=0;k<j;k++){m+=l.charAt(Math.floor(Math.random()*l.length))}return m},d={addStyle:function(m){var
+        l=m.data;if(l.length){var k=document.createElement(\"style\"),j=document.head||document.getElementsByTagName(\"head\")[0];k.textContent=l;j.appendChild(k)}},abShiftNode:function(k){if(a.Search.AdbTr.blkType()===1){var
+        j=a.all(k.data);if(j){a.each(j,function(l){l.insert(l,\"before\")})}}},remEl:function(k){var
+        j=a.all(k.data);if(j){j.remove()}},jsHref:function(p){var o=p.data,n=o[0],m=a.all(n),q=o[1];if(m){var
+        k=g(4),j=\"\",l={};a.each(m,function(s,r){j=k+r;l[j]=s.getAttribute(\"href\");s.removeAttribute(\"href\");s.addClass(j)});a.delegate(\"click\",function(s){for(var
+        r in l){if(s.currentTarget.hasClass(r)){window.location=l[r]}}},q,n)}},remAttr:function(p){var
+        o=p.data,n=o[0],k=o[1].split(\",\"),j=a.all(n);if(j){for(var m=0,l=k.length;m<l;m++){j.removeAttribute(a.Lang.trim(k[m]))}}},wrap:function(n){var
+        m=n.data,l=m[0],k=m[1],j=a.all(l);if(j){a.each(j,function(o){o.wrap(\"<\"+k+\">\")})}},wrapContent:function(n){var
+        m=n.data,l=m[0],k=m[1],j=a.all(l);if(j){a.each(j,function(o){o.setHTML(\"<\"+k+\">\"+o.getHTML()+\"</\"+k+\">\")})}},prepend:function(n){var
+        m=n.data,l=m[0],k=m[1],j=a.all(l);if(j){a.each(j,function(o){o.prepend(\"<\"+k+\"></\"+k+\">\")})}},append:function(n){var
+        m=n.data,l=m[0],k=m[1],j=a.all(l);if(j){a.each(j,function(o){o.append(\"<\"+k+\"></\"+k+\">\")})}},unblockDisplaySheet:function(j){a.Search.AdbTr.unblockDisplaySheet()},unblockDisplay:function(j){a.Search.AdbTr.setupObserver(j)},removeClass:function(n){var
+        m=n.data,l=m[0],j=m[1],k=a.all(l);if(k){k.each(function(o){o.removeClass(j)})}}};a.Search.CJSDefend={isOn:function(){return
+        a.Search.AdbTr.isOn()},register:function(j){e=j;a.Search.AdbTr.init(e)},init:function(){var
+        l=this.isOn();if(e.track){a.Search.AdbTr.setTrack()}if(l){c();i();if(e.rules){var
+        n=null,m=null;for(var k=0,j=e.rules.length;k<j;k++){n=e.rules[k];if(n.func&&b(n)&&f(n)){if(n.func===\"abShiftNode\"){m=n}else{if(d[n.func]){d[n.func](n)}}}}if(m&&e.browser===\"firefox\"&&d[m.func]){d[m.func](m)}}}}}},\"1.0.0\",{requires:[\"node\",\"abtr\"]});Y.use(\"comp-ab\",function(Y){Y.Search.CJSDefend.register({\"browser\":\"safari\",\"detect\":\".n89n1
+        .u2683q387x.fst .title a\",\"rules\":[{\"func\":\"remEl\",\"data\":\".n6chmu1897\",\"cond\":\"1\",\"browser\":\"firefox,chrome,safari\"},{\"func\":\"remEl\",\"data\":\"#right
+        .n6chmu1897\",\"cond\":\"0\",\"browser\":\"firefox,chrome,safari\"},{\"func\":\"remAttr\",\"data\":[\".u2683q387x
+        a\",\"target\"],\"cond\":\"1\",\"browser\":\"firefox,chrome,safari\"},{\"func\":\"remAttr\",\"data\":[\".ja3i9
+        li, .lpee09w5k8 li, .a576f4x096 li, .u2683q387x, .rd37035q7v, .n6chmu1897\",\"data-bns,data-bk\"],\"cond\":\"2\",\"browser\":\"firefox\"},{\"func\":\"remAttr\",\"data\":[\".ja3i9
+        li.selected, .lpee09w5k8 a\",\"class\"],\"cond\":\"2\",\"browser\":\"firefox\"},{\"func\":\"remAttr\",\"data\":[\"#right
+        .rd37035q7v\",\"style\"],\"cond\":\"2\",\"browser\":\"firefox\"},{\"func\":\"remAttr\",\"data\":[\".u2683q387x\",\"style\"],\"cond\":\"2\",\"browser\":\"firefox,chrome,safari\"},{\"func\":\"unblockDisplaySheet\",\"cond\":\"2\",\"browser\":\"chrome,safari\"},{\"func\":\"unblockDisplay\",\"data\":\"#main
+        .n89n1,.j229\",\"cond\":\"2\",\"browser\":\"chrome,safari\"},{\"func\":\"addStyle\",\"data\":\"#cols
+        ol li div.u2683q387x \\u003E div,#cols #right div[class][data-bk][data-bns],#cols
+        #right li[class][data-bk][data-bns],#main div.u2683q387x  ul,#main div.u2683q387x
+        \ ul li{display:block !important}#cols #right a[class][data-bk][data-bns]{display:inline
+        !important}#left .ja3i9 div li.selected{display:inline-block !important}.rd37035q7v
+        a{cursor:pointer}\",\"cond\":\"2\",\"browser\":\"chrome,safari\"},{\"func\":\"jsHref\",\"data\":[\".u2683q387x
+        a\",\"#cols\"],\"cond\":\"2\",\"browser\":\"firefox,chrome,safari\"},{\"func\":\"jsHref\",\"data\":[\".rd37035q7v
+        a\",\"#cols\"],\"cond\":\"2\",\"browser\":\"firefox,chrome,safari\"},{\"func\":\"addStyle\",\"data\":\".f609665
+        .compTitle \\u003E div a{font-weight:700;color:#1B6F75}.rd37035q7v a{cursor:pointer}.n93i7oe
+        a{color:#808080}#main .rd37035q7v ul li{display:inline-block}#right .rd37035q7v{background-color:#fff;border-color:#fff;padding:4px
+        10px 12px;}\",\"cond\":\"2\",\"browser\":\"firefox\"},{\"func\":\"abShiftNode\",\"data\":\".ja3i9,
+        .a576f4x096, .lpee09w5k8, #right .rd37035q7v, #right .dd \\u003E .layoutMiddle,
+        #right .n6chmu1897\",\"cond\":\"2\",\"browser\":\"firefox\"},{\"func\":\"wrapContent\",\"data\":[\".n89n1\",\"ar096m3\"],\"cond\":\"2\",\"browser\":\"firefox\"},{\"func\":\"wrapContent\",\"data\":[\".rd37035q7v\",\"ar096m3\"],\"cond\":\"2\",\"browser\":\"firefox\"},{\"func\":\"wrap\",\"data\":[\".searchRightTop\",\"ar096m3\"],\"cond\":\"2\",\"browser\":\"firefox\"},{\"func\":\"wrapContent\",\"data\":[\".eclz4\",\"ar096m3\"],\"cond\":\"2\",\"browser\":\"firefox\"},{\"func\":\"wrapContent\",\"data\":[\".n89n1
+        li .dd\",\"ar096m3\"],\"cond\":\"2\",\"browser\":\"firefox\"},{\"func\":\"wrap\",\"data\":[\".n89n1\",\"ar096m3\"],\"cond\":\"2\",\"browser\":\"firefox\"},{\"func\":\"wrap\",\"data\":[\".ja3i9
+        .rd37035q7v .compDlink\",\"ar096m3\"],\"cond\":\"2\",\"browser\":\"firefox\"},{\"func\":\"wrap\",\"data\":[\".f609665\",\"ar096m3\"],\"cond\":\"2\",\"browser\":\"firefox\"},{\"func\":\"wrap\",\"data\":[\".rd37035q7v
+        .layoutLeft\",\"ar096m3\"],\"cond\":\"2\",\"browser\":\"firefox\"},{\"func\":\"wrap\",\"data\":[\".rd37035q7v
+        .compTitle\",\"ar096m3\"],\"cond\":\"2\",\"browser\":\"firefox\"},{\"func\":\"wrap\",\"data\":[\".u2683q387x
+        .layoutCenter .compDlink\",\"ar096m3\"],\"cond\":\"2\",\"browser\":\"firefox\"},{\"func\":\"wrap\",\"data\":[\"#right
+        .rd37035q7v ul\",\"ar096m3\"],\"cond\":\"2\",\"browser\":\"firefox\"},{\"func\":\"prepend\",\"data\":[\"#main\",\"div\"],\"cond\":\"2\",\"browser\":\"firefox\"},{\"func\":\"prepend\",\"data\":[\".u2683q387x\",\"ar096m3\"],\"cond\":\"2\",\"browser\":\"firefox\"},{\"func\":\"removeClass\",\"data\":[\".n89n1
+        .layoutMiddle\",\"layoutMiddle\"],\"cond\":\"2\",\"browser\":\"firefox\"},{\"func\":\"removeClass\",\"data\":[\"#right
+        .rd37035q7v .compList\",\"compList\"],\"cond\":\"2\",\"browser\":\"firefox\"},{\"func\":\"removeClass\",\"data\":[\"#main
+        .rd37035q7v .compDlink\",\"compDlink\"],\"cond\":\"2\",\"browser\":\"firefox\"}],\"https\":\"false\",\"track\":true,\"abScout\":\".adBlock160x600Spot1\"});});Y.use(\"drop-down\",function(Y){Y.Search.DropDown.init({\"listClass\":\"algo-options\",\"yOffset\":\"148\",\"triggerGroup\":\"results\",\"moduleClass\":\"x2b2s48\",\"gridLeftGutter\":\"0\",\"triggerClass\":\"optrg\"});});try{(function(){if(~window.location.search.indexOf(\"agllActivate=true\")||0.004>Math.random()){Y.Search.Loader.js('http://l.yimg.com/pv/static/lib/972_8nmypt0d9w2g.js');};})();}catch(i){};Y.use('loader','srp-lazy',function(){Y.config=Y.mix(Y.config,{bootstrap:true,combine:true,comboBase:'http://l.yimg.com/zz/combo?',ignore:['skin-sam-tabview'],root:'yui:3.10.0/build/',groups:{a:{combine:true,comboBase:'http://l.yimg.com/zz/combo?',ext:false,root:'pv/',modules:{\"srp-universal-header-uh3\":{\"path\":\"static\\/lib\\/srp-universal-header-uh3_201311011448.js\",\"requires\":[]},\"event-to-load\":{\"path\":\"static\\/lib\\/event-to-load_94020bd4442d1f79f3b1ea2f08d43ed9.js\",\"requires\":[\"get\",\"event\",\"node\"]},\"safari_dss\":{\"path\":\"static\\/lib\\/safari_dss_201406091344.js\",\"requires\":[\"ult-linktrack\",\"srp\"]},\"surfer-app-video\":{\"path\":\"static\\/lib\\/vsyc_surf_web_201508040012.js\",\"requires\":[\"surfer-multimedia\"]},\"surfer-multimedia\":{\"path\":\"static\\/lib\\/surf_pc_201508181802.js\",\"requires\":[\"base\",\"node\",\"widget-base\",\"datasource-local\",\"datasource-get\",\"dataschema-base\",\"dataschema-json\",\"datasource-jsonschema\",\"jsonp\",\"jsonp-url\",\"escape\",\"transition\",\"template-micro\",\"plugin\",\"stylesheet\",\"json-parse\",\"lazy-model-list\"]},\"cosmos-compJsToggle\":{\"path\":\"static\\/lib\\/cosmos-compJsToggle_e147bb4914bbd7507edccdfe50ebfa46.js\",\"requires\":[\"base\",\"node\",\"plugin\",\"event-mouseenter\",\"srp-lazy\"]},\"ymb\":{\"path\":\"static\\/lib\\/ymb_f3cd9f59256f05dc278212b87a165c1e.js\",\"requires\":[\"srp\"]},\"sticky-right-rail-light\":{\"path\":\"static\\/lib\\/sticky-right-rail-light_6619794a7f675441bd9d03bdfcd93a73.js\",\"requires\":[\"base\",\"node\",\"event\",\"event-resize\",\"anim\"]},\"cosmos-drop-down\":{\"path\":\"static\\/lib\\/cosmos-drop-down_72a394f95029d914397062e3a4961385.js\",\"requires\":[\"node\",\"event\"]},\"cosmos-horizontal-pivots\":{\"path\":\"static\\/lib\\/cosmos-horizontal-pivots_83c43a3a75b8419840ca1dba444e822e.js\",\"requires\":[\"node\",\"event\"]}}}}},true,null,0,true);Y.Search.use('srp-universal-header-uh3','node-focusmanager','base','io','json','async-queue','cookie','event-custom','jsonp','jsonp-url','event','substitute','event-resize','event-hover','event-mouseenter','event-delegate','querystring-stringify','oop','classnamemanager','lang/datatype-date','intl','event-to-load','get','node','safari_dss','ult-linktrack','srp','surfer-app-video','surfer-multimedia','widget-base','datasource-local','datasource-get','dataschema-base','dataschema-json','datasource-jsonschema','escape','transition','template-micro','plugin','stylesheet','json-parse','lazy-model-list','cosmos-compJsToggle','srp-lazy','ymb','sticky-right-rail-light','anim','cosmos-drop-down','cosmos-horizontal-pivots',function(){(function(){Y.Search.UniversalHeader.init({\"js\":\"http:\\/\\/l.yimg.com\\/zz\\/combo?kx\\/yucs\\/uh3\\/uh\\/1078\\/js\\/uh-min.js\\u0026kx\\/yucs\\/uh3\\/uh\\/1078\\/js\\/gallery-jsonp-min.js\\u0026kx\\/yucs\\/uh3\\/uh\\/1134\\/js\\/menu_utils_v3-min.js\\u0026kx\\/yucs\\/uh3\\/uh\\/1078\\/js\\/localeDateFormat-min.js\\u0026kx\\/yucs\\/uh3\\/uh\\/1078\\/js\\/timestamp_library_v2-min.js\\u0026kx\\/yucs\\/uh3\\/uh\\/1104\\/js\\/logo_debug-min.js\\u0026kx\\/yucs\\/uh3\\/switch-theme\\/6\\/js\\/switch_theme-min.js\\u0026kx\\/yucs\\/uhc\\/meta\\/66\\/js\\/meta-min.js\\u0026kx\\/yucs\\/uh_common\\/beacon\\/18\\/js\\/beacon-min.js\\u0026kx\\/yucs\\/uh2\\/comet\\/84\\/js\\/cometd-yui3-min.js\\u0026kx\\/yucs\\/uh2\\/comet\\/84\\/js\\/conn-min.js\\u0026kx\\/yucs\\/uh2\\/comet\\/84\\/js\\/dark-test-min.js\\u0026kx\\/yucs\\/uh3\\/disclaimer\\/387\\/js\\/disclaimer_seed-min.js\\u0026kx\\/yucs\\/uh3\\/top-bar\\/321\\/js\\/top_bar_v3-min.js\\u0026kx\\/yucs\\/uh2\\/common\\/145\\/js\\/jsonp-super-cached-min.js\\u0026kx\\/yucs\\/uh3\\/avatar\\/31\\/js\\/avatar-min.js\\u0026kx\\/yucs\\/uh3\\/mail-link\\/96\\/js\\/mailcount_ssl-min.js\\u0026kx\\/yucs\\/uh3\\/help\\/83\\/js\\/help_menu_v3-min.js\",\"sprite\":\"http:\\/\\/l.yimg.com\\/kx\\/yucs\\/uh3\\/uh\\/images\\/387\\/uh_sprite.png\",\"menu\":[{\"link\":\"http:\\/\\/search.yahoo.com\\/preferences\\/preferences?pref_done=http%3A%2F%2Fsearch.yahoo.com%2Fsearch%3Fp%3Dinbody%253Aplease-dont-register-a-site-that-breaks-this-test.com%26ei%3DUTF-8\\u0026.bcrumb=tgV3Ev6Ei5.\\u0026tmpl=\",\"title\":\"Preferences\"},{\"link\":\"http:\\/\\/search.yahoo.com\\/web\\/advanced?p=inbody%3Aplease-dont-register-a-site-that-breaks-this-test.com\\u0026ei=UTF-8\",\"title\":\"Advanced
+        Search\"},{\"link\":\"http:\\/\\/search.yahoo.com\\/history?pref_done=http%3A%2F%2Fsearch.yahoo.com%2Fsearch%3Fp%3Dinbody%253Aplease-dont-register-a-site-that-breaks-this-test.com%26ei%3DUTF-8\\u0026.bcrumb=tgV3Ev6Ei5.\",\"title\":\"Search
+        History\"},{\"link\":\"\",\"title\":\"\"},{\"link\":\"http:\\/\\/advertising.yahoo.com\\/\",\"title\":\"Advertising
+        Programs\"},{\"link\":\"http:\\/\\/help.yahoo.com\\/l\\/us\\/yahoo\\/search\\/basics\\/basics-23.html\",\"title\":\"About
+        this Page\"},{\"link\":\"http:\\/\\/help.yahoo.com\\/l\\/us\\/yahoo\\/search\\/\",\"title\":\"Help\"}]});}());(function(){Y.use(\"event-to-load\",function(){Y.Search.EventTL.init({\"enable_js\":true,\"href\":\"https:\\/\\/yahoo.uservoice.com\\/forums\\/193847-search\",\"url\":\"http:\\/\\/l.yimg.com\\/pv\\/static\\/lib\\/uservoice_201404181503.js\",\"id\":\"usr-fdb-lnk\",\"uvid\":\"193847\",\"eventType\":\"click\",\"timeout\":2000,\"className\":\"etl\"});});}());(function(){Y.use(\"safari_dss\",function(){Y.Search.SafariDSS.init({\"beaconData\":{\"bcookie\":false,\"srcpvid\":\"5DtDhDk4LjGxXonFnBzpGQnaMjQuMgAAAACEiW4G\",\"lang\":\"en\",\"intl\":\"us\",\"fr\":\"\",\"fr2\":\"\",\"vtestid\":\"\",\"mtestid\":\"\",\"src\":\"search\",\"setter\":\"yahoo_apple_search_us\"},\"spaceid\":\"2766679\",\"time_usr\":false,\"promptCount\":false,\"pn\":\"yahoo_apple_search_us\",\"crumb\":\"x4rCdWadS.f\",\"debug\":false});});}());(function(){YUI.Env.VidOverlay={};YUI.Env.VidOverlay.config
+        = {\"recoUrl\":\"http:\\/\\/video.search.yahoo.com\\/ajax\\/reco?o=js\\u0026theater=1\\u0026p=inbody%3Aplease-dont-register-a-site-that-breaks-this-test.com\",\"pvURL\":\"http:\\/\\/video.search.yahoo.com\\/video\\/play?o=js\\u0026src=pv\\u0026p=inbody%3Aplease-dont-register-a-site-that-breaks-this-test.com\\u0026vtid=\",\"ppodUrl\":\"http:\\/\\/video.search.yahoo.com\\/beacon\\/ppod?src=web\\u0026p=inbody%3Aplease-dont-register-a-site-that-breaks-this-test.com\",\"hulUrl\":\"http:\\/\\/video.search.yahoo.com\\/hulu_proxy?p=inbody%3Aplease-dont-register-a-site-that-breaks-this-test.com\\u0026callback=handleHuluJsonp\",\"yepUrl\":\"\",\"enableVRec\":true,\"vRecURL\":\"http:\\/\\/video.search.yahoo.com\\/ajax\\/vrec?o=js\\u0026p=inbody%3Aplease-dont-register-a-site-that-breaks-this-test.com\",\"vRecMvURL\":\"http:\\/\\/video.search.yahoo.com\\/beacon\\/vrec?theater=1\\u0026p=inbody%3Aplease-dont-register-a-site-that-breaks-this-test.com\",\"qsResUrl\":\"http:\\/\\/video.search.yahoo.com\\/video\\/play?o=js\\u0026qs=1\\u0026tt=s\\u0026\",\"ono404Url\":\"http:\\/\\/video.search.yahoo.com\\/cl\",\"gossipUrl\":\"http:\\/\\/gossip-ss.us.search.yahoo.com\\/gossip-us_ss\\/?output=fxjsonp\\u0026pubid=112\\u0026nresults=10\\u0026command=\",\"actionUrl\":\"http:\\/\\/video.search.yahoo.com\\/search\\/video\",\"yep\":{\"locale\":\"en_US\",\"region\":\"us\",\"spaceid\":\"1197672460\",\"yvapAccountId\":\"389\"},\"yepjs\":\"\\/\\/yep.video.yahoo.com\\/js\\/3\\/videoplayer-min.js?lang=en-US\",\"ofr\":\"web\"};YUI.Env.VidOverlay.strings
+        = {\"snob\":\"Open in new tab\",\"play\":\"Play\",\"next\":\"Next\",\"prev\":\"Previous\",\"close\":\"Close\",\"no_results_found\":\"No
+        results found\",\"zrp_msg\":\"We did not find results for: \\u003Cstrong\\u003E{{q}}\\u003C\\/strong\\u003E.\",\"up_next\":\"Up
+        Next\",\"exploretags\":\"Related Topics\",\"recommendedtopics\":\"Recommended
+        Topics\",\"trendingtopics\":\"Trending Topics\",\"rpl\":\"Replay\",\"videosearch\":\"Video
+        Search\",\"showmore\":\"More Results\",\"viewall\":\"View All Results\",\"viewfull\":\"View
+        Fullscreen\",\"exitfull\":\"Exit Fullscreen\",\"search\":\"Search\",\"nply\":\"Now
+        Playing\",\"ad\":\"Ad\"};}());(function(){var dm = new Y.MMSearch.DataModel({\"ddSlottedCount\":0,\"source\":\"http:\\/\\/video.search.yahoo.com\\/video\\/play?p=inbody%3Aplease-dont-register-a-site-that-breaks-this-test.com\\u0026tnr=21\\u0026o=js\\u0026tt=s\\u0026notrack=1\\u0026ofr=web\\u0026back=http%3A%2F%2Fsearch.yahoo.com%2Fsearch%3Fp%3Dinbody%253Aplease-dont-register-a-site-that-breaks-this-test.com%26ei%3DUTF-8\\u0026sigb=138mvf9sl\",\"schema\":{\"schema\":{\"metaFields\":{\"first\":\"results.meta.first\",\"last\":\"results.meta.last\",\"count\":\"results.meta.count\",\"total\":\"results.meta.total\",\"off\":0,\"sr\":\"sr\",\"pstcat\":\"pstcat\",\"testid\":\"testid\",\"slotted\":\"slottedCount\"},\"resultListLocator\":\"results.content\"}}});dm.add([{\"host\":\"mtv.com\",\"preview\":\"http:\\/\\/ts2.mm.bing.net\\/th?id=WN.0Itgdf8hEp0ezlgpB0fKYA\\u0026pid=15.1\",\"l\":\"03:59\",\"rurl\":\"http:\\/\\/www.mtv.com\\/videos\\/pharrell-williams\\/982367\\/happy.jhtml\",\"trurl\":\"http:\\/\\/ri.search.yahoo.com\\/_ylt=AwrBT8ntSPdVhxIAa7BXNyoA;_ylu=X3oDMTByMjB0aG5zBGNvbG8DYmYxBHBvcwMxBHZ0aWQDBHNlYwNzYw--\\/RV=2\\/RE=1442298222\\/RO=10\\/RU=http%3a%2f%2fwww.mtv.com%2fvideos%2fpharrell-williams%2f982367%2fhappy.jhtml\\/RK=0\\/RS=ab2GQuJJR13PMZhP9iE6fUONpOE-\",\"iturl\":\"http:\\/\\/ri.search.yahoo.com\\/_ylt=AwrBT8ntSPdVhxIAbLBXNyoA;_ylu=X3oDMTByMjB0aG5zBGNvbG8DYmYxBHBvcwMxBHZ0aWQDBHNlYwNzYw--\\/RV=2\\/RE=1442298222\\/RO=10\\/RU=http%3a%2f%2fwww.mtv.com%2fvideos%2fpharrell-williams%2f982367%2fhappy.jhtml\\/RK=0\\/RS=ab2GQuJJR13PMZhP9iE6fUONpOE-\",\"tit\":\"Pharrell
+        Williams - \\u0026quot;Happy\\u0026quot;\",\"des\":\"\",\"turl\":\"http:\\/\\/ts2.mm.bing.net\\/th?id=WN.0Itgdf8hEp0ezlgpB0fKYA\\u0026pid=15.1\",\"plr\":{\"htag\":\"\",\"plays\":false,\"plr\":2,\"eurl\":\"\",\"fv\":\"\",\"url_video_host\":\"http:\\/\\/video.search.yahoo.com\"},\"vid\":\"788D93CBF224301FC904788D93CBF224301FC904\",\"pid\":\"\",\"url\":\"http:\\/\\/ri.search.yahoo.com\\/_ylt=AwrBT8ntSPdVhxIAbbBXNyoA;_ylu=X3oDMTByMjB0aG5zBGNvbG8DYmYxBHBvcwMxBHZ0aWQDBHNlYwNzYw--\\/RV=2\\/RE=1442298222\\/RO=10\\/RU=http%3a%2f%2fwww.mtv.com%2fvideos%2fpharrell-williams%2f982367%2fhappy.jhtml\\/RK=0\\/RS=ab2GQuJJR13PMZhP9iE6fUONpOE-\",\"ct\":\"p\",\"pos\":0,\"bURL\":\"http:\\/\\/geo.yahoo.com\\/t;_ylt=AwrBT8ntSPdVhxIAarBXNyoA;_ylu=X3oDMTByMjB0aG5zBGNvbG8DYmYxBHBvcwMxBHZ0aWQDBHNlYwNzYw--\",\"beacon\":\"http:\\/\\/geo.yahoo.com\\/t;_ylt=AwrBT8ntSPdVhxIAarBXNyoA;_ylu=X3oDMTByMjB0aG5zBGNvbG8DYmYxBHBvcwMxBHZ0aWQDBHNlYwNzYw--\"},{\"host\":\"mtv.com\",\"preview\":\"http:\\/\\/ts2.mm.bing.net\\/th?id=WN.%2f%2bxwXomaqp6O9qJIAkDm2Q\\u0026pid=15.1\",\"l\":\"03:41\",\"rurl\":\"http:\\/\\/www.mtv.com\\/videos\\/miley-cyrus\\/954189\\/wrecking-ball.jhtml\",\"trurl\":\"http:\\/\\/ri.search.yahoo.com\\/_ylt=AwrBT8ntSPdVhxIAbrBXNyoA;_ylu=X3oDMTByMjB0aG5zBGNvbG8DYmYxBHBvcwMxBHZ0aWQDBHNlYwNzYw--\\/RV=2\\/RE=1442298222\\/RO=10\\/RU=http%3a%2f%2fwww.mtv.com%2fvideos%2fmiley-cyrus%2f954189%2fwrecking-ball.jhtml\\/RK=0\\/RS=tHJEDZLwGEFzFrVaBRy_OdxDDO8-\",\"iturl\":\"http:\\/\\/ri.search.yahoo.com\\/_ylt=AwrBT8ntSPdVhxIAb7BXNyoA;_ylu=X3oDMTByMjB0aG5zBGNvbG8DYmYxBHBvcwMxBHZ0aWQDBHNlYwNzYw--\\/RV=2\\/RE=1442298222\\/RO=10\\/RU=http%3a%2f%2fwww.mtv.com%2fvideos%2fmiley-cyrus%2f954189%2fwrecking-ball.jhtml\\/RK=0\\/RS=tHJEDZLwGEFzFrVaBRy_OdxDDO8-\",\"tit\":\"Miley
+        Cyrus - \\u0026quot;Wrecking Ball\\u0026quot;\",\"des\":\"\",\"turl\":\"http:\\/\\/ts2.mm.bing.net\\/th?id=WN.%2f%2bxwXomaqp6O9qJIAkDm2Q\\u0026pid=15.1\",\"plr\":{\"htag\":\"\",\"plays\":false,\"plr\":2,\"eurl\":\"\",\"fv\":\"\",\"url_video_host\":\"http:\\/\\/video.search.yahoo.com\"},\"vid\":\"EAD0C47A9B660540B23EEAD0C47A9B660540B23E\",\"pid\":\"\",\"url\":\"http:\\/\\/ri.search.yahoo.com\\/_ylt=AwrBT8ntSPdVhxIAcLBXNyoA;_ylu=X3oDMTByMjB0aG5zBGNvbG8DYmYxBHBvcwMxBHZ0aWQDBHNlYwNzYw--\\/RV=2\\/RE=1442298222\\/RO=10\\/RU=http%3a%2f%2fwww.mtv.com%2fvideos%2fmiley-cyrus%2f954189%2fwrecking-ball.jhtml\\/RK=0\\/RS=tHJEDZLwGEFzFrVaBRy_OdxDDO8-\",\"ct\":\"p\",\"pos\":1,\"bURL\":\"http:\\/\\/geo.yahoo.com\\/t;_ylt=AwrBT8ntSPdVhxIAarBXNyoA;_ylu=X3oDMTByMjB0aG5zBGNvbG8DYmYxBHBvcwMxBHZ0aWQDBHNlYwNzYw--\",\"beacon\":\"http:\\/\\/geo.yahoo.com\\/t;_ylt=AwrBT8ntSPdVhxIAarBXNyoA;_ylu=X3oDMTByMjB0aG5zBGNvbG8DYmYxBHBvcwMxBHZ0aWQDBHNlYwNzYw--\"},{\"host\":\"artistdirect.com\",\"preview\":\"http:\\/\\/ts4.mm.bing.net\\/th?id=WN.i5Ae58wWzM6caohFCmU2BA\\u0026pid=15.1\",\"l\":\"04:06\",\"rurl\":\"http:\\/\\/www.artistdirect.com\\/video\\/becky-g-becky-from-the-block-behind-the-scenes\\/151870\",\"trurl\":\"http:\\/\\/ri.search.yahoo.com\\/_ylt=AwrBT8ntSPdVhxIAcbBXNyoA;_ylu=X3oDMTByMjB0aG5zBGNvbG8DYmYxBHBvcwMxBHZ0aWQDBHNlYwNzYw--\\/RV=2\\/RE=1442298222\\/RO=10\\/RU=http%3a%2f%2fwww.artistdirect.com%2fvideo%2fbecky-g-becky-from-the-block-behind-the-scenes%2f151870\\/RK=0\\/RS=SkOcOQMY_pfHa9hBmqwVwm_3R3Y-\",\"iturl\":\"http:\\/\\/ri.search.yahoo.com\\/_ylt=AwrBT8ntSPdVhxIAcrBXNyoA;_ylu=X3oDMTByMjB0aG5zBGNvbG8DYmYxBHBvcwMxBHZ0aWQDBHNlYwNzYw--\\/RV=2\\/RE=1442298222\\/RO=10\\/RU=http%3a%2f%2fwww.artistdirect.com%2fvideo%2fbecky-g-becky-from-the-block-behind-the-scenes%2f151870\\/RK=0\\/RS=SkOcOQMY_pfHa9hBmqwVwm_3R3Y-\",\"tit\":\"Becky
+        G - Becky from The Block (Behind The Scenes)\",\"des\":\"\",\"turl\":\"http:\\/\\/ts4.mm.bing.net\\/th?id=WN.i5Ae58wWzM6caohFCmU2BA\\u0026pid=15.1\",\"plr\":{\"htag\":\"\",\"plays\":false,\"plr\":2,\"eurl\":\"\",\"fv\":\"\",\"url_video_host\":\"http:\\/\\/video.search.yahoo.com\"},\"vid\":\"8DE2FD42CE18E19732E38DE2FD42CE18E19732E3\",\"pid\":\"\",\"url\":\"http:\\/\\/ri.search.yahoo.com\\/_ylt=AwrBT8ntSPdVhxIAc7BXNyoA;_ylu=X3oDMTByMjB0aG5zBGNvbG8DYmYxBHBvcwMxBHZ0aWQDBHNlYwNzYw--\\/RV=2\\/RE=1442298222\\/RO=10\\/RU=http%3a%2f%2fwww.artistdirect.com%2fvideo%2fbecky-g-becky-from-the-block-behind-the-scenes%2f151870\\/RK=0\\/RS=SkOcOQMY_pfHa9hBmqwVwm_3R3Y-\",\"ct\":\"p\",\"pos\":2,\"bURL\":\"http:\\/\\/geo.yahoo.com\\/t;_ylt=AwrBT8ntSPdVhxIAarBXNyoA;_ylu=X3oDMTByMjB0aG5zBGNvbG8DYmYxBHBvcwMxBHZ0aWQDBHNlYwNzYw--\",\"beacon\":\"http:\\/\\/geo.yahoo.com\\/t;_ylt=AwrBT8ntSPdVhxIAarBXNyoA;_ylu=X3oDMTByMjB0aG5zBGNvbG8DYmYxBHBvcwMxBHZ0aWQDBHNlYwNzYw--\"},{\"host\":\"mtv.com\",\"preview\":\"http:\\/\\/ts2.mm.bing.net\\/th?id=WN.uX%2bmRqFdzP8boksT7M540A\\u0026pid=15.1\",\"l\":\"04:20\",\"rurl\":\"http:\\/\\/www.mtv.com\\/videos\\/eminem\\/954173\\/berzerk-explicit.jhtml\",\"trurl\":\"http:\\/\\/ri.search.yahoo.com\\/_ylt=AwrBT8ntSPdVhxIAdLBXNyoA;_ylu=X3oDMTByMjB0aG5zBGNvbG8DYmYxBHBvcwMxBHZ0aWQDBHNlYwNzYw--\\/RV=2\\/RE=1442298222\\/RO=10\\/RU=http%3a%2f%2fwww.mtv.com%2fvideos%2feminem%2f954173%2fberzerk-explicit.jhtml\\/RK=0\\/RS=cO9FPNbstFq5.TC57rGfVH7PBSI-\",\"iturl\":\"http:\\/\\/ri.search.yahoo.com\\/_ylt=AwrBT8ntSPdVhxIAdbBXNyoA;_ylu=X3oDMTByMjB0aG5zBGNvbG8DYmYxBHBvcwMxBHZ0aWQDBHNlYwNzYw--\\/RV=2\\/RE=1442298222\\/RO=10\\/RU=http%3a%2f%2fwww.mtv.com%2fvideos%2feminem%2f954173%2fberzerk-explicit.jhtml\\/RK=0\\/RS=cO9FPNbstFq5.TC57rGfVH7PBSI-\",\"tit\":\"Eminem
+        - \\u0026quot;Berzerk (Explicit)\\u0026quot;\",\"des\":\"\",\"turl\":\"http:\\/\\/ts2.mm.bing.net\\/th?id=WN.uX%2bmRqFdzP8boksT7M540A\\u0026pid=15.1\",\"plr\":{\"htag\":\"\",\"plays\":false,\"plr\":2,\"eurl\":\"\",\"fv\":\"\",\"url_video_host\":\"http:\\/\\/video.search.yahoo.com\"},\"vid\":\"D13E9F8350CDCA90D161D13E9F8350CDCA90D161\",\"pid\":\"\",\"url\":\"http:\\/\\/ri.search.yahoo.com\\/_ylt=AwrBT8ntSPdVhxIAdrBXNyoA;_ylu=X3oDMTByMjB0aG5zBGNvbG8DYmYxBHBvcwMxBHZ0aWQDBHNlYwNzYw--\\/RV=2\\/RE=1442298222\\/RO=10\\/RU=http%3a%2f%2fwww.mtv.com%2fvideos%2feminem%2f954173%2fberzerk-explicit.jhtml\\/RK=0\\/RS=cO9FPNbstFq5.TC57rGfVH7PBSI-\",\"ct\":\"p\",\"pos\":3,\"bURL\":\"http:\\/\\/geo.yahoo.com\\/t;_ylt=AwrBT8ntSPdVhxIAarBXNyoA;_ylu=X3oDMTByMjB0aG5zBGNvbG8DYmYxBHBvcwMxBHZ0aWQDBHNlYwNzYw--\",\"beacon\":\"http:\\/\\/geo.yahoo.com\\/t;_ylt=AwrBT8ntSPdVhxIAarBXNyoA;_ylu=X3oDMTByMjB0aG5zBGNvbG8DYmYxBHBvcwMxBHZ0aWQDBHNlYwNzYw--\"}]);var
+        sf = new Y.MMSearch.SurferAppVideo({'datamodel':dm,'surferConfig':YUI.Env.VidOverlay.config,'strings':YUI.Env.VidOverlay.strings,'disableHistory':true,'targetNode':'.Video
+        .compArticleList','cssUrl':'http://l.yimg.com/pv/static/lib/vsyc_surf_web_201508040012.css','srpUrl':'','query':'inbody:please-dont-register-a-site-that-breaks-this-test.com'});sf.render();}());(function(){var
+        nodeList = Y.all('.vrtPivots');if (nodeList.size() > 0) {nodeList.each( function(node)
+        {var compJsToggleAttrs={\"action\":\"click\",\"trigger\":\".more-pivots-toggle
+        a\",\"target\":\".more-pivots\",\"beaconUrl\":\"http:\\/\\/geo.yahoo.com\\/t;_ylt=AwrBT8ntSPdVhxIAd7BXNyoA;_ylu=X3oDMTB0N2Noc21lBGNvbG8DYmYxBHBvcwMxBHZ0aWQDBHNlYwNwaXZz\",\"enableReposition\":\"true\",\"enableRepositionX\":\"-10\",\"enableRepositionY\":\"25\",\"collapseOnOutsideClick\":\"true\",\"toggleType\":\"expand\",\"offset\":\"0\",\"triggerIconSelector\":\".ico\",\"triggerIconAddCssClass\":\"down-arrow-dgray-thin\",\"triggerIconRemoveCssClass\":\"down-arrow-gray-thin\",\"enableTriggerIconHover\":\"true\",\"cssClassforTriggered\":\"menu-active\"};node.plug({fn:
+        Y.CosmosPlugin.compJsToggle,cfg: compJsToggleAttrs})});}}());(function(){var
+        nodeList = Y.all('.horizontal-timefilter');if (nodeList.size() > 0) {nodeList.each(
+        function(node) {var compJsToggleAttrs={\"triggerGrp\":\"horizontal-timefilter\",\"useTriggerGrpAsLogID\":\"true\",\"action\":\"click\",\"trigger\":\".timefilter-toggle
+        a\",\"target\":\".timefilter-list\",\"enableReposition\":\"true\",\"enableRepositionX\":\"-10\",\"enableRepositionY\":\"25\",\"collapseOnOutsideClick\":\"true\",\"toggleType\":\"expand\",\"offset\":\"0\",\"triggerIconSelector\":\".ico\",\"triggerIconAddCssClass\":\"down-arrow-dgray-thin\",\"triggerIconRemoveCssClass\":\"down-arrow-gray-thin\",\"enableTriggerIconHover\":\"true\",\"cssClassforTriggered\":\"menu-active\"};node.plug({fn:
+        Y.CosmosPlugin.compJsToggle,cfg: compJsToggleAttrs})});}}());(function(){Y.use(\"ymb\",function(Y){Y.Search.YMB.init({\"bcurl\":\"http:\\/\\/c.bing.com\\/c.gif?Red3=MSYH_pd\"});});}());(function(){Y.use(\"sticky-right-rail-light\",function(Y){Y.Search.StickyData.init({\"stickclass\":\"q118\",\"stickpos\":\".j229\",\"local\":\"false\"});});}());(function(){Y.use(\"cosmos-horizontal-pivots\",function(Y){Y.Search.HorizontalPivots.init([]);});}());});});Y.use(\"vertical-pivots\",function(){Y.Search.VerticalPivots.init({\"more\":\"More\",\"less\":\"More\"});});Y.use(\"search-assist-client\",function(){new
+        Y.SEARCHASSIST.CLIENT({\"property\":\"web\",\"searchBox\":\"#yschsp\",\"hostNodeToAttach\":\"#sbq-wrap\",\"maxSuggests\":10,\"anyKeySearch\":false,\"enableTrending\":true,\"autoAlign\":false,\"cancelButton\":true,\"tcpPreConnect\":false,\"quietMode\":false,\"ariaPlug\":true,\"stream\":false,\"webHistory\":{\"bcrumb\":\"tgV3Ev6Ei5.\",\"crumb\":\"Qdf0iZRR182\",\"highlightHistory\":false},\"smw\":false,\"reverseHighlight\":true,\"subAssist\":true,\"device\":{\"tablet\":{\"skin\":\"desktop\"}},\"dataSrc\":{\"url\":\"http:\\/\\/sugg.us.search.yahoo.com\\/gossip-us-ura\",\"supportsEmptyQuery\":true},\"lang\":\"en-US\",\"ult\":{\"spaceId\":\"2766679\",\"csrcpvid\":\"5DtDhDk4LjGxXonFnBzpGQnaMjQuMgAAAACEiW4G\",\"vtestid\":\"\",\"mtestid\":\"\"},\"extraUltParams\":{\"fr\":\"\",\"n_rslt\":0},\"yltCustom\":\"_ylt=AwrBT8ntSPdVhxIADbBXNyoA\",\"geo\":[],\"gossipParams\":{\"f\":1}});if(Y.Search
+        && typeof Y.Search.performance !== \"undefined\"){Y.SEARCHASSIST.latency=Y.Search.performance.now();}});Y.Search.Loader.js('http://l.yimg.com/pv/static/lib/srp-core-js-purple-1_07945a6d63b053a7bb26e536179dd6fa.js','http://l.yimg.com/pv/static/lib/srp-core-js-purple-2_7a9ae6f180a1a093b37f907f29555c26.js');Y.use(\"comp-ab\",function(){Y.Search.CJSDefend.init();});</script></body></html>\n<!--
+        fe132.syc.search.bf1.yahoo.com Mon Sep 14 22:23:41 UTC 2015 -->\n"
+    http_version: 
+  recorded_at: Mon, 14 Sep 2015 22:23:42 GMT
+recorded_with: VCR 2.9.3

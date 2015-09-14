@@ -60,7 +60,7 @@ describe PageRankr::Ranks::Google::Checksum do
   describe "#generate" do
     SAMPLES.each do |input, output|
       it "should generate #{output} as a checksum for #{input}" do
-        PageRankr::Ranks::Google::Checksum.generate(input).should == output
+        expect(PageRankr::Ranks::Google::Checksum.generate(input)).to eq(output)
       end
     end
   end

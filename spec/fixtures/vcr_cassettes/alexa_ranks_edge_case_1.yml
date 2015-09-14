@@ -7,7 +7,7 @@ http_interactions:
       encoding: US-ASCII
       string: ''
     headers:
-      user-agent:
+      User-Agent:
       - Mozilla/5.0 (Macintosh; Intel Mac OS X 10_7_4) AppleWebKit/534.56.5 (KHTML,
         like Gecko) Version/5.1.6 Safari/534.56.5
   response:
@@ -15,76 +15,37 @@ http_interactions:
       code: 200
       message: OK
     headers:
-      content-type:
+      Content-Type:
       - text/xml
-      content-length:
-      - '2651'
-      connection:
-      - Close
+      Date:
+      - Mon, 14 Sep 2015 23:36:46 GMT
+      Server:
+      - nginx
+      Content-Length:
+      - '1304'
+      Connection:
+      - keep-alive
     body:
-      encoding: ASCII-8BIT
-      string: !binary |-
-        PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4NCg0KPEFM
-        RVhBIFZFUj0iMC45IiBVUkw9InNsb2NvdXJ0cy5jYS5nb3YvIiBIT01FPSIw
-        IiBBSUQ9Ij0iIElETj0ic2xvY291cnRzLmNhLmdvdi8iPg0KPFJMUyBQUkVG
-        SVg9Imh0dHA6Ly8iIG1vcmU9IjIzIj4KPFJMIEhSRUY9ImNvdXJ0cy5jb3Vu
-        dHlvZnZlbnR1cmEub3JnLyIgVElUTEU9IlN1cGVyaW9yIENvdXJ0LCBWZW50
-        dXJhIi8+CjxSTCBIUkVGPSJ3d3cuY28ucml2ZXJzaWRlLmNhLnVzL2RlcHRz
-        L2NvdXJ0cyIgVElUTEU9IlN1cGVyaW9yIENvdXJ0IE9mIENhbGlmb3JuaWEg
-        Q291bnR5IE9mIFJpdmVyc2lkZSIvPgo8UkwgSFJFRj0id3d3LmNvLnNhbi1i
-        ZXJuYXJkaW5vLmNhLnVzL0NvdXJ0cyIgVElUTEU9IlN1cGVyaW9yIENvdXJ0
-        LCBTYW4gQmVybmFyZGlubyIvPgo8UkwgSFJFRj0id3d3LmNpLnNmLmNhLnVz
-        L2NvdXJ0cyIgVElUTEU9IlN1cGVyaW9yIENvdXJ0LCBTYW4gRnJhbmNpc2Nv
-        Ii8+CjxSTCBIUkVGPSJ3d3cuc2Jjb3VydHMub3JnLyIgVElUTEU9IlN1cGVy
-        aW9yIENvdXJ0LCBTYW50YSBCYXJiYXJhIi8+CjxSTCBIUkVGPSJ3d3cuc2xv
-        c2hlcmlmZi5vcmcvIiBUSVRMRT0iU2FuIEx1aXMgT2Jpc3BvIENvdW50eSBT
-        aGVyaWZmJmFwb3M7cyBEZXBhcnRtZW50Ii8+CjxSTCBIUkVGPSJ3d3cuc2xv
-        ZHNzLm9yZy8iIFRJVExFPSJTYW4gTHVpcyBPYmlzcG8gQ291bnR5IERlcGFy
-        dG1lbnQgb2YgU29jaWFsIFNlcnZpY2VzIi8+CjxSTCBIUkVGPSJ3d3cuc2xv
-        Y291bnR5cHdkLm9yZy8iIFRJVExFPSJTYW4gTHVpcyBPYmlzcG8gQ291bnR5
-        IERlcGFydG1lbnQgb2YgUHVibGljIFdvcmtzIGFuZCBUcmFuc3BvcnRhdGlv
-        biIvPgo8UkwgSFJFRj0id3d3LnNsb2NvdW50eWZyYW5jaGlzZWFkbWluaXN0
-        cmF0aW9uLm9yZy8iIFRJVExFPSJTYW4gTHVpcyBPYmlzcG8gQ291bnR5IEZy
-        YW5jaGlzZSBBZG1pbmlzdHJhdGlvbiIvPgo8UkwgSFJFRj0id3d3LnNsb2Nv
-        Zy5vcmcvIiBUSVRMRT0iU0xPQ09HIi8+CjxSTCBIUkVGPSJ3d3cuYnV0dG9u
-        d2FyZS5jb20vIiBUSVRMRT0id3d3LmJ1dHRvbndhcmUuY29tLyIvPgo8L1JM
-        Uz4KPFNEIFRJVExFPSJBIiBGTEFHUz0iRE1PWiIgSE9TVD0ic2xvY291cnRz
-        LmNhLmdvdiI+CjxUSVRMRSBURVhUPSJTdXBlcmlvciBDb3VydCwgU2FuIEx1
-        aXMgT2Jpc3BvIi8+CjxBRERSIFNUUkVFVD0iMzEwMSBHb2xkIENhbXAgRHIi
-        IENJVFk9IlJhbmNobyBDb3Jkb3ZhIiBTVEFURT0iQ0EiIFpJUD0iOTU2NzAi
-        IENPVU5UUlk9IlVTIiAvPgo8Q1JFQVRFRCBEQVRFPSIxNi1KdW4tMjAwMCIg
-        REFZPSIxNiIgTU9OVEg9IjA2IiBZRUFSPSIyMDAwIi8+CjxQSE9ORSBOVU1C
-        RVI9IisxIDkxNiA0NjQgNDIzOSIvPgo8T1dORVIgTkFNRT0iU3RhdGUgb2Yg
-        Q2FsaWZvcm5pYSIvPgo8RU1BSUwgQUREUj0ibGJhdGNoZWxkb3JAY28uc2xv
-        LmNhLnVzIi8+CjxMQU5HIExFWD0iZW4iIENPREU9InVzLWFzY2lpIi8+CjxM
-        SU5LU0lOIE5VTT0iNzcyMzkiLz4KPFNQRUVEIFRFWFQ9IjkzMSIgUENUPSI3
-        OCIvPgo8UkVWSUVXUyBBVkc9IjQuNSIgTlVNPSIiLz4KPENISUxEIFNSQVRJ
-        Tkc9IjAiLz4KPC9TRD4KCjxLRVlXT1JEUz4KPEtFWVdPUkQgVkFMPSJTYW4g
-        THVpcyBPYmlzcG8iLz4KPC9LRVlXT1JEUz48RE1PWj4KPFNJVEUgQkFTRT0i
-        c2xvY291cnRzLmNhLmdvdi8iIFRJVExFPSJTTE8gQ291bnR5IFN1cGVyaW9y
-        IENvdXJ0IiBERVNDPSJBZG1pbmlzdHJhdGl2ZSBzaXRlIG9mIHRoZSBTdXBl
-        cmlvciBDb3VydCwgd2l0aCBpbmZvcm1hdGlvbiwgcHVibGljIG5vdGljZXMs
-        IGFuZCBiYWlsIGFuZCBmZWUgc2NoZWR1bGVzLiI+CjxDQVRTPgo8Q0FUIElE
-        PSJUb3AvUmVnaW9uYWwvTm9ydGhfQW1lcmljYS9Vbml0ZWRfU3RhdGVzL0Nh
-        bGlmb3JuaWEvR292ZXJubWVudC9KdWRpY2lhbCIgVElUTEU9IkdvdmVybm1l
-        bnQvSnVkaWNpYWwiIENJRD0iNjIwNzE3Ii8+CjxDQVQgSUQ9IlRvcC9SZWdp
-        b25hbC9Ob3J0aF9BbWVyaWNhL1VuaXRlZF9TdGF0ZXMvQ2FsaWZvcm5pYS9D
-        b3VudGllcy9TYW5fTHVpc19PYmlzcG8vR292ZXJubWVudCIgVElUTEU9IlNh
-        biBMdWlzIE9iaXNwby9Hb3Zlcm5tZW50IiBDSUQ9IjYyMDUxMCIvPgo8Q0FU
-        IElEPSJUb3AvUmVnaW9uYWwvTm9ydGhfQW1lcmljYS9Vbml0ZWRfU3RhdGVz
-        L0NhbGlmb3JuaWEiIFRJVExFPSJVbml0ZWQgU3RhdGVzL0NhbGlmb3JuaWEi
-        IENJRD0iNjE5MDg3Ii8+CjxDQVQgSUQ9IlRvcC9SZWdpb25hbC9Ob3J0aF9B
-        bWVyaWNhL1VuaXRlZF9TdGF0ZXMvQ2FsaWZvcm5pYS9Hb3Zlcm5tZW50IiBU
-        SVRMRT0iQ2FsaWZvcm5pYS9Hb3Zlcm5tZW50IiBDSUQ9IjYyMDYwOCIvPgo8
-        Q0FUIElEPSJUb3AvV29ybGQvRXNwYcOxb2wvUmVnaW9uYWwvQW3DqXJpY2Ev
-        RXN0YWRvc19Vbmlkb3MvRXN0YWRvcy9DYWxpZm9ybmlhIiBUSVRMRT0iRXN0
-        YWRvcy9DYWxpZm9ybmlhIiBDSUQ9IjI2MjQ5Ii8+CjwvQ0FUUz4KPC9TSVRF
-        Pgo8L0RNT1o+CjxTRD4KPFBPUFVMQVJJVFkgVVJMPSJjYS5nb3YvIiBURVhU
-        PSI2NzAiIFNPVVJDRT0icGFuZWwiLz4KPFJFQUNIIFJBTks9Ijc2NiIvPgo8
-        UkFOSyBERUxUQT0iKzkzIi8+CjxDT1VOVFJZIENPREU9IlVTIiBOQU1FPSJV
-        bml0ZWQgU3RhdGVzIiBSQU5LPSIxNTMiLz4KPC9TRD4KPC9BTEVYQT4=
-    http_version: '1.1'
-  recorded_at: Fri, 18 Jul 2014 02:00:27 GMT
+      encoding: UTF-8
+      string: "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n\r\n<!-- Need more Alexa
+        data?  Find our APIs here: https://aws.amazon.com/alexa/ -->\r\n<ALEXA VER=\"0.9\"
+        URL=\"slocourts.net/\" HOME=\"0\" AID=\"=\" IDN=\"slocourts.net/\">\r\n<RLS
+        PREFIX=\"http://\" more=\"0\">\n<RL HREF=\"courts.countyofventura.org/\" TITLE=\"Superior
+        Court, Ventura\"/>\n<RL HREF=\"www.co.san-bernardino.ca.us/Courts\" TITLE=\"Superior
+        Court, San Bernardino\"/>\n<RL HREF=\"www.co.riverside.ca.us/depts/courts\"
+        TITLE=\"Superior Court Of California County Of Riverside\"/>\n<RL HREF=\"www.ci.sf.ca.us/courts\"
+        TITLE=\"Superior Court, San Francisco\"/>\n<RL HREF=\"www.sbcourts.org/\"
+        TITLE=\"Superior Court, Santa Barbara\"/>\n<RL HREF=\"www.stocktoncourt.org/courts\"
+        TITLE=\"Superior Court, San Joaquin County\"/>\n<RL HREF=\"www.sonomasuperiorcourt.com/\"
+        TITLE=\"Superior Court, Sonoma\"/>\n<RL HREF=\"www.solanocourts.com/\" TITLE=\"Superior
+        Court, Solano\"/>\n<RL HREF=\"www.sccsuperiorcourt.org/\" TITLE=\"Superior
+        Court, Santa Clara\"/>\n<RL HREF=\"www.sanmateocourt.org/\" TITLE=\"Superior
+        Court, San Mateo\"/>\n</RLS>\n<SD TITLE=\"A\" FLAGS=\"\" HOST=\"slocourts.net\">\n<TITLE
+        TEXT=\"Superior Court, San Luis Obispo\"/>\n</SD>\n<SD>\n<POPULARITY URL=\"slocourts.net/\"
+        TEXT=\"832124\" SOURCE=\"panel\"/>\n<REACH RANK=\"911408\"/>\n<RANK DELTA=\"+33334\"/>\n<COUNTRY
+        CODE=\"US\" NAME=\"United States\" RANK=\"127410\"/>\n</SD>\n</ALEXA>"
+    http_version: 
+  recorded_at: Mon, 14 Sep 2015 23:36:46 GMT
 - request:
     method: get
     uri: http://data.alexa.com/data?cli=10&dat=snbamz&url=slocourts.net
@@ -92,7 +53,7 @@ http_interactions:
       encoding: US-ASCII
       string: ''
     headers:
-      user-agent:
+      User-Agent:
       - Mozilla/5.0 (Macintosh; Intel Mac OS X 10_7_4) AppleWebKit/534.56.5 (KHTML,
         like Gecko) Version/5.1.6 Safari/534.56.5
   response:
@@ -100,76 +61,37 @@ http_interactions:
       code: 200
       message: OK
     headers:
-      content-type:
+      Content-Type:
       - text/xml
-      content-length:
-      - '2651'
-      connection:
-      - Close
+      Date:
+      - Mon, 14 Sep 2015 23:36:46 GMT
+      Server:
+      - nginx
+      Content-Length:
+      - '1304'
+      Connection:
+      - keep-alive
     body:
-      encoding: ASCII-8BIT
-      string: !binary |-
-        PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4NCg0KPEFM
-        RVhBIFZFUj0iMC45IiBVUkw9InNsb2NvdXJ0cy5jYS5nb3YvIiBIT01FPSIw
-        IiBBSUQ9Ij0iIElETj0ic2xvY291cnRzLmNhLmdvdi8iPg0KPFJMUyBQUkVG
-        SVg9Imh0dHA6Ly8iIG1vcmU9IjIzIj4KPFJMIEhSRUY9ImNvdXJ0cy5jb3Vu
-        dHlvZnZlbnR1cmEub3JnLyIgVElUTEU9IlN1cGVyaW9yIENvdXJ0LCBWZW50
-        dXJhIi8+CjxSTCBIUkVGPSJ3d3cuY28ucml2ZXJzaWRlLmNhLnVzL2RlcHRz
-        L2NvdXJ0cyIgVElUTEU9IlN1cGVyaW9yIENvdXJ0IE9mIENhbGlmb3JuaWEg
-        Q291bnR5IE9mIFJpdmVyc2lkZSIvPgo8UkwgSFJFRj0id3d3LmNvLnNhbi1i
-        ZXJuYXJkaW5vLmNhLnVzL0NvdXJ0cyIgVElUTEU9IlN1cGVyaW9yIENvdXJ0
-        LCBTYW4gQmVybmFyZGlubyIvPgo8UkwgSFJFRj0id3d3LmNpLnNmLmNhLnVz
-        L2NvdXJ0cyIgVElUTEU9IlN1cGVyaW9yIENvdXJ0LCBTYW4gRnJhbmNpc2Nv
-        Ii8+CjxSTCBIUkVGPSJ3d3cuc2Jjb3VydHMub3JnLyIgVElUTEU9IlN1cGVy
-        aW9yIENvdXJ0LCBTYW50YSBCYXJiYXJhIi8+CjxSTCBIUkVGPSJ3d3cuc2xv
-        c2hlcmlmZi5vcmcvIiBUSVRMRT0iU2FuIEx1aXMgT2Jpc3BvIENvdW50eSBT
-        aGVyaWZmJmFwb3M7cyBEZXBhcnRtZW50Ii8+CjxSTCBIUkVGPSJ3d3cuc2xv
-        ZHNzLm9yZy8iIFRJVExFPSJTYW4gTHVpcyBPYmlzcG8gQ291bnR5IERlcGFy
-        dG1lbnQgb2YgU29jaWFsIFNlcnZpY2VzIi8+CjxSTCBIUkVGPSJ3d3cuc2xv
-        Y291bnR5cHdkLm9yZy8iIFRJVExFPSJTYW4gTHVpcyBPYmlzcG8gQ291bnR5
-        IERlcGFydG1lbnQgb2YgUHVibGljIFdvcmtzIGFuZCBUcmFuc3BvcnRhdGlv
-        biIvPgo8UkwgSFJFRj0id3d3LnNsb2NvdW50eWZyYW5jaGlzZWFkbWluaXN0
-        cmF0aW9uLm9yZy8iIFRJVExFPSJTYW4gTHVpcyBPYmlzcG8gQ291bnR5IEZy
-        YW5jaGlzZSBBZG1pbmlzdHJhdGlvbiIvPgo8UkwgSFJFRj0id3d3LnNsb2Nv
-        Zy5vcmcvIiBUSVRMRT0iU0xPQ09HIi8+CjxSTCBIUkVGPSJ3d3cuYnV0dG9u
-        d2FyZS5jb20vIiBUSVRMRT0id3d3LmJ1dHRvbndhcmUuY29tLyIvPgo8L1JM
-        Uz4KPFNEIFRJVExFPSJBIiBGTEFHUz0iRE1PWiIgSE9TVD0ic2xvY291cnRz
-        LmNhLmdvdiI+CjxUSVRMRSBURVhUPSJTdXBlcmlvciBDb3VydCwgU2FuIEx1
-        aXMgT2Jpc3BvIi8+CjxBRERSIFNUUkVFVD0iMzEwMSBHb2xkIENhbXAgRHIi
-        IENJVFk9IlJhbmNobyBDb3Jkb3ZhIiBTVEFURT0iQ0EiIFpJUD0iOTU2NzAi
-        IENPVU5UUlk9IlVTIiAvPgo8Q1JFQVRFRCBEQVRFPSIxNi1KdW4tMjAwMCIg
-        REFZPSIxNiIgTU9OVEg9IjA2IiBZRUFSPSIyMDAwIi8+CjxQSE9ORSBOVU1C
-        RVI9IisxIDkxNiA0NjQgNDIzOSIvPgo8T1dORVIgTkFNRT0iU3RhdGUgb2Yg
-        Q2FsaWZvcm5pYSIvPgo8RU1BSUwgQUREUj0ibGJhdGNoZWxkb3JAY28uc2xv
-        LmNhLnVzIi8+CjxMQU5HIExFWD0iZW4iIENPREU9InVzLWFzY2lpIi8+CjxM
-        SU5LU0lOIE5VTT0iNzcyMzkiLz4KPFNQRUVEIFRFWFQ9IjkzMSIgUENUPSI3
-        OCIvPgo8UkVWSUVXUyBBVkc9IjQuNSIgTlVNPSIiLz4KPENISUxEIFNSQVRJ
-        Tkc9IjAiLz4KPC9TRD4KCjxLRVlXT1JEUz4KPEtFWVdPUkQgVkFMPSJTYW4g
-        THVpcyBPYmlzcG8iLz4KPC9LRVlXT1JEUz48RE1PWj4KPFNJVEUgQkFTRT0i
-        c2xvY291cnRzLmNhLmdvdi8iIFRJVExFPSJTTE8gQ291bnR5IFN1cGVyaW9y
-        IENvdXJ0IiBERVNDPSJBZG1pbmlzdHJhdGl2ZSBzaXRlIG9mIHRoZSBTdXBl
-        cmlvciBDb3VydCwgd2l0aCBpbmZvcm1hdGlvbiwgcHVibGljIG5vdGljZXMs
-        IGFuZCBiYWlsIGFuZCBmZWUgc2NoZWR1bGVzLiI+CjxDQVRTPgo8Q0FUIElE
-        PSJUb3AvUmVnaW9uYWwvTm9ydGhfQW1lcmljYS9Vbml0ZWRfU3RhdGVzL0Nh
-        bGlmb3JuaWEvR292ZXJubWVudC9KdWRpY2lhbCIgVElUTEU9IkdvdmVybm1l
-        bnQvSnVkaWNpYWwiIENJRD0iNjIwNzE3Ii8+CjxDQVQgSUQ9IlRvcC9SZWdp
-        b25hbC9Ob3J0aF9BbWVyaWNhL1VuaXRlZF9TdGF0ZXMvQ2FsaWZvcm5pYS9D
-        b3VudGllcy9TYW5fTHVpc19PYmlzcG8vR292ZXJubWVudCIgVElUTEU9IlNh
-        biBMdWlzIE9iaXNwby9Hb3Zlcm5tZW50IiBDSUQ9IjYyMDUxMCIvPgo8Q0FU
-        IElEPSJUb3AvUmVnaW9uYWwvTm9ydGhfQW1lcmljYS9Vbml0ZWRfU3RhdGVz
-        L0NhbGlmb3JuaWEiIFRJVExFPSJVbml0ZWQgU3RhdGVzL0NhbGlmb3JuaWEi
-        IENJRD0iNjE5MDg3Ii8+CjxDQVQgSUQ9IlRvcC9SZWdpb25hbC9Ob3J0aF9B
-        bWVyaWNhL1VuaXRlZF9TdGF0ZXMvQ2FsaWZvcm5pYS9Hb3Zlcm5tZW50IiBU
-        SVRMRT0iQ2FsaWZvcm5pYS9Hb3Zlcm5tZW50IiBDSUQ9IjYyMDYwOCIvPgo8
-        Q0FUIElEPSJUb3AvV29ybGQvRXNwYcOxb2wvUmVnaW9uYWwvQW3DqXJpY2Ev
-        RXN0YWRvc19Vbmlkb3MvRXN0YWRvcy9DYWxpZm9ybmlhIiBUSVRMRT0iRXN0
-        YWRvcy9DYWxpZm9ybmlhIiBDSUQ9IjI2MjQ5Ii8+CjwvQ0FUUz4KPC9TSVRF
-        Pgo8L0RNT1o+CjxTRD4KPFBPUFVMQVJJVFkgVVJMPSJjYS5nb3YvIiBURVhU
-        PSI2NzAiIFNPVVJDRT0icGFuZWwiLz4KPFJFQUNIIFJBTks9Ijc2NiIvPgo8
-        UkFOSyBERUxUQT0iKzkzIi8+CjxDT1VOVFJZIENPREU9IlVTIiBOQU1FPSJV
-        bml0ZWQgU3RhdGVzIiBSQU5LPSIxNTMiLz4KPC9TRD4KPC9BTEVYQT4=
-    http_version: '1.1'
-  recorded_at: Fri, 18 Jul 2014 02:00:27 GMT
+      encoding: UTF-8
+      string: "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n\r\n<!-- Need more Alexa
+        data?  Find our APIs here: https://aws.amazon.com/alexa/ -->\r\n<ALEXA VER=\"0.9\"
+        URL=\"slocourts.net/\" HOME=\"0\" AID=\"=\" IDN=\"slocourts.net/\">\r\n<RLS
+        PREFIX=\"http://\" more=\"0\">\n<RL HREF=\"courts.countyofventura.org/\" TITLE=\"Superior
+        Court, Ventura\"/>\n<RL HREF=\"www.co.san-bernardino.ca.us/Courts\" TITLE=\"Superior
+        Court, San Bernardino\"/>\n<RL HREF=\"www.co.riverside.ca.us/depts/courts\"
+        TITLE=\"Superior Court Of California County Of Riverside\"/>\n<RL HREF=\"www.ci.sf.ca.us/courts\"
+        TITLE=\"Superior Court, San Francisco\"/>\n<RL HREF=\"www.sbcourts.org/\"
+        TITLE=\"Superior Court, Santa Barbara\"/>\n<RL HREF=\"www.stocktoncourt.org/courts\"
+        TITLE=\"Superior Court, San Joaquin County\"/>\n<RL HREF=\"www.sonomasuperiorcourt.com/\"
+        TITLE=\"Superior Court, Sonoma\"/>\n<RL HREF=\"www.solanocourts.com/\" TITLE=\"Superior
+        Court, Solano\"/>\n<RL HREF=\"www.sccsuperiorcourt.org/\" TITLE=\"Superior
+        Court, Santa Clara\"/>\n<RL HREF=\"www.sanmateocourt.org/\" TITLE=\"Superior
+        Court, San Mateo\"/>\n</RLS>\n<SD TITLE=\"A\" FLAGS=\"\" HOST=\"slocourts.net\">\n<TITLE
+        TEXT=\"Superior Court, San Luis Obispo\"/>\n</SD>\n<SD>\n<POPULARITY URL=\"slocourts.net/\"
+        TEXT=\"832124\" SOURCE=\"panel\"/>\n<REACH RANK=\"911408\"/>\n<RANK DELTA=\"+33334\"/>\n<COUNTRY
+        CODE=\"US\" NAME=\"United States\" RANK=\"127410\"/>\n</SD>\n</ALEXA>"
+    http_version: 
+  recorded_at: Mon, 14 Sep 2015 23:36:46 GMT
 - request:
     method: get
     uri: http://data.alexa.com/data?cli=10&dat=snbamz&url=slocourts.net
@@ -177,7 +99,7 @@ http_interactions:
       encoding: US-ASCII
       string: ''
     headers:
-      user-agent:
+      User-Agent:
       - Mozilla/5.0 (Macintosh; Intel Mac OS X 10_7_4) AppleWebKit/534.56.5 (KHTML,
         like Gecko) Version/5.1.6 Safari/534.56.5
   response:
@@ -185,74 +107,35 @@ http_interactions:
       code: 200
       message: OK
     headers:
-      content-type:
+      Content-Type:
       - text/xml
-      content-length:
-      - '2651'
-      connection:
-      - Close
+      Date:
+      - Mon, 14 Sep 2015 23:36:46 GMT
+      Server:
+      - nginx
+      Content-Length:
+      - '1304'
+      Connection:
+      - keep-alive
     body:
-      encoding: ASCII-8BIT
-      string: !binary |-
-        PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4NCg0KPEFM
-        RVhBIFZFUj0iMC45IiBVUkw9InNsb2NvdXJ0cy5jYS5nb3YvIiBIT01FPSIw
-        IiBBSUQ9Ij0iIElETj0ic2xvY291cnRzLmNhLmdvdi8iPg0KPFJMUyBQUkVG
-        SVg9Imh0dHA6Ly8iIG1vcmU9IjIzIj4KPFJMIEhSRUY9ImNvdXJ0cy5jb3Vu
-        dHlvZnZlbnR1cmEub3JnLyIgVElUTEU9IlN1cGVyaW9yIENvdXJ0LCBWZW50
-        dXJhIi8+CjxSTCBIUkVGPSJ3d3cuY28ucml2ZXJzaWRlLmNhLnVzL2RlcHRz
-        L2NvdXJ0cyIgVElUTEU9IlN1cGVyaW9yIENvdXJ0IE9mIENhbGlmb3JuaWEg
-        Q291bnR5IE9mIFJpdmVyc2lkZSIvPgo8UkwgSFJFRj0id3d3LmNvLnNhbi1i
-        ZXJuYXJkaW5vLmNhLnVzL0NvdXJ0cyIgVElUTEU9IlN1cGVyaW9yIENvdXJ0
-        LCBTYW4gQmVybmFyZGlubyIvPgo8UkwgSFJFRj0id3d3LmNpLnNmLmNhLnVz
-        L2NvdXJ0cyIgVElUTEU9IlN1cGVyaW9yIENvdXJ0LCBTYW4gRnJhbmNpc2Nv
-        Ii8+CjxSTCBIUkVGPSJ3d3cuc2Jjb3VydHMub3JnLyIgVElUTEU9IlN1cGVy
-        aW9yIENvdXJ0LCBTYW50YSBCYXJiYXJhIi8+CjxSTCBIUkVGPSJ3d3cuc2xv
-        c2hlcmlmZi5vcmcvIiBUSVRMRT0iU2FuIEx1aXMgT2Jpc3BvIENvdW50eSBT
-        aGVyaWZmJmFwb3M7cyBEZXBhcnRtZW50Ii8+CjxSTCBIUkVGPSJ3d3cuc2xv
-        ZHNzLm9yZy8iIFRJVExFPSJTYW4gTHVpcyBPYmlzcG8gQ291bnR5IERlcGFy
-        dG1lbnQgb2YgU29jaWFsIFNlcnZpY2VzIi8+CjxSTCBIUkVGPSJ3d3cuc2xv
-        Y291bnR5cHdkLm9yZy8iIFRJVExFPSJTYW4gTHVpcyBPYmlzcG8gQ291bnR5
-        IERlcGFydG1lbnQgb2YgUHVibGljIFdvcmtzIGFuZCBUcmFuc3BvcnRhdGlv
-        biIvPgo8UkwgSFJFRj0id3d3LnNsb2NvdW50eWZyYW5jaGlzZWFkbWluaXN0
-        cmF0aW9uLm9yZy8iIFRJVExFPSJTYW4gTHVpcyBPYmlzcG8gQ291bnR5IEZy
-        YW5jaGlzZSBBZG1pbmlzdHJhdGlvbiIvPgo8UkwgSFJFRj0id3d3LnNsb2Nv
-        Zy5vcmcvIiBUSVRMRT0iU0xPQ09HIi8+CjxSTCBIUkVGPSJ3d3cuYnV0dG9u
-        d2FyZS5jb20vIiBUSVRMRT0id3d3LmJ1dHRvbndhcmUuY29tLyIvPgo8L1JM
-        Uz4KPFNEIFRJVExFPSJBIiBGTEFHUz0iRE1PWiIgSE9TVD0ic2xvY291cnRz
-        LmNhLmdvdiI+CjxUSVRMRSBURVhUPSJTdXBlcmlvciBDb3VydCwgU2FuIEx1
-        aXMgT2Jpc3BvIi8+CjxBRERSIFNUUkVFVD0iMzEwMSBHb2xkIENhbXAgRHIi
-        IENJVFk9IlJhbmNobyBDb3Jkb3ZhIiBTVEFURT0iQ0EiIFpJUD0iOTU2NzAi
-        IENPVU5UUlk9IlVTIiAvPgo8Q1JFQVRFRCBEQVRFPSIxNi1KdW4tMjAwMCIg
-        REFZPSIxNiIgTU9OVEg9IjA2IiBZRUFSPSIyMDAwIi8+CjxQSE9ORSBOVU1C
-        RVI9IisxIDkxNiA0NjQgNDIzOSIvPgo8T1dORVIgTkFNRT0iU3RhdGUgb2Yg
-        Q2FsaWZvcm5pYSIvPgo8RU1BSUwgQUREUj0ibGJhdGNoZWxkb3JAY28uc2xv
-        LmNhLnVzIi8+CjxMQU5HIExFWD0iZW4iIENPREU9InVzLWFzY2lpIi8+CjxM
-        SU5LU0lOIE5VTT0iNzcyMzkiLz4KPFNQRUVEIFRFWFQ9IjkzMSIgUENUPSI3
-        OCIvPgo8UkVWSUVXUyBBVkc9IjQuNSIgTlVNPSIiLz4KPENISUxEIFNSQVRJ
-        Tkc9IjAiLz4KPC9TRD4KCjxLRVlXT1JEUz4KPEtFWVdPUkQgVkFMPSJTYW4g
-        THVpcyBPYmlzcG8iLz4KPC9LRVlXT1JEUz48RE1PWj4KPFNJVEUgQkFTRT0i
-        c2xvY291cnRzLmNhLmdvdi8iIFRJVExFPSJTTE8gQ291bnR5IFN1cGVyaW9y
-        IENvdXJ0IiBERVNDPSJBZG1pbmlzdHJhdGl2ZSBzaXRlIG9mIHRoZSBTdXBl
-        cmlvciBDb3VydCwgd2l0aCBpbmZvcm1hdGlvbiwgcHVibGljIG5vdGljZXMs
-        IGFuZCBiYWlsIGFuZCBmZWUgc2NoZWR1bGVzLiI+CjxDQVRTPgo8Q0FUIElE
-        PSJUb3AvUmVnaW9uYWwvTm9ydGhfQW1lcmljYS9Vbml0ZWRfU3RhdGVzL0Nh
-        bGlmb3JuaWEvR292ZXJubWVudC9KdWRpY2lhbCIgVElUTEU9IkdvdmVybm1l
-        bnQvSnVkaWNpYWwiIENJRD0iNjIwNzE3Ii8+CjxDQVQgSUQ9IlRvcC9SZWdp
-        b25hbC9Ob3J0aF9BbWVyaWNhL1VuaXRlZF9TdGF0ZXMvQ2FsaWZvcm5pYS9D
-        b3VudGllcy9TYW5fTHVpc19PYmlzcG8vR292ZXJubWVudCIgVElUTEU9IlNh
-        biBMdWlzIE9iaXNwby9Hb3Zlcm5tZW50IiBDSUQ9IjYyMDUxMCIvPgo8Q0FU
-        IElEPSJUb3AvUmVnaW9uYWwvTm9ydGhfQW1lcmljYS9Vbml0ZWRfU3RhdGVz
-        L0NhbGlmb3JuaWEiIFRJVExFPSJVbml0ZWQgU3RhdGVzL0NhbGlmb3JuaWEi
-        IENJRD0iNjE5MDg3Ii8+CjxDQVQgSUQ9IlRvcC9SZWdpb25hbC9Ob3J0aF9B
-        bWVyaWNhL1VuaXRlZF9TdGF0ZXMvQ2FsaWZvcm5pYS9Hb3Zlcm5tZW50IiBU
-        SVRMRT0iQ2FsaWZvcm5pYS9Hb3Zlcm5tZW50IiBDSUQ9IjYyMDYwOCIvPgo8
-        Q0FUIElEPSJUb3AvV29ybGQvRXNwYcOxb2wvUmVnaW9uYWwvQW3DqXJpY2Ev
-        RXN0YWRvc19Vbmlkb3MvRXN0YWRvcy9DYWxpZm9ybmlhIiBUSVRMRT0iRXN0
-        YWRvcy9DYWxpZm9ybmlhIiBDSUQ9IjI2MjQ5Ii8+CjwvQ0FUUz4KPC9TSVRF
-        Pgo8L0RNT1o+CjxTRD4KPFBPUFVMQVJJVFkgVVJMPSJjYS5nb3YvIiBURVhU
-        PSI2NzAiIFNPVVJDRT0icGFuZWwiLz4KPFJFQUNIIFJBTks9Ijc2NiIvPgo8
-        UkFOSyBERUxUQT0iKzkzIi8+CjxDT1VOVFJZIENPREU9IlVTIiBOQU1FPSJV
-        bml0ZWQgU3RhdGVzIiBSQU5LPSIxNTMiLz4KPC9TRD4KPC9BTEVYQT4=
-    http_version: '1.1'
-  recorded_at: Fri, 18 Jul 2014 02:00:27 GMT
-recorded_with: VCR 2.7.0
+      encoding: UTF-8
+      string: "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n\r\n<!-- Need more Alexa
+        data?  Find our APIs here: https://aws.amazon.com/alexa/ -->\r\n<ALEXA VER=\"0.9\"
+        URL=\"slocourts.net/\" HOME=\"0\" AID=\"=\" IDN=\"slocourts.net/\">\r\n<RLS
+        PREFIX=\"http://\" more=\"0\">\n<RL HREF=\"courts.countyofventura.org/\" TITLE=\"Superior
+        Court, Ventura\"/>\n<RL HREF=\"www.co.san-bernardino.ca.us/Courts\" TITLE=\"Superior
+        Court, San Bernardino\"/>\n<RL HREF=\"www.co.riverside.ca.us/depts/courts\"
+        TITLE=\"Superior Court Of California County Of Riverside\"/>\n<RL HREF=\"www.ci.sf.ca.us/courts\"
+        TITLE=\"Superior Court, San Francisco\"/>\n<RL HREF=\"www.sbcourts.org/\"
+        TITLE=\"Superior Court, Santa Barbara\"/>\n<RL HREF=\"www.stocktoncourt.org/courts\"
+        TITLE=\"Superior Court, San Joaquin County\"/>\n<RL HREF=\"www.sonomasuperiorcourt.com/\"
+        TITLE=\"Superior Court, Sonoma\"/>\n<RL HREF=\"www.solanocourts.com/\" TITLE=\"Superior
+        Court, Solano\"/>\n<RL HREF=\"www.sccsuperiorcourt.org/\" TITLE=\"Superior
+        Court, Santa Clara\"/>\n<RL HREF=\"www.sanmateocourt.org/\" TITLE=\"Superior
+        Court, San Mateo\"/>\n</RLS>\n<SD TITLE=\"A\" FLAGS=\"\" HOST=\"slocourts.net\">\n<TITLE
+        TEXT=\"Superior Court, San Luis Obispo\"/>\n</SD>\n<SD>\n<POPULARITY URL=\"slocourts.net/\"
+        TEXT=\"832124\" SOURCE=\"panel\"/>\n<REACH RANK=\"911408\"/>\n<RANK DELTA=\"+33334\"/>\n<COUNTRY
+        CODE=\"US\" NAME=\"United States\" RANK=\"127410\"/>\n</SD>\n</ALEXA>"
+    http_version: 
+  recorded_at: Mon, 14 Sep 2015 23:36:46 GMT
+recorded_with: VCR 2.9.3

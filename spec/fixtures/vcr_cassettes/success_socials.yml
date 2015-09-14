@@ -2,12 +2,12 @@
 http_interactions:
 - request:
     method: get
-    uri: http://vk.com/share.php?url=http%3A%2F%2Fwww.google.com&act=count
+    uri: http://api.pinterest.com/v1/urls/count.json?callback=_&url=http://www.google.com
     body:
       encoding: US-ASCII
       string: ''
     headers:
-      user-agent:
+      User-Agent:
       - Mozilla/5.0 (Macintosh; Intel Mac OS X 10_7_4) AppleWebKit/534.56.5 (KHTML,
         like Gecko) Version/5.1.6 Safari/534.56.5
   response:
@@ -15,116 +15,33 @@ http_interactions:
       code: 200
       message: OK
     headers:
-      server:
-      - Apache
-      date:
-      - Mon, 15 Dec 2014 20:52:34 GMT
-      content-type:
-      - text/html; charset=windows-1251
-      content-length:
-      - '24'
-      connection:
-      - close
-      x-powered-by:
-      - PHP/3.9812
-      set-cookie:
-      - remixlang=3; expires=Thu, 17 Dec 2015 16:12:36 GMT; path=/; domain=.vk.com
-      pragma:
-      - no-cache
-      cache-control:
-      - no-store
-    body:
-      encoding: UTF-8
-      string: VK.Share.count(0, 3725);
-    http_version: '1.1'
-  recorded_at: Mon, 15 Dec 2014 20:52:34 GMT
-- request:
-    method: get
-    uri: http://api.pinterest.com/v1/urls/count.json?url=http%3A%2F%2Fwww.google.com&callback=_
-    body:
-      encoding: US-ASCII
-      string: ''
-    headers:
-      user-agent:
-      - Mozilla/5.0 (Macintosh; Intel Mac OS X 10_7_4) AppleWebKit/534.56.5 (KHTML,
-        like Gecko) Version/5.1.6 Safari/534.56.5
-  response:
-    status:
-      code: 200
-      message: OK
-    headers:
-      accept-ranges:
+      Accept-Ranges:
       - bytes
-      cache-control:
+      Age:
+      - '1655'
+      Cache-Control:
       - private
-      content-type:
+      Content-Type:
       - application/javascript
-      expires:
-      - Mon, 15 Dec 2014 21:07:34 GMT
-      x-pinterest-rid:
-      - '420796907025'
-      x-varnish:
-      - '3153189879'
-      content-length:
+      Date:
+      - Mon, 14 Sep 2015 23:36:47 GMT
+      Expires:
+      - Mon, 14 Sep 2015 23:24:12 GMT
+      Via:
+      - 1.1 varnish
+      X-Pinterest-Rid:
+      - '338406475226'
+      X-Varnish:
+      - 513672300 509056434
+      Content-Length:
       - '48'
-      date:
-      - Mon, 15 Dec 2014 20:52:34 GMT
-      connection:
-      - close
+      Connection:
+      - keep-alive
     body:
       encoding: UTF-8
       string: _({"url":"http://www.google.com","count":75108})
-    http_version: '1.1'
-  recorded_at: Mon, 15 Dec 2014 20:52:34 GMT
-- request:
-    method: get
-    uri: http://graph.facebook.com/?id=http%3A%2F%2Fwww.google.com
-    body:
-      encoding: US-ASCII
-      string: ''
-    headers:
-      user-agent:
-      - Mozilla/5.0 (Macintosh; Intel Mac OS X 10_7_4) AppleWebKit/534.56.5 (KHTML,
-        like Gecko) Version/5.1.6 Safari/534.56.5
-  response:
-    status:
-      code: 200
-      message: OK
-    headers:
-      facebook-api-version:
-      - v1.0
-      etag:
-      - '"b763721b57603f6520b06f4622e3f2ba5c6a722e"'
-      content-type:
-      - text/javascript; charset=UTF-8
-      pragma:
-      - no-cache
-      access-control-allow-origin:
-      - '*'
-      x-fb-rev:
-      - '1532468'
-      cache-control:
-      - private, no-cache, no-store, must-revalidate
-      expires:
-      - Sat, 01 Jan 2000 00:00:00 GMT
-      x-fb-debug:
-      - g5R1Oyw08FasCZhz5GfUXKQCI+BzYr1q4RDlS6ke0Uk276RwDb9fJ8mTYJvatpU0jz/glCqIRqQV+wdUQ2B2mg==
-      date:
-      - Mon, 15 Dec 2014 20:52:34 GMT
-      connection:
-      - close
-      content-length:
-      - '79'
-    body:
-      encoding: UTF-8
-      string: |-
-        {
-           "id": "http://www.google.com",
-           "shares": 10012603,
-           "comments": 934
-        }
-    http_version: '1.1'
-  recorded_at: Mon, 15 Dec 2014 20:52:34 GMT
+    http_version: 
+  recorded_at: Mon, 14 Sep 2015 23:36:47 GMT
 - request:
     method: get
     uri: http://urls.api.twitter.com/1/urls/count.json?url=www.google.com
@@ -132,7 +49,7 @@ http_interactions:
       encoding: US-ASCII
       string: ''
     headers:
-      user-agent:
+      User-Agent:
       - Mozilla/5.0 (Macintosh; Intel Mac OS X 10_7_4) AppleWebKit/534.56.5 (KHTML,
         like Gecko) Version/5.1.6 Safari/534.56.5
   response:
@@ -140,126 +57,96 @@ http_interactions:
       code: 200
       message: OK
     headers:
-      cache-control:
-      - max-age=900
-      content-type:
+      Cache-Control:
+      - must-revalidate, max-age=900
+      Content-Type:
       - application/json;charset=utf-8
-      date:
-      - Mon, 15 Dec 2014 20:52:34 UTC
-      expires:
-      - Mon, 15 Dec 2014 21:07:34 GMT
-      last-modified:
-      - Mon, 15 Dec 2014 20:52:34 GMT
-      server:
+      Expires:
+      - Mon, 14 Sep 2015 23:51:47 GMT
+      Last-Modified:
+      - Mon, 14 Sep 2015 23:36:47 GMT
+      Server:
       - tsa_b
-      set-cookie:
-      - guest_id=v1%3A141867675457322338; Domain=.twitter.com; Path=/; Expires=Wed,
-        14-Dec-2016 20:52:34 UTC
-      x-connection-hash:
-      - 5839fc5d0eaaf756cee243cb1995c5c1
-      x-response-time:
-      - '3'
-      content-length:
+      X-Connection-Hash:
+      - cb66cffe7fa43dbf90b1192189d730bf
+      X-Response-Time:
+      - '6'
+      Content-Length:
       - '52'
-      connection:
-      - close
-    body:
-      encoding: UTF-8
-      string: '{"count":21936956,"url":"http:\/\/www.google.com\/"}'
-    http_version: '1.1'
-  recorded_at: Mon, 15 Dec 2014 20:52:34 GMT
-- request:
-    method: get
-    uri: http://share.yandex.ru/gpp.xml?url=http%3A%2F%2Fwww.google.com
-    body:
-      encoding: US-ASCII
-      string: ''
-    headers:
-      user-agent:
-      - Mozilla/5.0 (Macintosh; Intel Mac OS X 10_7_4) AppleWebKit/534.56.5 (KHTML,
-        like Gecko) Version/5.1.6 Safari/534.56.5
-  response:
-    status:
-      code: 200
-      message: OK
-    headers:
-      server:
-      - nginx/1.6.2
-      date:
-      - Mon, 15 Dec 2014 20:52:34 GMT
-      content-type:
-      - text/javascript; charset=utf-8
-      transfer-encoding:
-      - chunked
-      connection:
-      - close
-      cache-control:
-      - max-age=0, must-revalidate, proxy-revalidate, no-cache, no-store, private
-      expires:
-      - Mon, 15 Dec 2014 20:52:34 GMT
-      pragma:
-      - no-cache
-      set-cookie:
-      - yandexuid=45368231418676754; domain=.yandex.ru; path=/; expires=Tue, 19 Jan
-        2038 03:14:07 GMT
-    body:
-      encoding: UTF-8
-      string: services.gplus.cb("10000");
-    http_version: '1.1'
-  recorded_at: Mon, 15 Dec 2014 20:52:34 GMT
-- request:
-    method: get
-    uri: https://www.linkedin.com/countserv/count/share?url=www.google.com&callback=_&format=json
-    body:
-      encoding: US-ASCII
-      string: ''
-    headers:
-      user-agent:
-      - Mozilla/5.0 (Macintosh; Intel Mac OS X 10_7_4) AppleWebKit/534.56.5 (KHTML,
-        like Gecko) Version/5.1.6 Safari/534.56.5
-  response:
-    status:
-      code: 200
-      message: OK
-    headers:
-      server:
-      - Apache-Coyote/1.1
-      content-type:
-      - application/json;charset=UTF-8
-      content-length:
-      - '74'
-      vary:
+      Accept-Ranges:
+      - bytes
+      Date:
+      - Mon, 14 Sep 2015 23:36:47 GMT
+      Via:
+      - 1.1 varnish
+      Age:
+      - '0'
+      Connection:
+      - keep-alive
+      X-Served-By:
+      - cache-tw-nyc1-cr1-11-TWNYC1
+      X-Cache:
+      - MISS
+      X-Cache-Hits:
+      - '0'
+      Vary:
       - Accept-Encoding
-      date:
-      - Mon, 15 Dec 2014 20:52:34 GMT
-      x-frame-options:
-      - sameorigin
-      x-content-type-options:
-      - nosniff
-      x-xss-protection:
-      - 1; mode=block
-      x-li-fabric:
-      - prod-ltx1
-      strict-transport-security:
-      - max-age=0
-      pragma:
-      - no-cache
-      expires:
-      - Thu, 01 Jan 1970 00:00:00 GMT
-      cache-control:
-      - no-cache, no-store
-      x-li-pop:
-      - PROD-IDB2
-      x-li-uuid:
-      - YZcC9v0msBOg4JUkeisAAA==
-      set-cookie:
-      - lidc="b=TB21:g=19:u=1:i=1418676754:t=1418763154:s=498524689"; Expires=Tue,
-        16 Dec 2014 20:52:34 GMT; domain=.linkedin.com; Path=/
     body:
       encoding: UTF-8
-      string: '{"count":1023,"fCnt":"1,023","fCntPlusOne":"1,024","url":"www.google.com"}'
-    http_version: '1.1'
-  recorded_at: Mon, 15 Dec 2014 20:52:34 GMT
+      string: '{"count":24665189,"url":"http:\/\/www.google.com\/"}'
+    http_version: 
+  recorded_at: Mon, 14 Sep 2015 23:36:47 GMT
+- request:
+    method: get
+    uri: http://graph.facebook.com/?id=http://www.google.com
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Mozilla/5.0 (Macintosh; Intel Mac OS X 10_7_4) AppleWebKit/534.56.5 (KHTML,
+        like Gecko) Version/5.1.6 Safari/534.56.5
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Access-Control-Allow-Origin:
+      - "*"
+      Content-Type:
+      - text/javascript; charset=UTF-8
+      X-Fb-Trace-Id:
+      - ATI4Meh3P0m
+      X-Fb-Rev:
+      - '1935378'
+      Etag:
+      - '"f1ced55c7e36bb2189fe954b2c02cc026239b54c"'
+      Pragma:
+      - no-cache
+      Cache-Control:
+      - private, no-cache, no-store, must-revalidate
+      Facebook-Api-Version:
+      - v2.0
+      Expires:
+      - Sat, 01 Jan 2000 00:00:00 GMT
+      X-Fb-Debug:
+      - DTy6UWWN/SiLz6D+fkJvvW2XX2c7tP2MZhOqSuYPwM3s+YNUZ8R8xX3q6l0NF+1NlHS+sWeIIaRi2WHLh7mzmQ==
+      Date:
+      - Mon, 14 Sep 2015 23:36:47 GMT
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '80'
+    body:
+      encoding: UTF-8
+      string: |-
+        {
+           "id": "http://www.google.com",
+           "shares": 13236803,
+           "comments": 1028
+        }
+    http_version: 
+  recorded_at: Mon, 14 Sep 2015 23:36:47 GMT
 - request:
     method: get
     uri: http://www.stumbleupon.com/services/1.01/badge.getinfo?url=www.google.com
@@ -267,7 +154,7 @@ http_interactions:
       encoding: US-ASCII
       string: ''
     headers:
-      user-agent:
+      User-Agent:
       - Mozilla/5.0 (Macintosh; Intel Mac OS X 10_7_4) AppleWebKit/534.56.5 (KHTML,
         like Gecko) Version/5.1.6 Safari/534.56.5
   response:
@@ -275,28 +162,559 @@ http_interactions:
       code: 200
       message: OK
     headers:
-      server:
+      Server:
       - Apache
-      p3p:
+      P3p:
       - policyref="/w3c/p3p.xml", CP="CURa ADMa DEVa PSAo PSDo OUR BUS UNI PUR INT
         DEM STA PRE COM NAV OTC NOI DSP COR"
-      vary:
+      Vary:
       - Accept-Encoding
-      content-type:
+      Content-Type:
       - text/plain; charset=iso-8859-1
-      content-length:
+      Content-Length:
       - '521'
-      accept-ranges:
+      Accept-Ranges:
       - bytes
-      date:
-      - Mon, 15 Dec 2014 20:52:34 GMT
-      age:
+      Date:
+      - Mon, 14 Sep 2015 23:36:47 GMT
+      Age:
       - '0'
-      connection:
-      - close
+      Connection:
+      - keep-alive
     body:
       encoding: UTF-8
-      string: '{"result":{"url":"http:\/\/www.google.com\/","in_index":true,"publicid":"2pI1xR","views":255079,"title":"Google","thumbnail":"http:\/\/cdn.stumble-upon.com\/mthumb\/31\/10031.jpg","thumbnail_b":"http:\/\/cdn.stumble-upon.com\/bthumb\/31\/10031.jpg","submit_link":"http:\/\/www.stumbleupon.com\/badge\/?url=http:\/\/www.google.com\/","badge_link":"http:\/\/www.stumbleupon.com\/badge\/?url=http:\/\/www.google.com\/","info_link":"http:\/\/www.stumbleupon.com\/url\/www.google.com\/"},"timestamp":1418676754,"success":true}'
-    http_version: '1.1'
-  recorded_at: Mon, 15 Dec 2014 20:52:35 GMT
+      string: '{"result":{"url":"http:\/\/www.google.com\/","in_index":true,"publicid":"2pI1xR","views":255199,"title":"Google","thumbnail":"http:\/\/cdn.stumble-upon.com\/mthumb\/31\/10031.jpg","thumbnail_b":"http:\/\/cdn.stumble-upon.com\/bthumb\/31\/10031.jpg","submit_link":"http:\/\/www.stumbleupon.com\/badge\/?url=http:\/\/www.google.com\/","badge_link":"http:\/\/www.stumbleupon.com\/badge\/?url=http:\/\/www.google.com\/","info_link":"http:\/\/www.stumbleupon.com\/url\/www.google.com\/"},"timestamp":1442273807,"success":true}'
+    http_version: 
+  recorded_at: Mon, 14 Sep 2015 23:36:47 GMT
+- request:
+    method: get
+    uri: https://www.linkedin.com/countserv/count/share?callback=_&format=json&url=www.google.com
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Mozilla/5.0 (Macintosh; Intel Mac OS X 10_7_4) AppleWebKit/534.56.5 (KHTML,
+        like Gecko) Version/5.1.6 Safari/534.56.5
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - Apache-Coyote/1.1
+      Content-Type:
+      - application/json;charset=UTF-8
+      Content-Length:
+      - '74'
+      Vary:
+      - Accept-Encoding
+      Date:
+      - Mon, 14 Sep 2015 23:36:47 GMT
+      X-Frame-Options:
+      - sameorigin
+      X-Content-Type-Options:
+      - nosniff
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Li-Fabric:
+      - prod-lva1
+      Strict-Transport-Security:
+      - max-age=0
+      Pragma:
+      - no-cache
+      Expires:
+      - Thu, 01 Jan 1970 00:00:00 GMT
+      Cache-Control:
+      - no-cache, no-store
+      Connection:
+      - keep-alive
+      X-Li-Pop:
+      - prod-lva1
+      X-Li-Uuid:
+      - f9Ls8GL8AxQAGPeq0CoAAA==
+      Set-Cookie:
+      - lidc="b=VB84:g=218:u=1:i=1442273807:t=1442360207:s=AQF2X3U14SFcDiFmoW541KuPQoZiZuIq";
+        Expires=Tue, 15 Sep 2015 23:36:47 GMT; domain=.linkedin.com; Path=/
+    body:
+      encoding: UTF-8
+      string: '{"count":2712,"fCnt":"2,712","fCntPlusOne":"2,713","url":"www.google.com"}'
+    http_version: 
+  recorded_at: Mon, 14 Sep 2015 23:36:47 GMT
+- request:
+    method: get
+    uri: http://vk.com/share.php?act=count&url=http://www.google.com
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Mozilla/5.0 (Macintosh; Intel Mac OS X 10_7_4) AppleWebKit/534.56.5 (KHTML,
+        like Gecko) Version/5.1.6 Safari/534.56.5
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - Apache
+      Date:
+      - Mon, 14 Sep 2015 23:36:47 GMT
+      Content-Type:
+      - text/html; charset=windows-1251
+      Content-Length:
+      - '24'
+      Connection:
+      - keep-alive
+      X-Powered-By:
+      - PHP/3.17085
+      Set-Cookie:
+      - remixlang=3; expires=Sun, 11 Sep 2016 12:05:29 GMT; path=/; domain=.vk.com
+      Pragma:
+      - no-cache
+      Cache-Control:
+      - no-store
+    body:
+      encoding: UTF-8
+      string: VK.Share.count(0, 4352);
+    http_version: 
+  recorded_at: Mon, 14 Sep 2015 23:36:47 GMT
+- request:
+    method: get
+    uri: http://share.yandex.ru/gpp.xml?url=http://www.google.com
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Mozilla/5.0 (Macintosh; Intel Mac OS X 10_7_4) AppleWebKit/534.56.5 (KHTML,
+        like Gecko) Version/5.1.6 Safari/534.56.5
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx/1.6.3
+      Date:
+      - Mon, 14 Sep 2015 23:36:47 GMT
+      Content-Type:
+      - text/javascript; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Cache-Control:
+      - max-age=0, must-revalidate, proxy-revalidate, no-cache, no-store, private
+      Expires:
+      - Mon, 14 Sep 2015 23:36:47 GMT
+      Pragma:
+      - no-cache
+      Set-Cookie:
+      - yandexuid=9201727381442273807; domain=.yandex.ru; path=/; expires=Tue, 19
+        Jan 2038 03:14:07 GMT
+    body:
+      encoding: UTF-8
+      string: services.gplus.cb("10000");
+    http_version: 
+  recorded_at: Mon, 14 Sep 2015 23:36:48 GMT
+- request:
+    method: get
+    uri: http://urls.api.twitter.com/1/urls/count.json?url=www.google.com
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Mozilla/5.0 (Macintosh; Intel Mac OS X 10_7_4) AppleWebKit/534.56.5 (KHTML,
+        like Gecko) Version/5.1.6 Safari/534.56.5
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - must-revalidate, max-age=900
+      Content-Type:
+      - application/json;charset=utf-8
+      Expires:
+      - Mon, 14 Sep 2015 23:51:47 GMT
+      Last-Modified:
+      - Mon, 14 Sep 2015 23:36:47 GMT
+      Server:
+      - tsa_b
+      X-Connection-Hash:
+      - cb66cffe7fa43dbf90b1192189d730bf
+      X-Response-Time:
+      - '6'
+      Content-Length:
+      - '52'
+      Accept-Ranges:
+      - bytes
+      Date:
+      - Mon, 14 Sep 2015 23:36:48 GMT
+      Via:
+      - 1.1 varnish
+      Age:
+      - '1'
+      Connection:
+      - keep-alive
+      X-Served-By:
+      - cache-tw-nyc1-cr1-11-TWNYC1
+      X-Cache:
+      - HIT
+      X-Cache-Hits:
+      - '1'
+      Vary:
+      - Accept-Encoding
+    body:
+      encoding: UTF-8
+      string: '{"count":24665189,"url":"http:\/\/www.google.com\/"}'
+    http_version: 
+  recorded_at: Mon, 14 Sep 2015 23:36:48 GMT
+- request:
+    method: get
+    uri: http://api.pinterest.com/v1/urls/count.json?callback=_&url=http://www.google.com
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Mozilla/5.0 (Macintosh; Intel Mac OS X 10_7_4) AppleWebKit/534.56.5 (KHTML,
+        like Gecko) Version/5.1.6 Safari/534.56.5
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Accept-Ranges:
+      - bytes
+      Age:
+      - '0'
+      Cache-Control:
+      - private
+      Content-Type:
+      - application/javascript
+      Date:
+      - Mon, 14 Sep 2015 23:36:48 GMT
+      Expires:
+      - Mon, 14 Sep 2015 23:51:48 GMT
+      Via:
+      - 1.1 varnish
+      X-Pinterest-Rid:
+      - '860700798117'
+      X-Varnish:
+      - '3120031947'
+      Content-Length:
+      - '48'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: _({"url":"http://www.google.com","count":75108})
+    http_version: 
+  recorded_at: Mon, 14 Sep 2015 23:36:48 GMT
+- request:
+    method: get
+    uri: https://www.linkedin.com/countserv/count/share?callback=_&format=json&url=www.google.com
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Mozilla/5.0 (Macintosh; Intel Mac OS X 10_7_4) AppleWebKit/534.56.5 (KHTML,
+        like Gecko) Version/5.1.6 Safari/534.56.5
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - Apache-Coyote/1.1
+      Content-Type:
+      - application/json;charset=UTF-8
+      Content-Length:
+      - '74'
+      Vary:
+      - Accept-Encoding
+      Date:
+      - Mon, 14 Sep 2015 23:36:47 GMT
+      X-Frame-Options:
+      - sameorigin
+      X-Content-Type-Options:
+      - nosniff
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Li-Fabric:
+      - prod-lva1
+      Strict-Transport-Security:
+      - max-age=0
+      Pragma:
+      - no-cache
+      Expires:
+      - Thu, 01 Jan 1970 00:00:00 GMT
+      Cache-Control:
+      - no-cache, no-store
+      Connection:
+      - keep-alive
+      X-Li-Pop:
+      - prod-lva1
+      X-Li-Uuid:
+      - UqM3HmP8AxTQMquZzyoAAA==
+      Set-Cookie:
+      - lidc="b=VB84:g=218:u=1:i=1442273808:t=1442360208:s=AQHSSdNuG8GY364XtQ8nliehwbn70DBA";
+        Expires=Tue, 15 Sep 2015 23:36:48 GMT; domain=.linkedin.com; Path=/
+    body:
+      encoding: UTF-8
+      string: '{"count":2712,"fCnt":"2,712","fCntPlusOne":"2,713","url":"www.google.com"}'
+    http_version: 
+  recorded_at: Mon, 14 Sep 2015 23:36:48 GMT
+- request:
+    method: get
+    uri: http://www.stumbleupon.com/services/1.01/badge.getinfo?url=www.google.com
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Mozilla/5.0 (Macintosh; Intel Mac OS X 10_7_4) AppleWebKit/534.56.5 (KHTML,
+        like Gecko) Version/5.1.6 Safari/534.56.5
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - Apache
+      P3p:
+      - policyref="/w3c/p3p.xml", CP="CURa ADMa DEVa PSAo PSDo OUR BUS UNI PUR INT
+        DEM STA PRE COM NAV OTC NOI DSP COR"
+      Vary:
+      - Accept-Encoding
+      Content-Type:
+      - text/plain; charset=iso-8859-1
+      Content-Length:
+      - '521'
+      Accept-Ranges:
+      - bytes
+      Date:
+      - Mon, 14 Sep 2015 23:36:48 GMT
+      Age:
+      - '0'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"result":{"url":"http:\/\/www.google.com\/","in_index":true,"publicid":"2pI1xR","views":255199,"title":"Google","thumbnail":"http:\/\/cdn.stumble-upon.com\/mthumb\/31\/10031.jpg","thumbnail_b":"http:\/\/cdn.stumble-upon.com\/bthumb\/31\/10031.jpg","submit_link":"http:\/\/www.stumbleupon.com\/badge\/?url=http:\/\/www.google.com\/","badge_link":"http:\/\/www.stumbleupon.com\/badge\/?url=http:\/\/www.google.com\/","info_link":"http:\/\/www.stumbleupon.com\/url\/www.google.com\/"},"timestamp":1442273808,"success":true}'
+    http_version: 
+  recorded_at: Mon, 14 Sep 2015 23:36:48 GMT
+- request:
+    method: get
+    uri: http://vk.com/share.php?act=count&url=http://www.google.com
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Mozilla/5.0 (Macintosh; Intel Mac OS X 10_7_4) AppleWebKit/534.56.5 (KHTML,
+        like Gecko) Version/5.1.6 Safari/534.56.5
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - Apache
+      Date:
+      - Mon, 14 Sep 2015 23:36:48 GMT
+      Content-Type:
+      - text/html; charset=windows-1251
+      Content-Length:
+      - '24'
+      Connection:
+      - keep-alive
+      X-Powered-By:
+      - PHP/3.17085
+      Set-Cookie:
+      - remixlang=3; expires=Tue, 13 Sep 2016 12:14:07 GMT; path=/; domain=.vk.com
+      Pragma:
+      - no-cache
+      Cache-Control:
+      - no-store
+    body:
+      encoding: UTF-8
+      string: VK.Share.count(0, 4352);
+    http_version: 
+  recorded_at: Mon, 14 Sep 2015 23:36:48 GMT
+- request:
+    method: get
+    uri: http://www.stumbleupon.com/services/1.01/badge.getinfo?url=www.google.com
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Mozilla/5.0 (Macintosh; Intel Mac OS X 10_7_4) AppleWebKit/534.56.5 (KHTML,
+        like Gecko) Version/5.1.6 Safari/534.56.5
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - Apache
+      P3p:
+      - policyref="/w3c/p3p.xml", CP="CURa ADMa DEVa PSAo PSDo OUR BUS UNI PUR INT
+        DEM STA PRE COM NAV OTC NOI DSP COR"
+      Vary:
+      - Accept-Encoding
+      Content-Type:
+      - text/plain; charset=iso-8859-1
+      Content-Length:
+      - '521'
+      Accept-Ranges:
+      - bytes
+      Date:
+      - Mon, 14 Sep 2015 23:36:49 GMT
+      Age:
+      - '0'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"result":{"url":"http:\/\/www.google.com\/","in_index":true,"publicid":"2pI1xR","views":255199,"title":"Google","thumbnail":"http:\/\/cdn.stumble-upon.com\/mthumb\/31\/10031.jpg","thumbnail_b":"http:\/\/cdn.stumble-upon.com\/bthumb\/31\/10031.jpg","submit_link":"http:\/\/www.stumbleupon.com\/badge\/?url=http:\/\/www.google.com\/","badge_link":"http:\/\/www.stumbleupon.com\/badge\/?url=http:\/\/www.google.com\/","info_link":"http:\/\/www.stumbleupon.com\/url\/www.google.com\/"},"timestamp":1442273809,"success":true}'
+    http_version: 
+  recorded_at: Mon, 14 Sep 2015 23:36:49 GMT
+- request:
+    method: get
+    uri: https://www.linkedin.com/countserv/count/share?callback=_&format=json&url=www.google.com
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Mozilla/5.0 (Macintosh; Intel Mac OS X 10_7_4) AppleWebKit/534.56.5 (KHTML,
+        like Gecko) Version/5.1.6 Safari/534.56.5
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - Apache-Coyote/1.1
+      Content-Type:
+      - application/json;charset=UTF-8
+      Content-Length:
+      - '74'
+      Vary:
+      - Accept-Encoding
+      Date:
+      - Mon, 14 Sep 2015 23:36:48 GMT
+      X-Frame-Options:
+      - sameorigin
+      X-Content-Type-Options:
+      - nosniff
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Li-Fabric:
+      - prod-lva1
+      Strict-Transport-Security:
+      - max-age=0
+      Pragma:
+      - no-cache
+      Expires:
+      - Thu, 01 Jan 1970 00:00:00 GMT
+      Cache-Control:
+      - no-cache, no-store
+      Connection:
+      - keep-alive
+      X-Li-Pop:
+      - prod-lva1
+      X-Li-Uuid:
+      - HdKTQmP8AxQwejmr0CoAAA==
+      Set-Cookie:
+      - lidc="b=VB84:g=218:u=1:i=1442273808:t=1442360208:s=AQHSSdNuG8GY364XtQ8nliehwbn70DBA";
+        Expires=Tue, 15 Sep 2015 23:36:48 GMT; domain=.linkedin.com; Path=/
+    body:
+      encoding: UTF-8
+      string: '{"count":2712,"fCnt":"2,712","fCntPlusOne":"2,713","url":"www.google.com"}'
+    http_version: 
+  recorded_at: Mon, 14 Sep 2015 23:36:49 GMT
+- request:
+    method: get
+    uri: http://vk.com/share.php?act=count&url=http://www.google.com
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Mozilla/5.0 (Macintosh; Intel Mac OS X 10_7_4) AppleWebKit/534.56.5 (KHTML,
+        like Gecko) Version/5.1.6 Safari/534.56.5
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - Apache
+      Date:
+      - Mon, 14 Sep 2015 23:36:49 GMT
+      Content-Type:
+      - text/html; charset=windows-1251
+      Content-Length:
+      - '24'
+      Connection:
+      - keep-alive
+      X-Powered-By:
+      - PHP/3.17085
+      Set-Cookie:
+      - remixlang=3; expires=Mon, 12 Sep 2016 04:01:41 GMT; path=/; domain=.vk.com
+      Pragma:
+      - no-cache
+      Cache-Control:
+      - no-store
+    body:
+      encoding: UTF-8
+      string: VK.Share.count(0, 4352);
+    http_version: 
+  recorded_at: Mon, 14 Sep 2015 23:36:49 GMT
+- request:
+    method: get
+    uri: http://share.yandex.ru/gpp.xml?url=http://www.google.com
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Mozilla/5.0 (Macintosh; Intel Mac OS X 10_7_4) AppleWebKit/534.56.5 (KHTML,
+        like Gecko) Version/5.1.6 Safari/534.56.5
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx/1.6.3
+      Date:
+      - Mon, 14 Sep 2015 23:36:49 GMT
+      Content-Type:
+      - text/javascript; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Cache-Control:
+      - max-age=0, must-revalidate, proxy-revalidate, no-cache, no-store, private
+      Expires:
+      - Mon, 14 Sep 2015 23:36:49 GMT
+      Pragma:
+      - no-cache
+      Set-Cookie:
+      - yandexuid=9824469191442273809; domain=.yandex.ru; path=/; expires=Tue, 19
+        Jan 2038 03:14:07 GMT
+    body:
+      encoding: UTF-8
+      string: services.gplus.cb("10000");
+    http_version: 
+  recorded_at: Mon, 14 Sep 2015 23:36:49 GMT
 recorded_with: VCR 2.9.3

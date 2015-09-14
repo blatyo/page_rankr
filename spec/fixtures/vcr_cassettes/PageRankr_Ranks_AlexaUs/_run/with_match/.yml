@@ -1,0 +1,45 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://data.alexa.com/data?cli=10&dat=snbamz&url=google.com
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Mozilla/5.0 (Macintosh; Intel Mac OS X 10_7_4) AppleWebKit/534.56.5 (KHTML,
+        like Gecko) Version/5.1.6 Safari/534.56.5
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - text/xml
+      Date:
+      - Mon, 14 Sep 2015 22:36:49 GMT
+      Server:
+      - nginx
+      Content-Length:
+      - '983'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n\r\n<!-- Need more Alexa
+        data?  Find our APIs here: https://aws.amazon.com/alexa/ -->\r\n<ALEXA VER=\"0.9\"
+        URL=\"google.com/\" HOME=\"0\" AID=\"=\" IDN=\"google.com/\">\r\n<RLS PREFIX=\"http://\"
+        more=\"0\">\n<RL HREF=\"amazon.com/\" TITLE=\"Amazon.com\"/>\n<RL HREF=\"wikipedia.org/\"
+        TITLE=\"Wikipedia\"/>\n<RL HREF=\"www.yahoo.com/\" TITLE=\"Yahoo!\"/>\n<RL
+        HREF=\"youtube.com/\" TITLE=\"YouTube\"/>\n<RL HREF=\"yelp.com/\" TITLE=\"Yelp\"/>\n<RL
+        HREF=\"statcounter.com/\" TITLE=\"StatCounter.com\"/>\n<RL HREF=\"myspace.com/\"
+        TITLE=\"Myspace\"/>\n<RL HREF=\"linkedin.com/\" TITLE=\"LinkedIn\"/>\n<RL
+        HREF=\"imdb.com/\" TITLE=\"The Internet Movie Database (imdb)\"/>\n<RL HREF=\"google.co.in/\"
+        TITLE=\"Google India\"/>\n</RLS>\n<SD TITLE=\"A\" FLAGS=\"\" HOST=\"google.com\">\n<TITLE
+        TEXT=\"Google                             \"/>\n<OWNER NAME=\"aa\"/>\n</SD>\n<SD>\n<POPULARITY
+        URL=\"google.com/\" TEXT=\"1\" SOURCE=\"panel\"/>\n<REACH RANK=\"1\"/>\n<RANK
+        DELTA=\"+0\"/>\n<COUNTRY CODE=\"US\" NAME=\"United States\" RANK=\"1\"/>\n</SD>\n</ALEXA>"
+    http_version: 
+  recorded_at: Mon, 14 Sep 2015 22:36:49 GMT
+recorded_with: VCR 2.9.3

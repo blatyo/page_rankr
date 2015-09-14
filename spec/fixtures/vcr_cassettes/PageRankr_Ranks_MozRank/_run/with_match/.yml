@@ -1,0 +1,92 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://bagics.com/moz-rank.html?domain=www.google.com
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Mozilla/5.0 (Macintosh; Intel Mac OS X 10_7_4) AppleWebKit/534.56.5 (KHTML,
+        like Gecko) Version/5.1.6 Safari/534.56.5
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Mon, 14 Sep 2015 22:49:44 GMT
+      Content-Type:
+      - text/html; charset=UTF-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - __cfduid=dbd3f1720b392f71e1d2339e8ddcf1ffc1442270975; expires=Tue, 13-Sep-16
+        22:49:35 GMT; path=/; domain=.bagics.com; HttpOnly
+      X-Powered-By:
+      - PHP/5.3.3
+      Vary:
+      - Accept-Encoding,User-Agent
+      Cache-Control:
+      - !binary |-
+        4oCccHVibGlj4oCd
+      Server:
+      - cloudflare-nginx
+      Cf-Ray:
+      - 225fa55bafa12501-ORD
+    body:
+      encoding: UTF-8
+      string: "<!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.0 Strict//EN\"\n    \"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd\">\n<html
+        xmlns=\"http://www.w3.org/1999/xhtml\" xml:lang=\"en\" lang=\"en\">\n<head>\n<title>Check
+        MOZ Rank of Domain for FREE | Bagics.com | All In One SEO Companion</title>\n<meta
+        name=\"description\" content=\"Moz Rank Checker - WhoIs LookUp  Check domain
+        availability  Check Page Rank  Check PageRank  DMOZ directory checker  Yahoo
+        directory checker  Proxy servers  Check domain age  Check Alexa Rank  Domain
+        IP lookup  Find domain owner Check Domain Authority  Check Page Authority
+        \ Check MozTrust  Check mozRank  Expired Domains  Backlinks checker  Check
+        Link Popularity  \"/>\n<meta name=\"keywords\" content=\"WhoIs LookUp,Check
+        domain availability,Check Page Rank,Check PageRank,DMOZ directory checker,Yahoo
+        directory checker,Proxy servers,Check domain age,Check Alexa Rank ,Check Domain
+        IP,lookup,Find domain owner ,Check domain Authority,Check Page Authority,Check
+        MozTrust,Check mozRank,Expired Domains,Backlinks checker,Check Link Popularity
+        \">\n<meta http-equiv=\"Content-Type\" content=\"text/html; charset=utf-8\"/>\n<link
+        href=\"css/style.css\" rel=\"stylesheet\" type=\"text/css\"/>\n</head>\n<div
+        id=\"container\">\n<div id=\"main\">\n<div id=\"topbanner\"></div>\n<div id=\"menu\"><center>\n<a
+        href=\"index.html\" title=\"bagics home page\">Home</a>\n<a href=\"whois.html\">WhoIs
+        LookUp</a>\n<a href=\"domainchecker.html\">Check domain availability</a>\n<a
+        href=\"pr.html\">Check Page Rank</a>\n<a href=\"alexarankchecker.html\">Check
+        Alexa Rank</a>\n<a href=\"domain-authority.html\">Check Domain Authority</a>\n<a
+        href=\"page-authority.html\">Check Page Authority</a>\n<a href=\"yahoodirchecker.html\">Yahoo
+        Directory check</a>\n<a href=\"alexabacklinkcheck.html\">Alexa Backlinks Check</a>\n<a
+        href=\"bingindexcheck.html\">Bing Index Check</a>\n<a href=\"moz-rank.html\">MOZ-Rank
+        Check</a>\n<a href=\"dofollow-links.html\">Dofollow Backlinks Check</a>\n<a
+        href=\"total-back-links.html\">Total Backlinks Check</a>\n<a href=\"fake-pr-check.html\">Fake
+        PR Check</a>\n<a href=\"domain-age.html\">Domain Age Check</a>\n<a href=\"site-value.html\">Estimated
+        Site Value</a>\n<a href=\"google-bot-access.html\">Google Bot Access Check</a>\n<a
+        href=\"get-technorati-rank.html\">Technorati rank Check</a>\n \n</div>\n<div
+        id=\"content\">\n<h1>Check MOZ RANK of Domain.</h1>\n<p>Here, You can quickly
+        check the MOZ RANKof your favorite sites. Just put your domain name below
+        and click CHECK button.</p>\n<div class=\"pr\">\n<form action=\"/moz-rank.html\"
+        method=\"post\">\nURL: <input name=\"domain\" type=\"text\" id=\"domain\"
+        value=\"\" maxlength=\"300\" class=\"prf\" size=\"45\">\n<input type=\"submit\"
+        name=\"Submit\" value=\"CHECK\">\n</form></div>\n<div class=\"seomozResult\">\n<strong
+        class=\"dac\" id=\"resId\">8</strong>\n<h3 class=\"daa\">Moz Rank</h3>\n<b
+        id=\"urlId\">www.google.com</b>\n</div></div>\n<div class=\"div\"></div>\n</div>\n<div
+        id=\"r\"></div>\n<div id=\"credits\">\n<p>Copyright by <a href=\"http://bagics.com\">Bagics</a></p>\n<p>&copy;2012,
+        All rights reserved.</p></div>\n</div><script type=\"text/javascript\">\n\n
+        \ var _gaq = _gaq || [];\n  _gaq.push(['_setAccount', 'UA-20641732-23']);\n
+        \ _gaq.push(['_setDomainName', 'bagics.com']);\n  _gaq.push(['_setAllowLinker',
+        true]);\n  _gaq.push(['_trackPageview']);\n\n  (function() {\n    var ga =
+        document.createElement('script'); ga.type = 'text/javascript'; ga.async =
+        true;\n    ga.src = ('https:' == document.location.protocol ? 'https://' :
+        'http://') + 'stats.g.doubleclick.net/dc.js';\n    var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(ga, s);\n  })();\n\n</script>\n<script type=\"text/javascript\">\nvar
+        infolinks_pid = 2417000;\nvar infolinks_wsid = 0;\n</script>\n<script type=\"text/javascript\"
+        src=\"http://resources.infolinks.com/js/infolinks_main.js\"></script></body></html>
+        name="
+    http_version: 
+  recorded_at: Mon, 14 Sep 2015 22:49:44 GMT
+recorded_with: VCR 2.9.3

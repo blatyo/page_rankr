@@ -1,0 +1,54 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://graph.facebook.com/?id=http://www.google.com
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Mozilla/5.0 (Macintosh; Intel Mac OS X 10_7_4) AppleWebKit/534.56.5 (KHTML,
+        like Gecko) Version/5.1.6 Safari/534.56.5
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Access-Control-Allow-Origin:
+      - "*"
+      Content-Type:
+      - text/javascript; charset=UTF-8
+      X-Fb-Trace-Id:
+      - BwcMxAxXvOM
+      X-Fb-Rev:
+      - '1935378'
+      Etag:
+      - '"9a569c8e2fa402c1aaf3842d190bd5cbdd91a2c4"'
+      Pragma:
+      - no-cache
+      Cache-Control:
+      - private, no-cache, no-store, must-revalidate
+      Facebook-Api-Version:
+      - v2.0
+      Expires:
+      - Sat, 01 Jan 2000 00:00:00 GMT
+      X-Fb-Debug:
+      - KPCbmUMgap1RPVCFiV1Hhxsrzd3S+KU2bv1HSa8+cry7/E89KfjBOLGAD0rD+KgmIJhNlsa3V5LBlY+D9IFQRQ==
+      Date:
+      - Mon, 14 Sep 2015 23:06:25 GMT
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '80'
+    body:
+      encoding: UTF-8
+      string: |-
+        {
+           "id": "http://www.google.com",
+           "shares": 13236703,
+           "comments": 1028
+        }
+    http_version: 
+  recorded_at: Mon, 14 Sep 2015 23:06:25 GMT
+recorded_with: VCR 2.9.3

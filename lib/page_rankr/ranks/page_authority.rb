@@ -6,15 +6,15 @@ module PageRankr
       include Rank
 
       def url
-        'http://bagics.com/page-authority.html'
+        'https://moz.com/researchtools/ose/api/urlmetrics'
       end
 
       def params
-        {:domain => tracked_url}
+        {site: tracked_url}
       end
 
-      def xpath
-        '//*[@id="resId"]'
+      def jsonpath
+        'data.authority.page_authority'
       end
 
       def supported_components

@@ -1,0 +1,54 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://moz.com/researchtools/ose/api/urlmetrics?site=please-dont-register-a-site-that-breaks-this-test.com
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Mozilla/5.0 (Macintosh; Intel Mac OS X 10_7_4) AppleWebKit/534.56.5 (KHTML,
+        like Gecko) Version/5.1.6 Safari/534.56.5
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - openresty
+      Date:
+      - Mon, 14 Sep 2015 22:46:45 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '419'
+      Connection:
+      - keep-alive
+      Vary:
+      - Accept-Encoding
+      Cache-Control:
+      - public, max-age=2592000
+      Etag:
+      - W/"1a3-9dde57ca"
+      X-Response-Time:
+      - 319.883ms
+      Set-Cookie:
+      - "___utmvaFIuocZF=wsd\x01YNUr; path=/; Max-Age=900"
+      - '___utmvbFIuocZF=gZc XNXOFalE: dtx; path=/; Max-Age=900'
+      - ___utmvmFIuocZF=THamZBMugvr; path=/; Max-Age=900
+      - incap_ses_163_133232=6eaOG/TqHgWr4XA23RdDAlVO91UAAAAA+qhScMrQqg3BqLlWHVjEkQ==;
+        path=/; Domain=.moz.com
+      - visid_incap_133232=VtUxXUItTBODKSDISQkgRFRO91UAAAAAQUIPAAAAAAD8I9a8Sh2mvcMV6EUFcScc;
+        expires=Wed, 13 Sep 2017 08:26:24 GMT; path=/; Domain=.moz.com
+      X-Iinfo:
+      - 4-47997076-47997080 NNNN CT(46 48 0) RT(1442270804655 83) q(0 0 1 0) r(5 5)
+        U5
+      X-Cdn:
+      - Incapsula
+    body:
+      encoding: UTF-8
+      string: '{"meta":{"site":"http://please-dont-register-a-site-that-breaks-this-test.com","requested_site":"http://please-dont-register-a-site-that-breaks-this-test.com"},"data":{"spam_flags":[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],"spam_score":null,"authority":{"page_authority":1,"domain_authority":1},"page":{"just_discovered_links":0,"linking_root_domains":0,"inbound_links":0}}}'
+    http_version: 
+  recorded_at: Mon, 14 Sep 2015 22:46:45 GMT
+recorded_with: VCR 2.9.3

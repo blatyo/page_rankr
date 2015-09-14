@@ -14,17 +14,17 @@ describe PageRankr::ProxyServices::RoundRobin do
   it{should respond_to(:proxy).with(2).arguments}
 
   it "should return the first proxy on the first call" do
-    subject.proxy(name, site).should == proxies.first
+    expect(subject.proxy(name, site)).to eq(proxies.first)
   end
 
   it "should return the second proxy on the second call" do
     subject.proxy(name, site)
-    subject.proxy(name, site).should == proxies.last
+    expect(subject.proxy(name, site)).to eq(proxies.last)
   end
 
   it "should return the first proxy on the third call" do
     subject.proxy(name, site)
     subject.proxy(name, site)
-    subject.proxy(name, site).should == proxies.first
+    expect(subject.proxy(name, site)).to eq(proxies.first)
   end
 end

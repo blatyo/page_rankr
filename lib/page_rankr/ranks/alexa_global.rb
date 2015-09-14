@@ -4,7 +4,7 @@ module PageRankr
   class Ranks
     class AlexaGlobal
       include Rank
-      
+
       def url
         "http://data.alexa.com/data"
       end

@@ -3,6 +3,5 @@ source 'https://rubygems.org'
 gemspec
 
 group :development do
-  gem 'pry'
-  gem 'pry-nav'
+  gem 'pry-byebug'
 end

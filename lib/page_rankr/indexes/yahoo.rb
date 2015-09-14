@@ -14,7 +14,7 @@ module PageRankr
       end
 
       def xpath
-        "//div[@id='pg']/span/text()"
+        "//div[@class='compPagination']/span/text()"
       end
 
       def name
