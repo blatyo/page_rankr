@@ -1,5 +1,11 @@
 # Change Log
 
+## Version 4.6.0
+* Bumps public_suffic
+* Support IDN addresses
+* Change alexa to support subdomains
+* Resctructure tests
+
 ## Version 4.5.0
 * Bumps to public_suffix Gem to 1.5.1
 * Deprecates support for Ruby < 2.0
