@@ -20,11 +20,11 @@ module PageRankr
       # to slocourts.net. Clearly something is wrong with how Alexa handles this case and so in the event this
       # happens we treat the results as if there were no results.
       def xpath
-        "//popularity[contains(@url, '#{tracked_url}')]/../country[@code='US']/@rank"
+        "//country[@code='US']/@rank"
       end
 
       def supported_components
-        [:domain]
+        [:subdomain]
       end
 
       def name
