@@ -24,6 +24,7 @@ Gem::Specification.new do |s|
   s.add_runtime_dependency "public_suffix",         "~> 1.5.1"
   s.add_runtime_dependency "httparty",              ">= 0.9.0"
   s.add_runtime_dependency "jsonpath",              ">= 0.4.2"
+  s.add_runtime_dependency "addressable"
 
   s.files         = `git ls-files`.split("\n")
   s.test_files    = `git ls-files -- {test,spec,features}/*`.split("\n")
