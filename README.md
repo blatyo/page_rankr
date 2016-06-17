@@ -2,15 +2,15 @@
 
 Provides an easy way to retrieve Google Page Rank, Alexa Rank, backlink counts, index counts and different types of social signals.
 
-I'm looking for co-maintainers. If you'd like to help maintain this project, let me know.
+__This project is abandoned. If you'd like to take ownership of this project, let me know.__
 
-__Note: Version ~> 2.0 and ~> 3.0 used typheous internally which caused memory leak issues and failures on windows. 4.0.0 changes the implementation to use a Net::HTTP based library for better compatability.__
+_Note: Version ~> 2.0 and ~> 3.0 used typheous internally which caused memory leak issues and failures on windows. 4.0.0 changes the implementation to use a Net::HTTP based library for better compatability._
 
-__Note: Version >= 4.1.0 no longer actively maintains compatibility with Ruby 1.8.X. It will probably still work for the time being.__
+_Note: Version >= 4.1.0 no longer actively maintains compatibility with Ruby 1.8.X. It will probably still work for the time being._
 
-__Note: Version >= 4.2.0 no longer actively maintains compatibility with Ruby < 1.9.3. It will probably still work, but you may need to specify older versions for gems this library depends on in your Gemfile.__
+_Note: Version >= 4.2.0 no longer actively maintains compatibility with Ruby < 1.9.3. It will probably still work, but you may need to specify older versions for gems this library depends on in your Gemfile._
 
-__Note: Version >= 4.5.0 no longer actively maintains compatibility with Ruby < 2.0.__
+_Note: Version >= 4.5.0 no longer actively maintains compatibility with Ruby < 2.0._
 
 Check out a little [web app][1] I wrote up that uses it or look at the [source][2].
 
