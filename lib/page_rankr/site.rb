@@ -9,9 +9,9 @@ module PageRankr
     def initialize(site)
       site = "http://#{site}" unless site =~ /:\/\//
       @uri = Addressable::URI.parse(site)
-      @domain = PublicSuffix.parse(@uri.host || "")
+      @domain = public_suffix_parse(@uri.host)
 
-      @domain.valid? or raise DomainInvalid, "The domain provided is invalid.1"
+      public_suffix_valid?(@domain) or raise DomainInvalid, "The domain provided is invalid.1"
     rescue PublicSuffix::DomainInvalid, Addressable::URI::InvalidURIError
       raise DomainInvalid, "The domain provided is invalid."
     end
@@ -69,6 +69,28 @@ module PageRankr
           fragment and "##{fragment}" or ""
         end
       end
+    end
+
+    private
+
+    def public_suffix_parse(host = '')
+      if public_suffix_verson_1?
+        PublicSuffix.parse(host)
+      else
+        PublicSuffix.parse(host, default_rule: nil)
+      end
+    end
+
+    def public_suffix_valid?(domain)
+      if public_suffix_verson_1?
+        domain.valid?
+      else
+        PublicSuffix.valid?(domain, default_rule: nil)
+      end
+    end
+
+    def public_suffix_verson_1?
+      defined?(PublicSuffix::Version) && PublicSuffix::Version::MAJOR == 1
     end
   end
 
