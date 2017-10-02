@@ -9,9 +9,9 @@ module PageRankr
     def initialize(site)
       site = "http://#{site}" unless site =~ /:\/\//
       @uri = Addressable::URI.parse(site)
-      @domain = PublicSuffix.parse(@uri.host || "")
+      @domain = PublicSuffix.parse(@uri.host || '')
 
-      @domain.valid? or raise DomainInvalid, "The domain provided is invalid.1"
+      PublicSuffix.valid?(@domain, default_rule: nil) or raise DomainInvalid, "The domain provided is invalid.1"
     rescue PublicSuffix::DomainInvalid, Addressable::URI::InvalidURIError
       raise DomainInvalid, "The domain provided is invalid."
     end
