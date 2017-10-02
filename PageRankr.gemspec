@@ -21,7 +21,7 @@ Gem::Specification.new do |s|
 
   s.add_runtime_dependency "nokogiri",              ">= 1.4.1"
   s.add_runtime_dependency "json",                  ">= 1.4.6"
-  s.add_runtime_dependency "public_suffix",         "~> 2.0"
+  s.add_runtime_dependency "public_suffix",         "~> 3.0"
   s.add_runtime_dependency "httparty",              ">= 0.9.0"
   s.add_runtime_dependency "jsonpath",              ">= 0.4.2"
   s.add_runtime_dependency "addressable"
